@@ -1,0 +1,3 @@
+#REDIRECT [[High Efficiency Video Coding]]
+
+[[Category:Codecs]] [[Category:Video codecs]]

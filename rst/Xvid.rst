@@ -1,0 +1,8 @@
+{{Websitehttps://www.xvid.com/}} {{Wikipedia|Xvid}} '''Xvid''' (formerly
+XviD) is a [[free]] and [[open source]] (GPL) video [[codec]]. It is
+similar in nature to the closed-source [[DivX]] and, like DivX, supports
+[[compression]].
+
+{{Stub}}
+
+[[Category:Container]] [[Category:Video codecs]]

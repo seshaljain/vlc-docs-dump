@@ -1,0 +1,6 @@
+{{howto|Enable Blu-ray disc playback}}
+
+You have to download and install some additional files, see
+https://vlc-bluray.whoknowsmy.name/
+
+{{VSG}}

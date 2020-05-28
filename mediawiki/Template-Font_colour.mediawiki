@@ -1,0 +1,6 @@
+<span style="color:{{{1|inherit}}};">{{{2|}}}</span><noinclude>
+
+Example: {{font colour|red|Hello this text is red}}
+
+[[Category:Templates]]
+</noinclude>

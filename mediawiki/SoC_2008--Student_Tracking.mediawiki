@@ -1,0 +1,59 @@
+This page is made to track the improvements of the students.
+
+
+{| class="wikitable" style="font-size: smaller; text-align: center; width: 100%; margin: 1em auto 1em auto; border : 1px"
+|+ ''' x264 Students''' 
+|-
+! Student Name !! Nick !!  Soc@ !! devel@ !! Wiki !! Mail !! Git !! Planning !! Success !! Comment 
+|- 
+! Robert Deaton 
+|| masquerade || {{Yes}} || {{Yes}} || [[SoC_2008/x264/Interesting_Frame_Stuff]] || {{Yes}} || {{Yes}}  [http://git.videolan.org/?p=x264-masquerade.git;a=summary]  || {{Yes}}  || {{No}} ||  
+|-
+! Holger Lubitz 
+|| holger || {{Yes}} || {{Yes}} || [[SoC_2008/x264/Speed_Optimizations]] || {{yes}} || {{Yes}} [http://git.videolan.org/?p=x264-holger.git;a=summary] || {{Yes}} || {{Yes}} ||  
+|-
+! Joey Degges 
+|| keram || {{Yes}} || {{Yes}} || [[SoC_2008/x264_Improve_Fast_Inter_Refinement_and_Adaptive_Quantization]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=x264-keram.git;a=summary] || {{Yes}} || {{Yes}} || 
+|-
+! Aki Jäntti 
+|| Kuukunen  || {{Yes}} || {{Yes}} || [[SoC_2008/x264/Macroblock_tree]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=x264-kuukunen.git;a=summary] || {{Yes}}  || {{No}} || 
+|-
+|}
+
+{| class="wikitable" style="font-size: smaller; text-align: center; width: 100%; margin: 1em auto 1em auto; border : 1px"
+|+ '''VLC Students''' 
+|-
+! Student Name !! Nick !!  Soc@ !! devel@ !! Wiki !! Mail !! Git !! Planning !! Success !! Comment 
+|-
+! Kaarlo Henrik Räihä 
+|| [[User:VLC_help|VLC_help]] || {{Yes}} || {{Yes}} || [[SoC_2008/EVR_video_output_module]] || {{Yes}} || {{yes}} [http://git.videolan.org/?p=vlc-vlchelp.git;a=summary] || {{Yes}} || {{Yes}} ||  
+|-
+! Dylan Yudaken 
+|| [[User:Dylan|DylanZA]] || {{Yes}} || {{Yes}} || [[SoC_2008/Enhance_PVR_capabilities_of_VLC]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-dylanza.git;a=summary] || {{Yes}} || {{Yes}} || 
+|- 
+! Fabio Ritrovato 
+|| Sephiroth87 || {{Yes}} || {{Yes}} || [[SoC_2008/MTP]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-sephiroth87.git;a=summary] || {{Yes}} || {{Yes}} || 
+|-
+! Geoffroy Couprie 
+|| [[User:Geal|Geal]]/Geo || {{Yes}} || {{Yes}} || [[SoC_2008/WinCE_Port]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-geal.git;a=summary] || {{Yes}} || {{Yes}} || 
+|-
+! Lukas Durfina 
+|| _lukas || {{Yes}} || {{yes}} || [[SoC_2008/Qt_improvements]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-lukas.git&a=search&h=HEAD&st=author&s=Lukas+Durfina] || {{Yes}}  || {{Yes}} || 
+|-
+! Mirsal Ennaime 
+|| Mr_Mirsal ||  {{Yes}} || {{Yes}} || [[SoC_2008/UPnP]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-mirsal.git;a=summary] || {{Yes}} || {{Yes}} || 
+|-
+! Antoine Lejeune 
+|| [[User:Phytos|Phytos]] || {{Yes}} || {{Yes}} || [[SoC_2008/New_VLC_interface_for_Maemo]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-phytos.git;a=summary] || {{Yes}} || {{Yes}} || 
+|-
+! Vladimir Belousov 
+|| VladimirB || {{Yes}} || {{Yes}} || [[SoC_2008/GUI_interfaces_for_the_browsers_plug-ins]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-vbelousov.git;a=summary] || {{Yes}} || {{No}} || 
+|-
+! Eric Dudiak 
+|| [[User:dudiak|dudiak]] || {{Yes}} || {{Yes}} || [[SoC_2008/OS_X_Integration]] || {{Yes}} || {{Yes}} [http://git.videolan.org/?p=vlc-dudiak.git;a=summary] || {{Yes}} ||{{Yes}} ||
+|- 
+|}
+
+{{GSoC}}
+
+[[Category:SoC 2008 Project|*]]

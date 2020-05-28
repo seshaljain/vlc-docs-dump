@@ -1,0 +1,7 @@
+== Summary ==
+2017 Firefox logo: [https://design.firefox.com/photon/visuals/product-identity-assets.html Photon design] of Firefox Quantum (attribution: [https://foundation.mozilla.org/ The Mozilla Foundation]). 1024x1024 PNG thumbnail of [https://commons.wikimedia.org/wiki/File:Firefox_Logo,_2017.svg this file] taken from Commons.
+
+== Licensing ==
+{{CC-BY-3.0}}
+
+[[Category:Logos]]

@@ -1,0 +1,6 @@
+⌘<noinclude>
+
+Inserts the Apple [[wikipedia:Command key|Command key]] to make writing macOS documentation easier.
+
+[[Category:Typing aid templates]]
+</noinclude>

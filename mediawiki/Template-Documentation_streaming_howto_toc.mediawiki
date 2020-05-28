@@ -1,0 +1,47 @@
+{| class="tocsidebar cellpadding-1px"
+|+<big>'''[[Documentation:Streaming_HowTo|VLC Streaming HowTo]]'''</big><br />
+|-
+!<br />Introduction
+|-
+|[[Documentation:Streaming HowTo/Streaming, Muxers and Codecs|Streaming, Muxers and Codecs]]
+|-
+!<br />Main
+|-
+|[[Documentation:Streaming HowTo/Easy Streaming|Easy Streaming]]
+|-
+|[[Documentation:Streaming HowTo/Advanced Streaming Using the Command Line|Advanced Streaming Using the Command Line]]
+|-
+|[[Documentation:Streaming HowTo/Command Line Examples|Command Line Examples]]
+|-
+!<br />VLM
+|-
+|[[Documentation:Streaming HowTo/VLM|VLM - Multiple Streaming and Video on Demand]]
+|-
+!<br />Tutorials and examples
+|-
+|[[Documentation:Streaming HowTo/Receive and Save a Stream|Receive and Save a Stream]]
+|-
+|[[Documentation:Streaming HowTo New|Convert files to other formats]]
+|-
+|[[Documentation:Streaming HowTo/Stream a File|Stream a File]]
+|-
+|[[Documentation:Streaming HowTo/Stream a DVD|Stream a DVD]]
+|-
+|[[Documentation:Streaming HowTo/Stream a DVB Channel|Stream a DVB Channel]]
+|-
+|[[Documentation:Streaming HowTo/Stream from Encoding Cards and Other Capture Devices|Stream from Encoding Cards and Other Capture Devices]]
+|-
+|[[Documentation:Streaming HowTo/Stream from a DV Camcorder|Stream from a DV Camcorder]]
+|-
+|[[Documentation:Streaming_HowTo/Streaming_for_the_iPhone|Streaming for the iPhone]]
+|-
+!<br />IPv6
+|-
+|[[Documentation:Streaming HowTo/Streaming over IPv6|Streaming over IPv6]]
+|-
+|style="text-align:right;"|<small>[[Template:Documentation_streaming_howto_toc|View this alone]]</small>
+|}<includeonly>
+{{Clear|right}}
+</includeonly><noinclude>
+[[Category:Templates]]
+</noinclude>

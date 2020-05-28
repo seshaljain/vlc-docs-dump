@@ -1,0 +1,29 @@
+Would a layout with tables be better for the index ? (The current page is quite long)
+Example for the "Interfaces" section:
+{|class="bordered wikitable"
+|-
+!Graphical
+!Text
+!Other
+|-
+|
+[[Documentation:Modules/wxWidgets|wxWidgets]]<br/>
+[[Documentation:Modules/skins2|Skins2]]<br/>
+[[Documentation:Modules/Qt4|Qt4]]<br/>
+[[Documentation:Modules/macosx_gui|Mac OS X]]<br/>
+[[Documentation:Modules/beos|BeOS]]
+|
+[[Documentation:Modules/rc|remote control (rc)]]<br/>
+[[Documentation:Modules/telnet|telnet]]<br/>
+[[Documentation:Modules/ncurses|ncurses]]
+|
+[[Documentation:Modules/http_intf|HTTP]]<br/>
+[[Documentation:Modules/hotkeys|Hotkeys]]<br/>
+[[Documentation:Modules/lirc|lirc]]
+|}[[User:Dionoea|Dionoea]] 14:40, 15 December 2006 (CET)
+
+== Categorisation scheme ==
+
+I'm coding these modules to be sorted ''en masse''. The MediaWiki parser can examine the [[Template:Module|template code]] and dynamically add modules to sub-categories of [[:Category:Modules]]; all that is required is a parser function and a description of where to sort pages. Changing category names can be done very easily (2 edits) if we want to rename any module category.
+
+I think it is an improvement, [[wikipedia:WP:SOFIXIT|so I'm going ahead with it]]. If anyone has any questions or concerns, leave me a message. {{User:DoesItReallyMatter/real_sig}} 04:39, 13 March 2019 (CET)

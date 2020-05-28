@@ -1,0 +1,9 @@
+== Add SCTP module on VLC (by Ounis Lotfi -Sup'Com(Tunisia))==
+
+e-mail:lotfiounis@yahoo.fr
+
+The Stream Control Transmission Protocol (SCTP) is a reliable transport protocol that provides stable, ordered delivery of data between two endpoints (much like TCP) and also preserves data message boundaries (like UDP). However, unlike TCP and UDP, SCTP offers such advantages as multi-homing and multi-streaming capabilities, both of which increase availability. In this article, get to know the key features of SCTP in the Linux® 2.6 kernel and take a look at the server and client source code that shows the protocol's ability to deliver multi-streaming.
+
+SCTP is a reliable, general-purpose transport layer protocol for use on IP networks. While the protocol was originally designed for telephony signaling (under the RFC 2960), SCTP provided an added bonus -- it solved some of the limitations of TCP while borrowing beneficial features of UDP. SCTP provides features for high availability, increased reliability, and improved security for socket initiation. (Figure 1 shows the layered architecture of the IP stack.)
+
+figure1 :http://www.ibm.com/developerworks/linux/library/l-sctp/figure1.gif

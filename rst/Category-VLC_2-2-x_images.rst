@@ -1,0 +1,4 @@
+Also known as Weatherwax, Terry Pratchett or Umbrella, depending on
+version (see [[VLC CodeNames]])
+
+[[Category:VLC images by version]]

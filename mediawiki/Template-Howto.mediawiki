@@ -1,0 +1,19 @@
+{{#if:{{{1<includeonly>|</includeonly>}}}
+  | {{{!}} class="widebox center cellpadding-3px" style="border-spacing:2px;"
+     {{!}}style="text-align: left;"{{!}}This page describes ''how to {{lcfirst:{{{1<noinclude>|do something</noinclude>}}}}}''.
+     {{!}}class="nowrap" style="text-align: right;"{{!}}[[VLC HowTo{{!}}Other "how to" pages]]
+    {{!}}}
+}}
+{{#switch:{{{nosort}}}|yes|y = |#default = <includeonly>{{DEFAULTSORT:{{#titleparts:{{FULLPAGENAME}}|1|2}}|noerror}}</includeonly>}}
+{{#switch:{{{nocat}}}|yes|y = |#default = [[Category:How To]]}}<noinclude>
+== Usage ==
+Calling the template currently:
+# Adds page to [[:Category:How To]]
+# Sorts page under correct title, rather than <code>V</code> for <del>Vendetta</del> <code>VLC HowTo</code>
+# Displays a message '''(optional)'''
+#* <code>{{{{PAGENAME}}<nowiki>}}</nowiki></code> no banner
+#* <code>{{{{PAGENAME}}<nowiki>|play music with VLC}}</nowiki></code> banner: <samp>This page describes ''how to play music with VLC''.</samp>
+
+[[Category:How To|*]]<!-- modifies sortkey -->
+[[Category:Templates]]
+</noinclude>

@@ -1,0 +1,16 @@
+==Integration with Eclipse==
+
+Like any Maven project, there are two ways to integrate the VLMa project
+with Eclipse: \* using the
+[http://maven.apache.org/plugins/maven-eclipse-plugin/ Maven eclipse
+plugin] which is a maven plugin, \* using
+[http://m2eclipse.codehaus.org/ M2Eclipse] which is an Eclipse plugin.
+
+If you plan to send patches, please ensure to set a 4-spaces indentation
+(no tabs!).
+
+== See also ==
+
+-  [[VLMa/Documentation \| VLMa documentation index]]
+
+[[Category:VLMa]]

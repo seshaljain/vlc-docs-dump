@@ -1,0 +1,25 @@
+<includeonly><!--
+  -->{{#switch:{{{1}}}<!--
+    -->|windows  = {{Path to VLC|windows|dir=y|q=n}}<!--
+    -->|mac      = {{Path to VLC|mac|dir=y|q=n}}<!--
+    -->|#default = <span class="error"><nowiki>Please choose an operating system. Change the text {{VLC folder}} to {{VLC folder|windows}} or {{VLC folder|mac}}</nowiki></span>.<!--
+   -->}}</includeonly><!--
+--><noinclude>
+
+== Usage ==
+A template for default {{VLC}} folder locations on desktop computers by [[operating system]]. Uses {{tl|Path to VLC}}
+
+Parameters:
+* (unnamed) required. One of <code>windows</code> or <code>mac</code>. No default, lists choices on error
+Examples:
+* <code>{{{{PAGENAME}}|<nowiki>windows}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|windows}}</samp>
+* <code>{{{{PAGENAME}}|<nowiki>mac}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|mac}}</samp>
+
+== See also ==
+* {{tl|Path to VLC}} - more flexible template
+* {{tl|VLC folder}}
+
+[[Category:Templates]]
+</noinclude>

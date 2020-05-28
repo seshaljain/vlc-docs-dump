@@ -1,0 +1,9 @@
+{{mux|id=vobsub|altid=subtitle|encoder=n}}
+{{wikipedia|VobSub}}
+{{Mmwiki|VOBsub}}
+For reading [[subtitles]] in [[VOB]] files.
+
+==Source code==
+{{file|modules/demux/vobsub.c|input demuxer}}
+
+[[Category:Subtitles]]

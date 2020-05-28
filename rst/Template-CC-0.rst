@@ -1,0 +1,3 @@
+{{File copyright|CC-0}}<noinclude>
+
+[[Category:File copyright templates]] </noinclude>

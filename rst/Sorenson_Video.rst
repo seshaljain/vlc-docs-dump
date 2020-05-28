@@ -1,0 +1,13 @@
+{{stub}} {{MmwikiSorenson Video 3}} {{Websitehttp://www.sorenson.com/}}
+
+Sorenson Video is developed by Sorenson?. The codec is most known for
+its use in online QuickTime? content produced by Apple?, most
+prominently the [http://www.apple.com/trailers/ Apple Trailers].
+
+There are 2 versions so far, SVQ1 and SVQ3. Their quality is quite good,
+but unfortunately only [[QuickTime Player|QuickTime]]? and
+[[FFmpeg]]-based players can play it.{{check}}
+
+== SVQ1 == {{codec video|id=SVQ1}}
+
+== SVQ3 == {{codec video|id=SVQ3}}

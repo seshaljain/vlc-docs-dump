@@ -1,0 +1,1 @@
+#REDIRECT [[Documentation:Streaming HowTo New]]

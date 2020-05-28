@@ -1,0 +1,73 @@
+:''Were you looking for {{docmod|croppadd}}, the current module?''
+{{Module|name=Crop|type=Video filter|last_version=2.0.9|description=Remove borders of the video and replace them with black borders}}
+
+== Options ==
+<onlyinclude>{{Option
+|name=crop-geometry
+|value=string
+|description=Set the geometry of the zone to crop. This is set as <code><nowiki><width> &times; <height> + <left offset> + <top offset></nowiki></code>
+}}
+{{Option
+|name=autocrop
+|value=boolean
+|default=disabled
+|description=Automatically detect black borders and crop them
+}}
+{{Option
+|name=autocrop-ratio-max
+|value=integer
+|default=2405
+|min=0
+|max=15000
+|description=Maximum image ratio. The crop plugin will never automatically crop to a higher ratio (ie, to a more "flat" image). The value is &times;1000: 1333 means 4&frasl;3
+}}
+{{Option
+|name=crop-ratio
+|value=integer
+|default=0
+|min=0
+|max=15000
+|description=Force a ratio (0 for automatic). Value is &times;1000: 1333 means 4&frasl;3
+}}
+{{Option
+|name=autocrop-time
+|value=integer
+|default=25
+|description=The number of consecutive images with the same detected ratio (different from the previously detected ratio) to consider that ratio changed and trigger recrop
+}}
+{{Option
+|name=autocrop-diff
+|value=integer
+|default=16
+|description=The minimum difference in the number of detected black lines to consider that ratio changed and trigger recrop
+}}
+{{Option
+|name=autocrop-non-black-pixels
+|value=integer
+|default=3
+|description=The maximum of non-black pixels in a line to consider that the line is black
+}}
+{{Option
+|name=autocrop-skip-percent
+|value=integer
+|default=17
+|min=0
+|max=100
+|description=Percentage of the line to consider while checking for black lines. This allows skipping logos in black borders and crop them anyway
+}}
+{{Option
+|name=autocrop-luminance-threshold
+|value=integer
+|default=40
+|min=0
+|max=128
+|description=Maximum luminance to consider a pixel as black <noinclude>(0-255)[[#Note|*]]</noinclude><includeonly>(0-128)</includeonly>
+}}</onlyinclude>
+
+== Note ==
+This must be a typo. Despite the [https://git.videolan.org/?p=vlc.git;a=blob;f=modules/video_filter/crop.c;h=2584780d98bb8527f9aacf540721a4ed5b852833;hb=c638a67c52980404d2aa6f6851b455743a898820#l97 claim of a range of <code>0-255</code>] in the help text for the <code>--autocrop-luminance-threshold</code> option,  [https://git.videolan.org/?p=vlc.git;a=blob;f=modules/video_filter/crop.c;h=2584780d98bb8527f9aacf540721a4ed5b852833;hb=c638a67c52980404d2aa6f6851b455743a898820#l129 the call] to <code>[https://git.videolan.org/?p=vlc.git;a=blob;f=include/vlc_configuration.h;h=bdbb11026492436f7f7297e096a8c62f8e899b68;hb=c638a67c52980404d2aa6f6851b455743a898820#l344 add_integer_with_range]</code> would have limited this to effectively <code>0-128</code>.
+
+== Source code ==
+* {{VLCSourceFile|p=vlc/vlc-2.0.git|modules/video_filter/crop.c}}
+
+{{Documentation}}

@@ -1,0 +1,2 @@
+Yes you can. Read [[VLC HowTo/Play multiple instances|this
+documentation]].

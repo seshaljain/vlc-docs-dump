@@ -1,0 +1,3 @@
+#REDIRECT [[Codec]]
+
+[[Category:Glossary]]

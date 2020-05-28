@@ -1,0 +1,7 @@
+{{Mmwiki|Philips Overlay Graphics Text}}
+
+OGT is a format for [[subtitles]] on [[SVCD]]s. See {{VLCSourceFile|doc/subtitles/svcd-ogt-subtitles.txt}}. It is decoded through {{VLCSourceFile|modules/codec/svcdsub.c}}.
+
+{{Stub}}
+
+[[Category:Subtitles]]

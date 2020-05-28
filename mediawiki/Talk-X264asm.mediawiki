@@ -1,0 +1,2 @@
+Should this be here? [[User:The thing|The thing]] <sup>([[User talk:The thing|Talk]] • [[Special:Contributions/The thing|Contribs]])</sup> 19:39, 18 February 2012 (CET)
+:Yes, because it provides the source (or rather, reference) to the x264 project's intro to ASM. [[User:Edwardw|Edwardw]] 22:52, 18 February 2012 (CET)

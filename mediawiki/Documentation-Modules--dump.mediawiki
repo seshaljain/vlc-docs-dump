@@ -1,0 +1,5 @@
+{{Module|name=dump|type=Access filter|first_version=0.9.0|description=dump data to disk}}
+
+{{Stub}}
+
+{{Documentation footer}}

@@ -1,0 +1,43 @@
+{{Module|name=wall|type=Video output splitter|description=Splits the video output in several windows}}
+
+You can use this module to split a video output in several small windows. This is especially useful if you want to display parts of the same video on several computers to make a big video wall.
+
+The option <code>--wall-element-aspect</code> is 
+{{Commitdiff|b75bde9e40dd0f7726a381c0dd2af571144b68ab|l=planned to be removed from 4.0.0}} to fix {{Bug|17433}} and {{Bug|213}}. The option is redundant, and there will still be a way to select a custom ratio.
+
+For the option <code>--wall-active</code>, list the integers of the windows. To select windows 2, 3 and 5 specify <kbd>--wall-active=2,3,5</kbd>.
+
+== Options ==
+<onlyinclude>{{Option
+|name=wall-cols
+|value=integer
+|min=1
+|max=15
+|default=3
+|description=Number of horizontal windows in which to split the video
+}}
+{{Option
+|name=wall-rows
+|value=integer
+|min=1
+|max=15
+|default=3
+|description=Number of vertical windows in which to split the video
+}}
+{{Option
+|name=wall-active
+|value=string
+|default=NULL
+|description=Comma-separated list of active windows, defaults to all
+}}
+{{Option
+|name=wall-element-aspect
+|value=string
+|default=4:3
+|description=Aspect ratio of the individual displays building the wall
+}}</onlyinclude>
+
+== Source code ==
+* {{VLCSourceFile|modules/video_splitter/wall.c}}
+
+{{Documentation footer}}

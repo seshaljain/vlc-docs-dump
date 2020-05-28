@@ -1,0 +1,1 @@
+[[Category:Diagrams]] [[Category:VLC 2.1.0-rc images]]

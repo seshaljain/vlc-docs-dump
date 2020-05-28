@@ -1,0 +1,351 @@
+{{Back to|Hacker Guide}}
+This page lists the content of the {{VLCSourceFolder|modules}} directory in the [[{{#rel2abs:../VLC source tree}}|source tree of VLC]], aimed at giving new beginners an overview of the code.
+
+The directories are listed in alphabetical order, with an overview of their contents on the right. Any first level subdirectories are shown as well.
+
+For detailed documentation on VLC modules, please see '''[[Documentation:Modules]]'''.
+
+'''''Note:''''' This table is by no means exhaustive. Note that only plugins with their own subdirectories are listed; plugins inside the parent directories are not emphasized unless they are too important. For a comprehensive list of the plugins VLC makes use of, consult {{VLCSourceFile|modules/MODULES_LIST}} in your source code checkout.
+
+{| class="wikitable"
+|-
+! Directory Name        
+! Subdirectory Name
+! Directory Explanation
+|-
+|access
+|
+|protocols to access streams through network (http,ftp,fake,tcp,udp etc.), access to physical media like cd's and dvd's
+|-
+|
+|cdda
+|input module to read audio CDs
+|-
+|
+|dshow
+|DirectShow access plugin for encoding cards under Windows
+|-
+|
+|dvb
+|input module for DVB-S/C/T streaming using v4l2 API
+|-
+|
+|[[Documentation:Modules/mms|mms]]
+|MMS over TCP, UDP and HTTP access module
+|-
+|
+|rtsp
+|
+|-
+|
+|[[Documentation:Modules/screen|screen]]
+|an input module that takes screenshots of the primary monitor
+|-
+|
+|vcd
+|input module for accessing Video CDs.
+|-
+|
+|vcdx
+|input module for accessing Video CDs with navigation & stills
+|-
+|
+|
+|
+|-
+|access-filter
+|
+|Includes the following filters: [[Documentation:Modules/timeshift|timeshift]], [[Documentation:Modules/record|record]], [[Documentation:Modules/dump|dump]], which are used for ?????
+|-
+|
+|
+|
+|-
+|access-output
+|
+|
+|-
+|
+|
+|
+|-
+|audio-filter
+|
+|Various audio filters like decoders, equalizers, converters.
+
+|-
+|
+|channel-mixer
+|Various mixers and decoders like Dolby decoder
+|-
+|
+|converter
+|Fixed and floating-point audio format conversions such as AC/3 or MPEG I-II Audio Layer 1, 2, 3 decoding
+|-
+|
+|resampler
+|Various audio resampler
+|-
+|
+|
+|
+|-
+|audio-mixer
+|
+|Mixer plugins.
+|-
+|
+|
+|
+|-
+|audio-output
+|
+|Audio output plugins like ALSA, OSS and DirectX audio.
+|-
+|
+|
+|
+|-
+|codec
+|
+|This directory includes various codecs, notably ''ffmpeg'' which is used for encoding and decoding various formats.
+|-
+|
+|cmml
+|Continuous Media Markup Language annotations/hyperlinks decoder
+|-
+|
+|dmo
+|a DirectMediaObject decoder that uses DirectMedia to decode video (WMV3)
+|-
+|
+|ffmpeg
+|Video decoder using the ffmpeg library
+|-
+|
+|spudec
+|RLE DVD subtitles decoder
+|-
+|
+|xvmc
+|XVMC video output and decoder
+|-
+|
+|
+|
+|-
+|control
+|
+|Various interfaces to control the player: gestures, hotkeys, lirc, remote control (rc) and telnet
+|-
+|
+|[[Documentation:Modules/http intf|http]]
+|HTTP remote control webinterface
+|-
+|
+|
+|
+|-
+|demux
+|
+|Various demuxers
+|-
+|
+|asf
+|ASF demuxer
+|-
+|
+|avi
+|AVI File stream demuxer
+|-
+|
+|mp4
+|MP4 file input module
+|-
+|
+|mpeg
+|
+|-
+|
+|playlist
+|playlist import module???
+|-
+|
+|
+|
+|- 
+|gui
+|
+|GUI's for different platforms and the [[Documentation:Modules/ncurses|ncurses ]] interface
+|-
+|
+|[[Documentation:Modules/beos|beos]]
+|Audio output, video output and interface module for BeOS.
+|-
+|
+||[[Documentation:Modules/macosx gui|macosx]]
+|Video output, and interface module for Mac OS X.
+|-
+|
+|pda
+|interface for iPaq using the Gtk2+ widget set.
+|-
+|
+|qnx
+|QNX RTOS plugin
+|-
+|
+||[[Documentation:Modules/Qt4|qt4]]
+|interface module using the cross-platform Qt4 library: Multi-platform. This interface will be the default one upon subsequent releases.
+|-
+|
+||[[Documentation:Modules/skins2|skins2]]
+|Skinnable interface, new generation
+|-
+|
+|wince
+|Pocket PC interface
+|-
+|
+|wxwidgets
+|interface module using the cross-platform wxWindows library: Multi-platform. The default interface as of VLC 0.86a.
+|-
+|
+|
+|
+|-
+| meta-engine
+|
+|
+|-
+|
+|
+|
+|- 
+|misc
+|
+|
+|-
+|
+|dummy
+|Dummy (no GUI) audio output, video output, interface and input modules.
+|-
+|
+|memcpy
+|memory chunk copying module.
+|-
+|
+|notify
+|notifications using libnotify
+|-
+|
+|playlist
+|
+|-
+|
+|probe
+|
+|-
+|
+|testsuite
+|
+|-
+|
+|xml
+|LibXML and xtag xml parsers
+|-
+|
+|
+|
+|-
+|mux
+|Various Muxers
+|
+|-
+|
+|mpeg
+|
+|-
+|
+|rtp
+|
+|-
+|packetizer
+|
+|Packetizers for H264/AVC and MPEG 4 audio and video streams.
+|-
+|
+|
+|
+|-
+|services-discovery
+|
+|
+|-
+|
+|
+|
+|-
+|stream-out
+|
+|-
+|
+|transrate
+|
+|-
+|
+|
+|
+|-
+| video-chroma
+|
+|Image conversions such as YUV to RGB
+|-
+|
+|
+|
+|-
+| video-filter
+|
+|Various video filters like [[Documentation:Modules/deinterlace|Deinterlace]], [[Documentation:Modules/transform|Transform]], [[Documentation:Modules/wall|Wall]], [[Documentation:Modules/crop|Crop]], [[Documentation:Modules/panoramix|Panoramix]] etc.
+|-
+|
+|
+|
+|-
+| video-output
+|
+|-
+|
+|directx
+|Video output module using the [[Documentation:Modules/direct3d|Direct3D]] and [[Documentation:Modules/directx vout|Direct X]] API's ; [[Documentation:Modules/glwin32|OpenGL]]  for Windows.
+|-
+|
+|qte
+|video output module for Qt Embedded.
+|-
+|
+|[[Documentation:Modules/x11|x11]]
+|video output module using the X11 API.
+|-
+|
+|
+|
+|-
+|visualization
+|
+|Several visualizations, including [[Documentation:Modules/goom|goom]]
+|-
+|
+|galaktos
+|a visualization module that outputs OpenGL
+|-
+|
+|visual
+|visualisation system
+|}
+
+See Also: [http://www.videolan.org/doc/vlc-user-guide/en/ch02.html VLC User Guide - Chapter 2.  Modules and options for VLC ]
+
+[[Category:Building]]
+{{Hacker_Guide}}

@@ -1,0 +1,1 @@
+The action you have requested is limited to users in {{PLURAL:$2|the group|one of the groups}}: $1. {{#ifeq:$1|[[{{ns:4}}:{{MediaWiki:Group-autoconfirmed}}{{!}}{{MediaWiki:Group-autoconfirmed}}]]|Would you like to [[Special:CreateAccount{{!}}create an account]]?|}}

@@ -1,0 +1,5 @@
+Copy prevention (sometimes known as copy protection) is a technical measure designed to make copying media more difficult, usually by causing errors in what are assumed to be unauthorised copies.
+
+Copy prevention for [[DVD]]s is called Content-Scrambling System (CSS). VLC can play such DVDs with [[libdvdcss]].
+
+[[Category:Glossary]]

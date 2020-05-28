@@ -1,0 +1,89 @@
+<div style="margin:-1px -1px 5px 8px; float:right; padding:0px; border:1px solid #c6c9ff; width:12em; background-color:#f0f0ff;">
+<div style="padding: 0.5em 0.7em; border-bottom:1px solid #c6c9ff; background-color:#e1e1ff;">'''[[macOS|User Guide]]'''</div>
+<div style="padding:0.7em; font-size:90%;">
+[[Documentation:Play_HowTo/Installing_VLC|'''Installation''']]
+
+[[vlc_MacOS_VLC|'''VLC''']]
+* [[vlc_MacOS_VLC|About]]
+* [[vlc_MacOS_VLC|Check ...]]
+* [[vlc_MacOS_VLC_Preferences|Preferences]]
+* [[vlc_MacOS_VLC#Add_Interface|Add Interface]]
+
+[[vlc_MacOS_File|'''File''']]
+* [[vlc_MacOS_File#Activity tab|Open File]]
+* [[vlc_MacOS_File#Transfers tab|Quick Open File]]
+* [[vlc_MacOS_File#Activity tab|Open Disk]]
+* [[vlc_MacOS_File#Transfers tab|Open Network]]
+* [[vlc_MacOS_File#Activity tab|Services Discovery]]
+* [[vlc_MacOS_File#Transfers tab|Streaming & Export Wizard]]
+* [[vlc_MacOS_File#Activity tab|Save Playlist]]
+
+[[vlc_MacOS_Edit|'''Edit''']]
+* [[vlc_MacOS_Edit#Connection options|Cut]]
+* [[vlc_MacOS_Edit#Transfer options|Copy]]
+* [[vlc_MacOS_Edit#Connection options|Paste]]
+* [[vlc_MacOS_Edit#Transfer options|Clear]]
+* [[vlc_MacOS_Edit#Connection options|Select All]]
+* [[vlc_MacOS_Edit#Transfer options|Special Characters...]]
+
+[[vlc_MacOS_Playback|'''Playback''']]
+* [[vlc_MacOS_Playback|Play Stop]]
+* [[vlc_MacOS_Playback|Step Forward]]
+* [[vlc_MacOS_Playback|Jump to time]]
+* [[vlc_MacOS_Playback|Previous]]
+* [[vlc_MacOS_Playback|Random]]
+* [[vlc_MacOS_Playback|Repeat]]
+* [[vlc_MacOS_Playback|Add Folder]]
+* [[vlc_MacOS_Playback|Program]]
+* [[vlc_MacOS_Playback|Title]]
+* [[vlc_MacOS_Playback|Chapter]]
+
+[[vlc_MacOS_Audio|'''Audio''']]
+* [[vlc_MacOS_Audio|Volume Up/Down/Mute]]
+* [[vlc_MacOS_Audio|Visualisations]]
+* [[vlc_MacOS_Audio|Audio Device]]
+* [[vlc_MacOS_Audio|Audio Track]]
+* [[vlc_MacOS_Audio|Audio Channels]]
+
+[[vlc_MacOS_Video|'''Video''']]
+* [[vlc_MacOS_Video|Half/Normal/Double/Fit to screen]]
+* [[vlc_MacOS_Video|Full Screen]]
+* [[vlc_MacOS_Video|Float on top]]
+* [[vlc_MacOS_Video|Snapshot]]
+* [[vlc_MacOS_Video|Deinterlace]]
+* [[vlc_MacOS_Video|Post-processing]]
+* [[vlc_MacOS_Video|Aspect Ratio]]
+* [[vlc_MacOS_Video|Crop]]
+* [[vlc_MacOS_Video|Video device]]
+* [[vlc_MacOS_Video|Video track]]
+* [[vlc_MacOS_Video|Subtitles track]]
+
+[[vlc_MacOS_Window|'''Window''']]
+* [[vlc_MacOS_Window|Minimise]]
+* [[vlc_MacOS_Window|Close]]
+* [[vlc_MacOS_Window|Controller]]
+* [[vlc_MacOS_Window|Playlist]]
+* [[vlc_MacOS_Window|Information]]
+* [[vlc_MacOS_Window|Extended Controls]]
+* [[vlc_MacOS_Window|Equaliser]]
+* [[vlc_MacOS_Window|Bookmarks]]
+* [[vlc_MacOS_Window|Messages]]
+* [[vlc_MacOS_Window|Bring All to Front]]
+
+[[vlc_MacOS_Help|'''Help''']]
+* [[vlc_MacOS_Help#Distributed DB|Read Me]]
+* [[vlc_MacOS_Help#Distributed Tracker|Online Documentation]]
+* [[vlc_MacOS_Help#Distributed DB|Report a bug]]
+* [[vlc_MacOS_Help#Distributed Tracker|Online Forum]]
+* [[vlc_MacOS_Help#Distributed DB|Make a donation]]
+* [[vlc_MacOS_Help#Distributed Tracker|VideoLAN licence]]
+* [[vlc_MacOS_Help#Distributed Tracker|Licence]]
+
+
+'''[[macOSFAQ|Frequently Asked Questions]]'''
+</div>
+
+&nbsp;<small>[[Template:vlc_MacOS_toc|view this alone]]</small><br>
+</div>
+[[Category:macOS]]
+<noinclude>[[Category:Navigation templates]]</noinclude>

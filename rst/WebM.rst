@@ -1,0 +1,15 @@
+{{MuxWebM container\ https://www.webmproject.org/docs/container/}}
+
+WebM is an [[open source]] project sponsored by Google to create a free,
+high-efficiency multimedia codec for the Internet.
+
+WebM is also the name of the container format it uses. The format may
+use either [[VP8]] or [[VP9]] as the [[video codec]] and [[Vorbis]] or
+[[Opus]] as the [[audio codec]].
+
+The default format for {{VLC}} is [[VP8]]0 with [[Vorbis]].
+
+== Links == \* [http://wiki.webmproject.org/ WebM Wiki] \*
+[https://www.webmproject.org/ WebM Project - Home Page]
+
+[[Category:Third parties]]

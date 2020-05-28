@@ -1,0 +1,3 @@
+#REDIRECT [[VLC Dev Projects]]
+
+[[Category:VideoLAN projects]]

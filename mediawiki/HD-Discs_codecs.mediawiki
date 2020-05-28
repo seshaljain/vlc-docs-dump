@@ -1,0 +1,95 @@
+<noinclude><div class="plainlist">
+* ← Back to [[VLC Features Formats]]
+* ← Back to [[HD-Discs]]
+</div>
+</noinclude>{| class="wikitable codec-table centered sortable"
+|+ '''HD-Disc codecs support''' 
+|- class="nowrap"
+! Codec !! VLC 1.0 !! VLC 1.1 !! VLC 1.2 !! VLC 3.0.6 || Remarks
+|-
+! H.264 
+| {{Yes}} 
+| {{Yes}} 
+| {{Yes}} 
+|
+| GPU acceleration recommended<br>[[VLC DxVA2]] or [[VLC VAAPI]].
+|-
+! VC-1 
+| {{partial}} 
+| {{partial}} 
+| {{partial}}
+|
+| VC-1 Interlaced isn't ready<br>
+|-
+! MPEG-2 
+| {{Yes}} 
+| {{Yes}} 
+| {{Yes}}  
+|
+| FFmpeg or libmpeg2<br>
+|-
+! EAC3 
+| {{Yes}} 
+| {{Yes}} 
+| {{Yes}} 
+|
+| FFmpeg, libavcodec &gt; 52.0
+|-
+! TrueHD 
+| {{Yes}} 
+| {{Yes}} 
+| {{Yes}} 
+|
+| FFmpeg, libavcodec &gt; 52.40
+|-
+! DTS Core 
+| {{Yes}} 
+| {{Yes}} 
+| {{Yes}} 
+|
+| libdca or FFmpeg
+|-
+! DTS-HD Master Audio 
+| {{No}} 
+| {{no}} 
+| {{no}} 
+|
+| Core is played
+|-
+! Blu-Ray Subtitles 
+| {{No}} 
+| {{Yes}}, libavcodec &gt; 52.40 
+| {{Yes}} 
+|
+| FFmpeg<br>
+|-
+! HD-DVD Subtitles 
+| {{No}} 
+| {{No}} 
+| {{No}} 
+|
+| <br>
+|-
+! HD-DVD Files (.evo) 
+| {{No}} 
+| {{No}} 
+| {{No}} 
+|
+| 
+|-
+! Blu-Ray folders 
+| {{partial}} 
+| {{partial}} 
+| {{partial}}
+|
+| 
+|-
+! Discs 
+| {{No}} 
+| {{No}} 
+| {{partial}}
+|
+| <br>
+|}<noinclude>
+[[Category:Codecs]]
+</noinclude>

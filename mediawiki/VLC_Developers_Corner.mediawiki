@@ -1,0 +1,76 @@
+__NOTOC__ __NOEDITSECTION__
+<!-- Beginning of the banner section -->
+{{Banner
+|description=A directory of everything to do with the development of VideoLAN's projects.<br />
+Check [[VLC media player|VLC's page]] to get info on VLC.
+|links=
+* [[VideoLAN]]
+* [[VLC media player]]
+** [https://addons.videolan.org Add-ons]
+* [[Documentation:Documentation|Documentation]]
+* [[VideoLAN_Sites#Developers|Developers' Sites]]
+|links2=
+* [https://www.videolan.org/developers Developer Zone]
+* [https://nightlies.videolan.org Nightly builds]
+* [https://jenkins.videolan.org Automatic builds]
+|links3=
+* [https://trac.videolan.org Trac, bugs, features, roadmap]
+* [https://www.videolan.org/videolan/mirrors.html Mirrors check]
+* [ftp://ftp.videolan.org/pub/videolan/ Main FTP]
+}}
+<!-- End of the banner section -->
+
+== Coding on VLC ==
+* [[Getting Started At Coding|Get started at coding on VLC]]
+* Get the [[GetTheSource|Source Code]] and [[Compile VLC]]
+* You might be interested in our [[Mini Projects]] or [[GCodeIn_Ideas|Janitorial projects]]
+* Read our [[Hacker_Guide|Hacker's Guide]]
+** [[Hacker_Guide/Core|Introduction to VLC's core]]
+** [[Hacker Guide/How To Write a Module|How to write a module]]
+** [[Documentation:VLC_Modules_Loading|How VLC modules load]]
+* [https://www.videolan.org/developers/vlc/doc/doxygen/html/ Code documentation]
+* [[Code Conventions]]
+
+=== VLC development links ===
+* [https://trac.videolan.org/vlc/ Trac] list of bugs
+* vlc-devel [https://www.videolan.org/developers/lists.html mailing list], mailing list.
+* [https://www.videolan.org/developers/i18n/ Translation information and stats]
+* [https://www.openhub.net/p/vlc Open Hub] statistics
+* [https://jenkins.videolan.org Jenkins] (Automatic builds)
+* [[Nightly build]]s
+* Launchpad ([https://bugs.launchpad.net/distros/ubuntu/+source/vlc/+bugs?field.searchtext=vlc&orderby=-date_last_updated&search=Search&field.status%3Alist=Unconfirmed&field.status%3Alist=Confirmed&field.status%3Alist=In+Progress&field.status%3Alist=Needs+Info&field.status%3Alist=Fix+Committed&field.assignee=&field.owner=&field.omit_dupes=on&field.has_patch=&field.has_no_package= recent bug changes]) ([https://bugs.launchpad.net/distros/ubuntu/+source/vlc/+bugs all bugs])
+* [https://code.videolan.org/ code.videolan.org]
+* [https://git.videolan.org/ git.videolan.org]
+
+== Current technical discussions on VLC ==
+* [[Usability Complaints]]
+* [[WaylandIntegration|Wayland integration]]
+
+=== Past discussions ===
+* [[VoutRework|Vout Rework]] - improving the video output subsystem.
+* [[telnet rc rewrite]] - Merging the "telnet" and "rc" controls.
+* [[SimplePreferences|Simple Preferences]] - We wish to add a "simple" preferences mode, additionally to the full mode we already have.
+* [[QtIntfTODO|Qt Interface TODO]] - A brand new qt4 interface ... in order to get rid of wxWidgets.
+** [[QtIntfMockups]]
+*** [[QtImageset]]
+*** [[QtIntfMockups-DericksIdea]]
+* [[Qt and GTK]]
+* [[DBus-spec]] - Specification for a Common, Desktop neutral, Media Player D-Bus interface.
+* [[StatsSystem |Stats System]]
+* [[InteractionSystem]] - Interaction System
+* [[MediaControlAPI|Media Control API]] - a '''OUTDATED''' high level player-independent media API 
+* [[0.8.5StringReview]]
+* [[2005StringsReview]]
+* [[Libavcodec regressions]]
+* [[Mobile Features]]
+* [[AndroidTODO]] - moved to [https://trac.videolan.org/vlc/report/27 Trac report 27]
+* [[SDI API]] - Linux-related: regarding [[wikipedia:Serial digital interface|SDI]] cards for [[V4l2]]
+* [[Newplaylist]]
+* [[Newsoundslider]]
+* [[BOMM3U]] - [[wikipedia:Byte order mark|Byte order mark]] for [[M3U]] playlists. <code>#EXTM3U</code> means [[wikipedia:M3U#Extended_M3U|Extended M3U]]
+
+=== Design ===
+* [[WebsiteRedesign|Website Redesign]] and [[WebsiteDesign|Design Proposals]]
+* [[DefaultSkinRequirements|Default Skin Requirements]] - Specifications of an eligible skin for default skin.
+
+[[Category:Development]]

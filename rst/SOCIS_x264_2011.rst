@@ -1,0 +1,168 @@
+==Introduction to x264 and Summer of Code== [[x264]] is one of the most
+popular video compression libraries in the world, used worldwide for
+applications such as web video, television broadcast, and Blu-ray
+authoring. It outclasses practically all commercial implementations both
+speed and compression-wise. While not actually part of VLC or ffmpeg, it
+is a major library used by both, licensed under the GPL. Due to its
+popularity in the commercial world (for example, Youtube and Facebook
+rely on it), many companies have offered bounties in the past for
+features and improvements that they found useful.
+
+But don't let that all scare you. There's still plenty of projects that
+a student can effectively get involved in -- we've had tons of
+successful students, both in Google Summer of Code and Google Code-In,
+most of whom knew nothing about video compression before applying.
+
+*Lead mentor (and author of this page): Jason Garrett-Glaser (Dark
+Shikari)*\ Possible other mentors: Ronald Bultje (BBB)?, Kieran Kunhya
+(kierank)
+
+An overview of x264's structure and algorithms can be found
+[http://akuvian.org/src/x264/overview_x264_v8_5.pdf here]. It is
+somewhat outdated, but still mostly accurate. Do note that understanding
+this is not necessary for all projects.
+
+On a lighter note, feel free to check out the
+[http://www.x264.nl/developers/Dark_Shikari/loren.html x264 developer
+quotes page].
+
+==Guide to getting involved== *Hop on IRC--whenever! We have a friendly
+community that's happy to help and to talk about pretty much whatever.
+#x264 is the general discussion/user help channel and #x264dev is the
+development-only channel (Freenode server). If you've never used IRC,
+grab Chatzilla. There is no such thing as a stupid question--only stupid
+people--so don't worry about sounding dumb. Just get involved!*\ Ask
+questions--I cannot stress this enough. We've had students who couldn't
+get anywhere because they were stuck--but didn't ask questions! There's
+no shame in asking questions; that's how everyone here got involved.
+*'''Stay on IRC'''. Even if you have nothing to say, being around lets
+you get to know the community, get a feel for what's going on, and even
+sometimes help out by pointing the semicolon I left at the end of my if
+statement. This applies during the project period too: we expect all
+students to '''always be on IRC'''. This doesn't mean you have to be
+actually active all the time, but whenever you're free, you should be at
+least pingable on IRC, and whenever you're working on Summer of Code,
+you should be active on IRC.The best option for staying online is to get
+a remote shell account of some sort and leave an IRSSI client on 24/7 in
+a screen. This lets you easily come back in the morning and see if you
+missed anything important. checkers can provide you with a shell if you
+end up being accepted as a student.*\ Even if you don't get a slot as a
+student, or you don't qualify for Summer of Code, we will happily
+provide you with the exact same support that we would give a student: it
+is quite reasonable and not at all uncommon for us to have projects of
+similar scale to Summer of Code be done by students who are not part of
+the Summer of Code program.
+
+==Skills needed== These are required for all listed projects and
+probably anything not listed, too. *Basic C programming.*\ Basic
+understanding of video encoding, or at least willingness to do the
+appropriate reading up on the topic before the summer begins. Most
+people who get involved don't know much to start with; we don't expect
+you to! *To work on anything related directly to the encoder core (not
+all projects), you'll need to do some significant background reading on
+relevant topics.*\ \*A PDF with a chapter that can serve as a primer to
+video compression can be found
+[http://www.mediafire.com/download.php?auxd23m2snw here]. It also has
+some more specific chapters on MPEG-4 Part 10 (H.264).
+
+==Projects== We are only accepting one student this year as part of
+SOCIS. Thus, you will have to prove that you are absolutely able to do
+your project over the summer--see the qualification tasks. Do remember
+that the project ideas listed here are merely suggestions; other ideas
+are always possible if they fit the time and difficulty constraints of
+SoC. For example, if you have an idea to improve compression (e.g.
+implementing a new algorithm) that you think we can benefit from, feel
+free to bring it up.
+
+===Optimization (ARM)=== x264 prides itself on being one of the most
+optimized programs in existence while still being reasonably readable
+and maintainable. This project is about furthering that goal: make it
+even faster without sacrificing code quality.
+
+x264's ARM NEON assembly code is well behind its x86 assembly and is
+missing many optimizations. This project would involve finishing up the
+ARM assembly (originally done as part of Summer of Code 2009), giving us
+a much-needed performance boost on ARM.
+
+NEON knowledge is highly recommended but not required -- but you will
+have to learn somehow or another. We have a few NEON experts in the
+community who can help, but none are available for full-time mentoring,
+so keep this in mind when picking this project. There are also experts
+from ARM Shanghai who are optimizing x264 who may also be able to help.
+
+===GPU motion estimation=== While porting x264 entirely to CUDA or
+OpenCL is an insane task, there are three possible methods that could be
+used to offload some work to the GPU:
+
+*High-complexity motion search designed to get useful predictors to be
+used by the main motion search.*\ Massively parallelized lookahead
+motion search, designed to do a lot of the work normally done in the
+lookahead thread. May also improve B-frame decision and other parts of
+the lookahead. \*Motion search designed to completely replace x264's
+main motion search: would require a lot of threading trickery to sync it
+perfectly with the main encoder threads.
+
+The general algorithm that has been agreed on after a great deal of
+discussion is the hierarchical search method. If you have a better idea,
+feel free to propose it, of course. More description of this method is
+in the Qualification Tasks section.
+
+'''This project is not recommended unless you have a very significant
+amount of experience with CUDA or OpenCL.'''
+
+==Qualification tasks== Unlike many other projects, such as ffmpeg,
+x264's policy for qualification tasks is to use tasks that are directly
+useful to ''you'' for your summer project. That is, the projects
+directly lead you into the start of your project and create a base for
+you to work off for the rest of the summer. This is, in our opinion,
+much better than making you work on something completely unrelated.
+We're willing to give all the technical help you need, but of course we
+won't write the code for you. "Passing" a qualification task is at the
+mentor's discretion. Note these are designed to be '''relatively
+difficult''' and help lead you into your main project. If you can't do
+the qualification task for the project, you surely cannot do the project
+either!
+
+Again, to reiterate, we will guide you through as much of the codebase
+as you need to do your work. '''This page is not supposed to give you
+all the information you need to do these tasks: you are expected to
+contact us for more information.''' Feel free to ask tons of questions.
+On #x264dev IRC channel on Freenode, of course.
+
+None of these tasks are supposed to take more than a few days to a week
+of work. '''If you successfully complete one, we will almost surely
+accept you as a student.'''
+
+===Optimization (ARM)=== If you're interested in the optimization task,
+the qualification task is to speed up x264 on ARM by at least 2% by
+writing new NEON functions.
+
+===GPU Motion Estimation=== Your task for this project will be to write
+a C version of your final algorithm. It doesn't need to deal with any of
+the corner cases; all it has to do is run before the main encoding loop,
+deciding the motion vectors for the frame. It doesn't even have to work
+with threading. It doesn't have to support sub-16x16 partitions either.
+Assuming you didn't propose another, the hierarchical search works via
+the following algorithm:
+
+-  Set N equal to 2^M, where M is an integer. A common M is 4.
+
+\* WHILE N is greater than 1: :\* Downscale the image (from the
+original) by a factor of N. :\* Do an ordinary diamond motion search on
+the image with block size 16x16. Assume the predicted motion vector to
+be equal to the median of the top, left, and top right motion vectors
+(as per H.264 MV prediction)... but use the motion vectors from the
+previous iteration, not the current for these (this is what allows you
+to parallelize things with CUDA). :\* For each block after searching,
+split the motion vectors of that block into 4 separate (but equal)
+motion vectors. These will be used as the starting point for the
+searches in the next iteration. Each iteration progressively refines the
+result at a progressively lesser downscale. :\* N = N/2 \* Do a final
+refine at no downscale at all.
+
+==Contact info== If you are interested, drop by #x264dev or #x264 on
+Freenode and ping Dark Shikari.
+
+{{GSoC}}
+
+[[Category:SoC]] [[Category:x264]]

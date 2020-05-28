@@ -1,0 +1,3 @@
+Hello VLC opens all and how we do just to open video or music? I can not
+just open video or music it opens up everything while I remove and
+reinstall and the same thing ... it opens all really fun ...

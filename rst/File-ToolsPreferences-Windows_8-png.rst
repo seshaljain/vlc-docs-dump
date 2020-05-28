@@ -1,0 +1,4 @@
+Tools Preferences - 2.1.0rc2 - Windows 8
+
+[[Category:Preferences images]] [[Category:Qt images]] [[Category:VLC
+2.1.0-rc images]] [[Category:VLC menus]]

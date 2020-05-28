@@ -1,0 +1,22 @@
+{{Back to|VSG:Main}}
+[[File:Cone-Subs-large.png|right|170px|alt=]]
+==Problems with subtitles==
+What is the problem with subtitles? 
+{{VSGEntry|VLC does not render the subtitles correctly|VSG:Subtitles:Rendering|Subtitles are replaced with question marks or squares.}} 
+{{VSGEntry|VLC doesn't display all subtitles|VSG:Subtitles:Encoding|Some subtitles are not properly displayed in VLC.}}
+{{VSGEntry|Pause disabled by dragging subtitles|VSG:Subtitles:Dragging|Dragging and dropping the subtitles to VLC disables pause}} 
+{{VSGEntry|SSA and ASS subtitles look horrible|VSG:Subtitles:HorribleLook|SSA and ASS subtitles look horrible and don't support all styles}}
+
+
+==How do I...==
+{{VSGEntry|Disable hardcoded subtitles?|VSG:Subtitles:Hardcoded|How can I disable hardcoded subtitles?}} 
+{{VSGEntry|Disable subtitles by default?|VSG:Subtitles:Disable|How can I disable viewing subtitles by default but keep them available?}} 
+{{VSGEntry|Change font?|VSG:Subtitles:Font|How do I change the font or the font colour?}}
+{{VSGEntry|Select the right subtitle track?|VSG:Subtitle:Track|How can I choose a specific subtitle track?}} 
+{{VSGEntry|Adjust subtitle delay?|VSG:Subtitle:Delay|How do I change the delay for the subtitles?}} 
+{{VSGEntry|Change subtitle text encoding?|VSG:Subtitle:Encoding|How do I change the type of subtitle encoding?}} 
+{{VSGEntry|Select a unicode font?|VSG:Subtitle:Unicode|How can I select a Unicode font, so I can watch e.g. Chinese subtitles?}} 
+
+{{VSG}}
+
+[[Category:Subtitles]]

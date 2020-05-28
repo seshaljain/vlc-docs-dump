@@ -1,0 +1,3 @@
+Streaming Destinations Screenshot (VLC version 1.1.11
+
+[[Category:VLC 1.1.x images]]

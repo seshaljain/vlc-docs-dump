@@ -1,0 +1,4 @@
+Pages licensed under the GPL. Use {{tl|Documentation footer}} to add the
+pages to this category
+
+[[Category:Page licenses]]

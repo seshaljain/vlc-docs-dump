@@ -1,0 +1,3 @@
+See [https://trac.videolan.org/vlc/report/27 trac report 27].
+
+[[Category:Android]] [[Category:Dev Discussions]]

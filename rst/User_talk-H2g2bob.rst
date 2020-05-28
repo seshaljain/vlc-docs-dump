@@ -1,0 +1,67 @@
+I see that you've been working on the main page. Would you like to have
+access to the real main page in order to change it instead of a copy ?
+[[User:Dionoea|Dionoea]] 21:44, 14 January 2006 (CET)
+
+: I think the page is pretty much finished (so if you only want to copy
+it that's fine), but it would be quite useful to have access to it in
+case I need to change anything --[[User:H2g2bob|H2g2bob]] 21:53, 14
+January 2006 (CET)
+
+:: I installed the wikimedia SpamBlacklist filter so it should be ok to
+unprotect the Main Page. You can now edit it [[User:Dionoea|Dionoea]]
+22:10, 14 January 2006 (CET)
+
+::: Brilliant: thank you. Just copied it over now
+--[[User:H2g2bob|H2g2bob]] 22:20, 14 January 2006 (CET)
+
+Is there any way to become an admin (sysop) for this site - it would be
+nice to be able to change pages like [[Help:Contents]] to have something
+on them. --[[User:H2g2bob|H2g2bob]] 19:06, 16 January 2006 (CET)
+
+: there you go :) Thanks for the help btw. [[User:Dionoea|Dionoea]]
+23:41, 16 January 2006 (CET)
+
+I started a bit of cleanup of the Main Page, and would like to clean a
+bit more all the wiki. What do you think of it ? [[User:J-bbarnstar]] of
+approval! --[[User:H2g2bobJ-b]] 11:35, 15 December 2006 (CET) :::
+Wouldn't Portal:Developers just be [[Developers Corner]] :-) Categories
+is a must: I think it would be easiest to add them through templates, eg
+a template for muxers like [[ASF]] and [[AVI]] saying what their name is
+when you use them in the command line. --[[User:H2g2bobJ-b]] 19:13, 16
+December 2006 (CET) :::: I finished the Developers corner. And I try to
+reduce the number of orphan page. It seems that your talk page is
+becoming a redesignWiki Page. good night [[User:J-b|J-b]] 03:57, 17
+December 2006 (CET)
+
+: I added a [[Template:mux]] for [[container]] formats (eg: [[ogg]],
+[[mkv]]). I was thinking that perhaps a similar thing would work for
+video / audio codecs, but have them all different colours or something.
+Any views on whether this is a good thing, or what else could be done to
+it? --[[User:H2g2bobJ-b]] 19:13, 16 December 2006 (CET) : I changed the
+left menu. Comments ? A lot of more work to do ![[User:J-bh2g2bob]]
+23:17, 16 December 2006 (CET)
+
+Check out [[VideoLAN_Wiki:TODO]] [[User:J-b|J-b]] 01:58, 18 December
+2006 (CET)
+
+== Good work ==
+
+For the categories stuff! [[User:J-b|jb]] 10:54, 8 March 2007 (CET)
+
+== VideoLAN team map == Hi. I've added a VideoLAN team map on
+http://www.videolan.org/team/. I'd be glad to add you to the map if you
+want to. Have a look at http://www.videolan.org/team/team.xml to see
+what data is required (latitude and longitude can be found on
+http://maps.google.com, the ll=<lat>,<lon> value in the URL). Regards
+[[User:Dionoeah2g2bob]] 17:53, 24 April 2007 (CEST)
+
+== You still here? ==
+
+Do you still come here? [[User:The thingTalk]] •
+[[Special:Contributions/The thing|Contribs]])</sup> 19:33, 18 February
+2012 (CET)
+
+: Not as much as I used to :( But I'm still around! How's it going?
+--dave ::Pretty good, you? [[User:The thingTalk]] •
+[[Special:Contributions/The thing|Contribs]])</sup> 04:38, 20 April 2016
+(CEST)

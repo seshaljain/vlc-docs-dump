@@ -1,0 +1,2 @@
+#REDIRECT [[File:Video effects - basic, with image adjust and sharpen
+selected.png]]

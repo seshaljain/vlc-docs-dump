@@ -1,0 +1,8 @@
+{{Mux|id=telx}}
+{{Website|Teletext|https://pdc.ro.nu/teletext.html|on=PDC Live}}
+
+Teletext is a [[subtitles]] format.
+
+{{Stub}}
+
+[[Category:Subtitles]]

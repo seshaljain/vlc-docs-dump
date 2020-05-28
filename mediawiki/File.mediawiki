@@ -1,0 +1,13 @@
+{{protocol|file}}
+The '''file''' protocol plays files on your PC through the normal file system. This includes your hard drive and any data [[CD]]s or data [[DVD]]s you have (in [[Linux]], these must be [[wikipedia:Mount (computing)|mounted]] before use).
+
+For example:
+ {{%}} vlc "file://C:\My Music\Abracadabra.mp3"
+If no other protocols are used, file:// is assumed:
+ % vlc "C:\My Music\Abracadabra.mp3"
+
+==Module options==
+:''See [[Documentation:Modules/file]]''
+
+==Source code==
+{{file|modules/access/file.c|access module}}

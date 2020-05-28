@@ -1,0 +1,15 @@
+{{Wikipedia|Ogle DVD Player}}
+
+Ogle is an inactive DVD [[media player]] for [[GNU/Linux]] and [[macOS]]<span id="note1_backlink"></span><sup><small>[[#note1|&#x5B;note 1&#x5D;]]</small></sup> released under the GPL. The libraries [[libdvdnav and libdvdread]] are based upon Ogle.
+
+== Notes ==
+<div class="plainlist">
+* <span id="note1"></span><sup>[[#note1_backlink|^&nbsp;note 1]]</sup> macOS (as Mac OS X Version 10.5 Leopard) was [https://www.opengroup.org/openbrand/register/brand3555.htm certified POSIX] after the project page was written
+</div>
+
+== Links ==
+<!--Both links are from https://web.archive.org/web/20030222045443/http://ogle.berlios.de/-->
+* [https://web.archive.org/web/20050207044022/http://developer.berlios.de/projects/ogle/ Project page at developer.berlios.de] (archive)
+* [https://web.archive.org/web/20050206092316/http://www.dtek.chalmers.se/groups/dvd/ Home page at dtek.chalmers.se] (archive)
+
+[[Category:Player]]

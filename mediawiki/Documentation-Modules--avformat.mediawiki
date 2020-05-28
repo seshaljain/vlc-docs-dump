@@ -1,0 +1,47 @@
+{{See also|Documentation:Modules/avcodec}}
+
+[[Muxing]] options are provided as a sub-module and internally depend on the variable <var>ENABLE_SOUT</var>.
+
+== Demux ==
+{{Module|name=avformat|type=Access demux|description=Avformat [[demuxer]]}}
+{{Option
+|name=avformat-format
+|value=string
+|default=NULL
+|description=Internal [[libavcodec]] format name
+}}
+{{Option
+|name=avformat-options
+|value=string
+|default=NULL
+|description=Advanced options, in the form <kbd>{opt=val,opt2=val2}</kbd>
+}}
+
+== Mux ==
+{{Module|name=avformat|type=Muxer|description=Avformat [[muxer]]}}
+{{Option
+|name=sout-avformat-mux
+|value=string
+|default=NULL
+|description=Force use of a specific avformat muxer
+}}
+{{Option
+|name=sout-avformat-options
+|value=string
+|default=NULL
+|description=Advanced options, in the form <kbd>{opt=val,opt2=val2}</kbd>
+}}
+{{Option
+|name=sout-avformat-reset-ts
+|value=boolean
+|default=disabled
+|description=The muxed content will start near a 0 [[timestamp]]
+}}
+
+== Source code ==
+* {{VLCSourceFolder|modules/demux/avformat}} (folder)
+* {{VLCSourceFile|modules/demux/avformat/avformat.c}} (file)
+* {{VLCSourceFile|modules/codec/avcodec/avcommon.h}} (header, defines <var>AV_OPTIONS_LONGTEXT</var> and <var>AV_RESET_TS_LONGTEXT</var> shown here)
+* {{VLCSourceFile|modules/demux/avformat/avformat.h}} (header, defines <var>MUX_LONGTEXT</var> and <var>FORMAT_LONGTEXT</var> shown here)
+
+{{Documentation}}

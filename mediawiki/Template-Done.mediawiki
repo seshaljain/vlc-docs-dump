@@ -1,0 +1,12 @@
+{{checkmark|18}} '''{{{{{|safesubst:}}}ucfirst:{{{1|Done}}}}}'''<!--template:done--><noinclude>
+
+Template to expand to the "Done" text to make the wiki more usable.<br />
+Alternate text (for example, "fixed") can be added using an unnamed parameter and the desired text: <nowiki>{{done|some other text}}</nowiki> gives {{done|some other text}}
+
+== See also ==
+* {{tl|Checkmark}}
+* {{tl|Done}}
+* {{tl|Fixed}}
+
+[[Category:Templates]]
+</noinclude>

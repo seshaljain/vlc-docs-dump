@@ -1,0 +1,25 @@
+{| class="widebox center" style="background:#e0e8f8; font-size:90%; text-align:center;"
+|'''{{{title}}}'''
+|-
+{{#if:{{{list1|}}}<!--
+-->|<!--
+-->{{!}} style="margin:auto 0.25em;" {{!}} {{#if:{{{group1|}}}|'''{{{group1}}}:'''}} {{{list1}}}
+{{!}}- <!--
+-->}}
+{{#if:{{{list2|}}}<!--
+-->|<!--
+-->{{!}} style="margin:auto 0.25em;" {{!}} {{#if:{{{group2|}}}|'''{{{group2}}}:'''}} {{{list2}}}
+{{!}}- <!--
+-->}}
+{{#if:{{{list3|}}}<!--
+-->|<!--
+-->{{!}} style="margin:auto 0.25em;" {{!}} {{#if:{{{group3|}}}|'''{{{group3}}}:'''}} {{{list3}}}
+{{!}}- <!--
+-->}}
+|} <!--foobar-->
+<noinclude>
+Navigational template for use in general
+
+Format: title = title, groupX = heading of group X(optional), listX = list of links for group X
+[[Category:Navigation templates]]
+</noinclude>

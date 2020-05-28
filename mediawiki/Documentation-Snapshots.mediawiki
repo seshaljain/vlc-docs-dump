@@ -1,0 +1,37 @@
+{{RightMenu|Documentation TOC}}
+There are two ways to take snapshots (i.e., screenshots or frame grabs) with VLC:
+#Open the ''Video'' menu, and select the ''Take Snapshot'' menu item.
+#Press the snapshot hotkey
+#*Linux / Unix / Windows (Qt Interface): <kbd>Shift+s</kbd>
+#*Mac OS X: <kbd>Command+Alt+s</kbd>
+
+When a snapshot is taken, it will briefly preview as a thumbnail with its filename and then fade away.
+
+To change the hotkey, go to Tools → Preferences. If "Show settings" is set to Simple, click Hotkeys; if "Show settings" is set to All, navigate to Interface → Hotkeys settings. Set the hotkey for Take video snapshot.
+
+==Snapshot location, format and name==
+
+The snapshot location depends upon your operating system:
+
+*Windows XP: "%HOMEPATH%\My Pictures\"
+*Windows Vista, 7, 8, and 10: "%HOMEPATH%\Pictures\"
+*Linux / Unix: ~/Pictures
+*macOS: Desktop/
+
+===Configuring snapshot options under Windows:===
+
+[[File:Basic snapshots config.png|550px|left|alt=|Snapshots dialogue under Windows]]
+{{Clear|left}}
+The location, format and name of snapshots may be changed in the ''Preferences'' menu item in the ''Tools'' tab, subsection ''Video''.
+
+The default format for snapshots is [[PNG]], but this may be changed to [[JPEG]].  Also, the default name for snapshots is ''vlcsnap-'' followed by a timestamp that is ''not'' the time of the frame in the video you're viewing, but rather the current date and time&mdash;as in 2014-01-16-14h57m19s163.
+
+Also, you may substitute other text for ''vlcsnap-'' in the ''Video snapshot file prefix'' and you may choose to have snapshots numbered sequentially (i.e., 000001, 000002, 000003, and so on) instead of with a timestamp.
+
+As of version 0.9.0, you may even use variables in the text used for the filename.  For example, ''$T'' (must be upper case) will insert the video's time code into the file name.  If you were to change the prefix to ''Friends-$T-'' while watching a DVD of ''Friends'', then the snapshot filenames would look something like this: ''Friends-00_05_21-2014-01-16-14h57m19s163.png''.  This indicates a snapshot taken at 5 minutes and 21 seconds into the video; and it was taken on this day at this time: ''2014-01-16-14h57m19s163''. 
+
+For a shorter file name, check the "Sequential numbering" option in the configuration box (below). Instead of numbers like ''2014-01-16-14h57m19s163'', VLC will simply insert the count of snapshots for that session&mdash;for example, ''00004''. Thus, in the example above, a snapshot with sequential numbering would look like this: ''Friends-00_05_21-000001.png''
+
+For a full list of variables, please see [[Documentation:Play HowTo/Format String]].
+
+{{Documentation}}

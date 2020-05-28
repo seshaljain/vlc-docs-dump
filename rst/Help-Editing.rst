@@ -1,0 +1,5 @@
+Help in editing the wiki and syntax reference can be found on
+[http://meta.wikimedia.org/wiki/Help:Editing wikimedia], which is the
+wiki software we use.
+
+[[Category:VideoLAN Wiki]]

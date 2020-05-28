@@ -1,0 +1,3 @@
+#REDIRECT [[Compression]]
+
+[[Category:Glossary]]

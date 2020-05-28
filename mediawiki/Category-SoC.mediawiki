@@ -1,0 +1,16 @@
+Those pages covers [[VideoLAN]] work on [http://code.google.com/soc Google Summer of Code projects]
+
+* [[SoC_2020]] was what happened during the 2020 year, where VideoLAN was a mentoring association.
+* [[SoC_2019]] was what happened during the 2019 year, where VideoLAN was a mentoring association.
+* [[SoC_2018]] was what happened during the 2018 year, where VideoLAN was a mentoring association.
+* [[SoC_2017]] was what happened during the 2017 year, where VideoLAN was a mentoring association.
+* [[SoC_2016]] was what happened during the 2016 year, where VideoLAN was a mentoring association.
+* [[SoC_2011]] was what happened during the 2011 year, where VideoLAN was a mentoring association.
+* [[SoC_2010]] was what happened during the 2010 year, where VideoLAN was a mentoring association.
+* [[SoC_2009]] was what happened during the 2009 year, where VideoLAN was a mentoring association.
+* [[SoC_2008]] was what happened during the 2008 year, where VideoLAN was a mentoring association.
+* [[SoC_2007]] was what happened during the 2007 year, where VideoLAN was a mentoring association.
+
+{{GSoC}}
+
+[[Category:Mentorings]]

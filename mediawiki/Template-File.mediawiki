@@ -1,0 +1,23 @@
+<includeonly>* {{VLCSourceFile|{{{1|}}}|{{{2|}}}}}</includeonly>
+<noinclude>
+For linking to source code file. Links to https://git.videolan.org.
+
+== Usage ==
+ <nowiki>{{file|name|info}}</nowiki>
+
+For example
+{{file|modules/mux/dummy.c|Dummy muxer}}
+ <nowiki>{{file|modules/mux/dummy.c|Dummy muxer}}</nowiki>
+{{file|modules/mux/avi.c}}
+ <nowiki>{{file|modules/mux/avi.c}}</nowiki>
+
+== See also ==
+* {{tl|Commit}}
+* {{tl|Commitdiff}}
+* {{tl|File}}
+* {{tl|SVNSourceFile}} - for linking to a file on SVN. Mostly obsolete due to the [[Git]] transition
+* {{tl|VLCSourceFile}} - same except that it does not add the bulleted list
+* {{tl|VLCSourceFolder}}
+
+[[Category:Templates]]
+</noinclude>

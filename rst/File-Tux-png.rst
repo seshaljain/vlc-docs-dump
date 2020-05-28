@@ -1,0 +1,11 @@
+2000x2537 PNG thumbnail depicting [[`wikipedia:Tux <>`__\ (mascot)|Tux
+the penguin mascot of (GNU/)Linux]] from
+[https://commons.wikimedia.org/w/index.php?curid=753970 this SVG] on
+Commons. No restrictions provided proper attribution is given:
+[`mailto:lewing@isc.tamu.edu <mailto:lewing@isc.tamu.edu>`__ Larry
+Ewing] (copyright holder) and [https://www.gimp.org/ The GIMP],
+[http://www.home.unix-ag.org/simon/ Simon Budig] with
+[http://www.home.unix-ag.org/simon/penguin/README README], and (under
+CC-0) [https://github.com/garrett/Tux Garrett LeSage]
+
+[[Category:Logos]]

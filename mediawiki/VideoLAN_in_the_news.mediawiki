@@ -1,0 +1,279 @@
+{{Languages}}
+
+<div class="widebox">FIXME: prune list; many links are different sources covering the same event</div>
+
+{| class="infobox"
+| [https://www.google.com/search?hl=en&tbm=nws&q=vlc&oq=vlc&gs_l=news-cc.12..43j43i400.1910.2590.0.6649.3.2.0.1.1.0.170.295.0j2.2.0...0.0.8NbhV1EOhLg Search Google News] for the latest on VLC ([http://news.google.co.uk/news?svnum=10&as_scoring=r&hl=en&tab=wn&ie=UTF-8&as_drrb=q&as_qdr=&as_mind=9&as_minm=9&as_maxd=9&as_maxm=10&q=VLC+OR+VideoLAN&output=rss RSS feed])
+|}
+List of articles related to [[VideoLAN]] / [[VLC media player]]. Please add those which are missing.<br />
+See also: [https://www.videolan.org/press/ VideoLAN press releases]
+
+== 2019 ==
+{|
+|April 2||[https://www.ibtimes.com/iphone-tip-5-ways-download-music-videos-your-ios-smartphone-2781923 iPhone Tip: 5 Ways To Download Music And Videos On Your iOS Smartphone - International Business Times]||(English)
+|-
+|April 1||[https://www.prnewswire.co.uk/news-releases/content-armor-streamroot-videolab-and-idviu-join-to-create-the-union-of-video-specialists-consortium-827227276.html Content Armor, Streamroot, VideoLab and IDVIU join to create the Union of Video Specialists consortium content= - PR Newswire UK]||(English)
+|-
+|March 25||[https://heavy.com/tech/2019/03/watch-apple-event-online-vlc-live-stream/ Watch the Apple Event Online: Live Stream & VLC - Heavy.com]||(English)
+|-
+|March 24||[https://www.androidpolice.com/2019/03/24/vlc-3-1-brings-back-android-auto-support-improves-chromebook-compatibility-and-more-apk-download/ VLC 3.1 brings back Android Auto support, improves Chromebook compatibility, and more &#x5B;APK Download&#x5D; - Android Police]||(English)
+|-
+|March 8||[https://www.thewindowsclub.com/how-to-convert-videos-using-vlc-media-player-on-windows-10 How to convert Videos using VLC Media Player on Windows 10 - TWCN Tech News]||(English)
+|-
+|March 5||[https://www.thewindowsclub.com/how-to-create-animated-gif-from-a-video-file-using-vlc-and-gimp How to create Animated GIF from a video file using VLC and GIMP - TWCN Tech News]||(English)
+|-
+|March 1||[https://theleaker.com/vlc-for-android-beta-version-3-1-0-released-apk-download/ VLC for Android Beta version 3.1.0 released &#x5B;APK Download&#x5D; - TheLeaker]||(English)
+|-
+|February 15||[https://www.techadvisor.co.uk/how-to/software/how-stream-from-vlc-chromecast-3692346/ How to stream from VLC to Chromecast - Tech Advisor]||(English)
+|-
+|February 9||[https://www.how2shout.com/how-to/download-use-vlc-portable-media-player-windows.html Download and use VLC portable media player on Windows: How to - H2S Media]||(English)
+|-
+|February 6||[https://www.ghacks.net/2019/02/06/vlc-media-player-4-0/ A preview of VLC Media Player 4.0 - Ghacks Technology News]||(English)
+|-
+|February 6||[https://www.techgenyz.com/2019/02/06/vlc-media-player-update-vlc-4-0/ VLC Media Player Update: VLC 4.0 adding new UI, media library browser and VR support - TechGenYZ]||(English)
+|-
+|February 5||[https://www.phoronix.com/scan.php?page=news_item&px=VLC-2019-Feature-Talk VLC 4.0 Media Player Eyeing New User Interface, Better Wayland Support & VR/3D - Phoronix]||(English)
+|-
+|February 5||[https://mspoweruser.com/vlc-4-0-will-bring-a-cool-new-user-interface-pictures/ VLC 4.0 will bring a cool new User Interface (pictures) - MSPoweruser]||(English)
+|-
+|January 23||[https://www.helpnetsecurity.com/2019/01/23/most-out-of-date-applications/ Most out of date applications exposed: Shockwave, VLC and Skype top the list - Help Net Security]||(English)
+|-
+|January 22||[https://hub.packtpub.com/vlcs-updating-mechanism-still-uses-http-over-https/ VLC’s updating mechanism still uses HTTP over HTTPS - Packt Hub]||(English)
+|-
+|January 18||[https://www.tweaktown.com/news/64547/vlc-media-player-passes-3b-downloads-headed-switch-ps4/index.html VLC media player passes 3b downloads, headed for Switch/PS4 - TweakTown]||(English)
+|-
+|January 16||[https://www.techradar.com/news/vlc-for-nintendo-switch-and-ps4-could-be-on-the-way VLC for Nintendo Switch and PS4 could be on the way - TechRadar]||(English)
+|-
+|January 15||[https://www.digitaltrends.com/computing/vlc-player-apple-airplay/ Beam up the videos: AirPlay support is coming to VLC player - Digital Trends]||(English)
+|-
+|January 13||[https://www.itmagazine.ch/Artikel/68803/VLC_Media_Player_bekommt_Airplay-Support.html VLC Media Player bekommt Airplay-Support - IT Magazine]||(German)
+|-
+|January 12||[https://www.gsmarena.com/vlc_soon_to_get_apple_airplay_support_on_ios_android_and_probably_windows-news-35040.php VLC soon to get Apple AirPlay support on iOS, Android and probably Windows - GSMArena.com news - GSMArena.com]||(English)
+|-
+|January 11||[https://www.techspot.com/news/78231-vlc-crosses-three-billion-downloads-adding-airplay-support.html VLC crosses three billion downloads, is adding AirPlay support and more - TechSpot]||(English)
+|-
+|January 11||[https://www.neowin.net/news/vlc-hits-three-billion-downloads-announces-support-for-airplay-and-more/ VLC hits three billion downloads, announces support for AirPlay and more - Neowin]||(English)
+|-
+|January 11||[https://www.techradar.com/news/vlc-media-player-is-about-to-hit-3bn-downloads-with-new-features-on-the-way VLC Media Player is about to hit 3bn downloads, with new features on the way - TechRadar]||(English)
+|}
+
+== 2018 ==
+{|
+|December 31||[https://9to5mac.com/2018/12/31/modern-macos-media-player-open-source/ IINA for macOS launches as modern media player alternative to VLC with dark mode, PIP, more - 9to5Mac]||(English)
+|-
+|December 30||[https://www.techspot.com/news/78051-eu-fund-bug-bounties-open-source-projects-including.html EU to fund bug bounties for open source projects including PuTTY, Notepad++, KeePass, Filezilla and VLC - TechSpot]||(English)
+|-
+|December 27||[https://www.neowin.net/news/vlc-media-player-305/ VLC Media Player 3.0.5 - Neowin]||(English)
+|-
+|December 27||[https://www.ghacks.net/2018/12/27/vlc-media-player-3-0-5-is-out/ VLC Media Player 3.0.5 is out - Ghacks Technology News]||(English)
+|-
+|December 12||[https://hub.packtpub.com/dav1d-0-1-0-the-av1-decoder-by-videolan-is-here/ dav1d 0.1.0, the AV1 decoder by VideoLAN, is here - Packt Hub]||(English)
+|-
+|December 7||[https://windowsreport.com/dvd-shows-video_ts/ How to play DVD Video_TS folder files in Windows 10 - Windows Report]||(English)
+|-
+|December 6||[https://windowsreport.com/video-codec-packs/ 5 best video codec packs for Windows 10 to play all file formats - Windows Report]||(English)
+|-
+|December 3||[https://www.how2shout.com/how-to/how-to-download-and-install-vlc-media-player-on-rhel-centos-fedora.html How to download and install VLC media player on RHEL/Centos/Fedora… - H2S Media]||(English)
+|-
+|December 3||[https://www.how2shout.com/how-to/how-to-play-and-download-youtube-videos-on-vlc-media-player.html How to Play and download YouTube videos on VLC Media Player - H2S Media]||(English)
+|-
+|December 1||[https://www.lifehacker.com.au/2018/12/microsofts-bing-search-classified-vlc-as-a-dangerous-website/ Microsoft's Bing Search Classified VLC As 'Dangerous' - Lifehacker Australia]||(English)
+|-
+|November 30||[https://threatpost.com/bing-warns-vlc-media-player-site-is-suspicious-in-likely-false-positive-gaff/139525/ Bing Warns VLC Media Player Site is 'Suspicious' in Likely False-Positive Gaff - Threatpost]||(English)
+|-
+|November 29||[https://www.ghacks.net/2018/11/29/bing-warns-that-vlc-site-may-be-dangerous/ Bing warns that VLC site may be dangerous - Ghacks Technology News]||(English)
+|-
+|November 28||[https://www.bleepingcomputer.com/news/security/bing-is-warning-that-the-vlc-media-player-site-is-unsafe/ Bing is Warning that the VLC Media Player Site is Unsafe - BleepingComputer]||(English)
+|-
+|November 28||[https://mspoweruser.com/microsoft-marks-vlc-download-site-as-malware-on-bing/ Microsoft marks VLC download site as malware on Bing - MSPoweruser]||(English)
+|-
+|November 19||[https://www.techrepublic.com/article/raspberry-pi-gets-support-for-vlc-media-player-with-latest-raspbian-update/ Raspberry Pi gets support for VLC media player with latest Raspbian update - TechRepublic]||(English)
+|-
+|November 16||[https://liliputing.com/2018/11/raspberry-pi-software-update-brings-vlc-media-player-with-hardware-accelerated-video-playback.html Raspberry Pi software update brings VLC media player (with hardware-accelerated video playback) - Liliputing]||(English)
+|-
+|November 16||[https://www.phoronix.com/scan.php?page=news_item&px=Raspbian-November-2018 Raspbian 2018-11-13 Brings Hardware-Accelerated VLC Media Player - Phoronix]||(English)
+|-
+|November 13||[https://www.thewindowsclub.com/auto-load-music-files-vlc-playlist How to auto load music files from a folder to the VLC Playlist - TWCN Tech News]||(English)
+|-
+|November 13||[https://appleinsider.com/articles/18/11/13/how-to-replace-dynamic-desktop-with-video-wallpaper-in-macos-mojave How to replace Dynamic Desktop with video wallpaper in macOS Mojave - AppleInsider]||(English)
+|-
+|November 10||[https://www.how2shout.com/how-to/install-vlc-media-player-ubuntu-terminal.html How to install VLC media player for Ubuntu or Linux Mint via command terminal - H2S Media]||(English)
+|-
+|November 2||[https://www.thewindowsclub.com/deinterlacing-mode-in-vlc-windows-10 How to turn on Deinterlacing mode in VLC Player on Windows 10 - TWCN Tech News]||(English)
+|-
+|October 27||[https://www.thewindowsclub.com/compressor-tool-in-vlc How to use Compressor Tool in VLC Media Player on Windows 10 - TWCN Tech News]||(English)
+|-
+|October 22||[https://www.techradar.com/news/vlc-media-player-and-mplayer-contain-critical-vulnerability-bugs VLC Media Player and MPlayer contain critical vulnerability bugs - TechRadar]||(English)
+|-
+|October 4||[https://hub.packtpub.com/presenting-dav1d-a-new-lightweight-av1-decoder-by-videolan-and-ffmpeg/ Presenting dav1d, a new lightweight AV1 decoder, by VideoLAN and FFmpeg - Packt Hub]||(English)
+|-
+|September 28||[https://www.techspot.com/guides/1705-convert-audio-video-files-vlc-player/ How to Convert Audio and Video Files with VLC Media Player - TechSpot]||(English)
+|-
+|September 27||[https://www.makeuse<!---->of.com/tag/remember-playback-position-vlc/ How to Remember Video Playback Position in VLC to Resume Later - MakeUse<!---->Of]||(English)
+|-
+|September 17||[https://www.dignited.com/35136/top-7-features-that-will-make-you-use-vlc-like-a-pro/ Top 7 features that will make you use VLC like a Pro - Dignited]||(English)
+|-
+|September 1||[https://www.thewindowsclub.com/an-error-occurred-while-checking-for-updates-in-vlc An error occurred while checking for updates in VLC - TWCN Tech News]||(English)
+|-
+|August 30||[https://www.how2shout.com/how-to/how-to-change-language-of-interface-in-vlc-player.html How to change language of interface in VLC player - H2S Media]||(English)
+|-
+|August 26||[https://www.thestar.com.my/tech/tech-news/2018/08/26/vlc-for-ios-now-lets-you-stream-videos-to-your-tv-with-chromecast/ VLC for iOS now lets you stream videos to your TV with Chromecast - Tech News - The Star Online]||(English)
+|-
+|August 23||[https://windowsreport.com/input-cant-be-opened-vlc/ How to fix the “Your input can't be opened” VLC error - Windows Report]||(English)
+|-
+|August 22||[https://www.thewindowsclub.com/how-to-modify-the-vlc-media-player-interface How to customize VLC Media Player interface - TWCN Tech News]||(English)
+|-
+|August 17||[https://windowsreport.com/vlc-error-occurred-checking-updates/ FIX: An error occurred while checking for updates in VLC Media Player - Windows Report]||(English)
+|-
+|August 17||[https://appuals.com/fix-vlc-is-unable-to-open-the-mrl-file/ Fix: VLC is unable to open the MRL file - Appuals]||(English)
+|-
+|August 6||[https://www.makeuse<!---->of.com/tag/customize-vlc-media-player/ How to Customize the Look and Layout of VLC Media Player - MakeUse<!---->Of]||(English)
+|-
+|July 29||[https://windowsreport.com/fix-vlc-error-libvlc-dll/ FIX: VLC error 'libvlc.dll is missing' on Windows 10 - Windows Report]||(English)
+|-
+|July 28||[https://fossbytes.com/connect-vlc-chromecast-stream-from-pc/ How To Connect Your Chromecast To VLC? &#x7C; Stream From VLC To Chromecast - Fossbytes]||(English)
+|-
+|July 28||[https://www.androidcentral.com/blocking-huawei-phones-downloading-vlc-through-play-store-craziest-thing-happen-week VideoLAN was right to ban Huawei phones from downloading VLC, but it's users that lose - Android Central]||(English)
+|-
+|July 26||[https://www.guidingtech.com/vlc-android-app-tips-tricks-guides/ Top 20 Cool VLC for Android Tips, Tricks and Guides - Guiding Tech]||(English)
+|-
+|July 25||[https://www.theverge.com/2018/7/25/17614014/vlc-blacklisting-recent-huawei-devices-negative-app-reviews VLC is blacklisting recent Huawei devices to combat negative app reviews - The Verge]||(English)
+|-
+|July 20||[https://www.onmsft.com/news/vlc-app-gains-chromecast-support-on-windows-10-mobile-pc VLC app gains ChromeCast support on Windows 10 Mobile & PC - OnMSFT]||(English)
+|-
+|July 18||[https://www.macrumors.com/2018/07/18/vlc-for-ios-gains-chromecast-support/ VLC for iOS Gains Chromecast Support - MacRumors]||(English)
+|-
+|June 12||[https://www.windowslatest.com/2018/06/12/vlcs-app-for-windows-10-mobile-and-pc-updated-with-improvements/ VLC’s app for Windows 10 Mobile and PC updated with improvements - WindowsLatest]||(English)
+|-
+|June 11||[https://mspoweruser.com/vlc-for-windows-updated-with-number-of-improvements/ VLC for Windows updated with Chromecast improvements and more - MSPoweruser]||(English)
+|-
+|June 8||[https://www.thewindowsclub.com/best-vlc-extensions-addons-plug-ins-list Best VLC Extensions, Addons and Plug-ins list - TWCN Tech News]||(English)
+|-
+|June 1||[https://www.engadget.com/2018/06/01/vlc-one-of-first-arm64-windows-apps/ VLC becomes one of first ARM64 Windows apps - Engadget]||(English)
+|-
+|May 19||[https://www.thewindowsclub.com/download-subtitle-in-vlc-media-player How to download subtitles in VLC media player - TWCN Tech News]||(English)
+|-
+|May 5||[https://www.thewindowsclub.com/add-extensions-on-vlc-media-player How to add Plugins and Extensions on VLC Media Player - TWCN Tech News]||(English)
+|-
+|April 8||[https://www.thewindowsclub.com/vlc-media-player-skipping-lagging VLC Media Player skipping and lagging on Windows 10 - TWCN Tech News]||(English)
+|-
+|April 4||[https://www.thewindowsclub.com/vlc-color-distortion-washed-colors-problem VLC washed out colors & color distortion problem - TWCN Tech News]||(English)
+|-
+|March 29||[https://www.howtogeek.com/269272/how-to-stream-from-vlc-to-your-chromecast/ How to Stream From VLC to Your Chromecast - How-To Geek]||(English)
+|-
+|March 19||[https://www.ghacks.net/2018/03/19/washed-out-colors-in-vlc-media-player-try-this-fix/ Washed out colors in VLC Media Player? Try this fix - Ghacks Technology News]||(English)
+|-
+|March 9||[https://www.thewindowsclub.com/use-mouse-gestures-in-vlc How to use mouse gestures in VLC Media Player - TWCN Tech News]||(English)
+|-
+|February 12||[https://hexus.net/tech/news/software/115202-vlc-30-vetinari-supports-hdr-colour-chromecast/ VLC 3.0 Vetinari supports HDR colour and Chromecast - Software - News - HEXUS]||(English)
+|-
+|February 12||[https://www.zdnet.com/article/videolan-vlc-3-0s-huge-update-brings-chromecast-support-360-degree-video/ VideoLAN: VLC 3.0's huge update brings Chromecast support, 360-degree video - ZDNet]||(English)
+|-
+|February 9||[https://www.trustedreviews.com/news/vlc-3-0-new-features-mac-windows-linux-ios-android-chrome-3391140 VLC 3.0 is here with Chromecast, 8K and HDR 10 support — the best just got better - TrustedReviews]||(English)
+|-
+|February 7||[https://www.ghacks.net/2018/02/07/vlc-3-0-media-player-release/ VLC 3.0 Media Player release - Ghacks Technology News]||(English)
+|-
+|February 6||[https://torrentfreak.com/google-wont-take-down-pirate-vlc-with-five-million-downloads-180206/ Google Won't Take Down 'Pirate' VLC With Five Million Downloads - TorrentFreak]||(English)
+|-
+|January 30||[https://9to5google.com/2018/01/30/vlc-for-android-chromecast-beta/ VLC for Android adds support for Chromecast and Samsung DeX in latest beta update - 9to5Google]||(English)
+|}
+
+== 2017 ==
+{|
+|December 8||[https://www.guidingtech.com/how-to-add-extensions-to-vlc-player/ How to Add Extensions to VLC Player - Guiding Tech]||(English)
+|-
+|December 8||[https://9to5mac.com/2017/12/08/vlc-iphone-x-hevc-4k/ VLC media player for iOS now optimized for iPhone X screen, HEVC 4K videos - 9to5Mac]||(English)
+|-
+|November 30||[https://lifehacker.com/why-you-should-be-using-vlc-nightly-builds-1820882625 Why You Should Be Using VLC Nightly Builds - Lifehacker]||(English)
+|-
+|October 2||[https://www.ghacks.net/2017/10/02/vlc-2-5-for-android-is-a-major-update/ VLC 2.5 for Android is a major update - Ghacks Technology News]||(English)
+|-
+|July 1||[https://www.techradar.com/how-to/how-to-use-vlc-media-player How to use VLC Media Player - TechRadar]||(English)
+|-
+|June 15||[https://www.techradar.com/reviews/vlc-media-player VLC Media Player review and where to download review - Techradar India]||(English)
+|-
+|May 29||[http://www.express.co.uk/life-style/science-technology/810324/VLC-Player-Download-Hackers-Subtitles VLC WARNING - Hackers can take control of YOUR computer using THIS feature - Express]||(English)
+|}
+
+== 2016 ==
+{|
+|June 29||[http://www.pcmag.com/news/345739/vlc-media-player-arrives-on-windows-10 VLC Media Player Arrives on Windows 10 - PCMag.com]||(English)
+|}
+
+== 2014 ==
+{|
+|January 21||[https://web.archive.org/web/20161118134023/http://www.pcauthority.com.au/News/370062,vlc-for-ios-22-gets-a-new-look.aspx VLC for iOS 2.2 gets a new look]||(English)
+|-
+|January 20||[https://www.rudebaguette.com/2014/01/10-startups-didnt-know-founded-french-entrepreneurs/ VLC: Jean-Baptiste Kempf]||(English)
+|-
+|January 20||<!--Snapshot of https://www.cnetfrance.fr/news/nouvelle-application-ios-vlc-220-un-design-pour-ios-7-et-des-nouveautes-39797200.htm-->[https://archive.today/fYHo8 Nouvelle application iOS VLC 2.2.0 : un design pour iOS 7 et des nouveautés]|| (French)
+|}
+
+== 2010 ==
+{|
+|July 2||[https://web.archive.org/web/20120416204228/http://blog.linux-redaktion.com/software/vlc-software/vlc-1-1-0/ VLC Mediaplayer 1.1.0 unter Ubuntu installieren]||(German)
+|-
+|June 22||[https://www.golem.de/1006/75933.html Freier Videoplayer - VLC 1.1 veröffentlicht ]||(German)
+|-
+|May 28||<!--Snapshot of https://www.pcwelt.de/news/Jetzt-erhaeltlich-PC-WELT-LINUX-2-2010-am-Kiosk-370957.html-->[https://archive.today/wwNMB PC WELT LINUX 2/10], "Allrounder: VLC Media Player"||(German)
+|}
+
+== 2009 ==
+{|
+|July 22||[https://archive.nytimes.com/www.nytimes.com/external/gigaom/2009/07/22/22gigaom-4-free-open-source-tools-for-working-with-video-a-34611.html nytimes/gigaom: 4 Free Open-Source Tools for Working With Video and Audio]||(English)
+|-
+|July 13||<!--Snapshot of https://www.linux-redaktion.com/blog/vlc-media-player-1-0/-->[https://archive.fo/nBO1r VLC Media Player 1.0 unter Ubuntu 9.04 installieren]||(German)
+|-
+|July 7||[https://www.cnet.com/news/videolan-releases-vlc-1-0-0-your-media-will-never-be-the-same/ cnet: VideoLAN releases VLC 1.0.0: Your media will never be the same]||(English)
+|-
+|June 4||[https://web.archive.org/web/20090607162010/http://www.pcwelt.de/start/software_os/audio_video_foto/praxis/191079/alle_video_formate_mit_vlc_player_abspielen/index.html PCWELT Video und Musik: Alle Video-Formate mit VLC Player abspielen]||(German)
+|}
+
+== 2007 ==
+{|
+|November 29||[https://web.archive.org/web/20071201031752/http://articles.techrepublic.com.com/2415-7343_11-175865.html SolutionBase: Overcome multimedia hurdles in Linux]||(English)
+|}
+
+== 2006 ==
+{|
+|?||[https://web.archive.org/web/20061012084429/http://www.m2x.nl/mambo/index.php?option=content&task=view&id=124&Itemid=27 M2X Article and NLUUG talk (Netherlands) "Streaming networks with VLC"]||(English)
+|-
+|October 04||[http://www.lesechos.fr/journal20061004/lec2_innovation/4475889.htm Les Echos (France), "Le lecteur multimédia français VLC téléchargé 18 millions de fois"]||?
+|-
+|May 3||[https://www.linux.com/news/transcoding-and-streaming-dvd-films-vlc-media-player Linux.com "Transcoding and streaming DVD films with VLC media player"]||(English)
+|}
+
+== 2005 ==
+{|
+|?||[http://home.planet.nl/~jpsaman/linux/downloads/vlc_open_source_multimedia.sxi LinuxWorld (Netherlands), "Open Source multimedia by Jean-Paul Saman"]||?
+|-
+|December 27||[https://web.archive.org/web/20061014021649/http://www.source21.nl/2005/12/27/linuxworld-videolan-en-vlc Source21.nl (Netherlands), "LinuxWorld: VideoLAN en VLC (Interview with Jean-Paul Saman)"]||(Dutch)
+|-
+|September 2||<!--Snapshot of http://www.theregister.co.uk/2005/09/02/dvd_jon_mediaplayer/-->[https://archive.today/1pMU The Register (UK), "DVD Jon hacks Media Player file encryption"]||(English)
+|-
+|July 11||[https://web.archive.org/web/20051026065820/http://www.01net.com/article/284013.html 01net.com (France)]||(French)
+|-
+|July 8||[http://www.macplus.net/magplus/chronique-9311-interview-de-christophe-massiot MacPlus (France), "Interview de Christophe Massiot"]||?
+|-
+|June 28||[https://www.zdnet.fr/blogs/ecosphere/vlc-un-lecteur-multimedia-tres-courtise-39600141.htm ZDNet (France), "VLC: un lecteur multimedia très courtisé"]||(French)
+|-
+|June 13||[http://solutions.journaldunet.com/0506/050613_videolan.shtml solutions.journaldunet.com (France)]||(French)
+|}
+
+== 2004 ==
+{|
+|?||[https://web.archive.org/web/20040531223246/http://home.planet.nl/~jpsaman/linux/downloads/videolan-fosdem-2004.pdf FOSDEM (Belgium) "VideoLAN VLC presentation at FOSDEM by Jean-Paul Saman"]||(English)
+|-
+|December 22||[https://web.archive.org/web/20070513202921/http://www.streamingmedia.com/article.asp?id=9000&page=1&c= streamingmedia.com (USA?), "VideoLAN's Piece de Resistance"]||(English)
+|-
+|January 15||[https://web.archive.org/web/20040120075133/http://builder.com.com/5100-6375-5136135.html Builder.com (USA?), "Open Source Awards 2004: VideoLAN"]||(English)
+|}
+
+== 2002 ==
+{|
+|August 7||[https://www.mac4ever.com/dossiers/74105_interview-de-christophe-massiot-de-vlc Mac4ever (France), "Interview de Christophe Massiot de VLC"]||(French)
+|-
+|July 2002||[https://images.videolan.org/images/backup/macworld0-doublepage.jpg Mac World, "Les petits princes du MPEG-2"]||(French)
+|}
+
+[[Category:About VideoLAN]]

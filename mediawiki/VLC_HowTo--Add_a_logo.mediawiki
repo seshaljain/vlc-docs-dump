@@ -1,0 +1,48 @@
+{{howto|add a logo on your video using the logo filter}}
+
+== Idea ==
+This How To just explains how to use the logo filter in order to add a logo on your videos, like a TV.
+
+=== Local ===
+ {{%}} vlc --sub-source logo --logo-file ''logo.png'' ''video.avi''
+
+=== Stream ===
+ {{%}} vlc --logo-file ''logo.png'' ''video.avi'' --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:std{...}"
+
+Make sure you do not specify --sub-source logo, and that you specify a vcodec= value in the [[transcode]] part.
+
+=== Save the new video locally ===
+ {{%}} vlc --logo-file ''logo.png'' ''video.avi'' --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:std{access=file,dst=''new_video.avi'' }
+
+=== Dynamically change logo using [[RC]], then send output to stream and local debugging display ===
+
+ {{%}} vlc -I rc --logo-file nonexistent_dummy.png --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:duplicate{dst=display,dst=std{...}}"
+ 
+ # Once the program has started
+ add ''video.avi''
+ # If using VLC 0.8.6 or older:
+ logo-file ''logo.png''
+ # If using VLC 0.9.0 or newer (see NEWS for details about the new syntax):
+ @logo logo-file ''logo.png''
+
+This requires a <code>--logo-file</code>, but for some reason it won't work if you specify "<code>--sub-source logo</code>". Nor does it apparently work if the <code>transcode</code> doesn't specify <code>[[Codec#Video | vcodec=]]</code>.
+
+A non-existent logo-file currently removes any logos from the video, and does not result in an error. Since you must specify one on the command-line, "<code>nonexistent_dummy.png</code>" was used.
+
+== Troubleshooting ==
+
+=== My text doesn't look right! It's sort of pixellated or has artifacts. ===
+
+Sounds like a stretching or [[deinterlacing]] problem. One possible solution is to set your "<code>--aspect-ratio</code>" to the right setting. For instance, I got this when I ran VLC with "<code>-vvv</code>" (for verbose verbose verbose output&mdash;''note: only verbose verbose exists anymore''):
+
+ [00000372] main video output debug: picture in 704x576 (0,0,704x576), chroma I420, ar 4:3, sar 12:11
+ [00000372] main video output debug: picture user 704x576 (0,0,704x576), chroma I420, ar 4:3, sar 12:11
+ [00000372] main video output debug: picture out 768x576 (0,0,768x576), chroma RV32, ar 4:3, sar 1:1
+
+Here, the input was 704x576 resolution and VLC outputted it to 768x576. My text was added before this stretching occurred, and so the text looked awful. Forcing it back to the normal resolution using "<code>--aspect-ratio 11:9</code>" worked. (Because 704/576 = 11:9.)
+
+See also [[Documentation:Modules/logo]].
+
+Note also that setting the logo on the command line appears to be a "global" option and not available as stream specific.
+
+{{DEFAULTSORT:Logo|noerror}}

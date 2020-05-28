@@ -1,0 +1,11 @@
+__NOTOC__
+{{Back to|VSG:Main}}
+=== VLC won't start up. ===
+
+What operating system are you running?
+
+{{VSGEntry|Windows|VSG:Startup:Windows|Running VLC in the Microsoft Windows Operating System}}
+{{VSGEntry|OS X|VSG:Startup:Mac|Running VLC in the Apple Macintosh OS X}}
+{{VSGEntry|Unix-based|VSG:Startup:Other|Running VLC in Linux, BSD, or other Unix-based operating systems.}}
+
+{{VSG}}

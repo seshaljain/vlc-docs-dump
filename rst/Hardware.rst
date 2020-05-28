@@ -1,0 +1,1 @@
+#redirect [[Hardware Compatibility list]]

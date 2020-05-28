@@ -1,0 +1,35 @@
+{{muxencoder=y}} {{wikipedia|Ogg}} {{open}} Being a [[Container]]
+format, ogg can embed third-party codecs (such as [[DivX]], [[XviD]],
+[[MP3]] and others) but usually Ogg is used with [[Vorbis]], [[Theora]],
+[[FLAC]] and [[Dirac]].<BR>
+
+== Accepted codecs == Below are the compatible codecs for OGG.
+
+=== Accepted audio codecs === \* [[vorb]]: Vorbis handles general audio
+data at mid- to high-level bitrates (~16-256 kbit/s/channel) \*
+[[flac]]: Free lossless audio codec. Has same sound quality as [[wave]],
+but only cca half the size. \* [[spx]]: Speex handles voice data at low
+bitrates (~8-32 kbit/s/channel)
+
+=== Accepted video codecs === \* [[theo]]: Theora based upon On2's
+[[VP3]], it is targeted at competing with MPEG-4 video (i.e. [[DivX]]
+and [[XviD]]), [[RealVideo]], or [[WMV|Windows Media Video]]. \*
+[[drac]] \* [[tark]] (decoding only): Tarkin, an experimental codec
+utilizing 3D wavelet transforms. It has been put on hold, with Theora
+becoming the main focus for video encoding.
+
+-  [[mpgv]]: MPEG
+-  [[mp4v]]: MPEG-4
+-  [[div3]]: DIVX 3
+-  [[mjpg]]: MPJPEG video
+-  [[wmv1]], [[wmv2]], [[wmv3]]: Windows media
+-  [[snow]]
+-  [[ms]] (decoding only):
+-  [[xvid]] (decoding only):
+
+=== Meta codecs === \* [[cmml]] (decoding only): Text information
+
+== Source code == {{fileoutput muxer}} {{fileinput demuxer}}
+
+== References == Some of this page is taken from the Wikipedia article
+on this subject.

@@ -1,0 +1,59 @@
+{{Module|name=adjust|type=Video filter|first_version=0.9.0|description=Image properties filter}}
+
+'''Note:''' Before version 0.9.0, this used to be a vout filter.
+
+== Options ==
+<onlyinclude>{{Option
+|name=contrast
+|value=float
+|default=1.0
+|min=0.0
+|max=2.0
+|description=Contrast
+}}
+{{Option
+|name=brightness
+|value=float
+|default=1.0
+|min=0.0
+|max=2.0
+|description=Brightness
+}}
+{{Option
+|name=hue
+|value=float
+|default=0
+|min=-180
+|max=180
+|description=Hue
+}}
+{{Option
+|name=saturation
+|value=float
+|default=1.0
+|min=0.0
+|max=3.0
+|description=Saturation
+}}
+{{Option
+|name=gamma
+|value=float
+|default=1.0
+|min=0.01
+|max=10.0
+|description=Gamma
+}}
+{{Option
+|name=brightness-threshold
+|value=boolean
+|default=disabled
+|description=When this mode is enabled, pixels will be shown as black or white. Also may invert the brightness value. The threshold value will be the brightness defined below
+}}</onlyinclude>
+
+== Examples ==
+ {{%}} '''vlc --video-filter "adjust{hue=120,gamma=2.}" somevideo.avi
+
+== Source code ==
+* {{VLCSourceFile|modules/video_filter/adjust.c}}
+
+{{Documentation footer}}

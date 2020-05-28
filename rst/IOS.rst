@@ -1,0 +1,3 @@
+#REDIRECT [[:Category:iOS]]
+
+[[Category:iOS|*]]

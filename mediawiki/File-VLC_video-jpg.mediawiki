@@ -1,0 +1,3 @@
+VLC on XP with wrong renderer
+
+[[Category:VLC Support Guide]]

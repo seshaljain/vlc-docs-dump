@@ -1,0 +1,54 @@
+This module allows {{VLC}} to connect to [[JACK Audio Connection Kit]].
+
+== Access ==
+{{Module|name=jack|type=Access|first_version=0.9.0|os=Unix, Linux, BSD|description=JACK input|sc=jack}}
+
+The option <code>--jack-input-caching</code> no longer exists, removed with a commitdiff entitled {{Commitdiff|31ac20b22fc37bcf78991159bf8a0f138db05b44|l=Unify (ACCESS{{!}}DEMUX)_GET_PTS_DELAY}}.
+<!--
+{{Option
+|name=jack-input-caching
+|value=integer
+|description=Make VLC buffer audio data captured from JACK for the specified length in milliseconds
+}}
+-->
+{{Option
+|name=jack-input-use-vlc-pace
+|value=boolean
+|default=disabled
+|description=Read the audio stream at VLC pace rather than Jack pace
+}}
+{{Option
+|name=jack-input-auto-connect
+|value=boolean
+|default=disabled
+|description=Automatically connect VLC input [[port]]s to available output ports
+}}
+{{Clear}}
+
+== Audio output ==
+{{Module|name=jack|type=Audio output|first_version=0.8.5|os=Unix, Linux, BSD|description=JACK audio output|sc=none}}
+{{Option
+|name=jack-auto-connect
+|value=boolean
+|default=enabled
+|description=If enabled, this option will automatically connect sound output to the first writable JACK clients found
+}}
+{{Option
+|name=jack-connect-regex
+|value=string
+|default="system"
+|description=If automatic connection is enabled, only JACK clients whose names match this [[wikipedia:regular expression|regular expression]] will be considered for connection
+}}
+{{Option
+|name=jack-name
+|value=string
+|default=""
+|description=JACK client name
+}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/jack.c}}
+* {{VLCSourceFile|modules/audio_output/jack.c}}
+
+{{Documentation}}

@@ -1,0 +1,30 @@
+__NOTOC__
+{{Languages}}
+=Guide de support VLC : Résolvez dès maintenant vos problèmes avec VLC.=
+<span style="float: right">[[File:LargeVLC.png|192px]]</span>
+Le guide de support VLC (en anglais : '''V'''LC '''S'''upport '''G'''uide) est un guide pour vous aider, étape par étape, à dépanner les problèmes courants rencontrés avec VLC.
+
+Cette page complète la [[Documentation:Documentation|Documentation]] de [[VLC media player|VLC]].
+
+
+<big>'''Quel est votre problème ?'''</big>
+{{VSGEntry|Problème d'installation|VSG:Installation/fr|VLC ne s'installe pas.}}
+{{VSGEntry|Problème au lancement|VSG:Startup|VLC ne démarre pas ou mal.}}
+{{VSGEntry|Problème d'audio|VSG:Audio|Le son est mauvais ou inexistant}}
+{{VSGEntry|Problème d'image|VSG:Video|L'image est mauvaise ou inexistante.}}
+{{VSGEntry|Problème de sous-titres|VSG:Subtitles|Les sous-titres ne fonctionnent pas correctement.}}
+{{VSGEntry|Problème d'utilisation|VSG:Usage|J'ai des difficultés à utiliser VLC ou je cherche une information ou une option particulière.}}
+{{VSGEntry|Problème d'interface|VSG:Interface|Je veux modifier l'interface ou je cherche une option d'interface particulière.}}
+{{VSGEntry|Problème de désinstallation|VSG:Uninstallation|VLC ne se désinstalle pas ou mal (pourquoi le désinstallez-vous de toute façon ?).}}
+
+==Autres documentations==
+Si ce guide de support ne résout pas votre problème ou ne répond pas à vos questions, vous pouvez également utiliser ces ressources pour vous aider :
+
+* [[FAQ|Foire aux questions]]
+* [[WindowsFAQ|Foire aux questions de VLC sur Windows]]
+* [[MacOSXFAQ|Foire aux questions de VLC sur Mac OS X]]
+* [https://forum.videolan.org/ Forum d'assistance aux utilisateurs] (en anglais)
+* Le canal [[IRC]] de VideoLAN
+* [[Documentation|Documentation VLC]]
+
+{{VSG}}

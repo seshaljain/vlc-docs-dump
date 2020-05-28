@@ -1,0 +1,1 @@
+#REDIRECT [[VLC HowTo/Add a logo]]

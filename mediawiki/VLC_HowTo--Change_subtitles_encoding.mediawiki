@@ -1,0 +1,13 @@
+{{howto|change subtitles text encoding}}
+
+If you see wrong characters on screen or <samp>failed to convert [[subtitle]] encoding</samp> error message you should try to change Subtitles [[text encoding]] option. Remember to press '''Save''' to save VLC settings and restart VLC after that to make sure changes are enabled.
+
+Select '''Tools → Preferences'''.<br>
+[[File:ToolsPreferences-Windows 8.png|500px|alt=]]
+
+Select '''Subtitles / OSD → Default encoding'''.<br>
+[[File:Basic subtitles prefs.png|500px|alt=]]
+
+{{VSG}}
+
+{{DEFAULTSORT:Subtitle}}

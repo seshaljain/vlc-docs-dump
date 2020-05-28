@@ -1,0 +1,3 @@
+style="background: #cff;" \| Middle<noinclude>
+
+[[Category:Table cell templates]] </noinclude>

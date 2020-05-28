@@ -1,0 +1,42 @@
+__NOTOC__
+{{RightMenu|Documentation TOC}}
+
+This is the user guide for the VLC media player.
+
+==VLC User Guide==
+*[[Documentation:Quick_start_guide|Quick start guide]]: How to start with VLC.
+*[[Documentation:Installing VLC|Installation]]: Installation instructions for several systems.
+*[[Documentation:History|History]]: Overview and history of the VideoLAN project.
+
+==Usage==
+*[[Documentation:Interface|Interface]]: The main interface of {{VLC}}.
+**[[Documentation:Play_HowTo/Basic_Use/Interface_OSX|OSX Interface]]
+**[[Documentation:Play_HowTo/Basic_Use/Interface_Windows|Windows/Linux Interface]]
+*[[Documentation:Open Media|Open Media]]: Open every media you want, the way you want.
+*[[Documentation:Audio|Audio]]: Visualization, selection of devices...
+*[[Documentation:Video|Video]]: Cropping, snapshots and screenshots...
+*[[Documentation:Playback|Playback]]: Navigation through media files (e.g. chapters, bookmarks).
+*[[Documentation:Playlist|Playlist]]: Creating and managing playlists.
+*[[Documentation:Subtitles|Subtitles]]: Selection of subtitles
+*[[Documentation:Video and Audio Filters|Video and Audio Filters]]: Usage of VLC's filters (equalizer, video filters) 
+*[[Documentation:Snapshots|Snapshots]]: How to create snapshots and screenshots.
+*[[Documentation:Hotkeys|Hotkeys]]: Configuration of VLC's hotkeys
+*[[VLC Uninstall|Uninstallation]]: Uninstallation instructions.
+*[[VSG:Main|Troubleshooting]]: The VLC Support Guide, an informal, step-by-step guide for troubleshooting most common issues with VLC.
+
+==Advanced Usage==
+*[[Documentation:WebPlugin|Using VLC inside a webpage]]: How to create webpages that use the VLC Web plugin.
+*[[Documentation:Command_line|Command line]]: Main command line instructions.
+*[[Documentation:Alternative_Interfaces|Alternative Interfaces]] : HTTP interface and other control interface.
+*[[Documentation:Misc|Misc]] : Miscellaneous other things.
+
+==Appendix==
+*[[Documentation:Building Pages for the HTTP Interface|Building Pages for the HTTP Interface]]
+*[[Documentation:Format String|Format String]]
+*[[Documentation:Building Lua Playlist Scripts|Building Lua Playlist Scripts]]
+*[[Documentation:Play HowTo/Basic Use 0.8| VLC Use 0.8]]. (Versions older than 0.9).
+
+
+{{Documentation}} [[Category:How To]]
+
+Copyright &copy; 2002-2009 the VideoLAN project.

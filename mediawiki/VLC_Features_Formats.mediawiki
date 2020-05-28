@@ -1,0 +1,313 @@
+{{Back to|VLC Features}}
+This is a new page that lists the audio/video codecs that VLC can or cannot read. It is still under development, don't hesitate to add a some [[FourCC]] and infos.
+
+It should now be a bit more complete than the official features page on [https://www.videolan.org/vlc/features.html VideoLAN website].
+
+If you have any question about those codecs, just consult our [[Knowledge Base]] or our friends on the [http://wiki.multimedia.cx Multimedia Wiki]. If you don't find information, search with Wikipedia or Google.
+
+== Video Codecs ==
+
+=== Widely Used Video Codecs ===
+
+{| class="wikitable codec-table centered sortable"
+|+ '''Most used Video Codecs''' 
+|-
+! Name !! FOURCC !! Playable !! Encoder !! library !! Comment 
+|-
+! MPEG-1 Part 2
+|| mpeg, mp1v, mpg1, PIM1 || {{Yes}} || {{Yes}} || libmpeg2 , ffmpeg || 
+|-
+! MPEG-2 Part 2
+|| mp2v, mpg2, vcr2, hdv1, hdv2, hdv3, mx*n, mx*p|| {{Yes}} || {{Yes}} || libmpeg2 , ffmpeg || 
+|-
+! MJPEG (A/B) 
+|| ||{{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! Divx (1, 2, 3) 
+|| DIV1, DIV2, DIV3, mp41, mp42, MPG4, MPG3 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! DivX 4, 5, 6 , 3ivx D4, MPEG-4 
+|| DIV4, DIV5, DIV6, col1, col0, 3ivd || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! MPEG-4 Part 2 (AVP), Xvid
+||  DIVX, Xvid, mp4s, m4s2, xvid, mp4v, fmp4, 3iv2, smp4, ... || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! H.261 
+|| h261 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! H.262 
+|| h262 || {{Yes}} || {{Yes}} || ffmpeg || Same as MPEG-2 Video
+|-
+! H.263 / H.263i 
+|| h263 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! H.264 / X.264 
+(MPEG-4/AVC) 
+(MPEG-4 Part.10)
+|| h264, s264, AVC1, DAVC, H264, X264, VSSH ||{{Yes}} || {{Yes}} || ffmpeg (decode), x264 (encode) || 
+|-
+! Sorenson 1 (Quicktime) 
+|| SVQ 1 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! Sorenson 3 (Quicktime) 
+|| SVQ 3 || {{Yes}} || {{No}} || ffmpeg ||
+|-
+! DV 
+|| ||{{Yes}} || {{Yes}} || ffmpeg ||
+|- 
+! Cinepak 
+|| cvid ||{{Yes}} || {{No}} || internal, ffmpeg ||
+|- 
+! Theora 
+|| thra || {{Yes}} || {{Yes}}, violated || libtheora ||
+|-
+! WMV 1/2 (7/8) 
+|| wmv1, wmv2 || {{Yes}} || {{Yes}} || ffmepg ||
+|- 
+! WMV 3 / WMV-9 / VC-1 
+|| wmv3, wvc1, wmva || {{Yes}} || {{No}} || ffmpeg || Not all profiles are supported. See [[DMO]].
+|-
+! On2 VP3,
+|| VP31, VP30, VP3 || {{Yes}} || {{No}} || ffmpeg ||
+|-
+! On2 VP5 
+|| VP50, VP5, VP51 || {{Yes}} || {{No}} || ffmpeg ||
+|-
+! On2 VP6 (used by FLV) 
+|| VP60, VP61, VP62, VP6F, VP6A || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! On2 VP7
+|| VP7 || {{No}} || {{No}} ||  ||
+|-
+! Flash Screen Video 
+|| FSV1 ||  {{Yes}}  ||  {{Yes}}  || ffmpeg ||
+|-
+! Indeo Video 3  
+|| IV31, IV32 || {{Yes}} || {{no}} || ffmpeg ||
+|-
+! Indeo Video 4/5  
+||IV41, IV51 || {{Yes}} || {{no}} || libavcodec ||
+|-
+!Real Video 1.0, 1.3, 2.0 
+|| RV10, RV13, RV20 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+!Real Video 3.0, 4.0 
+|| RV30, RV40 || {{No}} || {{No}} || ||
+|- 
+! Dirac 
+|| BBCD || {{Yes}} || {{Yes}} || dirac ||
+|-
+! Huffyuv / <del>Lagarith</del>
+|| || {{Yes}} || {{Yes}} || ffmpeg  ||
+|-
+|}
+
+=== Rarer Video Codecs ===
+
+{| class="wikitable codec-table centered sortable"
+|+ '''Less Used Video Codecs''' 
+|-
+! Rare codecs !! FOURCC !! Decoder !! Encoder !! library !! Comment 
+|-
+! Apple Animation, Graphics, Video, QuickDraw 
+|| 'rle','smc ','rpza', 'qdrw' || {{Yes}} || {{No}} ||  ffmpeg || 
+|-
+! SheerVideo 
+|| ||  {{No}} || {{No}} || || Professional use, no open source decoders
+|-
+! CorePNG 
+|| || ?? || ?? || ||
+|-
+! MSU Lossless 
+|| || ?? || ?? || ||
+|-
+! Snow 
+|| || {{Yes}} || {{Yes}} || ||
+|-
+! Pixlet 
+|| || ?? || ?? || ||
+|-
+! Rare codecs (Asus V1, Asus V2) 
+|| ASV1, ASV2 || {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+! Game Codecs (Some) 
+|| || {{Yes}} || {{no}} || ffmpeg ||
+|-
+! Tarkin
+|| || {{No}} || {{No}} || ||
+|-
+! QPEG
+|| QPEG || {{Yes}} || {{Untested}} || ffmpeg ||
+|}
+
+== Audio Codecs ==
+
+{| class="wikitable codec-table centered sortable"
+|+ '''Audio Codecs Status''' 
+|-
+! Name !! FOURCC !! Decoder !! Encoder !! library !! Comment 
+|-
+! MPEG-Audio 1 Layer-1/2 
+|| mpga || {{Yes}} || {{Yes}} || libmad (decoding), twolame (encoding) || ISO/IEC MPEG
+|-
+! MP3 
+|| mp3, .mp3, LAME || {{Yes}} || {{Yes}} || libmad (decoding), ffmpeg-mp3lame  || ISO/IEC MPEG - '''(recompile needed for encoding)'''
+|-
+! AAC
+|| mp4a||  {{Yes}} || {{Yes}} || faad (decode), faac (encoding) || ISO/IEC MPEG
+|-
+! HE-AAC 
+|| ||  {{Yes}} || {{Untested}} || faad (decode), libaacplus + ffmpeg (encoding) || ISO/IEC MPEG, AAC+ encoding through libaacplus + ffmpeg (patched) - untested
+'''RECOMPILE VLC & ffmpeg for this''' Audio codec
+|-
+! AC-3 
+|| a52, a52b || {{Yes}} || {{Yes}} || liba52 (decode), ffmpeg (encode) ||
+|-
+! ATRAC 
+|| atrc ||{{Yes}} || {{No}} || ||
+|-
+! iLBC 
+|| ILBC, ilbc || {{Untested}} || {{Untested}} || QuickTime (decode) || (check for encoder and free decoder)
+|-
+! Mu-Law 
+|| ||{{Yes}} || {{No}} || ffmpeg || (check for encoder)
+|-
+! NellyMoser
+|| ||{{Yes}} || {{No}} || ffmpeg || 
+|-
+! QCELP (PureVoice)
+|| Qclp ||{{Yes}} || {{No}}? || ffmpeg || Usually in QCP container. [https://trac.videolan.org/vlc/ticket/5347 buggy?]
+|-
+! Real Audio 
+|| lpcJ, 28_8, dnet, sipr, cook, atrc, raac, racp, ralf || {{Yes}} || {{No}} || || Some work. Half don't
+|-
+! Shorten 
+|| shrn || {{No}} || {{No}} || || ffmpeg and ffplay do it. VLC doesn't. (It is in the FOURCC list in VLC's {{VLCSourceFile|modules/codec/avcodec/fourcc.c}} --[[User:Dionoea|Dionoea]])
+|-
+! Speex 
+|| spex || {{Yes}} || {{Yes}} || libspeex ||
+|-
+! Vorbis 
+|| vorb || {{Yes}} || {{Yes}} || libvorbis ||
+|-
+! DTS 
+|| dts || {{Yes}} || {{No}} || libdca || DTS-HD unsupported
+|- 
+! MPC 
+|| || {{Yes}} || {{No}} || libmpcdec ||
+|-
+! WMA 1/2
+|| wma1, wma2 || {{Yes}} || {{Yes}}, violated || ffmpeg || WMA9 is not supported
+|-
+! Flac 
+|| flac || {{Yes}} || {{Yes}} || libflac || lossless
+|-
+! Apple Lossless Audio Codec 
+|| alac || {{Yes}} || {{No}} || ffmpeg || lossless 
+|-
+! Monkey's Audio 
+||  ||{{Yes}} || {{No}} || || lossless
+|-
+! Musepack 
+|| || {{Yes}} || {{No}} || libmpcdec ||
+|-
+! ADMPCM (various) 
+|| || {{Yes}} || {{Yes}} || ffmpeg and internal ||
+|-
+! AMR 
+|| samr || {{Yes}} || {{Yes}} || ffmpeg + libamrnb + libamrwb || '''RECOMPILE VLC for this''' Speech codec
+|-
+! Sonic 
+|| SONC ||  {{Yes}} || {{Yes}} || ffmpeg ||
+|-
+|}
+
+== Subtitles Codecs ==
+{{Transcluded|Subtitles codecs}}
+<!-- Editors: This page includes content from Subtitles codecs. Make edits to this section there. -->
+{{:Subtitles codecs}}
+
+== Format/Container/Muxers ==
+
+{| class="wikitable codec-table centered sortable"
+|+ '''Muxer''' 
+|-
+! Name !! extensions !! Playable !! Savable !! Comment 
+|-
+! 3GP
+|| .3gp || {{Yes}} || {{Untested}} ||
+|-
+! AIFF
+|| .asf, .wmv || {{Yes}} || {{No}} || 
+|-
+! ASF
+|| .asf, .wmv || {{Yes}} || {{Yes}} || 
+|-
+! AU
+|| .au || {{Yes}} || ||
+|-
+! AVI
+|| .avi || {{Yes}} || {{Yes}}, violated || 
+|-
+! DMF
+|| || {{Untested}} || {{Untested}} ||
+|-
+! FLV
+|| .flv || {{Yes}} || {{Yes}} || through ffmpeg
+|-
+! MOV
+|| .mov || {{Yes}} || {{Yes}} ||
+|-
+! MP4
+|| .mp4 || {{Yes}} || {{Yes}} ||
+|-
+! OGG
+|| .ogm, .ogg || {{Yes}} || {{Yes}} ||
+|-
+! MKV
+|| .mkv, .mka || {{Yes}} || {{No}}, WIP || Summer of Code 2007 Project
+|-
+! MPEG-2 / TS
+|| .ts, .mpg || {{Yes}} || {{Yes}} ||
+|-
+! MPEG-2 / ES, PS, PVA, MP3
+|| .mpg, .mp3, .mp2 || {{Yes}} || {{Yes}} ||
+|-
+! NSC
+|| .nsc || {{Yes}} || {{No}} ||
+|-
+! NSV
+|| .nsv || {{Yes}} || {{No}} ||
+|-
+! Nut
+|| .nut || {{Yes}} || {{Yes}} || Muxable through libavformat
+|-
+! Real
+|| .ra, .ram, .rm, .rv , .rmbv || {{Partial}} || {{No }} ||  version 4 and 5, no support for version 3
+|-
+! Raw (a52, dts, aac, flac, .dv, .vid)
+|| .a52, .dts, .aac, .flac, .dv, .vid || {{Yes}} || ?? ||
+|-
+! True Audio Codec
+|| .tta, .tac || {{Yes}} ||  {{No}} ||
+|-
+! Ty Tivo
+|| .ty || {{Yes}} || {{No}} ||
+|-
+! Wav 
+|| .wav, .dts || {{Yes}} || {{Yes}} ||
+|-
+! Xa
+|| .xa || {{Yes}} || {{No}} ||
+|-
+|}
+
+== HD-Discs codecs ==
+{{Transcluded|HD-Discs codecs}}
+<!-- Editors: This page includes content from HD-Discs codecs. Make edits to this section there. -->
+{{:HD-Discs codecs}}
+
+[[Category:Codecs]]
+[[Category:Knowledge Base]]
+
+{{DEFAULTSORT:*}}

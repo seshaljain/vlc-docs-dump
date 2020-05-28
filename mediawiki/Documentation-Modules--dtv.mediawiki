@@ -1,0 +1,34 @@
+{{See also|Documentation:Modules/dvb}}
+{{Note|For ease of navigation options are split into subpages: [[{{#rel2abs:/Linux options}}|/Linux options]] and [[{{#rel2abs:/Windows options}}|/Windows options]].<br />The dtv module uses [[wikipedia:conditional compilation|conditional compilation]] to determine which apply; separate modules are not used.}}
+
+== Linux ==
+{{Module|name=dtv|type=Access|os=Linux|description=Digital Television and Radio|sc=dtv|sc2=tv|sc3=dvb}}
+
+Other shortcuts include:
+* cable: <code>[[DVB-C|dvb-c]]</code>, <code>cqam</code>, <code>isdb-c</code>
+* satellite <code>[[DVB-S|dvb-s]]</code>, <code>dvb-s2</code>, <code>isdb-s</code>
+* terrestrial <code>[[DVB-T|dvb-t]]</code>, <code>dvb-t2</code>, <code>isdb-t</code>, <code>atsc</code>
+{{Clear}}
+
+=== Options ===
+{{See|{{#rel2abs:/Linux options}}}}
+{{Clear}}
+
+== Windows ==
+{{Module|name=dtv|type=Access|os=Windows|description=Digital Television and Radio|sc=dtv|sc2=tv|sc3=dvb}}
+
+Other shortcuts include:
+* cable: <code>[[DVB-C|dvb-c]]</code>, <code>cqam</code>, <code>isdb-c</code>
+* satellite <code>[[DVB-S|dvb-s]]</code>, <code>dvb-s2</code>, <code>isdb-s</code>
+* terrestrial <code>[[DVB-T|dvb-t]]</code>, <code>dvb-t2</code>, <code>isdb-t</code>, <code>atsc</code>, <code>dvbt</code>
+{{Clear}}
+
+=== Options ===
+{{See|{{#rel2abs:/Windows options}}}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/dtv/access.c}}
+* {{VLCSourceFolder|modules/access/dtv}}
+
+{{Documentation}}

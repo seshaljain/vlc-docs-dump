@@ -1,0 +1,10 @@
+{{Module|name=SDL|type=Audio output|last_version=1.1.13|description=[[wikipedia:Simple DirectMedia Layer|Simple DirectMedia Layer]] audio output}}
+
+{{Historical}}
+
+This module had a single shortcut: <code>sdl</code>.
+
+== Options ==
+None
+
+{{Documentation}}

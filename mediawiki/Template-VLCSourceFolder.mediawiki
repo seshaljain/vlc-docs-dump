@@ -1,0 +1,22 @@
+<includeonly><span class="plainlinks folder-icon">{{Git link|p={{{p|vlc.git}}}|a=tree|f={{{1|}}}|hb=HEAD|l={{{l|{{{1|}}}}}}}}{{#ifeq:{{{p|vlc.git}}}|vlc.git| |&#32;({{{p}}})}}</span></includeonly><noinclude>
+
+== Usage ==
+ <code>{{{{PAGENAME}}|<nowiki>folder}}</nowiki></code>
+
+Parameters:
+* '''<code><nowiki>|p=</nowiki></code>''' links to other branches, defaults to <samp>vlc.git</samp> (optional)
+
+Examples:
+* <code>{{{{PAGENAME}}|<nowiki>doc}}</nowiki></code> gives {{{{PAGENAME}}|doc}}
+* <code>{{{{PAGENAME}}|<nowiki>doc|p=vlc/vlc-2.0.git}}</nowiki></code> gives {{{{PAGENAME}}|doc|p=vlc/vlc-2.0.git}}
+
+== See also ==
+* {{tl|Commit}}
+* {{tl|Commitdiff}}
+* {{tl|File}}
+* {{tl|SVNSourceFile}}
+* {{tl|VLCSourceFile}}
+* {{tl|VLCSourceFolder}}
+
+[[Category:Templates]]
+</noinclude>

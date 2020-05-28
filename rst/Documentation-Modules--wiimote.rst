@@ -1,0 +1,11 @@
+{{Stub}} {{Moduletype=Controldescription=Enables to use the wiimote as a
+remote control}}
+
+Wiimote is used to control VLC Media player. Uses
+[http://abstrakraft.org/cwiid/ CWiid].
+
+{{clear}} Example usage: {{%}} '''vlc --control wiimote'''
+
+[[Category:Control VLC]]
+
+{{Documentation footer}}

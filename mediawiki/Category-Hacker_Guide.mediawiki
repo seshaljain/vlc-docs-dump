@@ -1,0 +1,3 @@
+The [[Hacker Guide]] seeks to help understanding the VLC code base and VLC internals to quickly get up to speed.
+
+[[Category:Documentation]]

@@ -1,0 +1,3 @@
+Category for page license categories.
+
+[[Category:Wiki maintenance]]

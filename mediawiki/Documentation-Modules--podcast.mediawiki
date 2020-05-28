@@ -1,0 +1,13 @@
+{{Module|name=podcast|type=Services discovery|first_version=0.8.5|description=Podcasts}}
+
+== Options ==
+{{Option
+|name=podcast-urls
+|value=string
+|description=Enter the list of podcasts to retrieve, separated by '{{!}}' (pipe)
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/services_discovery/podcast.c}}
+
+{{Documentation}}

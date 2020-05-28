@@ -1,0 +1,6 @@
+Hello everyone,
+
+I'm a Linux and OpenSource enthusiast and software developer.
+
+I'm here because I wanted to notify people of the {{VLC}}'s discontinued
+support for [[wikipedia:FluidSynth|FluidSynth]] on Windows.

@@ -1,0 +1,10 @@
+<includeonly><!--
+-->{{#ifexist:{{#titleparts:{{FULLPAGENAME}}|1}}/{{{1}}}<!--
+-->|&nbsp;&bull;&#32;<span lang="{{{1}}}">[[{{#titleparts:{{FULLPAGENAME}}|1}}/{{{1}}}{{!}}{{#language:{{{1}}}}}]]</span><!--
+-->}}</includeonly><noinclude>
+==Usage==
+<!--dummy edit-->
+Do not use. Special helper template of {{tl|Languages}}.
+
+[[Category:Templates]]
+</noinclude>

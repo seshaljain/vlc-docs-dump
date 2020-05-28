@@ -1,0 +1,32 @@
+{| class="tocsidebar cellpadding-1px"
+!<big>[[Documentation:Documentation|Documentation]]</big><br />
+|-
+|[[Documentation:Play HowTo|VLC Play HowTo]]
+|-
+|[[Documentation:Streaming HowTo|VLC Streaming HowTo]]
+|-
+|[[Hacker Guide|The Hacker's Guide to VLC]]
+|-
+!<br />Video Output Modules
+|-
+|[[Documentation:Modules/aa|aa]]
+|-
+|[[Documentation:Modules/caca|caca]]
+|-
+|etc.
+|-
+!<br />Video Filter Modules
+|-
+|[[Documentation:Modules/adjust|adjust]]
+|-
+|[[Documentation:Modules/extract|extract]]
+|-
+|etc.
+|-
+|style="text-align:right;"|<small>[[Template:Documentation_toc|View this alone]]</small>
+|}<includeonly>
+{{Clear|right}}
+</includeonly><noinclude>
+
+[[Category:Templates]]
+</noinclude>

@@ -1,0 +1,6 @@
+You can with text-based subtitle formats [[Subtitles codecs]]. Go to
+Tools -> Preferences (set Show Settings to All) and Video ->
+Subtitles/OSD -> Text renderer and adjust anything you want. Font size
+in pixels overrides Relative font size selection. Remember to press Save
+to save VLC settings and restart VLC after that to make sure changes are
+enabled.

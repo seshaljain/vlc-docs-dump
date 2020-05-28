@@ -1,0 +1,6 @@
+{{See also|DirectFB Compile}}
+{{Module|name=directfb|type=Video output|last_version=2.2.8|description=Direct framebuffer video output|os=Linux}}
+
+{{Stub}}
+
+{{Documentation footer}}

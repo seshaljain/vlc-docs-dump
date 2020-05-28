@@ -1,0 +1,12 @@
+{{Codec video|id=h261|encoder=y|mod=avcodec}}
+{{Mmwiki|H.261}}
+{{Wikipedia|H.261}}
+
+H.261 is an [[ITU-T]] standard for video compression. It is the first standard in the H.26x series, and the first usable [[video codec]] standard; it was preceded only by the experimental H.120 standard that never saw any use. It was succeeded by [[H.262/MPEG-2 Part 2]].
+
+== See also ==
+* [[H.261]]
+* [[H.262/MPEG-2 Part 2]]
+* [[H.263]]
+* [[H.264/MPEG-4 AVC]]
+* [[High Efficiency Video Coding|H.265/HEVC]]

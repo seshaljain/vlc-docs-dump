@@ -1,0 +1,13 @@
+{{Side box|text=Find out about {{{1}}} on {{{on|their official website}}}:|link1={{{2}}}|label1={{{label1|{{{1}}}}}}}}<noinclude>
+{{Clear}}
+== Usage ==
+Examples:
+* <code>{{{{PAGENAME}}<nowiki>|Example site|https://example.com}}</nowiki></code> gives
+{{{{PAGENAME}}|Example site|https://example.com}}
+{{Clear}}
+* <code>{{{{PAGENAME}}<nowiki>|The Example Group|on=their wiki|https://example.com}}</nowiki></code> gives
+{{{{PAGENAME}}|The Example Group|on=their wiki|https://example.com}}
+{{Clear}}
+
+[[Category:Templates]]
+</noinclude>

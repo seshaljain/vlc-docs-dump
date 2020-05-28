@@ -1,0 +1,18 @@
+== Demux ==
+{{Module|name=wav|type=Access demux|first_version=0.5.0|description=[[WAV]] demuxer|sc=none}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Mux ==
+{{Module|name=wav|type=Muxer|first_version=0.8.0|description=[[WAV]] muxer|sc=wav}}
+
+=== Options ===
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/wav.c}}
+* {{VLCSourceFile|modules/mux/wav.c}}
+
+{{Documentation}}

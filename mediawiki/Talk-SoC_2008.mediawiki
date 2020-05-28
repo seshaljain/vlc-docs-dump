@@ -1,0 +1,1 @@
+Any interest in a VLC port to the Next generation [http://www.neurostechnology.com Neuros OSD] [http://open.neurostechnology.com/files/Neuros-OSD-Multimedia-Platform-1.01.pdf platform(pdf)]?  VLC is going to be the media player for this device, so we're going to need a lot of resources (internal and external) to get it to production.

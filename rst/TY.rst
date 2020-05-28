@@ -1,0 +1,9 @@
+{{muxaltid=tivomodule
+link=https://git.videolan.org/?p=vlc.git;a=blob;f=modules/demux/ty.c}}
+
+'''TY''' or '''TIVO''' format, from your [[wikipedia:TiVo|TiVo]].
+
+==Accepted codecs== \* [[mpgv]]: MPEG video \* [[mpga]]: MPEG audio \*
+[[a52]]: A/52 audio
+
+==Source code== {{fileinput demuxer}}

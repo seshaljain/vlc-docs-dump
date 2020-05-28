@@ -1,0 +1,6 @@
+Filing cabinet icon for historical/obsolete documentation.
+
+Imported '''public domain''' from
+[http://en.wikipedia.org/wiki/File:Historical.svg]
+
+[[Category:Stock images]]

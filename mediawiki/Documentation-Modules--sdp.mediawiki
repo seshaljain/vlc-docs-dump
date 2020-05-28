@@ -1,0 +1,9 @@
+{{Module|name=sdp|type=Access|description=[[Session Description Protocol]]: Fake input for <code>sdp://</code> scheme|sc=sdp}}
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/access/sdp.c}}
+
+{{Documentation}}

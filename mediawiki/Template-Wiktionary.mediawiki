@@ -1,0 +1,35 @@
+{{#if:{{{4|}}}
+   | {{Side box|text=[[wiktionary:Main_Page|Wiktionary]] has information on these entries:
+        |wikilink1=wiktionary:{{{1}}}
+        |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+        |wikilink2=wiktionary:{{{2}}}
+        |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+        |wikilink3=wiktionary:{{{3}}}
+        |label3={{{label3|{{{l3|{{{3}}}}}}}}}
+        |wikilink4=wiktionary:{{{4}}}
+     }}
+   | {{#if:{{{3|}}}
+        | {{Side box|text=[[wikt:Main_Page|Wiktionary]] has information on these entries:
+             |wikilink1=wiktionary:{{{1}}}
+             |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+             |wikilink2=wiktionary:{{{2}}}
+             |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+             |wikilink3=wiktionary:{{{3}}}
+             |label3={{{label3|{{{l3|{{{3}}}}}}}}}
+          }}
+        | {{#if:{{{2|}}}
+             | {{Side box|text=[[wiktionary:Main_Page|Wiktionary]] has information on these entries:
+                  |wikilink1=wiktionary:{{{1}}}
+                  |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+                  |wikilink2=wiktionary:{{{2}}}
+                  |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+               }}
+             | {{Side box|text=[[wiktionary:Main_Page|Wiktionary]] has information on this entry:
+                  |wikilink1=wiktionary:{{{1|{{PAGENAME}}}}}
+                  |label1={{{label1|{{{l1|{{{1|{{PAGENAME}}}}}}}}}}}
+               }}
+          }}
+     }}
+}}<noinclude>
+[[Category:Templates]]
+</noinclude>

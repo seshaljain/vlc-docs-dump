@@ -1,0 +1,3 @@
+For things specific to [[GNU/Linux]]
+
+[[Category:Images by OS]]

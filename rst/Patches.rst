@@ -1,0 +1,85 @@
+This page '''does not describe''' how to produce a patch to be submitted
+upstream, please '''read [[Sending Patches]] for that'''.
+
+==.diff files==
+
+Frequently patches to source code are presented or discussed in forums
+or in mailing lists in so called .diff format (these are "differences"
+to the source code).
+
+You can apply those patches yourself to the source code or create .diff
+files. This requires the patchutils package in Cygwin.
+
+===Patching source code===
+
+Download a so called .diff file:
+
+   sse2-pixel-routines-v3.diff (example)
+
+NOTE: make sure the file doesn't get a .txt extension, so Save as type
+"All Files" instead of "Text Document" (IE has a habit of renaming to
+.txt. If that happens just simply rename to .diff)
+
+Copy the .diff file into the appropriate source folder
+
+   x264-trunk (example)
+
+Apply the patch as follows
+
+   patch -p0 < sse2-pixel-routines-v3.diff (example)
+
+NOTE: replace sse2-pixel-routines-v3.diff with your "patch"
+
+This will output something like:
+
+   patching file common/i386/pixel.h patching file
+   common/i386/pixel-a.asm patching file common/pixel.c
+
+Your source code is now patched!
+
+NOTE: If you want to revert to the original version you can use the -R
+option with the patch command or alternatively you can just delete the
+changed files and just do an SVN update to get the original/latest SVN
+version back.
+
+===Creating .diff files===
+
+When changing the source code it's possible to create a "difference"
+file against the latest source.
+
+In this example the file /modules/codec/x264.c was changed (the part "in
+kbit/s" was added to a description).
+
+Start your Cygwin shell.
+
+Change to the appropriate folder where a changed file is.
+
+   cd vlc-trunk/modules/codec (example)
+
+Output the svn diff command to a file:
+
+   svn diff -u > x264-patch.diff
+
+The current folder now holds a x264-patch.diff file containing the
+following:
+
+   .. rubric:: Index: x264.c
+      :name: index-x264.c
+
+   --- x264.c (revision 15921) +++ x264.c (working copy) @@ -131,7
+   +131,7 @@ #define RATETOL_LONGTEXT `N <>`__\ ( "Allowed variance in
+   average. " "bitrate (in kbits/s).")
+
+   -#define VBV_MAXRATE_TEXT `N <>`__\ ("Max local bitrate") +#define
+   VBV_MAXRATE_TEXT `N <>`__\ ("Max local bitrate in kbit/s") #define
+   VBV_MAXRATE_LONGTEXT `N <>`__\ ( "Sets a maximum local bitrate in
+   kbits/s.")
+
+      #define VBV_BUFSIZE_TEXT `N <>`__\ ("VBV buffer")
+
+NOTE: In Windows you should open this file with something else than
+notepad (so wordpad or some more advanced editor). This has to do with
+the end of line markers that are present in the file since it was made
+in a Linux environment.
+
+[[Category:Coding]]

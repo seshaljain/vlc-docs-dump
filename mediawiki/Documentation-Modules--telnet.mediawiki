@@ -1,0 +1,33 @@
+{{See also|Documentation:Modules/ncurses|Documentation:Modules/http intf}}
+{{Module|name=telnet|type=Control interface|description=Control VLC via a telnet connection}}
+
+The telnet module [[Control VLC instance|communicates with VLC]] over a network connection using the [[wikipedia:telnet|telnet]] protocol. The original module was provided until 1.1.0, when it was re-written in [[wikipedia:Lua (programming language)|Lua]]. The old module was renamed to oldtelnet and removed in 2.0.0.
+
+Telnet should not be used for sensitive applications.
+
+To find module information on the command-line for VLC 2.0.0 and above, use <code>vlc -p lua --advanced --help-verbose</code> and look for the ''Lua Telnet'' section.
+
+Options as of 3.0.6 are listed below:
+{{Option
+|name=telnet-host
+|value=string
+|description=This is the host on which the interface will listen. It defaults to all network interfaces (0.0.0.0). If you want this interface to be available only on the local machine, enter "127.0.0.1"
+}}
+{{Option
+|name=telnet-port
+|value=integer
+|default=4212
+|description=This is the TCP port on which this interface will listen
+}}
+{{Option
+|name=telnet-password
+|value=string
+|description=A single password restricts access to this interface
+}}
+{{Option
+|name=lua-sd
+|value=string
+|description=?
+}}
+
+{{Documentation footer}}

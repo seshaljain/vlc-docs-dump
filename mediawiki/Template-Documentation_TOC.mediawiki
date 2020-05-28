@@ -1,0 +1,62 @@
+{| class="tocsidebar cellpadding-1px"
+!<big>[[Documentation:User Guide|VLC User Guide]]</big><br />
+|-
+!<br />
+|-
+|[[Documentation:Quick Start Guide|Quick Start Guide]]
+|-
+|[[Documentation:Installing VLC|Installing VLC]]
+|-
+|[[Documentation:History|History]]
+|-
+!Usage
+|-
+|[[Documentation:Interface|Interface]]
+|-
+|[[Documentation:Open Media|Open Media]]
+|-
+|[[Documentation:Audio|Audio]]
+|-
+|[[Documentation:Video|Video]]
+|-
+|[[Documentation:Playback|Playback]]
+|-
+|[[Documentation:Playlist|Playlist]]
+|-
+|[[Documentation:Subtitles|Subtitles]]
+|-
+|[[Documentation:Video and Audio Filters|Video and Audio Filters]]
+|-
+|[[Documentation:Snapshots|Snapshots]]
+|-
+|[[Documentation:Hotkeys|Hotkeys]]
+|-
+|[[Documentation:Uninstalling VLC|Uninstalling VLC]]
+|-
+|[[VSG:Main|Troubleshooting]]
+|-
+!Advanced usage
+|-
+|[[Documentation:WebPlugin|Using VLC inside a webpage]]
+|-
+|[[Documentation:Command_line|Command line]]
+|-
+|[[Documentation:Alternative_Interfaces|Alternative Interfaces]]
+|-
+|[[Documentation:Misc|Misc]]
+|-
+!<br /> Appendix
+|-
+|[[Documentation:Building Pages for the HTTP Interface|Building Pages for the HTTP Interface]]
+|-
+|[[Documentation:Format String|Format String]]
+|-
+|[[Documentation:Building Lua Playlist Scripts|Building Lua Playlist Scripts]]
+|-
+|
+|-
+|style="text-align:left;"|<small>[[Template:Documentation_TOC|View this alone]]</small>
+|}<noinclude>
+
+[[Category:Templates]]
+</noinclude>

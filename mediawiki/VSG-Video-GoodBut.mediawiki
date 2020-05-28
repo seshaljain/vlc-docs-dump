@@ -1,0 +1,10 @@
+__NOTOC__
+==Video is good but...==
+
+{{VSGEntry|Video is choppy|VSG:Video:Choppy|VLC can partially play video, but its playback is choppy.}}
+{{VSGEntry|Video is too dark|VSG:Video:Dark|Video is appearing too dark on VLC.}}
+{{VSGEntry|Video colors are washed out|VSG:Video:Color_washed_out|This is a '''NVIDIA''' issue on Windows.}}
+
+<br>
+
+{{VSG}}

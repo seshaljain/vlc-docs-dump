@@ -1,0 +1,32 @@
+Support for fragmented [[MP4]] muxing/demuxing was added in VLC 3.0.0.
+
+The demux module is planned to support [[wikipedia:High Efficiency Image File Format|HEIF]] in future versions (currently in 4.0.0-dev) through a <code>heif</code> submodule.
+
+== Demux ==
+{{Module|name=mp4|type=Access demux|first_version=0.5.0|description=[[MP4]] stream demuxer|sc=none}}
+{{Option
+|name=mp4-m4a-audioonly
+|value=boolean
+|default=disabled
+|description=Ignore non audio tracks from [[.m4a|iTunes audio files]]
+}}
+{{Clear}}
+
+== Mux ==
+{{Module|name=mp4|type=Muxer|description=[[MP4]]/[[MOV]] muxer|sc=mp4|sc2=mov|sc3=3gp}}
+{{Option
+|name=sout-mp4-faststart
+|value=boolean
+|default=enabled
+|description=Create "Fast Start" files. "Fast Start" files are optimized for downloads and allow the user to start previewing the file while it is downloading
+}}
+{{Clear}}
+=== mp4frag ===
+{{Module|name=mp4frag|type=Muxer|first_version=3.0.0|description=Fragmented and streamable MP4 muxer|sc=mp4frag|sc2=mp4stream}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/mp4/mp4.c}}
+* {{VLCSourceFile|modules/mux/mp4/mp4.c}}
+
+{{Documentation}}

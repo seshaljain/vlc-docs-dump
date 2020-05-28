@@ -1,0 +1,2 @@
+What about putting it in english ? :I agree, since the whole wiki is
+written in English. -- [[User:Yoann|Yoann]] 15:13, 24 May 2007 (CEST)

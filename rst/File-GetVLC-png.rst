@@ -1,0 +1,4 @@
+== Summary == The "Get VLC!" banner by [[User:The DJ|Derk-Jan Hartman]].
+Uploaded from https://www.videolan.org/goodies.html
+
+[[Category:Cones]] == Licensing == {{CC-BY-NC-SA-2.0}}

@@ -1,0 +1,29 @@
+<includeonly><!--
+--><div class="hatnote">See also: [[:{{{1|Example page}}}|{{{label1|{{{l1|{{{1|Example page}}}}}}}}}]]<!--
+-->{{#if:{{{2|}}}<!--
+     -->|{{#if:{{{3|}}}<!--
+           -->|,&#32;<!--
+           -->|&nbsp;and&#32;<!--
+      -->}}[[:{{{2}}}|{{{label2|{{{l2|{{{2}}}}}}}}}]]<!--
+     -->|}}{{#if:{{{3|}}}<!--
+     -->|{{#if:{{{4|}}}<!--
+           -->|,&#32;<!--
+           -->|&nbsp;and&#32;<!--
+      -->}}[[:{{{3}}}|{{{label3|{{{l3|{{{3}}}}}}}}}]]<!--
+     -->|}}{{#if:{{{4|}}}<!--
+             -->|&nbsp;and&#32;<!--
+        -->[[:{{{4}}}|{{{label4|{{{l4|{{{4}}}}}}}}}]]<!--
+-->|}}</div></includeonly><noinclude>
+This template was reverse-engineered to resemble [//en.wikipedia.org/wiki/Template:See_also Wikipedia's template], but is my own work.<br />
+It can be used at the very beginning of articles to link up to four pages (including links to category pages).<br />
+'''Examples'''
+
+<code><nowiki>{{See also|MPEG-1}}</nowiki></code> produces:<br />
+{{See also|MPEG-1}}
+<code><nowiki>{{See also|MPEG-1|MPEG-2|MPEG-3|MPEG-4}}</nowiki></code> produces:<br />
+{{See also|MPEG-1|MPEG-2|MPEG-3|MPEG-4}}
+<code><nowiki>{{See also|VLC|label1=An awesome media player}}</nowiki></code> produces:<br />
+{{See also|VLC|label1=An awesome media player}}
+
+[[Category:Templates]]
+</noinclude>

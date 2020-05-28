@@ -1,0 +1,69 @@
+{{Module|name=stream_out_standard|type=Stream output|description=Standard stream output module|sc=standard|sc2=std}}
+
+The option <code>sout-standard-group</code> was deprecated in 2.1.0. The option <code>sout-standard-phone</code> was deprecated in 3.0.0.
+
+{{Option
+|name=sout-standard-access
+|value=string
+|default=""
+|description=Output method to use for the stream.
+}}
+{{Option
+|name=sout-standard-mux
+|value=string
+|default=""
+|description=[[Muxer]] to use for the stream.
+}}
+{{Option
+|name=sout-standard-dst
+|value=string
+|default=""
+|description=Destination (URL) to use for the stream. Overrides path and bind parameters.
+}}
+{{Option
+|name=sout-standard-bind
+|value=string
+|default=""
+|description=Address to bind to (helper setting for dst) address:[[port]] to bind vlc to listening incoming streams. Helper setting for dst, <code>dst{{=}}bind+'/'+path</code>. dst-parameter overrides this.
+}}
+{{Option
+|name=sout-standard-path
+|value=string
+|default=""
+|description=Filename for stream. Helper setting for dst, <code>dst{{=}}bind+'/'+path</code>. dst-parameter overrides this.
+}}
+{{Option
+|name=sout-standard-sap
+|value=boolean
+|default=disabled
+|description=Announce this session with [[SAP]].
+}}
+{{Option
+|name=sout-standard-name
+|value=string
+|default=""
+|description=This is the name of the session that will be announced in the [[SDP]] (Session Descriptor).
+}}
+{{Option
+|name=sout-standard-description
+|value=string
+|default=""
+|description=This allows you to give a short description with details about the stream, that will be announced in the SDP (Session Descriptor).
+}}
+{{Option
+|name=sout-standard-url
+|value=string
+|default=""
+|description=This allows you to give a URL with more details about the stream (often the website of the streaming organization), that will be announced in the SDP (Session Descriptor).
+}}
+{{Option
+|name=sout-standard-email
+|value=string
+|default=""
+|description=This allows you to give a contact mail address for the stream, that will be announced in the SDP (Session Descriptor).
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/stream_out/standard.c}}
+
+{{Documentation footer}}

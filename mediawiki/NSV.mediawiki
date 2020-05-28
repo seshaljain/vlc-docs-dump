@@ -1,0 +1,8 @@
+{{mux|id=nsv|encoder=n}}
+
+'''Nsv''' is the container format for NullSoft Video
+
+== Source code ==
+{{file|modules/demux/nsv.c|input demuxer}}
+
+{{Stub}}

@@ -1,0 +1,10 @@
+{| class="widebox center" style="padding:0;"
+|style="padding:0;"|[[File:Ambox outdated.png|36px|alt=|link=:Category:Outdated pages]]
+|style="padding:0;"|This page is outdated and information might be incorrect.<br />'''[[Special:CreateAccount|Create an account]]''' to start editing, and then <span class="plainlinks">'''[{{fullurl:{{FULLPAGENAME}}|action=edit}} click here]'''</span> to update this article.
+|}{{#if:{{{important|}}}<!--
+ -->|<includeonly>[[Category:Outdated pages|!]]</includeonly><!--
+ -->|<includeonly>[[Category:Outdated pages]]</includeonly>
+}}<noinclude>
+(See [[:Category:Outdated pages]] for more information)
+[[Category:Maintenance templates]]
+</noinclude>

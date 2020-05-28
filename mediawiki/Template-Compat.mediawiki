@@ -1,0 +1,5 @@
+<span class="noprint"><small>''Do you know more about the compatibility of {{PAGENAME}}? Please [{{SERVER}}{{localurl:{{PAGENAME}}|action=edit}} add it here]''</small></span>
+
+[[Category:CompatStub]]<noinclude>
+[[Category:Maintenance templates]]
+</noinclude>

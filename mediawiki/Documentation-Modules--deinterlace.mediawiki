@@ -1,0 +1,29 @@
+{{Module|name=deinterlace|type=Video output filter|description=[[Deinterlacing]] video filter}}
+
+== Options ==
+<onlyinclude>{{Option
+|name=sout-deinterlace-mode
+|value=string
+|select={discard,blend,mean,bob,linear,x,yadif,yadif2x,phosphor,ivtc}
+|description=Streaming [[deinterlace mode]]. Deinterlace method to use for streaming
+}}
+{{Option
+|name=sout-deinterlace-phosphor-chroma
+|value=integer
+|select={1,2,3,4}
+|description=Phosphor [[chroma]] mode for 4:2:0 input. Choose handling for colours in those output frames that fall across input frame boundaries.
+** Latest (1): take chroma from new (bright) field. Good for interlaced input, such as videos from a camcorder
+** AltLine (2): take chroma line 1 from top field, line 2 from bottom field, etc. Default, good for NTSC telecined input (anime DVDs, etc.)
+** Blend (3): average input field chromas. May distort the colours of the new (bright) field, too
+** Upconvert (4): output in 4:2:2 format (independent chroma for each field). Best simulation, but requires more CPU and memory bandwidth 
+|default=2
+}}
+{{Option
+|name=sout-deinterlace-phosphor-dimmer
+|value=integer
+|select={1,2,3,4}
+|description=Phosphor old field dimmer strength: 1 (Off), 2 (Low), 3 (Medium), 4 (High). This controls the strength of the darkening filter that simulates CRT TV phosphor light decay for the old field in the Phosphor [[framerate]]
+|default=2
+}}</onlyinclude>
+
+{{Documentation footer}}

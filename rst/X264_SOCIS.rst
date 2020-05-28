@@ -1,0 +1,66 @@
+{{Lowercase}} =ESA SOCIS Main Page=
+
+== Plans== First of all x264 is profiled (this has been done and a link
+to the profiles are below)
+
+<br>
+
+=== Profiles === [[X264 SOCIS/profiles]]
+
+<br>
+
+=== Conversions === Functions that are normally C that are intended for
+asm will have NEON implementations by the end of the project Every DSP
+function will also have a NEON implementation
+
+<br>
+
+=== List of functions to be implemented in NEON ===
+{{SERVER}}/X264_SOCIS/todo <br>
+
+== Timeline == <u>August 1st - 14th:</u>&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;Learn ARM architecture and ARM assembly
+
+<u>August 15th - 21st:</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Start
+learning NEON while writing NEON functions
+
+<u>August 22nd - Onwards:</u>&nbsp; Move onto harder functions''<br>''
+
+<u>Project end date:</u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 28th
+October 2011
+
+<br>
+
+''List will be updated shortly''
+
+<br>
+
+== Progress == My progress to date:
+
+\*Learned ARM assembly
+
+<br>
+
+== Git Access == My git can be accessed here:
+
+<code>https://github.com/samdunne/x264/tree/socis-dev\ </code>
+
+<br> Or if you wish to add my repository as a remote:
+
+<code>git remote add socis git://github.com/samdunne/x264.git\ </code>
+
+<br>
+
+<br> ==ARM Assembly Guide== Something I have been working on so far:
+http://www.mediafire.com/?bgud9hqqzod6tra <br>
+
+== Contact ==
+
+=== Sam Dunne === *I can be contact on IRC [<u>''Nick =
+SCD101''</u>]*\ You can also email me on
+[`mailto:sam.dunne101@gmail.com <mailto:sam.dunne101@gmail.com>`__
+sam.dunne101@gmail.com]
+
+{{GSoC}}
+
+[[Category:SoC]] [[Category:x264]]

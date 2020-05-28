@@ -1,0 +1,68 @@
+__NOTOC__
+:''For the former module, see [[Documentation:Modules/crop]]''
+{{Module|name=cropadd|type=Video filter|first_version=0.9.0|description=Video [[crop]]ping filter}}
+
+== Options ==
+=== Crop ===
+<onlyinclude>{{Option
+|name=croppadd-croptop
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to [[crop]] from top
+}}
+{{Option
+|name=croppadd-cropbottom
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to crop from bottom
+}}
+{{Option
+|name=croppadd-cropleft
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to crop from left
+}}
+{{Option
+|name=croppadd-cropright
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to crop from right
+}}</onlyinclude>
+=== Padd ===
+<onlyinclude>{{Option
+|name=croppadd-paddtop
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to add to top
+}}
+{{Option
+|name=croppadd-paddbottom
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to add to bottom
+}}
+{{Option
+|name=croppadd-paddleft
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to add to left
+}}
+{{Option
+|name=croppadd-paddright
+|value=integer
+|min=0
+|max=<var>INT_MAX</var>
+|description=Pixels to add to right
+}}</onlyinclude>
+
+== Source code ==
+* {{VLCSourceFile|modules/video_filter/croppadd.c}}
+
+{{Documentation}}

@@ -1,0 +1,21 @@
+{{Image requested}}
+{{Module|name=vsxu|type=Visualization|first_version=2.1.0|description=Visualization module wrapper for Vovoid [[wikipedia:VSXu|VSXu]]}}
+
+== Options ==
+{{Option
+|name=vsxu-width
+|value=integer
+|default=1280
+|description=The width of the video window, in pixels
+}}
+{{Option
+|name=vsxu-height
+|value=integer
+|default=800
+|description=The height of the video window, in pixels
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/visualization/vsxu.cpp}}
+
+{{Documentation footer}}

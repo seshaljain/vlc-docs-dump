@@ -1,0 +1,81 @@
+== Demux ==
+{{Module|name=avi|type=Access demux|description=[[AVI]] demuxer|sc=none}}
+{{Option
+|name=avi-interleaved
+|value=boolean
+|default=disabled
+|description=Force interleaved method
+}}
+{{Option
+|name=avi-index
+|value=integer
+|default=0
+|select={0,1,2,3}
+|description=Recreate a index for the AVI file. Use this if your AVI file is damaged or incomplete (not seekable). 0 ("Ask for action"), 1 ("Always fix"), 2 ("Never fix"), 3 ("Fix when necessary")
+}}
+{{Clear}}
+
+== Mux ==
+{{Module|name=avi|type=Muxer|description=[[AVI]] muxer|sc=avi}}
+{{Option
+|name=sout-avi-artist
+|value=string
+|default=NULL
+|description=Artist
+}}
+{{Option
+|name=sout-avi-date
+|value=string
+|default=NULL
+|description=Date
+}}
+{{Option
+|name=sout-avi-genre
+|value=string
+|default=NULL
+|description=Genre
+}}
+{{Option
+|name=sout-avi-copyright
+|value=string
+|default=NULL
+|description=Copyright
+}}
+{{Option
+|name=sout-avi-comment
+|value=string
+|default=NULL
+|description=Comment
+}}
+{{Option
+|name=sout-avi-name
+|value=string
+|default=NULL
+|description=Name
+}}
+{{Option
+|name=sout-avi-subject
+|value=string
+|default=NULL
+|description=Subject
+}}
+{{Option
+|name=sout-avi-encoder
+|value=string
+|default="VLC Media Player - " <var>VERSION_MESSAGE</var>
+|description=Encoder
+}}
+{{Option
+|name=sout-avi-keywords
+|value=string
+|default=NULL
+|description=Keywords
+}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/avi/avi.c}}
+* {{VLCSourceFile|modules/mux/avi.c}}
+* {{VLCSourceFolder|modules/demux/avi}}
+
+{{Documentation}}

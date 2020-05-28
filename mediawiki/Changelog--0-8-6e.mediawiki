@@ -1,0 +1,42 @@
+<!--{{BasedOnRev|rev=25364|file=branches/0.8.6-bugfix/NEWS}}-->
+
+= Changes between 0.8.6d and 0.8.6e =
+
+== Various bugfixes ==
+* Resume playback for viewing content over [[Documentation:Modules/ftp|FTP]]
+* Fixed XShm detection with remote [[Documentation:Modules/x11|X11]]
+
+== Security updates ==
+* [[Subtitle]] demuxers overflow ({{CVE|2007-6681}})
+* [[Documentation:Modules/http_intf|HTTP listener]] format string injection ({{CVE|2007-6682}})
+* Fixed buffer overflow in the [[Documentation:Modules/sdl_vout|SDL_image]] library ({{CVE|2006-4484}})
+* Real [[RTSP]] overflows ({{CVE|2008-0225}}, {{CVE|2008-0295}}, {{CVE|2008-0296}}, {{VideoLAN-SA|0801}})
+* Arbitrary memory overwrite in the [[MP4]] demuxer ([http://www.coresecurity.com/?action=item&id=2147 CORE-2008-0130], {{VideoLAN-SA|0802}})
+
+== Audio filter ==
+* Fixed [[DTS]] to S/PDIF converter
+
+== Audio output ==
+* Fixed 5.1 audio on ALSA
+
+== Access ==
+* Fixed some [[RTSP]] hanging and user/password passing through [[RTSP]] URLs
+
+== Stream output ==
+* Fixed waiting for SPS/PPS problem in [[H.264]] packetizer
+
+== Encoders ==
+* Improved compatibility for creating [[H.264]] video files playable on iPhones
+* Improved detection of optimal amount of threads for multi-threaded [[H.264]] encoding on multi-cpu systems
+** Note that this is used when [[transcode]] threads is set to 0 (default)
+** Not supported on Windows (multiple threads require manual configuration)
+
+== Mac OS X Interface & Port ==
+* Restored compatibility with Mac OS X 10.3.9
+* Corrected behavior of the [[Preferences]] panel
+* VLC no longer crashes on quit while playing
+
+== Localization ==
+* Updated Romanian and Polish translations
+
+[[Category:Changelog]]

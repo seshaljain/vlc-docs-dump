@@ -1,0 +1,1 @@
+[[Category:Stock images]]

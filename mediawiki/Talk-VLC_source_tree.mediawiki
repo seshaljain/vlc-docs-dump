@@ -1,0 +1,1 @@
+#REDIRECT [[Talk:Hacker Guide/VLC source tree]]

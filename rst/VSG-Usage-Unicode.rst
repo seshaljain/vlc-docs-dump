@@ -1,0 +1,10 @@
+Go to Tools -> Preferences (set Show Settings to All) and Video ->
+Subtitles/OSD, then change the Text Rendering Module from Default to
+Freetype2 font renderer. After that go to Video -> Subtitles/OSD -> Text
+renderer and choose Unicode font (like Arial) to Font. Remember to press
+Save to save VLC settings and restart VLC after that to make sure
+changes are enabled.
+[http://img693.imageshack.us/img693/7739/vlctextrenderingmodule.jpg Text
+Rendering Module]
+[http://img829.imageshack.us/img829/9008/vlctextrenderingmodulef.jpg
+Font]

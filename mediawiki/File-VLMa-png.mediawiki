@@ -1,0 +1,3 @@
+VLMa logo
+
+[[Category:Logos]]

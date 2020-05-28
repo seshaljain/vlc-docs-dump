@@ -1,0 +1,39 @@
+The ogg demux module refers to [[Ogg]] as ''OGG''. The [[Xiph Wiki]] [https://wiki.xiph.org/Ogg#Name clarifies] that the name is not an acronym and should be written ''Ogg'' or ''ogg''.
+
+The earliest mention of Ogg [[muxing]] support in the changelog was for the macOS port in 0.5.3.
+
+== Demux ==
+{{Module|name=ogg|type=Access demux|first_version=0.5.0|description=[[Ogg|OGG]] demuxer|sc=ogg}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Mux ==
+{{Module|name=ogg|type=Muxer|description=[[Ogg]]/[[OGM]] muxer|sc=ogg|sc2=ogm}}
+
+=== Options ===
+{{Option
+|name=sout-ogg-indexintvl
+|value=integer
+|default=1000
+|min=0
+|max=<var>INT_MAX</var>
+|description=Minimal index interval, in [[wiktionary:ms|millisecond]]s. Set to 0 to disable index creation.
+}}
+{{Option
+|name=sout-ogg-indexratio
+|value=float
+|default=1.0
+|min=1.0
+|max=1000
+|description=Set index size ratio. Alters default (60min content) or estimated size.
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/ogg.c}}
+* {{VLCSourceFile|modules/demux/ogg_granule.c}}
+* {{VLCSourceFile|modules/demux/oggseek.c}}
+* {{VLCSourceFile|modules/mux/ogg.c}}
+
+{{Documentation footer}}

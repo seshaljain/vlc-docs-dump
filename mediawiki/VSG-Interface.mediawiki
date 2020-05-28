@@ -1,0 +1,15 @@
+__NOTOC__
+{{Back to|VSG:Main}}
+'''What do you want to change?''' 
+
+==How Do I...==
+[[File:Cone-Interface-large.png|right|170px|alt=]]
+{{VSGEntry|Separate playback controls|VSG:Usage:Separate|How can I separate playback controls from playback window?}} 
+{{VSGEntry|Make skinned interface by default|VSG:Usage:Skinned|How can I make skinned interface my default interface?}} 
+{{VSGEntry|Change UI language|VSG:Usage:ChangeUILanguage|How can I change UI language?}} 
+{{VSGEntry|Disable fullscreen controller|VSG:Usage:Controller|How can I disable fullscreen controller?}} 
+{{VSGEntry|Play multiple instances of VLC|VSG:Interface:MultipleInstances|How to play multiple instances of VLC?}} 
+{{VSGEntry|Disable showing of the filename|VSG:Usage:Filename|How can I disable showing of the filename when video starts?}} 
+{{VSGEntry|Start VLC Server with HTTP Interface|VSG:Interface:HTTP|Learn how to start VLC Server with HTTP interface}} 
+
+{{VSG}}

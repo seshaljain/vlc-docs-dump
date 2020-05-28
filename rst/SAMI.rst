@@ -1,0 +1,12 @@
+{{Muxmod=subtitle}} The SAMI (*.smi) [[subtitle]] format is a '''rare'''
+{{HTML}}-format with startframes given for each subtitle.
+
+Example: <pre> <TITLE>Title of film <STYLE TYPE="text/css"> <blank line>
+<BODY> <blank line> <SYNC Start=30886> Oh no! The eggs are hatching!
+<blank line> <SYNC Start=34037> Wait, never mind. I was hallucinating.
+</pre>
+
+==References== [http://divxstation.com/article.asp?aId=27 Divxstation]
+article by Stachken
+
+[[Category:Subtitles]]

@@ -1,0 +1,1 @@
+#REDIRECT [[Template:Font_colour]]

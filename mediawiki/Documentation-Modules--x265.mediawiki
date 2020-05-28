@@ -1,0 +1,12 @@
+<span class="hatnote">This page is about the H.265 encoder. Were you looking for {{docmod|h26x}}, the H.265 decoder?</span>
+{{See also|Documentation:Modules/x264}}
+{{Module|name=x265|type=Muxer|first_version=2.2.0|description=[[H.265/HEVC]] encoder (x265)|sc=none}}
+
+== Options ==
+None.
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/x265.c}}
+
+{{Documentation}}

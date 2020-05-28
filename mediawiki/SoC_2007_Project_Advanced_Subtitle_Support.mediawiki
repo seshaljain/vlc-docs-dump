@@ -1,0 +1,7 @@
+You can follow equinox's work on libasa here: http://git.spaceboyz.net/
+
+His patches for VLC csri will be here soon.
+
+{{GSoC}}
+
+[[Category:SoC 2007 Project|Advanced Subtitle Support]]

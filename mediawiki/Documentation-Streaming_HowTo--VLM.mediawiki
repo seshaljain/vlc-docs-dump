@@ -1,0 +1,172 @@
+{{Outdated}}
+{{RightMenu|documentation streaming howto toc}}
+
+==VLM==
+
+''VideoLAN Manager'' is a small media manager designed to control multiple streams with ''only one instance of VLC''. It allows multiple streaming and video on demand (VoD). This manager being a new feature, it can only be controlled by the telnet interface or the http interface.
+
+===Interfaces===
+
+====Telnet interface====
+
+You can launch the telnet interface as a common interface using the command line:
+ % '''vlc --intf telnet'''
+
+ % '''vlc --extraintf telnet'''
+
+The telnet interface can also be launched in the wxWindows interface:
+
+https://images.videolan.org/images/documentation/streaming-howto/intf-wx-extraintf-telnet.jpg<!--Alt text: Launching the Telnet interface - wxWindows interface-->
+
+The default port is 4212. The default password is "admin". These can be changed using '''--telnet-port <integer>''' and '''--telnet-password <string>''' command line options. They can also be changed in the preferences panel when using the wxWindows interface in the ''Modules''->''interface''->''telnet'' section (check the ''Advanced options'' checkbox).
+
+====HTTP interface====
+
+Launching the HTTP interface is described in [[Control_VLC_via_a_browser]] 
+
+To access the vlm section of the http interface, use the following URL: ''http://host:port/vlm.html'' (''http://host:port/vlm/'' for VLC 0.8.4 and older).
+
+'''Note:''' People who aren't used to command line streaming with VLC but want to use VLM's features are advised to use the HTTP interface.
+
+===VLM Elements===
+
+====Medias====
+
+A ''Media'' is composed with a list of inputs (the video and audio streams you want to stream), an output (how and where you want to stream them) and some options.
+
+There are two types of medias:
+*'''vod''': A vod media is commonly used for Video on Demand. It will be launched only if a vod client asks for it.
+*'''broadcast''': A broadcast media is very close to a TV program or channel. It is launched, stopped or paused by the administrator and may be repeated several times. The client has no control over this media.
+
+====Schedules====
+
+A ''Schedule'' is a script with a date. When the schedule date is reached, the script is launched. There are several options available like a period or a number of repetitions.
+
+===Command line syntax===
+
+====Command lines====
+
+*'''help''': Displays an exhaustive command lines list
+*'''new (name) vod|broadcast|schedule [properties]''': Create a new vod, broadcast or schedule element. Element names must be unique and cannot be "media" or "schedule". You can specify properties in this command line or later on by using the '''setup''' command.
+*'''setup (name) (properties)''': Set an elements property. See [[#Media Properties]].
+*'''show [(name)|media|schedule]''': Display current element states and configurations.
+**'''show (name)''': Specify an element's name to show all information concerning this element.
+**'''show media''' displays a summary of media states.
+**'''show schedule''' displays a summary of schedule states.
+*'''del (name)|all|media|schedule''': Delete an element or a group of elements. If the element wasn't stopped, it is first stopped before being deleted.
+**'''del (name)''': Delete the (name) element.
+**'''del all''': Delete all elements
+**'''del media''': Delete all media elements.
+**'''del schedule''': Delete all schedule elements.
+*'''control (name) [instance_name] (command)''': Change the state of the (instance_name) instance of the (name) media. If (instance_name) isn't specified, the control command affects the default instance. See [[#Control Commands]] for available control commands.
+*'''save (config_file)''': Save all media and schedule configurations in the specified config file. The config file path is relative to the directory in which vlc was launched. If the file exists it will be overwritten. Note that states, such as playing, paused or stop, are not saved. See [[#Configuration Files]] for more info.
+*'''load (config_file)''': Load a configuration file. The config file path is relative to the directory in which vlc was launched. See [[#Configuration Files]] for more info.
+
+====Media Properties====
+
+Note: Except the "append" property, all properties can be followed by another one.
+
+*'''input (input_name)''': Add an input to the end of the media's input list.
+*'''output (output_name)''': Define the media's output. The syntax is the same as the vlc ":sout=..." vlc option but you do not have to put the ":sout=..." string. See [[Documentation:Streaming HowTo/Advanced Streaming Using the Command Line]] for more information concerning stream outputs (sout). Note: You do not have to specify an output for vod elements.
+*'''option (option_name)[=value]''' : Adds the (option_name) to the media option list. The syntax is equivalent to the ":(option)=..." option , but you do not have to put the ":" string. Options are global: they are applied to all inputs of the media.
+*'''enabled|disabled''': Enable or Disable the media. If a media is disabled, it cannot be streamed, paused, launched by a schedule, or played as VoD.
+*'''loop|unloop (broadcast only)''': If a media with the "loop" option receives the "play" command, it will  automatically restart to play the input list once the end of the input list is reached. Note: '''loop|unloop''' is only used for broadcast media types.
+*'''mux (mux_name)''': This option should only be specified if you want the elementary streams to be sent encapsulated instead of raw. The (mux_name) should be specified as a four characters length identifier such as mp2t for MPEG TS or mp2p for MPEG PS. See [[Documentation:Streaming HowTo/Streaming, Muxers and Codecs]]. Note: The '''mux''' property is only used for vod media types.
+
+====Schedule Properties====
+
+*'''enabled|disabled''': A disabled schedule will never be launched.
+*'''append (command_until_rest_of_the_line)''': Add a command to the command line lit. The command line can be every command VLM can understand. Note: The rest of the line will be considered as part of the command line. You cannot put another option after the '''append''' one.
+*'''date (year)/(month)/(day)-(hour):(minutes):(seconds)|now''': Specify the first date the schedule should be launched. You can specify a date using the '''(year)/(month)/(day)-(hour):(minutes):(seconds)''' format (example: 2004/11/16-00:43:12) or using the '''now''' keyword. If '''now''' is used, the schedule will be launched as soon as possible (i.e. as soon as it is enabled) and the current date will be used as the first date of the schedule.
+*'''period (years_aka_12_months)/(months_aka_30_days)/(days)-(hours):(minutes):(seconds)''': Specify the period of time a schedule must wait for launching itself another time. (Months are considered as 30 days, Years as 12 months) If a period is specified without a '''repeat''' property, the schedule will be launched endlessly.
+*'''repeat (number_of_repetitions)''': Specify the number of times the schedule will be launched again. For example, if a schedule has '''repeat 11''' it will be launched 12 times.
+
+====Control Commands====
+
+*'''play''': Stat a broadcast media. The media begins to launch the first item of the input list, then launches the next one and so on. (like a play list)
+*'''pause''': Put the broadcast media in paused status.
+*'''stop''': Stop the broadcast media.
+*'''seek (percentage)''': Seek in the current playing item of the input list.
+
+===<span id="vlm.conf"></span> Configuration Files===
+
+A VLM configuration file is a list of command lines : one line corresponds to one command line.
+
+To create a configuration file, just edit a text file and type a list of VLM commands. Beware of recursive calls: you can put a '''load (file)''' in a configuration file which can lead to recursive inclusion of the same file and result in VLC's crash.
+
+You can automatically load a VLM configuration when launching VLC with the --vlm-conf <vlm conf filename> command line option. The minimal command to make that work is:
+ % '''vlc -I telnet --vlm-conf vlm.conf'''
+
+As of versions > 0.8.1, any line where the first non whitespace character is a # is considered as a comment.
+
+==Examples==
+
+This section provides several small vlm configuration files.
+
+===Multiple streams===
+
+====Simple broadcasting====
+
+ new channel1 broadcast enabled
+ setup channel1 input http://host.mydomain/movie.mpeg
+ setup channel1 output #rtp{mux=ts,dst=239.255.1.1,port=5004,sdp=sap://,name="Channel 1"}
+ 
+ new channel2 broadcast enabled
+ setup channel2 input udp://@239.255.12.42
+ setup channel2 output #rtp{mux=ts,dst=239.255.1.2,port=5004,sdp=sap://,name="Channel 2"}
+ 
+ control channel1 play
+ control channel2 play
+
+*if you are using direct show and are getting "control : unknown error" try "setup ''channel'' enabled"
+
+====Scheduled broadcasting====
+
+ new my_media broadcast enabled
+ setup my_media input my_video.mpeg input my_other_movie.mpeg
+ setup my_media output #rtp{mux=ts,dst=239.255.1.1,sdp=sap://,name="My Media"}
+ 
+ new my_sched schedule enabled
+ setup my_sched date 2012/12/12-12:12:12
+ setup my_sched append control my_media play
+
+===Video On Demand===
+
+====Basic example====
+
+First launch the vlc
+ % '''vlc --ttl 12 -vvv --color -I telnet --telnet-password videolan --rtsp-host 0.0.0.0 --rtsp-port 554'''
+where:
+*'''12''' is the value of the TTL (Time To Live) of your IP packets (which means that the stream will be able to cross 11 routers).
+*'''telnet''' launches the telnet interface of the vlc.
+*'''videolan''' is the password to connect to the telnet interface.
+*'''0.0.0.0''' is the host address. 
+*'''554''' is the port on which you stream.
+
+Then you connect to the vlc telnet interface and create the vod object.
+You can connect to vlc telnet interface by use the terminal.
+ % '''telnet localhost 4212'''
+and create the vod object.
+ new Test vod enabled
+ setup Test input my_video.mpg
+You can access to the stream with:
+ % '''vlc rtsp://server:554/Test'''
+where:
+* '''server''' is the address of the streaming server (IP or DNS)
+
+====Advanced example====
+
+You can also specify options, a muxer, or an additional output chain that will be prepended to the RTP output used by VoD (e.g. to enable transcoding).
+
+'''Note:''' make sure to enter the corresponding commands before the VoD media is enabled, or before you setup the input.
+
+ new Test2 vod
+ setup Test2 output #transcoding{vcodec=h264,vb=512,acodec=mp4a,ab=96}
+ setup Test2 mux mp2t
+ setup Test2 input my_video.mpg
+ setup Test2 enabled
+
+
+{{Documentation}}
+
+[[Category:VLMa]]

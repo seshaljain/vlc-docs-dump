@@ -1,0 +1,14 @@
+{{Protocolmod=rtp}} {{Wikipedia|Datagram Congestion Control Protocol}}
+
+'''Datagram Congestion Control Protocol''' or '''DCCP''' is a
+[[protocol]] defined by [https://tools.ietf.org/html/rfc4340 RFC 4340].
+It is a proposed standard dated March 2006 for managing large volumes of
+data (such as streaming media).<br /> It is useful with [[UDP]], which
+lacks congestion control.
+
+== Further reading == \* [https://tools.ietf.org/html/rfc4336 RFC 4336 -
+Problem Statement for the DCCP] - DCCP background \*
+[https://tools.ietf.org/html/rfc6335 RFC 6335] - Best Current Practice
+document that updates <nowiki>RFC 4340</nowiki>.
+[https://tools.ietf.org/html/rfc6335#section-10 &sect; 10] discusses
+DCCP

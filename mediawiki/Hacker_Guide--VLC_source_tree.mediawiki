@@ -1,0 +1,72 @@
+{{Back to|Hacker Guide}}
+This page lists the directories in the [https://git.videolan.org/?p=vlc.git;a=tree source tree of VLC] to give an overview of the code.  Because VLC has evolved with not so much accumulation in mind, when a new coder looks at the code, s/he is terrified by the abundance of directories. This page was prepared to remedy that situation.
+
+The directories are listed in alphabetical order, with an overview of their contents on the right.
+{| class="wikitable"
+
+|-
+! Directory Name        
+! Directory Explanation
+|-
+|bindings  	              
+|Java, CIL and Python bindings
+|-
+| {{VLCSourceFolder|contrib}}
+| for required libraries (contains Makefiles to automatically download and compile (or cross-compile) and patch those). Please first attempt to get the development headers precompiled for your distribution.
+|-
+|{{VLCSourceFolder|doc}}	              
+|Documentation (not up-to-date)
+|-
+|{{VLCSourceFolder|extras}}
+| ''[[#Contents_of_extras|See below]]''
+|-
+|{{VLCSourceFolder|include}}	              
+|Header files for VLC
+|-
+|{{VLCSourceFolder|lib}}              
+|Contains all [[LibVLC]] control code
+|-
+|{{VLCSourceFolder|m4}}	              
+|Macro files needed for automake and autoconf
+|-		
+|{{VLCSourceFolder|modules}}		
+|The most important directory besides src/. ''See [[{{#rel2abs:../Modules source tree}}]].''
+|-
+|{{VLCSourceFolder|po}}		
+|i18n (language translation) files
+|-
+|projects
+| Projects based on libvlc, Mozilla plugin, ActiveX plugin and [[Mac OS X Framework]]
+|-
+|{{VLCSourceFolder|share}}		
+|icons, scripts to make VLC the default player etc.
+|-
+|{{VLCSourceFolder|src}}		
+|The most important directory besides modules/. ''See [[{{#rel2abs:/src}}|src source tree]].''
+|-
+|{{VLCSourceFolder|test}}		
+|scripts to see if everything is OK
+
+|}
+
+== Contents of extras ==
+{| class="wikitable"
+| {{VLCSourceFolder|extras/analyser}}
+| contains some code style editor (vim, emacs) macro and some valgrind suppressions
+|-
+| {{VLCSourceFolder|extras/buildsystem}}
+| contains alternative buildsystems
+|-
+| extras/deprecated
+| contains deprecated files
+|-
+| {{VLCSourceFolder|extras/misc}}
+| contains files that don't fit into any other category
+|-
+| {{VLCSourceFolder|extras/package}}
+| contains distribution specific files such as ipkg, different rpm spec files, win32 and Mac OS X installation files.
+|-
+|}
+
+{{Hacker Guide}}
+[[Category:Building]]

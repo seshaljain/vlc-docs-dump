@@ -1,0 +1,4 @@
+<includeonly>:''[[wikipedia:mw:Transclusion|Transcluded]] from [[{{{1|Example page}}}]]''</includeonly><noinclude>
+
+[[Category:Templates]]
+</noinclude>

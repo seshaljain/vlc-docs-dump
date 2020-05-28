@@ -1,0 +1,10 @@
+{{Module|name=vobsub|type=Access demux|first_version=0.8.0|description=[[Vobsub]] subtitles parser}}
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/vobsub.c}}
+* {{VLCSourceFile|modules/demux/vobsub.h}}
+
+{{Documentation}}

@@ -1,0 +1,373 @@
+{{lowercase}}
+== Preliminary Note ==
+VLC for iOS is different from what you can do with VLC on desktops. In some ways, you can do more; in other ways, you can do less. VLC for iOS only does media playback. Active streaming or file / stream-to-file conversations are not supported for usability and performance reasons. This walkthrough only includes screenshots of the iPhone interface for size reasons. However, all features are also available on iPad with virtually the same appearance.
+
+== Feature Overview ==
+VLC for iOS 2 is a full re-write of the original app and shares no code with it. It is under active development and evolves over time. It is strongly recommended to always use the latest version. To keep track of features added over time, here's a chart:
+{| border="1" cellpadding="2" class="wikitable" style="border: 1px solid dark green; text-align: center; width: 100%; margin: 1em auto 1em auto"
+! scope="col" width="150px" | Feature
+! scope="col" width="100px" | Version 1.x
+! scope="col" width="100px" | Version 2.0
+! scope="col" width="100px" | Version 2.1
+! scope="col" width="100px" | Version 2.2
+! scope="col" width="100px" | Version 2.3
+! scope="col" width="100px" | Version 2.4
+! scope="col" width="100px" | Version 2.5
+! scope="col" width="100px" | Version 2.6
+|-
+| iTunes File Sharing || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| WiFi Upload || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Download from device via WiFi || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Box Integration || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Streaming from Box || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Dropbox Integration || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Streaming from Dropbox || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| iCloud Integration || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}}  || {{Yes}}
+|-
+| Streaming from iCloud || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}}
+|-
+| Google Drive integration || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Streaming from Google Drive || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| OneDrive Integration || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Streaming from OneDrive || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| HTTP Downloads from Web || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| FTP Downloads from Web || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Opening Network Streams || {{No}} GUI || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| UPnP discovery and streaming || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Plex server discovery and streaming || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Password-protected Plex shares || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}}
+|-
+| Downloads from UPnP multimedia servers || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| FTP discovery, streaming and downloading || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Store FTP server bookmarks || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Audio Playback via AirPlay || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Video Playback via AirPlay || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Audio Playback via Connector Cables || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Video Playback via Connector Cables || {{No}} || Partial || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Subtitles playback || {{No}} || Western languages only || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Subtitles Font Customization || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Closed Caption playback || {{No}} || {{No}} || {{Yes}} <sup>[2]</sup> || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Teletext subtitles playback || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Multi-track audio handling || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Video Filtering incl. Screen Brightness || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Video Cropping and Aspect Ratio variation || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Deinterlacing || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Playback Speed control || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Audio/Subtitles delay control || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Repeated playback || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Gestures based playback control || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Playback of Audio-only media (mp3, m4a, flac, …) || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Audio Playback in Background || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Mini playback view || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}}
+|-
+| Playback timer || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Chapter & title selection || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| 10-band equalizer || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Playback UI Lock || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}}
+|-
+| Smart Media Library sorting for audio albums and TV shows || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Media Library Search || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Passcode Lock || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| VoiceOver support || {{No}} || Partial || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Organize media in folders || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Use folders as playlists || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Loop playlists || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}}
+|-
+| Playback control through headphones, multi-tasking bar or lock screen || {{No}} || {{No}} || {{No}} || Partial || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Playback is paused when headphones are unplugged || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| WiFi upload and HTTP downloads in background || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Support for password protected HTTP streams || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Sharing files with further apps || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Custom vlc:// protocol || {{No}} || {{No}} || {{No}} || {{No}} || {{Partial}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Support for x-callback-url || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| Apple Watch extension || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}}
+|-
+| Supported User Interface Languages || English || English, Danish<sup>[1]</sup>, Dutch<sup>[1]</sup>, Finnish, French, German, Hebrew<sup>[1]</sup>, Indonesian, Italian, Japanese, Russian, Simplified Chinese<sup>[1]</sup>, Slovak<sup>[1]</sup>, Spanish, Turkish<sup>[1]</sup>, Ukrainian<sup>[1]</sup>, Vietnamese<sup>[1]</sup> || Same as 2.0 plus Bosnian, Catalan, Galician, Greek, Hungarian<sup>[2]</sup>, Marathi, Portuguese, Slovenian, Swedish<sup>[2]</sup> || Same as 2.1.2 plus Czech, Malay, Persian, Spanish (Mexico), Sinhala <sup>(added in 2.2.1)</sup> || Same as 2.2.1 plus British English, Latvian, Romanian || Same as 2.3 plus Traditional Chinese|| Same as 2.4 plus Portuguese (Portugal), Portuguese (Brazil), Khmer, Faroese, Belarusian, Serbian (Latin), Tamil, Afrikaans || Same as 2.5
+|-
+| iOS 5.1 support || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{No}} || {{No}} || {{No}} || {{No}}
+|-
+| iOS 6.0 support || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{No}} || {{No}} || {{No}} || {{No}}
+|-
+| iOS 6.1 support || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| iOS 7.x support || {{No}} || {{Partial}} || {{Partial}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| iOS 8.x support || {{No}} || {{No}} || {{No}}  || {{No}} || {{Partial}} || {{Yes}} || {{Yes}} || {{Yes}}
+|-
+| iOS 9.x support || {{No}} || {{No}} || {{No}}  || {{No}} || {{No}} || {{No}} || {{No}} || {{Partial}}
+|}
+
+<sup>[1] Added in version 2.0.2</sup>
+<sup>[2] Added in version 2.1.2</sup>
+
+== Media Synchronization ==
+There are multiple ways to synchronize media files to VLC for iOS. Those may be extended in future releases. Streaming without saving files using the limited space available on iOS devices is also supported. See below.
+
+=== iTunes File Sharing ===
+Using iTunes, you can add and delete files to VLC for iOS. Apple provides [http://support.apple.com/kb/HT4094 excellent documentation for this].
+
+=== WiFi Sharing ===
+If your iOS device and your Mac or PC is on the same local WiFi network, you can use WiFi Upload to add files to VLC for iOS' library.
+
+Within VLC for iOS, click the cone button:
+
+[[File:VLC for iOS Cone menu.png|Location of the Cone menu in VLC for iOS]]
+
+This will expose the sidebar menu. 
+Locate the WiFi Sharing menu item. Notice the empty circle indicating the server's off-state and the description "Inactive Server." (Note: in earlier versions of VLC for iOS, you'll see a toggle button.)
+
+[[File:Vlc-for-ios-menu-wifi-upload-off.png|VLC for iOS' sidebar menu with WiFi Upload item]]
+
+Click the item or switch the toggle. A network address will appear in the item:
+
+[[File:Vlc-for-ios-menu-wifi-upload-on.png|VLC for iOS' sidebar menu with WiFi Upload switched on]]
+
+Enter the network address to your web browser on your Mac or PC on the same local network:
+
+[[File:Vlc-for-ios-wifi-upload-URL-entering.png|Entering the network address in the web browser]]
+
+VLC for iOS' WiFi Sharing page will appear. You can drag any file stored on your Mac or PC to this window for immediate upload to your iOS device. Additionally, you can press the "Upload files" button in the top-right to expose a file selector panel in case your files are not reachable by drag and drop. VLC for iOS' WiFi Sharing supports multiple uploads at the same time and will indicate through a progress bar when upload is complete.
+Because it's VLC after all, you can start the playback of most files on your iOS device as soon as they appear so you don't need to wait until the upload is done.
+Version 2.4 adds the ability to also download files stored on device through this page.
+
+[[File:VLC for iOS WiFi Uploader.png|VLC for iOS WiFi Upload page]]
+
+=== Dropbox ===
+VLC for iOS natively supports Dropbox. Open the menu as described above, choose Dropbox. For the first time, a login button will appear. When clicking, you'll be redirected to the Dropbox app for login or to the web if you don't have Dropbox installed. VLC for iOS will receive read and write access to your entire Dropbox after login. However, VLC for iOS does not support any write actions (i.e. you cannot upload files from VLC for iOS to your Dropbox either), so don't worry about your file integrity.
+Starting in version 2.2, VLC for iOS can also stream contents from your Dropbox without downloading them first.
+
+=== Google Drive ===
+Similar to Dropbox, VLC for iOS natively supports Google Drive starting in version 2.2. Please check the process above for setup. Version 2.4 adds support for streaming files from Google Drive without having to download them first.
+
+=== Box.com & OneDrive ===
+Like with Dropbox and Google Drive, version 2.5.0 of VLC for iOS adds support for downloads and direct streaming for both providers.
+
+=== iCloud Drive ===
+With version 2.5.0 of VLC for iOS, any cloud services enabled app including iCloud Drive can be accessed from with the app on iOS 8 and later. While we don't support direct streaming, you can download files from wherever you want without relying on VLC's native implementation.
+
+=== Downloads from the Web ===
+The sidebar menu also includes an item called '''Downloads''' (or in earlier versions ''Download from Web Server''). When selected, it will show the download queue and progress of downloads triggered through the network integration (see below) and exposes a field to enter a URL to directly download media from somewhere. Both HTTP and FTP are supported (earlier versions support ''HTTP only'')
+
+[[File:VLC for iOS download from web.png|Downloads]]
+
+== Network Integration ==
+In addition to the media synchronization options described above, VLC for iOS provides a variety of options to interact with networking sources. Additionally, third-party websites and apps may include links to open streams directly in VLC for iOS.
+
+=== Open Network Stream ===
+Clicking on this item in the sidebar menu reveals a URL field to open a network stream. HTTP, FTP, MMS, MMSH, RTSP, UDP, and RTP streams are supported. Additionally, this view includes a list of your last 15 streams and an option to disable keeping history of your recent streams.
+
+[[File:VLC for iOS open network stream.png]]
+
+=== Local Network ===
+Introduced in VLC for iOS 2.1, ''Local Network'' discovers and lists servers found on your local network. At present, this includes UPnP media servers and FTP servers announced via Bonjour / Rendezvous. Further options will be made available in future releases. Depending on the server capability, you can both stream and/or download the stored contents.
+
+[[File:VLC for iOS Local Network discovery.png|Local Network servers]]
+
+Clicking on "Connect To Server" exposes the ability to connect to FTP servers not included in the list.
+
+== Playback ==
+The controller panel provides access to basic playback controls, a video filter panel, audio and subtitles track selection as well as playback speed.
+The time slider at the top of the playback screen matches the default media player behavior by allowing you to seek at the pace you want. Next to it, you will find a 2-mode time counter and a button to control aspect ratio and cropping.
+VLC for iOS will remember the last playback position for media stored on your iOS device.
+
+[[File:VLC for iOS Playback landscape.png|VLC for iOS Playback view]]
+
+=== Gestures ===
+Version 2.2 of VLC for iOS introduces gesture-based playback controls in addition to the ordinary buttons.
+
+Tap the playback screen anywhere with 2 fingers to pause or play the current media. Pinch to end the current playback session and close the video. 
+
+[[File:Ios-playback-gestures-pause-close.png|VLC for iOS play/pause, close playback gestures]]
+
+
+Swipe to the left and right to change the playback position.
+
+[[File:Ios-playback-gestures-position.png|VLC for iOS playback position gestures]]
+
+
+Adapt screen brightness by swiping vertically on the left-hand side of the playback view (gray hands). Change the current volume by swiping vertically on the right-hand side of the playback view (red hands).
+
+[[File:Ios-playback-gestures-volume-brightness.png|VLC for iOS volume and brightness gestures]]
+
+=== AirPlay ===
+VLC for iOS supports AirPlay video and audio streaming. To enable audio streaming, just activate the AirPlay switch which will automatically appear next to the volume slider as soon as your iOS device discovers an AirPlay capable playback device (an Apple TV, a multi-media receiver, etc.).
+For video playback via AirPlay, it's slightly more difficult due to AirPlay API limitations. Apple does not allow to show an AirPlay button for video playback within an Apple if the app does not use the default media player, which VLC does not for the sake of supporting formats other than H264 / MPEG4. As a work-around, you need to use the AirPlay mirroring featuring available from the multi-tasking bar (shown when double-clicking the physical home button on your iOS device).
+
+=== Subtitles and multiple audio tracks ===
+If your media includes subtitles or multiple audio tracks, buttons will appear in the playback controller to switch streams. VLC for iOS will remember the last chosen audio or subtitles track for future playback.
+If your media does not include subtitles, but you'd like to show some, give them a similar name to the media item, synchronize them and VLC for iOS will discover them automatically.
+
+=== Chapters and titles ===
+With version 2.5.0 and later, you can navigate through your media based on the chapters and titles information includes with Matroska/MKV and MP4 files.
+
+=== Video Filters ===
+Like VLC media player on desktops, VLC for iOS allows you to modify the video's colors in real time. Brightness will adapt your device's physical luminance unless you play your media on an external screen, where it will fallback on a software mode.
+
+[[File:VLC for iOS Video Filters.png]]
+
+=== Playback Speed ===
+Clicking the clock button to the left of the playback controller reveals a slider with a logarithmic scale to adapt the playback speed to your needs. In recent versions, synchronization options for subtitles and audio as well as a playback timer are also available from this menu.
+
+[[File:VLC for iOS playback speed.png]]
+
+=== Equalizer ===
+In version 2.5.0 or later, a 10-band equalizer is available through the "more" button on the right side of the playback controls. Note that the button will not appear in portrait mode on iPhone.
+
+[[File:VLC for iOS Equalizer.png]]
+
+=== A word on audio playback ===
+VLC for iOS 2.0.x refuses any audio-only media playback. Basic support was added in VLC for iOS 2.1 along with Music Album handling. Future updates will further improve the current feature set by introducing media artwork display, playlists, playlist operations such as shuffling or repeat, and more.
+
+== Media Library ==
+Your media collection. It offers basic information about each file, such as length, resolution, or file size. Your last playback position is visualized through an orange triangle at the bottom of the snapshot, unless it's new or fully played.
+
+[[File:VLC for iOS media library.png]]
+
+=== Smart handling of music albums and TV shows ===
+VLC for iOS 2.1 added smart handling of music albums and TV shows. Based upon meta tags and pattern matched file names, VLC for iOS will automatically detect TV shows and music albums. Switching the library mode in the sidebar menu will reveal dynamic collections for either category. "All Files" switches back to the default mode listing all files available on your iOS device within the VLC context.
+
+How are TV shows detected by VLC for iOS?—at present, based upon the file name. The following schemes are supported in current releases: "Show.Name.S01E01.Optional.Episode.Name" or "Show.Name.0x00.Optional.Episode.Name". Show Name will become optional in version 2.2.1. Detection for more schemes will be part of future releases.
+
+[[File:VLC_for_iOS_smart_library.png]]
+
+=== Media grouping in folders ===
+VLC for iOS 2.3 adds support for folders and custom grouping of your media content. A folder also acts as a playlist.
+In the latest version (2.4.1) you can drag and drop files within a folder, but folders cannot be dragged and dropped. The files or folders cannot be listed automatically in alphabetical order. However, these functions may change as the latest app becomes more stable.
+
+=== Passcode lock ===
+You can lock the app with a passcode. The current versions of VLC for iOS will always ask for it whenever the app is pushed to the foreground. Additionally, your library contents will be hidden away from the multi-tasking switcher. Starting with version 2.3, playback is stopped if passcode lock is enabled and the app is moved to the background to protect your privacy.
+
+==== I forgot my passcode ====
+If you forget your passcode, you need to delete the application and re-install it. This will reset both the settings and the media library. There is no way to recover it. However, you can backup your files using iTunes first.
+To back up your files using iTunes, sync your iOS device with your computer.
+
+==== I want to use another passcode ====
+Disable passcode lock in VLC's Settings and re-enable it. It will ask you to enter a new passcode.
+
+== Customization and Settings ==
+VLC for iOS offers a growing variety of options to customize the app suiting your purposes.
+{| class="wikitable"
+|-
+! Option name !! Version 2.0.x !! Version 2.1.x || Version 2.2 || Version 2.3 || Version 2.4 || Version 2.5 || Version 2.6 || Details
+|-
+| Passcode Lock || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || When enabled, VLC for iOS will ask for the passcode 5 min after leaving the app when using version 2.0 or 2.1. In 2.2, the app will ask for it right away.
+|-
+| Optimize item names for display || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Disable removal of unneeded characters, when shown within the media library. 
+|-
+| Network caching level || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Adapt the network caching level to your needs.
+|-
+| Control playback with gestures || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Disable playback gestures if desired.
+|-
+| Default playback speed || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} ||{{Yes}} || {{Yes}} || 
+|-
+| Play video in fullscreen || {{No}} || {{No}} || {{No}} || {{No}} || {{No}} ||{{No}} || {{Yes}} <sup>[2]</sup>|| On by default. When disabled, video plays minimized by default.
+|-
+| Deblocking filter || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Switch deblocking aggression level. Trade-off between quality and speed. 
+|-
+| Deinterlace || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Deinterlace video image: always or never.
+|-
+| Subtitles Font || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || 
+|-
+| Relative Subtitles Font size || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || 
+|-
+| Use Bold Font || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || 
+|-
+| Subtitles Font Color || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || 
+|-
+| Text Encoding || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Set the subtitles text encoding mostly used by you
+|-
+| Audio time-stretching || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Improves listening experience
+|-
+| Audio playback in background || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || Audio playback continues when leaving VLC for iOS
+|-
+| Unlink from Dropbox || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} || {{No}} <sup>[1]</sup> || {{No}} || Unlink the app from your Dropbox account
+|-
+| Unlink from Google Drive || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || {{No}} <sup>[1]</sup> || {{No}} || Unlink the app from your Google Drive account
+|-
+| IPv6 support for WiFi sharing || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || Off by default.
+|-
+| Text Encoding for FTP Connections || {{No}} || {{No}} || {{No}} || {{No}} || {{Yes}} || {{Yes}} || {{Yes}} || 
+|}
+<sup>[1] Version 2.5.0 moves those buttons to the Cloud Services UI</sup>
+<sup>[2] Added in version 2.6.2</sup>
+
+== Integration with third party apps (version 2.4 or later) ==
+=== Share button ===
+Click the share button within the media library to open stored media in compatible apps on your device. This can be different players, cloud storage or email clients. Availability depends on the support of the other apps.
+
+=== x-callback-url ===
+This is a defined protocol to play or download media in VLC and optionally to go back to the requesting app once playback is done.
+
+ vlc-x-callback://x-callback-url/ACTION?url=...&PARAMETER=...
+
+''Actions:''
+
+'''stream''': VLC plays the stream provided by the URL parameter
+
+'''download''': VLC will download the file provided by the URL parameter
+
+''Optional Parameters:''
+
+'''filename''': VLC will store the file under the given filename when using the '''download''' action.
+
+'''x-success''': VLC will open another x-callback-url once playback is done.
+
+'''x-error''': VLC will open another x-callback-url if playback fails. Requires version 2.5.0 or later
+
+== Installation on iOS 5.1 ==
+Starting with version 2.2 of VLC for iOS, we no longer support iOS 5.1. VLC requires iOS 6.1 or later.
+
+[[Category:iOS]]

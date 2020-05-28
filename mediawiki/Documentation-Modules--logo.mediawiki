@@ -1,0 +1,73 @@
+{{See also|Documentation:Modules/erase|VLC HowTo/Add a logo}}
+
+The logo filter can be used to add a logo on the video. This logo can be a static image or series of images which will be displayed alternatively. When used as a video output filter, you can move the logo with the mouse.
+
+== Video sub-filter ==
+{{Module|name=logo|type=Video sub-filter|description=Logo sub source|sc=logo}}
+<onlyinclude>{{Option
+|name=logo-file
+|value=string
+|description=Image to display. The full format is <code><nowiki><image>[,<delay in ms>[,<alpha>]][;<image>[,<delay>[,<alpha>]]][;...]</nowiki></code>.
+}}
+{{Option
+|name=logo-x
+|value=integer
+|default=0
+|description=X offset from upper left corner.
+}}
+{{Option
+|name=logo-y
+|value=integer
+|default=0
+|description=Y offset from upper left corner.
+}}
+{{Option
+|name=logo-position<span id="logo-position"></span>
+|value=integer
+|select=[[#appendix_logo-position|{ 0, 1, 2, 4, 8, 5, 6, 9, 10 }]]
+|default=5
+|description=Logo position.
+}}
+{{Option
+|name=logo-opacity
+|value=integer
+|default=255
+|min=0
+|max=255
+|description=Logo opacity. 0 is transparent, 255 is fully opaque.
+}}
+{{Option
+|name=logo-delay
+|value=integer
+|default=1000
+|description=Global delay in [[wiktionary:ms#Translingual|ms]]. Sets the duration each image will be displayed for in a loop iteration unless specified otherwise in the <code>--logo-file</code> option.
+}}
+{{Option
+|name=logo-repeat
+|value=integer
+|default=-1
+|description=Number of loops for the logo animation. -1 for continuous, 0 to disable.
+}}</onlyinclude>
+{{Clear}}
+
+== Video output filter ==
+{{Module|name=logo|type=Video output filter|description=Logo video filter|sc=logo}}
+{{Clear}}
+
+== Examples ==
+ {{%}} '''vlc --video-filter "logo{file=cone.png,opacity=128}" somevideo.avi'''
+: This command will display image cone.png in the video's upper right corner with 50% transparency.
+
+ {{%}} '''vlc --video-filter "logo{file='cone1.png,2000,128;cone2.png,3000'}" somevideo.avi'''
+: This command will display image cone1.png for 2 seconds with 50% transparency followed by image cone2.png for 3 seconds at default transparency and loop.
+
+== Source code ==
+* {{VLCSourceFile|modules/spu/logo.c}}
+
+== Appendix ==
+<div class="plainlist">
+*^ [[#logo-position|--logo-position]]<span id="appendix_logo-position"></span>
+</div>
+{{Alignment mapping}}
+
+{{Documentation footer}}

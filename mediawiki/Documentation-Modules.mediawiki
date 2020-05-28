@@ -1,0 +1,267 @@
+<div style="float: right; margin-left: 1em;">__TOC__</div>
+This page lists most of the {{VLCSourceFolder|modules}} present in the official [[VLC source code]]. Understanding these pages might require that you know about VLC and its command line usage. It is recommended that you read the other [[Documentation:Documentation|documentation]] first.
+
+To list all the available modules in your VLC build, use:
+ {{%}} '''vlc --list'''
+
+To list a module's configuration options, use:
+ % '''vlc -p <modulename> --advanced --help-verbose'''
+
+== Interfaces ==
+
+=== Graphical ===
+* [[Documentation:Modules/macos|macOS]]
+* [[Documentation:Modules/Qt4|Qt4]]
+* [[Documentation:Modules/skins2|Skins2]]
+* [[Documentation:Modules/wxWidgets|wxWidgets]] (up to 0.9)
+
+=== Text ===
+<!--The next three tend to be listed in this order-->
+* [[Documentation:Modules/rc|remote control (rc)]]
+* [[Documentation:Modules/telnet|telnet]] (until 2.0.0)
+* [[Documentation:Modules/ncurses|ncurses]]
+
+* [[Documentation:Modules/lua|lua]]
+
+=== Other ===
+* [[Documentation:Modules/http_intf|HTTP]]
+* [[Documentation:Modules/hotkeys|Hotkeys]]
+* [[Documentation:Modules/lirc|lirc]]
+* [[Documentation:Modules/osc|osc]]
+* [[Documentation:Modules/wiimote|Wiimote]]
+
+== Outputs ==
+=== Audio Output ===
+* [[Documentation:Modules/file_aout|file]]
+* [[Documentation:Modules/portaudio|portaudio]] (up to 2.0)
+* [[Documentation:Modules/sdl_aout|SDL]] (up to 1.1.13)
+Android specific:
+* [[Documentation:Modules/opensles|OpenSL ES]]
+Linux specific:
+* [[Documentation:Modules/alsa|Alsa]]
+* [[Documentation:Modules/arts|aRts]] (up to 0.9.10)
+* [[Documentation:Modules/esd|esound]] (up to 0.9.10)
+* [[Documentation:Modules/jack|jack]]
+* [[Documentation:Modules/pulse|pulse]]
+* [[Documentation:Modules/oss|OSS]]
+macOS specific:
+* {{docmod|audioqueue}} (up to 2.2.8)
+* {{docmod|auhal}} (HAL AudioUnit)
+Windows specific:
+* [[Documentation:Modules/directx_aout|DirectX]]
+* [[Documentation:Modules/mmdevice|WASAPI]]
+* [[Documentation:Modules/waveout|waveout]]
+
+=== Video Output ===
+* [[Documentation:Modules/aa|ASCII Art]]
+* [[Documentation:Modules/caca|Colored ASCII Art]]
+* [[Documentation:Modules/image|Image]] (up to 0.9.10)
+* [[Documentation:Modules/opengl|OpenGL]]
+* [[Documentation:Modules/sdl_vout|SDL]] (up to 2.2.8)
+Linux specific:
+* [[Documentation:Modules/directfb|Direct framebuffer]] (up to 2.2.8)
+* [[Documentation:Modules/fb|Framebuffer]]
+* [[Documentation:Modules/glx|OpenGL (GLX)]]
+* [[Documentation:Modules/x11|X11]]
+* [[Documentation:Modules/xvideo|XVideo]]
+Windows specific:
+* [[Documentation:Modules/direct3d|Direct3D]]
+* [[Documentation:Modules/directx_vout|DirectX]]
+* [[Documentation:Modules/glwin32|OpenGL for windows]]
+* [[Documentation:Modules/wingdi|Windows GDI]]
+
+=== Stream Output ===
+<div class="col3">
+* [[Documentation:Modules/autodel|Autodel]]
+* [[Documentation:Modules/delay|Delay]]
+* [[Documentation:Modules/description|Description]]
+* [[Documentation:Modules/display|Display]]
+* [[Documentation:Modules/dummy_sout|Dummy]]
+* [[Documentation:Modules/duplicate|Duplicate]]
+* [[Documentation:Modules/es|Elementary Stream (es)]]
+* [[Documentation:Modules/gather|Gather]]
+* [[Documentation:Modules/rtp|RTP]]
+* [[Documentation:Modules/standard|Standard (std)]]
+* [[Documentation:Modules/switcher|Switcher]] (up to 2.0.9)
+* [[Documentation:Modules/transcode|Transcode]]
+* [[Documentation:Modules/transrate|Transrate]] (up to 1.0.2)
+</div>
+
+The following are for use in the mosaic framework only:
+<div class="col3">
+* [[Documentation:Modules/bridge-in|Bridge In]]
+* [[Documentation:Modules/bridge-out|Bridge Out]]
+* [[Documentation:Modules/mosaic-bridge|Mosaic Bridge]]
+</div>
+
+== Filters ==
+=== Audio Filters ===
+=== Video Filters ===
+<div class="col3">
+* [[Documentation:Modules/adjust|Adjust]]
+* [[Documentation:Modules/anaglyph|Anaglyph 3D]]
+* [[Documentation:Modules/atmo|AtmoLight]] (up to 3.0.0)
+* [[Documentation:Modules/colorthres|Color Threshold]]
+* [[Documentation:Modules/distort|Distort]] (up to 0.8.6 - split into various)
+* [[Documentation:Modules/erase|Logo Erase]]
+* [[Documentation:Modules/extract|Extract]]
+* [[Documentation:Modules/freeze|Freeze]]
+* [[Documentation:Modules/gaussianblur|Gaussian Blur]]
+* [[Documentation:Modules/gradfun|Gradfun]]
+* [[Documentation:Modules/gradient|Gradient]]
+* [[Documentation:Modules/invert|Invert]]
+* [[Documentation:Modules/motionblur|Motion Blur]]
+* [[Documentation:Modules/noise|Noise]] (up to 1.1.13)
+* [[Documentation:Modules/oldmovie|Oldmovie]]
+* [[Documentation:Modules/posterize|Posterize]]
+* [[Documentation:Modules/psychedelic|Psychedelic]]
+* [[Documentation:Modules/ripple|Ripple]]
+* [[Documentation:Modules/rotate|Rotate]]
+* [[Documentation:Modules/scene|Scene]]
+* [[Documentation:Modules/sepia|Sepia]]
+* [[Documentation:Modules/sharpen|Sharpen]]
+* [[Documentation:Modules/VHS|VHS]]
+* [[Documentation:Modules/wave|Wave]]
+</div>
+
+The following video filters are for use in transcode only:
+* [[Transcode#Canvas_and_Padding|Canvas]]
+* [[Transcode#Canvas_and_Padding|Crop Padd]]
+
+The following video filters are for use in the mosaic framework only:
+* [[Documentation:Modules/alphamask|Alpha mask]]
+* [[Documentation:Modules/bluescreen|Blue Screen]]
+
+=== Video Sub-Filters ===
+* [[Documentation:Modules/logo|Logo]]
+* [[Documentation:Modules/marq|Marq]]
+* [[Documentation:Modules/mosaic|Mosaic]]
+* [[Documentation:Modules/rss|RSS]]
+* [[Documentation:Modules/subsdelay|Subsdelay]]
+* [[Documentation:Modules/time|Time]] (up to 0.8.6 - merged with marq)
+
+=== Video Output Filters ===
+* [[Documentation:Modules/crop|Crop]]
+* [[Documentation:Modules/deinterlace|Deinterlace]]
+* [[Documentation:Modules/logo|Logo]]
+* [[Documentation:Modules/magnify|Magnify]]
+* [[Documentation:Modules/puzzle|Puzzle]]
+* [[Documentation:Modules/transform|Transform]]
+
+==== Video Splitters ====
+* [[Documentation:Modules/clone|Clone]]
+* [[Documentation:Modules/panoramix|Panoramix]]
+* [[Documentation:Modules/wall|Wall]]
+
+=== Visualizations ===
+* [[Documentation:Modules/galaktos|Galaktos]] (up to 1.0.6)
+* [[Documentation:Modules/goom|Goom]]
+* [[Documentation:Modules/projectm|ProjectM]]
+* [[Documentation:Modules/visual|Visual]]
+* [[Documentation:Modules/vsxu|Vovoid VSXu]]
+
+=== Access Filters ===
+* [[Documentation:Modules/bandwidth|Bandwidth]]
+* [[Documentation:Modules/dump|Dump]]
+* [[Documentation:Modules/record|Record]]
+* [[Documentation:Modules/timeshift|Timeshift]] (up to 0.9.9 - moved to core)
+
+== Other ==
+=== Accesses ===
+<div class="col3">
+* [[Documentation:Modules/cdda|CD Input]]
+* [[Documentation:Modules/directory|Directory]]
+* [[Documentation:Modules/dvdnav|DVDnav Input]] - DVD with menus
+* [[Documentation:Modules/dvdread|DVDRead Input]] - DVD without menus
+* [[Documentation:Modules/fake|Fake]] (up to 0.9.0) - presents a static image as a video stream
+* [[Documentation:Modules/file|File Input]] - for reading local files
+* [[Documentation:Modules/ftp|FTP Input]]
+* [[Documentation:Modules/h26x|H.264 Video]]
+* [[Documentation:Modules/http|HTTP Input]]
+* {{docmod|jpeg}}
+* {{docmod|mjpeg}}
+* [[Documentation:Modules/mkv|Matroska stream]]
+* [[Documentation:Modules/mms|MMS]] - for reading from the MicroSoft Media Server
+* [[Documentation:Modules/rawvid|Raw Video]] - streams of bitmap images
+* [[Documentation:Modules/rtp|RTP Input]]
+* [[Documentation:Modules/rtsp|RTSP]]
+* {{docmod|sdp}}
+* [[Documentation:Modules/screen|Screen Input]] - screen feed
+* [[Documentation:Modules/udp|UDP Input]]
+* [[Documentation:Modules/vcd|VCD]]
+</div>
+
+Linux specific:
+* [[Documentation:Modules/dc1394|DC1394]]
+* [[Documentation:Modules/dvb|DVB Input]]
+* [[Documentation:Modules/pvr|PVR]] (IVTV MPEG Encoding Card Input) (up to 2.0.9)
+* [[Documentation:Modules/rawdv|DV]] (through libdv)
+* [[Documentation:Modules/v4l|Video4Linux (v4l)]] (up to 1.1.13)
+* [[Documentation:Modules/v4l2|Video4Linux2 (v4l2)]]
+
+Windows specific:
+* [[Documentation:Modules/bda|BDA]]
+* [[Documentation:Modules/dshow|DirectShow]]
+
+macOS specific:
+* [[Documentation:Modules/eyetv|EyeTV]] (up to 2.2.8) - reads DVB streams from the proprietary EyeTV.app; requires a plugin
+* [[Documentation:Modules/qtcapture|qtcapture]] (up to 2.2.8) - reads uncompressed video from internal iSights
+* {{docmod|qtsound}}
+* {{docmod|avcapture}}
+
+=== Access Outputs ===
+* {{docmod|shout}} (shoutcast/icecast)
+
+=== Codecs ===
+==== Audio ====
+* {{docmod|a52}}
+* {{docmod|flac}}
+* {{docmod|mpc}} - [[Musepack]]
+* {{docmod|ogg}}
+* {{docmod|vorbis}}
+* {{docmod|wav}}
+
+==== Video ====
+* {{docmod|h26x}}
+* {{docmod|nsv}}
+* {{docmod|schroedinger}}
+* {{docmod|vpx}}
+
+==== Subtitles ====
+* [[Documentation:Modules/kate|kate]]
+* [[Documentation:Modules/subtitle|subtitle]]
+* {{docmod|telx}}
+
+=== Demuxers ===
+* [[Documentation:Modules/avcodec|avcodec]] ("FFmpeg")
+
+==== Playlist ====
+* {{docmod|playlist}} (formats are read with sub-modules)
+
+=== Muxers ===
+* {{docmod|asf}}
+* {{docmod|avformat}}
+* {{docmod|avi}}
+* {{docmod|daala}}
+* {{docmod|mp4}}
+* {{docmod|mpjpeg}}
+* {{docmod|ogg}}
+* {{docmod|schroedinger}}
+* {{docmod|vpx}}
+* {{docmod|wav}}
+
+=== Service Discovery ===
+* [[Documentation:Modules/bonjour|Bonjour]]
+* [[Documentation:Modules/daap|DAAP]]
+* [[Documentation:Modules/hal|HAL]] (up to 1.1.13)
+* [[Documentation:Modules/sap|SAP]]
+* [[Documentation:Modules/shout|Shoutcast]]
+* [[Documentation:Modules/podcast|podcast]]
+* [[Documentation:Modules/upnp|UPnP]]
+
+=== Misc ===
+* [[Documentation:Modules/motion_control|Motion control]]
+* [[Documentation:Modules/netsync|Netsync]]
+
+[[Category:Modules|*]]
+{{Documentation}}

@@ -1,0 +1,1 @@
+#REDIRECT [[ Hacker Guide/How To Write a Module]]

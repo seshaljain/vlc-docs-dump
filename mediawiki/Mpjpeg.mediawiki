@@ -1,0 +1,14 @@
+The '''Multipart JPEG''' [[muxer]].
+
+== Container format ==
+{{mux|id=mpjpeg|encoder=y}}
+
+=== Accepted video codecs ===
+* [[MJPG]]
+* [[JPEG]]
+* [[JFIF]]
+* [[JPGL]]
+* [[mjpa]]
+
+==Source code==
+{{file|modules/mux/mpjpeg.c|output muxer}}

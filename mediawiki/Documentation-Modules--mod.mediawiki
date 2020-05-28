@@ -1,0 +1,80 @@
+{{Module|name=mod|type=Access demux|first_version=0.7.1|description=[[MOD]] demuxer (libmodplug)}}
+
+== Options ==
+<onlyinclude>{{Option
+|name=mod-noisereduction
+|value=boolean
+|default=enabled
+|description=Enable noise reduction algorithm.
+}}
+{{Option
+|name=mod-reverb
+|value=boolean
+|default=disabled
+|description=Enable reverberation.
+}}
+{{Option
+|name=mod-reverb-level
+|value=integer
+|default=0
+|min=0
+|max=100
+|description=Reverberation level.
+}}
+{{Option
+|name=mod-reverb-delay
+|value=integer
+|default=40
+|min=0
+|max=1000
+|description=Reverberation delay, in [[wiktionary:ms|ms]]. Usual values are from 40 to 200ms.
+}}
+{{Option
+|name=mod-megabass
+|value=boolean
+|default=disabled
+|description=Enable megabass mode.
+}}
+{{Option
+|name=mod-megabass-level
+|value=integer
+|default=0
+|min=0
+|max=100
+|description=Megabass mode level.
+}}
+{{Option
+|name=mod-megabass-range
+|value=integer
+|default=10
+|min=10
+|max=100
+|description=Megabass mode cutoff frequency, in Hz. This is the maximum frequency for which the megabass effect applies.
+}}
+{{Option
+|name=mod-surround
+|value=boolean
+|default=disabled
+|description=Surround effect.
+}}
+{{Option
+|name=mod-surround-level
+|value=integer
+|default=0
+|min=0
+|max=100
+|description=Surround effect level.
+}}
+{{Option
+|name=mod-surround-delay
+|value=integer
+|default=5
+|min=0
+|max=1000
+|description=Surround delay, in [[wiktionary:ms|ms]]. Usual values are from 5 to 40 ms.
+}}</onlyinclude>
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/mod.c}}
+
+{{Documentation footer}}

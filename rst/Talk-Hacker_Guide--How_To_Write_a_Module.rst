@@ -1,0 +1,9 @@
+Nice work! Tell us if you need any help. (on a side note: thedj wanted
+to start a VLC [[Documentation:Hacker's_Guide|Hacker's Guide]], you
+could try to see with him if your modules documentation could fit in the
+"VLC modules" subsection)
+
+-- [[User:Dionoea|Dionoea]] 01:07, 13 February 2007 (CET)
+
+Great. I just made a few Wiki Cosmetic changes, and modify the links to
+the source code. -- [[User:J-b|J-b]] 09:16, 13 February 2007 (CET)

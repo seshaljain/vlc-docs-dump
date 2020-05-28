@@ -1,0 +1,2 @@
+Top-level category that holds [[Special:Categories|all other
+categories]]

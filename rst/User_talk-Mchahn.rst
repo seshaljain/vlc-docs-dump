@@ -1,0 +1,2 @@
+Hi, i posted a reply to your question on the [[Talk:Mini Projects]]
+page. [[User:Dionoea|Dionoea]] 19:07, 17 November 2006 (CET)

@@ -1,0 +1,112 @@
+== What it is ==
+
+Code signing is a technology that allows recipients of software packages
+to verify that the packages have not been modified by an attacker after
+being signed.
+
+Some nice features: \* The verification does not have to make any
+assumptions about the trustworthiness of the way the software packages
+were obtained. This makes it possible to trust packages distributed
+through third-party channels, without requiring HTTPS, even if the
+download site got hacked. The verification can be done off-line. \*
+Already deployed VLC instances can update themselves to newer versions
+with assurance that the new versions are genuine. \* Even though
+attackers can verify signatures, they cannot automatically forge
+signatures. \* Signature verification can be automated, such that when
+everything is going well, this security feature is invisible (read
+"user-friendly") to the end user.
+
+Checksums such as CRC, MD5, SHA1 etc. require the verifier to trust that
+the way in which the checksums were obtained has preserved their
+authenticity.
+
+As nicely and seamlessly as it works once the system is set up, the
+set-up phase itself carries some risk. If in the bootstrapping phase an
+attacker can trick a user to trust the attacker instead of VideoLAN, the
+attacker can from then on make the user accept tampered software
+packages as genuine. The security of the bootstrapping phase is not yet
+a solved problem for VideoLAN, but even so, it greatly reduces the
+window of opportunity for an attacker to impersonate VideoLAN to its
+users. When VLC is obtained from the repositories of a Linux distro or
+from an app store, the trust bootstrapping is done at the moment when
+the user enters that ecosystem. Code signing is still useful in proving
+to the maintainers of those ecosystems that a certain package is
+genuine.
+
+TODO: explain what certificates are used for.
+
+== Preparations for code signing ==
+
+=== As currently done ===
+
+New certificates are generated once a year and reuse the key from the
+previous year (a new OpenPGP identity and new signatures with new
+expiration dates are added to the file with the old key).
+
+'''Problem:''' Crypto best practices recommend signers to take advantage
+of the generation of a new certificate to also change the key.
+
+=== Proposed improvement ===
+
+Generate a new key pair every year, certify it for two years, use it for
+signing only during the first year, use it to sign next year's key.
+
+'''Problem:''' The way the auto-update currently does signature
+verification has some problems with this.
+
+== Code signing in the release process ==
+
+=== As currently done ===
+
+Packages are signed at publication time.
+
+=== Proposed improvement ===
+
+Synchronise the validity of the signature with the support duration for
+the particular version of the software package. If VideoLAN wanted to
+ensure that even old packages can be verified now, it would have to
+ensure that those packages get re-signed with the currently valid key.
+
+'''Problem:''' Yes, if attempting to do this manually.
+
+== Signature verification ==
+
+=== In the auto-update code ===
+
+==== As currently done ====
+
+TODO: Let someone with knowledge of the code document it.
+
+==== Proposed improvement ====
+
+If an instance of VLC has not been updated while the signature made with
+the public key known by the instance was valid, the process should
+acknowledge that a new bootstrap of the trust is needed. Either a fresh
+install should be required or a warning should be displayed or there
+should be another mechanism in place for establishing trust in the
+authenticity of the new package. In order to prevent the situation from
+even occurring, the certificates should have a long enough life span.
+
+'''Problem:''' The users cannot be kept secure without bothering them a
+little in this situation.
+
+=== Manually ===
+
+==== As currently done ====
+
+The manual verification works best only if the user ensures that the
+certificate is fresh, such as getting it from a key server.
+
+'''Problem:''' The concept of updating a certificate because of an
+extension of the validity period is unusual, because it is recommended
+against.
+
+==== Proposed improvement ====
+
+When the certificate of a code signing key has expired, the verifier
+stops putting any trust in that key and in signatures made with that
+key. But there is always a key that is valid now and if the package was
+worth the effort, VideoLAN has provided a signature with a currently
+valid key.
+
+[[Category:Dev Discussions]] [[Category:Security]]

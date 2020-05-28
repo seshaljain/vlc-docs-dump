@@ -1,0 +1,9 @@
+{| class="widebox center"
+|style="padding-left:0.25em;"|[[File:Historical.png|36x36px|alt=|link=]]
+|'''This page is obsolete and kept only for historical interest.''' It may document features that are obsolete, superseded, or irrelevant. Do not rely on the information here being up-to-date.<!--
+-->{{#if:{{{1|}}}|<br />Additional information: '''{{{1}}}'''|}}
+|}
+<includeonly>[[Category:Inactive project pages]]</includeonly><noinclude>
+You can add an optional reason like so: <code><nowiki>{{Historical|Support for libfoo decoding was removed in v0.9.9}}</nowiki></code>
+
+[[Category:Maintenance templates]]</noinclude>

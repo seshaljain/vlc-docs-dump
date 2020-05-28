@@ -1,0 +1,12 @@
+'''Haciendo streaming de vídeo y audio a icecast2'''
+
+el tema es que al usar los codec : vcodec=theo y acodec=vorb en el
+trascode , el vídeo queda defasado o fuera de tiempo con el audio.
+incluso si hago pruebas salvando la captura a disco duro pasa lo mismo ,
+con otros codec lo hace bien pero icecast2 no los soporta.
+
+me gustaría saber cual es la solución al problema y si existe una , que
+no sea al recibir en el cliente sincronizar el audio usado vlc ya que el
+destino del flujo de vídeo es una pagina web.
+
+Saludos

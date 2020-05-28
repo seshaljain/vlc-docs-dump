@@ -1,0 +1,8 @@
+<includeonly>{{wikipedia|{{{1|{{PAGENAME}}}}}|label1={{{2|{{{1|{{PAGENAME}}}}}}}}}}
+</includeonly><noinclude>
+{{User:MichaelBillington/Sandbox}}
+
+{{User:MichaelBillington/Sandbox|Foo}}
+
+{{User:MichaelBillington/Sandbox|Foo|Bar}}
+</noinclude>

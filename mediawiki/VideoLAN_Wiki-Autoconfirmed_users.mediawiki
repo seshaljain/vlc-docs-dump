@@ -1,0 +1,5 @@
+Autoconfirmed users have [[Special:CreateAccount|created an account]] and set a valid email address (required to combat spam). The email address is NOT shown to others even when [[Special:EmailUser|emailing through the system]] (which may be disabled in [[Special:Preferences|the user account preferences]]).
+
+Autoconfirmed users may edit pages on the wiki.
+
+[[Category:VideoLAN Wiki]]

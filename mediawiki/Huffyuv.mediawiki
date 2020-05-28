@@ -1,0 +1,9 @@
+{{Codec video|id=HFYU}}
+{{Mmwiki|HuffYUV}}
+
+'''Huffyuv''' (also known as Huffman [[YUV]]) is a very fast, [[lossless]] video encoder/decoder. VLC can play Huffyuv encoded videos. If you want VLC to output Huffyuv encoded video, then the right [[fourCC]] is '''HFYU'''.
+
+For example encode [[MP4]] file to [[AVI]] with Huffyuv video and [[MP3]] audio:
+ {{%}} vlc input.mp4 :sout=#transcode{vcodec=HFYU,scale=1,acodec=mp3,ab=128,channels=2,samplerate=44100}:file{dst=output.avi}
+
+Because Huffyuv is a lossless encoder, filesize is huge. e.g. two minutes of 640x360 resolution video will be near 700 megabytes.

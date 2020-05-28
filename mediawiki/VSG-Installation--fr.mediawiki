@@ -1,0 +1,12 @@
+__NOTOC__
+{{Languages|VSG:Installation}}
+
+'''Quel système d'exploitation utilisez-vous ?'''
+
+{{VSGEntry|Windows|VSG:Installation:Windows|Installer VLC sur Microsoft Windows.}}
+{{VSGEntry|OS X|VSG:Installation:Mac|Installer VLC sur Apple MacOS X}}
+{{VSGEntry|Android|VSG:Installation:Android|Installer VLC sur Android.}}
+{{VSGEntry|iOS|VSG:Installation:iOS|Installer VLC sur iOS.}}
+{{VSGEntry|Unix-based|VSG:Installation:Other|Installer VLC sur Linux, BSD, ou les autres systèmes d'exploitation Unix.}}
+
+{{VSG}}

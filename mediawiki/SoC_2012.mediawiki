@@ -1,0 +1,340 @@
+'''Google Summer of Code 2012.''' 
+
+This wiki page covers the attempt of the [[VideoLAN]] project to become a mentoring organization for [http://code.google.com/soc/ Google Summer of Code], in order to improve {{VLC}}, and other VideoLAN projects. 
+
+
+== Introduction &amp; Information  ==
+
+[[VideoLAN]] was a mentoring organization in [[SoC 2007|2007]], [[SoC 2008|2008]], [[SoC 2009|2009]], [[SoC 2010|2010]], and [[SoC 2011|2011]].
+
+If you are a '''student''', please read [[SoC 2012 Rules|the rules and advice]]. 
+
+=== About VLC media player  ===
+
+{{VLC}} is a cross-platform multimedia player, encoder and streamer application. It is one of the most successful open-source projects without any professional structure underneath. {{VLC}} is downloaded at an approximate monthly rate of 9 millions from the main website and that's not including third-party distributions (Linux)! 
+
+You can find more information on [http://en.wikipedia.org/wiki/VLC_media_player VLC on Wikipedia] or on this [[Main Page|wiki]].
+
+=== Ideas ===
+
+'''''Read this''''' 
+
+This page is split in three lists of ideas: 
+
+# The ''key ideas'' are what seem to be ''key projects'' for VLC and should be more ''thrilling'' than the other ones; we have assigned a potential mentor to each of these. 
+# The ''cool'' ideas are less detailed but could be good ideas too. 
+# [[Mini Projects]] are short-span projects which can be given as Qualification tasks or extended to be Full Summer of Code project.
+
+
+'''Original good ideas will be valued'''. Last year, the best ideas were given by students. We don't want to impose anything. This is free and Open Source software.
+
+If you don't want to apply for SoC but want other ideas to develop on, check the [[Mini Projects]] page!
+
+
+== Key ideas for VLC  ==
+
+=== New Audio Filters  ===
+
+We are looking for a skilled '''audiophile''' that knows a lot about audio theory and practice: 
+
+*to create or implement new algorithms, like SRS WoW or other 3D effects 
+*to work on channels mixing, down-mixing and up-mixing,
+*to work on tracks mixing, 
+*to create scriptable new audio filters in lua and enable users to create whatever audio filtering function they want in a Lua script. 
+* LADSPA or other libraries integration will be interesting.
+
+This project needs some good audio knowledge and good C experience. 
+
+''Qualification task'': port any audio filter from MPlayer
+
+''Proposed mentor: [[User:Geal|geal]]''
+
+
+=== UPNP DLNA Server and Client  ===
+
+Test and fix service discovery module for UPNP/DLNA shares done by software (mediatomb, xbmc, etc) and hardware implementations.
+
+Provide DLNA plugin for DLNA server compliant with opensource (xbmc, djmount, etc) and proprietary (PS3, xbox360, etc) DLNA clients. Some of the work is already done by previous SoC students.
+
+The plugin must be smart enough to provide "presets" for known DLNA media clients with limited features (PS3 or XBOX360 for starters) which require additional quirks or hacks or items to be transcoded or streamed.
+
+Requires some VLC knowledge as the project will involve using Media Library (arriving in vlc 1.2) and transcoding with VLC API.
+
+''Proposed mentor: thresh'' 
+
+
+=== Assembly optimizations in VLC  ===
+
+If you are fond of writing ASM and you are fluent in MMX/SSE2/SSE4 or NEON, there are many interesting things in VLC to speed up. 
+
+* Profiling VLC. 
+* memcpy implementations in NEON, SSE* and MMX (see modules/misc/memcpy/fastmemcpy.h) 
+* video filters ASM speedups (see modules/video_filter/blend.cpp) 
+* audio filters ASM speedups (see modules/audio_filter/equalizer.c and channel_mixers) 
+* Porting other ASM video filters to VLC.
+
+This project needs some good ASM knowledge and good C experience. 
+
+*Stuff to read: http://www.agner.org/optimize/
+
+''Proposed mentor: [[User:J-b|jb]]''
+
+
+=== VLC Test Suite  ===
+
+This project aims at making automatic tests to improve VLC quality. 
+
+*Write a series of tests for vlc-internal 
+*Integrate a framework for automated plugins testing with the automake build system 
+*Automate the different codec playback/mux/etc tests 
+*Automate the subtitles tests 
+*Write tests for the different bindings: Mac OS X Framework/Python Bindings... etc.
+
+This project is a code project, require good knowledge of C 
+
+''Proposed mentor: Rémi'' 
+
+
+=== Extensions downloads from VLC ===
+
+We are getting more and more extensions.
+
+But, to use them, you need to go on some website for that. A direct integration, like Firefox, would be nice.
+
+''Proposed mentor: chouquette''
+
+
+=== VLC Personnal Cloud Project 2.0  ===
+
+The personal cloud project is a simple project to allow people to play their media files anywhere in the world. 
+
+Through the http interface of VLC, a user can: 
+
+*list the medias from the Media Library, 
+*play those medias, 
+*those medias get transcoded and streamed in: 
+**Flash 
+**Silverlight 
+**iPhone format 
+**Android format 
+**html5 
+**A VLC webplugin
+
+A good example of the aim is http://www.vodobox.c.la/ 
+
+This project has to work on the configuration and NAT traversal. 
+
+This projects needs knowledge in HTML and JS; it might require C coding. 
+
+''Proposed mentor: jb'' 
+
+
+=== AirPlay streaming and client ===
+
+We need to be able to stream everything to and from your iDevices/Mac.
+
+''Proposed mentor: bjustin''
+
+
+=== Android port improvements ===
+
+The VLC port for Android is very limited.
+
+It needs:
+* a better UI for networking
+* integration with the desktop VLC.
+* faster codecs
+* fast filters
+* more features
+
+''Proposed mentor: xilasz''
+
+
+=== BD-J / BD-Live ===
+
+This is a project to work on Bly-Ray menus and interactivity improvements.
+
+This project requires a good Java knowledge
+
+''Proposed mentor: hpi''
+
+
+=== Service Discoveries improvements ===
+
+The integration of external services are too simple and too limited so far.
+
+We need a proper UI and branding of services like Shoutcast and such.
+
+''Proposed mentor: jb''
+
+
+=== New streaming / transcoding UI for the Mac OS X interface ===
+Remove the old ui and replace it with something more contemporary, which is both easy to use for starters and includes all the nice bells and whistles for the pros. Additionally, compile a reasonable list of presets and investigate ways for expanding the existing possibilities (e.g. "Upload to Youtube", "Convert for iPhone", etc.).
+We will provide help with the design, if needed.
+
+You will need a Mac running OS X 10.6 or later and Cocoa programming experience. Experience with CoreAnimation is a strong plus.
+
+''Proposed mentor: feepk''
+
+
+=== Support for Adobe HTTP Dynamic Streaming (F4M) ===
+
+We need to be able to read Flash Media Manifests (also known as F4M) according to [http://sourceforge.net/apps/mediawiki/osmf.adobe/index.php?title=Flash_Media_Manifest_%28F4M%29_File_Format this spec].
+
+''Proposed mentor: fyhuel''
+
+== Cool Ideas for VLC  ==
+
+=== DVD audio support ===
+Very difficult project for Audio fans
+
+''Proposed mentor: jb''
+
+
+=== BD+ VM improvements support ===
+Working on the implentation of the VM for the Blu-Ray BD+ technology would be nice.
+
+''Proposed mentor: jb''
+
+
+=== Device synchronisation===
+Sync your mp3 player with the media library
+
+''Proposed mentor: jetru''
+
+
+=== HD DVD support ===
+Very difficult project for someone having the right hardware
+
+''Proposed mentor: jb''
+
+
+=== Multi-Angle DVD support ===
+We need multi-angle DVD support
+
+''Proposed mentor: Meuuh''
+
+
+=== VLM UI for the Mac OS X interface ===
+Implement an easy-to-use, yet customizable and complete UI for the VideoLAN Media Manager, which allows VLC to stream multiple unicast, multicast and Video-on-Demand streams within a single instance.
+
+You will need a Mac running OS X 10.6 or later and Cocoa programming experience. A basic understanding of media streams is definitely preferable.
+
+Note that this task is too small for an entire summer and should be combined with another topic.
+
+''Proposed mentor: feepk''
+
+
+=== Bada Port ===
+Port VLC on Samsung Bada OS.
+
+You will need a device.
+
+''Proposed mentor: jpeg''
+
+
+=== QNX/Playbook Port ===
+Port VLC on QNX/BB10 with a playbook.
+
+You will need a device.
+
+''Proposed mentor: funman''
+
+
+=== iOS Port ===
+Update VLC's iOS port to the current code, expand the existing UI for media streams and update the iPad interface for the newly introduced retina display.
+
+You will need a device and Cocoa / Cocoa Touch programming experience.
+
+''Proposed mentor: feepk'
+
+
+=== WebOS Port ===
+Port VLC on the WebOS.
+
+You will need a device.
+
+''Proposed mentor: funman''
+
+
+=== NaCl Port ===
+Port VLC on the NaCl platform for Google Chrome OS.
+
+''Proposed mentor: ???''
+
+
+=== SVCD/VCD improvements  ===
+
+Menus and other evolved functionnalities needs to be improved and fixed. This requires some old discs.
+
+Proposed mentor: ''fenrir''
+
+
+=== QStyle port of VLC interface ===
+
+Rewriting an important part of the VLC interface using QStyle instead of PaintEvent would be very nice.
+
+''Proposed mentor: etix''
+
+
+== VLMC  ==
+
+VLMC is a non-linear cross-platform video editor based on VLC. We're looking for student(s) with good C++ skills and some experience with Qt with lots of passion of hacking. 
+
+Hang with us at #vlmc or #videolan on irc.freenode.net and talk to the developers directly! 
+
+To get selected: 
+
+1. [http://wiki.videolan.org/Building_VLMC Download and build] VLMC and start playing with it. 
+
+2. Implement some feature(s) or fix some bug(s), search VLMC's [http://trac.videolan.org/vlmc/report bug tracker]. 
+
+3. Send your patch to vlmc-devel@videolan.org for evaluation and work on your GSoC proposal. 
+
+4. Get selected and work on your project! 
+
+
+<br> You'll be greatly appreciated if you complete any of the proposed qualification tasks: (in increasing level of difficulty) 
+
+1. [http://trac.videolan.org/vlmc/ticket/134 Bug 134]: Update labels and strings when locale is changed. 
+
+2. [http://trac.videolan.org/vlmc/ticket/61 Bug 61]: Improve project timeline widget to have clip thumbnail. 
+
+3. [http://trac.videolan.org/vlmc/ticket/145 Bug 145]: Project preview has no sound on Windows. 
+
+4. [http://trac.videolan.org/vlmc/ticket/196 Bug 196]: Fix distorted audio playback in project preview. 
+
+5. [http://trac.videolan.org/vlmc/ticket/144 Bug 144]: On some platforms, rendered video file has no sound. Identify the problem and fix it. 
+
+
+=== GUI Improvements  ===
+
+Difficulty: Medium 
+
+Proposed mentor: etix 
+
+VLMC needs a GUI make over, using Qt APIs such as graphics view, animation, states etc. Correcting those widgets such as the import window, provide alternative widget so VLMC better fits with the video editing needs. 
+
+Many widgets can be rewritten&nbsp;: Import, Library, Clip property... be creative&nbsp;! 
+
+
+=== Quality Improvements: Writing Tests and fixing LibVLC APIs  ===
+
+Difficulty: Hard 
+
+Proposed mentor:&nbsp;? (needs a VLC developer to mentor this one) 
+
+While rendering preview and project, VLMC may sometimes crash due to bugs in the libVLC. The project will consist of; writing (unit) tests/test-cases for VLMC/libVLC APIs, and identify what's causing the crashes and fixing the bugs. The major area is rendering. Testing should be verified on at least two of the OSs: Linux, Windows and Mac. This project can help VLMC have stable releases and better quality control. 
+
+
+=== Plugin Architecture for VLMC  ===
+
+Difficulty: Hard 
+
+Proposed mentor:&nbsp;? 
+
+VLMC uses frei0r plugins to add special effects. The project consists of designing and implementing a plugin architecture that can take in lua/python/compiled-plugins(.so) plugins.
+
+{{GSoC}}
+
+[[Category:SoC]]

@@ -1,0 +1,20 @@
+{{See alsoDemultiplexer (media file)}}
+
+'''Demuxing''' is an abbreviation of '''demultiplexing'''. Demuxing is
+the process of reading a multi-part stream and saving each
+part&nbsp;&ndash; audio, video, and subtitles (if any)&nbsp;&ndash; as a
+separate stream. It is the logical reverse of the [[muxing]] process.
+
+For example, [[AVI]] is a container that means ''audio-video
+interleave''. The processing of demuxing an AVI requires separating the
+''audio'' and ''visual'' components so (after being decoded by other
+modules) they can finally reach the speaker and monitor, respectively.
+
+Most media file formats are multiplexed together in this way and VLC
+uses ''demuxer'' modules to separate them. Examples of demuxers that VLC
+uses are [[Documentation:Modules/asfogg]] (for [[Ogg]]) and
+[[Documentation:Modules/mkv|mkv]] (for [[Matroska]]).
+
+== See also == \* [[Hacker Guide/Demux]]
+
+[[Category:Glossary]]

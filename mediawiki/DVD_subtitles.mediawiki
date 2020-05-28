@@ -1,0 +1,6 @@
+{{Mux|id=dvdsubtitle|mod=subtitle}}
+{{Mmwiki|DVD subtitles}}
+
+{{Stub}}
+
+[[Category:Subtitles]]

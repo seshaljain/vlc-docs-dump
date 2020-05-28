@@ -1,0 +1,5 @@
+Description pages for [[Documentation:Modules|modules]] in {{VLC}} are listed in this category. To see all modules as an alphabetical list, see [[Special:PrefixIndex/Documentation:Modules|this automatically generated index]]. To add a module to this category, use {{tl|Module}}.
+
+Modules that have been removed are sorted under <samp>'''&dagger;'''</samp>. Many "removed" modules have merely been replaced, though it cannot be shown here. For example,  {{docmod|v4l}} was removed but replaced with {{docmod|v4l2}}.
+
+[[Category:Documentation]]

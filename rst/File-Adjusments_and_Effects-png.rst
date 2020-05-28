@@ -1,0 +1,2 @@
+#REDIRECT [[File:Video effects - essential, with image adjust
+selected.png]]

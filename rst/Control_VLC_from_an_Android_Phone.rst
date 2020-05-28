@@ -1,0 +1,56 @@
+==Options that communicate directly with VLC==
+
+*It is possible to use the http interface directly from Browser although
+is is somewhat cumbersome as it isn't designed for such a small
+screen.*\ \*[[Control VLC via a browser]]
+
+*[https://play.google.com/store/apps/details?id=adarshurs.android.vlcmobileremote
+VLC Mobile Remote] android app developed by Adarsh Urs with good user
+interface is easy to use, includes all the basic as well as advanced
+controls of VLC and it is free. Setup Wizard in the app makes it easy to
+setup VLC and automatically connects the PC/Mac to android device.*\ \*
+Watch full [https://www.youtube.com/watch?v=2wu1vQDazNY VLC setup
+instructions video] on Youtube from [http://vlcmobileremote.com VLC
+Mobile Remote].
+
+*[http://www.hobbyistsoftware.com Hobbyist Software] have produced two
+native applications which allow control of VLC from within a normal
+Android app. They also provide [http://www.hobbyistsoftware.com/VLCSetup
+setup helper applications] for Windows and Mac OS which simplify the
+process of enabling the http interface in
+VLC.[http://hobbyistsoftware.com/android/vlc-remote-free VLC Remote
+Free] allows control of basic functions like play, pause, stop, volume,
+etc[http://hobbyistsoftware.com/android/vlc-remote VLC Remote] is a paid
+version which additionally allows selecting of files and playlist
+management as well as more advanced features such as aspect ratio,
+subtitles, etc.*\ [http://www.banamalon.net/android/ Banamalon] has
+developed two native applications to control VLC with your
+[https://www.appaustic.com/android-app-development Android Device].
+There is a step by step
+[http://www.banamalon.net/android/?page_id=19#vlc tutorial] available on
+how to setup the web-interface correctly. **VLC - Remote LIGHT is a the
+free version and allows you to use basic functions like play, pause,
+stop, volume, seekbar, fullscreen,
+etc.**\ [http://www.banamalon.net/android/?p=305 VLC - Remote PRO] is a
+paid version in which you are able to fully use
+[http://www.banamalon.net/android/?p=388 HomeMedia] (Windows is
+necessary). For example you can start VLC remotly with you android
+device.
+
+\*[\ https://play.google.com/store/apps/details?id=com.vlcforandroid.vlcdirectprofree
+VLC Direct Pro Free] Is a free application in which you are able to
+fully control VLC remotely and also stream videos, music and photos from
+VLC to an android Device and from the android device to VLC. It supports
+a wide range of video, music, image and subtitle formats. VLC Direct
+official Web Site [http://www.vlcdirect.com HERE]
+
+\*[\ https://play.google.com/store/apps/details?id=com.maxdev.android.shaketest
+VLC Shake Remote] Is a free app to use your Android device as remote
+control for VLC running on your PC. Sit down on the coach and watch your
+favorite show on TV controlling VLC with your mobile, you can control
+position, volume, play, pause, stop, previous/next track, add/remove
+files to the playlist, shake control, just shake your mobile to
+mute/pause/skip track (even with screen locked), assign function to your
+mobile volume keys (even with screen locked)
+
+[[Category:Android]] [[Category:Control VLC]] [[Category:How To]]

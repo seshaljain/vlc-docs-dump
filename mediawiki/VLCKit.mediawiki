@@ -1,0 +1,127 @@
+This page provides a brief overview on the [[LibVLC]] binding for Objective-C.
+
+== Introduction ==
+VLCKit is an Objective-C wrapper for libvlc's external interface, on '''macOS''', '''iOS''' and '''tvOS'''.
+
+It includes basic classes for playback, playlists, streaming and transcoding. Doing simple media players (comparable to QuickTime Player or MPlayer OS X) is as hard as doing a QuickTime-based one; thus, it is really easy.
+MobileVLCKit is a subset specifically targeting the iOS platform, enabling a full playback experience with playlists, metadata handling and network streaming. If you require a media database, MediaLibraryKit will get you going within minutes.
+
+== Building the framework for macOS ==
+
+* Clone http://code.videolan.org/videolan/VLCKit.git
+* open <code>VLCKit.xcodeproj</code> 
+* make sure the "Build libvlc" target is selected 
+* build the project
+* Select the "VLCKit" target and build it.
+
+This will automatically fetch and build libvlc as well as accompanying classes. Alternatively and to get access to more options, you can run the "buildVLCKit.sh" script on the terminal manually. Add the "-h" flag to see all available options.
+
+== Building the framework for iOS ==
+
+* Clone http://code.videolan.org/videolan/VLCKit.git
+* open your favorite terminal application such as Terminal.app or iTerm 2 and navigate to your checkout.
+* execute <code>./compileAndBuildMobileVLCKit.sh</code> 
+* check <code>-h</code> for available options
+
+This will automatically fetch and build libvlc as well as its dependencies and accompanying classes.
+
+If you want to build a library that will work for both the simulator and devices:
+* execute <code>./compileAndBuildMobileVLCKit.sh </code>
+* use xcode command line tools to build a universal library: <code>lipo -create Release-iphoneos/libMobileVLCKit.a Release-iphonesimulator/libMobileVLCKit.a -o libMobileVLCKit.a</code>
+
+Or to build as a static framework with device and simulator support:
+* <code>./compileAndBuildMobileVLCKit.sh -f</code>
+
+Note: the MobileVLCKit Xcode project also allows you to build a dynamic framework (requiring iOS 8 later) after the build script succeeded once.
+
+'''Warning:''' the current build process produces a '''very''' large library when using static mode. 90% of the initial size will be stripped on linking.
+
+'''Dependencies warning:''' The built script fetches dependencies automatically and builds them locally; beware that system-wide installations through Homebrew may interfere with the local build scripts. If you get autoconf-related errors, try removing /usr/local from your PATH, wiping the source tree, and starting the build over.
+
+== Building the framework for tvOS ==
+
+* Clone http://code.videolan.org/videolan/VLCKit.git
+* open your favorite terminal application such as Terminal.app or iTerm 2 and navigate to your checkout.
+* execute <code>./compileAndBuildMobileVLCKit.sh -t</code> 
+* check <code>-h</code> for available options
+
+This will automatically fetch and build libvlc as well as its dependencies and accompanying classes.
+
+If you want to build a library that will work for both the simulator and devices:
+* execute <code>./compileAndBuildMobileVLCKit.sh </code>
+* use xcode command line tools to build a universal library: <code>lipo -create Release-appletvos/libTVVLCKit.a Release-appletvsimulator/libTVVLCKit.a -o libTVVLCKit.a</code>
+
+Or to build as a static framework with device and simulator support:
+* <code>./compileAndBuildMobileVLCKit.sh -t -f</code>
+
+Note: the MobileVLCKit Xcode project also allows you to build a dynamic framework after the build script succeeded once.
+
+'''Warning:''' the current build process produces a '''very''' large library when using static mode. 90% of the initial size will be stripped on linking.
+
+'''Dependencies warning:''' The built script fetches dependencies automatically and builds them locally; beware that system-wide installations through Homebrew may interfere with the local build scripts. If you get autoconf-related errors, try removing /usr/local from your PATH, wiping the source tree, and starting the build over.
+
+== Basic usage in your application ==
+The code should speak by itself
+   // Set up a videoView by hand. You can also do that in the nib file
+    videoView = [[VLCVideoView alloc] initWithFrame:[[window contentView] bounds]];
+    [[window contentView] addSubview:videoView];
+    [videoView setAutoresizingMask: NSViewHeightSizable|NSViewWidthSizable];
+   
+    // Init the player object
+    player = [[VLCMediaPlayer alloc] initWithVideoView:videoView];
+  
+    [player setMedia:[VLCMedia mediaWithPath:@"/to/my/movie"]];
+    [player play];
+
+== Sample code ==
+We offer sample code both for iOS and macOS.
+
+<code>Examples_OSX</code> includes 3 different projects.
+* ''BasicPlayerWithPlaylist'': this sum's it up pretty well. drag and drop files, hit play / pause, see them play in the same window in the order you want them to.
+[[File:List based vlckit player sample.png|center|Basic Player with Playlist]]
+* ''FlashVideoDownloader'': this exemplifies the basics on how to deploy VLC's URL parsing mechanisms to gain access to the actually played media and how to store it.
+[[File:Flash video downloader vlckit sample project.png|center|Flash Video Downloader]]
+* ''iPodConverter'': VLCKit includes streaming and transcoding features including a few pre-defined profiles. In this sample, you see how to use them. Drop a file in the designated area. Hit convert. See the file being converted including a progress bar.
+[[File:Convert for ipad osx sample project.png|center|iPodConverter]]
+
+<code>Examples_iOS</code> includes 2 different projects developed using Xcode 5 and with iOS 7 in mind. With minor modifications, they will also work on iOS 5 and 6.
+* ''SimplePlayback'': it's as simple as it sounds. Launch the app to watch a file being streamed live over http from one of our servers to your iOS Simulator or device.
+[[File:Simple playback iOS sample project.png|center|Simple Playback]]
+* ''DropIn-Player'': this is a more advanced sample project implementing a basic view controller, which could be embedded in your own app. It allows any kind of media playback, subtitles handling, multiple audio track handling, aspect ratio customizations, playback position manipulation and display, volume. All of that, implemented in a self-contained class and a single xib file.
+[[File:Drop-in player sample project ios.png|center|Drop-In player]]
+
+== Are there apps actually deploying VLCKit on macOS and iOS? ==
+This is a selection of apps we are aware of. 
+
+* [https://www.amahi.org/ios Amahi for iOS] by [https://www.amahi.org Amahi]
+* [http://www.rotapp.com/app/blackbox/ Blackbox] by Rotapp
+* [http://www.rotapp.com/app/dreambox-live/ Dreambox-Live] by Rotapp (discontinued)
+* [http://fleex.tv Fleex player] by fleex.tv
+* [http://imagneto.sourceforge.net/ iMagneto]
+* [http://www.korrisoft.com/references/references.php Korri player] by [http://www.korrisoft.com Korrisoft]
+* [[Lunettes]] by the VideoLAN team
+* [http://www.korrisoft.com/references/references.php Ma TV Star] by [http://www.korrisoft.com Korrisoft]
+* [http://www.domzilla.net/iphone-apps/movieplayer2/ Movie Player 2] by Dominic Rodemer Online Media
+* [http://www.korrisoft.com/references/references.php Player multimédia TNT] by [http://www.korrisoft.com Korrisoft]
+* [[iOS|VLC for iOS]] by the VideoLAN team
+* [http://hobbyistsoftware.com/vlcstreamer-more VLC Streamer] by [http://www.HobbyistSoftware.com HobbyistSoftware]
+Feel free to add your application above in alphabetical order. Note that we don't list apps violating VLCKit's licensing terms - regrettably, there are quite a few.
+
+== Compilation tips ==
+* If you do not care about the latest, try using the stable branch, e.g. 2.1-stable
+* The build tree has what could be described as "git submodules" and they sometimes can fall out of sync. If the code inside <code>MobileVLCKit/ImportedSources/vlc</code> falls out of sync or you need to force a rebuild you may want to remove  <code>contrib/iPhoneOS-armv7*/</code>
+* In some situations your libtoolize may interfere with the build tools. You may want to add <code>$PATH/MobileVLCKit/ImportedSources/vlc/extras/tools/build/bin</code> towards the beginning of your PATH and build with it
+
+== Related ==
+* [[macOSCompile|Compiling VLC on macOS]]
+
+==External Links==
+
+* [http://developer.apple.com/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html Introduction to The Objective-C 2.0 Programming Language]
+* [http://developer.apple.com/documentation/developertools/Conceptual/IB_UserGuide/Introduction/Introduction.html Interface Builder]
+* [https://github.com/dalexsoto/MobileVLCKit-for-Xamarin.iOS Mobile VLCKit for Xamarin.iOS]
+
+[[Category:Bindings]]
+[[Category:iOS]]
+[[Category:LibVLC]]
+[[Category:macOS]]

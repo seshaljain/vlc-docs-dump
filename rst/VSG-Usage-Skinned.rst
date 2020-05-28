@@ -1,0 +1,14 @@
+== Make skinned interface the default interface ==
+
+Go to '''Tools -&gt; Preferences'''... (set Show Settings to All) and
+'''Interface -&gt; Main interfaces''' and from '''Interface module'''
+dropdown box select '''Skinnable Interface'''.
+
+Remember to press Save to save VLC settings and restart VLC after that
+to make sure changes are enabled.
+
+[[File:SkinnableInterfaceSetting.png]]
+
+<br><br><br><br><br>
+
+{{VSG}}

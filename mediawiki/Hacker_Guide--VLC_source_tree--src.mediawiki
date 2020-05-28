@@ -1,0 +1,71 @@
+Note: Data taken verbatim from the API. To get an overview see [[{{#rel2abs:..}}]].
+
+'''libvlccore''' is the core part of VLC. It is the heart of VLC, powering the [[LibVLC]] library and providing the internal infrastructure for a lot of functionality such as stream access, audio and video output, plugin handling, a thread system. All the libvlccore source files are located in the {{VLCSourceFolder|src}} directory and its subdirectories:
+
+{| class="wikitable"
+
+|-
+! Directory Name        
+! Directory Explanation
+
+|-
+|{{VLCSourceFolder|src/android}}
+|Configuration code specific to VLC on [[Android]].
+|-
+|{{VLCSourceFolder|src/audio_output}}
+|initializes the audio mixer, ie. finds the right playing frequency, and then resamples audio frames received from the decoder(s).
+|-
+|{{VLCSourceFolder|src/config}}
+|Contains code to parse command line arguments and vlcrc files.
+|-
+|{{VLCSourceFolder|src/darwin}}
+|Configuration code specific to VLC on Mac OS X.
+|-
+|{{VLCSourceFolder|src/extras}}
+|Some extra functions to complement the C library.
+|-
+|{{VLCSourceFolder|src/input}}
+|Opens an input module, reads packets, parses them and passes reconstituted elementary streams to the decoder(s).
+|-
+|{{VLCSourceFolder|src/interface}}
+|Contains code for user interaction such as key presses and device ejection.
+|-
+|{{VLCSourceFolder|src/misc}}
+|Miscellaneous utilities used in other parts of VLC, such as the thread system, the message queue, the object lookup system, the [[Hacker Guide/Variables|variable system]] or CPU detection.
+|-
+|{{VLCSourceFolder|src/modules}}
+|Contains the mechanism of the modules/plugin system.
+|-
+|{{VLCSourceFolder|src/network}}
+|Contains code related to network access.
+|-
+|{{VLCSourceFolder|src/os2}}
+|Configuration code specific to VLC on OS/2.
+|-
+|{{VLCSourceFolder|src/playlist}}
+|Manages playlist interaction such as stop, play, next, or random playback.
+|-
+|{{VLCSourceFolder|src/posix}}
+|Configuration code specific to VLC on POSIX.
+|-
+|{{VLCSourceFolder|src/stream_output}}
+|Initializes stream output muxers and encoders to enable [[streaming]] with VLC.
+|-
+|src/symbian
+|Configuration code specific to VLC on Symbian.
+|-
+|{{VLCSourceFolder|src/test}}
+|The short VLC test suite.
+|-
+|{{VLCSourceFolder|src/text}}
+|Contains text-related functions, like character encodings, [[Unicode]], and IDNs.
+|-
+|{{VLCSourceFolder|src/video_output}}
+|initializes the video display, gets all pictures and subpictures (ie. subtitles) from the decoder(s), optionally converts them to another format (such as YUV to RGB), and displays them.
+|-
+|{{VLCSourceFolder|src/win32}}
+|Configuration code specific to VLC on [[Windows]]
+|}
+
+{{Hacker Guide}}
+[[Category:Building]]

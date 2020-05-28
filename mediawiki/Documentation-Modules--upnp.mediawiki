@@ -1,0 +1,118 @@
+Prior to VLC 2.0.0 the [[wikipedia:UPnP|UPnP]] module had 2 files: upnp_cc (for [[wikipedia:CyberLink|CyberLink]]) and upnp_intel (for [[wikipedia:Intel Corporation|Intel]]).<br />The upnp_cc file was {{Commitdiff|63751e5aef7dc2ef5098df0df8bdca07849d8fd5|l=removed}} and the upnp_intel file was {{Commitdiff|15e31aa8a7a30df086bb31422b750dcbd632dfae|l=renamed}} to upnp.
+
+== <span id="upnp_intel"></span> upnp.cpp ==
+{{Module|name=upnp|type=Services discovery|first_version=0.8.4|description=[[wikipedia:Universal Plug'n'Play|Universal Plug'n'Play]]|sc=none}}
+When VLC is compiled with UPNP support, you will still need{{Check|for=May no longer be necessary?}} to enable UPNP service discovery:
+* either on command line via $ vlc --services-discovery upnp_intel
+* or in the playlist menu: File/Service discovery/UPNP
+
+Then discovered UPNP servers will be listed on the playlist.
+
+=== Options ===
+Note the spelling difference: it is option satip-channe'''l'''ist and satip-channe'''ll'''ist-url.
+{{Option
+|name=satip-channelist<span id="satip-channelist"></span>
+|value=string
+|select=[[#appendix_satip-channelist|{ "Auto", "ASTRA_19_2E", "ASTRA_28_2E", "ASTRA_23_5E", "MasterList", "ServerList", "CustomList" }]]
+|default="auto"
+|description=Custom SAT&gt;IP channel list URL
+}}
+{{Option
+|name=satip-channellist-url
+|value=string
+|default=NULL
+|description=Custom SAT&gt;IP channel list URL
+}}
+{{Clear}}
+
+=== upnp ===
+==== Options ====
+None.
+{{Clear}}
+
+=== upnp_renderer ===
+{{Module|name=upnp_renderer|type=Renderer discovery|description=UPnP Renderer Discovery|sc=upnp_renderer}}
+
+==== Options ====
+None.
+{{Clear}}
+
+<!-- Scheduled for 4.0.0-dev:
+=== dlna ===
+{{Module|name=dlna|type=Stream output|description=UPnP/[[wikipedia:DLNA|]] stream output|sc=dlna}}
+
+Note that <code>--sout-dlna-base_url</code> uses an underscore <code>'''_'''</code> rather than a hyphen.
+
+==== Options ====
+{{Option
+|name=sout-dlna-ip
+|value=string
+|default=NULL
+|description=[[IP address|IP Address]] of the UPnP Renderer.
+}}
+{{Option
+|name=sout-dlna-port
+|value=integer
+|default=NULL
+|description=The [[port]] used to talk to the UPnP Renderer.
+}}
+{{Option
+|name=sout-dlna-http-port
+|value=integer
+|default=7070
+|description=This sets the [[HTTP]] port of the local server used to stream the media to the UPnP Renderer.
+}}
+{{Option
+|name=sout-dlna-video
+|value=boolean
+|default=enabled
+|description=The UPnP Renderer can receive video.
+}}
+{{Option
+|name=sout-dlna-base_url
+|value=string
+|default=NULL
+|description=The base Url relative to which all other UPnP operations must be called
+}}
+{{Option
+|name=sout-dlna-url
+|value=string
+|default=NULL
+|description=The Url used to get the xml descriptor of the UPnP Renderer
+}}
+{{Clear}}-->
+
+== <span id="upnp_cc"></span> upnp_cc.cpp ==
+{{Module|name=UPnP|type=Services discovery|last_version=1.1.?|description=Universal Plug'n'Play|sc=none}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Source code ==
+Current:
+* {{VLCSourceFile|modules/services_discovery/upnp.cpp}}
+Former:
+* {{VLCSourceFile|p=vlc/vlc-0.8.git|modules/services_discovery/upnp_cc.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/services_discovery/upnp_cc.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-1.0.git|modules/services_discovery/upnp_cc.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-1.1.git|modules/services_discovery/upnp_cc.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-0.8.git|modules/services_discovery/upnp_intel.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/services_discovery/upnp_intel.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-1.0.git|modules/services_discovery/upnp_intel.cpp}}
+* {{VLCSourceFile|p=vlc/vlc-1.1.git|modules/services_discovery/upnp_intel.cpp}}
+
+== Appendix ==
+<span id="appendix_satip-channelist"></span>
+'''For the option <code>[[#satip-channelist|--satip-channelist]]</code>:'''
+{| class="mw-datatable sortable"
+! scope="row" | Option name
+| Auto || ASTRA_19_2E || ASTRA_28_2E || ASTRA_23_5E || MasterList || ServerList || CustomList
+|-
+! scope="row" | Meaning
+| Auto || Astra 19.2°E || Astra 28.2°E || Astra 23.5°E || SAT&gt;IP Main List || Device List || Custom List
+|}
+
+{{Documentation}}
+
+{{DEFAULTSORT:{{#titleparts:{{PAGENAME}}|0|2}}|noerror}}<!-- Override sortkey -->

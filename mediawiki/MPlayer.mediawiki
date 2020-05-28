@@ -1,0 +1,16 @@
+{{Website|MPlayer|https://mplayerhq.hu/}}
+{{FOSS}}
+
+MPlayer (from ''The Movie Player'') is a cross-platform [[media player]] released under GPLv2. The recommended way to install is to compile source code from <abbr title="Apache Subversion">SVN</abbr>, though builds (binaries) are available from third parties. Numerous [https://mplayerhq.hu/design7/dload.html#skins skins] are available&mdash;by default there is no skin, meaning no graphical user interface.
+
+Work on the project began in 2000 and is still actively developed as of 2019, with extensive documentation and support lists.
+
+There are common elements between {{VLC}} and MPlayer, and the two projects share at least one contributor (Diego Biurrun).<!--Did Loren Merritt work directly on MPlayer?--> VLC [https://mplayerhq.hu/design7/projects.html#mplayer_code reuses] the MPlayer {{VLCSourceFile|modules/video_chroma/swscale.c|l=swscale}} software scaler library (included with FFmpeg) and MPlayer can be [https://mplayerhq.hu/DOCS/HTML/en/codec-installation.html#x264 extended] with the VideoLAN [[x264]] library. [[libdvdnav]] and [[libdvdcss]] were included with MPlayer [https://mplayerhq.hu/design7/news.html#mplayer12 until 1.2]. VLC and MPlayer both currently use [[FFmpeg]] to [https://mplayerhq.hu/DOCS/codecs-status.html support] many codecs, and [https://mplayerhq.hu/design7/news.html#notdead work is done] to keep MPlayer, VLC and FFmpeg codec support in sync.
+
+== Links ==
+* [https://mplayerhq.hu/design7/info.html MPlayer - Overview]
+* [https://mplayerhq.hu/DOCS/HTML/en/faq.html MPlayer - FAQ]
+* [https://mplayerhq.hu/design7/dload.html MPlayer - Download]
+* [[wikibooks:MPlayer|Wikibooks - MPlayer]]
+
+[[Category:Player]]

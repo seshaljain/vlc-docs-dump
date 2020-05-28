@@ -1,0 +1,9 @@
+{{Module|name=adpcm|type=Audio decoder|first_version=0.5.0|description=[[ADPCM]] audio decoder|sc=none}}
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/adpcm.c}}
+
+{{Documentation}}

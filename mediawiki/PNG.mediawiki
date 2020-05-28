@@ -1,0 +1,3 @@
+#REDIRECT [[Image#PNG]]
+
+[[Category:Glossary]]

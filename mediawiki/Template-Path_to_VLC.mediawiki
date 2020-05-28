@@ -1,0 +1,43 @@
+<includeonly><!--
+-->{{#ifeq:{{{dir|}}}|y<!--
+  -->|{{#switch:{{{1}}}<!--
+     -->|windows = {{#ifeq:{{{q|}}}|n|%PROGRAMFILES%\VideoLAN\VLC|"%PROGRAMFILES%\VideoLAN\VLC"}}<!--
+     -->|mac     = /Applications/VLC.app/Contents/MacOS<!--
+     -->|linux   = <!--
+   -->}}<!--
+  -->|{{#switch:{{{1}}}<!--
+     -->|windows = "%PROGRAMFILES%\VideoLAN\VLC\vlc.exe"<!--
+     -->|mac     = /Applications/VLC.app/Contents/MacOS/VLC<!--
+     -->|linux   = vlc<!--
+   -->}}<!--
+-->}}</includeonly><noinclude>
+
+== Usage ==
+A template for default {{VLC}} locations on desktop computers by [[operating system]].
+
+Parameters:
+* (unnamed) required. One of <code>windows</code>, <code>mac</code> or <code>linux</code>. No default
+* <code>'''|dir='''</code> optional (short for ''directory''). Only checks for value <code>y</code> (''yes''). Default disabled
+* <code>'''|q='''</code> optional (short for ''quotes''). Only checks for value <code>n</code> (''no''). Default enabled
+Showcase of various modes:
+* <code>{{{{PAGENAME}}|windows<nowiki>}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|windows}}</samp>
+* <code>{{{{PAGENAME}}|windows<nowiki>|dir=y}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|windows|dir=y}}</samp>
+* <code>{{{{PAGENAME}}|windows<nowiki>|dir=y|q=n}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|windows|dir=y|q=n}}</samp>
+* <code>{{{{PAGENAME}}|mac<nowiki>}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|mac}}</samp>
+* <code>{{{{PAGENAME}}|mac<nowiki>|dir=y}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|mac|dir=y}}</samp>
+* <code>{{{{PAGENAME}}|linux<nowiki>}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|linux}}</samp>
+* <code>{{{{PAGENAME}}|linux<nowiki>|dir=y}}</nowiki></code>
+*: <samp>{{{{PAGENAME}}|linux|dir=y}}</samp>
+
+== See also ==
+* {{tl|Path to VLC}}
+* {{tl|VLC folder}} - simple wrapper template for directory paths only (no quotes)
+
+[[Category:Templates]]
+</noinclude>

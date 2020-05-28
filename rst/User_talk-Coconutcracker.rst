@@ -1,0 +1,13 @@
+&nbsp;Can't Access my GUI anymore and I don't know what to do!
+
+I followed the steps to connect "Remote VLC", I entered the port number
+wrong, but I can't change it because I can't get to the prefereces
+window.
+
+Please help!
+
+<br>
+
+Regards,
+
+Eyal Marcos Levit

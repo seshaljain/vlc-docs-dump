@@ -1,0 +1,3 @@
+#REDIRECT [[Players]]
+
+[[Category:Player|*]]

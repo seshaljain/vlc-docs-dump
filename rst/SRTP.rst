@@ -1,0 +1,13 @@
+{{Wikipedia|Secure Real-time Transport Protocol}} '''SRTP''' or
+'''Secure RTP''' uses encryption with the aim of authenticating and
+securing [[RTP]]. It has a companion [[protocol]], SRTCP, or secure
+[[RTCP]].
+
+Unlike RTP it is not an {{IETF}} Internet Standard, meaning support is
+experimental for most implementations.
+
+== Links == \* [https://tools.ietf.org/html/rfc3711 RFC 3711]: SRTP \*
+[https://tools.ietf.org/html/rfc8269 RFC 8269]: SRTP with the ARIA
+algorithm
+
+[[Category:Protocols]]

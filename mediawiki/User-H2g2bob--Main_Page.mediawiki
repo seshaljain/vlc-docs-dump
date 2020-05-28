@@ -1,0 +1,61 @@
+__NOTOC__
+== VideoLAN WIKI ==
+
+Welcome to the Wiki site for VideoLAN!
+
+
+The purpose of this Wiki is to provide a documentation that does not cover the whole streaming solution, but provides answers to problems that the users frequently have.
+
+
+{| cellspacing="3" 
+|- valign="top" 
+|width="55%" class="MainPageBG" style="border: 1px solid #ffc9c9; color: #000; background-color: #fff3f3"|
+
+=== What is VideoLAN ===
+
+VideoLAN is made up of two programs:
+* '''VLC''', the more common program, plays many types of media files and streamed media. It can create media streams and save media files in different formats and quality than the original file.
+* [[VLS]] is a streaming server, used for profesional streaming solutions. It shares some features with VLC.
+
+===VLC media player===
+
+* Want to know [[How to|how to]] do things with VLC?
+* Get help with some [[Common Problems]]
+
+Advice for VLC on your platform...
+* [[VLCMacOSX|Mac OS X]]
+* [[Windows]]
+* [[BeOS]]
+* [[Linux|GNU/Linux]]
+* [[FreeBSD]]
+
+|width="45%" class="MainPageBG" style="border: 1px solid #c6c9ff; color: #000; background-color: #f0f0ff"|
+
+=== Knowledge Base ===
+
+Our [[Knowledge Base]] has information on
+* [[Codec]]s
+* [[Fileformat|Files]]
+* [[Dictionary]]
+* [[Knowledge Base|more &raquo;]]
+
+
+==== Tips and Tricks ====
+* You can download extra [[Skins]] for VLC
+* Add [[Additional Interfaces]] to control VLC in different ways, such as from [[Mouse Gestures|mouse gestures]] or even [[Web_Interface|through the internet]].
+* [[Uncommon uses|Mad things you can do with VLC]]
+* Find out [[We Use VideoLAN|who uses VideoLAN]]
+
+|}
+
+=== Edit the Wiki! ===
+
+Please note that to modify the content of the Wiki, or to submit articles or FAQ questions, you need to be identified. Please create an account, this is very fast.
+Feel free to add to this site, however, keep content appropriate and useful. This is not the place to report bugs or to request help. [http://www.videolan.org/support/bug-reporting.html See our info on bug reporting].
+
+
+=== More on... ===
+
+* [[T-Shirt Design Contest]]
+* [[Channel Information Service]]
+* [[Notes about other clients]] (Interoperability)

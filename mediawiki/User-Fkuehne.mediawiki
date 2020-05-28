@@ -1,0 +1,8 @@
+Felix Kühne, Lead Developer of the Mac OS X and iOS Interfaces and Ports.
+
+You can mail me using my nick plus @videolan.org.
+
+You can find my blog [http://feepk.net here]. It documents new VLC releases and further details around the use of VLC, both for developers and users.
+
+
+For general usage or development problems, refer to the [http://forum.videolan.org forum] please. Thanks :)

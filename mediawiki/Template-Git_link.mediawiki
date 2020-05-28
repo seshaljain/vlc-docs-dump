@@ -1,0 +1,116 @@
+<!--
+-->{{#if:{{{p|}}}<!--
+  -->|{{#if:{{{a|}}}<!--
+     -->|{{#if:{{{f|}}}<!--
+        -->|{{#if:{{{h|}}}<!--
+           -->|{{#if:{{{hb|}}}<!--
+              p given, a given, f given, h given, hb given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};f={{{f}}};h={{{h}}};hb={{{hb}}} {{{l|{{{f}}}}}}]<!--
+              p given, a given, f given, h given, hb not given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};f={{{f}}};h={{{h}}} {{{l|{{{f}}}}}}]<!--
+            -->}}<!-- end hb
+           -->|{{#if:{{{hb|}}}<!-- h not given branch
+              p given, a given, f given, h not given, hb given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};f={{{f}}};hb={{{hb}}} {{{l|{{{f}}}}}}]<!--
+              p given, a given, f given, h not given, hb not given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};f={{{f}}} {{{l|{{{f}}}}}}]<!--
+            -->}}<!-- end hb
+         -->}}<!-- end h
+        -->|{{#if:{{{h|}}}<!-- f not given branch
+           -->|{{#if:{{{hb|}}}<!--
+              p given, a given, f not given, h given, hb given: show hash
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};h={{{h}}};hb={{{hb}}} {{{l|&#x5B;{{{h}}}&#x5D;}}}]<!--
+              p given, a given, f not given, h given, hb not given: show hash
+              -->|[https://git.videolan.org/?p={{{p}}};a={{{a}}};h={{{h}}} {{{l|&#x5B;{{{h}}}&#x5D;}}}]<!--
+            -->}}<!-- end hb
+           -->|{{#if:{{{hb|}}}<!-- h not given branch
+              p given, a given, f not given, h not given, hb given: show branch
+              -->|[https://git.videolan.org/?p={{{p}}} {{{l|{{{p}}}}}}]<!--
+              p given, a given, f not given, h not given, hb not given: show branch
+              -->|[https://git.videolan.org/?p={{{p}}} {{{l|{{{p}}}}}}]<!--
+            -->}}<!-- end hb
+         -->}}<!-- end h
+      -->}}<!-- end f
+     -->|{{#if:{{{f|}}}<!-- a not given branch
+        -->|{{#if:{{{h|}}}<!--
+           -->|{{#if:{{{hb|}}}<!--
+              p given, a not given, f given, h given, hb given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};f={{{f}}};h={{{h}}};hb={{{hb}}} {{{l|{{{f}}}}}}]<!--
+              p given, a not given, f given, h given, hb not given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};f={{{f}}};h={{{h}}} {{{l|{{{f}}}}}}]<!--
+            -->}}<!-- end hb
+           -->|{{#if:{{{hb|}}}<!-- h not given branch
+              p given, a not given, f given, h not given, hb given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};f={{{f}}};hb={{{hb}}} {{{l|{{{f}}}}}}]<!--
+              p given, a not given, f given, h not given, hb not given: show filename
+              -->|[https://git.videolan.org/?p={{{p}}};f={{{f}}}; {{{l|{{{f}}}}}}]<!--
+            -->}}<!-- end hb
+         -->}}<!-- end h
+        -->|{{#if:{{{h|}}}<!-- f not given branch
+           -->|{{#if:{{{hb|}}}<!--
+              p given, a not given, f not given, h given, hb given: show hash
+              -->|[https://git.videolan.org/?p={{{p}}};h={{{h}}};hb={{{hb}}} {{{l|&#x5B;{{{h}}}&#x5D;}}}]<!--
+              p given, a not given, f not given, h given, hb not given: show hash
+              -->|[https://git.videolan.org/?p={{{p}}};h={{{h}}} {{{l|&#x5B;{{{h}}}&#x5D;}}}]<!--
+            -->}}<!-- end hb
+           -->|{{#if:{{{hb|}}}<!--
+              p given, a not given, f not given, h not given, hb given: show branch
+              -->|[https://git.videolan.org/?p={{{p}}} {{{l|{{{p}}}}}}]<!--
+              p given, a not given, f not given, h not given, hb not given: show branch
+              -->|[https://git.videolan.org/?p={{{p}}} {{{l|{{{p}}}}}}]<!--
+            -->}}<!-- end hb
+         -->}}<!-- end h
+      -->}}<!-- end f
+   -->}}<!-- end a
+  -->|<!-- p not given branch: show Git -->[https://git.videolan.org/ {{{l|Git}}}]<!--
+-->}}<noinclude>
+== Usage ==
+ <code>{{ {{PAGENAME}} <nowiki>|p= |a= |h= }}</nowiki></code>
+or
+ <code>{{ {{PAGENAME}} <nowiki>|p= |a= |h= |l= }}</nowiki></code>
+or
+ <code>{{ {{PAGENAME}} <nowiki>|p= |a= |f= }}</nowiki></code>
+or
+ <code>{{ {{PAGENAME}} <nowiki>|p= |a= |f= |h= }}</nowiki></code>
+
+This is a meta-template, a wrapper around URL requests to git.videolan.org. This template ''does not'' perform [[wikipedia:sanity check|sanity check]]s. It saves keystrokes and avoids [[wikipedia:XSS|XSS]] requests from passed parameters.
+
+Parameters:
+* '''<code>|p=</code>''' is the '''branch''' e.g. <kbd>vlc.git</kbd>, <kbd>vlc/vlc-2.2.git</kbd> or <kbd>vlma.git</kbd> (see https://git.videolan.org for a list of branch names)
+* '''<code>|a=</code>''' is the '''format''' e.g. <kbd>blob</kbd>. This may be given free-form but only the following are valid: <kbd>summary</kbd>, <kbd>shortlog</kbd>, <kbd>log</kbd>, <kbd>commit</kbd>, <kbd>commitdiff</kbd>, <kbd>tree</kbd> and <kbd>patch</kbd>
+* '''<code>|f=</code>''' is the '''file''' e.g. <kbd>modules/demux/image.c</kbd>. You can pass directory names to <kbd>|f=</kbd> as well if <kbd>|a=tree</kbd>
+* '''<code>|h=</code>''' is the '''hash''' e.g. <kbd>72f3067a6fddcd30e0ee33928a0ec6622ed2e74b</kbd>
+* '''<code>|hb=</code>''' ???
+* '''<code>|l=</code>''' is the '''label''' (optional) e.g. <kbd>arbitrary</kbd>
+
+Example 1:
+ <code>{{{{PAGENAME}}<nowiki>|p=vlc.git|a=commit|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}</nowiki></code>
+{{{{PAGENAME}}|p=vlc.git|a=commit|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}
+
+Example 2:
+ <code>{{{{PAGENAME}}<nowiki>|p=vlc.git|a=commit|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b|l=First revision of VLC}}</nowiki></code>
+{{{{PAGENAME}}|p=vlc.git|a=commit|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b|l=First revision of VLC}}
+
+Example 3:
+ <code>{{{{PAGENAME}}<nowiki>|p=x264.git|a=tree|f=doc}}</nowiki></code>
+{{{{PAGENAME}}|p=x264.git|a=tree|f=doc}}
+
+Example 4:
+ <code>{{{{PAGENAME}}<nowiki>|p=vlc.git|a=commitdiff|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}</nowiki></code>
+{{{{PAGENAME}}|p=vlc.git|a=commitdiff|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}
+
+Example 5:
+ <code>{{{{PAGENAME}}<nowiki>|p=x264.git|a=history}}</nowiki></code>
+{{{{PAGENAME}}|p=x264.git|a=history}}
+
+Example 6:
+ <code>{{{{PAGENAME}}<nowiki>|p=vlc/vlc-2.0.git|a=blob|f=modules/video_filter/crop.c|h=b5e946097a7e7acbe0c90446d0752ff0f7f706ec|hb=HEAD|l=This module no longer exists. Here's a link to it anyway}}</nowiki></code>
+{{{{PAGENAME}}|p=vlc/vlc-2.0.git|a=blob|f=modules/video_filter/crop.c|h=b5e946097a7e7acbe0c90446d0752ff0f7f706ec|hb=HEAD|l=This module no longer exists. Here's a link to it anyway}}
+
+This template will branch to the most specific condition upon parameter omission:
+* <code>{{{{PAGENAME}}<nowiki>}}</nowiki></code> gives {{{{PAGENAME}}<!---->}} rather than https://git.videolan.org/?p={{{p}}};a={{{a}}};f={{{f}}};h={{{h}}};hb={{{hb}}}
+* <code>{{{{PAGENAME}}|a=blob|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b<nowiki>}}</nowiki></code> gives {{{{PAGENAME}}|a=blob|h=72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}} because no branch was specified
+* <code>{{{{PAGENAME}}|p=vlc.git|a=summary|hb=HEAD<nowiki>}}</nowiki></code> gives {{{{PAGENAME}}|p=vlc.git|a=summary|hb=HEAD}}
+
+[[Category:Templates]]
+</noinclude>

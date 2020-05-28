@@ -1,0 +1,25 @@
+{{#if:{{{3|}}}
+   | {{Side box|text=Hydrogenaudio has information on these entries:
+        |link1=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{1|Main_Page}}}|wiki}}
+        |label1={{{label1|{{{1}}}}}}
+        |link2=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{2|Main_Page}}}|wiki}}
+        |label2={{{label2|{{{2}}}}}}
+        |link3=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{3|Main_Page}}}|wiki}}
+        |label3={{{label3|{{{3}}}}}}
+     }}
+   | {{#if:{{{2|}}}
+        | {{Side box|text=Hydrogenaudio has information on these entries:
+             |link1=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{1|Main_Page}}}|wiki}}
+             |label1={{{label1|{{{1}}}}}}
+             |link2=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{2|Main_Page}}}|wiki}}
+             |label2={{{label2|{{{2}}}}}}
+          }}
+        | {{Side box|text=Hydrogenaudio has information this entry:
+             |link1=https://wiki.hydrogenaud.io/index.php?title={{urlencode:{{{1|Main_Page}}}|wiki}}
+             |label1={{{label1|{{{1}}}}}}
+          }}
+     }}
+}}<noinclude>
+
+[[Category:Templates]]
+</noinclude>

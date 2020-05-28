@@ -1,0 +1,209 @@
+Here is a list of the accepted projects for Google Summer of Code 2OO8.
+
+You can see how good the student do on their project on
+[[SoC_2008/Student_Tracking]].
+
+= List of current VLC projects =
+
+== Panorama Viewing ==
+
+-  '''Project page: [[SoC 2008/PanoramaViewing]]'''
+-  '''Student''': [[User:Plouj|Michael Ploujnikov]]
+-  '''Mentor''': Yuval Levy, [[User:J-bAntoine Cellerier]]
+-  '''Abstract''':
+
+: The goal of this project is to make VLC a one-stop solution for
+viewing panoramas of various formats. Currently, FreePV is the best/only
+cross-platform, non-proprietary solution for viewing QuickTimeVR and
+plain image panoramas. However it suffers from a few drawbacks, which
+include difficult installation, browser plug-in conflicts and low
+popularity. The intent is to integrate the FreePV rendering code with
+VLC. This should not only automatically alleviate installation
+difficulty and plug-in conflicts, but also bring panorama viewing to a
+much larger audience. This project will initially focus on basic support
+for QTVR files and equirectangular images.
+
+<span style="color:#ff00ff">'''This project has been
+discontinued.'''</span>
+
+== Qt improvements ==
+
+-  '''Project page: [[SoC 2008/Qt improvements]]'''
+-  '''Student''': Lukas Durfina
+-  '''Mentor''': [[User:J-b|Jean-Baptiste Kempf]]
+-  '''Abstract''':
+
+: In my project I should do fullscreen controller, backend for Phonon
+and playlist improvements. FS controller have to be clickable, dragable
+with all VLC functionality. Phonon backend will help spread VLC and
+support its using by other developers. And finally I will upgrade
+playlist, fix and update DragAndDrop and other bugs.
+
+<span style="color:#ff00ff">'''This project was successful and has been
+merged.'''</span>
+
+== Enhance PVR capabilities of VLC == \* '''Project page: [[SoC
+2008/Enhance PVR capabilities of VLC]]''' \* '''Student''':
+[[User:DylanPierre d'Herbemont]] \* '''Abstract''':
+
+: VLC has fast become one of the most common video players available for
+'non-technical' users. The ability to watch streams easily and
+efficiently is a huge advantage for VLC. The ability to timeshift
+streams has been added to the latest unstable builds, however it is
+vastly underfeatured and not nearly ready for release. The features
+would enhance VLC to a new level which would allow a new set of users to
+use it.
+
+: I propose to extend & improve the PVR capabilities of VLC. The current
+version is severely lacking in functionality and performance. There is a
+very basic timeshift capability already. To this I will add the ability
+to randomly seek through the buffer (fast forward, rewind, etc ). The
+ability to save buffers and continue recording to the new file will be
+added. These recordings will be in any chosen format. These features
+will help anyone who uses VLC to watch TV shows to easily turn their
+client into a MythTV/Media Centre style client. : I will tie the module
+in with the user interface properly so that the state of the buffer and
+the current position can be easily seen. : I then plan to begin work on
+a framework that combines all of these features into a simple interface
+easily accessible with a remote control. The interface will combine VLM
+and the media library into a single easily accesible place. The
+interface will have the ability to 'talk' to the server sending commands
+such as changing tv channel or switching input source.
+
+: With this and the completion of VLM and the playlist managing system
+VLC will have the capabilities to become a fully featured PVR system
+with the massive advantage of it being run off a streaming server if
+need be.
+
+<span style="color:#ff00ff">'''This project was successful and merge is
+pending.'''</span>
+
+== WinCE Port == \* '''Project page: [[SoC 2008/WinCE Port]]''' \*
+'''Student''': [[User:Geal|Geoffroy Couprie]] \* '''Mentor''': Jérôme
+Decoodt \* '''Abstract''': :The VLC media player has been port to many
+different platforms, but it lacks Windows CE support since some
+versions. This project aims at making VLC work on a Windows CE platform,
+with a few features: :*RTSP :*\ H264 :*Snapshots :*\ Playlist :*Rebuild
+of interface to adapt it to small screens
+
+<span style="color:#ff00ff">'''This project was successful and has been
+merged.'''</span>
+
+== Create a new VLC interface for Maemo (internet tablet) == \*
+'''Project page: [[SoC 2008/New VLC interface for Maemo]]''' \*
+'''Student''': [[User:PhytosRafaël Carré]] \* '''Abstract''': : The goal
+is to create a new interface for VLC with Maemo, a Debian-based
+development platform for handheld devices used by Nokia N800 and N810
+devices and to package VLC for this platform. : The main constraint are
+the small size of the screen which means the GUI must be thought
+specifically for this platform and the fact that the devices is not very
+powerful.
+
+<span style="color:#ff00ff">'''This project was successful and has been
+merged.'''</span>
+
+== DLNA UPnP A/V integration == \* '''Project page: [[SoC 2008/UPnP]]'''
+\* '''Student''': [[User:Mr_MirsalRafaël Carré]] \* '''Abstract''': :
+Even if it is controverted, UPnP A/V Is a widely used standard set of
+protocols for networked digital : audio and video equipment
+interoperability, thus making it almost a requirement digital media
+software : that aim to become real part of the average multimedia home
+network. This project aims to implement : at least the Media Server part
+in VLC media player, which will enable it to advertise and stream media
+: to DNLA UPnP A/V enabled devices, such as the PlayStation 3.
+
+<span style="color:#ff00ff">'''This project was successful and half is
+merged, the other half is pending.'''</span>
+
+== MTP Devices Support ==
+
+-  '''Project page: [[SoC 2008/MTP]]'''
+-  '''Student''': [[User:Sephiroth87|Fabio Ritrovato]]
+-  '''Mentor''': [[User:Dionoea|Antoine Cellerier]]
+-  '''Abstract''':
+
+:As MTP (Media Transfer Protocol) devices become more and more popular,
+and the protocol itself is about to become a standard, using them is
+still a problem for some people, since they cannot be mounted or opened
+as disks, but can be natively used only on Vista and Windows XP with
+WMP10, or using other programs. :Adding the MTP support to VLC would not
+only give the opportunity to use these device on almost every platform,
+but also allow to have a free, open source and largely diffuse program
+to manage them. :My work on the MTP support will enable VLC not only to
+play music from the device, but also to add new music, manage the
+content of the device, edit tags, playlists and anything else that would
+be needed by an Mp3 player user.
+
+<span style="color:#ff00ff">'''This project was successful and
+merged.'''</span>
+
+== Mac OS X (Leopard) Integration == \* '''Project page: [[SoC 2008/OS X
+Integration]]''' \* '''Student''': [[User:dudiakFelix Paul Kühne]] \*
+'''Abstract''':
+
+:Unlike Windows and Linux, Mac OS X does not offer much in terms of
+alternatives to its built-in QuickTime media player. VLC media player
+represents the only Mac media player with significant support for
+various media formats and a tight integration with the OS, including a
+"Mac-like" user interface. As it is the only full, viable alternative to
+QuickTime on the Mac OS X platform, it is important that it stay current
+with various Mac technologies to offer users a comprehensive option for
+media playback.
+
+Aspects of tighter Mac OS X integration
+
+:*Quick Look Generator for Leopard (to generate thumbnails and full
+media previews from the Finder) :*\ Making most common preferences
+accessible in a Mac-style preference window organized with icon tabs
+across the top such as in Safari and Mail. :*Moving the Readme document
+and other help resources into a HelpViewer HTML document to allow better
+help searching in Leopard. :*\ Improvements in steaming server wizard to
+be more in-line with other Mac wizards and easier to use for personal
+streaming between Macs. :*Add better support for package files that
+contain media VLC can play, such as iMovie Projects and EyeTV
+recordings. :*\ Update the VLC file icons to the 512 by 512 size for
+Leopard.
+
+<span style="color:#ff00ff">'''This project was successful and
+merged.'''</span>
+
+== Vista Enhanced Video Renderer output module ==
+
+-  '''Project page: [[SoC_2008/EVR_video_output_module]]'''
+-  '''Student''': [[User:VLC_help|Kaarlo Räihä]]
+-  '''Mentor''': [[User:Atmo|André Weber]]
+-  '''Abstract''':
+
+: EVR (Enhanced Video Renderer) is new video renderer that came with
+Windows Vista. Goal of this project is to implement EVR video output
+module for VLC media player. EVR will hopefully be default video output
+module for Windows Vista but it might also work with Windows XP if the
+.NET Framework 3.0 is installed. EVR should guarantee tearing free
+output that also works with Aero. It should also be more compatible with
+different display adapters (or driver versions) and that way hopefully
+end problems that certain people have with their video watching.
+
+: If there will be some extra time (EVR finishes early), I will try to
+add some features to Direct3D output module (shaders, rotating video
+etc.)
+
+<span style="color:#ff00ff">'''This project was successful and merge is
+pending.'''</span>
+
+= List of current x264 projects =
+
+== Macroblock tree ==
+
+-  '''Project page: [[SoC_2008/x264/Macroblock_tree]]'''
+-  '''Student''': [[User:Kuukunen|Aki Jäntti]]
+-  '''Mentor''': Alex Izvorski
+-  '''Abstract''':
+
+: The basic idea of a "macroblock tree" is to keep track of macroblock
+references to try to figure out which macroblocks are the most
+important. This information can be used for deciding the quantizers for
+frames or even individual macroblocks.
+
+{{GSoC}}
+
+[[Category:SoC 2008 Project|*]]

@@ -1,0 +1,23 @@
+<!--
+-->{{#switch:{{{1}}}{{{2|}}}<!--
+  -->|{{{1}}}        = '''<code>{{{1|function}}}</code>'''<!--
+  -->|{{{1}}}{{{2}}}<!--
+  -->|#default       = ;<code>{{{1|function}}}</code>:{{{2|description}}}<!--
+ -->}}<noinclude>
+
+== Usage ==
+To simplify writing [[Hacker Guide]] pages:
+ <code>{{{{PAGENAME}}<nowiki>|name(args)</nowiki>}}</code>
+ <code>{{{{PAGENAME}}<nowiki>|name(args)|description</nowiki>}}</code>
+
+== Examples ==
+ <code>{{{{PAGENAME}}<nowiki>|frob()</nowiki>}}</code>
+{{{{PAGENAME}}|frob()}}
+ <code>{{{{PAGENAME}}<nowiki>|frob(foo&, bar)</nowiki>}}</code>
+{{{{PAGENAME}}|frob(foo&, bar)}}
+ <code>{{{{PAGENAME}}<nowiki>|frob(foo&, bar)|Frobnicate foo with bar method</nowiki>}}</code>
+{{{{PAGENAME}}|frob(foo&, bar)|Frobnicate foo with bar method}}
+
+[[Category:Hacker Guide|*]]
+[[Category:Templates]]
+</noinclude>

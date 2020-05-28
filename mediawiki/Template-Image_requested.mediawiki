@@ -1,0 +1,12 @@
+{| class="widebox center noprint" style="padding:0;"
+|style="padding:0;"|[[File:Image-request.png|36px|alt=|link=:Category:Requested images]]
+|style="padding:0;"|Help VideoLAN by adding an image to this page!{{#if:{{{reason|}}}|&#32;'''{{ucfirst:{{{reason}}}}}'''}}<br />'''[[Special:CreateAccount|Create an account]]''' and then '''[[Special:Upload|upload]]'''.
+|}<includeonly>
+[[Category:Requested images]]</includeonly><noinclude>
+
+Modelled after the look of {{tl|Stub}}. Adds pages to [[:Category:Requested images]].
+
+Parameters:
+* <code><nowiki>|reason=</nowiki></code> free-form reason for the image (optional)
+
+[[Category:Maintenance templates]]</noinclude>

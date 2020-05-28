@@ -1,0 +1,35 @@
+{{#if:{{{4|}}}
+   | {{Side box|text=[[wikipedia:Main_Page|Wikipedia]] has information on these entries:
+        |wikilink1=wikipedia:{{{1}}}
+        |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+        |wikilink2=wikipedia:{{{2}}}
+        |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+        |wikilink3=wikipedia:{{{3}}}
+        |label3={{{label3|{{{l3|{{{3}}}}}}}}}
+        |wikilink4=wikipedia:{{{4}}}
+     }}
+   | {{#if:{{{3|}}}
+        | {{Side box|text=[[wikipedia:Main_Page|Wikipedia]] has information on these entries:
+             |wikilink1=wikipedia:{{{1}}}
+             |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+             |wikilink2=wikipedia:{{{2}}}
+             |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+             |wikilink3=wikipedia:{{{3}}}
+             |label3={{{label3|{{{l3|{{{3}}}}}}}}}
+          }}
+        | {{#if:{{{2|}}}
+             | {{Side box|text=[[wikipedia:Main_Page|Wikipedia]] has information on these entries:
+                  |wikilink1=wikipedia:{{{1}}}
+                  |label1={{{label1|{{{l1|{{{1}}}}}}}}}
+                  |wikilink2=wikipedia:{{{2}}}
+                  |label2={{{label2|{{{l2|{{{2}}}}}}}}}
+               }}
+             | {{Side box|text=[[wikipedia:Main_Page|Wikipedia]] has information on this entry:
+                  |wikilink1=wikipedia:{{{1|{{PAGENAME}}}}}
+                  |label1={{{label1|{{{l1|{{{1|{{PAGENAME}}}}}}}}}}}
+               }}
+          }}
+     }}
+}}<noinclude>
+[[Category:Templates]]
+</noinclude>

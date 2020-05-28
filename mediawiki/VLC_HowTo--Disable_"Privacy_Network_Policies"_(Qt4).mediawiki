@@ -1,0 +1,7 @@
+{{howto|disable privacy network policies}}
+
+Launch VLC with&nbsp;'''--no-qt-privacy-ask&nbsp;'''command-line option.
+
+<br>
+
+{{VSG}}

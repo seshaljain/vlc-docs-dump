@@ -1,0 +1,12 @@
+{{Module|name=transrate|type=Stream output|first_version=0.7.0|last_version=1.0.2|description=[[MPEG-2 video]] transrating stream output}}
+
+A simplified history: this module was {{Commitdiff|c37e84c1f930e22a99d03e76a6a7f2a4be3ed420|l=introduced}} in VLC 0.7.0 and {{Commitdiff|29d2ca92fc94a9407ed829539fe3403c6499970e|l=removed completely}} prior to VLC 1.1.0.
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/stream_out/transrate/transrate.c}}
+* {{VLCSourceFolder|p=vlc/vlc-0.9.git|modules/stream_out/transrate}}
+
+{{Documentation footer}}

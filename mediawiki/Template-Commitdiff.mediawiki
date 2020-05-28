@@ -1,0 +1,16 @@
+<includeonly>{{#if:{{{l|}}}<!--
+            -->|{{Git link|p={{{p|vlc.git}}}|a=commitdiff|h={{{1|}}}|l={{{l}}}}}<!--
+            -->|{{Git link|p={{{p|vlc.git}}}|a=commitdiff|h={{{1|}}}}}<!--
+          -->}}</includeonly><noinclude>
+
+Usage: <code>{{{{PAGENAME}}<nowiki>|SHA1 string}}</nowiki></code> e.g. <code>{{{{PAGENAME}}<nowiki>|72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}</nowiki></code> for {{{{PAGENAME}}|72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}
+== See also ==
+* {{tl|Commit}}
+* {{tl|Commitdiff}}
+* {{tl|File}}
+* {{tl|SVNSourceFile}}
+* {{tl|VLCSourceFile}}
+* {{tl|VLCSourceFolder}}
+
+[[Category:Templates]]
+</noinclude>

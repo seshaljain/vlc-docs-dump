@@ -1,0 +1,26 @@
+{{Module|name=gradfun|type=Video filter|first_version=2.0.0|description=Gradfun video filter}}
+
+This module is a wrapper for the gradfun filter from libav.
+
+== Options ==
+{{Option
+|name=gradfun-radius
+|value=integer
+|default=16
+|min=4
+|max=32
+|description=Radius in pixels
+}}
+{{Option
+|name=gradfun-strength
+|value=float
+|default=1.2
+|min=0.51f
+|max=255
+|description=Strength used to modify the value of a pixel
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/video_filter/gradfun.c}}
+
+{{Documentation footer}}

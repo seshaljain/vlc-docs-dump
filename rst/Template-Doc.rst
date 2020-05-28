@@ -1,0 +1,4 @@
+''For more information, see VideoLAN's '''[{{{1}}} Official
+Documentation]'''''<noinclude>
+
+[[Category:Templates]] </noinclude>

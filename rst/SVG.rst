@@ -1,0 +1,7 @@
+{{Muxid=svg}} {{WikipediaVector graphics|Raster graphics}}
+
+SVG is an acronym for scalable vector graphics. It's an [[XML]]-based
+container that allows for resizing certain types of images to any size
+without appearing pixellated. It falls under the class of ''vector image
+formats'', in contrast to ''raster image formats'' (e.g. [[JPG]],
+[[GIF]]). It supports [[lossless]] [[compression]].

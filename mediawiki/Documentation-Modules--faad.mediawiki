@@ -1,0 +1,11 @@
+{{See also|FAAD2}}
+{{Module|name=faad|type=Audio decoder|first_version=0.5.0|description=[[AAC]] audio decoder (using [[libfaad2]])|sc=none}}
+
+== Options ==
+None.
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/faad.c}}
+
+{{Documentation}}

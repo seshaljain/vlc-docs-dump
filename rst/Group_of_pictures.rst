@@ -1,0 +1,3 @@
+#REDIRECT [[GOP]]
+
+[[Category:Glossary]]

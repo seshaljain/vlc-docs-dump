@@ -1,0 +1,5 @@
+{{Codec audio|id=MAC3}}
+{{Codec audio|id=MAC6}}
+{{Mmwiki|Apple MACE}}
+
+MACE is an audio codec.

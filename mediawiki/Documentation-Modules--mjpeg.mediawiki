@@ -1,0 +1,24 @@
+== Demux ==
+{{Module|name=mjpeg|type=Access demux|description=[[M-JPEG]] camera demuxer}}
+
+=== Options ===
+{{Option
+|name=mjpeg-fps
+|value=float
+|description=This is the desired frame rate when playing MJPEG from a file. Use 0 (this is the default value) for a live stream (from a camera)
+|default=0
+}}
+{{Clear}}
+
+== Packetizer ==
+{{Module|name=mjpeg|type=Packetizer|description=MJPEG video packetizer|sc=none}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/mjpeg.c}}
+* {{VLCSourceFile|modules/packetizer/mjpeg.c}}
+
+{{Documentation}}

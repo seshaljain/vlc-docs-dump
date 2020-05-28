@@ -1,0 +1,12 @@
+'''''See the main VideoLAN website for information:''
+https://www.videolan.org/contribute.html'''
+
+There are lots of ways to [[help VideoLAN]]. You can donate your time to
+helping in the [https://forum.videolan.org forum] or this
+[[Main_Page|wiki]] site. If you are able to, you can help with the
+[https://www.videolan.org/developers development] of the software.
+
+You can also [https://www.videolan.org/contribute.html#paypal give money
+through PayPal]
+
+[[Category:VideoLAN Wiki|{{PAGENAME}}]]

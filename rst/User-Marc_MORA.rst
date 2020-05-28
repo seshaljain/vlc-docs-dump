@@ -1,0 +1,3 @@
+{\| width=50% border=0 align=center cellpadding=5\| width=50%
+style="border: 1px solid #999; border-right-width: 3px;
+border-bottom-width: 3px;" -|}

@@ -1,0 +1,28 @@
+{{#if:{{{3|}}}
+   | {{Side box|text=[[Multimedia Wiki]] has information on these entries:
+        |link1=http://wiki.multimedia.cx/index.php/{{urlencode:{{{1|Main_Page}}}|wiki}}
+        |label1={{{label1|{{{1}}}}}}
+        |link2=http://wiki.multimedia.cx/index.php/{{urlencode:{{{2|Main_Page}}}|wiki}}
+        |label2={{{label2|{{{2}}}}}}
+        |link3=http://wiki.multimedia.cx/index.php/{{urlencode:{{{3|Main_Page}}}|wiki}}
+        |label3={{{label3|{{{3}}}}}}
+     }}
+   | {{#if:{{{2|}}}
+        | {{Side box|text=[[Multimedia Wiki]] has information on these entries:
+             |link1=http://wiki.multimedia.cx/index.php/{{urlencode:{{{1|Main_Page}}}|wiki}}
+             |label1={{{label1|{{{1}}}}}}
+             |link2=http://wiki.multimedia.cx/index.php/{{urlencode:{{{2|Main_Page}}}|wiki}}
+             |label2={{{label2|{{{2}}}}}}
+          }}
+        | {{Side box|text=[[Multimedia Wiki]] has information this entry:
+             |link1=http://wiki.multimedia.cx/index.php/{{urlencode:{{{1|Main_Page}}}|wiki}}
+             |label1={{{label1|{{{1}}}}}}
+          }}
+     }}
+}}<noinclude>
+
+Multimedia wiki link. Up to three may be added. The labels are optional and will default to the entries.
+ <nowiki>{{ mmwiki | title | label1=Label 1 | title2 | label2=Label 2 | title3 | label3=Label 3 }}</nowiki>
+
+[[Category:Templates]]
+</noinclude>

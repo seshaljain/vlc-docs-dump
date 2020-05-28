@@ -1,0 +1,33 @@
+__NOTOC__
+== Introduction to VLC development ==
+
+{{VLC}} is a very popular project and is thus very fast changing and ever evolving project. 
+
+It is very important to keep up to date with the latest developments.<br />
+Therefore we advise everyone who makes changes to the VLC sourcecode, to sign up with the [http://www.videolan.org/support/lists.html vlc-devel mailing-list] so you can keep up with the latest changes and developments.
+
+All our community lives on our IRC channel: #videolan on freenode. Joining is '''strongly''' advised.
+
+If you need to report a bug, please read the [[report bugs|reporting bugs documentation]].
+
+== Get the Code ==
+Start by building VLC and use [[Git]] to [[GetTheSource#How_to_get_VLC_media_player.27s_latest_source_tree|get the full source code]].
+
+You should also know how to [[compile VLC]] for your architecture.
+
+== Understand the Code ==
+
+First, read the [[VLC_source_tree|source tree explanation]] and the [[Modules_source_tree|module tree explanation]].
+
+Then, read the beginning of the [[Hacker_Guide/Core|introduction to VLC's core]] and the [[Documentation:VLC_Modules_Loading|modules loading documentation.]]
+
+You can find more information on IRC and in the [[Hacker Guide]].
+
+== Coding ==
+If you are looking for code ideas, please look at our [[Mini Projects]], our [https://trac.videolan.org/vlc/ Bug tracker], or ask on [[IRC]].
+
+Please try to keep to our [[Code_Conventions|code conventions]]. They are very simple and help to keep all code readable. When you write new stuff, especially core stuff (in the "src" or "include" folders), please comment it heavily or add doxygen documentation for your sources.
+
+Before sending a patch be sure to read [[Sending Patch]].
+
+[[Category:Coding]]

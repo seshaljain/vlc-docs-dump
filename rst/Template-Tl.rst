@@ -1,0 +1,4 @@
+<nowiki>{{</nowiki>[[Template:{{{1}}}|{{{1}}}]]<nowiki>}}</nowiki><noinclude>
+Links to a template, the same as [[Wikipedia:Template:Tl]].
+
+[[Category:Templates]] </noinclude>

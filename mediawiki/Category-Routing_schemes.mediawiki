@@ -1,0 +1,3 @@
+Routing schemes are methods of how data are directed to their destination. This includes IP routing schemes (anycast, broadcast, geocast, multicast, unicast) but may include other relevant schemes.
+
+[[Category:Protocols]]

@@ -1,0 +1,109 @@
+{{Module|name=pvr|type=Access|last_version=2.0.9|os=Linux|description=IVTV MPEG Encoding cards input|sc=pvr}}
+
+This module was removed with commitdiff {{Commitdiff|fb1dcab36e7c3a49d49562334045e4f87980ac03}}.<br />
+The changelog for 2.1.0 notes under the section ''Removed modules'':
+  * PVR: IVTV analog TV encoder - use [[Documentation:Modules/v4l2|V4L]] instead
+{{Clear}}
+
+== Options ==
+The module did not accept <code>--pvr-frequency</code> beyond the endpoints given by <code>static const int pi_radio_range[2]</code>: <span class="nowrap"><code>65000 &le; <var>x</var> &le; 108000</code></span>. This was not mentioned in the help text.
+
+The variables in <code>--pvr-norm</code> are defined in {{VLCSourceFile|modules/access/v4l2/linux/videodev2.h}}.
+
+{{Option
+|name=pvr-device
+|value=string
+|default="/dev/video0"
+|description=[[wikipedia:Personal video recorder|PVR]] video device
+}}
+{{Option
+|name=pvr-radio-device
+|value=string
+|default="/dev/radio0"
+|description=PVR radio device
+}}
+{{Option
+|name=pvr-norm
+|value=integer
+|select={<var>V4L2_STD_UNKNOWN</var>,<var>V4L2_STD_SECAM</var>,<var>V4L2_STD_PAL</var>,<var>V4L2_STD_NTSC</var>}
+|default=<var>V4L2_STD_UNKNOWN</var>
+|description=Norm of the stream (Automatic, SECAM, [[PAL]], or [[NTSC]])
+}}
+{{Option
+|name=pvr-width
+|value=integer
+|default=-1
+|description=Width of the stream to capture (-1 for autodetection)
+}}
+{{Option
+|name=pvr-height
+|value=integer
+|default=-1
+|description=Height of the stream to capture (-1 for autodetection)
+}}
+{{Option
+|name=pvr-frequency
+|value=integer
+|default=-1
+|description=Frequency to capture (in kHz), if applicable
+}}
+{{Option
+|name=pvr-framerate
+|value=integer
+|default=-1
+|description=[[Framerate]] to capture, if applicable (-1 for autodetect)
+}}
+{{Option
+|name=pvr-keyint
+|value=integer
+|default=-1
+|description=Interval between [[keyframe]]s (-1 for autodetect)
+}}
+{{Option
+|name=pvr-bframes
+|value=integer
+|default=-1
+|description=If this option is set, [[B-Frame]]s will be used. Use this option to set the number of B-Frames
+}}
+{{Option
+|name=pvr-bitrate
+|value=integer
+|default=-1
+|description=[[Bitrate]] to use (-1 for default)
+}}
+{{Option
+|name=pvr-bitrate-peak
+|value=integer
+|default=-1
+|description=Peak bitrate in [[VBR]] mode
+}}
+{{Option
+|name=pvr-bitrate-mode
+|value=integer
+|select={0,1}
+|default=-1
+|description=Bitrate mode to use ([[VBR]] or [[CBR]])
+}}
+{{Option
+|name=pvr-audio-bitmask
+|value=integer
+|default=-1
+|description=[[wiktionary:bitmask|Bitmask]] that will get used by the audio part of the card
+}}
+{{Option
+|name=pvr-audio-volume
+|value=integer
+|default=-1
+|description=Audio volume (0-65535)
+}}
+{{Option
+|name=pvr-channel
+|value=integer
+|default=-1
+|description=Channel of the card to use (Usually: 0 - tuner, 1 - composite, 2 - svideo)
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/pvr.c}}
+
+{{Documentation}}

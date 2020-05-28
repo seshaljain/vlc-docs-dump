@@ -1,0 +1,6 @@
+__NOEDITSECTION__
+=== [[{{{2}}}|{{{1}}}]]  ===
+:{{{3}}} [[{{{2}}}|Go!]]<noinclude>
+
+[[Category:Templates]]
+</noinclude>

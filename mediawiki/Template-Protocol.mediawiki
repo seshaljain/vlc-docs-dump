@@ -1,0 +1,41 @@
+<!--
+-->{{top box
+|id={{{1|??}}}
+|text=<!--
+Line 1:               -->VLC uses this [[protocol]] (or [[access module]]) to read data from a device or network.{{#if:{{{info|}}}|&#32;Additional information: '''{{{info}}}'''}}<!--
+Line 2: (conditional) -->{{#if:{{{mod|{{lc:{{{1|}}}}}}}}|<br />This protocol is handled by the '''{{docmod|{{{mod|{{lc:{{{1}}}}}}}}}}''' [[module]].}}
+|bgcol=#ffe0e0
+|brcol=#e0c0c0<!--
+-->}}<includeonly>{{#ifeq:{{{nocat|n}}}|y| |[[Category:Protocols]]}}</includeonly><noinclude>
+
+==Usage==
+ <nowiki>{{protocol |<protocol> |info= |mod= }}</nowiki>
+The purpose of the template is to visually inform readers that VLC supports the protocol and through which module.<br />
+The page will be added automatically to [[:Category:Protocols]].
+
+Parameters:
+* (unnamed) (required): the text in the small box, defaults to <samp>'''??'''</samp>
+* <code>'''<nowiki>|info=</nowiki>'''</code> (optional) extra text
+* <code>'''<nowiki>|mod=</nowiki>'''</code> (optional) link to a particular module while displaying the {{Tag|protocol}} given
+
+Enter the protocol name as-is. If the name differs other than casing supply the module name with <code>'''<nowiki>|mod=</nowiki>'''</code>
+
+==Examples==
+For [[HTTP]] the casing difference between ''[[HTTP]]'' and ''{{docmod|http}}'' is not a problem:
+ <code>{{{{PAGENAME}}<nowiki>|HTTP</nowiki>}}</code>
+{{{{PAGENAME}}|HTTP|nocat=y}}
+For [[RTSP]], the protocol is handled by the {{docmod|live}} module:
+ <code>{{{{PAGENAME}}<nowiki>|RTSP</nowiki>|mod=live}}</code>
+{{{{PAGENAME}}|RTSP|mod=live|nocat=y}}
+To say something for [[Dummy]]:
+ <code>{{{{PAGENAME}}<nowiki>|Dummy</nowiki>|info=Fakes codec input, but is no longer used.}}</code>
+{{{{PAGENAME}}|Dummy|info=Fakes codec input, but is no longer used.|nocat=y}}
+
+==See also==
+* {{tl|Codec audio}}
+* {{tl|Codec video}}
+* {{tl|Mux}}
+* {{tl|Protocol}}
+
+[[Category:Templates]]
+</noinclude>

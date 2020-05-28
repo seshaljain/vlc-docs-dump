@@ -1,0 +1,13 @@
+-  PD|PD: Public Domain dedication
+-  LGPL-3.0+|LGPL 3.0+: GNU Lesser General Public License v3.0 or later
+-  CC-0|CC-0: Creative Commons Universal Public Domain dedication
+-  CC-BY-3.0|CC-BY 3.0: Creative Commons Attribution 3.0 Unported
+   license
+-  CC-BY-4.0|CC-BY 4.0: Creative Commons Attribution 4.0 International
+-  CC-BY-SA-3.0|CC-BY-SA 3.0: Creative Commons Attribution-ShareAlike
+   3.0 Unported
+-  CC-BY-SA-4.0|CC-BY-SA 4.0: Creative Commons Attribution-ShareAlike
+   4.0
+-  CC-BY-NC-SA-2.0|CC-BY-NC-SA 2.0: Creative Commons
+   Attribution-NonCommercial-ShareAlike 2.0
+-  GPL|GPL: GNU General Public License (any version)

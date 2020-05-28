@@ -1,0 +1,14 @@
+→<noinclude> ----Typing-aid template. Although <code>&amp;rarr;</code>
+is valid HTML for the '''r'''ight '''arr'''ow, typing
+<code>{{{{PAGENAME}}<nowiki>}}</nowiki></code> scans easier.
+
+When used as
+<code>{{<nowiki>subst:</nowiki>{{PAGENAME}}<nowiki>}}</nowiki></code> it
+will substitute itself as → in markup, eliminating potentially confusing
+wikicode for new users.
+
+Example: <pre> To add the Web Interface go to View {{-*}} Add Interface
+{{-*}} Web in VLC. </pre> Yields: <pre> To add the Web Interface go to
+View → Add Interface → Web in VLC. </pre>
+
+[[Category:Typing aid templates]] </noinclude>

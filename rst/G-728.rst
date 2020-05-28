@@ -1,0 +1,6 @@
+{{codec audio}} {{wikipedia|G.728}} '''G.728''' is a codec for storing
+speech created by [[ITU-T]]. It is based on Low Delay Code Excited
+Linear Prediction ([[LD-CELP]]).
+
+==28_8== '''28_8''' is a variation on G.728 which uses 28.8 kbits/sec.
+It is used in [[RealMedia]] files.

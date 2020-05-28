@@ -1,0 +1,99 @@
+{{Lowercase}} The '''libVLC''' (VLC {{SDK}}) media framework can be
+embedded into an application to get multimedia capabilities.
+
+Since VLC is based on libVLC, one should be able to have the same
+features that {{VLC}} has.
+
+The libVLC media framework is already used by several applications; see
+[[LibVLC_Users|who uses libVLC?]]
+
+== Documentation ==
+
+Please refer to the
+[https://www.videolan.org/developers/vlc/doc/doxygen/html/group__libvlc.html
+Doxygen documentation], which is the reference documentation.
+
+<u>''Make sure that the documentation matches the LibVLC version.''</u>
+(if not, you can build it from the source code)
+
+Some further topics are covered here:
+
+-  [[LibVLC Memory Management]] explained: covers the basics on the
+   <code>_new()</code>, <code>_retain()</code>, <code>_release()</code>.
+-  [[LibVLC Media List Management]] explained: covers the basics on
+   setting up a playlist.
+-  [[GenerateLibFromDll|Generate a .lib for using libVLC on Windows]]
+   (before libVLC 2.1.0)
+
+== Compiling == To build LibVLC you need [[VLC source code]] and follow
+[[Compile_VLC|VLC compilation instructions]] since LibVLC it is directly
+shipped in VLC source code.<br /> You will find headers in
+vlc-src/include/vlc and libvlc.so binaries in the ''hidden'' folder
+vlc-src/lib/.libs.<br /> When using your custom LibVLC build you will
+need to define the environment variable <var>VLC_PLUGIN_PATH</var>
+pointing to VLC modules located in vlc-src/modules.
+
+== Examples ==
+
+=== Playback === \* [[LibVLC_Tutorialname=doc/libvlc/gtk_player.c}} \*
+Qt Player: {{VLCSourceFilename=doc/libvlc/wx_player.cpp}}
+
+=== Rendering and streaming === \* [[LibVLC_SampleCode_SDL Stream into a
+memory zone]] \* Generate thumbnails using LibVLC:
+{{VLCSourceFilename=doc/libvlc/libvlc_DVD_ripper.c}}
+
+=== More complex examples === \*
+{{VLCSourceFoldervlcinfop=libvlc-demos.gitl=Webcam / Cheese clone}}
+
+=== libVLC on Android === \*
+[https://code.videolan.org/videolan/libvlc-android-samples LibVLC on
+Android sample]
+
+=== VLCKit for Cocoa (iOS/macOS) === You can find details on features
+and implementation on a [[VLCKit|designated page]].
+
+==== macOS ==== \*
+[https://code.videolan.org/videolan/VLCKit/tree/master/Examples/macOS/BasicPlayerWithPlaylist
+Simple playlist player for macOS]. \*
+[https://code.videolan.org/videolan/VLCKit/tree/master/Examples/macOS/iPodConverter
+iPod Converter for macOS]. \*
+[https://code.videolan.org/videolan/VLCKit/tree/master/Examples/macOS/FlashVideoDownloader
+Flash Video Downloader for macOS].
+
+==== iOS ==== \*
+[https://code.videolan.org/videolan/VLCKit/tree/master/Examples/iOS/SimplePlayback
+Simple player for iOS]. \*
+[https://code.videolan.org/videolan/VLCKit/tree/master/Examples/iOS/DropIn-Player
+Drop-in player for integration in iOS apps].
+
+=== Crossplatform .NET/Mono support with LibVLCSharp === \*
+[https://code.videolan.org/videolan/LibVLCSharp/tree/master/Samples
+Simple playback samples (iOS/Android/Mac/Windows/Xamarin.Forms)]. \*
+[https://code.videolan.org/mfkl/libvlcsharp-samples Advanced samples].
+
+=== Outdated samples === \* [[LibVLC_Tutorial_0.9Version 0.8.6]] \*
+[[LibVLC_Visual_C++VCL component for Delphi]] (out-of-date)
+
+== Language & platform bindings == LibVLC is a C library. It has
+bindings to the following languages and frameworks: \* C++, using the
+[https://code.videolan.org/videolan/libvlcpp libvlcpp] library \* The
+[[Web plugin]] for ActiveX (e.g. MSIE) and NPAPI (e.g. Firefox) \*
+[http://WebChimera.org WebChimera] browser plugin with [http://nwjs.io/
+NW.js] support \* [https://github.com/RSATom/WebChimera.js
+WebChimera.js] - another way to bind libvlc to
+node.js/io.js/NW.js/Electron \* [[VLCKitPerl]] \* [[PythonBindingJava]]
+\*
+[https://code.videolan.org/videolan/vlc-android/tree/master/libvlc/jni
+Java/Scala/Kotlin/JNI Android] \*
+[https://code.videolan.org/videolan/libvlcsharp C#/F#/.NET] \*
+[https://code.videolan.org/videolan/vlc-winrt/tree/master/modules/libvlcppcx
+C++/CX] \* [https://github.com/adrg/libvlc-go Go] \*
+[https://github.com/garkimasera/vlc-rs Rust] \*
+[http://github.com/RSATom/QmlVlc QmlVlc] - Qt 5 QML binding \*
+[https://github.com/vlc-qt/vlc-qt VLC-Qt] - Qt bindings \*
+[[wxVLCBackend|wxWidgets MediaCtrl backend]] also in C++ \* [[Using
+libvlc with Delphi]] \* [http://sourceforge.net/projects/paslibvlc/
+Pascal/Delphi] \* [http://wiki.tcl-lang.org/48382 Tcl] \* [[ActiveX]]
+with the built-in VLC browser plugin for MSIE (obsolete)
+
+[[Category:LibVLC|*]]

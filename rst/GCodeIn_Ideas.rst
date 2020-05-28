@@ -1,0 +1,169 @@
+<span class="hatnote"><span class="plainlinks">[{{fullurl:Janitorial
+projects|redirect=no}} Janitorial projects]</span> redirects here. See
+also: [[Code Janitorial]].</span> = Google Code In =
+
+This page is about gathering '''ideas''' for the VideoLAN project for
+acceptance in the
+[http://code.google.com/opensource/gci/2010-11/index.html Google Code In
+2010-2011] program.
+
+VideoLAN has been part of [http://code.google.com/soc/ Google Summer of
+Code] in [[SoC_20072008]], [[SoC_20092010]].
+
+[[x264 GCodeIn Ideas|x264]] is also participating in Videolan's Code-In.
+
+= Ideas for VideoLAN =
+
+== Warning == This is a temporary page for listing ideas for Google
+Code-in tasks.
+
+The final tasks will be moved to melange, when needed.
+
+== VideoLAN Communication ==
+
+=== Wiki Orphans and Double tracking === '''Category''': Documentation
+<br> '''Description''': The wiki has way too many [[Special:LonelyPages
+double redirected pages]], they should be linked by other pages or
+marked for deletion, and redirects should be fixed<br> '''Outcome''': A
+better wiki with less orphaned pages or redirects <br> '''Difficulty''':
+easy <br> '''Tools''': a wiki account<br> '''Time''': 4hours <br>
+'''Mentor''': [[User:Xtophe|xtophe]] <br>
+
+=== Wiki short pages tracking === '''Category''': Documentation <br>
+'''Description''': The wiki has too many [[Special:ShortPagesxtophe]]
+<br>
+
+=== VideoLAN flyer/poster === '''Category''': Outreach <br>
+'''Description''': The VideoLAN project needs a flyer for promotional
+matters <br> '''Outcome''': A cool A5-sized flyer presenting VideoLAN
+<br> '''Difficulty''': medium <br> '''Tools''': Image-Editing
+software<br> '''Time''': 3days <br> '''Mentor''':
+[[User:Jpsaman|Jean-Paul Saman]] <br>
+
+=== VideoLAN Forum improvements === '''Category''': Research and
+Outreach <br> '''Description''': The VideoLAN [http://forum.videolan.org
+forums] have many shortcomings, especially regarding spam and "Solved
+topics"<br> We need research on solutions and advise us how we can
+improve the forums <br> '''Outcome''': small report on ideas, advice and
+solution<br> '''Difficulty''': medium <br> '''Tools''': Browser and Text
+editor<br> '''Time''': 3days <br> '''Mentor''': VLC_help <br>
+
+=== VideoLAN PHP webpage for file uploading for bugreports ===
+'''Category''': Code <br> '''Description''': The VideoLAN project needs
+a small WebPage in PHP to be able to upload the files for the
+bugreports<br> As some of those files are big, some progression bar
+should be done in Javascript too <br> '''Outcome''': a working deployed
+PHP script<br> '''Difficulty''': hard <br> '''Tools''': PHP development
+environment<br> '''Time''': 5days <br> '''Mentor''': etix <br>
+
+== VLC == === Create VLC videos for training === '''Category''':
+Training <br> '''Description''': Creation of youtube Videos of
+screencasts of VLC usage<br> This task can be divided in chunks of 5
+videos <br> '''Outcome''': VLC Youtube channels <br> '''Difficulty''':
+easy <br> '''Tools''': VLC, screencast recorders<br> '''Time''': 2 days
+<br> '''Mentor''': [[User:linkfanel|linkfanel]] <br>
+
+=== VLC documentation illustration === '''Category''': Documentation
+<br> '''Description''': Creation of VLC screenshots and small diagrams
+to improve the VLC documentation on the wiki<br> '''Outcome''': VLC
+illustrations on the documentation <br> '''Difficulty''': easy <br>
+'''Tools''': VLC, Image Editing software<br> '''Time''': 5 days <br>
+'''Mentor''': [[User:ivoire|Rémi Duraffort]] <br>
+
+=== VLC users survey creation === '''Category''': Outreach <br>
+'''Description''': Creation of a survey for VLC users, about their usage
+of VLC, that we will put on the website <br> '''Outcome''': Survey ready
+to be sent to the VLC users <br> '''Difficulty''': medium <br>
+'''Tools''': text editor and web browser<br> '''Time''': 5 days <br>
+'''Mentor''': [[User:J-b|jb]] <br>
+
+=== VLC fullscreen controller redesign === '''Category''': User
+Interface <br> '''Description''': Find ideas to improve and redesign the
+fullscreen controller of the VLC version on Windows/Linux <br>
+'''Outcome''': Sketchs and ideas for the fullscreen controller <br>
+'''Difficulty''': medium <br> '''Tools''': web browser and image
+editor<br> '''Time''': 5 days <br> '''Mentor''': [[User:J-b|jb]] <br>
+
+=== VLC volume controller redesign === '''Category''': User Interface
+<br> '''Description''': Find ideas to improve and redesign the volume
+controller of the VLC version on Windows/Linux <br> '''Outcome''':
+Sketchs and ideas for the volume controller<br> '''Difficulty''': hard
+<br> '''Tools''': web browser and image editor<br> '''Time''': 3 weeks
+<br> '''Mentor''': [[User:J-b|jb]] <br>
+
+=== VLC Lyrics extension === '''Category''': Code <br>
+'''Description''': Creation of one extension in lua that can be able to
+fetch and display Lyrics from one website API<br> '''Outcome''': Working
+Lua Lyrics extension script <br> '''Difficulty''': hard <br>
+'''Tools''': text editor and VLC <br> '''Time''': 10 days <br>
+'''Mentor''': [[User:Jpeg|jpeg]] <br>
+
+=== VLC Songkick extension === '''Category''': Code <br>
+'''Description''': Creating one extension in lua that can be able to
+fetch and display Lyrics from Songkick API<br> '''Outcome''': Working
+Lua Songkick extension script <br> '''Difficulty''': hard <br>
+'''Tools''': text editor and VLC <br> '''Time''': 10 days <br>
+'''Mentor''': [[User:Jpeg|jpeg]] <br>
+
+=== VLC webplugin testpages === '''Category''': Code <br>
+'''Description''': This task is about updating the Html/CSS/JS scripting
+test pages for the [[Documentation:WebPluginJean-Paul Saman]] <br>
+
+=== VLC warnings cleanup === '''Category''': Code <br>
+'''Description''': This has for objective to delete a lot of warnings in
+C and C++ code when doing VLC compilation for Linux and Windows.<br>
+'''Outcome''': Less warnings in C and C++ code <br> '''Difficulty''':
+hard <br> '''Tools''': text editor and compilation toolchain<br>
+'''Time''': 10 days <br> '''Mentor''': [[User:ivoire|Rémi Duraffort]]
+<br>
+
+=== libVLC Qt example media player === '''Category''': Code <br>
+'''Description''': Creating a small example of how to create a media
+player based on libVLC and Qt on Windows/Linux.<br> '''Outcome''': a
+cool media player to demonstrate the libVLC API in Qt <br>
+'''Difficulty''': hard <br> '''Tools''': complete compilation
+toolchain<br> '''Time''': 15 days <br> '''Mentor''': pdherbemont <br>
+
+=== libVLC Gtk example media player === '''Category''': Code <br>
+'''Description''': Creating a small example of how to create a media
+player based on libVLC and Gtk on Windows/Linux.<br> '''Outcome''': a
+cool media player to demonstrate the libVLC API in Gtk <br>
+'''Difficulty''': hard <br> '''Tools''': complete compilation
+toolchain<br> '''Time''': 15 days <br> '''Mentor''': pdherbemont <br>
+
+=== libVLC wxWidgets example media player === '''Category''': Code <br>
+'''Description''': Creating a small example of how to create a media
+player based on libVLC and wxWidgets on Windows/Linux.<br>
+'''Outcome''': a cool media player to demonstrate the libVLC API in
+wxWidgets <br> '''Difficulty''': hard <br> '''Tools''': complete
+compilation toolchain<br> '''Time''': 15 days <br> '''Mentor''':
+pdherbemont <br>
+
+== VLMC ==
+
+=== Create VLMC videos for training === '''Category''': Training <br>
+'''Description''': Creation of youtube Videos of screencasts of VLMC
+usage<br> This task can be divided in chunks of 3 videos <br>
+'''Outcome''': VLMC Youtube channels <br> '''Difficulty''': easy <br>
+'''Tools''': VLMC, screencasting tools<br> '''Time''': 3 days <br>
+'''Mentor''': [[User:etix|etix]] <br>
+
+=== VLMC UI testing === '''Category''': Quality Assurance <br>
+'''Description''': Testing VLMC Interface and testing all dialogs and
+options to find bugs<br> '''Outcome''': Bugreports <br>
+'''Difficulty''': easy<br> '''Tools''': VLMC <br> '''Time''': 3 days<br>
+'''Mentor''': Hugo <br>
+
+=== VLMC files testing === '''Category''': Quality Assurance<br>
+'''Description''': Testing VLMC for Windows or Linux with many file
+formats <br> '''Outcome''': Bug reports on the forum that don't work
+<br> '''Difficulty''': medium <br> '''Tools''': VLMC, mediainfo,
+Windows/Linux <br> '''Time''': 7 days <br> '''Mentor''': Hugo <br>
+
+== Contact == For ANY question, contact [[User:J-bxtophe]]
+
+IRC channel: #videolan or irc://irc.freenode.net
+
+{{GSoC}}
+
+[[Category:SoC 2011 Project|*]]

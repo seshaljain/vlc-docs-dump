@@ -1,0 +1,18 @@
+{{codec video|id=theo|for=[[ogg]] and [[matroska]]}}
+
+'''Theora''' is an open video codec based on [[On2]]'s [[VP3]] codec, [[open source]]d in 2001.
+
+It's being developed by the [[Xiph.org Foundation]] of [[Ogg]] and [[Vorbis]] fame. If you want to be sure there are no legal issues with your software, Theora is a good choice, although it's technically not as advanced as [[MPEG-4]] or [[WMV9]].
+
+Version 1.0 of the codec has been released in 2008 November, in 2009 September version 1.1 came out, improving the encoding quality while preserving full compatibility. The video format is frozen (has been since 2004, but there are buggy videos produced by old encoders around and not playing well) so it's safe to produce Theora files for future use.
+
+Theora uses the [[Ogg]] container format and is usually combined with [[Vorbis]] audio.
+
+Theora files can be streamed using the [[Icecast]] 2 streaming server, available for most recent Linux distributions.
+
+VideoLAN ships Theora support. There are also builtin support or plugins for other media players such as [[Xine]], [[MPlayer]], [[Helix]] and [[Windows Media Player]]. See the [https://www.theora.org/faq/ Theora FAQ] for more info.
+
+== Links ==
+* [https://theora.org/ Offical website]
+* [https://icecast.org/ Icecast] streaming server
+* [http://xiph.org/dshow Ogg Direct Show Filters] lets you play Theora files in many Microsoft Windows applications, including Windows Media Player.

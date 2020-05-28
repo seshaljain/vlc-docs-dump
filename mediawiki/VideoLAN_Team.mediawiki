@@ -1,0 +1,79 @@
+This page is intended to help you know who's who in the [[VideoLAN]] organisation.
+
+==VideoLAN Team==
+'' You can add yourself to the list following alphabetical order.''
+
+{|
+|+ VideoLAN Team
+! align=left width=200 | Real name !! align=left width=100 | IRC Nick !!align=left width=100| wiki login !!align=left width=200 | Forum login !!
+|-
+| Christophe Mutricy || xtophe || [[User:Xtophe|Xtophe]] || xtophe
+|-
+| Christoph Miebach || No_se || [[User:No_se|No_se]] || no_se
+|-
+| David Fuhrmann || d-fu || ? || dfuhrmann
+|-
+| Denis Charmet || TypX ||? || TypX
+|-
+| Edward Wang || edwardw || [[User:Edwardw|Edwardw]] || edwardw
+|-
+| Felix Paul Kühne || feepk || [[User:Fkuehne|Fkuehne]] || Felix Paul Kuehne
+|-
+| Francois Cartegnie || InTheWings || [[User:Fcartegnie|Fcartegnie]] || ?
+|-
+| Frédéric Yhuel || fyhuel || ? || ?
+|-
+| Hugo Beauzée-Luyssen || chouquette || [[User:Chouquette|Chouquette]] || chouquette
+|-
+| Ilkka Ollakka || ILEoo || ? || ILEoo
+|-
+| Jean-Baptiste Kempf || j-b || [[User:J-b|J-b]] || Jean-Baptiste Kempf
+|-
+| Jean-Paul Saman || jpsaman || [[User:jpsaman|jpsaman]] || jpsaman
+|-
+| Ludovic Fauvet || etix || [[User:Etix|Etix]] || etix
+|-
+| Pavlov Konstantin || thresh || [[User:Thresh|Thresh]] || thresh
+|-
+| Pierre Ynard || linkfanel || ? || ?
+|-
+| Rafaël Carré || funman || [[User:Funman|Funman]] || funman
+|-
+| Rémi Denis-Courmont || courmisch || [[User:Courmisch|Courmisch]] || Rémi Denis-Courmont
+|-
+| Sébastien Escudier || Seb_ || [[User:Sebastien|Sebastien]] || Sébastien Escudier
+|}
+===Inactive / Retired===
+{|
+|+ Inactive / Retired Members of the VideoLAN Team
+! align=left width=200 | Real name !! align=left width=100 | IRC Nick !!align=left width=100| SVN login !! align=left width=100 | wiki login !!align=left width=100 | Forum login !!
+|-
+| Sam Hocevar || sam || sam || [[User:Sam Hocevar|Sam Hocevar]] ||
+|-
+| Christophe Massiot || Meuuh || meuuh || ? || ?
+|-
+| Filippo Carone || littlejohn || littlejohn || ? || ?
+|-
+| Antoine Cellerier || dionoea || dionoea || [[User:Dionoea|Dionoea]] || dionoea
+|-
+| Jerome Decoodt || DiDjCodt || djc || ? || ?
+|-
+| Pierre d'Herbemont || pdherbemont || pdherbemont || [[User:Pdherbemont|Pdherbemont]] || pdherbemont
+|-
+| Damien Fouilleul || Quovodis || damienf || [[User: Quovodis|Quovodis]] || ?
+|-
+| Yoann Peronneau || yoannp || yoann || [[User:Yoann|Yoann]] || yoann
+|-
+| Bernie Purcel || ? || bitmap || ? || ?
+|-
+| Clément Stenac || zorglub || zorglub || ? || ?
+|-
+| Olivier Teulière || ipkiss || ipkiss || [[User:Ipkiss|Ipkiss]] || ipkiss
+|-
+| Faustino Osuna || riquedafreak || riquedafreak || [[User:Riquedafreak|Riquedafreak]] || riquedafreak
+|}
+
+==See also==
+* [[M2X]] - a company founded by Jean-Paul Saman
+
+[[Category:About VideoLAN]]

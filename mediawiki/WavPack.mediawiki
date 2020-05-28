@@ -1,0 +1,7 @@
+{{Codec audio|id=WVPK}}
+{{Wikipedia|WavPack}}
+{{Open}}
+
+WavPack is a [[lossless]] audio [[compression]] codec. It supports more than just [[WAVE]], despite its name. 
+
+FIXME: It is unclear how {{VLC}} reads this format, but the {{VLCSourceFile|NEWS}} file refers to it being improved in 1.0.0, so it must exist. wavpack is listed in the {{VLCSourceFile|modules/codec/avcodec/fourcc.c}}, maybe it is supported through {{docmod|avcodec}}?

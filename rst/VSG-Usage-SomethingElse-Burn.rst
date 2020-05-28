@@ -1,0 +1,18 @@
+== Can I&nbsp;burn disks?<br> ==
+
+<br>
+
+VideoLAN Client cannot burn CD, DVD, HD DVD or Blu-ray discs.<br>
+
+You can try open source software to solve your purpose like
+[http://infrarecorder.org/ InfraRecorder].
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+{{VSG}}

@@ -1,0 +1,34 @@
+{{VLC}} Mobile Features
+
+{\| class="wikitable" width="80%" -\| Video List \|\| {{Yes}} \|\|
+{{Yes}} \|\| {{Yes}} \|\| Thumbnail + Title + Time + Resume Group TV
+Shows \|\| {{Yes}} \|\| {{Yes}} \|\| {{Yes}} \|\| Info Panel \|\|
+{{Yes}} \|\| {{Yes}} \|\| {{No}} \|\| Correct video player \|\| {{Yes}}
+\|\| {{Yes}} \|\| {{Yes}} \|\| See [[Mobile Design Player‎‎-\| Hardware
+acceleration \|\| {{Yes}} \|\| {{Yes}} \|\| {{No}} \|\| Video filters
+\|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\| Deinterlace \|\| {{Yes}} \|\|
+{{No}} \|\| {{No}} \|\| Playback speed \|\| {{Yes}} \|\| {{Yes}} \|\|
+{{Yes}} \|\| audio / spu sync \|\| {{Yes}} \|\| {{Yes}} \|\| {{No}} \|\|
+Chapters \|\| {{Yes}} \|\| {{Yes}} \|\| {{No}} \|\| Subtitles:SRT/CC
+\|\| {{Yes}} \|\| limited \|\| BORKEN \|\| automatically open + external
+opening Subtitles:ASS \|\| {{Yes}} \|\| ?? \|\| {{No}} \|\| with
+embedded fonts (MKV) and without Subtitles:Teletext \|\| {{Yes}} \|\|
+{{No}} \|\| {{No}} \|\| ZVBI or txt Subtitles: quality output|\| {{Yes}}
+\|\| {{Yes}} \|\| {{No}} \|\| beware of fonts too Search \|\| {{Yes}}
+\|\| {{Yes}} \|\| {{Yes}} \|\| Network Panel \|\| {{Yes}} \|\| {{Yes}}
+\|\| {{No}} \|\| WinRT have only the Open URL Audio List \|\| limited
+\|\| {{Yes}} \|\| {{Yes}} \|\| Audio Metadata Fetch \|\| limited \|\|
+limited \|\| {{Yes}} \|\| Audio Equalizer \|\| {{Yes}} \|\| {{Yes}} \|\|
+{{No}} \|\| Playlists \|\| {{Yes}} A/V \|\| {{Yes}} A \|\| {{Yes}} A
+\|\| WiFi upload \|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\| WiFi download
+\|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\| FTP \|\| {{Yes}} \|\| {{No}}
+\|\| {{No}} \|\| Dropbox \|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\|
+Google Drive \|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\| Box.com \|\|
+{{Yes}} \|\| {{No}} \|\| {{No}} \|\| OneDrive \|\| {{Yes}} \|\| {{No}}
+\|\| {{Yes}} \|\| App protection \|\| {{Yes}} \|\| {{No}} \|\| {{No}}
+\|\| Folder protection \|\| {{No}} \|\| {{No}} \|\| {{No}} \|\| UPnP
+discovery & playback \|\| {{Yes}} \|\| {{Yes}} debug \|\| {{No}} \|\|
+Directories \|\| N/A \|\| {{Yes}} \|\| {{Yes}} \|\| SMB discovery &
+playback \|\| {{Yes}} \|\| {{No}} \|\| {{No}} \|\| \|}
+
+[[Category:Dev Discussions]]

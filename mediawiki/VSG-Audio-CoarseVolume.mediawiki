@@ -1,0 +1,11 @@
+== Fine tune volume control ==
+
+If you think you have a coarse volume control frequently happening with hot keys, you can have a finer volume control by trying the following option in the command line . 
+
+In the command line write “vlc –help” and afterwards type “--volume-step=1”. 
+
+Your sound should be good now.
+
+<br>
+
+{{VSG}}

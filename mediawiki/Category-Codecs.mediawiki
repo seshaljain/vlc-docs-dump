@@ -1,0 +1,5 @@
+This lists all the '''[[Codec]]s'''.
+
+To add a codec, use '''{{tl|Codec audio}}''' or '''{{tl|Codec video}}'''
+
+[[Category:Knowledge Base]]

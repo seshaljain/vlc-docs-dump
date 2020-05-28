@@ -1,0 +1,220 @@
+[[x264]] has loads of possibilities for [[SoC 2008]] projects. This is
+part of the VideoLAN candidature for Google Summer of Code 2008.
+
+*Mentor (and author of this page): Dark Shikari*\ Possible backup
+mentor: pengvado
+
+==Introduction to x264== x264 is probably the most efficient,
+compression-wise, open source video encoder there is. It is quite
+competitive with commercial encoders, outclassing a large number of
+them.
+
+While not actually part of VLC or ffmpeg (it has its own codebase), it
+is a major library used by both, licensed under the GPL, in addition to
+being a standalone encoder. As the only major open-source H.264 encoder,
+x264 has a near-complete monopoly on H.264 encoding in the consumer
+world, along with being used by many major corporations, including
+Facebook and Google. Some companies, such as Avail Media, have in the
+past offered bounties on improvements to the encoder.
+
+==x264 project ideas== This is not at all an exhaustive list; this is
+just a few I thought up with. I'm willing to mentor any reasonable
+project on x264 to the best of my ability. I'm being pretty conservative
+here, so I'm picking projects that are probably not at all too ambitious
+for a good student. If anything, I might be underestimating the amount
+of work that can be done, so feel free to propose something else if
+you're feeling creative. :-- Dark Shikari
+
+===Size key=== Depends heavily on the skill and willingness to work of
+the student. An extremely dedicated and talented student might be able
+to implement MBAFF in a summer, but it is certainly not fair to expect
+such a thing from most students.
+
+*Very Large: Probably too large to completed in one summer.*\ Large:
+Probably the right size for a full-summer project. *Medium: Probably too
+small. Could be combined with another project, of course.*\ Small: A
+small project, but definitely useful, and could be part of a larger
+project.
+
+===Skills needed=== These are required for all listed projects and
+probably anything not listed, too. *Basic C programming.*\ Basic
+understanding of video encoding, or at least willingness to do the
+appropriate reading up on the topic before the summer begins.
+*Confidence in the ability to learn the basics of following and similar
+topics (though not all projects will require such information):
+:*\ Discrete cosine transform and similar frequency transforms :*Motion
+estimation and compensation :*\ Quantization and entropy encoding A PDF
+with a chapter that can serve as a primer to video compression can be
+found [http://www.mediafire.com/download.php?auxd23m2snw here]. It also
+has some more specific chapters on MPEG-4 Part 2 and Part 10.
+
+==Projects== ===Fast inter refinement=== ''Size: Medium to large.''
+
+Description: Improve heuristics and decision-making for inter refinement
+to improve efficiency on non-insane encoding settings. This would
+involve various early termination heuristics along with methods of
+deciding which partition modes need to be searched while performing
+minimal actual searching on those partition modes. This would be similar
+to, but a vastly more in-depth analysis of what was proposed in the
+"Fast-Ref-Search" patch.
+
+Difficulty: Medium
+
+===Fast intra refinement=== ''Size: Small to medium''
+
+Description: Similar to above, but covering intra modes instead. Would
+probably involve considerable statistical analysis of intra mode data,
+along with creative solutions for improved RDO refinement. We already
+have some ideas on this one, but haven't implemented any of them.
+
+Difficulty: Medium
+
+===RDO B-frame decision=== ''Size: Medium to large''
+
+Description: x264's biggest weakness is its B-frame decision algorithm,
+which can often be extremely subtopimal, with OPSNR losses as high as
+1db in some cases. Improving this would drastically increase the
+effectiveness of the encoder.
+
+Difficulty: Medium-high
+
+===4:4:4 and 4:2:2 color support=== ''Size: Medium to large''
+
+Description: x264 doesn't support any color spaces other than YV12. This
+would solve this problem by adding the ability to use YUY2 and YV24
+color spaces. This might be useful for some animation footage, or
+graphics; plus its been requested often.
+
+Difficulty: Medium
+
+===Film grain modeling=== ''Size: Medium to large''
+
+An integral part of the standard... but supported by basically nothing
+despite its potential usefulness. This would involve implementing FGM in
+both x264 '''and''' some sort of decoder, preferably ffmpeg. Some work
+has already been done in this category, so you won't be starting from
+nothing.
+
+Difficulty: Medium
+
+===Other possible projects=== Anything here (and not here) can
+potentially be picked from at the request of a student.
+
+*Assembly optimizations of any sort :*\ Extra skills: Assembly coding
+:*Difficulty: Medium :*\ Examples: ::*Port cacheline split to the motion
+compensation code for increased speed (this could further be used to
+improve ffh264's decoding). ::*\ Assembly-optimize some things that
+haven't been already. ::*Port some MMX assembly to SSE where it seems
+useful. ::*\ Play around with potential SSE4 optimizations.
+
+*Psychovisual optimizations for mode decision and quantization (e.g.
+QNS) :*\ Could also include work on adaptive quantization, a huge
+benefit for x264 quality-wise. :*Extra skills: Creativity and perhaps
+some understanding of DCT/Fourier math. :*\ Difficulty: Medium-high
+:*Examples: ::*\ SSIM-QNS optimization? ::*Adaptive deadzone?
+::*\ Adaptive lambda?
+
+*Implementing MBAFF or PicAFF (potentially too difficult for a SoC
+project, however) :*\ Difficulty: Very high
+
+*Fast RD optimization using heuristics :*\ Extra skills: Reading lots of
+IEEE papers :*Difficulty: Medium
+
+*Motion search improvements :*\ Difficulty: Medium
+
+*More RDO :*\ Difficulty: Medium
+
+\*Anything else reasonable, honestly. There's all sorts of ideas
+floating around.
+
+==Qualification tasks== Before you start work these, drop by #x264dev
+and meet me (Dark Shikari) first. These should be done in order, and the
+results submitted to me at darkshikari[at]gmail.com. Bonus points will
+be given for *good* solutions or creative ones, not just ones that work.
+Well-commented and styled code is also a bonus. Feel free to do any
+research necessary to complete the task; this isn't a closed-notes test!
+
+Rules: You can ask any question on IRC you want. There are no rules
+about where you can get any information--all that matters is that
+through your own effort or the help of others, or both, you get these
+completed. Feel free to ask me for help, up to a point, at any part in
+this, especially if you need algorithmic explanations or details on
+video encoding concepts behind the algorithms. However, if you ask for
+too much assistance without at least trying it yourself, I may penalize
+you.
+
+Qualification tasks:
+
+#Download the x264 source. You will figure out how to do this yourself.
+Make sure to use git, not svn; the svn is not updated anymore, and the
+last build is broken, so use git! #Compile the x264 source and encode a
+sample video with the latest build off git. Upload the video as a .h264
+file to Mediafire or a similar site, and email it to me at
+darkshikari[at]gmail.com with your name. And don't cheat, because I know
+what version you encoded it with! The only requirement is that the video
+be 1000 frames long and encoded in two-pass mode with bitrate 1000kbps.
+The video you choose is completely your own choice, but I suggest you
+choose one with a good bit of motion, for part 3). #Your real
+qualification task will be playing with me.c, in particular,
+x264_me_search_ref(), the primary motion search in x264. '''It is not
+required that you succeed at this, only that you make your best
+effort!''' In particular, you'll be working after line 227, "switch(
+h->mb.i_me_method )". This is where all five of the motion search
+methods are: DIA, HEX, UMH, ESA, and TESA. ::Simple explanation of
+commands in me.c that you'll need to know: ::*CHECK_MVRANGE(x,y): check
+the motion vector range of vector <x,y>. There's a 5-pixel buffer, so
+you can move by up to 5 pixels in the x and/or y direction before having
+to check it again. ::*\ COST_MV(x,y): Run a check on location x,y.
+::*COST_MV_X4(x0,y0,x1,y1,x2,y2,x3,y3): Takes eight arguments; note that
+these are OFFSETS from a base value of <omx,omy>. Note this is quite a
+bit faster than calling COST_MV 4 times. ::A simple analysis of the DIA
+motion search, for example: ::case X264_ME_DIA: ::/* diamond search,
+radius 1 */ :::for( i = 0; i < i_me_range; i++ ) :::{ ::::DIA1_ITER(
+bmx, bmy ); ::::if( bmx == omx && bmy == omy ) :::::break; ::::if(
+!CHECK_MVRANGE(bmx, bmy) ) :::::break; :::} ::: break; ::The for loop
+runs up to the merange parameter. At each point, DIA1_ITER is called,
+which just does COST_MV_X4 on all 4 neighboring locations. If none of
+these is better than the current one, it breaks out. If one is better,
+it selects that as the new center and loops to the beginning again. And
+if the MVrange is greater than the max, it breaks out too. This
+algorithm is often known as EPZS, or simply "diamond search." ::Now that
+you know the basics of how this works, glance over the ME HEX and ME UMH
+functions to see how they work. Ignore ESA/TESA; these use some quite
+heavily optimized and complex code that you will probably not comprehend
+in the least. ::Now that you get the basic idea, write me a motion
+search that is faster than UMH, slower than HEX, but still better than
+HEX. This shouldn't be '''too''' difficult, since UMH is quite slow by
+comparison to HEX, so you have a very large margin in which to beat HEX.
+Your only requirement is that it be very little like HEX or UMH; i.e.
+you can't just rip of one of the two and modify it slightly. ::Measuring
+the effectiveness of the motion search is simple: simply see how good
+you can get the PSNR value at a particular target bitrate. Ideally, on
+the video you choose, UMH will be a lot better than HEX, so there's a
+lot of margin of improvement between the two. ::Your motion search need
+not be practical or worthwhile--it must merely fall within those
+parameters mentioned above. ::I would also suggest you test it on more
+than one video, not just the one from 2); its possible to make the
+mistake of optimizing for a single video at the expense of others.
+::When you're done, email me the resulting patch for x264 and any extra
+information you think would be useful.*\ This list isn't complete. I may
+add more if there's time left and we haven't narrowed it down to the
+right number of students yet. ===Updates=== *Your algorithm should be
+'''deterministic'''. This means, unlike one algorithm submitted so far
+(which wasn't half-bad!)... it cannot contain rand().*\ Your algorithm
+shouldn't violate the MV range limit as stated previously. If it does it
+might lead to random crashing, which we obviously don't want. \*If
+there's not a large difference between HEX and UMH, you won't have much
+room to work! Try to find a high-motion source where the difference is
+measurable. :May I strongly recommend the free 1080p source of
+Elephant's Dream? Low-resolution sources don't have much motion, in
+terms of pixels-moved-per frame, so they're not good for measuring
+efficiency of complex motion searches.
+
+==Contact info== If you are interested, drop by #videolan, #x264, or
+#x264dev on Freenode.
+
+You should also contact the admin [[User:J-b|jb]].
+
+{{GSoC}}
+
+[[Category:SoC]] [[Category:x264]]

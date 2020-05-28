@@ -1,0 +1,44 @@
+{{See also|Documentation:Modules/dtv}}
+{{Module|name=dvb|type=Access|first_version=0.6.2|os=Linux|description=[[DVB]] input with [[v4l2]] support|sc=dvb}}
+
+Shortcuts:
+* <code>dvb</code> (Generic name)
+** <code>dvb-s</code>, <code>qpsk</code>, <code>satellite</code> (Satellite)
+** <code>dvb-c</code>, <code>cable</code> (Cable)
+** <code>dvb-t</code>, <code>terrestrial</code> (Terrestrial)
+
+== Options ==
+{{Option
+|name=dvb-probe
+|value=boolean
+|default=enabled
+|description=Some [[DVB]] cards do not like to be probed for their capabilities, you can disable this feature if you experience some trouble.
+}}
+{{Option
+|name=dvb-satellite
+|value=string
+|default=NULL
+|description=Filename of config file in share/dvb/dvb-s.
+}}
+{{Option
+|name=dvb-scanlist
+|value=string
+|default=NULL
+|description=Filename containing initial scan tuning data.
+}}
+{{Option
+|name=dvb-scan-nit
+|value=boolean
+|default=enabled
+|description=Use NIT for scanning services
+}}
+
+== See also ==
+* {{docmod|dvbsub}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/dvb/access.c}} (main file)
+* {{VLCSourceFolder|modules/access/dvb}} (folder)
+* {{VLCSourceFile|modules/demux/playlist/dvb.c}} (LinuxTV channels list, part of {{docmod|playlist}})
+
+{{Documentation}}

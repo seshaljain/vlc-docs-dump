@@ -1,0 +1,3 @@
+'''.VLC''' is a file extension for [[playlist]]s. It can be used to open a specific playlist with VLC. The format of a playlist with a ".vlc" extension is identical with the format of [[M3U]] and [[PLS]] playlists. They can be created by simply renaming .m3u or .pls files to files with a .vlc extension. With files in ANSI-format problems may arise from the use of special characters like letters with diacritical marks (e.g. ñ, é, ö, etc.). If such characters are required the file should be saved in UTF-8 format (quality text editors generally offer this option). It is recommended to finish off the last line of these types of playlist with a line-break.
+
+[[Category:Playlist]]

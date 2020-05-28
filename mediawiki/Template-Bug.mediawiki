@@ -1,0 +1,11 @@
+[https://trac.videolan.org/vlc/ticket/{{{1}}} {{#if:{{{2|}}}|{{{2}}}|Bug #{{{1}}}}}]<noinclude>
+----
+Usage:
+* <code><nowiki>{{</nowiki>{{PAGENAME}}<nowiki>|35}}</nowiki></code>
+{{{{PAGENAME}}|35}}
+* <code><nowiki>{{</nowiki>{{PAGENAME}}<nowiki>|35|World domination}}</nowiki></code>
+{{{{PAGENAME}}|35|World domination}}
+
+[[Category:Templates]]
+[[Category:Security]]
+</noinclude>

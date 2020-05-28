@@ -1,0 +1,113 @@
+{{Module|name=marq|type=Video sub-filter|first_version=0.8.0|description=Overlays text on the video|sc=marq|sc2=time}}
+
+The ''marq'' subtitle filter can be used to display text on a video. The {{docmod|time}} filter was merged with this filter in version 0.9.0, adding time [[Documentation:Format String|format string]] recognition. There are two methods of specifying position: coordinate and (since VLC 0.9.0) [[#marq-position|numbered positions]].
+
+== Options ==
+<onlyinclude>{{Option
+|name=marq-marquee
+|value=string
+|default=VLC
+|description=Marquee text to display.
+}}
+{{Option
+|name=marq-file
+|value=string
+|default=NULL
+|description=File to read the marquee text from.
+}}<noinclude>
+=== Position ===
+</noinclude>
+{{Option
+|name=marq-x
+|value=integer
+|default=0
+|description=X offset, from the left screen edge.
+}}
+{{Option
+|name=marq-y
+|value=integer
+|default=0
+|description=Y offset, down from the top.
+}}
+{{Option
+|name=marq-position<span id="marq-position"></span>
+|value=integer
+|default=-1
+|description=Marquee position: 0=center, 1=left, 2=right, 4=top, 8=bottom, you can also use combinations of these values, eg 6 = top-right.
+}}<noinclude>
+=== Font ===
+</noinclude>{{Option
+|name=marq-opacity
+|value=integer
+|min=0
+|max=255
+|default=255
+|description=Opacity (inverse of transparency) of overlaid text. 0 {{=}} transparent, 255 {{=}} totally opaque.
+}}
+{{Option
+|name=marq-color<span id="marq-color"></span>
+|value=integer
+|select={ 0x000000, 0x808080, 0xC0C0C0, 0xFFFFFF, 0x800000, 0xFF0000, 0xFF00FF, 0xFFFF00, 0x808000, 0x008000, 0x008080, 0x00FF00, 0x800080, 0x000080, 0x0000FF, 0x00FFFF }
+|default=0xFFFFFF
+|description=Color<noinclude><sup>('''[[#appendix_marq-color|key]]''')</sup></noinclude> of the text that will be rendered on the video. This must be an hexadecimal (like HTML colors). The first two chars are for red, then green, then blue.
+}}
+{{Option
+|name=marq-size
+|value=integer
+|min=0
+|max=4096
+|default=0
+|description=Font size, in pixels. 0 uses the default font size.
+}}<noinclude>
+=== Misc ===
+</noinclude>{{Option
+|name=marq-timeout
+|value=integer
+|default=0
+|description=Number of milliseconds the marquee must remain displayed. 0 means forever.
+}}
+{{Option
+|name=marq-refresh
+|value=integer
+|default=1000
+|description=Number of milliseconds between string updates. This is mainly useful when using meta data or time [[Documentation:Format String|format string]] sequences.
+}}</onlyinclude>
+
+== Examples ==
+
+=== Versions 2.0 and later ===
+
+Example command line use '''(VLC 2.0.0 and newer)''':
+ {{%}} vlc '--sub-source=marq{marquee="%Y-%m-%d,%H:%M:%S",position=9,color=0xFFFF00,size=12}' somevideo.avi
+This example displays the current date and time in yellow in the top left corner of video.
+
+The equivalent long form would be;
+ {{%}} vlc --sub-source=marq --marq-marquee="%Y-%m-%d,%H:%M:%S" --marq-position=9 --marq-color=0xFFFFFF --marq-size=12 somevideo.avi
+
+=== Versions 0.9.0 to 1.1.13 ===
+ {{$}} vlc --sub-filter 'marq{marquee=$t ($P%%),color=0xFFFF00}:marq{marquee=%H:%M:%S,position=6}' somevideo.avi
+This command line will show the stream's title (<code>$t</code>) and current position (<code>$P</code>) in the upper left corner and the current time in the upper right corner. The <u>''single''</u> quotes <code>'</code> enclose our <code>$</code> characters to prevent them from being interpreted as Bash variables.<br />
+On Windows the command line would be:
+ {{Prompt|cmd}} {{Path to VLC|windows}} --sub-filter=marq{marquee=$t ($P%%),color=0xFFFF00}:marq{marquee=%H:%m%s,position=6} somevideo.avi
+
+
+== Gallery ==
+<gallery>
+File:Marq demonstration - VLC 3.0.6 Linux.png|Marq can be chained, allowing several marquees to be displayed at the same time.|alt=Marq can be chained, allowing several marquees to be displayed at the same time. Nine positions and text colours are shown against a black background.
+</gallery>
+
+== See also ==
+* [[Documentation:Format String]]
+* [[Documentation:Modules/rss]]
+
+== Source code ==
+* {{VLCSourceFile|modules/spu/marq.c}}
+* {{VLCSourceFile|p=vlc/vlc-0.8.git|modules/video_filter/marq.c}}
+
+== Appendix ==
+<div class="plainlist">
+*^ [[#marq-color|--marq-color]]<span id="appendix_marq-color"></span>
+</div>
+{{Colour mapping}}
+
+{{Documentation footer}}

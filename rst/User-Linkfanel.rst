@@ -1,0 +1,7 @@
+Hello sir Its nice watchng you reading my mail. I, sharad wants to work
+over Development of VLC media media playe.I shall be highly thankful to
+you if you contact me over this.
+
+thank you
+
+Sharad Kumar

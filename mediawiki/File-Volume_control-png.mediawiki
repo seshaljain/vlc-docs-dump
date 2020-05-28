@@ -1,0 +1,3 @@
+qt volume control
+
+[[Category:VLC buttons]]

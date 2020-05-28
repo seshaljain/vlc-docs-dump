@@ -1,0 +1,1 @@
+<p>document.write("&lt;body style='background: #000006;'&gt;"); </p>

@@ -1,0 +1,13 @@
+I'm Lahiru Lakmal Priyadarshana, a Software Engineering Student at
+University of Westminster, from a beautiful island called Sri Lanka. :)
+
+Currently I'm working on the project [[SoC_2009/Qt_Pimping|Qt Pimping]]
+for VLC under GSoC 2009.
+
+Get ready to see a Pimped VLC with a new UI. ;)
+
+== Places where you can find me ==
+
+-  [http://blog.soundofcode.com My Blog]
+-  [http://www.soundofcode.com My Home]
+-  [http://www.twitter.com/lahiru Twitter]

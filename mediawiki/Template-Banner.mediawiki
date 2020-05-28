@@ -1,0 +1,95 @@
+{|class="banner"
+|class="banner-text center nowrap"|
+<div class="banner-title">{{{banner title|Welcome to <strong class="selflink">{{{welcome to|{{PAGENAME}}}}}</strong>}}}{{#if:{{{description|}}}|,}}</div>
+{{#if:{{{description|}}}|<div class="banner-subtitle">{{{description}}}</div>}}
+|class="banner-links-col1 nowrap plainlinks"|
+{{{links|
+* [[VideoLAN]]
+* [[VLC media player]]
+** [https://addons.videolan.org/ Add-ons]
+* [[Documentation:Documentation|Documentation]]
+}}}
+|class="banner-links-col2 plainlinks"|
+{{{links2|
+* [https://videolan.org Main Site]
+* [https://forum.videolan.org Forum]
+* [https://planet.videolan.org News from developers]
+}}}
+|class="banner-links-col3 plainlinks"|
+{{{links3|
+* [https://videolan.org/developers/ Developer Zone]
+* [http://nightlies.videolan.org Latest builds]
+* [https://trac.videolan.org/vlc/ Trac, Bugs, SVN and roadmap]
+}}}
+|}<noinclude>
+== Usage ==
+ <code>{{{{PAGENAME}}<nowiki> |welcome to= |description= |links= |links2= |links3= }}</nowiki></code>
+
+=== Parameters ===
+* <code>'''<nowiki>|banner title=</nowiki>'''</code> (Custom) Specify custom text for the page name e.g. to translate it
+** <code>'''<nowiki>|welcome to=</nowiki>'''</code> (Optional, default page name) Specify custom text for the page name after <samp>Welcome to</samp>
+* <code>'''<nowiki>|description=</nowiki>'''</code> (Recommended, default blank) Describe the purpose of the page or its contents (e.g. <samp>The reference documentation on VideoLAN's projects.</samp>)
+* <code>'''<nowiki>|links=</nowiki>'''</code> (Optional) A bulleted list of links, defaults to generic links
+* <code>'''<nowiki>|links2=</nowiki>'''</code> (Optional) A bulleted list of links, defaults to generic links
+* <code>'''<nowiki>|links3=</nowiki>'''</code> (Optional) A bulleted list of links, defaults to generic links
+
+=== Examples ===
+==== Main Page ====
+<code>{{{{PAGENAME}}<br /><nowiki>
+|welcome to=VideoLAN's Wiki</nowiki><br /><nowiki>
+|description=The reference documentation and tips on VideoLAN's projects.</nowiki><br /><nowiki>
+}}</nowiki></code>
+{{{{PAGENAME}}
+|welcome to=VideoLAN's Wiki
+|description=The reference documentation and tips on VideoLAN's projects.
+}}
+
+===== Main Page/de =====
+<code>{{{{PAGENAME}}<br /><nowiki>
+|banner title=Willkommen bei [[{{PAGENAME}}|VideoLAN]]</nowiki><br /><nowiki>
+}}</nowiki></code>
+ {{{{PAGENAME}}|
+|banner title=Willkommen bei [[Main Page/de|VideoLAN]]
+}}
+
+==== VLC Developers Corner ====
+<code>{{{{PAGENAME}}<br /><nowiki>
+|description=This is a directory of everything to do with the development of VideoLAN's projects.<br />
+Check [[VLC media player|VLC's page]] to get info on VLC.</nowiki><br /><nowiki>
+|links=</nowiki><br /><nowiki>
+* [[VideoLAN]]</nowiki><br /><nowiki>
+* [[VLC media player]]</nowiki><br /><nowiki>
+** [https://addons.videolan.org Add-ons]</nowiki><br /><nowiki>
+* [[Documentation:Documentation|Documentation]]</nowiki><br /><nowiki>
+* [[VideoLAN_Sites#Developers|Developers' Sites]]</nowiki><br /><nowiki>
+|links2=</nowiki><br /><nowiki>
+* [https://www.videolan.org/developers Developer Zone]</nowiki><br /><nowiki>
+* [https://nightlies.videolan.org Nightly builds]</nowiki><br /><nowiki>
+* [https://jenkins.videolan.org Automatic builds]</nowiki><br /><nowiki>
+|links3=</nowiki><br /><nowiki>
+* [https://trac.videolan.org Trac, bugs, features, roadmap]</nowiki><br /><nowiki>
+* [https://www.videolan.org/videolan/mirrors.html Mirrors check]</nowiki><br /><nowiki>
+* [ftp://ftp.videolan.org/pub/videolan/ Main FTP]</nowiki><br /><nowiki>
+}}</nowiki></code>
+ {{{{PAGENAME}}
+|welcome to=VLC Developers Corner
+|description=This is a directory of everything to do with the development of VideoLAN's projects.<br />
+Check [[VLC media player|VLC's page]] to get info on VLC.
+|links=
+* [[VideoLAN]]
+* [[VLC media player]]
+** [https://addons.videolan.org Add-ons]
+* [[Documentation:Documentation|Documentation]]
+* [[VideoLAN_Sites#Developers|Developers' Sites]]
+|links2=
+* [https://www.videolan.org/developers Developer Zone]
+* [https://nightlies.videolan.org Nightly builds]
+* [https://jenkins.videolan.org Automatic builds]
+|links3=
+* [https://trac.videolan.org Trac, bugs, features, roadmap]
+* [https://www.videolan.org/videolan/mirrors.html Mirrors check]
+* [ftp://ftp.videolan.org/pub/videolan/ Main FTP]
+}}
+
+[[Category:Templates]]
+</noinclude>

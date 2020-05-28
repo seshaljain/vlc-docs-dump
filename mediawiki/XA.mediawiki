@@ -1,0 +1,4 @@
+{{mux|id=xa|encoder=n}}
+
+==Source code==
+{{file|modules/demux/xa.c|input demuxer}}

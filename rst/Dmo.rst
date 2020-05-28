@@ -1,0 +1,1 @@
+#redirect[[Direct Media Object]]

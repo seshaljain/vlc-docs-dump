@@ -1,0 +1,10 @@
+{{#switch:{{{1}}}
+|left=<div style="clear: left;"></div>
+|right=<div style="clear: right;"></div>
+|#default=<div style="clear: both;"></div>
+}}<noinclude>
+Use <nowiki>{{clear}}</nowiki> to leave a gap for things at the side of the page - like the wikipedia box - to finish.<br />
+For clearing on the left, use <nowiki>{{clear|left}}</nowiki> and for clearing on the right use <nowiki>{{clear|right}}</nowiki>. By default both are cleared.
+
+[[Category:Templates]]
+</noinclude>

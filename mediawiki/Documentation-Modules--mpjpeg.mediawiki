@@ -1,0 +1,11 @@
+{{Module|name=mpjpeg|type=Muxer|first_version=0.8.0|description=[[MPJPEG|Multipart JPEG]] muxer|sc=mpjpeg}}
+
+The option <code>--sout-mpjpeg-separator</code> was deprecated prior to VLC 0.9.0 with {{Commitdiff|fc16feb13f52733cfe8c1b1219b519158a4c19c3|l=this commitdiff}} to close {{Bug|1188}}.
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/mux/mpjpeg.c}}
+
+{{Documentation footer}}

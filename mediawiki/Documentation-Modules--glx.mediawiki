@@ -1,0 +1,13 @@
+{{Module|name=glx|type=Video output|os=Linux|description=OpenGL X video output|sc=none}}
+
+{{Stub}}
+
+== Source code ==
+* {{VLCSourceFile|modules/video_output/glx.c}}
+
+== See also ==
+* {{docmod|opengl}}
+* {{docmod|glwin32}}
+* {{docmod|glx}}
+
+{{Documentation footer}}

@@ -1,0 +1,1 @@
+#redirect [[M3U]]

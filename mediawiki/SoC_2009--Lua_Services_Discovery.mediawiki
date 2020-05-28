@@ -1,0 +1,49 @@
+{{SoCProject|year=2009|student=[[User:Sephiroth87|Fabio Ritrovato]]|mentor=[[User:J-Peg|Jean-Philippe Andre]]}}
+
+==Project Abstract==
+:The main goal of this project will be giving VideoLAN a Lua framework to load scriptable services discovery, to make them easier to write, if they don't require C complexity.
+:Second goal will be giving VideoLAN access to a great number of online music and video services, like Jamendo, Magnatune, youtube, Dailymotion, etc..., using the new Lua modules.
+
+
+==Timeline==
+{| class="wikitable"
+|-
+! Before May 26
+| Study lua, vlc source
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline May 23]
+| '''Coding begins'''
+|-
+! May 23 - June 13
+| Code the lua framework, make sure it works...
+|-
+! June 13 - June 27
+| UI integration
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline July 6-13]
+| '''Mid-term evaluation'''
+|-
+! June 27 - August 10
+| Code the services discovery
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline August 10-17]
+| '''"Pencil down"'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline August 17-24]
+| '''Final evaluation'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline September 3]
+| '''Submitting required code samples to Google'''
+|}
+The planning is still a little vague, i still don't know examination dates, so it's just a guess, but i don't think to have big problems on working during that period (probably just a break the day of the exam or the day before...)
+
+==Current Status==
+
+===Git===
+
+You can checkout to my repository by:
+  $ git clone git://git.videolan.org/vlc-sephiroth87.git
+Remember to switch to branch "work".
+
+===Right now?===
+Studying lua, jpeg sample code...

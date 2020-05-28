@@ -1,0 +1,3 @@
+Maintenance templates: {{tl|Stub}}, {{tl|Delete}}, etc.
+
+[[Category:Templates]]

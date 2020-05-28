@@ -1,0 +1,7 @@
+{{wikipedia|Geocast}}
+
+Geocast sends a message to clients known to be located in a particular
+geographic area. Other protocols that exist are [[anycast]],
+[[broadcast]], [[multicast]] and [[unicast]].
+
+[[Category:Routing schemes]]

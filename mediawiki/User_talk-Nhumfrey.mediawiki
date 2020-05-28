@@ -1,0 +1,2 @@
+Hello,
+Thanks for your help on the VLC documentation. I see that you added documentation for an OSC module but can't find it in the VLC tree. (I haven't been following development for the last 2 or 3 months so I could have missed something.) Is this officially included in VLC? If not, it could be a good idea to add a flag to the module template to mention that a module isn't part of the official VLC tree. Cheers, [[User:Dionoea|Dionoea]] 12:18, 17 December 2008 (CET)

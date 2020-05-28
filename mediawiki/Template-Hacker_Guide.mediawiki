@@ -1,0 +1,6 @@
+{{Documentation footer}}
+<includeonly>[[Category:Hacker_Guide|{{#if:{{#titleparts:{{PAGENAME}}|0|2}}|{{#titleparts:{{PAGENAME}}|0|2}}|*}}]]
+[[Category:Coding]]</includeonly><noinclude>
+
+[[Category:Footer templates]]
+</noinclude>

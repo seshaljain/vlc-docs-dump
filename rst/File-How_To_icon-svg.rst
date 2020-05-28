@@ -1,0 +1,4 @@
+Public domain licence, from [http://www.openclipart.org/detail/67 Open
+Clip Art Library]
+
+[[Category:Stock images]]

@@ -1,0 +1,100 @@
+{{SoCProjectstudent=[[User:cyril7mentor=[[User:J-b|Jean-Baptiste
+Kempf]]}}
+
+=Qt Interface Improvements=
+
+==Abstract==
+
+Though existing Qt interface offers the user extensive control over VLC
+functionality, there is much to do from a usability point of view. The
+project aims to streamline the interface, deliver it from pointless
+elements and integrate neatly the uncoordinated dialog boxes (like
+Adjustments or Playlist) into main interface. Reorganization of the
+interface would reduce user efforts (and mouse click) needed to access
+desired feature.
+
+==Concepts==
+
+===Infinite Buttons===
+
+According to [http://en.wikipedia.org/wiki/Fitts Fitt's Law] most used
+buttons should be bigger to reduce time and effort needed to access
+them. As a consequence of the law a concept of infinite buttons was
+invented. As an illustration we can regard Mac OS menu, which is
+situated along screen edge. So any upholding gesture will bring the
+cursor to the menu. It delivers the user from spending time on braking
+along Y axis.
+
+Uses: \* fullscreen controller. The track bar along the bottom edge of
+the screen will ease controlling. Besides it will make the whole
+fullscreen controller less annoying. \* use the whole video area as a
+play|pause button.
+
+===Now playing===
+
+There is an effort to [[SoC_2009/Media_Library|make a more complicated
+media library]] with multiple playlists, searching, etc. Now playling
+list is similar to what is called playlist now. It is a non-persistent
+list which will hold the current playlist list (simmilar to iTunes and
+WMP list). Any added or dropped files will get there.
+
+===The proximity theory===
+
+Similar controls are grouped together. For example Faster and Slower
+buttons should be grouped with speed indicator.
+[http://www.artlebedev.com/mandership/136/ More about the proximity
+theory]
+
+==Todo list==
+
+-  divide Advanced Open dialog to a set of dialogs [?]
+-  incorporate Open location from clipboard dialog into Advanced Open
+   dialog (let the clipboard content be the default open target).
+-  redesign fullscreen controller
+-  get rid of the status-bar (track name is in the window title, speed
+   indicator will be together with the controller, time indicator will
+   be near the track-bar)
+-  introduce one-click track control for videotracks, audiotracks and
+   subtitles.
+-  one-click minimal view controlling
+-  incorporate the playlist dialog into the main interface
+-  integrate Now-playing list and Filters dialog as side panels
+-  current position and track length
+
+==Old mockup==
+
+[http://nichtverstehen.de/vlc/prop.png]
+
+==Timeline==
+
+May 27. Interactive GUI prototype.
+[http://nichtverstehen.de/vlc/playlists.html done preview]
+
+May 27 — May 31. Basic UI reconfiguring
+
+June 1 — June 14. Fullscreen controller redesign, widgets for fullscreen
+controller.
+
+June 15 — June 28. Main form widget development
+
+June 29 — July 12. Testing, fixing
+
+July 13 — August 9. Media library widget, now playing widget. Controls
+to control window layout
+
+August 3 — August 24. Testing
+
+=Links=
+
+-  [http://nichtverstehen.de/vlc/ Project page at my homepage]
+-  [http://people.videolan.org/~jb/VLC%20Layouts.png j-b's layouts]
+-  [http://particletree.com/features/visualizing-fittss-law/ Visualizing
+   Fitts’s Law]
+-  [http://img.artlebedev.ru/kovodstvo/business-lynch/files/2/C/2C589C3E-1023-475F-B0D7-716D3E88A903.jpg
+   online players' controls]
+-  [http://forum.videolan.org/viewtopic.php?f=10&t=58990 tonydelalande's
+   OSX intf mockup]
+-  [http://www.dudiak.com/VLC-Icons/new_interface_2.mp4 vlc 1.1 osx intf
+   demo]
+-  [http://people.via.ecp.fr/~jpeg/VideoLAN/ml-patches/ SQLite ML
+   preview]

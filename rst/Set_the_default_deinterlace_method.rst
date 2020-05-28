@@ -1,0 +1,1 @@
+#REDIRECT [[VLC HowTo/Set the default deinterlace method]]

@@ -1,0 +1,14 @@
+[[File:Cone-Forum-large.png%7Cright%7C170px%7Calt=]] VideoLAN (VLC) has
+a forum, where you can ask questions, get help or make suggestions for
+improvement.
+
+If you have a question, you can probably find an answer on one of these
+pages: \* [[Common Problems]] \* [https://www.videolan.org/doc/
+Documentation] \* Or see if the question has been answered before by
+[https://forum.videolan.org/search.php searching the forum] Check these
+before posting a new question as it will save you time waiting for a
+response at the forum.
+
+The forum is at '''https://forum.videolan.org'''
+
+[[Category:About VideoLAN‏‎]]

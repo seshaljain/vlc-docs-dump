@@ -1,0 +1,25 @@
+{{codec video|id=h264|encoder=x264|mod=h26x}}
+{{wikipedia|H.264/MPEG-4 AVC}}
+{{mmwiki|H.264}}
+
+'''H.264''', or '''Advanced Video Coding''' ('''AVC''') is a video codec described by [[MPEG-4]] Part 10. It can be used in a wide spectrum of applications, ranging from file storage to real-time streaming in video conferencing systems.
+
+Similar codecs are [[H.263]] (its predecessor) and [[H.265]] (its very recent successor).
+
+Although [[Documentation:Modules/h26x|h26x]] is used to decode it, [[Documentation:Modules/x264|x264]] is used to encode it (see [[x264]]).
+
+== See also ==
+* [[H.261]]
+* [[H.262/MPEG-2 Part 2]]
+* [[H.263]]
+* [[H.264/MPEG-4 AVC]]
+* [[High Efficiency Video Coding|H.265/HEVC]]
+
+== Specification ==
+For a technical description read [https://web.archive.org/web/20080518031951/http://www.dspr.com/www/technology/csvt_overview.pdf http://www.dspr.com/www/technology/csvt_overview.pdf]
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/mpeg/h26x.c}}
+* {{VLCSourceFile|modules/codec/x264.c}}
+
+{{stub}}

@@ -1,0 +1,1 @@
+#REDIRECT [[Set file specific brightness or contrast]]

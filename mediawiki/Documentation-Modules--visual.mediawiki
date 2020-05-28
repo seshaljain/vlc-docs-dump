@@ -1,0 +1,145 @@
+{{Module|name=visual|type=Visualization|description=Visualizer filter}}
+
+For the option <code>--effect-fft-window</code> the values for <var>window_list</var> originate from {{VLCSourceFile|modules/visualization/window_presets.h}}.
+
+The code claims <code>--spect-color</code> must be within 1 &le; <var>x</var> &le; 127 but no checks seem to be performed.
+
+The options <code>--visual-nbbands</code>, <code>--visual-separ</code>, <code>--visual-amp</code> and <code>--spect-nbbands</code> have been obsolete since VLC 1.0.0.
+
+This module has a single shortcut: <code>visualizer</code> (specifically with a <samp>z</samp>).
+
+== Options ==
+{{Option
+|name=effects-list
+|value=string
+|default=spectrum
+|description=A list of visual effect, separated by commas
+|select={dummy,scope,spectrum,spectrometer,vuMeter}
+}}
+{{Option
+|name=effects-width
+|value=integer
+|default=800
+|description=The width of the effects video window, in pixels
+}}
+{{Option
+|name=effects-height
+|value=integer
+|default=500
+|description=The height of the effects video window, in pixels
+}}
+{{Option
+|name=effect-fft-window
+|value=string
+|default=flat
+|description=The type of FFT window to use for spectrum-based visualizations. Values correspond to "None", "Hann", "Flat Top", "Blackman-Harris", "Kaiser"
+|select={none,hann,flattop,blackmanharris,kaiser}
+}}
+{{Option
+|name=effect-kaiser-param
+|value=float
+|default=3.0f
+|description=The parameter alpha for the Kaiser window. Increasing alpha increases the main-lobe width and decreases the side-lobe amplitude
+}}
+
+=== Spectrum analyser ===
+{{Option
+|name=visual-80-bands
+|value=boolean
+|default=enabled
+|description=Show 80 bands instead of 20
+}}
+{{Option
+|name=visual-peaks
+|value=boolean
+|default=enabled
+|description=Draw peaks in the analyzer
+}}
+
+=== Spectrometer ===
+{{Option
+|name=spect-show-original
+|value=boolean
+|default=disabled
+|description=Enable the "flat" spectrum analyzer in the spectrometer
+}}
+{{Option
+|name=spect-show-base
+|value=boolean
+|default=enabled
+|description=Draw the base of the bands
+}}
+{{Option
+|name=spect-radius
+|value=integer
+|default=42
+|description=Defines radius size in pixels, of base of bands (beginning)
+}}
+{{Option
+|name=spect-sections
+|value=integer
+|default=3
+|min=1
+|max=<var>INT_MAX</var>
+|description=Determines how many sections of spectrum will exist
+}}
+{{Option
+|name=spect-color
+|value=integer
+|default=80
+|description=[[YUV]]-Color cube shifting across the V-plane ( 0 - 127 )
+}}
+{{Option
+|name=spect-show-bands
+|value=boolean
+|default=enabled
+|description=Draw bands in the spectrometer
+}}
+{{Option
+|name=spect-80-bands
+|value=boolean
+|default=enabled
+|description=Show 80 bands instead of 20
+}}
+{{Option
+|name=spect-separ
+|value=integer
+|default=1
+|description=Number of blank pixels between bands
+}}
+{{Option
+|name=spect-amp
+|value=integer
+|default=8
+|description=This is a coefficient that modifies the height of the bands
+}}
+{{Option
+|name=spect-show-peaks
+|value=boolean
+|default=enabled
+|description=Draw peaks in the analyzer
+}}
+{{Option
+|name=spect-peak-width
+|value=integer
+|default=61
+|description='''''Additions or subtractions of pixels''''' on the peak width
+}}
+{{Option
+|name=spect-peak-height
+|value=integer
+|default=1
+|description='''''Total pixel height''''' of the peak items
+}}
+
+== Screenshots ==
+Click thumbnails for larger images and author attribution.
+<gallery>
+File:Spectrum visualization.png|Spectrum
+File:Spectrometer on Ubuntu.png|Spectrometer
+</gallery>
+
+== Source code ==
+* {{VLCSourceFile|modules/visualization/visual/visual.c}}
+
+{{Documentation footer}}

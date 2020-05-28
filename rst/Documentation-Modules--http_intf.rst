@@ -1,0 +1,128 @@
+{{Moduletype=Control interface|description=Allows control of VLC over a
+http connection}} The '''http''' lua module makes it possible to
+[[Control VLC via a browser]] interface which can be enabled by going to
+Settings > Add Interface > Web Interface.
+
+== How to use == To use this interface as the primary interface, launch
+VLC with the parameter "-I http" or set http to be the primary interface
+via the preferences (see below for instructions). To launch it as a
+secondary interface you should launch VLC with the parameter
+"--extraintf=http" or set http as an extra-interface in the Preferences
+area mentioned above.
+
+Now, when you start VLC, a web interface will be created and running on
+your computer on port 8080 (by default, but you can change this
+yourself). For your information, you can connect to a web server
+listening on an arbitrary port using
+`http://server:port <http://server:port>`__ syntax, so you can test the
+VLC web interface using this URL: http://127.0.0.1:8080.
+
+If you get a ''401 Unauthorized'' error message and you have set a
+password on the interface as described in [[#Access_control]] below,
+leave the username field blank and enter the password that you have set.
+
+VLC 2.0 and below: If you try to access the web interface from another
+computer or by using your computer's IP address and you get a ''403
+Access Denied'' error message, you have to allow access for the IP or IP
+range first: see [[#Access_control]] below.
+
+The following options can be used to specify an IP and a different port
+on which you want to run the interface. ===VLC 2.0.0 and later===
+--http-host host --http-port port
+
+or on Windows platforms:
+   --http-host'''='''host --http-port'''='''port
+
+To enable the HTTP control interface as a primary or extra interface, go
+to Tools → Preferences (select "All" radio-button) → Interface → Main
+interfaces → check "Web": [[File:VLC 2.0 Activate
+HTTP.png‎center|Activating VLC 2.0's HTTP interface]]
+
+===VLC before 2.0.0===
+   --http-host host:port
+
+or on Windows platforms:
+   --http-host'''='''host:port
+
+To enable the http interface as a primary or extra interface, go to
+Tools > Preferences > Interface > General > Interface module: http
+remote control interface. In later versions it might be Tools →
+Preferences (select All radiobutton) → All radio button → Interface →
+Main interfaces → check HTTP remote control)
+
+== Configure ==
+
+=== Access control === ==== VLC 2.1.0 and later ==== Access control has
+been simplified in VLC 2.1.0. You can restrict access to the web
+interface by using a simple password that can be set under Tools →
+Preferences (all) → Interfaces → Main interfaces → Lua → Lua HTTP →
+Password.
+
+It can also be set from the command line as the option 'http-password',
+like so:
+
+   --http-password <your password here>
+
+When logging in, '''leave the username field blank'''.
+
+==== VLC before 2.1.0 ==== Access control for specific IP addresses or
+ranges of IP addresses to the http interface can be done globally by
+editing "/usr/share/vlc/lua/http/.hosts" in Linux, "{{Path to
+VLCdir=y|q=n}}luahttp.hosts" on Windows and
+"/Applications/VLC.app/Contents/MacOS/share/lua/http/.hosts" on Mac OS
+X.
+
+The existing .hosts file contains examples and can easily customized to
+meet your needs. On [[Windows]], note that you might need administrator
+rights to edit this file.
+
+   Note that the global file gets overwritten when/if you
+   reinstall/upgrade VLC. This is solved by some Linux distributions by
+   symlinking the file to /etc. If your distribution does not do this;
+   execute the following as root: mkdir /etc/vlc && cd
+   /usr/share/vlc/lua/http/ && mv .hosts /etc/vlc && ln -s
+   /etc/vlc/.hosts .hosts
+
+=== Customization === It is now also possible to customize the Web
+interface. See the html pages in share/html (within the VLC directory
+for Windows, within the VLC.app package on Mac OS X and somewhere in
+/usr/local for Linux). This can be a very cool interface if you spent
+some time developing nice UI elements. If you would like to contribute a
+new 'Default' html interface, you are also very welcome (keep it small).
+
+An additional theme has been created (by Lucas Steigmeyer a.k.a.
+Plezops) specifically for PDA's or PSP's in mind. This additional theme
+has a grey theme and will fit nicely on most portable versions of web
+browsers. The theme has the layout reordered to fit the screen better.
+You may download this theme from
+[http://www.orrentdesign.com/outsideResources/VLC_Graphite.zip
+OrrentDesign.com]. A readme file is included. View for install
+instructions and other info.
+
+== Notes == \* On versions of VLC (windows) that are greater than .8
+(possibly previous versions, though not confirmed) the HTTP interface
+index file is stored in the "http" folder in the VLC folder. There is a
+README file that serves as documentation, [[VLC HTTP requests]]. \* A
+new http interface is available since 0.8.5. However this new interface
+does not work on handheld PDA's running the Windows Mobile OS, it also
+does not work with JavaScript turned off in your browser. This old
+interface was available at <nowiki>http://\ <ip>:<port>/old/</nowiki>
+for releases prior to 1.0.0. \* Since 2.0.0, the HTTP interface has been
+rewritten from the ground up as a lua plugin with AJAX, and the oldhttp
+interface no longer exists. \* Since 2.1.0, the HTTP interface no longer
+uses the hosts file, but instead a password.
+
+For more information about the HTTP interface, see the document "VLC
+Play-Howto", the paragraph
+[//web.archive.org/web/20050912064324/http://www.videolan.org/doc/play-howto/en/ch04.html#id295619
+"The HTTP interface"] in chapter 4 ("Advanced use of VLC") and
+[[Documentation:Play HowTo/Building Pages for the HTTP Interface]].
+([//web.archive.org/web/20050901191213/http://videolan.org/doc/play-howto/en/apb.html
+"See also old/outdated appendix B"]).
+
+==See also== \* [[Documentation:Play HowTo/Building Pages for the HTTP
+Interface]] (may be obsolete) \* [[Interfaces]]
+
+[[Category:Interfaces]]
+
+{{Documentation footer}}

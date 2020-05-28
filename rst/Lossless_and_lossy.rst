@@ -1,0 +1,19 @@
+'''Lossless''' is a way of [[compress]]ing data which is fully
+reversible, i.e., does not "throw away" data. A losslessly compressed
+file can be used to create an exact copy of the source file.
+
+'''Lossy''' is the opposite of lossless. A certain amount of data is
+discarded; how much is usually dependent upon a quality or [[bit rate]]
+setting of the codec. This makes the file (or stream) much smaller that
+lossless compression, but reduces the quality. It is impossible to
+[[transcode]] from one lossy format to another without further degrading
+quality.
+
+==Lossless Codecs== {{MmwikiCategory:Lossless Audio Codecs}} \* [[WAVE]]
+(WAVE is technically a container format, but usually contains lossless
+PCM audio.) \* [[FLAC]] \* [[WavPack]] \* [[HuffYUV]] video codec
+
+==Lossy Codecs== \* [[MP3]] \* [[Vorbis]] \* [[AAC]] \* [[AC3]] \*
+[[WMA]] \* [[Speex]] \* Most [[video codec]]s
+
+[[Category:Glossary]]

@@ -1,0 +1,5 @@
+== sitesupport-url ==
+
+* The link labelled 'sitesupport' needs changing. Perhaps should point to http://www.videolan.org/contribute.html or [[Help_VideoLAN]]?
+** Right, or even delete it. This link is still here from the default wiki configuration. I redirect it to [[Help_VideoLAN]] and will add [http://www.videolan.org/contribute.html contribute.html] link in this page. --[[User:Thannoy|Thannoy]] 09:46, 30 November 2009 (UTC)
+** In fact I deleted this link, [[Help_VideoLAN]] is already linked through "Help the project" link". --[[User:Thannoy|Thannoy]] 09:54, 30 November 2009 (UTC)

@@ -1,0 +1,22 @@
+This page outlines lists some other media players and describes their
+compatibility with [[VLC media player]]. You might also like to look at
+the compatibility of your [[Set Top Box]], if you have one.
+
+''See also
+   '''[[:Category:Player]]'''.''
+
+===Open Source Players=== \* [[Foobar2000]] \* [[Helix]] \* [[Media
+Player Classic]] \* [[MPlayer]] \* [[Noatun]] \* [[Ogle]] \*
+[[Songbird]] \* [[Xine]] \* [[XMMS]]
+
+===Proprietary Media Players=== \* [[Elecard MPEG2 decoder]] (by
+Elecard) \* [[iTunes]] (by Apple) \* [[LSX MPEG Player]] \* [[MacTV]] \*
+[[QuickTime Player]] (by Apple) \* [[RealOne Player]] (by RealNetworks)
+\* [[Winamp]] (by Nullsoft) \* [[Windows Media Player]] (by Microsoft)
+
+===Links=== A list of available freeware MPEG-4 players with [[RTSP]]
+capabilities can be found at
+[http://www.audiocoding.com/modules/wiki/?page=MPEG-4+players
+audiocoding.com]
+
+[[Category:Player]]

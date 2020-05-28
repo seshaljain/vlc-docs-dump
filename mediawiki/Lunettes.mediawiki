@@ -1,0 +1,42 @@
+__NOTOC__
+= VLC for Mac death is "greatly exaggerated" / What is Lunettes?  =
+VLC for Mac is being maintained. However the '''old Cocoa graphical interface''' of VLC, is not being maintained at this time. 
+
+The reason is that we are in the process of '''rewriting a new interface for VLC'''. Its codename is '''Lunettes'''. 
+
+Why a rewrite? This is something really easy to see. VLC for Mac is just not "Mac" enough. 
+
+So far, we could name 3 reasons for that: 
+
+== VLC for Mac must attract designers. ==
+They can't easily give a refresh of the graphical interface. 
+
+Hence, we have decided to offer to designer the possibility to edit via a simple text file the look of VLC. Even Windows and Fullscreen Head-Up-Display can '''be changed using CSS'''. 
+
+== VLC for Mac's interface code comes from the 2000s. ==
+We need to refresh it. 
+
+'''We want to use [[VLCKit]] which is pure Cocoa''', Objective-C 2.0 with bindings supports. This will help us concentrating on features. 
+
+As a positive side effects, we'll not use old non-64 bits compatible APIs. 
+
+== VLC for Mac needs a good interface to be the best Video Player. ==
+We want to make sure you'll get the best experience ever when watching your favorites TV shows or Movies using VLC. 
+
+* For instance, if I am watching a TV show, and then quit Lunettes. At next launch Lunettes will offer you to '''go back to where you were'''.
+* Then, we added a better way to visualize the media discovery. This is a seldom known feature of VLC. Now, if you are on a local network that streams TV content (Freebox), '''Lunettes will automatically show them'''.
+* Then the famous '''playlist fades out''': It is not visible by default, and you don't have to use it anymore.
+* Also in fullscreen you can now '''scroll through your playlists''' or TV channels.
+* And finally '''Lunettes is 64 bits'''.
+
+
+For now, Lunettes is being hosted at: https://wiki.github.com/pdherbemont/Glasses 
+
+That said, Lunettes is still under heavy development. And we hope to be able to release a test version soon.
+
+We still want new developers to help us! Try to build VLC and Lunettes! 
+
+Pierre.
+
+[[Category:macOS]]
+[[Category:Stubs]]

@@ -1,0 +1,9 @@
+== Summary == Update logo to be the one used by
+[https://www.apple.com/safari/ Safari]. 256x255 PNG thumbnail of
+[https://commons.wikimedia.org/wiki/File:Safari_browser_logo.svg this
+file] taken from Commons. Public Domain, though it may be protected as a
+trademark in some jurisdictions.
+
+== Licensing == {{PD}}
+
+[[Category:Logos]]

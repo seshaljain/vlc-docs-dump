@@ -1,0 +1,12 @@
+{{Template Sandbox 2}} <noinclude> \__NOINDEX_\_ ----
+
+This is a [[template]] version of the [[Sandbox]]. This template can be
+filled with arbitrary data for testing in a non-disruptive way.
+{{tl|{{PAGENAME}} 2}} will automatically be called, allowing for two
+levels of testing.
+
+'''<span
+class="plainlinks">[{{fullurl:{{FULLPAGENAME}}|oldid=61313&action=edit&summary=Reset&minor=yes}}
+Click here]</span>''' to reset this page.
+
+[[Category:Templates]] </noinclude>

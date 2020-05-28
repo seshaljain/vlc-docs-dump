@@ -1,0 +1,1 @@
+[[Category:macOS images]] [[Category:Preferences images]]

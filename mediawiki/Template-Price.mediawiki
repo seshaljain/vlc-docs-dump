@@ -1,0 +1,18 @@
+<span style="float: right; color: #8F0066; font-size: large;">{{{1}}}  {{{2|€}}}</span><noinclude>
+==Usage==
+Put a price on something!
+
+<code><nowiki>{{price|amount of money|currency (optional)}}</nowiki></code>
+
+==Examples==
+<nowiki>{{price|500|₹}}</nowiki>
+{{price|500|₹}}
+<br /><br />
+<nowiki>{{price|8.50|$}}</nowiki>
+{{price|8.50|$}}
+<br /><br />
+<nowiki>{{price|6}}</nowiki>
+{{price|6}}
+
+[[Category:Templates]]
+</noinclude>

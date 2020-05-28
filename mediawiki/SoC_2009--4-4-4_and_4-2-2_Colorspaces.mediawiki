@@ -1,0 +1,26 @@
+{{SoCProject|year=2009|student=Jan Hämäläinen|mentor=Jason Garrett-Glaser }}
+
+==Project Abstract==
+Currently x264 only supports encoding with 4:2:0 chroma subsampling. The goal of this project is to add support to the 4:2:2 and 4:4:4 colorspaces.
+
+==Timeline==
+{| class="wikitable"
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline May 23]
+| '''Coding begins'''
+|-
+! June 17
+| '''Exam'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline July 6-13]
+| '''Mid-term evaluation'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline August 10-17]
+| '''"Pencil down"'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline August 17-24]
+| '''Final evaluation'''
+|-
+! [http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline September 3]
+| '''Submitting required code samples to Google'''
+|}

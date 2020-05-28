@@ -1,0 +1,49 @@
+{{See also|CD}}
+{{Module|name=cdda|type=Access|first_version=&le; 0.8|description=Read a [[CD]]|sc=cdda|sc2=cddasimple}}
+
+The option <code>--cd-audio</code> is new as of {{Commitdiff|98dd4c30db57f88a92be16aa694f5d9fda08c15c}} (2016). The option <code>--cdda-caching</code> (seems) to be deprecated as of {{Commitdiff|43bb27d91ce344eee93df3c956cd2513e3eecc3c}} (2018).
+
+The options <code>--cdda-track</code> plays a particular track (like <code>@track</code> does). <code>--cdda-first-sector</code> and <code>cdda-last-sector</code> seem to be hints to VLC to skip [[wikipedia:disk sector|disk sector]]s at the beginning or end.
+
+{{Option
+|name=cd-audio
+|value=string
+|description=Audio CD device
+}}
+{{Option
+|name=cdda-track
+|value=integer
+|default=0
+|description=NULL
+}}
+{{Option
+|name=cdda-first-sector
+|value=integer
+|default=-1
+|description=NULL
+}}
+{{Option
+|name=cdda-last-sector
+|value=integer
+|default=-1
+|description=NULL
+}}
+{{Option
+|name=cddb-server
+|value=string
+|default=freedb.videolan.org
+|description=Address of the CDDB server to use
+}}
+{{Option
+|name=cddb-port
+|value=integer
+|min=1
+|max=65535
+|default=80
+|description=CDDB Server [[port]] to use
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/cdda.c}}
+
+{{Documentation}}

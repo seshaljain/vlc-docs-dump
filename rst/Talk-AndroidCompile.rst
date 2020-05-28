@@ -1,0 +1,6 @@
+When I Get VLC Source .but it prompt：sudo git clone
+git://code.videolan.org/videolan/vlc-android.git Cloning into
+'vlc-android'... fatal: unable to connect to code.videolan.org:
+code.videolan.org[0: 88.191.250.9]: errno=Connection refused
+code.videolan.org[1: 2a01:e0d:1:3:58bf:fa02:c0de:70]: errno=Address
+family not supported by protocol Please help me！

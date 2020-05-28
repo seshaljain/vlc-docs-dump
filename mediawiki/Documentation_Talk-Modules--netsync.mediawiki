@@ -1,0 +1,11 @@
+This one might be a hardy to get working. After a two hour testing period I've come to the conclusion that I can't do it, but it would be awsome if someone could help out, to get this one working! :)
+: Last time I tried it worked fine. (Note that the forum is more appropriate for VLC support) [[User:Dionoea|Dionoea]] 12:15, 12 September 2007 (CEST)
+:: Funny how some people can ask questions in Wiki and others can't Dionoea. You went to my question and told me basically to get lost and this person gets something completely different. If you feel the need to put off possible contributing developers your doing a good job. i am a developer and i was asking a development question just like this guy in wiki and you told me to get lost. not very polite. [[User:Hellimod|Hellimod]]
+::: 1/ I didn't tell you to get lost. 2/ I told you that you'd be more likely to get help in the forum. I'm sorry if you felt offended but that's how I answered all the "support like" questions asked in wiki edits recently. (And I doubt that I'd be able to help you more if you don't provide details about what you were doing and how ... but that's another issue) [[User:Dionoea|Dionoea]] 14:00, 21 September 2007 (CEST)
+
+::::I've just been trying to get it working too, im pretty sure its working now.  What i did was to remove the "--control netsync" option from the clients options and it started working. To clarify:
+:Server:
+ %''' vlc udp://@239.255.1.1 --control netsync --netsync-master '''
+:And clients:
+ %''' vlc udp://@239.255.1.1 --netsync-master-ip 192.168.0.1 '''
+--[[User:Warfish|Warfish]] 16:25, 20 February 2008 (CET)

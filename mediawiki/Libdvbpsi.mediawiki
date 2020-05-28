@@ -1,0 +1,11 @@
+{{Website|libdvdpsi|on=videolan.org|https://www.videolan.org/developers/libdvbpsi.html}}
+{{Languages}}
+{{Lowercase}}
+The libdvbpsi is part of the VideoLAN project.
+
+The libdvbpsi is a [[library]] so it can also be used with extra programs that need [[DVB]] and PSI decoders and generators.
+
+libdvbpsi makes [[VLC media player]] or other projects capable of [[demultiplex]]ing a satellite DVB stream. The library aims at making it easy to decode PSI tables (such as PAT, PMT etc.) present in a TS/DVB stream.
+
+[[Category:Libraries]]
+[[Category:VideoLAN projects]]

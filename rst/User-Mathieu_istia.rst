@@ -1,0 +1,25 @@
+== General presentation ==
+
+Hello!
+
+My name is '''Mathieu DUCAMP'''. I'm a student of ISTIA at University of
+Angers in France ([http://www.istia.univ-angers.fr/ ISTIA]).
+
+I work on a project for the company Actech called Recording. I work with
+the members of this site like [http://wiki.videolan.org/User:Thannoy
+Thannoy], [http://wiki.videolan.org/User:Remiii Remiii] and an other
+student of my school [http://wiki.videolan.org/User:Aurel_istia
+aurel_istia].
+
+For my project, I begin in the VLC development, and I risk to have some
+questions and I hope you help me. Thank you.
+
+You can see my advancement in my project
+[http://shiva.istia.univ-angers.fr/~adroch/index.php?page=suiviPj here]
+,but it is in French (sorry!).
+
+See you!
+
+== Contact ==
+
+IRC : myNickName on freenode and #Mathieu_istia on freenode

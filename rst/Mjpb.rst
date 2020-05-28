@@ -1,0 +1,3 @@
+#REDIRECT [[MJPEG]]
+
+[[Category:Container]] [[Category:Container Decoder]]

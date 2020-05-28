@@ -1,0 +1,29 @@
+{| class="mw-datatable sortable" style="display: inline-table;"
+|+ Integer alignment mapping
+! scope="col" | Integer !! scope="col" | Alignment !! scope="col" | Comment
+|- style="font-weight:bold;"
+| 0 || Center ||
+|- style="font-weight:bold;"
+| 1 || Left ||
+|- style="font-weight:bold;"
+| 2 || Right ||
+|- style="font-weight:bold;"
+| 4 || Top ||
+|- style="font-weight:bold;"
+| 8 || Bottom ||
+|-
+| 5 || Top-Left || 4 + 1
+|-
+| 6 || Top-Right || 4 + 2
+|-
+| 9 || Bottom-Left || 8 + 1
+|-
+| 10 || Bottom-Right || 8 + 2
+|-
+| 3 || {{n/a}} || contradictory
+|-
+| 7 || {{n/a}} || contradictory
+|}<noinclude>
+
+[[Category:Templates]]
+</noinclude>

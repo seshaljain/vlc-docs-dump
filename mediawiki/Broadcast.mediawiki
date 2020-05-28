@@ -1,0 +1,5 @@
+{{wikipedia|Broadcasting (networking)}}
+
+Broadcast sends a message to all possible clients. Other protocols that exist are [[anycast]], [[geocast]], [[multicast]], and [[unicast]].
+
+[[Category:Routing schemes]]

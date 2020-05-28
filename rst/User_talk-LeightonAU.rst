@@ -1,0 +1,5 @@
+The "Documentation: Streaming How To New" is excellent and I found that
+the recommended settings work with VLC 2.1.5, however this needs to be
+extended to include the more common HTTP protocol. I could not get this
+to work despite two videos on YouTube, that show it working on earlier
+versions.

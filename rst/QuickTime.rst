@@ -1,0 +1,30 @@
+{{websitehttps://www.apple.com/quicktime/}} QuickTime is developed by
+Apple and is the default player on any [[macOS]] system. There was a
+version available for Windows, but support was dropped in 2016. It is a
+freemium player that charges more for exporting videos into different
+[[codec]]s. It is extensible through plugins.
+
+==Compatibility== {{VLC}} has a problem understanding certain types of
+streamed .[[mov]] files (the native format for QuickTime). If a file can
+be played in QuickTime and not VLC, open it in QuickTime and let it
+decide which datarate is best for your connection, then pause it and
+open the stream info. You should then be able to copy the link and open
+it in VLC.
+
+==A sample of how to stream from v4l source to quicktime player== The
+following command is an example of streaming from [[Video4Linux]] to
+QuickTime (player):
+
+   {{%}} vlc -vvv --intf dummy
+   v4l:/dev/video0:norm=pal:frequency=37525:size=720x576:channel=0:adev=/dev/sound/audio:audio=0
+   --sout '#transcode{acodec=mp4a,
+   vcodec=mp4v,vb=2000,ab=128,vt=800000,keyint=80}:rtp{dst=239.2.12.42,port=1234,
+   sdp=http:/myserver.dot.com:8082/tv.sdp}'
+
+You need VLC and [[FFmpeg]] [[compile]]d with the [[libfaad]] (the FAAD2
+library). I have tested it with vlc-0.7.2 on both side client and server
+on Linux and QuickTime on Windows machines.
+
+==See Also== \* [[MacTV]]
+
+[[Category:iOS]] [[Category:Player]]

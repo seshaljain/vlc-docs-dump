@@ -1,0 +1,127 @@
+{{RightMenu|documentation streaming howto toc}}
+
+==Introduction==
+
+===Overview===
+
+VideoLAN is a complete software solution for video streaming, developed
+by students of the [http://www.ecp.fr Ecole Centrale Paris] and
+developers from all over the world, under the
+[http://www.gnu.org/copyleft/gpl.html GNU General Public License] (GPL).
+VideoLAN is designed to stream MPEG videos on high-bandwidth networks.
+
+The VideoLAN solution includes: \* VLS (VideoLAN Server), which can
+stream MPEG-1, MPEG-2 and MPEG-4 files, DVDs, digital satellite
+channels, digital terrestrial television channels and live videos on the
+network in unicast or multicast \* VLC (initially VideoLAN Client),
+which can be used as a server to stream MPEG-1, MPEG-2 and MPEG-4 files,
+DVDs and live videos on the network in unicast or multicast ; or used as
+a client to receive, decode and display MPEG streams under multiple
+operating systems
+
+Here is an illustration of the complete VideoLAN solution:
+
+[[File:Streamingdiag.JPG%7C500px%7CGlobal VideoLAN solution]] {{Clear}}
+
+More details about the project can be found on the
+[http://www.videolan.org VideoLAN Web site].
+
+===VideoLAN software===
+
+====VLC Media Player====
+
+VLC works on many platforms: Linux, Windows, Mac OS X, BeOS, *BSD,
+Solaris, Familiar Linux, Yopy/Linupy and QNX. It can read:* MPEG-1,
+MPEG-2 and MPEG-4 / DivX files from a hard disk, a CD-ROM drive, ... \*
+DVDs and VCDs \* from a satellite card (DVB-S) \* from a camcorder (DV)
+\* MPEG-1, MPEG-2 and MPEG-4 streams from the network sent by VLS or
+VLC's stream output
+
+VLC can also be used as a server to stream: \* MPEG-1, MPEG-2 and MPEG-4
+/ DivX files, \* DVDs, \* from an MPEG encoding card, \* from a
+camcorder DV, to: \* one machine (i.e. to one IP address): this is
+called ''unicast'', \* a dynamic group of machines that the clients can
+join or leave (i.e. to a multicast IP address): this is called
+''multicast'', in IPv4 or IPv6.
+
+To get the complete list of VLC's possibilities on each platform
+supported, see the [http://www.videolan.org/vlc/features.html VLC
+features page].
+
+Note: VLC doesn't work on Mac OS 9, and probably never will.
+
+====Mini-SAP-server====
+
+You can add a channel information service based on the SAP/SDP standard
+to the VideoLAN solution. The mini-SAP-server sends announces about the
+multicast programs on the network in IPv4 or IPv6, and VLCs receive
+these annouces and automatically add the programs announced to their
+playlist.
+
+The mini-SAP-server works under Linux and Mac OS X.
+
+==Muxers and codecs==
+
+===What is a codec ?===
+
+To fully understand the VideoLAN solution, you must understand the
+difference between a ''codec'' and a ''container format''.
+
+A ''codec'' is a compression algorithm, used to reduce the size of a
+stream. There are audio codecs and video codecs. MPEG-1, MPEG-2, MPEG-4,
+Vorbis, DivX, ... are codecs.
+
+===What is a container format ?===
+
+To start off, think of a ''container format'' as a standard shipping
+box. You get a box in the mail and you think, "Cool! What's inside?" You
+don't really care about the box itself, you care about what's in that
+box. The problem? You can't see into the box. So what do you do? You get
+a knife and cut it open.
+
+A ''container format'' follows this same basic idea. It contains one or
+several streams already encoded by codecs. Very often, there is an audio
+stream and a video one. AVI, Ogg, MOV, ASF, MP4 ... are container
+formats. The streams contained can be encoded using different codecs. In
+a perfect world, you could put any codec in any container format.
+Unfortunately, there are some incompatibilities. You can find a matrix
+of possible codecs and container formats on the
+[http://www.videolan.org/streaming/features.html features page].
+
+===Encoding a video===
+
+This is the step where you are going to create the shipping box.
+
+# Encode your file. This means compressing a file, whether it is audio
+or video, to another format that normally takes up less physical drive
+space than the previous format. Common video encoding methods are DivX,
+MPEG-1, MPEG-2, MPEG-4 ... most common audio encoding method is MP3 or
+ogg-vorbis. # Mux (or multiplex). This means joining separate parts of
+the video (or streams) into one file.
+
+===Playing a video===
+
+Now that you have your shipping box, you need to open it before you can
+see the content. That's exactly what VLC will do. To decode a stream,
+VLC first ''demuxes'' it. This means that it reads the container format
+and separates audio, video, and subtitles, if any. Demuxing files
+doesn't weaken the video or audio quality, neither does it do anything
+for them; it simply saves them into separate files, each containing one
+element of the original file. Then, each of these is passed to a
+''decoder'' that does the mathematical processing to decompress the
+stream.
+
+There is a particular thing about MPEG: \* MPEG is a codec. There are
+several versions of it, called MPEG-1, MPEG-2, MPEG-4, ... \* MPEG is
+also a container format, sometimes referred to as MPEG System. There are
+several types of MPEG: ES, PS, and TS. For instance, when you play an
+MPEG video from a DVD, the MPEG stream is actually composed of several
+streams (called Elementary Streams, ES): there is one stream for video,
+one for audio, another for subtitles, and so on. These different streams
+are mixed together into a single Program Stream (PS). So, the .VOB files
+you can find in a DVD are actually MPEG-PS files. However, this PS
+format is not adapted for streaming video through a network or by
+satellite. So, another format called Transport Stream (TS) was designed
+for streaming MPEG videos through such channels.
+
+{{Documentation}}

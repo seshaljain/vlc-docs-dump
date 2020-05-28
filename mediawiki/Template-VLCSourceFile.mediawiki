@@ -1,0 +1,18 @@
+{{Git link|p={{{p|vlc.git}}}|a=blob|f={{{name|{{{1|}}}}}}|l={{{l|{{{name|{{{1|}}}}}}}}}}}{{#if:{{{2|}}}|&#32;({{{2}}})|}}{{#ifeq:{{{p|vlc.git}}}|vlc.git| |&#32;({{{p}}})}}<noinclude>
+==Usage==
+Same as {{tl|file}} except that this template does not add the bulleted list.
+
+Parameters:
+* '''<code><nowiki>|l=</nowiki></code>''' custom label (optional)
+* '''<code><nowiki>|p=</nowiki></code>''' links to other branches, defaults to <samp>vlc.git</samp> (optional)
+
+== See also ==
+* {{tl|Commit}}
+* {{tl|Commitdiff}}
+* {{tl|File}}
+* {{tl|SVNSourceFile}}
+* {{tl|VLCSourceFile}}
+* {{tl|VLCSourceFolder}}
+
+[[Category:Templates]]
+</noinclude>

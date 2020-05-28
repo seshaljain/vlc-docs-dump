@@ -1,0 +1,16 @@
+__NOTOC__
+{{Back to|VSG:Main}}
+==Audio Playback Issue==
+[[File:Cone-Audio-large.png|right|170px|alt=]]
+{{VSGEntry|Lack of Audio|VSG:Audio:None|No sound at all.}} 
+{{VSGEntry|Poor Quality Audio|VSG:Audio:Bad|The audio is not good (and it's not the track).}} 
+{{VSGEntry|Audio is good but...|VSG:Audio:GoodBut|You have troubles with Synchronisation, Volume...}}
+
+
+==How do I...==
+{{VSGEntry|Adjust audio delay|VSG:Audio:Delay|How do I adjust audio delay?}} 
+{{VSGEntry|Play external audio|VSG:Audio:External|How can I play external audio tracks with video?}} 
+{{VSGEntry|Change my output device?|VSG:Audio:Output|If you've got multiple output devices, this is how you change.}} 
+{{VSGEntry|Override speaker setup?|Override speaker setup|e.g. If you want to always default to stereo}} 
+
+{{VSG}}

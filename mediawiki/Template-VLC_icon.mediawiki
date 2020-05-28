@@ -1,0 +1,31 @@
+<!--
+-->{{#switch:{{{1}}}<!--
+  -->|full       = [[File:LargeVLC.png|300px]]<!--
+  -->|large      = [[File:LargeVLC.png|192px]]<!--
+  -->|medium     = [[File:LargeVLC.png|128px]]<!--
+  -->|small      = [[File:LargeVLC.png|64px]]<!--
+  -->|large icon = [[File:LargeVLC.png|22px]]<!--
+  -->|icon<!--
+  -->|#default   = [[File:LargeVLC.png|16px]]<!--
+-->}}<noinclude>
+== Usage ==
+ {{{{PAGENAME}}<nowiki>}}</nowiki>
+ {{{{PAGENAME}}<nowiki>|keyword}}</nowiki>
+Keywords available:
+* '''<code>full</code>''' for 300 x 300 pixels
+* '''<code>large</code>''' for 192 x 192 pixels
+* '''<code>medium</code>''' for 128 x 128 pixels
+* '''<code>small</code>''' for 64 x 64 pixels
+* '''<code>large icon</code>''' for 22 x 22 pixels
+* '''<code>icon</code>''' for 16 x 16 pixels (default and actual size in many cases)
+
+All keywords, in order:
+
+{{{{PAGENAME}}|full}}
+{{{{PAGENAME}}|large}}
+{{{{PAGENAME}}|medium}}
+{{{{PAGENAME}}|small}}
+{{{{PAGENAME}}|large icon}}
+{{{{PAGENAME}}|icon}}
+[[Category:Templates]]
+</noinclude>

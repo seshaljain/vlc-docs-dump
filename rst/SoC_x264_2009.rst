@@ -1,0 +1,216 @@
+[[x264]] has loads of possibilities for [[SoC 2009]] projects. Those
+listed here are merely suggestions; other ideas are always possible if
+they fit the time and difficulty constraints of SoC.
+
+This is part of the VideoLAN candidature for Google Summer of Code 2009.
+
+*Mentor (and author of this page): Jason Garrett-Glaser (Dark
+Shikari)*\ Possible backup mentor: Holger Lubitz
+
+==Introduction to x264== x264 is probably the most efficient,
+compression-wise, open source video encoder there is. It is quite
+competitive with commercial encoders, outclassing a large number of
+them.
+
+While not actually part of VLC or ffmpeg (it has its own codebase), it
+is a major library used by both, licensed under the GPL, in addition to
+being a standalone encoder. As the only major open-source H.264 encoder,
+x264 has a near-complete monopoly on H.264 encoding in the consumer
+world, along with being used by many major corporations, including
+Youtube and Facebook. Some companies, such as Avail Media, have in the
+past offered bounties on improvements to the encoder.
+
+An overview of x264's algorithm can be found
+[http://akuvian.org/src/x264/overview_x264_v8_5.pdf here]. ==Skills
+needed== These are required for all listed projects and probably
+anything not listed, too. *Basic C programming.*\ Basic understanding of
+video encoding, or at least willingness to do the appropriate reading up
+on the topic before the summer begins. *Confidence in the ability to
+learn the basics of following and similar topics (though not all
+projects will require such information): :*\ Discrete cosine transform
+and similar frequency transforms :*Motion estimation and compensation
+:*\ Quantization and entropy encoding A PDF with a chapter that can
+serve as a primer to video compression can be found
+[http://www.mediafire.com/download.php?auxd23m2snw here] (new version
+[http://dl.dropbox.com/u/2701213/pdfs/0470516925Video.pdf here]). It
+also has some more specific chapters on MPEG-4 Part 2 and Part 10.
+
+==Projects== We are probably only accepting one or two students this
+year. Thus, you will have to prove that you are absolutely able to do
+your project over the summer--see the qualification tasks.
+
+===Optimization (x86)=== x264 prides itself on being one of the most
+optimized programs in existence while still being reasonably readable
+and maintainable. This project is about furthering that goal: make it
+even faster without sacrificing code quality.
+
+This is probably the hardest task, as x264 is already so absurdly
+optimized that going significantly further is going to be very
+difficult. As such, the qualification task for this project (see below)
+requires you to prove that you can get at least somewhere. The goal here
+is at least a 5-10% performance increase in x264 on x86 (and ideally,
+other CPUs too, but processor-specific optimizations are allowed here).
+Some unconventional ideas in addition to the obvious tasks of writing
+loads of assembly and finding cases where the C code can be further
+optimized:
+
+*Cache profiling: try to minimize cache misses.*\ Code size profiling:
+find the inherent "value" in clock cycles of a line of cache and use
+this to try to optimize the code size of existing assembly. \*Aliasing
+optimizations: find places where aliasing is hurting the compiler's
+ability to optimize.
+
+Not recommended for anyone other than hardcore assembly gurus.
+
+===ARM Support=== x264 currently focuses on x86--and to a lesser
+extent--PowerPC. ARM is becoming more and more important every year--yet
+currently x264 cannot even run on some ARMs, and there's no configure
+support. Let alone the fact that there's no ARM assembly. This task
+would be to set up ARM support in configure, fix all unaligned accesses
+in the C code (there's probably only one), and then writing ARM assembly
+for all major DSP functions. There are already some similar ARM
+functions in ffmpeg for H.264 decoding which could be useful to you in
+this task. The goal here is to make x264 at least 4-5 times faster on
+ARM by implementing all the major assembly functions on ARM.
+
+Also not recommended for anyone other than hardcore assembly gurus.
+
+===4:4:4 and 4:2:2 Colorspaces=== x264 currently only supports the 4:2:0
+colorspace, also known as YV12. However, many profession applications
+require higher precision in the form of 4:2:2 or 4:4:4 chroma
+subsampling. Furthermore, such sampling is useful for many artificial
+video sources, like video game captures and presentations, where sharp
+chroma edges are blurred by the 4:2:0 sampling. This is a large project
+that, unlike the previous two, probably does not involve modifying any
+assembly if you don't want to. In cases where things would be easier if
+the assembly ''was'' modified, the other developers will probably be
+willing to do it for you if you aren't an assembly guru.
+
+The project mostly covers changing every place in the code where YV12
+was assumed--and making it variable. It also involves handling the
+potential new syntax elements and adding a new Hadamard transform for
+the new chroma DC channels. It also may involve modifying x264_scan8,
+which could be a rather obnoxious task given how many parts of x264
+assume certain properties of it.
+
+This project will involve a lot of coding and a lot of debugging, but
+none of it should be particularly complex.
+
+===GPU Motion Estimation=== In practice, this probably means CUDA, as
+OpenCL is not supported by anything yet.
+
+While porting x264 entirely to CUDA is an insane task, putting a
+lookahead motion estimation on the GPU could be useful both for quality
+and performance. Tricky catches here include:
+
+*The motion estimation method has to support x264's threading model. The
+easiest way to do this might be, as suggested, to make it into a
+lookahead function that is run on entire frames before the main encoding
+begins.*\ The algorithm has to be able to make some sorts of basic mode
+decisions well enough to to be comparable with x264's basic SATD mode
+decision. This means you will have to implement the hpel and qpel
+interpolation algorithms, along with the SATD (Sum of Hadamard
+Transformed Differences) comparison method. \*Interlaced mode.
+
+The general algorithm that has been agreed on after a great deal of
+discussion is the hierarchical search method. More description of this
+method is in the Qualification Tasks section.
+
+This project is not recommended unless you have a very significant
+amount of experience with CUDA.
+
+===Weighted P-frame Prediction=== Of the projects listed, this is the
+only one with the potential to significantly improve encoding quality.
+Weighted P-frame prediction lets you assign weights to the frames in a
+reference list for the current frame, values to multiply all the pixels
+by. This is incredibly useful in dealing with fades, camera flashes,
+etc. However, it would require both a good enough algorithm to find
+optimal weighting factors and an efficient enough algorithm to be useful
+in practice.
+
+A [http://akuvian.org/src/x264/x264_wpredp.0.diff patch] already exists
+for this--but it is so old (from the early days of x264) that it is
+practically useless except as a guide to how to start implementing it
+now.
+
+Note that the challenge here is twofold: add support for weighted
+P-frame prediction and make an algorithm good enough and fast enough to
+make the feature useful.
+
+==Qualification tasks== This year, the qualification tasks will
+represent the start of your summer project. We're willing to give all
+the technical help you need, but of course we won't write the code for
+you. "Passing" a qualification task is at the mentor's discretion. Note
+these are designed to be '''difficult''' and help lead you into your
+main project. If you can't do the qualification task for the project,
+you surely cannot do the project either!
+
+Again, to reiterate, we will guide you through as much of the codebase
+as you need to do your work. '''This page is not supposed to give you
+all the information you need to do these tasks: you are expected to
+contact us for more information.''' Feel free to ask tons of questions.
+On #x264dev IRC channel on Freenode, of course.
+
+===Optimization (x86)=== If you're interested in the optimization task,
+the qualification task is to speed up x264 on x86 (32 or 64-bit) by 1-2%
+on "normal settings" without changing the output. This is '''much'''
+harder than it sounds.
+
+===ARM Support=== If you're interested in the ARM task, your
+qualification task will be to:
+
+-  Fix the unaligned access bug in the bitstream writer.
+-  Write NEON SIMD assembly for at least a few of the simpler
+   significant DSP functions (SAD, SATD, etc).
+
+===4:4:4 and 4:2:2 Colorspaces=== If you're interested in working on
+this project, your task is to produce an x264-encoded bitstream in 4:4:4
+or 4:2:2 format. It does not actually have to be remotely viewable (that
+is, you don't have to implement any of the code to handle motion
+compensation, deblocking, or anything else involving 4:4:4/4:2:2 chroma
+data), but the bitstream has to be written correctly (correct syntax
+elements). The patch you write for this will be the starting point for
+your main project.
+
+===GPU Motion Estimation=== Your task for this project will be to write
+a C version of your final algorithm. It doesn't need to deal with any of
+the corner cases; all it has to do is run before the main encoding loop,
+deciding the motion vectors for the frame. It doesn't even have to work
+with threading. It doesn't have to support sub-16x16 partitions either.
+The hierarchical search works via the following algorithm.
+
+-  Set N equal to 2^M, where M is an integer. A common M is 4.
+
+\* WHILE N is greater than 1: :\* Downscale the image (from the
+original) by a factor of N. :\* Do an ordinary diamond motion search on
+the image with block size 16x16. Assume the predicted motion vector to
+be equal to the median of the top, left, and top right motion vectors
+(as per H.264 MV prediction)... but use the motion vectors from the
+previous iteration, not the current for these (this is what allows you
+to parallelize things with CUDA). :\* For each block after searching,
+split the motion vectors of that block into 4 separate (but equal)
+motion vectors. These will be used as the starting point for the
+searches in the next iteration. Each iteration progressively refines the
+result at a progressively lesser downscale. :\* N = N/2 \* Do a final
+refine at no downscale at all.
+
+===Weighted P-frame Prediction=== The task for this project is to add
+support for Weighted P-frame Prediction--but not to write any sort of
+handling of it from an algorithmic standpoint, so no algorithm to decide
+the weights. That is, all the weights are just set to some constant
+value until we come up with a better way to do things. As with the other
+tasks, you can make many simplifications here to avoid corner cases,
+such as ignoring multithreading. Another simplification you can make is
+to only allow a weight on the first reference frame, or even have the
+program be completely ignorant of the weighted version of the frame
+until the final encode. All that matters is you get the basic framework
+working.
+
+==Contact info== If you are interested, drop by #x264dev or #x264 on
+Freenode.
+
+You should also contact the admin [[User:J-b|jb]].
+
+{{GSoC}}
+
+[[Category:SoC]] [[Category:x264]]

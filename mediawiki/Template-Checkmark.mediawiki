@@ -1,0 +1,9 @@
+[[File:Yes check.png|{{{1|20}}}px|alt=Yes|link=]]<!--template:checkmark--><noinclude>
+Template used to give a checkmark {{checkmark}}. To modify the size you can use <nowiki>{{checkmark|&lt;size in px&gt;}}</nowiki>.
+== See also ==
+* {{tl|Checkmark}}
+* {{tl|Done}}
+* {{tl|Fixed}}
+
+[[Category:Templates]]
+</noinclude>

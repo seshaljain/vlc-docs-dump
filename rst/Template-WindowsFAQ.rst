@@ -1,0 +1,6 @@
+{{Navbox list1=[[WindowsFAQ-0.8.x]], [[WindowsFAQ-0.9.x]],
+[[WindowsFAQ-1.0.x]], [[WindowsFAQ-1.1.x]], [[WindowsFAQ-2.0.x]],
+[[WindowsFAQ-2.1.x]], ''WindowsFAQ-2.2.x''
+}}<includeonly>[[Category:FAQ]][[Category:Windows]]</includeonly><noinclude>
+
+[[Category:Navigation templates]] </noinclude>

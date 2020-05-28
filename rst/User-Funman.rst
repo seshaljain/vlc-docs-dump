@@ -1,0 +1,3 @@
+mail: funman at videolan org
+
+irc: funman on #videolan irc.videolan.org

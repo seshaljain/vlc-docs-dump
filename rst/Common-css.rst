@@ -1,0 +1,1 @@
+#REDIRECT [[MediaWiki:Monobook.css]]

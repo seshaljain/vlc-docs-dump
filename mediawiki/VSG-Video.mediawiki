@@ -1,0 +1,24 @@
+{{Back to|VSG:Main}}
+[[File:Cone-Video-large.png|right|170px|alt=]]
+== Video Playback Issue  ==
+What issues are you experiencing with VLC video playback?
+{{VSGEntry|Lack of Video|VSG:Video:None|VLC does not play video at all.}}
+{{VSGEntry|Lack of Video or other issues on some files|VSG:Format|VLC does not play video only on some files.}}
+{{VSGEntry|Poor Quality or Strange Video|VSG:Video:Bad|VLC can partially play video, but its playback is distorted, of poor quality...}}
+{{VSGEntry|Video is good but...|VSG:Video:GoodBut|Your video is too dark, choppy...}}
+{{VSGEntry|Video displays first frames and black/grey only|VSG:Video:Slow|Does not really play}}
+
+
+== How do I...  ==
+{{VSGEntry|Modify the video output?|VSG:Video:HowTo:ModifyVideoOutput|How do I modify video output?}}
+{{VSGEntry|Adjust brightness or contrast?|VSG:Video:Contrast|How do I adjust brightness or contrast?}}
+<!-- We don't really have clear documentation on this as of January 2019. Commenting out.
+{{VSGEntry|Keep the brightness and contrast adjustments in memory forever?|Set Brightness And Contrast Forever|How can I keep the brightness and contrast adjustments in memory forever?}}
+-->
+{{VSGEntry|Set file specific brightness or contrast?|VSG:Video:FileContrast|How do I set file specific brightness or contrast?}}
+{{VSGEntry|Set the default deinterlace method?|VSG:Video:Deinterlace|How do I set the default deinterlace method?}}
+{{VSGEntry|Jump to certain time|VSG:Usage:Time|Can I jump to certain time?}}
+{{VSGEntry|Take a snapshot of a video|VSG:Usage:Snapshot|Take a screenshot of a running video. }}
+
+
+{{VSG}}

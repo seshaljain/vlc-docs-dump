@@ -1,0 +1,50 @@
+== VLC packages / VCS URLs in Linux distros ==
+
+{\| class="wikitable" -\| ALT Linux \|
+[http://git.altlinux.org/people/thresh/packages/vlc.git Gitweb] or
+[http://www.sisyphus.ru/srpm/vlc Sisyphus] \| git clone
+git://git.altlinux.org/people/thresh/packages/vlc.git altlinux-vlc \|
+Debian GNU/Linux \|
+[http://anonscm.debian.org/gitweb/?p=pkg-multimedia/vlc.git;a=summary
+Gitweb] or [http://packages.qa.debian.org/v/vlc.html PTS] \| git clone
+git://anonscm.debian.org/pkg-multimedia/vlc.git vlc-debian \| \* The
+current packaging is either in the experimental or sid branch. \* For
+the [http://nightlies.videolan.org nightlies] packaging, see the
+videolan branch. Fedora \|
+[http://cvs.rpmfusion.org/viewvc/rpms/vlc/?root=free RPM Fusion
+Viewvc]{{dead link}} and [http://cvs.fedoraproject.org/viewvc/rpms/
+Fedora Viewvc]{{dead link}} \| export
+CVSROOT=:pserver:\ anonymous@cvs.fedoraproject.org:/cvs/pkgs
+
+export CVSROOT=:pserver:\ anonymous@cvs.rpmfusion.org:/cvs/free
+
+cvs co <module> \| Available at the [http://rpmfusion.org RPM Fusion]
+third part repository for [http://fedoraproject.org Fedora]: \*
+[http://bugzilla.rpmfusion.org RPM Fusion bug report] \*
+[https://bugzilla.rpmfusion.org/buglist.cgi?quicksearch=vlc VLC bugs
+reported at RPM Fusion] Gentoo \|
+[http://sources.gentoo.org/viewcvs.py/gentoo-x86/media-video/vlc/
+Portage tree] and
+[http://sources.gentoo.org/viewcvs.py/gentoo/src/patchsets/vlc/
+Patchsets] \| cvs -d :pserver:anonymous@anoncvs.gentoo.org:/var/cvsroot
+co gentoo/src/patchsets/vlc cvs -d
+:pserver:anonymous@anoncvs.gentoo.org:/var/cvsroot co
+gentoo-x86/media-video/vlc \| \* Most patches are in the patchset,
+patches applied are the highest version that is lower than the one you
+want. \* Some small and temporary patches may also be in the portage
+tree in the files subdirectory. \* See also the
+[http://www.gentoo.org/proj/en/desktop/video/vlc.xml packaging notes].
+Ubuntu \| [http://bazaar.launchpad.net/~motumedia/vlc/ubuntu/files
+BzrWeb] or [https://code.launchpad.net/~motumedia/vlc/ubuntu Launchpad
+Code] \| bzr branch https://code.launchpad.net/~motumedia/vlc/ubuntu \|
+Slackware \| [http://slackware.com/~alien/slackbuilds/vlc/
+slackware.com] or
+[http://slackware.org.uk/people/alien/restricted_slackbuilds/vlc/ UK
+mirror] \| lctp -c "open http://slackware.com/~alien/slackbuilds/ ;
+mirror vlc" rsync -av
+rsync://rsync.slackware.org.uk/people/alien/restricted_slackbuilds/vlc .
+\| The "''restricted_slackbuilds''" packages are restricted for
+distribution: they are built with mp3/aac encoding capability. This
+makes them unfit for hosting in the US, hence a UK mirror is used }
+
+[[Category:Building]] [[Category:GNU/Linux]]

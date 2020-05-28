@@ -1,0 +1,3 @@
+#REDIRECT [[MMS]]
+
+[[Category:Protocols]]

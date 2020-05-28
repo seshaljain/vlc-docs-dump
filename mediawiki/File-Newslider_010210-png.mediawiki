@@ -1,0 +1,3 @@
+newslider
+
+[[Category:Dev Discussions]]

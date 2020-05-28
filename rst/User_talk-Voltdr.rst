@@ -1,0 +1,5 @@
+I am trying find out if it is possible to pause a dvr recording and then
+advance the video one frame at a time. It is important for me to be able
+to count the number of frames at a certain point on the video. I can do
+this with the Windows Media Player but I like the VLC player better. Is
+it possible to do what I want to do?

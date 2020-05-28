@@ -1,0 +1,3 @@
+#REDIRECT [[.VLC]]
+
+[[Category:Playlist]]

@@ -1,0 +1,138 @@
+[[Image:Historical.pnglink=]] ==All plugins disabled VLC (template
+only)== You can edit this and put it into a bash file; just add
+./configure in front of the first line. <pre> --disable-dbus : # compile
+D-Bus message bus support (default enabled) --disable-dbus-control : #
+D-Bus control interface (default enabled) --disable-telepathy : #
+Telepathy Presence plugin through DBus(default enabled)
+--disable-run-as-root : # allow running VLC as root (default disabled)
+--disable-sout : # disable streaming output (default enabled)
+--disable-lua : # disable LUA scripting support (default enabled)
+--disable-httpd : # disable the built-in HTTP server (default enabled)
+--disable-vlm : # disable the stream manager (default enabled)
+--disable-libproxy : # support libproxy (default auto) --disable-live555
+: # enable RTSP input through live555 (default enabled) --disable-dc1394
+: # IIDC FireWire input module [default=auto] --disable-dv1394 : # DV
+FireWire input module [default=auto] --disable-linsys : # Linux Linear
+Systems Ltd. SDI and HD-SDI input cards(default enabled)
+--disable-dvdread : # dvdread input module [default=auto]
+--disable-dvdnav : # disable DVD navigation with libdvdnav (default
+auto) --disable-dshow : # support DirectShow (default auto)
+--disable-bluray : # libbluray for Blu-ray disc support ) [default=auto]
+--disable-opencv : # (OpenCV (computer vision) filter) [default=off]
+--disable-smb : # disable SMB/CIFS support (default auto) --disable-sftp
+: # support SFTP file transfer via libssh2 (default --disable-v4l2 : #
+disable Video4Linux version 2 (default auto) --disable-pvr : # support
+PVR V4L2 cards (default disabled) --disable-decklink : # disable
+Blackmagic DeckLink SDI input (default auto) --disable-gnomevfs : #
+GnomeVFS access module [default=auto] --disable-vcdx : # navigate VCD
+with libvcdinfo (default disabled) --disable-vcd : # disable built-in
+VCD and CD-DA support (default --disable-libcddb : # disable CDDB for
+Audio CD (default disabled) --disable-screen : # disable screen capture
+(default disabled) --disable-realrtsp : # Real RTSP module (default
+disabled) --disable-macosx-eyetv : # Mac OS X EyeTV (TNT Tuner) module
+(default disabled on Mac OS X) --disable-macosx-qtkit : # Mac OS X
+qtcapture (video) and qtsound (audio) module (default disabled on Mac OS
+X) --disable-dvbpsi : # build with dvbpsi support disabled
+[default=auto] --disable-gme : # use Game Music Emu (default auto)
+--disable-sid : # C64 sid demux support (default auto) --disable-ogg : #
+Ogg demux support [default=auto] --disable-mux_ogg : # Ogg mux support
+[default=auto] --disable-shout : # libshout output plugin [default=auto]
+--disable-mkv : # do not use libmatroska (default auto) --disable-mod :
+# do not use libmodplug (default auto) --disable-mpc : # do not use
+libmpcdec (default auto) --disable-wma-fixed : # libwma-fixed module
+(default disabled) --disable-shine : # shine mp3 encoding module
+(default disabled) --disable-omxil : # openmax il codec module (default
+disabled) --disable-iomx : # iomx codec module (default disabled)
+--disable-crystalhd : # crystalhd codec plugin (default auto)
+--disable-mad : # libmad module (default disabled)
+--disable-merge-ffmpeg : # merge FFmpeg-based plugins (default disabled)
+--disable-avcodec : # libavcodec codec (default disabled)
+--disable-libva : # VAAPI GPU decoding support (libVA) (default auto)
+--disable-dxva2 : # DxVA2 GPU decoding support (default auto)
+--disable-switcher : # Stream-out switcher plugin (default disabled)
+--disable-avformat : # libavformat containers (default disabled)
+--disable-swscale : # libswscale image scaling and conversion (default
+disabled) --disable-postproc : # libpostproc image post-processing
+(default disabled) --disable-faad : # faad codec (default auto)
+--disable-twolame : # MPEG Audio Layer 2 encoder [default=auto]
+--disable-quicktime : # QuickTime module (deprecated) --disable-a52 : #
+A/52 support with liba52 (default disabled) --disable-dca : # DTS
+Coherent Acoustics support with libdca[default=auto] --disable-flac : #
+libflac decoder/encoder support [default=auto] --disable-libmpeg2 : #
+libmpeg2 decoder support [default=auto] --disable-vorbis : # Vorbis
+decoder and encoder [default=auto] --disable-tremor : # Tremor decoder
+support (default disabled) --disable-speex : # Speex support
+[default=auto] --disable-theora : # experimental theora codec
+[default=auto] --disable-dirac : # dirac encoder [default=auto]
+--disable-schroedinger : # dirac decoder and encoder using
+schroedinger[default=auto] --disable-png : # PNG support (default
+disabled) --disable-x26410b : # H264 10-bit encoding support with static
+libx264 (default disabled) --disable-x264 : # H264 encoding support with
+libx264 (default disabled) --disable-fluidsynth : # MIDI synthetiser
+with libfluidsynth [default=auto] --disable-zvbi : # VBI (inc. Teletext)
+decoding support with libzvbi(default disabled) --disable-telx : #
+Teletext decoding module (conflicting with zvbi)(default disabled if
+zvbi is absent) --disable-libass : # Subtitle support using libass
+(default disabled) --disable-kate : # kate codec [default=auto]
+--disable-tiger : # Tiger rendering library for Kate streams (default
+auto) --disable-egl : # OpenGL support through EGL (default disabled)
+--with-x : # use the X Window System --disable-xcb : # X11 support with
+XCB (default disabled) --disable-xvideo : # XVideo support (default
+disabled) --disable-glx : # OpenGL support through GLX (default
+disabled) --disable-sdl : # SDL support (default disabled)
+--disable-sdl-image : # SDL image support (default disabled)
+--disable-macosx-vout : # Mac OS X video output module (default disabled
+on Mac OS X) --disable-freetype : # freetype support (default auto)
+--disable-fribidi : # fribidi support(default auto) --disable-fontconfig
+: # fontconfig support (default auto) --disable-macosx-quartztext : #
+Mac OS X quartz text module (default disabled on Mac OS X) --disable-svg
+: # SVG rendering library [default=auto] --disable-android-surface : #
+Android Surface video output module (default disabled)
+--disable-ios-vout : # iOS video output module (default disabled)
+--disable-directx : # Win32 DirectX support (default disabled on Win32)
+--disable-direct2d : # Win7/VistaPU Direct2D support (default auto on
+Win32) --disable-wingdi : # Win32 GDI module (default disabled on Win32)
+--disable-directfb : # DirectFB support (default disabled) --disable-aa
+: # aalib output (default disabled) --disable-caca : # libcaca output
+[default=auto] --disable-kva : # support the K Video Accelerator KVA
+(default disabled on OS/2) --disable-pulse : # use the PulseAudio client
+library (default auto) --disable-alsa : # support the Advanced Linux
+Sound Architecture(default auto) --disable-oss : # support the Open
+Sound System OSS (default disabled on FreeBSD/NetBSD/DragonFlyBSD)
+--disable-sndio : # support the OpenBSD sndio (default auto)
+--disable-wasapi : # use the Windows Audio Session API (default auto)
+--disable-waveout : # Win32 waveOut module (default disabled on Win32)
+--disable-macosx-audio : # Mac OS X audio module (default disabled on
+MacOS X) --disable-audioqueue : # AudioQueue audio module (default
+disabled) --disable-jack : # JACK audio I/O modules [default=auto]
+--disable-opensles : # Android OpenSL ES audio module (default disabled)
+--disable-samplerate : # Resampler with libsamplerate [default=auto]
+--disable-kai : # support the K Audio Interface KAI (default disabled on
+OS/2) --disable-hildon : # Hildon touchscreen UI (default disabled)
+--disable-qt : # Qt 4 support (default disabled) --disable-skins2 : #
+skins interface module (default auto) --disable-libtar : # libtar
+support for skins2 (default auto) --disable-macosx : # Mac OS X gui
+support (default disabled on Mac OS X) --disable-macosx-dialog-provider
+: # Mac OS X dialog module (default disabled on Mac OS X)
+--disable-ncurses : # ncurses text-based interface (default auto)
+--disable-lirc : # lirc support (default disabled) --disable-visual : #
+visualisation plugin (default disabled) --disable-goom : # goom
+visualization plugin [default=auto] --disable-projectm : # projectM
+visualization plugin (default disabled) --disable-vsxu : # Vovoid VSXu
+visualization plugin (default auto) --disable-atmo : # AtmoLight
+(homemade Philips Ambilight clone)(default disabled) --disable-bonjour :
+# Bonjour services discovery [default=auto] --disable-udev : # Linux
+udev services discovery [default=auto] --disable-mtp : # MTP devices
+support [default=auto] --disable-upnp : # Intel UPNP SDK [default=auto]
+--disable-libxml2 : # libxml2 support [default=auto] --disable-libgcrypt
+: # gcrypt support (default disabled) --disable-gnutls : # GNU TLS
+TLS/SSL support (default disabled) --disable-taglib : # do not use
+TagLib (default disabled) --disable-update-check : # update checking
+system (default disabled) --disable-growl : # growl notification plugin
+(default disabled) --disable-notify : # libnotify notification
+[default=auto] --disable-media-library : # media library (default
+disabled) --disable-sqlite : # sqlite3 [default=auto] --disable-loader :
+# build DLL loader for ELF i386 platforms (default disabled)
+--disable-vlc : # build the VLC media player (default disabled)
+--disable-macosx-vlc-app : # build the VLC media player (default enabled
+on Mac OS X) </pre>

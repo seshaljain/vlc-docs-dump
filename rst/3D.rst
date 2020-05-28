@@ -1,0 +1,36 @@
+{{Howto|to use VLC to watch 3D video}}
+
+==3D Display Technologies==
+
+Generally there are three widely use 3D display technologies, all based
+on the principles of stereoscopic projection:
+
+-  [[wikipedia:Anaglyph image|Anaglyph]] - red/green or red/blue images
+   with glasses filtering out one colour or the other
+-  Polarisation - technique used in cinemas, with two images projected
+   with different polarisations, a silvered screen and polarised glasses
+   <br> Also TV sets are capable of producing polarized light; they use
+   interlaced displays for the left and right pictures, the even lines
+   and the odd lines differently polarized (which effectively halves the
+   vertical resolution in 3D mode)
+-  [[wikipedia:Liquid crystal shutter glasses|Shutter Glasses]] -
+   technique used by the new 3D televisions, where each alternating
+   frame represent the left or right views.
+
+==How to view 3D videos in VLC== VLC since 2.1.0 has built-in support
+for viewing '''3D side-by-side (SBS)''' videos using '''anaglyph'''
+technology.
+
+See [[Documentation:Modules/anaglyph]].
+
+==Obsolete/outdated stuff== \* [[SoC 2011/Stereoscopic Video]]
+
+==Related Pages== \* [[wikipedia:Multiview Video Coding|Multiview Video
+Coding]] \* [http://en.wikipedia.org/wiki/Stereoscopy Stereoscopy] \*
+[http://netblender.ning.com/forum/topics/bluray-3d-sample-disc-encoded
+Blu-ray 3D sample disc encoded and authored with DoStudio] \*
+[http://www.avsforum.com/avs-vb/showthread.php?t=1176599 BD 3D details
+start to trickle out...] - forum posting \*
+[http://www.youtube.com/watch?v=5ANcspdYh_U YouTube in 3D]
+
+{{stub}}

@@ -1,0 +1,47 @@
+Decoding and encoding (text rendering) are handled by separate modules. Both modules have the same shortcut, <code>svg</code>, though {{VLCSourceFile|modules/MODULES_LIST}} calls them <code>svgdec</code> and <code>svg</code>.
+
+== Decoder ==
+{{Module|name=svg|type=Input|first_version=2.2.0|description=[[SVG]] video decoder making use of librsvg2}}
+
+=== Options ===
+{{Option
+|name=svg-width
+|value=integer
+|min=1
+|max=65535
+|default=-1
+|description=Specify the width to decode the image to
+}}
+{{Option
+|name=svg-height
+|value=integer
+|min=1
+|max=65535
+|default=-1
+|description=Specify the height to decode the image to
+}}
+{{Option
+|name=svg-scale
+|value=float
+|default=-1.0
+|description=Scale factor to apply to image
+}}
+{{Clear}}
+
+== Encoder ==
+{{Module|name=svg|type=Input|first_version=0.8.0|os=Linux|description=Put [[SVG]] on the video}}
+
+=== Options ===
+{{Option
+|name=svg-template-file
+|value=string
+|default=""
+|description=Location of a file holding a SVG template for automatic string conversion
+}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/svg.c}} (decoder)
+* {{VLCSourceFile|modules/text_renderer/svg.c}} (encoder)
+
+{{Documentation footer}}

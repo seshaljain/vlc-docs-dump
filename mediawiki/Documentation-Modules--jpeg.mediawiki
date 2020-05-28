@@ -1,0 +1,27 @@
+__NOTOC__
+== Decoder ==
+{{Module|name=jpeg|type=Access demux|first_version=2.2.0|description=[[JPEG]] image decoder through libjpeg|sc=none}}
+
+{{VLC}} previously decoded JPEGs through the images demuxer (introduced in VLC 2.0.0).
+
+=== Options ===
+None.
+{{Clear}}
+
+== Encoder ==
+{{Module|name=jpeg|type=Muxer|first_version=2.2.0|description=[[JPEG]] image encoder through libjpeg|sc=jpeg}}
+
+=== Options ===
+{{Option
+|name=sout-jpeg-quality
+|value=integer
+|min=0
+|max=100
+|description=Quality level for encoding (this can enlarge or reduce output image size)
+}}
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/jpeg.c}}
+
+{{Documentation}}

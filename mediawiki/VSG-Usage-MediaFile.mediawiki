@@ -1,0 +1,9 @@
+== Media files problems and questions  ==
+
+{{VSGEntry|Messed-up file associations|VSG:Usage:MediaFile:Associations|I messed up my file associations or I want to modify them.}} 
+
+{{VSGEntry|Lack of Video or other issue on some files|VSG:Video:Format|VLC does not play well only on some files.}} 
+
+<br><br><br><br><br>
+
+{{VSG}}

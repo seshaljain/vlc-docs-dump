@@ -1,0 +1,19 @@
+{{Module|name=transform|type=Video output filter|description=Rotate or flip the video|sc=transform}}
+
+== Options ==
+<onlyinclude>{{Option
+|name=transform-type
+|value=string
+|select={ "90", "180", "270", "hflip", "vflip", "transpose", "antitranspose" }
+|default="90"
+|description=Transformation type
+}}</onlyinclude>
+{{Clear}}
+
+== Examples ==
+ $ vlc --video-filter='transform{type="vflip"}' somevideo.avi
+
+== Source code ==
+* {{VLCSourceFile|modules/video_filter/transform.c}}
+
+{{Documentation footer}}

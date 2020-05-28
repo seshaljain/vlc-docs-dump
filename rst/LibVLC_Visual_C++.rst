@@ -1,0 +1,26 @@
+{{Lowercase}} {{See also|C Sharp}} The following is the simplest way to
+use [[libvlc]] with visual C++. What you need is: libvlc.dll and the
+whole folder plugins; Copy the dll file and plugins folder into your
+Debug or Release directory.
+
+# Create VC console project # Implement some functions to load
+libvlc.dll into your application: #: Take a look at
+[http://www.videolan.org/developers/vlc/doc/doxygen/html/group__libvlc__old.html]
+to get more information about functions in libvlc.dll # Create a command
+that is used to pass to libvlc.dll This command is used to stream webcam
+to another machine: char \*\* commands = new char*[6]; commands[0] =
+"testvlcconsole.exe"; //your application name commands[1] = "dshow://";
+commands[2] = ":dshow-vdev=Logitech QuickCam Pro 3000 (08B0)";
+commands[3] = ":dshow-adev="; commands[4] = ":dshow-size=176x144";
+commands[5] =
+":sout=#transcode{vcodec=h264,vb=1024,scale=1}:duplicate{dst=std{access=udp,mux=ts,dst=192.168.0.155:1234}}";
+
+4. Main program:
+   -  Initialize Library : load libvlc.dll and its functions
+   -  Create VLC instance: id = VLC_Create()
+   -  Initialize VLC : VLC_Init(id, int, commands)
+   -  Start playing: VLC_Play()
+
+(Thanks neztol for the code)
+
+[[Category:libVLC]] [[Category:Pages to check]]

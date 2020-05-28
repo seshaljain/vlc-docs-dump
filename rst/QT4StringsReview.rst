@@ -1,0 +1,1 @@
+#REDIRECT [[Qt4StringsReview]]

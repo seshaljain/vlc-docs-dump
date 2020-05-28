@@ -1,0 +1,7 @@
+Hello.<br />
+
+I am Konrad Iturbe (chernowii) <br />
+
+I am one of the spanish translator for VLC iOS<br />
+
+my webpage: http://chernowii.com

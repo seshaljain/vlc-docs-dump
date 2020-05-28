@@ -1,0 +1,181 @@
+''See also: [[Help:Templates]], [[:Category:Templates]], [[Sandbox|Sandbox (testing) area]], and [{{fullurl:Special:PrefixIndex|prefix=&namespace=10}} Full list of templates]''
+
+== Formatting ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Clear}} || If there are elements (e.g. wikipedia box) to the left or right of the page, this will place text under those, rather than beside it. Accepts one optional argument (''left'' or ''right'') to clear a single side.
+|-
+| {{tl|Lowercase}} || If the initial letter of article title should be lowercase (e.g. [[libdvbpsi]]) add this to the top of the article.
+|-
+| {{tl|Anchoring space}} || Adds space for anchoring along with the associated message "This space is left blank to make anchoring work correctly".
+|}
+
+== Interwiki links ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Mmwiki}} || Box to [[Multimedia Wiki]]
+|-
+| {{tl|Website}} || Box to official website
+|-
+| {{tl|Wikipedia}} || Box to [[Wikipedia:]]
+|-
+| {{tl|Xiph}} || Box to [[Xiph Wiki]]
+|-
+| {{tl|Open}} || Marks [[free]] [[open source]] projects
+|}
+
+== Links to VLC project ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Bug}} || Link to a bug
+|-
+| {{tl|Doc}} || Link to documentation
+|-
+| {{tl|Faqlink}} || Link to FAQs '''Does not work anymore - videolan.org/doc is down'''
+|-
+| {{tl|Forum}} || Link to forum thread
+|-
+| {{tl|VLCSourceFile}} || Link to source code file
+|-
+| {{tl|File}} || Link to source code file and add a bullet
+|-
+| {{tl|VLCSourceFolder}} || Link to source code folder
+|-
+| {{tl|Commit}} || Link to commit
+|-
+| {{tl|Commitdiff}} || Link to commit with diff
+|}
+
+== Maintenance ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Check}} || Adds <sup>[Please check]</sup> and adds to [[:Category:Pages to check]]
+|-
+| {{tl|Dead link}} || Adds <sup>[[wikipedia:Link rot|[dead link]]]</sup> and adds to [[:Category:Pages with broken links]]
+|-
+| {{tl|Delete}} || Places a page in [[:Category:Delete]] for deletion.
+|-
+| {{tl|Historical}} || Tags obsolete pages as being for historical purposes only.
+|-
+| {{tl|Outdated}} || Tags outdated pages and adds to [[:Category:Outdated pages]]
+|-
+| {{tl|Merge}} || Request for a page merge.
+|-
+| {{tl|Stub}} || Is a stub. Adds to [[:Category:Stubs]]
+|-
+| {{tl|Compat}} || Is a compatibility stub. Adds to [[:Category:CompatStub]]
+|-
+| {{tl|Image requested}} || Tags page and adds to [[:Category:Requested images]]
+|}
+
+== Page type banners ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Documentation footer}} || Marks as being from the official documentation
+|-
+| {{tl|VSG}} || Marks as part of the [[VLC Support Guide]] pages
+|-
+| {{tl|Howto}} || Marks as part of the [[how to]] pages
+|-
+| {{tl|Mux}} || Marks as a [[container]].
+|-
+| {{tl|Codec audio}} || Marks as an audio codec.
+|-
+| {{tl|Codec video}} || Marks as a video codec.
+|-
+| {{tl|Protocol}} || Marks as an access module (http, cdda, etc).
+|-
+| {{tl|Top box}} || A box with a square and a bit for text, used for {{tl|mux}}, etc.
+|-
+| {{tl|example code}} || Page is example code
+|}
+
+== Yes and no ==
+=== Test status ===
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Yes}} || {{yes}}
+|-
+| {{tl|No}} || {{no}}
+|-
+| {{tl|ARC}} || {{ARC}}
+|-
+| {{tl|n/a}} || {{n/a}}
+|- 
+| {{tl|Ok}} || {{ok}}
+|-
+| {{tl|Partial}} || {{partial}}
+|-
+| {{tl|Middle}} || {{middle}}
+|-
+| {{tl|Untested}} || {{untested}}
+|-
+| {{tl|Up-to-date}} || {{up-to-date}}
+|}
+
+=== Needed ===
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Needed}} || {{needed}}
+|-
+| {{tl|UnNeeded}} || {{unNeeded}}
+|}
+
+== Modules ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Module}} || Module info box
+|-
+| {{tl|Option}} || Module option
+|}
+
+== Other ==
+{| class="wikitable"
+! scope="col" | Name !! scope="col" | Description
+|-
+| {{tl|Navbox}} || The classic navigational box used to create navigational aids in the wiki.
+|-
+| {{tl|Languages}} || Navigation box for translations of this wiki. Please read the [[Template:Languages|associated documentation]] before using!
+|-
+| {{tl|Compat}} || Asks for compatibility information, e.g. for hardware.
+|-
+| {{tl|Tl}} || For templates, does the groovy {{tl|tl}} thing.
+|-
+| {{tl|VLC}} || Expands to {{VLC}}.
+|-
+| {{tl|VLC icon}} || Expands to the VLC icon {{VLC icon}}.
+|-
+| {{tl|VLC:latest version}} || Expands to VLC latest version. Currently {{VLC:latest version}}
+|-
+| {{tl|Checkmark}} || Expands to a checkmark {{checkmark}}
+|-
+| {{tl|Done}} || Expands to the text {{done}}
+|-
+| {{tl|Prompt}} || Flexible template that displays console prompts
+|-
+| {{tl|$}} || Expands to {{$}}. Quicker to type than <code><nowiki>{{Prompt|$}}</nowiki></code>
+|-
+| {{tl|%}} || Expands to {{%}}. Quicker to type than <code><nowiki>{{Prompt|%}}</nowiki></code>
+|-
+| {{tl|!}} || Expands to the vertical bar for use inside templates
+|-
+| {{tl|GPL notice}} || GPL notice ("Permission is granted to...")
+|-
+| {{tl|CVE}} || Link to a CVE.
+|-
+| {{tl|US-CERT}} || Link to a US-CERT Vulnerability Notice.
+|-
+| {{tl|VideoLAN-SA}} || Link to a VideoLAN Security Advisory.
+|-
+| {{tl|-*}} || Expands to →
+|}
+
+[[Category:Wiki maintenance]]

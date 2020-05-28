@@ -1,0 +1,3 @@
+{{See also|Category:Qt images}} Pages relating to the [[Qt Interface]].
+
+[[Category:Interfaces]]

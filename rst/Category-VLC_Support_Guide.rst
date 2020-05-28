@@ -1,0 +1,3 @@
+All pages in the informal [[VLC Support Guide]].
+
+[[Category:Contents]]

@@ -1,0 +1,146 @@
+== General presentation ==
+
+Software developer who works on a huge load of projects, concepts and
+ideas thus pays a little attention at his actions/steps. Avid, a bit.
+Using Gentoo/64-bit as primary development platform.
+
+In a last year, I came to VLC-related projects four or five times.
+
+   -  there was an old source of CCTV system I found on the 2010-dated
+      drive, which used transcoding facilities to record data
+   -  there's a specific plugin requested at freelancer portal and the
+      task handed to me
+   -  some subtitle magic which wasnt integrated so tighly as that
+      beloved lua plugin at forum is, but still is used..
+   -  experimental player UI concept that is still in progress
+   -  other occasions
+
+(note: no license violations happened and I avoid any binary
+redistribution)
+
+So I decided to land my personal page here and fill it with some
+logs'o'vandalizing. Will probably edit Hacker Guide according to
+acquired data.
+
+== Dirty hacks ==
+
+=== Cross-compile and build Win32 VLC plugin out-of-tree at 64-bit
+Gentoo ===
+
+I hope that this page will be googled by strangers experiencing same
+problems, so plan is to leave a full story here. That experiment
+involved a lot of vandalizing both in my system and vlc sources - much
+fun.
+
+1) I had troubles with 64-bit toolchain - didn't checked that
+   x86_64-w64-mingw32 is [http://stackoverflow.com/a/3776853/438039
+   actually a 64-bit compiler] , and i686-w64-mingw32 is seemingly *not*
+   available on Gentoo via crossdev.
+2) someone left bugs in contrib files downloaded at 'make prebuilt'
+   step:
+
+..
+
+   ls -l ../contrib/x86_64-w64-mingw32/lib/grep dts lrwxrwxrwx 1 ft ft
+   54 Dec 16 2012 libdts.a ->
+   /home/jb/vlc-2.0/contrib/i586-mingw32msvc/lib/libdca.a
+
+3) default lines in default vlc-2.0.7/win32/configure.sh are exotic for some builds, like this:
+   --enable-update-check
+
+4) different amount of .pc files per contrib's platform version:
+
+..
+
+   find ../src/vlc-2.0.7/contrib/i586-mingw32msvc/ wc -l 66 find
+   ../src/vlc-2.0.7/contrib/x86_64-w64-mingw32/ wc -l 62 diff 32 64 4c4
+   < libswresample.pc ---> libchromaprint.pc 7d6 < portaudio-2.0.pc 11d9
+   < taglib_c.pc 19d16 < gnutls.pc 25d21 < zvbi-0.2.pc.orig 36a33 >
+   harfbuzz.pc 63d59 < fluidsynth.pc
+
+5) default vlc-2.0.7/configure file does not export PKG_CONFIG_PATH when
+it's required, but sets PKG_CONFIG_LIBDIR
+
+   if test "$build" = "$host" -o "$PKG_CONFIG_LIBDIR"; then :
+      export
+      PKG_CONFIG_PATH="${CONTRIB_DIR}/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+..
+
+   else
+
+      export PKG_CONFIG_LIBDIR="${CONTRIB_DIR}/lib/pkgconfig"
+
+   fi
+
+haven't checked if copying PKG_CONFIG_PATH line to second section helps
+something, but did it too while resolving problems.
+
+6) on my system, there's a symlink from
+/usr/bin/x86_64-w64-mingw-pkg-config, /usr/bin/ming32-pkg-config to
+/usr/bin/crossdev-pkg-config and in that crossdev-pkg-config - 'unset'
+happens for PKG_CONFIG_PATH
+
+7) same file, crossdev-pkg-config, contains function 'error', which must
+   be eliminated from returning exit code 1 with unnecessary errors: it
+   breaks configure.
+
+..
+
+   error() { 0; }
+
+after that, it still produces makefile errors due to line separator
+
+   CFLAGS_ogg =
+   -I/work/vlc/src/vlc-2.0.7/contrib/i586-mingw32msvc/include
+   -I/work/vlc/src/vlc-2.0.7/contrib/i586-mingw32msvc/include
+
+... to fix it, had to remove the whole final section around
+cross-dev-pkgconfig's bad_lines and add echo "${output}".
+
+8) on Gentoo, proper compiler binary for 32-bit mingw is, for example,
+   mingw32-gcc, mingw32-g++. (note: I read the wiki, but decided to try
+   expected host value)
+
+..
+
+   ../bootstrap --host=mingw32-gcc make prebuilt curl -f -L --
+   "ftp://ftp.videolan.org/pub/videolan/contrib/mingw32-gcc/vlc-contrib-mingw32-gcc-latest.tar.bz2"
+   > "vlc-contrib-mingw32-gcc-latest.tar.bz2" curl: (9) Server denied
+   you to change to the given directory make: **\*
+   [vlc-contrib-mingw32-gcc-latest.tar.bz2] Error 9 make:**\ \* Deleting
+   file \`vlc-contrib-mingw32-gcc-latest.tar.bz2'
+
+I went to ftp://ftp.videolan.org/pub/videolan/contrib/ and found the
+proper configuration is named i586-mingw32msvc *only* (aha, that is
+described at wiki too,... so 'mingw32' config must exist: ln -s
+i586-mingw32msvc mingw32)
+
+9) configure line (called from vlc-2.0.7/win32):
+   ../extras/package/win32/configure.sh --host=mingw32-gcc --disable-lua
+   --disable-nls --disable-lua --disable-mad --disable-avcodec
+   --disable-avformat --disable-swscale --disable-postproc
+   --disable-dvdread --disable-shout --disable-twolame --disable-dca
+   --disable-flac --disable-theora --disable-schroedinger --disable-x264
+   --disable-caca --disable-skins2 --disable-libgcrypt
+   --disable-update-check
+
+10) random bug:
+   preferences.hpp:72:19: error: expected unqualified-id before ‘char’ -
+
+https://forum.videolan.org/viewtopic.php?f=14&t=102257 - "This is a bug
+in your toolchain." (c), so this case of Debianum Tremens shall be
+resolved by someone later. But on this case, it was required to build
+3rdparty plugin out-of-tree, and so I just had to give proper dirs in
+makefile to make it fly:
+
+11) don't know what garbage cross-pkg-config should provide to make this
+    compile, because build seemingly lacked to pick all possible options
+12) mingw32 collect2/ld seems to require -lLIBNAME argument to be passed
+    AFTER \*.o files
+13) some functions like 'asprintf' and 'strcasestr' are hard to obtain
+    on mingw32.
+
+Here's my makefile for cross-building out-of-tree plugin (which is
+actually a modified subtitle demux):
+http://www.everfall.com/paste/id.php?15a3kv64pdt9

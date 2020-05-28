@@ -1,0 +1,5 @@
+{{Codec audio|id=alac|for=[[MP4]]}}
+{{Mmwiki|Apple Lossless Audio Coding}}
+{{Website|Apple Lossless Audio Coding|on=macosforge.github.io|https://macosforge.github.io/alac/}}
+
+This is an [[open-source]] [[lossless]] audio format developed by Apple and supported on iPhone, iTunes, macOS and others. It is not an official part of the [[MPEG-4]] standard.

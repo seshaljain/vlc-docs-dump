@@ -1,0 +1,95 @@
+__NOTOC__
+== Options ==
+=== Access Demux ===
+{{Module|name=fake|type=Access demux|last_version=0.9.0|description=simulate a fake input|sc=fake}}
+{{Option
+|name=fake-caching
+|value=integer
+|default=<code><var>DEFAULT_PTS_DELAY</var>/1000</code>
+|description=Caching in [[wiktionary:ms|milliseconds]]
+}}
+{{Option
+|name=fake-fps
+|value=float
+|default=25.0
+|description=[[Framerate]] e.g. 24, 25, 29.97, 30
+}}
+{{Option
+|name=fake-id
+|value=integer
+|default=0
+|description=Set the ID of the fake [[elementary stream]] for use in <samp>#{{docmod|duplicate}}{}</samp> constructs
+}}
+{{Option
+|name=fake-duration
+|value=integer
+|default=0
+|description=Duration of the fake streaming (in milliseconds) before faking an end-of-file (default is 0, meaning that the stream is unlimited)
+}}
+{{Clear|right}}
+
+=== Codec ===
+{{Module|name=fake|type=Codec|last_version=0.9.0|description=handle a fake input stream|sc=fake}}
+{{Option
+|name=fake-file
+|value=string
+|default=""
+|description=Image to use as video for the fake stream
+}}
+{{Option
+|name=fake-file-reload
+|value=integer
+|default=0
+|description=Number of seconds between each reload of the image
+}}
+{{Option
+|name=fake-width
+|value=integer
+|default=0
+|description=Width
+}}
+{{Option
+|name=fake-height
+|value=integer
+|default=0
+|description=Height
+}}
+{{Option
+|name=fake-keep-ar
+|value=boolean
+|default=disabled
+|description=Keep [[aspect ratio]] when resizing
+}}
+{{Option
+|name=fake-aspect-ratio
+|value=string
+|default=""
+|description=Aspect ratio of the image file (4:3, 16:9). Default is square pixels
+}}
+{{Option
+|name=fake-deinterlace
+|value=boolean
+|default=disabled
+|description=[[Deinterlace]] the image after loading it
+}}
+{{Option
+|name=fake-deinterlace-module
+|value=string
+|default="deinterlace"
+|description=Deinterlace module
+}}
+{{Option
+|name=fake-chroma
+|value=string
+|default="[[I420]]"
+|description=Image [[chroma]]
+}}
+
+== Example ==
+ {{$}} '''vlc fake:// --fake-file someimage.png'''
+
+== Source code ==
+* {{VLCSourceFile|modules/access/fake.c|p=vlc/vlc-0.9.git}}
+* {{VLCSourceFile|modules/codec/fake.c|p=vlc/vlc-0.9.git}}
+
+{{Documentation footer}}

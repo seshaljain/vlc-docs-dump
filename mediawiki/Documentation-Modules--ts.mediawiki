@@ -1,0 +1,92 @@
+{{Module|name=ts|type=Access demux|description=[[MPEG-TS]] demuxer}}
+
+The options <code><nowiki>ts-dump-file</nowiki></code>, <code><nowiki>ts-dump-append</nowiki></code> and <code><nowiki>ts-dump-size</nowiki></code> were removed in {{Commitdiff|31dee2cbaa16d16de94b5a1b36fe7f3909b8b28d}} with the summary "There is a dump demux for that."
+
+The options <code><nowiki>ts-out</nowiki></code> and <code><nowiki>ts-out-mtu</nowiki></code> have been deprecated since VLC 2.2.0. <code><nowiki>ts-silent</nowiki></code> is also deprecated.
+
+== Options ==
+<onlyinclude>
+{{Option
+|name=ts-standard
+|value=string
+|select=auto,mpeg,dvb,arib,atsc,tdmb
+|default=auto
+|description=Selects mode for digital TV standard. This feature affects EPG information and subtitles
+}}
+{{Option
+|name=ts-extra-pmt
+|value=string
+|default=NULL
+|description=Allows a user to specify an extra pmt (<code><nowiki>pmt_pid=pid:stream_type[,...]</nowiki></code>)
+}}
+{{Option
+|name=ts-trust-pcr
+|value=boolean
+|default=enabled
+|description=Use the stream PCR as a reference
+}}
+{{Option
+|name=ts-es-id-pid
+|value=boolean
+|default=enabled
+|description=Set the internal ID of each elementary stream handled by VLC to the same value as the {{PID}} in the {{TS}} stream, instead of 1, 2, 3, etc. Useful to do <code><nowiki>'#duplicate{..., select="es=<pid>"}'</nowiki></code>
+}}
+{{Option
+|name=ts-csa-ck
+|value=string
+|default=NULL
+|description=CSA encryption key. This must be a 16 char string (8 hexadecimal bytes)
+}}
+{{Option
+|name=ts-csa2-ck
+|value=string
+|default=NULL
+|description=The even CSA encryption key. This must be a 16 char string (8 hexadecimal bytes)
+}}
+{{Option
+|name=ts-csa-pkt
+|value=integer
+|default=188
+|description=Specify the size of the TS packet to decrypt. The decryption routines subtract the TS-header from the value before decrypting
+}}
+{{Option
+|name=ts-split-es
+|value=boolean
+|default=enabled
+|description=Separate teletex/[[DVB-S|dvbs]] pages into independent {{ES}}. It can be useful to turn off this option when using stream output
+}}
+{{Option
+|name=ts-seek-percent
+|value=boolean
+|default=disabled
+|description=Seek and position based on a percent byte position, not a PCR generated time position. If seeking doesn't work property, turn on this option
+}}
+{{Option
+|name=ts-cc-check
+|value=boolean
+|default=enabled
+|description=Detect discontinuities and drop packet duplicates. (bluRay sources are known broken and have false positives)
+}}
+{{Option
+|name=ts-pmtfix-waitdata
+|value=boolean
+|default=enabled
+|description=Only create ES on program sending data
+}}
+{{Option
+|name=ts-patfix
+|value=boolean
+|default=enabled
+|description=Try to generate PAT/PMT if missing
+}}
+{{Option
+|name=ts-pcr-offsetfix
+|value=boolean
+|default=enabled
+|description=Try to fix too early PCR (or late DTS)
+}}</onlyinclude>
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/mpeg/ts.c}}
+
+{{Documentation footer}}

@@ -1,0 +1,43 @@
+([[#mw-pages|Jump to pages in category]])
+[[File:VLMa.png|alt=|right]]
+
+== What is VLMa? ==
+
+[https://www.videolan.org/projects/vlma/ VLMa] means VideoLAN Manager
+
+VLMa is a Java application which provides a daemon and a web interface to manage several VLC streamers.
+
+It is being used in École Centrale Paris to broadcast Satellite and TNT channels over the network.
+
+Its source code is available under GPLv2 or later in VideoLAN's [[Git]], browsable on the web via [https://git.videolan.org/?p=vlma.git;a=summary gitweb].
+
+ {{$}} git clone git://git.videolan.org/vlma.git
+
+The daemon is in charge of managing the streamers:
+* give orders using the telnet interface,
+* fallback whenever a server fails,
+* monitor streamers' state using SNMP,
+* draw RRD graphs.
+
+The web module provides a user-friendly interface to communicate with the daemon. The communication between the daemon and the web interface is done using [[wikipedia:Remote Method Invocation|RMI]].
+
+== Usage ==
+
+VLMa is not the right tool if what you want is a graphical front-end to VLM. You should only consider using VLMa if you have several streamers to manage simultaneously. 
+
+== History ==
+
+VLMa development started in January 2006 under the impulsion of Sylvain Cadilhac, who was network administrator at [http://www.via.ecp.fr VIA Centrale Réseaux] and [[VideoLAN]] treasurer. There were around 10 servers in charge of streaming television and radio over the campus network, and the aim of the project was to provide a web interface to manage every server.
+
+== See also ==
+
+* [[VLMa/Documentation | VLMa documentation index]]
+* [[VLMa/Projects | Ideas of interesting projects]]
+
+== Related links ==
+
+* [http://trac.videolan.org/vlma VLMa Trac].
+* [http://nightlies.videolan.org/vlma/ Nightly builds].
+* [https://www.openhub.net/p/vlma Project details] at Open Hub.
+
+[[Category:VideoLAN projects]]

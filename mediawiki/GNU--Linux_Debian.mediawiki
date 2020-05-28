@@ -1,0 +1,1 @@
+#REDIRECT [[Documentation:Installing VLC#Debian]]

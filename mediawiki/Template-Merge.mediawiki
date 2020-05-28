@@ -1,0 +1,7 @@
+{| class="widebox center noprint" style="padding:0;"
+|style="padding:0.5em 0.9em;"|[[File:Merge-arrows.gif|50px]]
+|style="padding:0.5em 0.9em;"|It has been suggested that this {{#if:{{NAMESPACE}}|page|article}} or section be merged with [[{{{1}}}]].
+|}<includeonly>[[Category:Pages to be merged]]</includeonly><noinclude>
+
+[[Category:Maintenance templates]]
+</noinclude>

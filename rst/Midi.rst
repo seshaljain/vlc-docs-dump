@@ -1,0 +1,42 @@
+{{wikipedialabel1=Midi files}} {{Moduletype=Demuxfirst_version=0.9.0}}
+Standard MIDI Files (SMF) contain sounds events that indicate the notes
+and instruments in a musical performance, but do not include the digital
+waveform of the audio. They usually have the extension <tt>.mid</tt> or
+<tt>.midi</tt>. To play a MIDI file, software has to synthesize the
+music, which usually requires reading digital samples of musical
+instruments from a large file.
+
+== Play .mid (MIDI) files in VLC ==
+{{Moduletype=Codecfirst_version=0.9.0 (Linux)last_version=3.0.x
+(Windows)|os=Linux}}
+
+{{VLC}} can play Standard MIDI File (.MID) and RIFF MIDI (.RMI) files
+since version 0.9.0.
+
+Windows binary builds included MIDI support only in versions {{VLC}}
+from 1.1.0 through 2.0.8. Starting from version 2.1.0, support was
+dropped due to [https://trac.videolan.org/vlc/ticket/9486 security
+issues]. It was re-activated in VLC 3.0.0.
+
+=== SoundFonts file === To playback MIDI files, you need a
+[[wikipedia:SoundFont|SoundFont]] file (with extension <tt>.sf2</tt>).
+You can download them from either of these two places:
+
+-  http://www.schristiancollins.com/generaluser.php
+-  http://sourceforge.net/apps/trac/fluidsynth/wiki/SoundFont
+
+=== Configure SoundFont in VLC === You need to open VLC's preferences.
+The preferences window has two display modes called '''Simple''' and
+'''All'''. Choose the display mode called '''All''', then go to
+'''Input/Codecs''' > '''Audio codecs''' > '''FluidSynth'''. Then select
+the .sf2 file with '''Browse''' button and save the preferences with
+'''Save''' button.
+
+=== Linux === If the '''FluidSynth''' codec is not shown in VLC's
+preferences, you have to install it as well as sound fonts. E.g. on
+[[Ubuntu]] 18.04 and derivatives it is in the
+'''vlc-plugin-fluidsynth''' package, while the '''fluid-soundfont-gs'''
+and '''fluid-soundfont-gm''' packages install some sound fonts in
+<code>/usr/share/sounds/sf2</code>.
+
+[[Category:Container]]

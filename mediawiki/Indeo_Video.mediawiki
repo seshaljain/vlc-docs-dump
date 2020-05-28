@@ -1,0 +1,7 @@
+{{codec video|id=IV20}}
+{{codec video|id=IV31}}
+{{codec video|id=IV41}}
+{{codec video|id=IV50}}
+{{wikipedia|Indeo Video}}
+{{website|Ligos Indeo|http://ligos.com/}}
+'''Indeo Video''' is a video codec. Indeo is an uncommon codec, used primarily in video game cutscenes. {{VLC}} can decode Indeo Video through [[libavcodec]].

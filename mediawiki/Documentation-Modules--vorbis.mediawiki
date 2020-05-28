@@ -1,0 +1,27 @@
+{{Module|name=vorbis|type=Access demux|first_version=0.5.0|description=[[Vorbis]] audio decoder}}
+
+{{Option
+|name=sout-vorbis-quality
+|value=integer
+|min=0
+|max=10 
+|description=Enforce a quality between 1 (low) and 10 (high), instead of specifying a particular bitrate. This will produce a VBR stream
+}}
+{{Option
+|name=sout-vorbis-max-bitrate
+|value=integer
+|description=Maximum bitrate in kbps. This is useful for streaming applications
+}}
+{{Option
+|name=sout-vorbis-min-bitrate
+|value=integer
+|description=Minimum bitrate in kbps. This is useful for encoding for a fixed-size channel
+}}
+{{Option
+|name=sout-vorbis-cbr
+|value=boolean
+|description=Force a constant bitrate encoding (CBR)
+|default=disabled
+}}
+
+{{Documentation footer}}

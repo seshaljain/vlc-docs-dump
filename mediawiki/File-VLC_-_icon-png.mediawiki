@@ -1,0 +1,3 @@
+{{See also|Template:VLC icon}}
+
+[[Category:Cones]]

@@ -1,0 +1,36 @@
+[[FLAC]] is supported through libflac.
+
+== Decoder ==
+{{Module|name=flac|type=Audio decoder|first_version=0.5.2|description=FLAC audio decoder|sc=flac}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Encoder ==
+{{Module|name=flac|type=Audio encoder|first_version=0.7.0|description=FLAC audio encoder|sc=flac}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Demux ==
+{{Module|name=flac|type=Access demux|description=FLAC demuxer|sc=flac}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Packetizer ==
+{{Module|name=flac|type=Packetizer|description=Flac audio packetizer|sc=none}}
+
+=== Options ===
+None.
+{{Clear}}
+
+== Source code ==
+* {{VLCSourceFile|modules/codec/flac.c}}
+* {{VLCSourceFile|modules/demux/flac.c}}
+* {{VLCSourceFile|modules/packetizer/flac.c}}
+
+{{Documentation footer}}

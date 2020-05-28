@@ -1,0 +1,2 @@
+#Redirect [[VSG:Main]]
+<!-- meant to mirror the redirect page [[Common Problems]] -->

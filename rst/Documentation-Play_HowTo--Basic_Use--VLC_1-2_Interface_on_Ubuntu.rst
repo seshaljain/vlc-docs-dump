@@ -1,0 +1,54 @@
+'''&nbsp;VLC 1.2 Ubuntu (Linux) Interface Documentation'''
+
+All the button functions in Vlc 1.2 Ubuntu (Linux) version
+
+[[File:Mainscr.png%7C800x454px]]
+
+<br>
+
+Opening a file (Location--> Media/Advanced open file)
+
+[[File:Advanced Open.png|800x450px]]
+
+<br>
+
+Media Information (Location--> Tools/Media Information)
+
+[[File:Media Info.png|800x517px]]
+
+<br>
+
+Playlist Control (Location--> View/Playlist)
+
+[[File:Playlist.png%7C800x465px]]
+
+<br>
+
+Add Adjustments and Effects to the playing Video or Audio (Location-->
+Effects and Filters)
+
+[[File:Video effects - essential, with image adjust
+selected.png|800x481px]]
+
+<br>
+
+Control Vlc rapidly fast with Shortcut keys (Location-->
+Toos/Preferences/Hotkeys)
+
+[[File:Hotkeys.png%7C800x472px]]
+
+<br>
+
+Visualization (Location--> Audio/Visualization)
+
+[[File:Spectrometer on Ubuntu.png|800x508px]]
+
+<br>
+
+Skin vlc of your own choice (Location--> Tools/Preferences/Interface/)
+
+[[File:Skin.png%7C800x379px]]
+
+{{Documentation}}
+
+[[Category:GNU/Linux]]

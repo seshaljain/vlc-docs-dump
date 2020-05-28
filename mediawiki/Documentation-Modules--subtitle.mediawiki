@@ -1,0 +1,25 @@
+{{Module|name=subtitle|type=Access demux|description=Text [[subtitle]] parser|sc=subtitle}}
+
+Option <code>sub-delay</code> was removed in {{Commitdiff|204eb2a0ea3bca9d58002adab5ad937aa2e1ac7c}} and option <code>sub-fps</code> was removed in {{Commitdiff|28d124dd6567e120ee730f8a02395089e65ba79f}}. They are now in [[libVLC]].
+
+== Options ==
+{{Option
+|name=sub-type
+|value=string
+|select={ auto, microdvd, subrip, subviewer, ssa1, ssa2-4, ass, vplayer, sami, dvdsubtitle, mpl2, aqt, pjs, mpsub, jacosub, psb, realtext, dks, subviewer1, sbv }
+|default=auto
+|description=Force the subtiles format. Selecting "auto" means autodetection and should always work
+}}
+{{Option
+|name=sub-description
+|value=string
+|default=NULL
+|description=Override the default track description
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/demux/subtitle.c}}
+
+{{Documentation}}
+
+[[Category:Subtitles]]

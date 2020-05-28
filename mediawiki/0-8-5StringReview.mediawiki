@@ -1,0 +1,71 @@
+{{Historical}}
+This page is the central coordination point of the 0.8.5 Strings review campaign 
+
+== People interested ==
+People who are not developers are welcomed. 
+
+* [[User:xtophe|xtophe]] (coordinator)
+* [[User:Zorglub|zorglub]]
+* [[User:Tonsofpcs|tonsofpcs]]
+* [[User:Fkuehne|fkuehne]]
+* [[USer:Dionoea|dionoea]]
+
+== Work division ==
+Choose a part of the code if you want.  
+Don't put yourself on part you know by heart as you won't see the errors.
+
+{| border="1" cellspacing="0"
+! Module || First reviewer || Second reviewer || Current status
+|-
+|modules/access*||zorglub ||[[User:Xtophe|Xtophe]] || Done
+|-
+|modules/demux|| zorglub ||Xtophe || Done
+|-
+|modules/codec||xtophe || [[User:zorglub|zorglub]] || Done
+|-
+|modules/mux||fkuehne || zorglub || Done
+|-
+|modules/stream_out||xtophe || zorglub|| Done
+|-
+|modules/packetizer||[[User:fkuehne|fkuehne]]|| zorglub||Done
+|-
+|modules/audio*|| zorglub|| fkuehne|| Done
+|-
+|modules/control/rc.c|| [[User:dionoea|dionoea]] || zorglub || Done
+|-
+|modules/control/telnet.c|| zorglub || fkuehne|| Done 
+|-
+|modules/control/...|| dionoea || zorglub|| Done
+|-
+|modules/gui/skins2|| zorglub || ||1st review
+|-
+|modules/gui/macosx||[[User:BigBen|BigBen]] || xtophe || Done
+|-
+|modules/gui/wxwidgets|| zorglub|| steven|| Done
+|-
+|modules/video*|| zorglub|| [[User:fkuehne|fkuehne]]|| Done
+|-
+|modules/services_discovery|| xtophe || zorglub|| Done
+|-
+|modules/visualization|| xtophe || zorglub || Done
+|-
+|modules/misc|| zorglub ||xtophe || Done
+|-
+|src/libvlc.h|| zorglub|| dionoea || Done
+|-
+|src/...|| zorglub|| fkuehne||Done
+|-
+|include/vlc_config_cat.h||fkuehne || zorglub || Done
+|-
+|include/...|| zorglub|| xtophe || Done
+|-
+|mozilla||zorglub||xtophe || Done
+|-
+|activex||Tonsofpcs || zorglub || Done
+|}
+
+== Resources ==
+
+[[VideolanStringGuidelines]]
+
+[[Category:Dev Discussions]]

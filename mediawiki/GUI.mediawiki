@@ -1,0 +1,3 @@
+'''GUI''' is an acronym for Graphical User Interface. It refers to programs that interact with the user through images and animations rather than through a [[command-line]] or text-based user interface.
+
+[[Category:Glossary]]

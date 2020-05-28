@@ -1,0 +1,15 @@
+{{codec video|id=mp2v|altid=mpgv|mod=avcodec}}
+{{Wikipedia|H.262/MPEG-2 Part 2}}
+{{Open}}
+
+H.262, also known as MPEG-2 video, is a standard for video compression described by [[MPEG-2]] Part 2. It was preceded by [[H.261]] and followed by [[H.263]].
+
+== See also ==
+* [[H.261]]
+* [[H.262/MPEG-2 Part 2]]
+* [[H.263]]
+* [[H.264/MPEG-4 AVC]]
+* [[High Efficiency Video Coding|H.265/HEVC]]
+
+== Further reading ==
+* https://www.loc.gov/preservation/digital/formats/fdd/fdd000028.shtml

@@ -1,0 +1,12 @@
+{{codec video|encoder=n|id=H263|mod=avcodec}}
+{{Mmwiki|H.263}}
+{{Wikipedia|H.263}}
+
+H.263 is a standard for video compression. It is not free and open. It was preceded by [[H.262/MPEG-2 Part 2]] and succeeded by [[H.264/MPEG-4 AVC]].
+
+== See also ==
+* [[H.261]]
+* [[H.262/MPEG-2 Part 2]]
+* [[H.263]]
+* [[H.264/MPEG-4 AVC]]
+* [[High Efficiency Video Coding|H.265/HEVC]]

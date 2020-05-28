@@ -1,0 +1,35 @@
+-  
+
+   '''{{{name}}}{{#if:{{{alias{{#if:{{{alias2''', '''{{{alias}}}''' or '''{{{alias2}}}'''<!-- -->}}<!-- -->''' or '''{{{alias}}}'''<!-- -->}} {{#if:{{{value<{{#switch:{{{value}}}
+      float = [[float]] string = [[string]] \|#default = {{{value}}}
+
+   ..
+
+      }}{{#if:{{{select> <span
+      style="overflow-wrap:break-word;">{{{select}}}</span><!--
+      -->}}}<!-- -->}}}<!-- -->|&#x20;&#x5B;{{{min}}} ..
+      {{{max}}}&#x5D;<!-- -->}}<!-- -->}}><!--
+
+      -->}}<!--
+
+   ..
+
+      -->}}}<!--
+
+      -->}} ''': {{{description<includeonly>}}}<!-- -->|&#x20;''default
+      value: {{{default}}}''<!-- -->}}<noinclude>
+
+Usage: \* name (required) \*\* alias (optional): an alias for the name
+\*\* alias2 (optional): a second alias for the name \* value (optional)
+\*\* min (optional) \*\* max (optional) \* select (optional): takes
+precedence over <code>min</code> and <code>max</code>. <code>{}</code>
+will not be provided if not given (to avoid doubling). Use as e.g.
+<code>{png,jpg,tiff}</code> for documentation of options for
+<code>--snapshot-format</code> \* description (required) \* default
+(optional)
+
+min and max are only shown if both of them are specified, because no
+range should be given unbounded (if you think that is stupid, change
+it!)
+
+[[Category:Templates]] </noinclude>

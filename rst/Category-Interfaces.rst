@@ -1,0 +1,3 @@
+{{See also|Category:Control VLC}} VLC's [[interface]]s
+
+[[Category:Modules]]

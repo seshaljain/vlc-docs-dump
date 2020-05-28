@@ -1,0 +1,1 @@
+[[Category:Dialogue boxes]] [[Category:VLC 0.9.x images]]

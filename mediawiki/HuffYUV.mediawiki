@@ -1,0 +1,3 @@
+#REDIRECT [[Huffyuv]]
+
+[[Category:Video codecs]]

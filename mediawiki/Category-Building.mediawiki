@@ -1,0 +1,48 @@
+This guide will help you compile {{VLC}} for your platform.
+
+This guide is intended for '''developers''' and '''power users'''. Compiling VLC is not an easy task.
+
+You should come on [[IRC]] to assist you during this phase.
+
+'''<span style="color:red; font-size: 120%">Warning</span>:''' Please, do not put pre-release test binaries or git-compiles on software sites or on user-forums. We've had bad experiences with this before and we do not appreciate it.
+
+== Generic Steps  ==
+
+These are the main steps to follow to compile VLC&nbsp;: 
+
+# Prepare your compile environment, 
+# Grab the [[GetTheSource|source]] of {{VLC}}, 
+# Bootstrap, using the ./bootstrap script, if you took the code from repository, 
+# Prepare the extras libraries needed for {{VLC}}, read the [[Contrib Status|list]], 
+# [[Configure]],
+# Build, using make,
+# and Profit!
+
+== Compile for one Operating System ==
+There are the special compile guides for every OS you want VLC.
+
+Desktop:
+* [[Win32Compile|Windows]]
+* [[OSXCompile|macOS]]
+* [[UnixCompile|Linux, BSD or other Unices]]
+* [[Solaris|Solaris]]
+
+Mobile:
+* [[AndroidCompile|Android]]
+* [[iOSCompile|iOS]]
+* [[WinRTCompile|WinRT]]
+
+OLD:
+* [[WinCECompile|How to compile for WinCE]] (outdated)
+* [[BeOSCompile|How to compile on BeOS]] (outdated)
+* [[ARMCompileOldPDA|How to cross-compile for old ARM-based PDAs]] (outdated)
+
+== Other compile guides ==
+* [[OutOfTreeCompile|How to compile a module outside of VLC source tree]]
+* [[DirectFB_Compile|Compile DirectFB plugin]]
+* [[Contrib_Status|Contrib Status]] - 3rd party libraries status.
+* [[Packagers|Links to the packaging in various distros]]
+
+See also [[:Category:Operating systems]].
+
+[[Category:Coding]]

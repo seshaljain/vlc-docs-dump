@@ -1,0 +1,24 @@
+{{See also|Documentation:Modules/dvdread}}
+
+{{Module|name=dvdnav|type=Access demux|first_version=0.7.1|description=[[DVD]] with menus}}
+
+This module uses [[libdvdnav]].
+
+== Options ==
+{{Option
+|name=dvdnav-angle
+|value=integer
+|default=1
+|description=Default DVD angle
+}}
+{{Option
+|name=dvdnav-menu
+|value=boolean
+|default=enabled
+|description=Start the DVD directly in the main menu. This will try to skip all the useless warning introductions
+}}
+
+== Source code ==
+* {{VLCSourceFile|modules/access/dvdnav.c}}
+
+{{Documentation}}

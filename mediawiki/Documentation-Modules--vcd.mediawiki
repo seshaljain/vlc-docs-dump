@@ -1,0 +1,11 @@
+{{See also|VCD|SVCD|SVCD subtitles}}
+{{Module|name=vcd|type=Access|first_version=0.5.0|description=[[VCD]] input|sc=vcd|sc2=svcd}}
+
+== Options ==
+None.
+
+== Source code ==
+* {{VLCSourceFile|modules/access/vcd/vcd.c}} (main file)
+* {{VLCSourceFile|modules/access/vcd}} (folder)
+
+{{Documentation}}
