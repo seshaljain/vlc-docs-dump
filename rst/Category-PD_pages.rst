@@ -1,5 +1,3 @@
-Pages either dedicated to the Public Domain or pages with a
-[[wikipedia:Public-domain-equivalent license|Public-domain-equivalent
-license]]: CC0, Unlicense, WTFPL, etc.
+Pages either dedicated to the Public Domain or pages with a `Public-domain-equivalent license <wikipedia:Public-domain-equivalent_license>`__: CC0, Unlicense, WTFPL, etc.
 
-[[Category:Page licenses]]
+`Category:Page licenses <Category:Page_licenses>`__

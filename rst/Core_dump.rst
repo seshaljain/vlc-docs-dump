@@ -1,1 +1,1 @@
-#REDIRECT [[Crashdump]]
+#. REDIRECT `Crashdump <Crashdump>`__

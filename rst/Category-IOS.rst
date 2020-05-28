@@ -1,3 +1,7 @@
-{{lowercase}} Pages related to VLC's port to [[Documentation:iOS|iOS]].
+.. raw:: mediawiki
 
-[[Category:Mobile documentation]] [[Category:Operating systems]]
+   {{lowercase}}
+
+Pages related to VLC's port to `iOS <Documentation:iOS>`__.
+
+`Category:Mobile documentation <Category:Mobile_documentation>`__ `Category:Operating systems <Category:Operating_systems>`__

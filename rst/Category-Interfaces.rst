@@ -1,3 +1,7 @@
-{{See also|Category:Control VLC}} VLC's [[interface]]s
+.. raw:: mediawiki
 
-[[Category:Modules]]
+   {{See also|Category:Control VLC}}
+
+VLC's `interfaces <interface>`__
+
+`Category:Modules <Category:Modules>`__

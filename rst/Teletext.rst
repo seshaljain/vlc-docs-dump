@@ -1,7 +1,15 @@
-{{MuxTeletext\|https://pdc.ro.nu/teletext.html%7Con=PDC Live}}
+.. raw:: mediawiki
 
-Teletext is a [[subtitles]] format.
+   {{Mux|id=telx}}
 
-{{Stub}}
+.. raw:: mediawiki
 
-[[Category:Subtitles]]
+   {{Website|Teletext|https://pdc.ro.nu/teletext.html|on=PDC Live}}
+
+Teletext is a `subtitles <subtitles>`__ format.
+
+.. raw:: mediawiki
+
+   {{Stub}}
+
+`Category:Subtitles <Category:Subtitles>`__

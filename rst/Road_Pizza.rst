@@ -1,1 +1,1 @@
-#redirect [[QuickTime]]
+#. redirect `QuickTime <QuickTime>`__

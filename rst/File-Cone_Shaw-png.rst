@@ -1,2 +1,3 @@
-Cone by Joel Shaw. Size 595 x 595 pixels. Uploaded from
-https://www.videolan.org/goodies.html [[Category:Cones]]
+Cone by Joel Shaw. Size 595 x 595 pixels. Uploaded from https://www.videolan.org/goodies.html
+
+`Category:Cones <Category:Cones>`__

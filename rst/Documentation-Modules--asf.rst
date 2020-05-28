@@ -1,22 +1,45 @@
-{{Moduletype=Muxer|description=[[ASF]] muxer}}
+.. raw:: mediawiki
 
-Shortcuts to this module are <code>asf</code> and <code>asfh</code>.
-Support for demuxing was added in 0.5.0. Support for muxing was added
-sometime prior to 0.8.0, as the changelog says "Improved ASF muxer" for
-0.8.0. Support for images/cover art was added in 2.0.0.
+   {{Module|name=asf|type=Muxer|description=[[ASF]] muxer}}
 
-== Options == <onlyinclude> {{Option value=string description=Title to
-put in ASF comments }} {{Option value=string description=Author to put
-in ASF comments }} {{Option value=string description=Copyright string to
-put in ASF comments }} {{Option value=string description=Comment to put
-in ASF comments }} {{Option value=string description="Rating" to put in
-ASF comments }} {{Option value=integer description=ASF packet size }}
-{{Option value=integer description=Do not try to guess ASF [[bitrate]].
-Setting this, allows you to control how [[Windows Media Player]] will
-cache streamed content. Set to audio+video bitrate in bytes
-}}</onlyinclude>
+Shortcuts to this module are ``asf`` and ``asfh``. Support for demuxing was added in 0.5.0. Support for muxing was added sometime prior to 0.8.0, as the changelog says "Improved ASF muxer" for 0.8.0. Support for images/cover art was added in 2.0.0.
 
-== Source code == \* {{VLCSourceFilemodules/demux/asf}} \*
-{{VLCSourceFilemodules/demux/asf/libasf.c}} (stream demuxer)
+Options
+-------
 
-{{Documentation}}
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/mux/asf.c}}
+
+   (muxer)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFolder|modules/demux/asf}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/asf/asf.c}}
+
+   (demuxer)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/asf/libasf.c}}
+
+   (stream demuxer)
+
+.. raw:: mediawiki
+
+   {{Documentation}}

@@ -1,12 +1,25 @@
-{{Lowercase}} {{See
-alsox265\ https://www.videolan.org/developers/x265.html}} {{Open}}
+.. raw:: mediawiki
 
-x265 is a free [[library]] for encoding [[High Efficiency Video
-Coding]].
+   {{Lowercase}}
 
-The x265 library encodes ''H.265'' (unofficial name), and the x264
-library encodes ''H.264''.
+.. raw:: mediawiki
 
-{{Stub}}
+   {{See also|x264}}
 
-[[Category:Libraries]] [[Category:VideoLAN projects]]
+.. raw:: mediawiki
+
+   {{Website|x265|on=videolan.org|https://www.videolan.org/developers/x265.html}}
+
+.. raw:: mediawiki
+
+   {{Open}}
+
+x265 is a free `library <library>`__ for encoding `High Efficiency Video Coding <High_Efficiency_Video_Coding>`__.
+
+The x265 library encodes *H.265* (unofficial name), and the x264 library encodes *H.264*.
+
+.. raw:: mediawiki
+
+   {{Stub}}
+
+`Category:Libraries <Category:Libraries>`__ `Category:VideoLAN projects <Category:VideoLAN_projects>`__

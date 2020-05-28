@@ -1,2 +1,1 @@
-#Redirect [[VSG:Main]] <!-- meant to mirror the redirect page [[Common
-Problems]] -->
+#. Redirect `VSG:Main <VSG:Main>`__

@@ -1,18 +1,20 @@
-<includeonly><!----><div class="hatnote">See also:
-[[:{{{1{{{label1{{{1}}}<!-- -->}}}<!-- -->&nbsp;and&#32;<!--
--->}}[[:{{{2}}}{{{l2}}{{#if:{{{3{{#if:{{{4,&#32;<!--
--->{{{label3{{{3}}}}}}}}}]]<!-- -->}}}<!--
--->{{{label4{{{4}}}}}}}}}]]<!---->|}}</div></includeonly><noinclude>
-This template was reverse-engineered to resemble
-[//en.wikipedia.org/wiki/Template:See_also Wikipedia's template], but is
-my own work.<br /> It can be used at the very beginning of articles to
-link up to four pages (including links to category pages).<br />
-'''Examples'''
+.. raw:: html
 
-<code><nowiki>{{See alsoMPEG-1}} <code><nowiki>{{See
-alsoMPEG-2MPEG-4}}</nowiki></code> produces:<br /> {{See
-alsoMPEG-2MPEG-4}} <code><nowiki>{{See alsolabel1=An awesome media
-player}}</nowiki></code> produces:<br /> {{See alsolabel1=An awesome
-media player}}
+   <div class="hatnote">
 
-[[Category:Templates]] </noinclude>
+See also: `Example page}}}\|}}}}}} <:{{{1>`__ {{#if: \|{{#if: \|,  \| and  }}\ `}}}}}} <:{{{2}}}>`__ \|}}{{#if: \|{{#if: \|,  \| and  }}\ `}}}}}} <:{{{3}}}>`__ \|}}{{#if: \| and  `}}}}}} <:{{{4}}}>`__ \|}}
+
+.. raw:: html
+
+   </div>
+
+| This template was reverse-engineered to resemble [//en.wikipedia.org/wiki/Template:See_also Wikipedia's template], but is my own work.
+| It can be used at the very beginning of articles to link up to four pages (including links to category pages).
+| **Examples**
+
+| ``{{See also|MPEG-1}}`` produces:
+| ``{{See also|MPEG-1|MPEG-2|MPEG-3|MPEG-4}}`` produces:
+| ``{{See also|VLC|label1=An awesome media player}}`` produces:
+| 
+
+`Category:Templates <Category:Templates>`__

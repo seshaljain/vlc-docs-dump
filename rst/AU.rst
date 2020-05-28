@@ -1,1 +1,1 @@
-#redirect [[au]]
+#. redirect `au <au>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Mirrors]]
+#. REDIRECT `Mirrors <Mirrors>`__

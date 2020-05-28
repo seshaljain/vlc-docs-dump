@@ -1,7 +1,1 @@
-I beleive that streaming is not the issue when using VLC with STBs. It
-probably works fine for most boxes (using MPEG2 TS). I have tested it
-myself with Amino and Kreatel. The main issue is to get a good control
-and selection interface. Unfortunately STB's ususally have a very basic
-built in http-browser, and it seems like the new web-interface in 0.8.5
-might require to much of the web-browser. So on my wish-list is a
-correspondingly less demanding web-interface. Pen
+I beleive that streaming is not the issue when using VLC with STBs. It probably works fine for most boxes (using MPEG2 TS). I have tested it myself with Amino and Kreatel. The main issue is to get a good control and selection interface. Unfortunately STB's ususally have a very basic built in http-browser, and it seems like the new web-interface in 0.8.5 might require to much of the web-browser. So on my wish-list is a correspondingly less demanding web-interface. Pen

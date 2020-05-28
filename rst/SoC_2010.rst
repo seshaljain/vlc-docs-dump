@@ -1,145 +1,144 @@
-'''Google Summer of Code 2010.'''
+**Google Summer of Code 2010.**
 
-This wiki page covers the attempt by the [[VideoLAN]] project to act as
-a mentoring organization for [http://code.google.com/soc/ Google Summer
-of Code], in order to improve {{VLC}}, [[x264]], the H.264 video
-encoder, and VLMC. The accepted projects are seen on a [[SoC 2010
-projects|separate page]].
+This wiki page covers the attempt by the `VideoLAN <VideoLAN>`__ project to act as a mentoring organization for `Google Summer of Code <http://code.google.com/soc/>`__, in order to improve , `x264 <x264>`__, the H.264 video encoder, and VLMC. The accepted projects are seen on a `separate page <SoC_2010_projects>`__.
 
-== Introduction & Information ==
+Introduction & Information
+--------------------------
 
-This wiki page covers the attempt by the [[VideoLAN]] project to act as
-a mentoring organization for [http://code.google.com/soc/ Google Summer
-of Code], in order to improve {{VLC}} and [[x264]], the H.264 video
-encoder.
+This wiki page covers the attempt by the `VideoLAN <VideoLAN>`__ project to act as a mentoring organization for `Google Summer of Code <http://code.google.com/soc/>`__, in order to improve and `x264 <x264>`__, the H.264 video encoder.
 
-[[VideoLAN]] was a mentoring organization in [[SoC_20072008]] and
-[[SoC_2009|2009]].
+`VideoLAN <VideoLAN>`__ was a mentoring organization in `2007 <SoC_2007>`__, `2008 <SoC_2008>`__ and `2009 <SoC_2009>`__.
 
 -  This page list the ideas for VLC.
--  There is also a separate page for project ideas for [[x264]]:
-   '''[[SoC x264 2010]]'''.
+-  There is also a separate page for project ideas for `x264 <x264>`__: `SoC x264 2010 <SoC_x264_2010>`__.
 
-If you are a '''student''', please read [[SoC_2010_Rules|the rules and
-advice]].
+If you are a **student**, please read `the rules and advice <SoC_2010_Rules>`__.
 
-=== VLC media player === {{VLC}} is a cross-platform multimedia player,
-encoder and streamer application. It is one of the most successful
-open-source projects without any professional structure underneath.
+VLC media player
+~~~~~~~~~~~~~~~~
 
-{{VLC}} is downloaded at an approximate monthly rate of 5 millions from
-the main website and that's not including third-party distributions
-(Linux)!
+.. raw:: mediawiki
 
-You can find more information on
-[http://en.wikipedia.org/wiki/VLC_media_player VLC on Wikipedia] or on
-this [[Main_Page|wiki]].
+   {{VLC}}
 
-=== x264 === [[x264]] is probably the most popular open source video
-compression software, used worldwide for applications such as web video,
-television broadcast, and Blu-ray authoring. It outclasses practically
-all commercial implementations both speed and compression-wise. While
-not actually part of VLC or ffmpeg, it is a major library used by both,
-licensed under the GPL. Due to its popularity in the commercial world
-(for example, Youtube and Facebook rely on it), many companies have
-offered bounties in the past for features and improvements that they
-found useful.
+is a cross-platform multimedia player, encoder and streamer application. It is one of the most successful open-source projects without any professional structure underneath.
 
-=== Summer of Code ===
+.. raw:: mediawiki
 
-If selected and developed, SoC projects for VLC will be included in
-later releases; SoC projects for x264 will be included in the main tree
-of the project.
+   {{VLC}}
+
+is downloaded at an approximate monthly rate of 5 millions from the main website and that's not including third-party distributions (Linux)!
+
+You can find more information on `VLC on Wikipedia <http://en.wikipedia.org/wiki/VLC_media_player>`__ or on this `wiki <Main_Page>`__.
+
+x264
+~~~~
+
+`x264 <x264>`__ is probably the most popular open source video compression software, used worldwide for applications such as web video, television broadcast, and Blu-ray authoring. It outclasses practically all commercial implementations both speed and compression-wise. While not actually part of VLC or ffmpeg, it is a major library used by both, licensed under the GPL. Due to its popularity in the commercial world (for example, Youtube and Facebook rely on it), many companies have offered bounties in the past for features and improvements that they found useful.
+
+Summer of Code
+~~~~~~~~~~~~~~
+
+If selected and developed, SoC projects for VLC will be included in later releases; SoC projects for x264 will be included in the main tree of the project.
 
 All projects are covered by the GPL licence. (v2+)
 
-=== Ideas for VLC and VLMC ===
+Ideas for VLC and VLMC
+~~~~~~~~~~~~~~~~~~~~~~
 
-'''''Read this'''''
+**Read this**
 
 This page is split in three lists of ideas:
 
-# The ''main ideas'' are what seem to be ''key projects'' for VLC and
-should be more ''thrilling'' than the other ones; we have assigned a
-potential mentor to each of these. # Phonon ideas, for KDE/Phonon work.
-# The other ideas are less detailed but could be good ideas too. # VLMC
-ideas # [[Mini_Projects]] are short-span projects which can be given as
-Qualification tasks or extended to be Full Summer of Code project.
+#. The *main ideas* are what seem to be *key projects* for VLC and should be more *thrilling* than the other ones; we have assigned a potential mentor to each of these.
+#. Phonon ideas, for KDE/Phonon work.
+#. The other ideas are less detailed but could be good ideas too.
+#. VLMC ideas
+#. `Mini_Projects <Mini_Projects>`__ are short-span projects which can be given as Qualification tasks or extended to be Full Summer of Code project.
 
--  '''Original good ideas will be valued'''. Last year, half of the
-   ideas were given by students. We don't want to impose anything. This
-   is free and Open Source software.
+-  **Original good ideas will be valued**. Last year, half of the ideas were given by students. We don't want to impose anything. This is free and Open Source software.
 
-If you don't want to apply for SoC but want other ideas to develop on,
-check the [[Mini Projects]] page!
+If you don't want to apply for SoC but want other ideas to develop on, check the `Mini Projects <Mini_Projects>`__ page!
 
 And on the IRC channel, you can have even more ideas.
 
-===Ideas for x264=== For x264 ideas, please see [[SoC x264 2010]].
+Ideas for x264
+~~~~~~~~~~~~~~
 
-== Key VLC projects ==
+For x264 ideas, please see `SoC x264 2010 <SoC_x264_2010>`__.
 
-=== Shader support for DirectX/OpenGL === A lot of video post-processing
-such as RGB-YUV conversion can be accelerated by using GPU and Shaders.
-Implement support for this in the DirectX and OpenGL drivers for Windows
-and OpenGL for other platforms. (coding in C and custom shader
-creation).
+Key VLC projects
+----------------
 
-''Proposed mentor: Fenrir''
+Shader support for DirectX/OpenGL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-=== Rewrite Matroska demuxer === This project is for advanced multimedia
-coders.
+A lot of video post-processing such as RGB-YUV conversion can be accelerated by using GPU and Shaders. Implement support for this in the DirectX and OpenGL drivers for Windows and OpenGL for other platforms. (coding in C and custom shader creation).
 
-If you are well introduced in muxers/demuxers and know pretty well how
-matroska is done, this is for you.
+*Proposed mentor: Fenrir*
 
-You will very likely need to use an existing open source demuxer, for
-example the libavformat demuxer (written in C)
+Rewrite Matroska demuxer
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+This project is for advanced multimedia coders.
+
+If you are well introduced in muxers/demuxers and know pretty well how matroska is done, this is for you.
+
+You will very likely need to use an existing open source demuxer, for example the libavformat demuxer (written in C)
 
 If you are fast enough, the muxer side would be cool.
 
-Code will be in ''C''.
+Code will be in *C*.
 
-''Proposed mentor: Fenrir''
+*Proposed mentor: Fenrir*
 
-=== Audio Filters ===
+Audio Filters
+~~~~~~~~~~~~~
 
-We are looking for a skilled audiophile that knows a lot about audio
-theory and practice: \* to create or implement new algorithms, like SRS
-WoW or other 3D effects \* to work on channels mixing, \* to work on
-tracks mixing, \* to create scriptable new audio filters in lua and
-enable users to create whatever audio filtering function they want in a
-Lua script. \* LADSPA or other libraries integration will be
-interesting.
+We are looking for a skilled audiophile that knows a lot about audio theory and practice:
+
+-  to create or implement new algorithms, like SRS WoW or other 3D effects
+-  to work on channels mixing,
+-  to work on tracks mixing,
+-  to create scriptable new audio filters in lua and enable users to create whatever audio filtering function they want in a Lua script.
+-  LADSPA or other libraries integration will be interesting.
 
 This project needs some good audio knowledge and good C experience.
 
-''Proposed mentor: [[User:Geal|geal]]''
+*Proposed mentor:*\ `geal <User:Geal>`__
 
-=== VLC Test Suite === This project aims at making automatic tests to
-improve VLC quality.
+VLC Test Suite
+~~~~~~~~~~~~~~
+
+This project aims at making automatic tests to improve VLC quality.
 
 -  Write a series of tests for vlc-internal
--  Integrate a framework for automated plugins testing with the automake
-   build system
+-  Integrate a framework for automated plugins testing with the automake build system
 -  Automate the different codec playback/mux/etc tests
 -  Automate the subtitles tests
--  Write tests for the different bindings: Mac OS X Framework/Python
-   Bindings... etc.
+-  Write tests for the different bindings: Mac OS X Framework/Python Bindings... etc.
 
 This project is a code project, require good knowledge of C
 
-''Proposed mentor: Rémi''
+*Proposed mentor: Rémi*
 
-=== VLC Personnal Cloud Project 2.0 ===
+VLC Personnal Cloud Project 2.0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The personal cloud project is a simple project to allow people to play
-their media files anywhere in the world.
+The personal cloud project is a simple project to allow people to play their media files anywhere in the world.
 
-Through the http interface of VLC, a user can: \* list the medias from
-the Media Library, \* play those medias, \* those medias get transcoded
-and streamed in: \*\* Flash \*\* Silverlight \*\* iPhone format \*\*
-Android format \*\* html5 \*\* A VLC webplugin
+Through the http interface of VLC, a user can:
+
+-  list the medias from the Media Library,
+-  play those medias,
+-  those medias get transcoded and streamed in:
+
+   -  Flash
+   -  Silverlight
+   -  iPhone format
+   -  Android format
+   -  html5
+   -  A VLC webplugin
 
 A good example of the aim is http://www.vodobox.c.la/
 
@@ -147,23 +146,23 @@ This project has to work on the configuration and NAT traversal.
 
 This projects needs knowledge in HTML and JS; it might require C coding.
 
-''Proposed mentor: dionoea''
+*Proposed mentor: dionoea*
 
-=== Enhanced DVD Audio support ===
+Enhanced DVD Audio support
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This project is quite simple, it speaks about supporting DVD-Audio.
 
-VLC already decodes .aob files, but doesn't handle the DVD-Audio
-extensions, nor the decryption.
+VLC already decodes .aob files, but doesn't handle the DVD-Audio extensions, nor the decryption.
 
-The student should be passionate about Audio and have already one
-DVD-Audio Disc.
+The student should be passionate about Audio and have already one DVD-Audio Disc.
 
 This project is a code project, require knowledge of C.
 
-''Proposed mentor: jpsaman''
+*Proposed mentor: jpsaman*
 
-=== Interface for VLC on Mobile phones ===
+Interface for VLC on Mobile phones
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 VLC uses Qt for its main interfaces on desktop systems.
 
@@ -173,190 +172,202 @@ Using Qt or EFL would be a good idea.
 
 This project is a code project, require knowledge of C or C++.
 
-''Proposed mentor: ILEoo''
+*Proposed mentor: ILEoo*
 
-=== Blu-ray enhancements ===
+Blu-ray enhancements
+~~~~~~~~~~~~~~~~~~~~
 
-We need Menu/Navigation support. VLC Currently supports Bluray chapter
-playback but still needs menu support.
+We need Menu/Navigation support. VLC Currently supports Bluray chapter playback but still needs menu support.
 
 BD-Live and BD-Java support would be interesting.
 
 Proposed mentor: jb
 
-=== RTMPdump ===
+RTMPdump
+~~~~~~~~
 
 Integrate the RTMPdump library to play rtmp and rtmpe streams.
 
-''Proposed mentor: jpsaman or ivoire''
+*Proposed mentor: jpsaman or ivoire*
 
-=== UPNP DLNA Server and Client ===
+UPNP DLNA Server and Client
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Provide SD module for DLNA shares being compliant with DLNA
-specification as well as software (say, mediatomb, xbmc, etc) and
-hardware implementations.
+Provide SD module for DLNA shares being compliant with DLNA specification as well as software (say, mediatomb, xbmc, etc) and hardware implementations.
 
-Provide DLNA plugin for DLNA server compliant with opensource (xbmc,
-djmount, etc) and proprietary (PS3, xbox360, etc) DLNA clients.
+Provide DLNA plugin for DLNA server compliant with opensource (xbmc, djmount, etc) and proprietary (PS3, xbox360, etc) DLNA clients.
 
-Be smart enough to provide "presets" for known DLNA media clients with
-limited features (PS3, for instance) which require additional quirks or
-hacks or items to be transcoded.
+Be smart enough to provide "presets" for known DLNA media clients with limited features (PS3, for instance) which require additional quirks or hacks or items to be transcoded.
 
-''Proposed mentor: ivoire or Meuuh''
+*Proposed mentor: ivoire or Meuuh*
 
-=== Assembly optimizations in VLC ===
+Assembly optimizations in VLC
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you are fond of writing ASM and you are fluent in MMX/SSE2/SSE4,
-there are many interesting things in VLC to speed up. \* Profiling VLC.
-\* memcpy implementations in SSE\* and MMX (see
-modules/misc/memcpy/fastmemcpy.h) \* video filters ASM speedups (see
-modules/video_filter/blend.c) \* audio filters ASM speedups (see
-modules/audio_filter/equalizer.c) \* Porting other ASM video filters to
-VLC.
+If you are fond of writing ASM and you are fluent in MMX/SSE2/SSE4, there are many interesting things in VLC to speed up.
+
+-  Profiling VLC.
+-  memcpy implementations in SSE\* and MMX (see modules/misc/memcpy/fastmemcpy.h)
+-  video filters ASM speedups (see modules/video_filter/blend.c)
+-  audio filters ASM speedups (see modules/audio_filter/equalizer.c)
+-  Porting other ASM video filters to VLC.
 
 This project needs some good ASM knowledge and good C experience.
 
 -  Stuff to read: http://www.agner.org/optimize/
 
-''Proposed mentor: [[User:J-b|jb]]''
+*Proposed mentor:*\ `jb <User:J-b>`__
 
-=== Set of lua extensions ===
+Set of lua extensions
+~~~~~~~~~~~~~~~~~~~~~
 
 With VLC 1.1, extensions can be written for VLC in lua.
 
-This project deals with writing many new extensions (between 20 and 30)
-during the summer for the most interesting features we can find on the
-Net.
+This project deals with writing many new extensions (between 20 and 30) during the summer for the most interesting features we can find on the Net.
 
-''Proposed mentor: [[User:Jpeg|jpeg]]''
+*Proposed mentor:*\ `jpeg <User:Jpeg>`__
 
-== Phonon ideas ==
+Phonon ideas
+------------
 
-=== High-Level Capture API for Phonon (read: Webcam Support) === Phonon
-is a multimedia abstraction layer, developed by the KDE project.
+High-Level Capture API for Phonon (read: Webcam Support)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Phonon is a multimedia abstraction layer, developed by the KDE project.
 
 It features multiple backends, including VLC.
 
-The goal of this project would be to create an API to allow Phonon
-application to display and access input devices, like webcams. The API
-would then be implemented in phonon-vlc and other backends, such as
-phonon-gst, as time permits.
+The goal of this project would be to create an API to allow Phonon application to display and access input devices, like webcams. The API would then be implemented in phonon-vlc and other backends, such as phonon-gst, as time permits.
 
-''Proposed mentor: Ian Monroe''
+*Proposed mentor: Ian Monroe*
 
-=== Phonon-VLC improvements and test ===
+Phonon-VLC improvements and test
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This project would be about improving the long-term quality of the
-Phonon-VLC backend: \* Improving VLC Phonon backend, implementing
-lacking API, \* Fixing the Phonon CTest-based tests, \* Implement more
-tests, \* Run the tests on windows, \* Implement cool features like
-DVD-Audio or Blu-Ray support (should be pretty easy),
+This project would be about improving the long-term quality of the Phonon-VLC backend:
 
-''Proposed Mentor: Sandsmark (if not a student himself)''
+-  Improving VLC Phonon backend, implementing lacking API,
+-  Fixing the Phonon CTest-based tests,
+-  Implement more tests,
+-  Run the tests on windows,
+-  Implement cool features like DVD-Audio or Blu-Ray support (should be pretty easy),
 
-=== Phonon API for low-level PCM I/O ===
+*Proposed Mentor: Sandsmark (if not a student himself)*
 
-This would be about implementing API for low-level PCM I/O in Phonon,
-and support in one or more backends (at least Phonon-VLC):
+Phonon API for low-level PCM I/O
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-''Proposed mentor: Ian Monroe''
+This would be about implementing API for low-level PCM I/O in Phonon, and support in one or more backends (at least Phonon-VLC):
 
-=== Phonon API for implementing effects in applications ===
+*Proposed mentor: Ian Monroe*
 
-This would be about fleshing out an API for letting applications make
-their own effects (get data out, and push data back). Might be useful to
-use AudioDataOutput.
+Phonon API for implementing effects in applications
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-''Proposed mentor: Ian Monroe''
+This would be about fleshing out an API for letting applications make their own effects (get data out, and push data back). Might be useful to use AudioDataOutput.
 
-== VLMC (VideoLAN Movie Creator) ideas ==
+*Proposed mentor: Ian Monroe*
 
-=== Add Jack support ===
+VLMC (VideoLAN Movie Creator) ideas
+-----------------------------------
+
+Add Jack support
+~~~~~~~~~~~~~~~~
 
 This is an often request features.
 
-It would be nice to be abble to export VLMC sound output to another
-program, or reading from another program output instead or reading from
-an audio file.
+It would be nice to be abble to export VLMC sound output to another program, or reading from another program output instead or reading from an audio file.
 
-This project includes core VLMC programming, to allow the selection of
-an audio input/output, as VLMC only supports file input, and doesn't
-really deals with output. Once this is done, it will require some GUI
-programming, to create some configuration widgets.
+This project includes core VLMC programming, to allow the selection of an audio input/output, as VLMC only supports file input, and doesn't really deals with output. Once this is done, it will require some GUI programming, to create some configuration widgets.
 
 '' Proposed mentor: chouquette''
 
-=== Adding custom widgets ===
+Adding custom widgets
+~~~~~~~~~~~~~~~~~~~~~
 
-Many widgets are not good enough right now. Correcting those widgets,
-provide alternative widget so VLMC better fits with the video editing
-needs.
+Many widgets are not good enough right now. Correcting those widgets, provide alternative widget so VLMC better fits with the video editing needs.
 
-Many widgets can be rewritten : Import, Library, Clip property... be
-creative ! '' Proposed mentor: etix''
+Many widgets can be rewritten : Import, Library, Clip property... be creative ! '' Proposed mentor: etix''
 
-=== Youtube integration ===
+Youtube integration
+~~~~~~~~~~~~~~~~~~~
 
-As VLC can read a Youtube input, so does VLMC. However, this is not
-implemented at this time. This project would consist in : importing
-media from youtube , allowing direct export to youtube, directly export
-to youtube, instead of a file.
+As VLC can read a Youtube input, so does VLMC. However, this is not implemented at this time. This project would consist in : importing media from youtube , allowing direct export to youtube, directly export to youtube, instead of a file.
 
 '' Proposed mentor: chouquette''
 
-== Supplementary ideas ==
+Supplementary ideas
+-------------------
 
-This sections welcomes all '''Original''' ideas which can be implemented
-in a short span of time.However, We have a more general page for ideas
-for Project in {{VLC}}, that could give you ideas: [[Mini_Projects]].
+This sections welcomes all **Original** ideas which can be implemented in a short span of time.However, We have a more general page for ideas for Project in , that could give you ideas: `Mini_Projects <Mini_Projects>`__.
 
-=== Add Proxy Support ===
+Add Proxy Support
+~~~~~~~~~~~~~~~~~
 
-Add a central Proxy Server option for all the HTTP operations performed
-by vlc.This project will need to add a UI component to VLC and then
-converting the way VLC interacts with Various Websites like last.fm or
-imdb.com
+Add a central Proxy Server option for all the HTTP operations performed by vlc.This project will need to add a UI component to VLC and then converting the way VLC interacts with Various Websites like last.fm or imdb.com
 
-=== VLC Taskbar/Toolbar Mode ===
+VLC Taskbar/Toolbar Mode
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-To Develop a Toolbar mode which shows the sound current sound track
-information,and avails basic control to users eliminating the hassle of
-swtching between UIs.This mode is already available in many Media
-players.VLC is lacking this feature currently.
+To Develop a Toolbar mode which shows the sound current sound track information,and avails basic control to users eliminating the hassle of swtching between UIs.This mode is already available in many Media players.VLC is lacking this feature currently.
 
-''Proposed mentor: [[User:J-b|jb]]'' Proposed by : pk
+*Proposed mentor:*\ `jb <User:J-b>`__ Proposed by : pk
 
-=== Spotify integration ===
+Spotify integration
+~~~~~~~~~~~~~~~~~~~
 
 Develop a way to decode spotify streams.
 
-=== Windows 7 integration ===
+Windows 7 integration
+~~~~~~~~~~~~~~~~~~~~~
 
 Use taskbar and tasklist cool feature.
 
 Integrate with DirectWrite and Direct2D
 
-=== Symbian port ===
+Symbian port
+~~~~~~~~~~~~
 
 Port VLC to S60 platform
 
-=== SVCD/VCD improvements ===
+SVCD/VCD improvements
+~~~~~~~~~~~~~~~~~~~~~
 
 Menus and such needs to be improvements and fixed.
 
-== Questions? Contact us? == If you need to contact us for any
-questions, you can: \* use the
-[http://www.videolan.org/developers/lists.html vlc-devel] mailing list,
-\* come on IRC irc://irc.videolan.org #videolan \* contact one of the
-mentors or the backup mentors, \* or contact [[User:J-b\| Jean-Baptiste
-Kempf]]
+Questions? Contact us?
+----------------------
 
-=== Mentors === The proposed mentors are: \* jpeg \* remi \* xtophe \*
-jb \* dionoea \* jpsaman \* fenrir \* ivoire \* funman (backup)
+If you need to contact us for any questions, you can:
 
-=== Administrators === \* jb \* xtophe
+-  use the `vlc-devel <http://www.videolan.org/developers/lists.html>`__ mailing list,
+-  come on IRC irc://irc.videolan.org #videolan
+-  contact one of the mentors or the backup mentors,
+-  or contact `Jean-Baptiste Kempf <User:J-b>`__
 
-{{GSoC}}
+Mentors
+~~~~~~~
 
-[[Category:SoC 2010 Project|*]]
+The proposed mentors are:
+
+-  jpeg
+-  remi
+-  xtophe
+-  jb
+-  dionoea
+-  jpsaman
+-  fenrir
+-  ivoire
+-  funman (backup)
+
+Administrators
+~~~~~~~~~~~~~~
+
+-  jb
+-  xtophe
+
+.. raw:: mediawiki
+
+   {{GSoC}}
+
+`\* <Category:SoC_2010_Project>`__

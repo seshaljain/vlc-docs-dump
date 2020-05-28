@@ -1,1 +1,1 @@
-[[Category:Diagrams]]
+`Category:Diagrams <Category:Diagrams>`__

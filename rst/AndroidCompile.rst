@@ -1,295 +1,353 @@
-This page is an introduction to the compilation of '''VLC for Android'''
-on Linux.
+This page is an introduction to the compilation of **VLC for Android** on Linux.
 
-==Android Studio, SDK and NDK installation==
+Android Studio, SDK and NDK installation
+----------------------------------------
 
-=== Requirements === \* You '''MUST''' build on Linux (or OSX if you
-know what you are doing). \* The following packages '''MUST''' must be
-installed: \*\* the GNU autotools: ''autoconf'', ''libtool'',
-''automake'' and ''make'' (a.k.a. ''gmake'') \*\* ...and their
-dependencies: ''m4'' and ''gawk'', ''mawk'' or ''nawk'', \*\* the GNU C
-and C++ compilers a.k.a. ''gcc'' and ''g++'', \*\* some GNU build
-utilities: ''pkg-config'' and ''patch'', \*\* the following other build
-utilities: ''Apache Ant'' (or ''Ant''), ''cmake'', ''protobuf'',
-''ragel'', \*\* the Subversion and Git version control systems \*\*
-''unzip'' and either ''curl'' or ''wget'' for retreiving sources. \*
-Very recent versions of some of those tools may be required. At the time
-of writing, notably gettext 0.19.3 or later is required. \* If any of
-the above is missing, expect the build to fail at some point. \* If
-targeting an Android-x86 device, ''yasm'' must be installed too.
+Requirements
+~~~~~~~~~~~~
 
-Precise lists of tools dependencies is listed
-[https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap;h=e60e5ebf93e69e7bb731e80d0fbc6ebd1226dfdb;hb=HEAD#l73
-here].
+-  You **MUST** build on Linux (or OSX if you know what you are doing).
+-  The following packages **MUST** must be installed:
 
-<span style="color: #ff0000">'''64-bit users'''</span>: You must install
-these 32-bit libs as specified here:
-[[#Can.27t_run_aapt_or_adb_on_Linux_64-bit]]
+   -  the GNU autotools: *autoconf*, *libtool*, *automake* and *make* (a.k.a. *gmake*)
+   -  ...and their dependencies: *m4* and *gawk*, *mawk* or *nawk*,
+   -  the GNU C and C++ compilers a.k.a. *gcc* and *g++*,
+   -  some GNU build utilities: *pkg-config* and *patch*,
+   -  the following other build utilities: *Apache Ant* (or *Ant*), *cmake*, *protobuf*, *ragel*,
+   -  the Subversion and Git version control systems
+   -  *unzip* and either *curl* or *wget* for retreiving sources.
 
-==== Example on Ubuntu ==== Install the packages as follow: sudo apt-get
-install automake ant autopoint cmake build-essential libtool-bin patch
-pkg-config protobuf-compiler ragel subversion unzip git openjdk-8-jre
-openjdk-8-jdk flex python wget
+-  Very recent versions of some of those tools may be required. At the time of writing, notably gettext 0.19.3 or later is required.
+-  If any of the above is missing, expect the build to fail at some point.
+-  If targeting an Android-x86 device, *yasm* must be installed too.
 
-=== SDK & Android Studio === # Go to
-[http://developer.android.com/sdk/index.html Android SDK/IDE page]. #
-Android Studio is recommended, but not mandatory!
+Precise lists of tools dependencies is listed `here <https://git.videolan.org/?p=vlc.git;a=blob;f=extras/tools/bootstrap;h=e60e5ebf93e69e7bb731e80d0fbc6ebd1226dfdb;hb=HEAD#l73>`__.
 
-===Android NDK=== # Check that the SDK installation is correct. # Go to
-the [https://developer.android.com/ndk/downloads/index.html Android NDK
-page] and download the '''NDK r21''' for Linux. # Decompress it to
-install
+\ **64-bit users**\ : You must install these 32-bit libs as specified here: `#Can.27t_run_aapt_or_adb_on_Linux_64-bit <#Can.27t_run_aapt_or_adb_on_Linux_64-bit>`__
 
-== Environment setup == Set '''$ANDROID_SDK''' to point to your Android
-SDK directory
+Example on Ubuntu
+^^^^^^^^^^^^^^^^^
 
-   export ANDROID_SDK=/path/to/android-sdk
+Install the packages as follow:
 
-Set '''$ANDROID_NDK''' to point to your Android NDK directory
+| ``sudo apt-get install automake ant autopoint cmake build-essential libtool-bin \``
+| ``     patch pkg-config protobuf-compiler ragel subversion unzip git \``
+| ``    openjdk-8-jre openjdk-8-jdk flex python wget``
 
-   export ANDROID_NDK=/path/to/android-ndk
+SDK & Android Studio
+~~~~~~~~~~~~~~~~~~~~
 
-Add some useful binaries to your '''$PATH'''
+#. Go to `Android SDK/IDE page <http://developer.android.com/sdk/index.html>`__.
+#. Android Studio is recommended, but not mandatory!
 
-   export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools
+Android NDK
+~~~~~~~~~~~
 
-== Building == === Get VLC Source === Clone the source from the VLC git!
+#. Check that the SDK installation is correct.
+#. Go to the `Android NDK page <https://developer.android.com/ndk/downloads/index.html>`__ and download the **NDK r21** for Linux.
+#. Decompress it to install
 
-In your ''android'' source folder, run:
+Environment setup
+-----------------
 
-   git clone https://code.videolan.org/videolan/vlc-android.git
+Set **$ANDROID_SDK** to point to your Android SDK directory
 
-==== Setup Gradle build system ====
+``export ANDROID_SDK=/path/to/android-sdk``
 
-Before using Android studio to compile the app, you must run
-'''compile.sh''' once to set up gradle build system.
+Set **$ANDROID_NDK** to point to your Android NDK directory
 
-It should automatically populate mandatory local.properties and
-gradle.properties files with:
+``export ANDROID_NDK=/path/to/android-ndk``
 
-''local.properties''
+Add some useful binaries to your **$PATH**
 
-   sdk.dir=<SDK path from $ANDROID_SDK> ndk.dir=<NDK path from
-   $ANDROID_NDK>
+``export PATH=$PATH:$ANDROID_SDK/platform-tools:$ANDROID_SDK/tools``
+
+Building
+--------
+
+Get VLC Source
+~~~~~~~~~~~~~~
+
+Clone the source from the VLC git!
+
+In your *android* source folder, run:
+
+``git clone ``\ ```https://code.videolan.org/videolan/vlc-android.git`` <https://code.videolan.org/videolan/vlc-android.git>`__
+
+Setup Gradle build system
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before using Android studio to compile the app, you must run **compile.sh** once to set up gradle build system.
+
+It should automatically populate mandatory local.properties and gradle.properties files with:
+
+*local.properties*
+
+| ``sdk.dir=<SDK path from $ANDROID_SDK>``
+| ``ndk.dir=<NDK path from $ANDROID_NDK>``
 
 This sets up gradle to build with correct SDK/NDK.
 
-Once this first compilation has succeeded, you can build from Android
-Studio with the '''Run''' command.
+Once this first compilation has succeeded, you can build from Android Studio with the **Run** command.
 
-=== Devices ===
+Devices
+~~~~~~~
 
 Find the ABI for the target device.
 
-\* For a normal (2012-2015 consumer phone or tablet) device (e.g. Cortex-A8 or Cortex-A9)
-   <code>armeabi-v7a</code>
+-  For a normal (2012-2015 consumer phone or tablet) device (e.g. Cortex-A8 or Cortex-A9)
 
-\* For a Tegra2 device (no [[wikipedia:ARM_architecture#Advanced\_`SIMD <>`__.28NEON.29|NEON]])
-   <code>armeabi-v7a</code>
+``armeabi-v7a``
 
-\* For an ARMv6 device
-   <code>armeabi</code>
+-  For a Tegra2 device (no `NEON <wikipedia:ARM_architecture#Advanced_SIMD_.28NEON.29>`__)
 
-\* For an ARMv6 device that does not support FPU
-   <code>armeabi-nofpu</code>
+``armeabi-v7a``
 
-\* For an ARMv5 device or the Android Emulator
-   <code>armeabi-v5</code>
+-  For an ARMv6 device
 
-\* For a x86 device (e.g. Android-x86, Google TV, Logitech TV, Android x86 smartphones, etc)
-   <code>x86</code>
+``armeabi``
 
-\* For a MIPS device (i.e. Ainol Novo tablets):
-   <code>mips</code>
+-  For an ARMv6 device that does not support FPU
+
+``armeabi-nofpu``
+
+-  For an ARMv5 device or the Android Emulator
+
+``armeabi-v5``
+
+-  For a x86 device (e.g. Android-x86, Google TV, Logitech TV, Android x86 smartphones, etc)
+
+``x86``
+
+-  For a MIPS device (i.e. Ainol Novo tablets):
+
+``mips``
 
 This value must be passed to the compile.sh script
 
-==== Compile ====
+Compile
+^^^^^^^
 
-'''Read''' compile.sh first, as it contains some very useful and important information. Then run it:
-   buildsystem/compile.sh -a <ABI>
+**Read** compile.sh first, as it contains some very useful and important information. Then run it:
 
-'''Note:''' At this point, you will get an auto-generated debug APK in
-the vlc-android/build/outputs/apk folder, signed with a debug key.
+``buildsystem/compile.sh -a ``\ 
 
-In order to build a non-debug (release, and '''unsigned''') package:
-   buildsystem/compile.sh release
+**Note:** At this point, you will get an auto-generated debug APK in the vlc-android/build/outputs/apk folder, signed with a debug key.
 
-'''Note:''' At this point, you will get an release APK in the same
-folder.
+In order to build a non-debug (release, and **unsigned**) package:
 
-==== Build LibVLC ====
+``buildsystem/compile.sh release``
+
+**Note:** At this point, you will get an release APK in the same folder.
+
+Build LibVLC
+^^^^^^^^^^^^
 
 To build LibVLC, simply pass the -l option:
-   buildsystem/compile.sh -l -a <ABI> -r
+
+``buildsystem/compile.sh -l -a ``\ \ `` -r``
 
 .aar archive will be located in libvlc/build/outputs/aar/
 
-==== Gradle tweaks ====
+Gradle tweaks
+^^^^^^^^^^^^^
 
-To improve gradle execution time, try these options by writing this in
-gradle.properties in vlc android project. Or directly in your
-~/.gradle/gradle.properties org.gradle.parallel=true
-org.gradle.configureondemand=true # If you have a BUNCH of RAM available
-org.gradle.daemon=true org.gradle.jvmargs=-Xmx2048M
+To improve gradle execution time, try these options by writing this in gradle.properties in vlc android project. Or directly in your ~/.gradle/gradle.properties
 
-=== Run === Run it and enjoy!
+| ``org.gradle.parallel=true``
+| ``org.gradle.configureondemand=true``
+| ``# If you have a BUNCH of RAM available``
+| ``org.gradle.daemon=true``
+| ``org.gradle.jvmargs=-Xmx2048M``
 
-=== Troubleshooting === ==== Compilation error on Dependencies ====
-Sometimes, especially when gradle dependencies have been upgraded, the
-''compile.sh'' will fail to refetch dependencies. Just close Android
-Studio and re-run the script to fix this issue.
+Run
+~~~
 
-== Debugging == Here are some helpful links if you wish to debug VLC on
-Android: \*
-[http://developer.android.com/guide/developing/debugging/ddms.html DDMS]
-\* [http://developer.android.com/guide/developing/tools/logcat.html
-Logcat]
+Run it and enjoy!
 
-===Native debugging=== If you run VLC Android and you get a crash that
-looks something like this: <pre> I/DEBUG ( 958): **\***\ \* **\***\ \*
-**\***\ \* **\***\ \* **\***\ \* **\***\ \* **\***\ \* **\***\ \*
-I/DEBUG ( 958): Build fingerprint:
-'MOTO/MBTCA/sesame/XT300:2.1-update1/SESLA_U3_01.71.0/110110:user/release-keys'
-I/DEBUG ( 958): pid: 1733, tid: 1733 >>> org.videolan.vlc <<< I/DEBUG (
-958): signal 11 (SIGSEGV), fault addr 4237be3c I/DEBUG ( 958): r0
-423640a0 r1 7ece77ac r2 42bccdac r3 4237be38 I/DEBUG ( 958): r4 00000000
-r5 42bccdac r6 002ed088 r7 002ed018 I/DEBUG ( 958): r8 7ece78e8 r9
-2bafa844 10 0000000e fp 7ece794c I/DEBUG ( 958): ip 00002ba0 sp 7ece7784
-lr 423652e4 pc 4237be3c cpsr 60000010 I/DEBUG ( 958): #00 pc 0037be3c
-/data/data/org.videolan.vlc/lib/libvlcjni.so I/DEBUG ( 958): #01 lr
-423652e4 /data/data/org.videolan.vlc/lib/libvlcjni.so </pre>
+Troubleshooting
+~~~~~~~~~~~~~~~
 
-You have a '''native crash'''. To debug it, you need to have compiled
-VLC as above and installed it on your device. Once your compiled VLC
-build is on your device, you can find the '''backtrace''' as follows:
+Compilation error on Dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-# Make sure you are in the directory that you checked out VLC-Android
-in. # Migrate the libvlc folders. (Do this every time the code is
-recompiled) ## cp -r libvlc/jni vlc-android ## cp -r libvlc/libs
-vlc-android ## cp -r libvlc/obj vlc-android ## (This is because the
-libvlc and VLC for Android folders were split yet the debugger needs the
-object files from both.) # cd vlc-android # $ANDROID_NDK/ndk-gdb
---verbose --force --start At this point, lots of stuff will appear:
-<pre> Android NDK installation path: /opt/android-ndk-r8c Using default
-adb command: /opt/android-sdk-linux_x86/platform-tools/adb ADB version
-found: Android Debug Bridge version 1.0.29 Using ADB flags: Using
-auto-detected project path: . Found package name: org.videolan.vlc
-...bunch of stuff skipped... GNU gdb (GDB) 7.3.1-gg2 Copyright (C) 2011
-Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or
-later <http://gnu.org/licenses/gpl.html> This is free software: you are
-free to change and redistribute it. There is NO WARRANTY, to the extent
-permitted by law. Type "show copying" and "show warranty" for details.
-This GDB was configured as "--host=x86_64-linux-gnu
---target=arm-linux-android". For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>. Remote debugging from host
-0.0.0.0 ...bunch of stuff skipped... libthread_db:td_ta_new: Victory: We
-can debug theads! warning: Breakpoint address adjusted from 0x400deaa5
-to 0x400deaa4. 0x40107a40 in epoll_wait () from
-/media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so (gdb)
-</pre> <ol start="4"> <li>At this point, type in "continue" and press
-Enter.</li> <li>Perform the actions you did to make it crash. It will
-spit out something like this:</li> </ol> <pre> Program received signal
-SIGSEGV, Segmentation fault. 0x401120ae in ?? () from
-/media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so </pre> <ol
-start="6"> <li>Now, just type in "'''bt full'''" (excluding the
-quotation marks) and press Enter. That is your backtrace that you should
-give to the developers when they ask for it (possibly on a
-[http://paste.kde.org/ pastebin], too).</li> </ol> <pre> (gdb) bt full
-#0 0x401120ae in ?? () from
-/media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so No symbol
-table info available. #1 0x40107bd8 in abort () from
-/media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so No symbol
-table info available. #2 0x40118e6a in \__assert2 () from
-/media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so No symbol
-table info available. #3 0x5e0cdfdc in var_SetChecked
-(p_this=0x40134b94, psz_name=0x5ea2fcb8 "rate", expected_type=80,
-val=...) at ../../src/misc/variables.c:711 i_ret = 0 p_var = <optimized
-out> oldval = {i_int = 4742037487051810480, b_bool = 176, f_float =
-2.27765068e+14, psz_string = 0x574f26b0 "X270|B001001", p_address =
-0x574f26b0, p_object = 0x574f26b0, p_list = 0x574f26b0, i_time =
-4742037487051810480, coords = {x = 1464805040, y = 1104091640}}
-\__func_\_ = "var_SetChecked" p_priv = <optimized out> #4 0x5e06dd9c in
-var_SetFloat (f=1.41421354, psz_name=0x5ea2fcb8
-"rate____sample_backtrace", p_obj=0x0) at
-../../include/vlc_variables.h:262 val = <optimized out> #5
-libvlc_media_player_set_rate (p_mi=0x0, rate=1.41421354) at
-../../lib/media_player.c:1252 p_input_thread = <optimized out> #6
-0x5de7bd18 in Java_org_videolan_vlc_LibVLC_setRate (env=0x41cf0470,
-thiz=0x8ab00021, rate=1.41421354) at jni/libvlcjni.c:678 mp = 0x0 #7
-0x4076de34 in ?? () No symbol table info available. #8 0x4076de34 in ??
-() No symbol table info available. Backtrace stopped: previous frame
-identical to this frame (corrupt stack?) </pre>
+Sometimes, especially when gradle dependencies have been upgraded, the *compile.sh* will fail to refetch dependencies. Just close Android Studio and re-run the script to fix this issue.
 
-== Troubleshooting == === Outdated Awk === If you receive the error
-message while building:
+Debugging
+---------
 
-   Android NDK: Host 'awk' tool is outdated. Please define HOST_AWK to
-   point to Gawk or Nawk !
+Here are some helpful links if you wish to debug VLC on Android:
 
-The prebuilt version of Awk that comes with the Android NDK is outdated.
-Defining HOST_AWK in your environment does nothing as the system still
-tries to just the one that comes with the Android NDK. To get around
-this issue, simply rename or delete the Awk binary that comes with the
-Android NDK. For example to move it:
+-  `DDMS <http://developer.android.com/guide/developing/debugging/ddms.html>`__
+-  `Logcat <http://developer.android.com/guide/developing/tools/logcat.html>`__
 
-   mv $ANDROID_NDK/prebuilt/linux-x86/bin/awk
-   $ANDROID_NDK/prebuilt/linux-x86/bin/awk.old
+Native debugging
+~~~~~~~~~~~~~~~~
 
-=== Can't find Ant === If you're new to Ant, please be aware that some
-Linux distributions don't install it in the usual spot as with other
-programs. Try checking to see if the directory
-/usr/share/java/apache-ant/bin exists and add it to your path.
+If you run VLC Android and you get a crash that looks something like this:
 
-===Outdated autotools-dev=== If you get the following error message you
-may have have an outdated version of autotools-dev: Invalid
-configuration \`arm-linux-androideabi': system \`androideabi' not
-recognized You may first want to check if your distribution has any
-available updates for this package. Alternatively, you can manually
-update your config.guess and config.sub files from here:
-[http://git.savannah.gnu.org/gitweb/?p=config.git;a=tree]. These files
-are typically located in /usr/share/misc on Debian based distributions.
+::
 
-===autoreconf: automake failed with exit status: 1===
-   automake: warnings are treated as errors configure.ac:41: warning:
-   The 'AM_PROG_MKDIR_P' macro is deprecated, and will soon be removed.
-   configure.ac:41: You should use the Autoconf-provided
-   'AC_PROG_MKDIR_P' macro instead, configure.ac:41: and use
-   '$(MKDIR_P)' instead of '$(mkdir_p)'in your Makefile.am files.
+   I/DEBUG   (  958): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+   I/DEBUG   (  958): Build fingerprint: 'MOTO/MBTCA/sesame/XT300:2.1-update1/SESLA_U3_01.71.0/110110:user/release-keys'
+   I/DEBUG   (  958): pid: 1733, tid: 1733 >>> org.videolan.vlc <<<
+   I/DEBUG   (  958): signal 11 (SIGSEGV), fault addr 4237be3c
+   I/DEBUG   (  958):  r0 423640a0  r1 7ece77ac  r2 42bccdac  r3 4237be38
+   I/DEBUG   (  958):  r4 00000000  r5 42bccdac  r6 002ed088  r7 002ed018
+   I/DEBUG   (  958):  r8 7ece78e8  r9 2bafa844  10 0000000e  fp 7ece794c
+   I/DEBUG   (  958):  ip 00002ba0  sp 7ece7784  lr 423652e4  pc 4237be3c  cpsr 60000010
+   I/DEBUG   (  958):          #00  pc 0037be3c  /data/data/org.videolan.vlc/lib/libvlcjni.so
+   I/DEBUG   (  958):          #01  lr 423652e4  /data/data/org.videolan.vlc/lib/libvlcjni.so
 
-If you are using Automake 1.13 or higher, you must remove -Werror from
-vlc/contrib/android/gnutls/configure.ac to continue. (First reported in
-[http://forum.videolan.org/viewtopic.php?f=35&t=108927])
+You have a **native crash**. To debug it, you need to have compiled VLC as above and installed it on your device. Once your compiled VLC build is on your device, you can find the **backtrace** as follows:
 
-===autoreconf: automake failed with exit status: 1 ===
-   make: \**\* [dvdnav] Error 1 ... ... error: possibly undefined macro:
-   AM_PROG_LIBTOOL
+#. Make sure you are in the directory that you checked out VLC-Android in.
+#. Migrate the libvlc folders. (Do this every time the code is recompiled)
 
-This error may occur when compiling with an older Linux distribution,
-such as Ubuntu 12.04, that doesn't meet bootstrap prerequisites. As of
-2014-08-09, the master branch for vlc-ports/android.git
-[http://git.videolan.org/?p=vlc-ports/android.git;a=summary] lacks patch
-5199 [https://patches.videolan.org/patch/5199/]. Without the patch,
-compile.sh builds out dated automake and autoconf that may not access
-libtool despite presence of a current libtool binary amongst supporting
-tools and a similar or more recent binary present as part of the OS.
+   #. cp -r libvlc/jni vlc-android
+   #. cp -r libvlc/libs vlc-android
+   #. cp -r libvlc/obj vlc-android
+   #. (This is because the libvlc and VLC for Android folders were split yet the debugger needs the object files from both.)
 
-To work around this error, patch the master branch or update the
-prerequisites. For Ubuntu 12.04, upgrade autoconf, automake, and cmake
-as dictated by vlc/extras/tools/bootstrap.
+#. cd vlc-android
+#. $ANDROID_NDK/ndk-gdb --verbose --force --start
 
-===Can't run aapt or adb on Linux 64-bit=== You must install the 32-bit
-libraries of the following libraries, as the precompiled Google binaries
-depend on them: ''libc6'', ''libstdc++6'', and ''zlib''.
+At this point, lots of stuff will appear:
+
+::
+
+   Android NDK installation path: /opt/android-ndk-r8c
+   Using default adb command: /opt/android-sdk-linux_x86/platform-tools/adb
+   ADB version found: Android Debug Bridge version 1.0.29
+   Using ADB flags: 
+   Using auto-detected project path: .
+   Found package name: org.videolan.vlc
+   ...bunch of stuff skipped...
+   GNU gdb (GDB) 7.3.1-gg2
+   Copyright (C) 2011 Free Software Foundation, Inc.
+   License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+   This is free software: you are free to change and redistribute it.
+   There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+   and "show warranty" for details.
+   This GDB was configured as "--host=x86_64-linux-gnu --target=arm-linux-android".
+   For bug reporting instructions, please see:
+   <http://www.gnu.org/software/gdb/bugs/>.
+   Remote debugging from host 0.0.0.0
+   ...bunch of stuff skipped...
+   libthread_db:td_ta_new: Victory: We can debug theads!
+   warning: Breakpoint address adjusted from 0x400deaa5 to 0x400deaa4.
+   0x40107a40 in epoll_wait () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+   (gdb)
+
+4. At this point, type in "continue" and press Enter.
+5. Perform the actions you did to make it crash. It will spit out something like this:
+
+::
+
+   Program received signal SIGSEGV, Segmentation fault.
+   0x401120ae in ?? () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+
+6. Now, just type in "**bt full**" (excluding the quotation marks) and press Enter. That is your backtrace that you should give to the developers when they ask for it (possibly on a `pastebin <http://paste.kde.org/>`__, too).
+
+::
+
+   (gdb) bt full
+   #0  0x401120ae in ?? () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+   No symbol table info available.
+   #1  0x40107bd8 in abort () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+   No symbol table info available.
+   #2  0x40118e6a in __assert2 () from /media/data/vlc_android/vlc-android/obj/local/armeabi/libc.so
+   No symbol table info available.
+   #3  0x5e0cdfdc in var_SetChecked (p_this=0x40134b94, psz_name=0x5ea2fcb8 "rate", expected_type=80, val=...) at ../../src/misc/variables.c:711
+           i_ret = 0
+           p_var = <optimized out>
+           oldval = {i_int = 4742037487051810480, b_bool = 176, f_float = 2.27765068e+14, psz_string = 0x574f26b0 "X\270|B\001\001", p_address = 0x574f26b0, 
+             p_object = 0x574f26b0, p_list = 0x574f26b0, i_time = 4742037487051810480, coords = {x = 1464805040, y = 1104091640}}
+           __func__ = "var_SetChecked"
+           p_priv = <optimized out>
+   #4  0x5e06dd9c in var_SetFloat (f=1.41421354, psz_name=0x5ea2fcb8 "rate____sample_backtrace", p_obj=0x0) at ../../include/vlc_variables.h:262
+           val = <optimized out>
+   #5  libvlc_media_player_set_rate (p_mi=0x0, rate=1.41421354) at ../../lib/media_player.c:1252
+           p_input_thread = <optimized out>
+   #6  0x5de7bd18 in Java_org_videolan_vlc_LibVLC_setRate (env=0x41cf0470, thiz=0x8ab00021, rate=1.41421354) at jni/libvlcjni.c:678
+           mp = 0x0
+   #7  0x4076de34 in ?? ()
+   No symbol table info available.
+   #8  0x4076de34 in ?? ()
+   No symbol table info available.
+   Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+.. _troubleshooting-1:
+
+Troubleshooting
+---------------
+
+Outdated Awk
+~~~~~~~~~~~~
+
+If you receive the error message while building:
+
+``Android NDK: Host 'awk' tool is outdated. Please define HOST_AWK to point to Gawk or Nawk !    ``
+
+The prebuilt version of Awk that comes with the Android NDK is outdated. Defining HOST_AWK in your environment does nothing as the system still tries to just the one that comes with the Android NDK. To get around this issue, simply rename or delete the Awk binary that comes with the Android NDK. For example to move it:
+
+``mv $ANDROID_NDK/prebuilt/linux-x86/bin/awk $ANDROID_NDK/prebuilt/linux-x86/bin/awk.old``
+
+Can't find Ant
+~~~~~~~~~~~~~~
+
+If you're new to Ant, please be aware that some Linux distributions don't install it in the usual spot as with other programs. Try checking to see if the directory /usr/share/java/apache-ant/bin exists and add it to your path.
+
+Outdated autotools-dev
+~~~~~~~~~~~~~~~~~~~~~~
+
+If you get the following error message you may have have an outdated version of autotools-dev:
+
+:literal:` Invalid configuration `arm-linux-androideabi': system `androideabi' not recognized`
+
+You may first want to check if your distribution has any available updates for this package. Alternatively, you can manually update your config.guess and config.sub files from here: `1 <http://git.savannah.gnu.org/gitweb/?p=config.git;a=tree>`__. These files are typically located in /usr/share/misc on Debian based distributions.
+
+autoreconf: automake failed with exit status: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| ``automake: warnings are treated as errors``
+| ``configure.ac:41: warning: The 'AM_PROG_MKDIR_P' macro is deprecated, and will soon be removed.``
+| ``configure.ac:41: You should use the Autoconf-provided 'AC_PROG_MKDIR_P' macro instead,``
+| ``configure.ac:41: and use '$(MKDIR_P)' instead of '$(mkdir_p)'in your Makefile.am files.``
+
+If you are using Automake 1.13 or higher, you must remove -Werror from vlc/contrib/android/gnutls/configure.ac to continue. (First reported in `2 <http://forum.videolan.org/viewtopic.php?f=35&t=108927>`__)
+
+.. _autoreconf-automake-failed-with-exit-status-1-1:
+
+autoreconf: automake failed with exit status: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| ``make: *** [dvdnav] Error 1``
+| ``...``
+| ``... error: possibly undefined macro: AM_PROG_LIBTOOL``
+
+This error may occur when compiling with an older Linux distribution, such as Ubuntu 12.04, that doesn't meet bootstrap prerequisites. As of 2014-08-09, the master branch for vlc-ports/android.git `3 <http://git.videolan.org/?p=vlc-ports/android.git;a=summary>`__ lacks patch 5199 `4 <https://patches.videolan.org/patch/5199/>`__. Without the patch, compile.sh builds out dated automake and autoconf that may not access libtool despite presence of a current libtool binary amongst supporting tools and a similar or more recent binary present as part of the OS.
+
+To work around this error, patch the master branch or update the prerequisites. For Ubuntu 12.04, upgrade autoconf, automake, and cmake as dictated by vlc/extras/tools/bootstrap.
+
+Can't run aapt or adb on Linux 64-bit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You must install the 32-bit libraries of the following libraries, as the precompiled Google binaries depend on them: *libc6*, *libstdc++6*, and *zlib*.
 
 New versions of Debian and/or Ubuntu require you to install i386 versions of packages:
-   sudo dpkg --add-architecture i386 sudo apt-get update sudo apt-get
-   install zlib1g:i386 libstdc++6:i386 libc6:i386
 
-If you are under ''old versions'' of Ubuntu, install ia32-libs can help you solve this issue.
-   sudo apt-get install ia32-libs
+| ``sudo dpkg --add-architecture i386``
+| ``sudo apt-get update``
+| ``sudo apt-get install zlib1g:i386 libstdc++6:i386 libc6:i386``
 
-==See also== \* [[Android Report bugs]] - Bug reporting guide for
-VLC-Android.
+If you are under *old versions* of Ubuntu, install ia32-libs can help you solve this issue.
 
-[[Category:Building]] [[Category:Android]]
+``sudo apt-get install ia32-libs``
+
+See also
+--------
+
+-  `Android Report bugs <Android_Report_bugs>`__ - Bug reporting guide for VLC-Android.
+
+`Category:Building <Category:Building>`__ `Category:Android <Category:Android>`__

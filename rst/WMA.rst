@@ -1,1 +1,1 @@
-#redirect[[Windows Media]]
+#. redirect\ `Windows Media <Windows_Media>`__

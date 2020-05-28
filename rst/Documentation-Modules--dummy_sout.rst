@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/dummy]]
+#. REDIRECT `Documentation:Modules/dummy <Documentation:Modules/dummy>`__

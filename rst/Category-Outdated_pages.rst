@@ -1,7 +1,8 @@
-This category lists pages that are out-of-date. Important pages are
-sorted under <samp>'''!'''</samp>
+This category lists pages that are out-of-date. Important pages are sorted under \ **!**\ 
 
-Use: \* <code>{{tlimportant=y}}</nowiki></code> to add pages here sorted
-under <samp>'''!'''</samp>
+Use:
 
-[[Category:Wiki maintenance]]
+-  to add pages here
+-  ``{{Outdated|important=y}}`` to add pages here sorted under \ **!**\ 
+
+`Category:Wiki maintenance <Category:Wiki_maintenance>`__

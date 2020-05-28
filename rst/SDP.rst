@@ -1,14 +1,21 @@
-{{Protocol|SDP}}
+.. raw:: mediawiki
 
-SDP stands for "Session Description Protocol". It is used to describe a
-[[stream]]ing session. SDP data is usually carried over [[SAP]],
-[[RTSP]] or in dedicated files.
+   {{Protocol|SDP}}
 
-The idea behind SDP is that you can store critical stream information in
-the SDP and distribute this over a reliable connection (such as [[HTTP]]
-or [[RTSP]]). Then you can stream the raw codec data over a lossy
-connection, such as [[RTP]] without the need for a container.
+SDP stands for "Session Description Protocol". It is used to describe a `streaming <stream>`__ session. SDP data is usually carried over `SAP <SAP>`__, `RTSP <RTSP>`__ or in dedicated files.
 
-== Links == \* [https://tools.ietf.org/html/rfc4566 RFC 4566]
+The idea behind SDP is that you can store critical stream information in the SDP and distribute this over a reliable connection (such as `HTTP <HTTP>`__ or `RTSP <RTSP>`__). Then you can stream the raw codec data over a lossy connection, such as `RTP <RTP>`__ without the need for a container.
 
-== Source code == \* {{VLCSourceFile|modules/access/sdp.c}}
+Links
+-----
+
+-  `RFC 4566 <https://tools.ietf.org/html/rfc4566>`__
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/sdp.c}}

@@ -1,14 +1,12 @@
-{{howto|modify your video output}}
+.. raw:: mediawiki
 
-If you have no video for some type of files or all of them, you can try
-to change the video ouput.
+   {{howto|modify your video output}}
 
-Go to '''Tools''' &gt; '''Preferences''' &gt; '''Video''' and in the
-'''Display''' section, try another ''Ouput''.
+If you have no video for some type of files or all of them, you can try to change the video ouput.
 
-Sometimes, you have to deactivate the '''Accelerated video output
-(Overlay)''' too.
+Go to **Tools** > **Preferences** > **Video** and in the **Display** section, try another *Ouput*.
 
-<br>
+Sometimes, you have to deactivate the **Accelerated video output (Overlay)** too.
 
-{{VSG}}
+| 
+| 

@@ -1,1 +1,1 @@
-#REDIRECT [[VLC CodeNames]]
+#. REDIRECT `VLC CodeNames <VLC_CodeNames>`__

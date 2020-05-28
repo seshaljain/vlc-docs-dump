@@ -1,6 +1,9 @@
-{{howto|Enable Blu-ray disc playback}}
+.. raw:: mediawiki
 
-You have to download and install some additional files, see
-https://vlc-bluray.whoknowsmy.name/
+   {{howto|Enable Blu-ray disc playback}}
 
-{{VSG}}
+You have to download and install some additional files, see https://vlc-bluray.whoknowsmy.name/
+
+.. raw:: mediawiki
+
+   {{VSG}}

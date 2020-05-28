@@ -1,1 +1,1 @@
-#REDIRECT [[Packetizer]]
+#. REDIRECT `Packetizer <Packetizer>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Huffyuv]]
+#. REDIRECT `Huffyuv <Huffyuv>`__

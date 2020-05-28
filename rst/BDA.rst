@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/bda]]
+#. REDIRECT `Documentation:Modules/bda <Documentation:Modules/bda>`__

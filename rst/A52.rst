@@ -1,1 +1,1 @@
-#REDIRECT [[AC3]]
+#. REDIRECT `AC3 <AC3>`__

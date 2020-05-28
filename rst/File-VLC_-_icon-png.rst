@@ -1,3 +1,5 @@
-{{See also|Template:VLC icon}}
+.. raw:: mediawiki
 
-[[Category:Cones]]
+   {{See also|Template:VLC icon}}
+
+`Category:Cones <Category:Cones>`__

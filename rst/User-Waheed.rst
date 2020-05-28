@@ -1,13 +1,10 @@
 Hi,
 
-I am working on GUI of VLC Player for WPF in C#. I want to add an option
-for end user to rotate/transform video to specific angle on-the-fly.
+I am working on GUI of VLC Player for WPF in C#. I want to add an option for end user to rotate/transform video to specific angle on-the-fly.
 
-I was able to rotate at initialization time with following Video filter.
---video-filter=rotate {angle=180}
+I was able to rotate at initialization time with following Video filter. --video-filter=rotate {angle=180}
 
-Can you please let me know your LibVLC API used to rotate/transform
-video on-the-fly?
+Can you please let me know your LibVLC API used to rotate/transform video on-the-fly?
 
 Thanks,
 

@@ -1,5 +1,5 @@
-{{Documentation footer}}
-<includeonly>[[Category:Hacker_Guide0{{#titleparts:{{PAGENAME}}2}}|*}}]]
-[[Category:Coding]]</includeonly><noinclude>
+.. raw:: mediawiki
 
-[[Category:Footer templates]] </noinclude>
+   {{Documentation footer}}
+
+`{{#if:{{#titleparts:\|0|2}}|{{#titleparts:\|0|2}}|*}} <Category:Hacker_Guide>`__ `Category:Coding <Category:Coding>`__ `Category:Footer templates <Category:Footer_templates>`__

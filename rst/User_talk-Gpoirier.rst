@@ -1,2 +1,1 @@
-Nice to see you around here [[User:J-b|jb]] 15:25, 17 December 2008
-(CET)
+Nice to see you around here `jb <User:J-b>`__ 15:25, 17 December 2008 (CET)

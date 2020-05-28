@@ -1,3 +1,3 @@
-#REDIRECT [[DivX]]
+#. REDIRECT `DivX <DivX>`__
 
-[[Category:Container]] [[Category:Video codecs]]
+`Category:Container <Category:Container>`__ `Category:Video codecs <Category:Video_codecs>`__

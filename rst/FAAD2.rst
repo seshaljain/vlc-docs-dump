@@ -1,1 +1,1 @@
-#REDIRECT [[FAAD2 and FAAC]]
+#. REDIRECT `FAAD2 and FAAC <FAAD2_and_FAAC>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[DVD subtitles]]
+#. REDIRECT `DVD subtitles <DVD_subtitles>`__

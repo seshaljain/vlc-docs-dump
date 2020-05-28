@@ -1,2 +1,1 @@
-Top-level category that holds [[Special:Categories|all other
-categories]]
+Top-level category that holds `all other categories <Special:Categories>`__

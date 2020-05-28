@@ -1,20 +1,27 @@
-{{RightMenu|documentation streaming howto toc}}
+.. raw:: mediawiki
 
-==Stream a file with VLC==
+   {{RightMenu|documentation streaming howto toc}}
 
-   {{%}} '''vlc -vvv video1.xyz --sout udp:192.168.0.42 --ttl 12'''
+Stream a file with VLC
+----------------------
 
-where: \* '''video1.xyz''' is the file you want to stream, \*
-'''192.168.0.42''' is either: \*\* the [[IP address]] of the machine you
-want to [[unicast]] to; \*\* or the DNS name the machine you want to
-unicast to; \*\* or a [[multicast]] IP address. \* '''12''' is the value
-of the [[TTL]] (Time To Live) of your IP packets (which means that the
-stream will be able to cross 11 routers).
+``{{%}} ``\ **``vlc``\ ````\ ``-vvv``\ ````\ ``video1.xyz``\ ````\ ``--sout``\ ````\ **\ ```udp:192.168.0.42`` <udp:192.168.0.42>`__\ **\ ````\ ``--ttl``\ ````\ ``12``**
 
-If you want to stream the file continuously, add the '''--loop'''
-option.
+where:
 
-Of course, you can add more options (like [[transcoding]], or streaming
-to a TCP port, etc.), but this should get you started.
+-  **video1.xyz** is the file you want to stream,
+-  **192.168.0.42** is either:
 
-{{Documentation}}
+   -  the `IP address <IP_address>`__ of the machine you want to `unicast <unicast>`__ to;
+   -  or the DNS name the machine you want to unicast to;
+   -  or a `multicast <multicast>`__ IP address.
+
+-  **12** is the value of the `TTL <TTL>`__ (Time To Live) of your IP packets (which means that the stream will be able to cross 11 routers).
+
+If you want to stream the file continuously, add the **--loop** option.
+
+Of course, you can add more options (like `transcoding <transcoding>`__, or streaming to a TCP port, etc.), but this should get you started.
+
+.. raw:: mediawiki
+
+   {{Documentation}}

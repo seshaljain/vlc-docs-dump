@@ -1,3 +1,3 @@
-style="background: #ff9;" \| untested ???<noinclude>
+style="background: #ff9;" \| untested ???
 
-[[Category:Table cell templates]] </noinclude>
+`Category:Table cell templates <Category:Table_cell_templates>`__

@@ -1,34 +1,94 @@
-{{docmodv4l}} and {{docmod|v4l2}} in VLC 1.0.0, but accesses were
-provided as sub-modules. To emulate old behaviour, use
-<code>--input-slave oss://</code> or <code>--input-slave alsa://</code>.
+.. raw:: mediawiki
 
-In the module options below <var>AOUT_CHANS_FRONT</var> and other
-variables are defined in {{VLCSourceFile|include/vlc_es.h}}. The values
-are not defined here because of their complexity.
+   {{docmod|oss}}
 
-Audio channels in VLC 2.0.1 must be configured manually (bugs) but
-<code>--alsa-audio-channels</code> defaults to stereo.
+and alsa audio capture support were removed from and in VLC 1.0.0, but accesses were provided as sub-modules. To emulate old behaviour, use ``--input-slave oss://`` or ``--input-slave alsa://``.
 
-The access module option <code>--alsa-format</code> has been deprecated
-since VLC 2.1.0.
+In the module options below AOUT_CHANS_FRONT and other variables are defined in . The values are not defined here because of their complexity.
 
-HDMI support is planned for VLC 4.0.0 through the
-<code>--alsa-passthrough</code> option.
+Audio channels in VLC 2.0.1 must be configured manually (bugs) but ``--alsa-audio-channels`` defaults to stereo.
 
-== Options == === Audio output === {{Moduletype=Audio
-outputdescription=[[ALSA]] audio outputname=alsa-audio-device
-default=default name=alsa-audio-channels
-default=<var>AOUT_CHANS_FRONT</var> \|description=Channels available for
-audio output. If the input has more channels than the output, it will be
-down-mixed. This parameter is ignored when digital pass-through is
-active }} {{Clear}}
+The access module option ``--alsa-format`` has been deprecated since VLC 2.1.0.
 
-=== Access === {{Moduletype=Accessos=Linuxsc=alsa}} {{Option
-value=boolean description=Stereo }} {{Option value=integer
-description=[[Sample rate]] (Hertz) \|select=192000, 176400, 96000,
-88200, 48000, 44100, 32000, 22050, 24000, 16000, 11025, 8000, 4000 }}
-{{Clear}}
+HDMI support is planned for VLC 4.0.0 through the ``--alsa-passthrough`` option.
 
-== Source code == \* {{VLCSourceFilemodules/access/alsa.c}}
+Options
+-------
 
-{{Documentation footer}}
+Audio output
+~~~~~~~~~~~~
+
+.. raw:: mediawiki
+
+   {{Module|name=alsa|type=Audio output|os=Linux|description=[[ALSA]] audio output|sc=none}}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=alsa-audio-device
+   |value=string
+   |default=default
+   |description=Audio output device (using ALSA syntax)
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=alsa-audio-channels
+   |value=integer
+   |default=<var>AOUT_CHANS_FRONT</var>
+   |description=Channels available for audio output. If the input has more channels than the output, it will be down-mixed. This parameter is ignored when digital pass-through is active
+   }}
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+Access
+~~~~~~
+
+.. raw:: mediawiki
+
+   {{Module|name=alsa|type=Access|first_version=1.0.0|os=Linux|description=[[ALSA]] audio capture|sc=alsa}}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=alsa-stereo
+   |value=boolean
+   |default=enabled
+   |description=Stereo
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=alsa-samplerate
+   |value=integer
+   |default=48000
+   |description=[[Sample rate]] (Hertz)
+   |select=192000, 176400, 96000, 88200, 48000, 44100, 32000, 22050, 24000, 16000, 11025, 8000, 4000
+   }}
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/audio_output/alsa.c}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/alsa.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

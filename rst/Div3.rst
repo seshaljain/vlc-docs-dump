@@ -1,1 +1,1 @@
-#redirect [[DivX]]
+#. redirect `DivX <DivX>`__

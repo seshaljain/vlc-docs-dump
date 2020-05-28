@@ -1,36 +1,56 @@
-This guide will help you compile {{VLC}} for your platform.
+This guide will help you compile for your platform.
 
-This guide is intended for '''developers''' and '''power users'''.
-Compiling VLC is not an easy task.
+This guide is intended for **developers** and **power users**. Compiling VLC is not an easy task.
 
-You should come on [[IRC]] to assist you during this phase.
+You should come on `IRC <IRC>`__ to assist you during this phase.
 
-'''<span style="color:red; font-size: 120%">Warning</span>:''' Please,
-do not put pre-release test binaries or git-compiles on software sites
-or on user-forums. We've had bad experiences with this before and we do
-not appreciate it.
+**Warning:** Please, do not put pre-release test binaries or git-compiles on software sites or on user-forums. We've had bad experiences with this before and we do not appreciate it.
 
-== Generic Steps ==
+Generic Steps
+-------------
 
-These are the main steps to follow to compile VLC&nbsp;:
+These are the main steps to follow to compile VLC :
 
-# Prepare your compile environment, # Grab the [[GetTheSourcelist]], #
-[[Configure]], # Build, using make, # and Profit!
+#. Prepare your compile environment,
+#. Grab the `source <GetTheSource>`__ of ,
+#. Bootstrap, using the ./bootstrap script, if you took the code from repository,
+#. Prepare the extras libraries needed for , read the `list <Contrib_Status>`__,
+#. `Configure <Configure>`__,
+#. Build, using make,
+#. and Profit!
 
-== Compile for one Operating System == There are the special compile
-guides for every OS you want VLC.
+Compile for one Operating System
+--------------------------------
 
-Desktop: \* [[Win32CompilemacOS]] \* [[UnixCompileSolaris]]
+There are the special compile guides for every OS you want VLC.
 
-Mobile: \* [[AndroidCompileiOS]] \* [[WinRTCompile|WinRT]]
+Desktop:
 
-OLD: \* [[WinCECompileHow to compile on BeOS]] (outdated) \*
-[[ARMCompileOldPDA|How to cross-compile for old ARM-based PDAs]]
-(outdated)
+-  `Windows <Win32Compile>`__
+-  `macOS <OSXCompile>`__
+-  `Linux, BSD or other Unices <UnixCompile>`__
+-  `Solaris <Solaris>`__
 
-== Other compile guides == \* [[OutOfTreeCompileCompile DirectFB
-plugin]] \* [[Contrib_StatusLinks to the packaging in various distros]]
+Mobile:
 
-See also [[:Category:Operating systems]].
+-  `Android <AndroidCompile>`__
+-  `iOS <iOSCompile>`__
+-  `WinRT <WinRTCompile>`__
 
-[[Category:Coding]]
+OLD:
+
+-  `How to compile for WinCE <WinCECompile>`__ (outdated)
+-  `How to compile on BeOS <BeOSCompile>`__ (outdated)
+-  `How to cross-compile for old ARM-based PDAs <ARMCompileOldPDA>`__ (outdated)
+
+Other compile guides
+--------------------
+
+-  `How to compile a module outside of VLC source tree <OutOfTreeCompile>`__
+-  `Compile DirectFB plugin <DirectFB_Compile>`__
+-  `Contrib Status <Contrib_Status>`__ - 3rd party libraries status.
+-  `Links to the packaging in various distros <Packagers>`__
+
+See also `:Category:Operating systems <:Category:Operating_systems>`__.
+
+`Category:Coding <Category:Coding>`__

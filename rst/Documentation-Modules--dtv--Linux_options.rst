@@ -1,72 +1,391 @@
-<noinclude>== Options (dummy section) ==</noinclude> {{Option
-value=integer max=255 description=If there is more than one digital
-broadcasting adapter, the adapter number must be selected. Numbering
-starts from zero. }} {{Option value=integer max=255 description=If the
-adapter provides multiple independent tuner devices, the device number
-must be selected. Numbering starts from zero. }} {{Option value=boolean
-description=Only useful programs are normally demultiplexed from the
-transponder. This option will disable demultiplexing and receive all
-programs. }} {{Option value=integer max=107999999 description=TV
-channels are grouped by transponder (a.k.a. multiplex) on a given
-frequency. This is required to tune the receiver. }} {{Option
-value=integer default=-1 \|description=If the demodulator cannot detect
-spectral inversion correctly, it needs to be configured manually. }}
+== Options (dummy section) ==
 
-==== Terrestrial reception parameters ==== {{Option value=integer
-default=0 name=dvb-transmission select={ -1, 1, 2, 4, 8, 16, 32 }
-description=Transmission mode }} {{Option value=string default=""
-\|description=Guard interval }}
+Terrestrial reception parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-==== DVB-T reception parameters ==== {{Option value=string default=""
-name=dvb-code-rate-lp select={ "", "0", "1/2", "3/5", "2/3", "3/4",
-"4/5", "5/6", "6/7", "7/8", "8/9", "9/10" } description=The code rate
-for Forward Error Correction can be specified. }} {{Option value=integer
-default=-1 name=dvb-plp-id min=0 default=0 \|description=DVB-T2 Physical
-Layer Pipe }}
+.. raw:: mediawiki
 
-==== ISDB-T reception parameters ==== {{Option value=string default=NULL
-name=dvb-a-fec select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5",
-"5/6", "6/7", "7/8", "8/9", "9/10" } description=The code rate for
-Forward Error Correction can be specified. }} {{Option value=integer
-max=13 description=Layer A segments count }} {{Option value=integer
-max=3 description=Layer A time interleaving }} {{Option value=string
-default=NULL name=dvb-b-fec select={ "", "0", "1/2", "3/5", "2/3",
-"3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" } description=The code
-rate for Forward Error Correction can be specified. }} {{Option
-value=integer max=13 description=Layer B segments count }} {{Option
-value=integer max=3 description=Layer B time interleaving }} {{Option
-value=string default=NULL name=dvb-c-fec select={ "", "0", "1/2", "3/5",
-"2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
-description=The code rate for Forward Error Correction can be specified.
-}} {{Option value=integer max=13 description=Layer C segments count }}
-{{Option value=integer max=3 description=Layer C time interleaving }}
+   {{Option
+   |name=dvb-bandwidth
+   |value=integer
+   |select={ 0, 10, 8, 7, 6, 5, 2 }
+   |default=0
+   |description=Bandwidth (MHz)
+   }}
 
-==== Cable and satellite reception parameters ==== {{Option value=string
-default=NULL name=dvb-srate min=0 default=0 name=dvb-fec select={ "",
-"0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9",
-"9/10" } description=The code rate for Forward Error Correction can be
-specified. }}
+.. raw:: mediawiki
 
-==== DVB-S2 parameters ==== {{Option value=integer max=255
-description=Stream identifier }} {{Option value=integer default=-1
-name=dvb-rolloff select={ -1, 35, 20, 25 } description=Roll-off factor
-}}
+   {{Option
+   |name=dvb-transmission
+   |value=integer
+   |select={ -1, 1, 2, 4, 8, 16, 32 }
+   |default=0
+   |description=Transmission mode
+   }}
 
-==== ISDB-S parameters ==== {{Option value=integer max=0xffff
-description=Transport stream ID }}
+.. raw:: mediawiki
 
-==== Satellite equipment control ==== {{Option value=string default=""
-name=dvb-voltage min=0 default=13 name=dvb-high-voltage default=false
-name=dvb-lnb-low min=0 default=0 name=dvb-lnb-high min=0 default=0
-name=dvb-lnb-switch min=0 default=11700000 name=dvb-satno select={ 0, 1,
-2, 3, 4 } description=If the satellite receiver is connected to multiple
-low noise block-downconverters (LNB) through a DiSEqC 1.0 switch, the
-correct LNB can be selected (1 to 4). If there is no switch, this
-parameter should be 0. }} {{Option value=integer default=0 name=dvb-tone
-select={ -1, 0, 1 } description=A continuous tone at 22kHz can be sent
-on the cable. This normally selects the higher frequency band from a
-universal LNB. }}<noinclude>
+   {{Option
+   |name=dvb-guard
+   |value=string
+   |select={ "1/128", "1/32", "1/16", "19/256", "1/8", "19/128", "1/4" }
+   |default=""
+   |description=Guard interval
+   }}
 
-{{Documentation}}
+DVB-T reception parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-</noinclude>
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-code-rate-hp
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=""
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-code-rate-lp
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=""
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-hierarchy
+   |value=integer
+   |select={ -1, 0, 1, 2, 4 }
+   |default=-1
+   |description=Hierarchy mode
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-plp-id
+   |value=integer
+   |min=0
+   |max=255
+   |default=0
+   |description=DVB-T2 Physical Layer Pipe
+   }}
+
+ISDB-T reception parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-a-modulation
+   |value=string
+   |select={ "", "QAM", "16QAM", "32QAM", "64QAM", "128QAM", "256QAM", "8VSB", "16VSB", "QPSK", "DQPSK", "8PSK", "16APSK", "32APSK" }
+   |default=NULL
+   |description=The digital signal can be modulated according with different constellations (depending on the delivery system). If the demodulator cannot detect the constellation automatically, it needs to be configured manually.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-a-fec
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=NULL
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-a-count
+   |value=integer
+   |min=0
+   |max=13
+   |default=0
+   |description=Layer A segments count
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-a-interleaving
+   |value=integer
+   |min=0
+   |max=3
+   |default=0
+   |description=Layer A time interleaving
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-b-modulation
+   |value=string
+   |select={ "", "QAM", "16QAM", "32QAM", "64QAM", "128QAM", "256QAM", "8VSB", "16VSB", "QPSK", "DQPSK", "8PSK", "16APSK", "32APSK" }
+   |default=NULL
+   |description=The digital signal can be modulated according with different constellations (depending on the delivery system). If the demodulator cannot detect the constellation automatically, it needs to be configured manually.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-b-fec
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=NULL
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-b-count
+   |value=integer
+   |min=0
+   |max=13
+   |default=0
+   |description=Layer B segments count
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-b-interleaving
+   |value=integer
+   |min=0
+   |max=3
+   |default=0
+   |description=Layer B time interleaving
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-c-modulation
+   |value=string
+   |select={ "", "QAM", "16QAM", "32QAM", "64QAM", "128QAM", "256QAM", "8VSB", "16VSB", "QPSK", "DQPSK", "8PSK", "16APSK", "32APSK" }
+   |default=NULL
+   |description=The digital signal can be modulated according with different constellations (depending on the delivery system). If the demodulator cannot detect the constellation automatically, it needs to be configured manually.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-c-fec
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=NULL
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-c-count
+   |value=integer
+   |min=0
+   |max=13
+   |default=0
+   |description=Layer C segments count
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-c-interleaving
+   |value=integer
+   |min=0
+   |max=3
+   |default=0
+   |description=Layer C time interleaving
+   }}
+
+Cable and satellite reception parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-modulation
+   |value=string
+   |select={ "", "QAM", "16QAM", "32QAM", "64QAM", "128QAM", "256QAM", "8VSB", "16VSB", "QPSK", "DQPSK", "8PSK", "16APSK", "32APSK" }
+   |default=NULL
+   |description=The digital signal can be modulated according with different constellations (depending on the delivery system). If the demodulator cannot detect the constellation automatically, it needs to be configured manually.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-srate
+   |value=integer
+   |min=0
+   |max=UINT64_C(0xffffffff)
+   |default=0
+   |description=The symbol rate must be specified manually for some systems, notably DVB-C, DVB-S and DVB-S2.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-fec
+   |value=string
+   |select={ "", "0", "1/2", "3/5", "2/3", "3/4", "4/5", "5/6", "6/7", "7/8", "8/9", "9/10" }
+   |default=""
+   |description=The code rate for Forward Error Correction can be specified.
+   }}
+
+DVB-S2 parameters
+^^^^^^^^^^^^^^^^^
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-stream
+   |value=integer
+   |min=0
+   |max=255
+   |default=0
+   |description=Stream identifier
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-pilot
+   |value=integer
+   |select={ -1, 0, 1 }
+   |default=-1
+   |description=Pilot
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-rolloff
+   |value=integer
+   |select={ -1, 35, 20, 25 }
+   |default=-1
+   |description=Roll-off factor
+   }}
+
+ISDB-S parameters
+^^^^^^^^^^^^^^^^^
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-ts-id
+   |value=integer
+   |min=0
+   |max=0xffff
+   |default=0
+   |description=Transport stream ID
+   }}
+
+Satellite equipment control
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-polarization
+   |value=string
+   |select={ "", "V", "H", "R", "L" }
+   |default=""
+   |description=To select the polarization of the transponder, a different voltage is normally applied to the low noise block-downconverter (LNB).
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-voltage
+   |value=integer
+   |min=0
+   |max=18
+   |default=13
+   |description=""
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-high-voltage
+   |value=boolean
+   |default=false
+   |description=If the cables between the satellilte low noise block-downconverter and the receiver are long, higher voltage may be required. Not all receivers support this.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-lnb-low
+   |value=integer
+   |min=0
+   |max=0x7fffffff
+   |default=0
+   |description=The downconverter (LNB) will subtract the local oscillator frequency from the satellite transmission frequency. The intermediate frequency (IF) on the RF cable is the result.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-lnb-high
+   |value=integer
+   |min=0
+   |max=0x7fffffff
+   |default=0
+   |description=The downconverter (LNB) will subtract the local oscillator frequency from the satellite transmission frequency. The intermediate frequency (IF) on the RF cable is the result.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-lnb-switch
+   |value=integer
+   |min=0
+   |max=0x7fffffff
+   |default=11700000
+   |description=If the satellite transmission frequency exceeds the switch frequency, the oscillator high frequency will be used as reference. Furthermore the automatic continuous 22kHz tone will be sent.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-satno
+   |value=integer
+   |select={ 0, 1, 2, 3, 4 }
+   |default=0
+   |description=If the satellite receiver is connected to multiple low noise block-downconverters (LNB) through a DiSEqC 1.0 switch, the correct LNB can be selected (1 to 4). If there is no switch, this parameter should be 0.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-uncommitted
+   |value=integer
+   |select={ 0, 1, 2, 3, 4 }
+   |default=0
+   |description=If the satellite receiver is connected to multiple low noise block-downconverters (LNB) through a cascade formed from DiSEqC 1.1 uncommitted switch and DiSEqC 1.0 committed switch, the correct uncommitted LNB can be selected (1 to 4). If there is no uncommitted switch, this parameter should be 0.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-tone
+   |value=integer
+   |select={ -1, 0, 1 }
+   |default=-1
+   |description=A continuous tone at 22kHz can be sent on the cable. This normally selects the higher frequency band from a universal LNB.
+   }}
+
+.. raw:: mediawiki
+
+   {{Documentation}}
+
+

@@ -1,25 +1,24 @@
-== VLCJ ==
+VLCJ
+----
 
 VLCJ are Java bindings for VLC.
 
-Those are the '''recommended''' Java bindings for VLC.
+Those are the **recommended** Java bindings for VLC.
 
--  It is managed as an external project at:
-   http://www.capricasoftware.co.uk/vlcj/
--  Source code repository can be found on github:
-   https://github.com/caprica/vlcj
--  There is a thread about it at:
-   https://forum.videolan.org/viewtopic.php?f=32&t=56939&start=15
+-  It is managed as an external project at: http://www.capricasoftware.co.uk/vlcj/
+-  Source code repository can be found on github: https://github.com/caprica/vlcj
+-  There is a thread about it at: https://forum.videolan.org/viewtopic.php?f=32&t=56939&start=15
 
 Though it has its own forums for asking questions.
 
-== Java control of VLC == See this
-[https://forum.videolan.org/viewtopic.php?f=14&t=85347 forum topic] for
-information on [[controlling VLC]] via its [[RC Interface]] from a
-separate Java program.
+Java control of VLC
+-------------------
 
-== JVLC == ''At the moment the JVLC project is dead, as there is no
-maintainer for it. If you want information on it, see
-[{{fullurl:{{PAGENAME}}|action=history}} the wiki history]''
+See this `forum topic <https://forum.videolan.org/viewtopic.php?f=14&t=85347>`__ for information on `controlling VLC <controlling_VLC>`__ via its `RC Interface <RC_Interface>`__ from a separate Java program.
 
-[[Category:Bindings]] [[Category:Inactive project pages]]
+JVLC
+----
+
+*At the moment the JVLC project is dead, as there is no maintainer for it. If you want information on it, see [ the wiki history]*
+
+`Category:Bindings <Category:Bindings>`__ `Category:Inactive project pages <Category:Inactive_project_pages>`__

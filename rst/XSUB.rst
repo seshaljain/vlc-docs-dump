@@ -1,5 +1,7 @@
-{{Mmwiki|XSUB}}
+.. raw:: mediawiki
 
-XSUB is the name of [[subtitles]] for [[DivX]]. {{Stub}}
+   {{Mmwiki|XSUB}}
 
-[[Category:Subtitles]]
+XSUB is the name of `subtitles <subtitles>`__ for `DivX <DivX>`__.
+
+`Category:Subtitles <Category:Subtitles>`__

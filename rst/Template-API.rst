@@ -1,3 +1,3 @@
-<abbr title="Application Programming Interface">API</abbr><noinclude>
+API
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

@@ -1,16 +1,21 @@
-{{#if:{{{1<includeonly> {{{!}} class="widebox center cellpadding-3px" style="border-spacing:2px;"
-   {{!}}style="text-align: left;"{{!}}This page describes ''how to
-   {{lcfirst:{{{1<noinclude>|do something</noinclude>}}}}}''.
-   {{!}}class="nowrap" style="text-align: right;"{{!}}[[VLC
-   HowTo{{!}}Other "how to" pages]]
+{{#if:
 
-..
+| `` | ``\ \ ``}}''.``
+| ``    {{!}}class="nowrap" style="text-align: right;"{{!}}``\ ```VLC``\ ````\ ``HowTo{{!}}Other``\ ````\ ``"how``\ ````\ ``to"``\ ````\ ``pages`` <VLC_HowTo{{!}}Other_"how_to"_pages>`__
+| ``   {{!}}}``
 
-   {{!}}}
+}} {{#switch:\|yes|y = \|#default = \|noerror}}}} {{#switch:\|yes|y = \|#default = }}
 
-}} {{#switch:{{{nosort}}}y = 1noerror}}</includeonly>}}
-{{#switch:{{{nocat}}}y = play music with VLC}}</nowiki></code> banner:
-<samp>This page describes ''how to play music with VLC''.</samp>
+Usage
+-----
 
-[[Category:How To|*]]<!-- modifies sortkey --> [[Category:Templates]]
-</noinclude>
+Calling the template currently:
+
+#. Adds page to `:Category:How To <:Category:How_To>`__
+#. Sorts page under correct title, rather than ``V`` for [STRIKEOUT:Vendetta] ``VLC HowTo``
+#. Displays a message **(optional)**
+
+   -  ``{{``\ \ ``}}`` no banner
+   -  ``{{``\ \ ``|play music with VLC}}`` banner: This page describes *how to play music with VLC*.
+
+`Category:How To <Category:How_To>`__ `\* <Category:How_To>`__ `Category:Templates <Category:Templates>`__

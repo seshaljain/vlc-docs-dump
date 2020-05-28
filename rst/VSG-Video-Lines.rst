@@ -1,2 +1,4 @@
-== Video shows green, blue or red lines == Look
-[[VSG:Video:VisualErrors|here]] {{VSG}}
+Video shows green, blue or red lines
+------------------------------------
+
+Look `here <VSG:Video:VisualErrors>`__

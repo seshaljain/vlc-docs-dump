@@ -1,16 +1,20 @@
-= Information =
+Information
+===========
 
-== I want to... ==
+I want to...
+------------
 
-{{VSGEntryVSG:Usage:Information:Help|How Do I Use VLC's help
-documentation. }}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:Usage:Information:License|Where can I read the license
-information of my VLC player? }}
+   {{VSGEntry|Use VLC help function|VSG:Usage:Information:Help|How Do I Use VLC's help documentation. }}
 
-{{VSGEntryVSG:Usage:Information:Legalities|Is VLC legal in all
-countries?}}
+.. raw:: mediawiki
 
-<br><br><br><br><br>
+   {{VSGEntry|Read VLC license information|VSG:Usage:Information:License|Where can I read the license information of my VLC player? }}
 
-{{VSG}}
+.. raw:: mediawiki
+
+   {{VSGEntry|Know if VLC is legal in all countries?|VSG:Usage:Information:Legalities|Is VLC legal in all countries?}}
+
+| 
+| 

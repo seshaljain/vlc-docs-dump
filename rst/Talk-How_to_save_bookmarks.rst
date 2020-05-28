@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:VLC HowTo/Save bookmarks]]
+#. REDIRECT `Talk:VLC HowTo/Save bookmarks <Talk:VLC_HowTo/Save_bookmarks>`__

@@ -1,15 +1,16 @@
-{{SoCProjectstudent=[[User:Skorugamentor=[[User:Adrien Maglo|Adrien
-Maglo]]}}
+.. raw:: mediawiki
 
-=Shader support for video post-processing=
+   {{SoCProject|year=2010|student=[[User:Skoruga|Sasha Koruga]]|mentor=[[User:Adrien Maglo|Adrien Maglo]]}}
 
-==Abstract== A lot of video post-processing such as RGB-YUV conversion
-can be accelerated by using the GPU. This can either be achieved through
-a fragment shader, where it is the last step before a pixel is displayed
-on the screen, or it can be done with DirectCompute/CUDA/OpenCL. The
-method will vary depending on the task and intent. I will implement
-support for shaders by using the DirectX and OpenGL API and write a few
-shaders such as RGB-YUV conversion.
+Shader support for video post-processing
+========================================
 
-==Information== I go to UCSD, and my last final is on June 9th, so I
-will only be able to work part-time until then.
+Abstract
+--------
+
+A lot of video post-processing such as RGB-YUV conversion can be accelerated by using the GPU. This can either be achieved through a fragment shader, where it is the last step before a pixel is displayed on the screen, or it can be done with DirectCompute/CUDA/OpenCL. The method will vary depending on the task and intent. I will implement support for shaders by using the DirectX and OpenGL API and write a few shaders such as RGB-YUV conversion.
+
+Information
+-----------
+
+I go to UCSD, and my last final is on June 9th, so I will only be able to work part-time until then.

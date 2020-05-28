@@ -1,7 +1,19 @@
-{{Codec videoencoder=n}} {{Mmwiki|On2 VP3}}
+.. raw:: mediawiki
 
-VP3 is a video codec developed by [[On2]], now owned by Google.
+   {{Codec video|id=VP3|encoder=n}}
 
-[[Theora]] is based off VP3.
+.. raw:: mediawiki
 
-== See also == \* [[VP3]] \* [[VP6]] \* [[VP8]] \* [[VP9]]
+   {{Mmwiki|On2 VP3}}
+
+VP3 is a video codec developed by `On2 <On2>`__, now owned by Google.
+
+`Theora <Theora>`__ is based off VP3.
+
+See also
+--------
+
+-  `VP3 <VP3>`__
+-  `VP6 <VP6>`__
+-  `VP8 <VP8>`__
+-  `VP9 <VP9>`__

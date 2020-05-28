@@ -1,9 +1,41 @@
-{{Moduletype=Video outputdescription=OpenGL X video output|sc=none}}
+.. raw:: mediawiki
 
-{{Stub}}
+   {{Module|name=glx|type=Video output|os=Linux|description=OpenGL X video output|sc=none}}
 
-== Source code == \* {{VLCSourceFile|modules/video_output/glx.c}}
+.. raw:: mediawiki
 
-== See also == \* {{docmodglwin32}} \* {{docmod|glx}}
+   {{Stub}}
 
-{{Documentation footer}}
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_output/glx.c}}
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{docmod|opengl}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{docmod|glwin32}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{docmod|glx}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

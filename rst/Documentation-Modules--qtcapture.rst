@@ -1,12 +1,43 @@
-{{Moduletype=Accesslast_version=2.2.8description=[[Quicktime]] Capture}}
+.. raw:: mediawiki
 
-The qtcapture module was removed prior to 3.0.0, and users were directed
-to {{docmod|avcapture}}.
+   {{Module|name=qtcapture|type=Access|first_version=2.0.0|last_version=2.2.8|os=macOS|description=[[Quicktime]] Capture}}
 
-== Options == {{Option value=integer max=1280 description=Video Capture
-width in pixel }} {{Option value=integer max=480 description=Video
-Capture height in pixel }}
+The qtcapture module was removed prior to 3.0.0, and users were directed to .
 
-== Source code == \* {{VLCSourceFilemodules/access/qtcapture.m}}
+Options
+-------
 
-{{Documentation footer}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=qtcapture-width
+   |value=integer
+   |min=80
+   |max=1280
+   |default=640
+   |description=Video Capture width in pixel
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=qtcapture-height
+   |value=integer
+   |min=60
+   |max=480
+   |default=480
+   |description=Video Capture height in pixel
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-2.2.git|modules/access/qtcapture.m}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

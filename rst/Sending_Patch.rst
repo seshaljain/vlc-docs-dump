@@ -1,1 +1,1 @@
-#REDIRECT [[Sending Patches VLC]]
+#. REDIRECT `Sending Patches VLC <Sending_Patches_VLC>`__

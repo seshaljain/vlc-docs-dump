@@ -1,3 +1,3 @@
-#REDIRECT [[Huffyuv]]
+#. REDIRECT `Huffyuv <Huffyuv>`__
 
-[[Category:Video codecs]]
+`Category:Video codecs <Category:Video_codecs>`__

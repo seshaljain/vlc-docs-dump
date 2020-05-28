@@ -1,12 +1,1 @@
-Hi, Thanks for the help on the documentation. I'd like to keep the
-Documentation:\* pages self contained (anything in the wiki can link to
-those but I'd rather that they don't link outside Documentation:\*
-pages). Otherwise we'll have problems when/if we ever want to create PDF
-versions out of the wiki documentation. This rule should especially
-apply to words/expressions/concepts which are needed to understand the
-documentation. Links to advanced topics which might be related to a
-documentation page would be ok, as long as they're not needed to
-understand the documentation. I'll try to write a small guide line about
-what should and what shouldn't be put in the Documentation:\* pages in
-case we're lucky to have more people like you helping out :) Regards,
-[[User:Dionoea|Dionoea]] 02:21, 17 February 2007 (CET)
+Hi, Thanks for the help on the documentation. I'd like to keep the Documentation:\* pages self contained (anything in the wiki can link to those but I'd rather that they don't link outside Documentation:\* pages). Otherwise we'll have problems when/if we ever want to create PDF versions out of the wiki documentation. This rule should especially apply to words/expressions/concepts which are needed to understand the documentation. Links to advanced topics which might be related to a documentation page would be ok, as long as they're not needed to understand the documentation. I'll try to write a small guide line about what should and what shouldn't be put in the Documentation:\* pages in case we're lucky to have more people like you helping out :) Regards, `Dionoea <User:Dionoea>`__ 02:21, 17 February 2007 (CET)

@@ -1,1 +1,1 @@
-#REDIRECT [[Digital Video]]
+#. REDIRECT `Digital Video <Digital_Video>`__

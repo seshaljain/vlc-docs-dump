@@ -1,14 +1,16 @@
-{{See alsoCVD subtitles}} {{Wikipedia|SVCD}}
+.. raw:: mediawiki
 
-'''SVCD''', or '''Super Video CD''' is a way of storing a video on a
-[[CD]] in a similar way to storing it on a [[DVD]]. It is (of course)
-generally lower quality than a DVD due to the smaller size of a CD
-rather than a DVD.
+   {{See also|SVCD subtitles|CVD subtitles}}
 
-==Compatibility== SVCDs often do not work in VLC Player. VLC can
-sometimes play SVCDs using [[libcdio]] and [[libvcdinfo]] - the
-[http://www.videolan.org/vlc/features.html features] page has more
-details. For a complete VCD/SVCD which includes menu selections, hot
-spots and playback control, see [http://www.xinehq.de xine].
+.. raw:: mediawiki
 
-[[Category:Physical media]]
+   {{Wikipedia|SVCD}}
+
+**SVCD**, or **Super Video CD** is a way of storing a video on a `CD <CD>`__ in a similar way to storing it on a `DVD <DVD>`__. It is (of course) generally lower quality than a DVD due to the smaller size of a CD rather than a DVD.
+
+Compatibility
+-------------
+
+SVCDs often do not work in VLC Player. VLC can sometimes play SVCDs using `libcdio <libcdio>`__ and `libvcdinfo <libvcdinfo>`__ - the `features <http://www.videolan.org/vlc/features.html>`__ page has more details. For a complete VCD/SVCD which includes menu selections, hot spots and playback control, see `xine <http://www.xinehq.de>`__.
+
+`Category:Physical media <Category:Physical_media>`__

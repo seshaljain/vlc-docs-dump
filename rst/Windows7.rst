@@ -1,1 +1,1 @@
-#REDIRECT [[Windows]]
+#. REDIRECT `Windows <Windows>`__

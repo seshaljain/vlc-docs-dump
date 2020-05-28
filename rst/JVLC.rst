@@ -1,1 +1,1 @@
-#REDIRECT [[Java_bindings]]
+#. REDIRECT `Java_bindings <Java_bindings>`__

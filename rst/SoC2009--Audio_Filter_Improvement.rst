@@ -1,1 +1,1 @@
-#REDIRECT [[Template:SoCProject]]
+#. REDIRECT `Template:SoCProject <Template:SoCProject>`__

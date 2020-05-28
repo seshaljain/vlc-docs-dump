@@ -1,13 +1,22 @@
-==Error 1814==
+Error 1814
+----------
 
 When installing VLC, you may receive this message:
 
-[[File:Windows Installation Error 1814.png|center]]
+.. figure:: Windows_Installation_Error_1814.png
+   :alt: Windows_Installation_Error_1814.png
+
+   Windows_Installation_Error_1814.png
 
 This means that you have to run the VLC installer in administrator mode.
 
-Right click on the VLC icon and select ''Run as administrator''.
+Right click on the VLC icon and select *Run as administrator*.
 
-[[File:RunAsAdmin.png%7Ccenter]]
+.. figure:: RunAsAdmin.png
+   :alt: RunAsAdmin.png
 
-{{VSG}}
+   RunAsAdmin.png
+
+.. raw:: mediawiki
+
+   {{VSG}}

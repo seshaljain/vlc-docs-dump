@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:VLCKit]]
+#. REDIRECT `Talk:VLCKit <Talk:VLCKit>`__

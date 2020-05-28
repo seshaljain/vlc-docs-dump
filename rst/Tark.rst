@@ -1,1 +1,1 @@
-#REDIRECT [[Tarkin]]
+#. REDIRECT `Tarkin <Tarkin>`__

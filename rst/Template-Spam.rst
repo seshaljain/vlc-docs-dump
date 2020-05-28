@@ -1,1 +1,1 @@
-#REDIRECT [[Template:Delete]]
+#. REDIRECT `Template:Delete <Template:Delete>`__

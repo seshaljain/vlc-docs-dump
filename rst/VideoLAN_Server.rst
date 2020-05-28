@@ -1,1 +1,1 @@
-#REDIRECT [[VLS]]
+#. REDIRECT `VLS <VLS>`__

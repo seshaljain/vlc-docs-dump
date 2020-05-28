@@ -1,10 +1,17 @@
-{{Historical}} = Requirements =
+.. raw:: mediawiki
 
-== Goal ==
+   {{Historical}}
+
+Requirements
+============
+
+Goal
+----
 
 Central system for storing statistics and timings
 
-== Stored data ==
+Stored data
+-----------
 
 What we might want to collect:
 
@@ -15,49 +22,75 @@ What we might want to collect:
 
 Each thing could be stored as average, max, counter, ...
 
-== Data access ==
+Data access
+-----------
 
 -  Access stats from the GUI (simple)
 -  Dump HTTP server access data
 -  Dump some raw access data to output
 
-= Design =
+Design
+======
 
-== Data storage ==
+Data storage
+------------
 
-=== Stats object ===
+Stats object
+~~~~~~~~~~~~
 
 Stored as a singleton in p_libvlc
 
-=== Counters ===
+Counters
+~~~~~~~~
 
-<pre> counter_sample_t { value date }
+::
 
-counter_elem_t { name type pp_samples / i_samples } </pre>
+   counter_sample_t
+   {
+      value
+      date
+   }
 
--  Name contains the originating object id, like "267.frames_displayed"
-   .How to separate by http request ? "httpd_object_id.request_id.XXX" ?
+   counter_elem_t
+   {
+      name
+      type
+      pp_samples / i_samples
+   }
+
+-  Name contains the originating object id, like "267.frames_displayed" .How to separate by http request ? "httpd_object_id.request_id.XXX" ?
 -  Type is one of MAX, LAST, COUNTER, DERIVATIVE, ...
 
-=== Timing ===
+Timing
+~~~~~~
 
-<pre> timing_elem_t { name
+::
 
-   last_time,
+   timing_elem_t
+   {
+      name
 
-   total_time, total_samples,
+      last_time,
 
-   running, start_time
+      total_time,
+      total_samples,
 
-} </pre>
+      running,
+      start_time   
+   }
 
-== Reporting ==
+Reporting
+---------
 
-\* In GUI: \*\* Integrated in streams and media information for relevant
-items (make it available for VLM streams too) \*\* Where to put global
-data ?
+-  In GUI:
 
-\* Data log: \*\* Make global options to enable and driver logger module
-\*\* Add some logging facility to httpd \*\* RRD output (muwahahahaha)
+   -  Integrated in streams and media information for relevant items (make it available for VLM streams too)
+   -  Where to put global data ?
 
-[[Category:Dev Discussions]]
+-  Data log:
+
+   -  Make global options to enable and driver logger module
+   -  Add some logging facility to httpd
+   -  RRD output (muwahahahaha)
+
+`Category:Dev Discussions <Category:Dev_Discussions>`__

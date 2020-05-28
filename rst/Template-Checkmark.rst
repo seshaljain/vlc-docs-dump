@@ -1,5 +1,27 @@
-[[File:Yes check.png20}}}pxlink=]]<!--template:checkmark--><noinclude>
-Template used to give a checkmark {{checkmark}}. To modify the size you
-can use <nowiki>{{checkmarkCheckmark}} \* {{tlFixed}}
+|px|alt=Yes|link=| Template used to give a checkmark . To modify the size you can use {{checkmark|<size in px>}}.
 
-[[Category:Templates]] </noinclude>
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Checkmark}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Done}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Fixed}}
+
+`Category:Templates <Category:Templates>`__
+
+.. |px|alt=Yes|link=| image:: Yes_check.png
+

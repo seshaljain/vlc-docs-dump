@@ -1,1 +1,1 @@
-#REDIRECT [[Character encoding]]
+#. REDIRECT `Character encoding <Character_encoding>`__

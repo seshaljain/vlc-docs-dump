@@ -1,17 +1,21 @@
-{{See alsoset global hotkeys}}
+.. raw:: mediawiki
 
-VLC Global Hotkeys are shortcuts you can use even if VLC does not have
-the focus. Here is how to configure Global Hotkeys:
+   {{See also|Hotkeys}}
 
-*Tools, Preferences, HotKeys.*\ Under the '''Global''' column,
-double-click the value corresponding to the function you want a global
-key assigned to. *Press the key or key combination you want*\ Click
-Apply \*Click Save
+.. raw:: mediawiki
 
-You will have to quit and restart VLC for the new assignments to be
-effective.
+   {{Howto|set global hotkeys}}
 
-To unset/clear a global hotkey: Proceed as if you wanted to set a new
-key, but press the pause/break key.
+VLC Global Hotkeys are shortcuts you can use even if VLC does not have the focus. Here is how to configure Global Hotkeys:
 
-[[Category:Interfaces]]
+-  Tools, Preferences, HotKeys.
+-  Under the **Global** column, double-click the value corresponding to the function you want a global key assigned to.
+-  Press the key or key combination you want
+-  Click Apply
+-  Click Save
+
+You will have to quit and restart VLC for the new assignments to be effective.
+
+To unset/clear a global hotkey: Proceed as if you wanted to set a new key, but press the pause/break key.
+
+`Category:Interfaces <Category:Interfaces>`__

@@ -1,8 +1,13 @@
-{{Moduletype=Stream output|description=Gathers [[ES]] info}}
+.. raw:: mediawiki
 
-The only shortcut for this module is <code>description</code>. This
-module has no options.
+   {{Module|name=stream_out_description|type=Stream output|description=Gathers [[ES]] info}}
 
-{{Stub}}
+The only shortcut for this module is ``description``. This module has no options.
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Stub}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

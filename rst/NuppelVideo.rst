@@ -1,1 +1,1 @@
-#redirect [[nuv]]
+#. redirect `nuv <nuv>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Quality]]
+#. REDIRECT `Quality <Quality>`__

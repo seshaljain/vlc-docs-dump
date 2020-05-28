@@ -1,1 +1,1 @@
-#REDIRECT [[VLC HowTo/Crop]]
+#. REDIRECT `VLC HowTo/Crop <VLC_HowTo/Crop>`__

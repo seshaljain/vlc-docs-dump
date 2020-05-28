@@ -1,6 +1,4 @@
-I'm wondering if there are plans to add the ability to adjust pitch in
-VLC Media Player without changing tempo? This would be a very useful
-tool for music transcription & playalong.
+I'm wondering if there are plans to add the ability to adjust pitch in VLC Media Player without changing tempo? This would be a very useful tool for music transcription & playalong.
 
 Corbax :
 

@@ -1,9 +1,7 @@
-{{Wikipedia|Hardware acceleration}}
+.. raw:: mediawiki
 
-Hardware acceleration is a method of speeding up computer processing by
-shifting work to a computer part that can do the job faster. Hardware
-acceleration for VLC generally refers to using your graphics card for
-better performance. See [[GPU decoding]] or the [[Video Acceleration
-API]] (GNU/Linux-specific).
+   {{Wikipedia|Hardware acceleration}}
 
-[[Category:Glossary]]
+Hardware acceleration is a method of speeding up computer processing by shifting work to a computer part that can do the job faster. Hardware acceleration for VLC generally refers to using your graphics card for better performance. See `GPU decoding <GPU_decoding>`__ or the `Video Acceleration API <Video_Acceleration_API>`__ (GNU/Linux-specific).
+
+`Category:Glossary <Category:Glossary>`__

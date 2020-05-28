@@ -1,18 +1,66 @@
-{{Moduletype=Visualizationdescription=libprojectM effect}}
+.. raw:: mediawiki
 
-Additional module options <code>--projectm-preset-path</code>,
-<code>--projectm-title-font</code> and <code>--projectm-menu-font</code>
-[[wikipedia:Conditional compilation|will not be used]] if VLC can find
-font paths.
+   {{Module|name=projectm|type=Visualization|first_version=1.1.0|description=libprojectM effect}}
 
-== Options == {{Option value=integer description=The width of the video
-window, in pixels }} {{Option value=integer description=The height of
-the video window, in pixels }} {{Option value=integer description=The
-width of the mesh, in pixels }} {{Option value=integer description=The
-height of the mesh, in pixels }} {{Option value=integer description=The
-size of the texture, in pixels }}
+Additional module options ``--projectm-preset-path``, ``--projectm-title-font`` and ``--projectm-menu-font`` `will not be used <wikipedia:Conditional_compilation>`__ if VLC can find font paths.
 
-== Source code == \*
-{{VLCSourceFile|modules/visualization/projectm.cpp}}
+Options
+-------
 
-{{Documentation footer}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=projectm-width
+   |value=integer
+   |default=800
+   |description=The width of the video window, in pixels
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=projectm-height
+   |value=integer
+   |default=500
+   |description=The height of the video window, in pixels
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=projectm-meshx
+   |value=integer
+   |default=32
+   |description=The width of the mesh, in pixels
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=projectm-meshy
+   |value=integer
+   |default=24
+   |description=The height of the mesh, in pixels
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=projectm-texture-size
+   |value=integer
+   |default=1024
+   |description=The size of the texture, in pixels
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/visualization/projectm.cpp}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

@@ -1,47 +1,46 @@
-=Architecture=
+Architecture
+============
 
-==The model==
+The model
+---------
 
-The 2 key objects of the model are the media and the programmation.
-Basically, a media stands for something that can be streamed whereas the
-programmation tells you how it should be streamed.
+The 2 key objects of the model are the media and the programmation. Basically, a media stands for something that can be streamed whereas the programmation tells you how it should be streamed.
 
-==The threads==
+The threads
+-----------
 
-The daemon is made of two main threads: \* a thread which monitors the
-state of the servers (up/down), \* a thread which monitors the state or
-programmation (whether programs are really streamed or not) and asks for
-orders to be given again whether there is something wrong.
+The daemon is made of two main threads:
 
-Most events are triggered by these two threads, the other events being
-triggered from user interaction.
+-  a thread which monitors the state of the servers (up/down),
+-  a thread which monitors the state or programmation (whether programs are really streamed or not) and asks for orders to be given again whether there is something wrong.
 
-==Orders==
+Most events are triggered by these two threads, the other events being triggered from user interaction.
 
-When VLMa notices that some programs are not really streamed, orders are
-computed and then sent to the servers. Computing orders means: \*
-identify available adapters, \* identify medias that should be streamed,
-\* put together medias into groups of medias that should be streamed by
-the same server (for example, because of their frequency in case of a
-[[DVB]] input), \* map every media group to an available adapter, \*
-send orders to the servers.
+Orders
+------
 
-==A programmation state==
+When VLMa notices that some programs are not really streamed, orders are computed and then sent to the servers. Computing orders means:
 
-A media can have 3 states: \* not programmed, \* programmed but not
-streamed, \* programmed and streamed.
+-  identify available adapters,
+-  identify medias that should be streamed,
+-  put together medias into groups of medias that should be streamed by the same server (for example, because of their frequency in case of a `DVB <DVB>`__ input),
+-  map every media group to an available adapter,
+-  send orders to the servers.
 
-To check whether programs are ''really'' streamed or not, there are
-stream watchers. Currently, there are two main implementations : the
-<code>DirectMulticastStreamWatcher</code> which joins the multicast
-group of the program (in case of an UDP multicast streaming strategy)
-and tries to receive data. If not enough data is received, the stream is
-known as not streamed. The other watcher, <code>HttpStreamWatcher</code>
-connects on the VLC http interface and verifies that no 404 error is
-encountered.
+A programmation state
+---------------------
 
-==See also==
+A media can have 3 states:
 
--  [[VLMa/Documentation \| VLMa documentation index]]
+-  not programmed,
+-  programmed but not streamed,
+-  programmed and streamed.
 
-[[Category:VLMa]]
+To check whether programs are *really* streamed or not, there are stream watchers. Currently, there are two main implementations : the ``DirectMulticastStreamWatcher`` which joins the multicast group of the program (in case of an UDP multicast streaming strategy) and tries to receive data. If not enough data is received, the stream is known as not streamed. The other watcher, ``HttpStreamWatcher`` connects on the VLC http interface and verifies that no 404 error is encountered.
+
+See also
+--------
+
+-  `VLMa documentation index <VLMa/Documentation>`__
+
+`Category:VLMa <Category:VLMa>`__

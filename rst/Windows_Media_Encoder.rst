@@ -1,32 +1,30 @@
-{{websitehttp://www.microsoft.com/windows/windowsmedia/forpros/encoder/default.mspx}}
+.. raw:: mediawiki
 
-'''Windows Media Encoder''' allows encoding of live broadcasts and
-pulled from clients or relays or pushed to servers over the [[MMS]]
-protocol.
+   {{website|Windows Media Encoder|http://www.microsoft.com/windows/windowsmedia/forpros/encoder/default.mspx}}
 
-==Using VLC as a Relay for Live Streams==
+**Windows Media Encoder** allows encoding of live broadcasts and pulled from clients or relays or pushed to servers over the `MMS <MMS>`__ protocol.
 
-Currently only the pull method is supported for using VLC as a relay. On
-your server, use the command:
+Using VLC as a Relay for Live Streams
+-------------------------------------
 
-<pre> vlc mmsh://encoder-ip:8080 --sout
-'#std{access=mmsh,mux=asfh,dst=:8080}' </pre>
+Currently only the pull method is supported for using VLC as a relay. On your server, use the command:
 
-Now [[Windows Media Player]] clients can connect to
-<code>mms://server-ip:8080\ </code> to watch the broadcast.
+::
 
-Of course this requires the encoder to be reachable via the [[MMSH]]
-protocol, with any required firewall or NAT configuration to support it.
+   vlc mmsh://encoder-ip:8080 --sout '#std{access=mmsh,mux=asfh,dst=:8080}'
 
-===Encoder Push Support===
+Now `Windows Media Player <Windows_Media_Player>`__ clients can connect to ```mms://server-ip:8080`` <mms://server-ip:8080>`__ to watch the broadcast.
 
-Some reverse engineering of the [[MMSH]] encoder push protocol has been
-done, but not integrated into VLC, for example
-[http://www.abk.nu/~nabe/prog_down/wmrelay.pl wmrelay.pl] by nabe@abk
-and [http://sdp.ppona.com/ The SDP Multimedia Website].
+Of course this requires the encoder to be reachable via the `MMSH <MMSH>`__ protocol, with any required firewall or NAT configuration to support it.
 
-==Bugs and Caveats==
+Encoder Push Support
+~~~~~~~~~~~~~~~~~~~~
 
-VLC may not reflect the source bitrate properly. {{forum|18087}}
+Some reverse engineering of the `MMSH <MMSH>`__ encoder push protocol has been done, but not integrated into VLC, for example `wmrelay.pl <http://www.abk.nu/~nabe/prog_down/wmrelay.pl>`__ by nabe@abk and `The SDP Multimedia Website <http://sdp.ppona.com/>`__.
 
-[[Category:Codecs]] [[Category:Windows]]
+Bugs and Caveats
+----------------
+
+VLC may not reflect the source bitrate properly.
+
+`Category:Codecs <Category:Codecs>`__ `Category:Windows <Category:Windows>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Console#telnet]]
+#. REDIRECT `Console#telnet <Console#telnet>`__

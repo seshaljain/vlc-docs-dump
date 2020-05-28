@@ -1,7 +1,11 @@
-<div style="width:820px;border: 1px solid #ffc9c9> {{vlc_MacOS_toc}}
-<div style="padding: .4em .9em .9em">
+<div style="width:820px;border: 1px solid #ffc9c9>
 
-== The Audio preferences menu ==
+.. raw:: html
+
+   <div style="padding: .4em .9em .9em">
+
+The Audio preferences menu
+--------------------------
 
 http://img111.imageshack.us/img111/8507/vlcaudioprefsmainkj8.png
 
@@ -17,7 +21,8 @@ The advanced Audio menu gives these extra options
 -  audio output frequency ?
 -  audio desynchronisation compensation ?
 
-=== Output modules ===
+Output modules
+~~~~~~~~~~~~~~
 
 http://img207.imageshack.us/img207/3092/vlcaudioprefshalpt7.png
 
@@ -27,8 +32,16 @@ The advanced Audio menu gives these extra options
 
 http://img250.imageshack.us/img250/1502/vlcaudioprefsoutputeg8.png
 
-=== Filters ===
+Filters
+~~~~~~~
 
-=== Visualisations ===
+Visualisations
+~~~~~~~~~~~~~~
 
-</div> </div>
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>

@@ -1,6 +1,8 @@
-{{See alsoCategory:Candidates for speedy deletion}}
+.. raw:: mediawiki
 
-Pages flagged by the users as "Should be deleted".<br /> The wiki admins
-should check this category from time to time.
+   {{See also|Category:Proposed deletion|Category:Candidates for speedy deletion}}
 
-[[Category:Wiki maintenance]]
+| Pages flagged by the users as "Should be deleted".
+| The wiki admins should check this category from time to time.
+
+`Category:Wiki maintenance <Category:Wiki_maintenance>`__

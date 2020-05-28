@@ -1,32 +1,49 @@
-== Testing if I broke something == { Test ! Test Test \|\| Test \|}
+Testing if I broke something
+----------------------------
 
-{ Test ! Test Test \|\| Test \|}
+==== ====
+Test Test
+Test Test
+==== ====
 
-{\| \| Test ! Test Test \|\| Test \|}
+==== ====
+Test Test
+Test Test
+==== ====
 
-Yay! --[[User:H2g2bob|h2g2bob]] 04:47, 17 December 2006 (CET)
+==== ====
+Test Test
+Test Test
+==== ====
 
-== Link Styling ==
+Yay! --`h2g2bob <User:H2g2bob>`__ 04:47, 17 December 2006 (CET)
 
-Hi everyone. I made it so that all links to videolan.org have a little
-picture by them. Is that okay? [[User talk:The thingThe thing]]
-<sup>([[User talk:The thingContribs]])</sup> 22:23, 13 July 2008 (CEST)
+Link Styling
+------------
 
-== Pre text wrapping ==
+Hi everyone. I made it so that all links to videolan.org have a little picture by them. Is that okay? `Let me know. <User_talk:The_thing>`__ To make the image not appear, you just dont type the "www." `The thing <User:The_thing>`__ :sup:`(`\ `Talk <User_talk:The_thing>`__\ :sup:`•`\ `Contribs <Special:Contributions/The_thing>`__\ :sup:`)` 22:23, 13 July 2008 (CEST)
 
-Hi all, I'm about to make a change for everyone here. Text in
-<code><nowiki><pre>...</pre></nowiki></code> tags will now soft-wrap.<br
-/> Here's a line from [[Documentation:Streaming HowTo/Advanced Streaming
-Using the Command Line]] that shows you what I mean.<br /> Before (no
-wrapping): <pre style="white-space:pre;word-break:normal;">% vlc
-input_stream --sout
-"#module1{option1=parameter1{parameter-option1},option2=parameter2}:module2{option1=...,option2=...}:..."</pre>
-After (wrapping): <pre
-style="white-space:pre-wrap;word-break:break-all;">% vlc input_stream
---sout
-"#module1{option1=parameter1{parameter-option1},option2=parameter2}:module2{option1=...,option2=...}:..."</pre>
-I prefer this because I can read without having to scroll. If you feel
-differently [[User talk:DoesItReallyMatter|tell me]] and I'll revert the
-change (or you can do it yourself).
+Pre text wrapping
+-----------------
 
-{{User:DoesItReallyMatter/real_sig}} 08:11, 30 January 2019 (CET)
+| Hi all, I'm about to make a change for everyone here. Text in ``<pre>...</pre>`` tags will now soft-wrap.
+| Here's a line from `Documentation:Streaming HowTo/Advanced Streaming Using the Command Line <Documentation:Streaming_HowTo/Advanced_Streaming_Using_the_Command_Line>`__ that shows you what I mean.
+| Before (no wrapping):
+
+::
+
+   % vlc input_stream --sout "#module1{option1=parameter1{parameter-option1},option2=parameter2}:module2{option1=...,option2=...}:..."
+
+After (wrapping):
+
+::
+
+   % vlc input_stream --sout "#module1{option1=parameter1{parameter-option1},option2=parameter2}:module2{option1=...,option2=...}:..."
+
+I prefer this because I can read without having to scroll. If you feel differently `tell me <User_talk:DoesItReallyMatter>`__ and I'll revert the change (or you can do it yourself).
+
+.. raw:: mediawiki
+
+   {{User:DoesItReallyMatter/real_sig}}
+
+08:11, 30 January 2019 (CET)

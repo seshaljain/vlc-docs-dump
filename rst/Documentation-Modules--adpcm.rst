@@ -1,7 +1,21 @@
-{{Moduletype=Audio decoderdescription=[[ADPCM]] audio decoder|sc=none}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=adpcm|type=Audio decoder|first_version=0.5.0|description=[[ADPCM]] audio decoder|sc=none}}
 
-== Source code == \* {{VLCSourceFile|modules/codec/adpcm.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/codec/adpcm.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

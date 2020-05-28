@@ -1,4 +1,3 @@
-''For more information, see VideoLAN's '''[{{{1}}} Official
-Documentation]'''''<noinclude>
+*For more information, see VideoLAN's*\ **[ Official Documentation]**\ 
 
-[[Category:Templates]] </noinclude>
+`Category:Templates <Category:Templates>`__

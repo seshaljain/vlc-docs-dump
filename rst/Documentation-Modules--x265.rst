@@ -1,9 +1,19 @@
-<span class="hatnote">This page is about the H.265 encoder. Were you
-looking for {{docmodDocumentation:Modules/x264}}
-{{Moduletype=Muxerdescription=[[H.265/HEVC]] encoder (x265)|sc=none}}
+This page is about the H.265 encoder. Were you looking for , the H.265 decoder?
 
-== Options == None. {{Clear}}
+Options
+-------
 
-== Source code == \* {{VLCSourceFile|modules/codec/x265.c}}
+None.
 
-{{Documentation}}
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/codec/x265.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

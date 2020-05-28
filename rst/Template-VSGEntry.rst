@@ -1,3 +1,8 @@
-=== [[{{{2}}}Go!]]<noinclude>
+\__NOEDITSECTION_\_
 
-[[Category:Templates]] </noinclude>
+` <{{{2}}}>`__
+~~~~~~~~~~~~~~
+
+   `Go! <{{{2}}}>`__\ 
+
+`Category:Templates <Category:Templates>`__

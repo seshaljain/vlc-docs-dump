@@ -1,30 +1,32 @@
-{{websitehttps://www.apple.com/quicktime/}} QuickTime is developed by
-Apple and is the default player on any [[macOS]] system. There was a
-version available for Windows, but support was dropped in 2016. It is a
-freemium player that charges more for exporting videos into different
-[[codec]]s. It is extensible through plugins.
+.. raw:: mediawiki
 
-==Compatibility== {{VLC}} has a problem understanding certain types of
-streamed .[[mov]] files (the native format for QuickTime). If a file can
-be played in QuickTime and not VLC, open it in QuickTime and let it
-decide which datarate is best for your connection, then pause it and
-open the stream info. You should then be able to copy the link and open
-it in VLC.
+   {{website|QuickTime|https://www.apple.com/quicktime/}}
 
-==A sample of how to stream from v4l source to quicktime player== The
-following command is an example of streaming from [[Video4Linux]] to
-QuickTime (player):
+QuickTime is developed by Apple and is the default player on any `macOS <macOS>`__ system. There was a version available for Windows, but support was dropped in 2016. It is a freemium player that charges more for exporting videos into different `codecs <codec>`__. It is extensible through plugins.
 
-   {{%}} vlc -vvv --intf dummy
-   v4l:/dev/video0:norm=pal:frequency=37525:size=720x576:channel=0:adev=/dev/sound/audio:audio=0
-   --sout '#transcode{acodec=mp4a,
-   vcodec=mp4v,vb=2000,ab=128,vt=800000,keyint=80}:rtp{dst=239.2.12.42,port=1234,
-   sdp=http:/myserver.dot.com:8082/tv.sdp}'
+Compatibility
+-------------
 
-You need VLC and [[FFmpeg]] [[compile]]d with the [[libfaad]] (the FAAD2
-library). I have tested it with vlc-0.7.2 on both side client and server
-on Linux and QuickTime on Windows machines.
+.. raw:: mediawiki
 
-==See Also== \* [[MacTV]]
+   {{VLC}}
 
-[[Category:iOS]] [[Category:Player]]
+has a problem understanding certain types of streamed .\ `mov <mov>`__ files (the native format for QuickTime). If a file can be played in QuickTime and not VLC, open it in QuickTime and let it decide which datarate is best for your connection, then pause it and open the stream info. You should then be able to copy the link and open it in VLC.
+
+A sample of how to stream from v4l source to quicktime player
+-------------------------------------------------------------
+
+The following command is an example of streaming from `Video4Linux <Video4Linux>`__ to QuickTime (player):
+
+| ``{{%}} vlc -vvv --intf dummy v4l:/dev/video0:norm=pal:frequency=37525:size=720x576:channel=0:adev=/dev/sound/audio:audio=0                 ``
+| ``--sout '#transcode{acodec=mp4a, vcodec=mp4v,vb=2000,ab=128,vt=800000,keyint=80}:rtp{dst=239.2.12.42,port=1234,``
+| ``sdp=``\ ```http:/myserver.dot.com:8082/tv.sdp`` <http:/myserver.dot.com:8082/tv.sdp>`__\ ``}'``
+
+You need VLC and `FFmpeg <FFmpeg>`__ `compiled <compile>`__ with the `libfaad <libfaad>`__ (the FAAD2 library). I have tested it with vlc-0.7.2 on both side client and server on Linux and QuickTime on Windows machines.
+
+See Also
+--------
+
+-  `MacTV <MacTV>`__
+
+`Category:iOS <Category:iOS>`__ `Category:Player <Category:Player>`__

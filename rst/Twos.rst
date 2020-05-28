@@ -1,1 +1,1 @@
-#REDIRECT [[Raw]]
+#. REDIRECT `Raw <Raw>`__

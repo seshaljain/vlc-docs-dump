@@ -1,1 +1,1 @@
-#REDIRECT [[JACOsub]]
+#. REDIRECT `JACOsub <JACOsub>`__

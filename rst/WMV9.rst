@@ -1,1 +1,1 @@
-#REDIRECT [[Windows Media#Codecs]]
+#. REDIRECT `Windows Media#Codecs <Windows_Media#Codecs>`__

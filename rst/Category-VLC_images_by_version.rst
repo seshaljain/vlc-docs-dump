@@ -1,3 +1,5 @@
-{{See also|Category:Changelog}}
+.. raw:: mediawiki
 
-[[Category:VLC images]]
+   {{See also|Category:Changelog}}
+
+`Category:VLC images <Category:VLC_images>`__

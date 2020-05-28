@@ -1,2 +1,7 @@
-Anyone knowing about those FIXME's? [[User:UstunozgurDionoea]] 13:43, 3
-April 2007 (CEST)
+Anyone knowing about those FIXME's? `Ustunozgur <User:Ustunozgur>`__ 12:57, 3 April 2007 (CEST)
+
+   *ipkg/* is a package distribution system used by some linux disrtibutions. I guess that this contains definition files for the packages.
+   *libs/* containts the loader (win32 dmo codec loading on linx) and a SRTP library which Rémi started recently.
+   *lxdialog/* i don't have a clue
+   *python/* isn't that related to the python bindings?
+   -- `Dionoea <User:Dionoea>`__ 13:43, 3 April 2007 (CEST)

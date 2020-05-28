@@ -1,6 +1,3 @@
-<span class="noprint"><small>''Do you know more about the compatibility
-of {{PAGENAME}}? Please [{{SERVER}}{{localurl:{{PAGENAME}}|action=edit}}
-add it here]''</small></span>
+\ *Do you know more about the compatibility of ? Please [ add it here]*\ 
 
-[[Category:CompatStub]]<noinclude> [[Category:Maintenance templates]]
-</noinclude>
+`Category:CompatStub <Category:CompatStub>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

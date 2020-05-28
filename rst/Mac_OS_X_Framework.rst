@@ -1,1 +1,1 @@
-#REDIRECT [[VLCKit]]
+#. REDIRECT `VLCKit <VLCKit>`__

@@ -1,3 +1,4 @@
-== Who's that editor ? ==
+Who's that editor ?
+-------------------
 
 François Cartgnie. Mainly working on UI review and improvements.

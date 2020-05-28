@@ -1,4 +1,7 @@
-{{Wikipedia|Category:Subtitle file formats}} Guides, [[codec]]s, lists
-and anything else relating to [[subtitle]]s
+.. raw:: mediawiki
 
-[[Category:Knowledge Base]]
+   {{Wikipedia|Category:Subtitle file formats}}
+
+Guides, `codecs <codec>`__, lists and anything else relating to `subtitles <subtitle>`__
+
+`Category:Knowledge Base <Category:Knowledge_Base>`__

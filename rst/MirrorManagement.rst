@@ -1,84 +1,66 @@
-{{see also|Mirrors}}
+.. raw:: mediawiki
 
-= Infrastructure =
+   {{see also|Mirrors}}
 
-The current infrastructure is made of: \* The master rsync server \* The
-distribution server (aka the redirector) \* The actual mirrors (few
-dozens)
+Infrastructure
+==============
 
-The master rsync server always contains all the latest version of each
-file available.
+The current infrastructure is made of:
 
-The distribution server replicates the master server via rsync every 15
-minutes and also scan the content of each mirrors and their current
-state every so often.
+-  The master rsync server
+-  The distribution server (aka the redirector)
+-  The actual mirrors (few dozens)
 
-The mirrors are configured to scan the master at regular interval (at
-least 4th times a day for most of them).
+The master rsync server always contains all the latest version of each file available.
 
-== Requests handling ==
+The distribution server replicates the master server via rsync every 15 minutes and also scan the content of each mirrors and their current state every so often.
 
-As soon as a request hits the distribution server, a mirror is chosen
-depending on the IP address of the client. The selected mirror must
-contain the latest version of the file and be up at the moment of the
-request to be selected. The distribution server then issues a 3xx
-redirection code to the client.
+The mirrors are configured to scan the master at regular interval (at least 4th times a day for most of them).
 
-== List of mirrors ==
+Requests handling
+-----------------
 
-The most recent list of mirrors can be accessed
-[https://www.videolan.org/videolan/mirrors.html here]. It is updated
-after any modification of the mirror list on the distribution server.
+As soon as a request hits the distribution server, a mirror is chosen depending on the IP address of the client. The selected mirror must contain the latest version of the file and be up at the moment of the request to be selected. The distribution server then issues a 3xx redirection code to the client.
 
-= Statistics =
+List of mirrors
+---------------
 
-== Files availability ==
+The most recent list of mirrors can be accessed `here <https://www.videolan.org/videolan/mirrors.html>`__. It is updated after any modification of the mirror list on the distribution server.
 
-You can access the current file availability on each mirror by appending
-'''?mirrorlist''' to any URL of a file served by the get.videolan.org
-domain.
+Statistics
+==========
 
-For instance the following link will return the list of mirrors handling
-this file sorted by the most appropriate for the caller (you!).
+Files availability
+------------------
 
-https://get.videolan.org/vlc/\ {{VLC:latest
-version}}/win32/vlc-{{VLC:latest version}}-win32.exe?mirrorlist
+You can access the current file availability on each mirror by appending **?mirrorlist** to any URL of a file served by the get.videolan.org domain.
 
-To get the view from any other IP address append '''&fromip=x.x.x.x'''
-to the last URL.
+For instance the following link will return the list of mirrors handling this file sorted by the most appropriate for the caller (you!).
 
-https://get.videolan.org/vlc/\ {{VLC:latest
-version}}/win32/vlc-{{VLC:latest
-version}}-win32.exe?mirrorlist&fromip=80.237.216.0
+https://get.videolan.org/vlc/\ /win32/vlc--win32.exe?mirrorlist
 
-This will return the same list as the previous call but from the point
-of view of the ''80.237.216.0'' network (located somewhere in Germany).
+To get the view from any other IP address append **&fromip=x.x.x.x** to the last URL.
 
-== Mirrors statistics ==
+https://get.videolan.org/vlc/\ /win32/vlc--win32.exe?mirrorlist&fromip=80.237.216.0
 
-A global map of all mirrors, the number of downloads and the total size
-served by each mirror can be accessed on the following URL:
+This will return the same list as the previous call but from the point of view of the *80.237.216.0* network (located somewhere in Germany).
+
+Mirrors statistics
+------------------
+
+A global map of all mirrors, the number of downloads and the total size served by each mirror can be accessed on the following URL:
 
 https://get.videolan.org/?mirrorstats (Beware: URL subject to change)
 
-== Downloads statistics ==
+Downloads statistics
+--------------------
 
-Downloads statistics for each file are available as ''json'' by
-appending '''?stats''' to any URL of a file served by the
-get.videolan.org domain.
+Downloads statistics for each file are available as *json* by appending **?stats** to any URL of a file served by the get.videolan.org domain.
 
 You can even specify a period if you'd like to:
 
-https://get.videolan.org/vlc/\ {{VLC:latest
-version}}/win32/vlc-{{VLC:latest
-version}}-win32.exe?stats={{CURRENTYEAR}} (for the whole {{CURRENTYEAR}}
-year)<br/> https://get.videolan.org/vlc/\ {{VLC:latest
-version}}/win32/vlc-{{VLC:latest
-version}}-win32.exe?stats={{CURRENTYEAR}}-{{CURRENTMONTH}} (for
-{{CURRENTMONTHNAME}} {{CURRENTYEAR}})<br/>
-https://get.videolan.org/vlc/\ {{VLC:latest
-version}}/win32/vlc-{{VLC:latest
-version}}-win32.exe?stats={{CURRENTYEAR}}-{{CURRENTMONTH}}-01 (for the
-1st of {{CURRENTMONTHNAME}} {{CURRENTYEAR}})
+| https://get.videolan.org/vlc/\ /win32/vlc--win32.exe?stats= (for the whole year)
+| https://get.videolan.org/vlc/\ /win32/vlc--win32.exe?stats=- (for )
+| https://get.videolan.org/vlc/\ /win32/vlc--win32.exe?stats=--01 (for the 1st of )
 
-[[Category:About VideoLAN]]
+`Category:About VideoLAN <Category:About_VideoLAN>`__

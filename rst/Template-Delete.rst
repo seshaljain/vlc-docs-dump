@@ -1,9 +1,17 @@
-{\| style="color:black;background-color:#ff9;border:1px solid
-#606060;margin:1em 5%;" \| style="padding:0.5em;" \| [[File:Deletion
-icon.pngalt= style="padding:0.5em;" \| '''Proposed for speedy
-deletion:''' This page is proposed for speedy deletion. }}}
-nocat=y}}</nowiki> or <nowiki>{{Spam|nocat=y}}</nowiki> on page to show
-the banner without adding to [[:Category:Candidates for speedy
-deletion]]
+============================= ============================================================================
+.. figure:: Deletion_icon.png **Proposed for speedy deletion:** This page is proposed for speedy deletion.
+   :alt: Deletion_icon.png   
+   :width: 24px              
+                             
+   Deletion_icon.png         
+============================= ============================================================================
 
-[[Category:Maintenance templates]] </noinclude>
+{{#ifeq:\|y\| \|}}
+
+Usage
+-----
+
+-  Place {{Delete}} or {{Spam}} on page to request deletion
+-  Place {{Delete|nocat=y}} or {{Spam|nocat=y}} on page to show the banner without adding to `:Category:Candidates for speedy deletion <:Category:Candidates_for_speedy_deletion>`__
+
+`Category:Candidates for speedy deletion <Category:Candidates_for_speedy_deletion>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

@@ -1,11 +1,13 @@
-[https://www.kb.cert.org/vuls/id/\ {{{1}}} US-CERT
-VU#{{{1}}}]<noinclude>
+[https://www.kb.cert.org/vuls/id/\  US-CERT VU#]
 
 For linking to a US-CERT Vulnerability Note.
 
 Usage:
-   <nowiki>{{US-CERT|id}}</nowiki>
 
-eg {{US-CERT200928}}</nowiki>
+``{{US-CERT|id}}``
 
-[[Category:Security]] </noinclude>
+eg
+
+``{{US-CERT|200928}}``
+
+`Category:Security <Category:Security>`__

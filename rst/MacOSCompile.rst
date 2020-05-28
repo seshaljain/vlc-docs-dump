@@ -1,285 +1,267 @@
-{{Lowercase}} This is an '''howto''' to compile {{VLC}} on '''macOS'''
-''(formerly known as Mac OS X)'', focused on '''VLC 3.0''' and later.
+.. raw:: mediawiki
 
-= Pre-requisites =
+   {{Lowercase}}
 
-=== Apple Software ===
+This is an **howto** to compile on **macOS** *(formerly known as Mac OS X)*, focused on **VLC 3.0** and later.
 
-Those are the minimum build system requirements to compile VLC 4.0
-(current development version). They are also highly recommended to
-compile VLC 3.0: \* At least '''macOS 10.13.4''', or any later version
-\* At least '''Xcode 9.3''' from [https://developer.apple.com/xcode/
-developer.apple.com/xcode]. (Note: Installing the developer tools
-package is not needed, and building with that package is not supported)
-\* Use at least '''macOS SDK 10.13''' (this is included and the default
-in Xcode 9.3) \* Install python3 (macOS pkg installer from python.org)
-\* Java 8 JDK (needed to compile Java menu support for blurays)
+Pre-requisites
+==============
 
-==== Compiler test ====
+Apple Software
+~~~~~~~~~~~~~~
+
+Those are the minimum build system requirements to compile VLC 4.0 (current development version). They are also highly recommended to compile VLC 3.0:
+
+-  At least **macOS 10.13.4**, or any later version
+-  At least **Xcode 9.3** from `developer.apple.com/xcode <https://developer.apple.com/xcode/>`__. (Note: Installing the developer tools package is not needed, and building with that package is not supported)
+-  Use at least **macOS SDK 10.13** (this is included and the default in Xcode 9.3)
+-  Install python3 (macOS pkg installer from python.org)
+-  Java 8 JDK (needed to compile Java menu support for blurays)
+
+Compiler test
+^^^^^^^^^^^^^
 
 Ensure the compiler is found correctly by running
 
-   xcrun clang
+``xcrun clang``
 
-in the Terminal, if this outputs anything else than <code>clang: error:
-no input files</code>, see the troubleshooting part of this document.
+in the Terminal, if this outputs anything else than ``clang: error: no input files``, see the troubleshooting part of this document.
 
-==== Developer directory test ====
+Developer directory test
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Xcode developer directory must be used, not the command line tools
-developer directory, as only Xcode includes all necessary tools.
+The Xcode developer directory must be used, not the command line tools developer directory, as only Xcode includes all necessary tools.
 
 Run the following command in Terminal:
 
-   xcode-select --print-path
+``xcode-select --print-path``
 
 It needs to print out the path to your Xcode installation, like this
 
-   /Applications/Xcode.app/Contents/Developer
+``/Applications/Xcode.app/Contents/Developer``
 
-If it prints out a path to the command line tools package, select the
-correct path using the xcode-select tool. See
-[https://wiki.videolan.org/OSXCompile/#Xcode_.27No_developer_directory.27_error
-here] for the correct command.
+If it prints out a path to the command line tools package, select the correct path using the xcode-select tool. See `here <https://wiki.videolan.org/OSXCompile/#Xcode_.27No_developer_directory.27_error>`__ for the correct command.
 
-= [[GetTheSource|Get the source code]] =
+`Get the source code <GetTheSource>`__
+======================================
 
-   git clone git://git.videolan.org/vlc.git
+``git clone ``\ ```git://git.videolan.org/vlc.git`` <git://git.videolan.org/vlc.git>`__
 
-= Build VLC with a single command = This is the most simple way to build
-VLC, including all its necessary dependencies. This way is highly
-recommended to use, as it sets up everything automatically.
+Build VLC with a single command
+===============================
+
+This is the most simple way to build VLC, including all its necessary dependencies. This way is highly recommended to use, as it sets up everything automatically.
 
 Setup a build folder:
-   cd vlc && mkdir build && cd build
+
+``cd vlc && mkdir build && cd build``
 
 And run the build:
-   ../extras/package/macosx/build.sh -c
 
-The command line switch -c rebuilds all dependencies (contribs) from
-source. If you want to use a prebuild contrib package, omit the -c
-option.
+``../extras/package/macosx/build.sh -c``
+
+The command line switch -c rebuilds all dependencies (contribs) from source. If you want to use a prebuild contrib package, omit the -c option.
 
 Wait and you have finished.
 
 You can see more options for this script (change arch or sdk):
-   ../extras/package/macosx/build.sh -h
 
-In case this fails, please try the step-by-step build guide below using
-a clean checkout.
+``../extras/package/macosx/build.sh -h``
 
-== Making changes and compile again ==
+In case this fails, please try the step-by-step build guide below using a clean checkout.
 
-Using build.sh is the recommended way to do a fresh VLC build. Now, if
-you did some changes to the VLC source code, you can try to compile the
-change by calling build.sh again. But sometimes this is a bit cubersome,
-as it might take longer, and sometimes its preferred to execute some
-build commands directly.
+Making changes and compile again
+--------------------------------
 
-For that reason, a script called env.build.sh is included in VLC
-(starting with VLC 4.0 in vlc.git), which helps you setting the correct
-environment of your Terminal. The correct environment is needed, to make
-sure the right internal tools are used for the build process.
+Using build.sh is the recommended way to do a fresh VLC build. Now, if you did some changes to the VLC source code, you can try to compile the change by calling build.sh again. But sometimes this is a bit cubersome, as it might take longer, and sometimes its preferred to execute some build commands directly.
+
+For that reason, a script called env.build.sh is included in VLC (starting with VLC 4.0 in vlc.git), which helps you setting the correct environment of your Terminal. The correct environment is needed, to make sure the right internal tools are used for the build process.
 
 Before you compile again with make, just source this script into the current Terminal (pay attention to the dot at the front of the command):
-   . ../extras/package/macosx/env.build.sh
+
+``. ../extras/package/macosx/env.build.sh``
 
 You can also create a symlink to that script in a more convenient location, for instance into the main vlc checkout directory:
-   # change directory to root git checkout ln -s
-   $PWD/extras/package/macosx/env.build.sh cd build # go back to your
-   build directory . ../env.build.sh
+
+| ``# change directory to root git checkout``
+| ``ln -s $PWD/extras/package/macosx/env.build.sh``
+| ``cd build # go back to your build directory``
+| ``. ../env.build.sh``
 
 Afterwards, in the same terminal, you can recompile by using the usual commands like make:
-   make ./bin/vlc-osx-static -vv # To test compiled changes
 
-= Build steps = Now, if you prefer, you can read the following detailed
-information on how the build internally works. This section describes
-all steps which are internally done in build.sh already. Likely, they
-are only relevant to you if you do not want to use build.sh and
-env.build.sh.
+| ``make``
+| ``./bin/vlc-osx-static -vv # To test compiled changes``
 
-== Additional development tools ==
+Build steps
+===========
 
-You need a number of tools, notably all the autotools, to build VLC
-correctly. VLC has a way to build the specific versions of these tools
-required from source, here is how:
+Now, if you prefer, you can read the following detailed information on how the build internally works. This section describes all steps which are internally done in build.sh already. Likely, they are only relevant to you if you do not want to use build.sh and env.build.sh.
 
-   cd extras/tools ./bootstrap && make cd ../..
+Additional development tools
+----------------------------
 
-'''Important''': Add the extras/tools build results to your PATH, before doing anything else:
-   export PATH=$PWD/extras/tools/build/bin:$PATH
+You need a number of tools, notably all the autotools, to build VLC correctly. VLC has a way to build the specific versions of these tools required from source, here is how:
 
-== Prepare [[Contrib Status|3rd party libraries]] ==
+| ``cd extras/tools``
+| ``./bootstrap && make``
+| ``cd ../..``
 
-To compile VLC, you need lots of other libraries, called 3rd party. VLC
-has the so-called “contribs” system to help building these libraries
-from source. Alternatively you can use a pre-built package of these
-libraries provided by VideoLAN.
+**Important**: Add the extras/tools build results to your PATH, before doing anything else:
 
-<!--FIXME: Add guide how to use pre-built nightly contribs:
+``export PATH=$PWD/extras/tools/build/bin:$PATH``
 
-=== Using pre-built nightly contribs === Together with the nightly
-builds, the build bot does each night a new build of all of the 3rd
-party libraries required for VLC. (Not all contribs are included in this
-pre-built package, as not all contribs are enabled on all OSes and
-required.) -->
+Prepare `3rd party libraries <Contrib_Status>`__
+------------------------------------------------
 
-First, set the correct '''SDK''' version for the 3rd party libraries,
-usually your current OS X Version:
+To compile VLC, you need lots of other libraries, called 3rd party. VLC has the so-called “contribs” system to help building these libraries from source. Alternatively you can use a pre-built package of these libraries provided by VideoLAN.
 
-   export OSX_VERSION=10.11
+First, set the correct **SDK** version for the 3rd party libraries, usually your current OS X Version:
+
+``export OSX_VERSION=10.11``
 
 Then, prepare the 3rd party library folder:
 
-   mkdir -p contrib/contrib-osx &amp;&amp; cd contrib/contrib-osx
-   ../bootstrap --build=x86_64-apple-darwin15
+| ``mkdir -p contrib/contrib-osx && cd contrib/contrib-osx``
+| ``../bootstrap --build=x86_64-apple-darwin15``
 
-=== Prebuilt libraries (recommended) ===
+Prebuilt libraries (recommended)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to download a prebuilt package of all the needed libraries.
 
-   make prebuilt
+``make prebuilt``
 
-Now you can just skip to the [[OSXCompile#Update_PATH|Update PATH]]
-section.
+Now you can just skip to the `Update PATH <OSXCompile#Update_PATH>`__ section.
 
-=== Build your own libraries (not for the faint-hearted) === You need to
-install the
-[http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html
-Java JDK], to support java code for libbluray.
+Build your own libraries (not for the faint-hearted)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to build contribs from source, you first need to make
-gettext, which is needed for some other contrib libraries to build:
+You need to install the `Java JDK <http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html>`__, to support java code for libbluray.
 
-   make -j4 .gettext
+If you want to build contribs from source, you first need to make gettext, which is needed for some other contrib libraries to build:
 
-Now you need to update your path for the gettext tools to be usable
-later on, see the [[#Update_PATH|Update PATH]] section above.
+``make -j4 .gettext``
+
+Now you need to update your path for the gettext tools to be usable later on, see the `Update PATH <#Update_PATH>`__ section above.
 
 Then fetch contrib sources:
 
-   make fetch
+``make fetch``
 
 and build them with:
 
-   make
+``make``
 
-If you had no errors, the 3rd party libraries (contrib) are built
-correctly and you can proceed to the next step.
+If you had no errors, the 3rd party libraries (contrib) are built correctly and you can proceed to the next step.
 
-=== Update PATH ===
+Update PATH
+~~~~~~~~~~~
 
 First we go back to the source directory:
 
-   cd ../..
+``cd ../..``
 
-And now we still need to add the contribs to our path, so they can be
-found:
+And now we still need to add the contribs to our path, so they can be found:
 
-   export PATH=$PWD/contrib/x86_64-apple-darwin15/bin:$PATH
+``export PATH=$PWD/contrib/x86_64-apple-darwin15/bin:$PATH``
 
-== Bootstrap VLC ==
+Bootstrap VLC
+-------------
 
 This will create the configure script:
 
-   ./bootstrap
+``./bootstrap``
 
-Check that there are no obvious errors at this stage, like missing
-gettext or an error at exit.
+Check that there are no obvious errors at this stage, like missing gettext or an error at exit.
 
-== Configure the VLC build ==
+Configure the VLC build
+-----------------------
 
 Create a build folder:
 
-   mkdir -p build &amp;&amp; cd build
+``mkdir -p build && cd build``
 
 To list the different options of configure:
 
-   ../extras/package/macosx/configure.sh --help
+``../extras/package/macosx/configure.sh --help``
 
-To build a binary with the previously installed x86_64-apple-darwin15
-contrib:
+To build a binary with the previously installed x86_64-apple-darwin15 contrib:
 
-   ../extras/package/macosx/configure.sh --enable-debug
-   --host=x86_64-apple-darwin15
+``../extras/package/macosx/configure.sh --enable-debug --host=x86_64-apple-darwin15``
 
-By default it will not use the installed SDK, like Xcode does, but use
-System Root. This means that if you built contribs on your own, the
-configure script might behave unexpectedly, for example enabling
-functions which are not present in a given operating system version. To
-work around this and build against the latest installed SDK, you can
-use:
+By default it will not use the installed SDK, like Xcode does, but use System Root. This means that if you built contribs on your own, the configure script might behave unexpectedly, for example enabling functions which are not present in a given operating system version. To work around this and build against the latest installed SDK, you can use:
 
-   --with-macosx-sdk=`xcrun --show-sdk-path\`
+:literal:`--with-macosx-sdk=`xcrun --show-sdk-path\``
 
-If you want to use a different SDK, you can list all installed SDKs with
-<code>xcodebuild -showsdks</code> and to get the path for it, you can
-use the following command <code>xcodebuild -version <SDK Flag from
-before> Path</code>.<br /> For example: <code>xcodebuild -version -sdk
-macosx10.11 Path</code>
+| If you want to use a different SDK, you can list all installed SDKs with ``xcodebuild -showsdks`` and to get the path for it, you can use the following command ``xcodebuild -version``\ \ ``Path``.
+| For example: ``xcodebuild -version -sdk macosx10.11 Path``
 
-== Build VLC ==
+Build VLC
+---------
 
 Just do:
-   make -j4
+
+``make -j4``
 
 and wait...
 
-== Run VLC == After <code>make</code>, you can just run VLC like so:
+Run VLC
+-------
 
-   ./bin/vlc-osx-static
+After ``make``, you can just run VLC like so:
+
+``./bin/vlc-osx-static``
 
 If you want a VLC app bundle, just do
 
-   make VLC.app
+``make VLC.app``
 
 And use it like a normal .app bundle.
 
-== Package VLC Application for Mac ==
+Package VLC Application for Mac
+-------------------------------
 
 If you want a disk-image:
 
-   make package-macosx
+``make package-macosx``
 
-Note: If you want a more fancy disk image, you need the
-[https://bitbucket.org/al45tair/dmgbuild dmgbuild] tool, which can be
-installed using <code>pip install dmgbuild</code> if you have python
-installed using [https://brew.sh Homebrew].
+Note: If you want a more fancy disk image, you need the `dmgbuild <https://bitbucket.org/al45tair/dmgbuild>`__ tool, which can be installed using ``pip install dmgbuild`` if you have python installed using `Homebrew <https://brew.sh>`__.
 
-== Sign VLC Application for Mac ==
+Sign VLC Application for Mac
+----------------------------
 
-If you want to sign your application with a certificate, for example for
-Gatekeeper, you need to run:
+If you want to sign your application with a certificate, for example for Gatekeeper, you need to run:
 
-   extras/package/macosx/codesign.sh -i "certificate name"
+``extras/package/macosx/codesign.sh -i "certificate name"``
 
-= Troubleshooting =
+Troubleshooting
+===============
 
-== 3rd party packagers and PATH ==
+3rd party packagers and PATH
+----------------------------
 
-'''Pay careful attention to remove any reference to 3rd party package
-managers from your environment.''' This is important to avoid conflicts
-between your package manager (homebrew, fink, macports...) and the
-contrib package manager we use to build our contrib.
+**Pay careful attention to remove any reference to 3rd party package managers from your environment.** This is important to avoid conflicts between your package manager (homebrew, fink, macports...) and the contrib package manager we use to build our contrib.
 
 It shouldn't be necessary, but it can happen.
 
-'''git must still be accessible though!'''
+**git must still be accessible though!**
 
-   unset PKG_CONFIG_PATH unset PKG_CONFIG_LIBDIR export
-   PATH=$PWD/build/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+| ``unset PKG_CONFIG_PATH``
+| ``unset PKG_CONFIG_LIBDIR``
+| ``export PATH=$PWD/build/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin``
 
-== Xcode 'No developer directory' error == When running <code>xcrun
-clang</code>, if you see
+Xcode 'No developer directory' error
+------------------------------------
 
-   Error: No developer directory...
+When running ``xcrun clang``, if you see
 
-then use xcode-select to select the developer directory within the Xcode
-package, to point to your xcode developer directory.
+``Error: No developer directory...``
+
+then use xcode-select to select the developer directory within the Xcode package, to point to your xcode developer directory.
 
 something like:
 
-   sudo /usr/bin/xcode-select -switch
-   /Applications/Xcode.app/Contents/Developer
+``sudo /usr/bin/xcode-select -switch /Applications/Xcode.app/Contents/Developer  ``
 
-[[Category:Building]] [[Category:macOS]]
+`Category:Building <Category:Building>`__ `Category:macOS <Category:macOS>`__

@@ -1,6 +1,7 @@
-{{wikipedia|IGMP}}
+.. raw:: mediawiki
 
-IGMP is used to [[multicast]] over a [[local network]]. For information
-about this [[protocol]], see wikipedia.
+   {{wikipedia|IGMP}}
 
-[[Category:Protocols]]
+IGMP is used to `multicast <multicast>`__ over a `local network <local_network>`__. For information about this `protocol <protocol>`__, see wikipedia.
+
+`Category:Protocols <Category:Protocols>`__

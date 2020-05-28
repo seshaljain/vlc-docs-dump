@@ -1,1 +1,1 @@
-#redirect[[Windows]]
+#. redirect\ `Windows <Windows>`__

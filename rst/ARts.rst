@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/arts]]
+#. REDIRECT `Documentation:Modules/arts <Documentation:Modules/arts>`__

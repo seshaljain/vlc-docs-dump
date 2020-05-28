@@ -1,1 +1,1 @@
-#redirect [[macOS]]
+#. redirect `macOS <macOS>`__

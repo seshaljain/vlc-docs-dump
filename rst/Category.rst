@@ -1,1 +1,1 @@
-#redirect [[categories]]
+#. redirect `categories <categories>`__

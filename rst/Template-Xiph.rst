@@ -1,7 +1,11 @@
-{{Side
-boxlink1=https://wiki.xiph.org/index.php/{{urlencode:{{{1WIKI}}{{{1}}}}}}}}<noinclude>
+.. raw:: mediawiki
+
+   {{Side box|text=[[Xiph Wiki]] has information on this entry:|link1=https://wiki.xiph.org/index.php/{{urlencode:{{{1|Main_Page}}}|WIKI}}|label1={{{label1|{{{1}}}}}
+
+}}}
 
 Xiph wiki link.
-   <nowiki>{{ xiph \| title }}</nowiki>
 
-[[Category:Templates]] </noinclude>
+``{{ xiph | title }}``
+
+`Category:Templates <Category:Templates>`__

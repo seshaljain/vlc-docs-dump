@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/http intf]]
+#. REDIRECT `Documentation:Modules/http intf <Documentation:Modules/http_intf>`__

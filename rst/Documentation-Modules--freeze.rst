@@ -1,7 +1,21 @@
-{{Moduletype=Video filterdescription=Freezing interactive video filter}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=freeze|type=Video filter|first_version=2.2.0|description=Freezing interactive video filter}}
 
-== Source code == \* {{VLCSourceFile|modules/video_filter/freeze.c}}
+Options
+-------
 
-{{Documentation footer}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/freeze.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

@@ -1,1 +1,1 @@
-#REDIRECT [[Transcode]]
+#. REDIRECT `Transcode <Transcode>`__

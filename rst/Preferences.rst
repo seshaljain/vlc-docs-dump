@@ -1,29 +1,32 @@
-{{See alsoVSG:ResetPrefs}} <gallery> File:ToolsPreferences-Windows
-8.pngalt= File:Preferences-Windows 8.pngalt= File:Vlcmenu preferences
-osx.pngalt= </gallery>
+.. raw:: mediawiki
 
-You can edit settings for VLC by navigating to the menu toolbar,
-selecting Tools, and selecting Preferences (or by pressing
-<kbd>Ctrl+P</kbd>). \* To save your preferences, click Save. \* To show
-more options, switch the ''Show settings'' radio button to ''All''.
+   {{See also|Vlc MacOS VLC Preferences|VSG:ResetPrefs}}
 
-=== Configuration File ===
+File:ToolsPreferences-Windows 8.png|Location of preferences option|alt= File:Preferences-Windows 8.png|Preferences dialogue under Windows 8|alt= File:Vlcmenu preferences osx.png|Preferences dialogue under macOS|alt=
 
-The preferences stated in the options are stored in a configuration
-file. There is one configuration file per user, stored at: \* ''Unix,
-Linux and BSD:'' <code>~/.config/vlc/vlcrc</code> since 0.9. Before it
-was: <code>~/.vlc/vlcrc</code> \* ''macOS:''
-<code>~/Library/Preferences/org.videolan.vlc/vlcrc</code> \*
-''Windows:'' <code>%appdata%vlcvlcrc</code> is generic and is expanded
-to: \*\* ''Windows 95/98/ME:'' <code>C:WindowsApplication
-Datavlcvlcrc</code> \*\* ''Windows NT/2000/XP:'' <code>C:Documents and
-Settings<username>Application Datavlcvlcrc</code> \*\* ''Windows
-Vista/7/8/10:'' <code>C:Users<username>AppDataRoamingvlcvlcrc</code> \*
-When used from the command line, sometimes there are unintended
-conflicts with settings in the config file; to ignore the config file,
-use: <code>--ignore-config</code>
+You can edit settings for VLC by navigating to the menu toolbar, selecting Tools, and selecting Preferences (or by pressing Ctrl+P).
 
-==Your Preferences== To view/change your Wiki preferences go
-[[Special:Preferences|here]].
+-  To save your preferences, click Save.
+-  To show more options, switch the *Show settings* radio button to *All*.
 
-[[Category:Documentation]]
+Configuration File
+~~~~~~~~~~~~~~~~~~
+
+The preferences stated in the options are stored in a configuration file. There is one configuration file per user, stored at:
+
+-  *Unix, Linux and BSD:* ``~/.config/vlc/vlcrc`` since 0.9. Before it was: ``~/.vlc/vlcrc``
+-  *macOS:* ``~/Library/Preferences/org.videolan.vlc/vlcrc``
+-  *Windows:* ``%appdata%\vlc\vlcrc`` is generic and is expanded to:
+
+   -  *Windows 95/98/ME:* ``C:\Windows\Application Data\vlc\vlcrc``
+   -  *Windows NT/2000/XP:* ``C:\Documents and Settings\``\ \ ``\Application Data\vlc\vlcrc``
+   -  *Windows Vista/7/8/10:* ``C:\Users\``\ \ ``\AppData\Roaming\vlc\vlcrc``
+
+-  When used from the command line, sometimes there are unintended conflicts with settings in the config file; to ignore the config file, use: ``--ignore-config``
+
+Your Preferences
+----------------
+
+To view/change your Wiki preferences go `here <Special:Preferences>`__.
+
+`Category:Documentation <Category:Documentation>`__

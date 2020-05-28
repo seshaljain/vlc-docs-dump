@@ -1,1 +1,1 @@
-#REDIRECT [[Musepack]]
+#. REDIRECT `Musepack <Musepack>`__

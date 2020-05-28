@@ -1,1 +1,1 @@
-[[Category:Logos]]
+`Category:Logos <Category:Logos>`__

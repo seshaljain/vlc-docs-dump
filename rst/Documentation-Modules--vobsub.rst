@@ -1,7 +1,27 @@
-{{Moduletype=Access demuxdescription=[[Vobsub]] subtitles parser}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=vobsub|type=Access demux|first_version=0.8.0|description=[[Vobsub]] subtitles parser}}
 
-== Source code == \* {{VLCSourceFilemodules/demux/vobsub.h}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/vobsub.c}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/vobsub.h}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

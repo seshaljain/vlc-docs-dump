@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Streaming HowTo/VLM]]
+#. REDIRECT `Documentation:Streaming HowTo/VLM <Documentation:Streaming_HowTo/VLM>`__

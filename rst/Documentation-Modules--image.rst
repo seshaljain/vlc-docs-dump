@@ -1,48 +1,172 @@
-== Video output == {{Moduletype=Video
-outputlast_version=0.9.10|description=Outputs the video images to
-files}}
+Video output
+------------
 
-In VLC 1.0.0 the image video output was rewritten into a video-filter
-named [[Documentation:Modules/scene|scene]], and the old image video
-output was removed.
+.. raw:: mediawiki
 
-Trivia:
-[https://git.videolan.org/?p=vlc/vlc-0.9.git;a=blob;f=modules/video_output/image.c#l56
-the help text] was never changed after {{Commitdiffl=this commitdiff}}
-changed the default values of unsigned integers
-<code>--image-out-width</code> and <code>--image-out-height</code> from
-<code>-1</code> to <code>0</code>&mdash;there was little point in fixing
-the help text for a deprecated module in software not yet publicly
-released! The coding error is absent from the current module, scene.
+   {{Module|name=image|type=Video output|first_version=0.8.2|last_version=0.9.10|description=Outputs the video images to files}}
 
-Option aliases <code>--image-width</code> for
-<code>--image-out-width</code> and <code>--image-height</code> for
-<code>--image-out-height</code> were deprecated in 0.9.0.
+In VLC 1.0.0 the image video output was rewritten into a video-filter named `scene <Documentation:Modules/scene>`__, and the old image video output was removed.
 
-=== Options === {{Option value=string default=png name=image-out-width
-default=0 name=image-out-height default=0 name=image-out-ratio default=3
-name=image-out-prefix default=img format time and meta variables]] }}
-{{Option value=boolean description=Always write to the same file instead
-of creating one file per image. In this case, the number is not appended
-to the filename }}
+Trivia: `the help text <https://git.videolan.org/?p=vlc/vlc-0.9.git;a=blob;f=modules/video_output/image.c#l56>`__ was never changed after changed the default values of unsigned integers ``--image-out-width`` and ``--image-out-height`` from ``-1`` to ``0``—there was little point in fixing the help text for a deprecated module in software not yet publicly released! The coding error is absent from the current module, scene.
 
-== Demux == {{Clear}} {{Moduletype=Access demux|description=Image
-demuxer}}
+Option aliases ``--image-width`` for ``--image-out-width`` and ``--image-height`` for ``--image-out-height`` were deprecated in 0.9.0.
 
-=== Options === {{Option value=integer description=Set the ID of the
-[[elementary stream]] }} {{Option value=integer description=Set the
-group of the elementary stream }} {{Option value=boolean
-description=Decode at the [[demux]]er stage }} {{Option value=string
-description=If non empty and <var>image-decode</var> is true, the image
-will be converted to the specified [[chroma]] }} {{Option value=float
-description=Duration in seconds before simulating an end of file. A
-negative value means an unlimited play time }} {{Option value=string
-description=[[Frame rate]] of the elementary stream produced }} {{Option
-value=boolean description=Use real-time mode suitable for being used as
-a master input and real-time input slaves }}
+Options
+~~~~~~~
 
-== Source code == \* {{VLCSourceFilemodules/video_output/image.c}}
-(video output) \* {{VLCSourceFile|modules/demux/image.c}} (image
-demuxer)
+.. raw:: mediawiki
 
-{{Documentation footer}}
+   {{Option
+   |name=image-out-format
+   |value=string
+   |select={png,jpeg}
+   |default=png
+   |description=Format of the output images
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-out-width
+   |value=integer
+   |default=0
+   |description=You can enforce the image width. By default VLC will adapt to the video characteristics
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-out-height
+   |value=integer
+   |default=0
+   |description=You can enforce the image height. By default VLC will adapt to the video characteristics
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-out-ratio
+   |value=integer
+   |default=3
+   |description=Ratio of images to record. ''3'' means that one image out of three is recorded
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-out-prefix
+   |value=string
+   |default=img
+   |description=Prefix of the output images filenames. Output filenames will have the "prefixNUMBER.format" form. Starting with VLC 0.9.0 you can also use [[Documentation:Format String|format time and meta variables]]
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-out-replace
+   |value=boolean
+   |default=disabled
+   |description=Always write to the same file instead of creating one file per image. In this case, the number is not appended to the filename
+   }}
+
+Demux
+-----
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+.. raw:: mediawiki
+
+   {{Module|name=image|type=Access demux|description=Image demuxer}}
+
+.. _options-1:
+
+Options
+~~~~~~~
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-id
+   |value=integer
+   |default=-1
+   |description=Set the ID of the [[elementary stream]]
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-group
+   |value=integer
+   |default=0
+   |description=Set the group of the elementary stream
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-decode
+   |value=boolean
+   |default=enabled
+   |description=Decode at the [[demux]]er stage
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-chroma
+   |value=string
+   |default=""
+   |description=If non empty and <var>image-decode</var> is true, the image will be converted to the specified [[chroma]]
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-duration
+   |value=float
+   |default=10
+   |description=Duration in seconds before simulating an end of file. A negative value means an unlimited play time
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-fps
+   |value=string
+   |default=10/1
+   |description=[[Frame rate]] of the elementary stream produced
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=image-realtime
+   |value=boolean
+   |default=disabled
+   |description=Use real-time mode suitable for being used as a master input and real-time input slaves
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/video_output/image.c}}
+
+   (video output)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/image.c}}
+
+   (image demuxer)
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

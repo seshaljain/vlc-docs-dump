@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Usage:ChangeUILanguage]]
+#. REDIRECT `VSG:Usage:ChangeUILanguage <VSG:Usage:ChangeUILanguage>`__

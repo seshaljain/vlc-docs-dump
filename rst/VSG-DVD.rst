@@ -1,16 +1,23 @@
-== DVD Play back ==
+\__NOTOC_\_
 
-{{VSGEntryVSG:DVD:Crash|Some DVD movies don't work at all or they
-crash/freeze to menu or playback}}
+DVD Play back
+-------------
 
-{{VSGEntryVSG:DVD:Movies lag|DVD movies don't playback smooth (they
-stutter, lag, etc.)}}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:DVD:Linux|I am unable to play any DVD in Linux. }}
+   {{VSGEntry|DVD Movies don't work or crash|VSG:DVD:Crash|Some DVD movies don't work at all or they crash/freeze to menu or playback}}
 
-{{VSGEntryVSG:DVD:Nvidia|Playback on Debian Linux with nvidia-xconfig
-activates standby mode}}
+.. raw:: mediawiki
 
-<br>
+   {{VSGEntry|DVD Movies lag|VSG:DVD:Movies lag|DVD movies don't playback smooth (they stutter, lag, etc.)}}
 
-{{VSG}}
+.. raw:: mediawiki
+
+   {{VSGEntry|I Can't play any DVD in Linux|VSG:DVD:Linux|I am unable to play any DVD in Linux. }}
+
+.. raw:: mediawiki
+
+   {{VSGEntry|Playing movies activates standby mode|VSG:DVD:Nvidia|Playback on Debian Linux with nvidia-xconfig activates standby mode}}
+
+| 
+| 

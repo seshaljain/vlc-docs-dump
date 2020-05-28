@@ -1,7 +1,35 @@
-{{See alsoSVCDname=vcdfirst_version=0.5.0sc=vcd|sc2=svcd}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{See also|VCD|SVCD|SVCD subtitles}}
 
-== Source code == \* {{VLCSourceFilemodules/access/vcd}} (folder)
+.. raw:: mediawiki
 
-{{Documentation}}
+   {{Module|name=vcd|type=Access|first_version=0.5.0|description=[[VCD]] input|sc=vcd|sc2=svcd}}
+
+Options
+-------
+
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/vcd/vcd.c}}
+
+   (main file)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/vcd}}
+
+   (folder)
+
+.. raw:: mediawiki
+
+   {{Documentation}}

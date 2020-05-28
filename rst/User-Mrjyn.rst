@@ -1,6 +1,1 @@
-A second way to set up a streaming instance using VLC is using <span
-class="emphasis">''Stream Output''</span> panel in the <span
-class="emphasis">''Open...''</span> dialog of the wxWindows (Windows /
-GNU Linux), skinnable (Windows / GNU Linux) and MacOS X interfaces.
-Streaming methods and options used 99% of time should be available in
-this panel.
+A second way to set up a streaming instance using VLC is using \ *Stream Output*\  panel in the \ *Open...*\  dialog of the wxWindows (Windows / GNU Linux), skinnable (Windows / GNU Linux) and MacOS X interfaces. Streaming methods and options used 99% of time should be available in this panel.

@@ -1,1 +1,1 @@
-#REDIRECT [[Sample rate]]
+#. REDIRECT `Sample rate <Sample_rate>`__

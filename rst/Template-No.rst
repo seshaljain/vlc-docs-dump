@@ -1,3 +1,3 @@
-style="background: #fbb;" \| No<noinclude>
+style="background: #fbb;" \| No
 
-[[Category:Table cell templates]] </noinclude>
+`Category:Table cell templates <Category:Table_cell_templates>`__

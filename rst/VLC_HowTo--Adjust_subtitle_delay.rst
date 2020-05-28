@@ -1,37 +1,44 @@
-{{howtonosort=yes}}
+.. raw:: mediawiki
 
-=== Hotkeys ===
+   {{howto|adjust subtitle delay|nosort=yes}}
 
-During playback you can press '''g''' or '''h''' to adjust subtitle
-delay ('''adjust step is 50 ms''').
+Hotkeys
+~~~~~~~
 
-OS X v2.2.1 keys: "h" (decrease delay, subtitles display after sound)
-and "j" (increase delay, subtitles display before sound).
+During playback you can press **g** or **h** to adjust subtitle delay (**adjust step is 50 ms**).
 
-If subtitle is ahead of sound, press '''g'''
+OS X v2.2.1 keys: "h" (decrease delay, subtitles display after sound) and "j" (increase delay, subtitles display before sound).
 
-If subtitle is behind sound, press '''h'''
+If subtitle is ahead of sound, press **g**
 
-=== Extended Settings ===
+If subtitle is behind sound, press **h**
 
-You can also set a specific delay. Go to '''Tools > Track
-Synchronization''' and set the delay you want.
+Extended Settings
+~~~~~~~~~~~~~~~~~
 
-[[File:TrackSynchronisation Subtitle.png]]
+You can also set a specific delay. Go to **Tools > Track Synchronization** and set the delay you want.
 
-=== Advance Synchronisation ===
+.. figure:: TrackSynchronisation_Subtitle.png
+   :alt: TrackSynchronisation_Subtitle.png
 
-When subtitles are '''late''' compared to the audio, and only in this
-case, you can use the advance synchronisation functionality of VLC :
+   TrackSynchronisation_Subtitle.png
 
-*Step 1 : Detect (“hear and see”) that subtitles are out of sync*\ Step
-2 : Press '''Shift H''' when you hear a sentence that you will be able
-to easily recognize *Step 3 : Press '''Shift J''' when you read the same
-sentence in the subtitle*\ Step 4 : Press '''Shift K''' to correct the
-sync
+Advance Synchronisation
+~~~~~~~~~~~~~~~~~~~~~~~
 
-{{VSG}}
+When subtitles are **late** compared to the audio, and only in this case, you can use the advance synchronisation functionality of VLC :
 
-{{DEFAULTSORT:Subtitle}}
+-  Step 1 : Detect (“hear and see”) that subtitles are out of sync
+-  Step 2 : Press **Shift H** when you hear a sentence that you will be able to easily recognize
+-  Step 3 : Press **Shift J** when you read the same sentence in the subtitle
+-  Step 4 : Press **Shift K** to correct the sync
 
-[[Category:Subtitles]]
+.. raw:: mediawiki
+
+   {{VSG}}
+
+.. raw:: mediawiki
+
+   {{DEFAULTSORT:Subtitle}}
+
+`Category:Subtitles <Category:Subtitles>`__

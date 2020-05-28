@@ -1,8 +1,13 @@
-{{Codec video|id=cyuv}}
+.. raw:: mediawiki
 
-{{Mmwiki|Creative YUV}}
+   {{Codec video|id=cyuv}}
 
-Creative YUV is a video codec created by Creative Labs. Its [[fourCC]]
-is '''CYUV'''.
+.. raw:: mediawiki
 
-{{Stub}}
+   {{Mmwiki|Creative YUV}}
+
+Creative YUV is a video codec created by Creative Labs. Its `fourCC <fourCC>`__ is **CYUV**.
+
+.. raw:: mediawiki
+
+   {{Stub}}

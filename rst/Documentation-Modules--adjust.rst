@@ -1,19 +1,26 @@
-{{Moduletype=Video filterdescription=Image properties filter}}
+.. raw:: mediawiki
 
-'''Note:''' Before version 0.9.0, this used to be a vout filter.
+   {{Module|name=adjust|type=Video filter|first_version=0.9.0|description=Image properties filter}}
 
-== Options == <onlyinclude>{{Option value=float min=0.0
-description=Contrast }} {{Option value=float min=0.0
-description=Brightness }} {{Option value=float min=-180 description=Hue
-}} {{Option value=float min=0.0 description=Saturation }} {{Option
-value=float min=0.01 description=Gamma }} {{Option value=boolean
-description=When this mode is enabled, pixels will be shown as black or
-white. Also may invert the brightness value. The threshold value will be
-the brightness defined below }}</onlyinclude>
+**Note:** Before version 0.9.0, this used to be a vout filter.
 
-== Examples ==
-   {{%}} '''vlc --video-filter "adjust{hue=120,gamma=2.}" somevideo.avi
+Options
+-------
 
-== Source code == \* {{VLCSourceFile|modules/video_filter/adjust.c}}
+Examples
+--------
 
-{{Documentation footer}}
+``{{%}} '''vlc --video-filter "adjust{hue=120,gamma=2.}" somevideo.avi``
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/adjust.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

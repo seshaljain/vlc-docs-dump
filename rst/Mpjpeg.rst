@@ -1,8 +1,24 @@
-The '''Multipart JPEG''' [[muxer]].
+The **Multipart JPEG** `muxer <muxer>`__.
 
-== Container format == {{muxencoder=y}}
+Container format
+----------------
 
-=== Accepted video codecs === \* [[MJPG]] \* [[JPEG]] \* [[JFIF]] \*
-[[JPGL]] \* [[mjpa]]
+.. raw:: mediawiki
 
-==Source code== {{fileoutput muxer}}
+   {{mux|id=mpjpeg|encoder=y}}
+
+Accepted video codecs
+~~~~~~~~~~~~~~~~~~~~~
+
+-  `MJPG <MJPG>`__
+-  `JPEG <JPEG>`__
+-  `JFIF <JFIF>`__
+-  `JPGL <JPGL>`__
+-  `mjpa <mjpa>`__
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/mux/mpjpeg.c|output muxer}}

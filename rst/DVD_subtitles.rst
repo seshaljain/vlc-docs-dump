@@ -1,5 +1,13 @@
-{{Muxmod=subtitle}} {{Mmwiki|DVD subtitles}}
+.. raw:: mediawiki
 
-{{Stub}}
+   {{Mux|id=dvdsubtitle|mod=subtitle}}
 
-[[Category:Subtitles]]
+.. raw:: mediawiki
+
+   {{Mmwiki|DVD subtitles}}
+
+.. raw:: mediawiki
+
+   {{Stub}}
+
+`Category:Subtitles <Category:Subtitles>`__

@@ -1,4 +1,9 @@
-{\| class="widebox center" style="padding:0;" [[File:Ambox warning blue
-construction.pngalt=style="padding:0;"}<noinclude>
+=============================================== ==============================================================
+.. figure:: Ambox_warning_blue_construction.png This page is under construction and may omit important points.
+   :alt: Ambox_warning_blue_construction.png   
+   :width: 36px                                
+                                               
+   Ambox_warning_blue_construction.png         
+=============================================== ==============================================================
 
-[[Category:Maintenance templates]] </noinclude>
+`Category:Maintenance templates <Category:Maintenance_templates>`__

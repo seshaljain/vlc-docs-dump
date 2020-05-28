@@ -1,1 +1,1 @@
-#REDIRECT [[Frame]]
+#. REDIRECT `Frame <Frame>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/duplicate]]
+#. REDIRECT `Documentation:Modules/duplicate <Documentation:Modules/duplicate>`__

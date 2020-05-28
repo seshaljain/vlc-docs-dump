@@ -1,1 +1,1 @@
-#REDIRECT [[MacOSFAQ]]
+#. REDIRECT `MacOSFAQ <MacOSFAQ>`__

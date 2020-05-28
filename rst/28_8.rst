@@ -1,1 +1,1 @@
-#redirect [[G.728]]
+#. redirect `G.728 <G.728>`__

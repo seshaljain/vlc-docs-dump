@@ -1,4 +1,1 @@
-This page is not readable in firefox (1450*1050 !) because the command
-line examples are to long. I try to produce a better page format, but
-this is not certain... --[[User:Peter S|Peter S]] 11:23, 9 August 2011
-(UTC)
+This page is not readable in firefox (1450*1050 !) because the command line examples are to long. I try to produce a better page format, but this is not certain... --`Peter S <User:Peter_S>`__ 11:23, 9 August 2011 (UTC)

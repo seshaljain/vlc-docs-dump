@@ -1,1 +1,1 @@
-#REDIRECT [[RTMP]]
+#. REDIRECT `RTMP <RTMP>`__

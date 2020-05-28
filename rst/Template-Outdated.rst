@@ -1,7 +1,11 @@
-{\| class="widebox center" style="padding:0;" [[File:Ambox
-outdated.pngalt=style="padding:0;"Create an account]]''' to start
-editing, and then <span
-class="plainlinks">'''[{{fullurl:{{FULLPAGENAME}}}{{#if:{{{important<includeonly>[[Category:Outdated
-pages<includeonly>[[Category:Outdated pages]]</includeonly>
-}}<noinclude> (See [[:Category:Outdated pages]] for more information)
-[[Category:Maintenance templates]] </noinclude>
+============================== ========================================================================================================================
+.. figure:: Ambox_outdated.png | This page is outdated and information might be incorrect.
+   :alt: Ambox_outdated.png    | `Create an account <Special:CreateAccount>`__ to start editing, and then \ **[ click here]**\  to update this article.
+   :width: 36px               
+                              
+   Ambox_outdated.png         
+============================== ========================================================================================================================
+
+{{#if: \| \| }} (See `:Category:Outdated pages <:Category:Outdated_pages>`__ for more information)
+
+`! <Category:Outdated_pages>`__ `Category:Outdated pages <Category:Outdated_pages>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

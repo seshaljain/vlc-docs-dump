@@ -1,21 +1,27 @@
-== Main description ==
+Main description
+----------------
 
-The main description of the Features that VLC has is on our main
-website: \* [http://www.videolan.org/vlc/features.html features] \*
-[http://www.videolan.org/streaming-features.html streaming features]
+The main description of the Features that VLC has is on our main website:
 
-== Codecs/Formats/Muxer/... ==
+-  `features <http://www.videolan.org/vlc/features.html>`__
+-  `streaming features <http://www.videolan.org/streaming-features.html>`__
+
+Codecs/Formats/Muxer/...
+------------------------
 
 You can find some additional information on our codec support:
 
-[[VLC Features Formats]]
+`VLC Features Formats <VLC_Features_Formats>`__
 
-[[SubtitlesCodec|VLC Subtitles Formats]]
+`VLC Subtitles Formats <SubtitlesCodec>`__
 
-== Operating System ==
+Operating System
+----------------
 
 You can find some information on the OS supported by VLC.
 
-[[VLC Features OS]]
+`VLC Features OS <VLC_Features_OS>`__
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Documentation}}

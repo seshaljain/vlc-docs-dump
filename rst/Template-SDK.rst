@@ -1,3 +1,3 @@
-<abbr title="Software development kit">SDK</abbr><noinclude>
+SDK
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

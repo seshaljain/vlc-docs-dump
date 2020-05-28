@@ -1,1 +1,1 @@
-#redirect [[FLAC]]
+#. redirect `FLAC <FLAC>`__

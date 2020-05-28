@@ -1,3 +1,3 @@
-style="background: #cff;" \| Partial<noinclude>
+style="background: #cff;" \| Partial
 
-[[Category:Table cell templates]] </noinclude>
+`Category:Table cell templates <Category:Table_cell_templates>`__

@@ -1,53 +1,44 @@
-== VideoLAN WIKI ==
+\__NOTOC_\_
+
+VideoLAN WIKI
+-------------
 
 Welcome to the Wiki site for VideoLAN!
 
-The purpose of this Wiki is to provide a documentation that does not
-cover the whole streaming solution, but provides answers to problems
-that the users frequently have.
+The purpose of this Wiki is to provide a documentation that does not cover the whole streaming solution, but provides answers to problems that the users frequently have.
 
-{\| cellspacing="3" width="55%" class="MainPageBG" style="border: 1px
-solid #ffc9c9; color: #000; background-color: #fff3f3"\|
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| .. rubric:: What is VideoLAN                                                                                                                                                                       | .. rubric:: Knowledge Base                                                                                                                                                                    |
+|    :name: what-is-videolan                                                                                                                                                                         |    :name: knowledge-base                                                                                                                                                                      |
+|                                                                                                                                                                                                    |                                                                                                                                                                                               |
+| VideoLAN is made up of two programs:                                                                                                                                                               | Our `Knowledge Base <Knowledge_Base>`__ has information on                                                                                                                                    |
+|                                                                                                                                                                                                    |                                                                                                                                                                                               |
+| -  **VLC**, the more common program, plays many types of media files and streamed media. It can create media streams and save media files in different formats and quality than the original file. | -  `Codecs <Codec>`__                                                                                                                                                                         |
+| -  `VLS <VLS>`__ is a streaming server, used for profesional streaming solutions. It shares some features with VLC.                                                                                | -  `Files <Fileformat>`__                                                                                                                                                                     |
+|                                                                                                                                                                                                    | -  `Dictionary <Dictionary>`__                                                                                                                                                                |
+| .. rubric:: VLC media player                                                                                                                                                                       | -  `more » <Knowledge_Base>`__                                                                                                                                                                |
+|    :name: vlc-media-player                                                                                                                                                                         |                                                                                                                                                                                               |
+|                                                                                                                                                                                                    | .. rubric:: Tips and Tricks                                                                                                                                                                   |
+| -  Want to know `how to <How_to>`__ do things with VLC?                                                                                                                                            |    :name: tips-and-tricks                                                                                                                                                                     |
+| -  Get help with some `Common Problems <Common_Problems>`__                                                                                                                                        |                                                                                                                                                                                               |
+|                                                                                                                                                                                                    | -  You can download extra `Skins <Skins>`__ for VLC                                                                                                                                           |
+| Advice for VLC on your platform...                                                                                                                                                                 | -  Add `Additional Interfaces <Additional_Interfaces>`__ to control VLC in different ways, such as from `mouse gestures <Mouse_Gestures>`__ or even `through the internet <Web_Interface>`__. |
+|                                                                                                                                                                                                    | -  `Mad things you can do with VLC <Uncommon_uses>`__                                                                                                                                         |
+| -  `Mac OS X <VLCMacOSX>`__                                                                                                                                                                        | -  Find out `who uses VideoLAN <We_Use_VideoLAN>`__                                                                                                                                           |
+| -  `Windows <Windows>`__                                                                                                                                                                           |                                                                                                                                                                                               |
+| -  `BeOS <BeOS>`__                                                                                                                                                                                 |                                                                                                                                                                                               |
+| -  `GNU/Linux <Linux>`__                                                                                                                                                                           |                                                                                                                                                                                               |
+| -  `FreeBSD <FreeBSD>`__                                                                                                                                                                           |                                                                                                                                                                                               |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-=== What is VideoLAN ===
+Edit the Wiki!
+~~~~~~~~~~~~~~
 
-VideoLAN is made up of two programs: \* '''VLC''', the more common
-program, plays many types of media files and streamed media. It can
-create media streams and save media files in different formats and
-quality than the original file. \* [[VLS]] is a streaming server, used
-for profesional streaming solutions. It shares some features with VLC.
+Please note that to modify the content of the Wiki, or to submit articles or FAQ questions, you need to be identified. Please create an account, this is very fast. Feel free to add to this site, however, keep content appropriate and useful. This is not the place to report bugs or to request help. `See our info on bug reporting <http://www.videolan.org/support/bug-reporting.html>`__.
 
-===VLC media player===
+More on...
+~~~~~~~~~~
 
--  Want to know [[How to|how to]] do things with VLC?
--  Get help with some [[Common Problems]]
-
-Advice for VLC on your platform... \* [[VLCMacOSXGNU/Linux]] \*
-[[FreeBSD]]
-
-=== Knowledge Base ===
-
-Our [[Knowledge Base]] has information on \* [[Codec]]s \*
-[[Fileformatmore &raquo;]]
-
-==== Tips and Tricks ==== \* You can download extra [[Skins]] for VLC \*
-Add [[Additional Interfaces]] to control VLC in different ways, such as
-from [[Mouse Gesturesthrough the internet]]. \* [[Uncommon useswho uses
-VideoLAN]]
-
-\|}
-
-=== Edit the Wiki! ===
-
-Please note that to modify the content of the Wiki, or to submit
-articles or FAQ questions, you need to be identified. Please create an
-account, this is very fast. Feel free to add to this site, however, keep
-content appropriate and useful. This is not the place to report bugs or
-to request help. [http://www.videolan.org/support/bug-reporting.html See
-our info on bug reporting].
-
-=== More on... ===
-
--  [[T-Shirt Design Contest]]
--  [[Channel Information Service]]
--  [[Notes about other clients]] (Interoperability)
+-  `T-Shirt Design Contest <T-Shirt_Design_Contest>`__
+-  `Channel Information Service <Channel_Information_Service>`__
+-  `Notes about other clients <Notes_about_other_clients>`__ (Interoperability)

@@ -1,1 +1,1 @@
-#REDIRECT [[Hacker Guide/Interfaces]]
+#. REDIRECT `Hacker Guide/Interfaces <Hacker_Guide/Interfaces>`__

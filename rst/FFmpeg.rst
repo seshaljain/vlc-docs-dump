@@ -1,31 +1,66 @@
-{{websitehttps://ffmpeg.org/}} {{open}}
+.. raw:: mediawiki
 
-'''FFmpeg''' is an [[open source]] library for encoding and decoding
-different types of media files, generally [[MPEG]] and MPEG-based files.
+   {{website|FFmpeg|https://ffmpeg.org/}}
 
-FFmpeg supports lots of [[codec]]s: the main ones are included on the
-codecs page. If you want the full list, (including different spellings
-for the same codec), the [[source code]] lists them all (there's way too
-many to list them all here <span title="wink">;-)</span>. In
-{{VLCSourceFile|modules/codec/avcodec/fourcc.c}} look under ''Codec
-fourcc -> ffmpeg_id mapping'' (that bit changes the codecs you type in
-to vlc to ffmpeg's internal codec names).
+.. raw:: mediawiki
 
-== Avcodec == {{See|Documentation:Modules/avcodec}}
+   {{open}}
 
-== Avformat == {{See also|Documentation:Modules/avformat}}
+**FFmpeg** is an `open source <open_source>`__ library for encoding and decoding different types of media files, generally `MPEG <MPEG>`__ and MPEG-based files.
 
-The libavformat [[module]] is a [[mux]] and a [[demux]] module for
-{{VLC}}, based on the libavformat library.
+FFmpeg supports lots of `codecs <codec>`__: the main ones are included on the codecs page. If you want the full list, (including different spellings for the same codec), the `source code <source_code>`__ lists them all (there's way too many to list them all here ;-). In look under *Codec fourcc -> ffmpeg_id mapping* (that bit changes the codecs you type in to vlc to ffmpeg's internal codec names).
 
-It can decode and encode most of the containers supported in VLC, but is
-not usually the default one, except for a few ones, listed under.
+Avcodec
+-------
 
-{{muxmod=avformatid=mxfencoder=n}} {{muxmod=avformatid=nutencoder=y}}
-{{muxmod=avformatid=rmencoder=n}}
+.. raw:: mediawiki
 
-==Source code== {{filecodec}}
+   {{See|Documentation:Modules/avcodec}}
 
-[[Category:Libraries]] [[Category:Third parties]]
+Avformat
+--------
 
-{{stub}}
+.. raw:: mediawiki
+
+   {{See also|Documentation:Modules/avformat}}
+
+The libavformat `module <module>`__ is a `mux <mux>`__ and a `demux <demux>`__ module for , based on the libavformat library.
+
+It can decode and encode most of the containers supported in VLC, but is not usually the default one, except for a few ones, listed under.
+
+.. raw:: mediawiki
+
+   {{mux|id=gxf|mod=avformat|encoder=y}}
+
+.. raw:: mediawiki
+
+   {{mux|id=mxf|mod=avformat|encoder=n}}
+
+.. raw:: mediawiki
+
+   {{mux|id=flv|mod=avformat|encoder=y}}
+
+.. raw:: mediawiki
+
+   {{mux|id=nut|mod=avformat|encoder=y}}
+
+.. raw:: mediawiki
+
+   {{mux|id=webm|mod=avformat|encoder=y}}
+
+.. raw:: mediawiki
+
+   {{mux|id=rm|mod=avformat|encoder=n}}
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/codec/avcodec/fourcc.c|codec}}
+
+.. raw:: mediawiki
+
+   {{stub}}
+
+`Category:Libraries <Category:Libraries>`__ `Category:Third parties <Category:Third_parties>`__

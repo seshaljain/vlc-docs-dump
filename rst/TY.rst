@@ -1,9 +1,19 @@
-{{muxaltid=tivomodule
-link=https://git.videolan.org/?p=vlc.git;a=blob;f=modules/demux/ty.c}}
+.. raw:: mediawiki
 
-'''TY''' or '''TIVO''' format, from your [[wikipedia:TiVo|TiVo]].
+   {{mux|id=ty|altid=tivo|encoder=n|module link=https://git.videolan.org/?p=vlc.git;a=blob;f=modules/demux/ty.c}}
 
-==Accepted codecs== \* [[mpgv]]: MPEG video \* [[mpga]]: MPEG audio \*
-[[a52]]: A/52 audio
+**TY** or **TIVO** format, from your `TiVo <wikipedia:TiVo>`__.
 
-==Source code== {{fileinput demuxer}}
+Accepted codecs
+---------------
+
+-  `mpgv <mpgv>`__: MPEG video
+-  `mpga <mpga>`__: MPEG audio
+-  `a52 <a52>`__: A/52 audio
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/ty.c|input demuxer}}

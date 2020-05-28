@@ -1,1 +1,1 @@
-#REDIRECT [[Image#PNG]]
+#. REDIRECT `Image#PNG <Image#PNG>`__

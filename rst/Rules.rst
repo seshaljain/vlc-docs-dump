@@ -1,1 +1,1 @@
-#redirect [[VideoLAN Wiki:Rules]]
+#. redirect `VideoLAN Wiki:Rules <VideoLAN_Wiki:Rules>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[VLC HowTo/Play on Xbox#VLC360]]
+#. REDIRECT `VLC HowTo/Play on Xbox#VLC360 <VLC_HowTo/Play_on_Xbox#VLC360>`__

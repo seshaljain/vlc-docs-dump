@@ -1,1 +1,1 @@
-#REDIRECT [[VLC Awards]]
+#. REDIRECT `VLC Awards <VLC_Awards>`__

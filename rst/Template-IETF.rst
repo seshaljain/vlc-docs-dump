@@ -1,3 +1,3 @@
-<abbr title="Internet Engineering Task Force">IETF</abbr><noinclude>
+IETF
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

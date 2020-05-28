@@ -1,4 +1,4 @@
-== Copie ==
+Copie
+-----
 
-Bonjour, Comment avec Videolan je peux copier un dvd sur mon pc ? Je
-n'arrive pas à trouver !! Merci d'avance pour votre aide !!!
+Bonjour, Comment avec Videolan je peux copier un dvd sur mon pc ? Je n'arrive pas à trouver !! Merci d'avance pour votre aide !!!

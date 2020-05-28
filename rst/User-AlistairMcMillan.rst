@@ -2,7 +2,6 @@ Hi,
 
 Not much to say.
 
-Big fan/heavy user of VLC media player, normally found <s>wasting
-time</s> contributing to Wikipedia.
+Big fan/heavy user of VLC media player, normally found wasting time contributing to Wikipedia.
 
--  Alistair
+- Alistair

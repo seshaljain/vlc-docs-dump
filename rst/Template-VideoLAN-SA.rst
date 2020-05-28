@@ -1,11 +1,13 @@
-[https://www.videolan.org/security/sa\ {{{1}}}.php
-VideoLAN-SA-{{{1}}}]<noinclude>
+[https://www.videolan.org/security/sa\ .php VideoLAN-SA-]
 
 For linking to a VideoLAN Security Advisory.
 
 Usage:
-   <nowiki>{{VideoLAN-SA|id}}</nowiki>
 
-eg {{VideoLAN-SA0801}}</nowiki>
+``{{VideoLAN-SA|id}}``
 
-[[Category:Security]] </noinclude>
+eg
+
+``{{VideoLAN-SA|0801}}``
+
+`Category:Security <Category:Security>`__

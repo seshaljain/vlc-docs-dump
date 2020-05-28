@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Format:FLV]]
+#. REDIRECT `VSG:Format:FLV <VSG:Format:FLV>`__

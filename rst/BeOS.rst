@@ -1,12 +1,15 @@
-{{Historical|BeOS is discontinued though
-[https://spectrum.ieee.org/computing/software/the-dawn-of-haiku-os
-Haiku] might be its successor.}}
+.. raw:: mediawiki
 
-==Keyboard Shortcuts==
+   {{Historical|BeOS is discontinued though [https://spectrum.ieee.org/computing/software/the-dawn-of-haiku-os Haiku] might be its successor.}}
 
-Shortcuts discovered so far: \* Space: Pause \* Up/Down: Previous/next
-file in directory \* Others? Developer input would be appreciated here,
-as they are not documented
+Keyboard Shortcuts
+------------------
+
+Shortcuts discovered so far:
+
+-  Space: Pause
+-  Up/Down: Previous/next file in directory
+-  Others? Developer input would be appreciated here, as they are not documented
 
 Recommended Shortcuts (for next version):
 
@@ -35,6 +38,6 @@ Mouse:
 -  Left button+wheel: Volume control in windowed mode
 -  Middle button: Show/Hide main window
 
-Taken from a
-`https://web.archive.org/web/20050103033533/http://www.bebits.com/talkback/2119?page=2##7737 <https://web.archive.org/web/20050103033533/http://www.bebits.com/talkback/2119?page=2##7737>`__
-by Diver [[Category:Operating systems]]
+Taken from a `https://web.archive.org/web/20050103033533/http://www.bebits.com/talkback/2119?page=2##7737 <https://web.archive.org/web/20050103033533/http://www.bebits.com/talkback/2119?page=2##7737>`__ by Diver
+
+`Category:Operating systems <Category:Operating_systems>`__

@@ -1,37 +1,44 @@
 Cf https://openhatch.org/wiki/Project_codes_of_conduct
 
-You should also check out our [[Code of Conduct]].
+You should also check out our `Code of Conduct <Code_of_Conduct>`__.
 
-= Shared Values =
+Shared Values
+=============
 
-This Code of Conduct presents a vision of the shared values and thinking
-in the VideoLAN community.
+This Code of Conduct presents a vision of the shared values and thinking in the VideoLAN community.
 
-In short: \* '''Be considerate and respectful''' \* '''Be
-collaborative''' \* '''Be pragmatic and concise''' \* '''Ask if you
-don't know, share if you know''' \* '''Be inclusive''' \* '''Be
-patient'''
+In short:
 
-== Be considerate and respectful == VideoLAN has millions of users and
-hundreds of contributors. What you do and contribute will impact the
-life of others. Think about your actions.
+-  **Be considerate and respectful**
+-  **Be collaborative**
+-  **Be pragmatic and concise**
+-  **Ask if you don't know, share if you know**
+-  **Be inclusive**
+-  **Be patient**
 
-There is absolutely no excuse for personal attacks, racism, sexism or
-any other form of discrimination based on religion, politics, Linux
-distribution, Operating System or else.<br /> Respect everyone, no
-matter what is their level of implication in VideoLAN.
+Be considerate and respectful
+-----------------------------
 
-In a disagreement, in the first instance assume that people mean well. A
-community where people feel comfortable is a productive one.
+VideoLAN has millions of users and hundreds of contributors. What you do and contribute will impact the life of others. Think about your actions.
 
-== Be collaborative ==
+| There is absolutely no excuse for personal attacks, racism, sexism or any other form of discrimination based on religion, politics, Linux distribution, Operating System or else.
+| Respect everyone, no matter what is their level of implication in VideoLAN.
 
-== Be pragmatic and concise ==
+In a disagreement, in the first instance assume that people mean well. A community where people feel comfortable is a productive one.
 
-== Ask if you don't know, share if you know ==
+Be collaborative
+----------------
 
-== Be inclusive ==
+Be pragmatic and concise
+------------------------
 
-== Be patient ==
+Ask if you don't know, share if you know
+----------------------------------------
 
-[[Category:About VideoLAN]] [[Category:Events|*]]
+Be inclusive
+------------
+
+Be patient
+----------
+
+`Category:About VideoLAN <Category:About_VideoLAN>`__ `\* <Category:Events>`__

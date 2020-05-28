@@ -1,11 +1,13 @@
-[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-\ {{{1}}}
-CVE-{{{1}}}]<noinclude>
+[https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-\  CVE-]
 
 For linking to a CVE.
 
 Usage:
-   <nowiki>{{CVE|id}}</nowiki>
 
-eg {{CVE2007-0256}}</nowiki>
+``{{CVE|id}}``
 
-[[Category:Security]] </noinclude>
+eg
+
+``{{CVE|2007-0256}}``
+
+`Category:Security <Category:Security>`__

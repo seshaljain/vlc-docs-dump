@@ -1,1 +1,1 @@
-#redirect[[DTS]]
+#. redirect\ `DTS <DTS>`__

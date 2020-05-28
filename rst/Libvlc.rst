@@ -1,1 +1,1 @@
-#REDIRECT [[LibVLC]]
+#. REDIRECT `LibVLC <LibVLC>`__

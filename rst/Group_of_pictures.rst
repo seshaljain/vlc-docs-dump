@@ -1,3 +1,3 @@
-#REDIRECT [[GOP]]
+#. REDIRECT `GOP <GOP>`__
 
-[[Category:Glossary]]
+`Category:Glossary <Category:Glossary>`__

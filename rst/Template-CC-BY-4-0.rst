@@ -1,3 +1,5 @@
-{{File copyright|CC-BY-4.0}}<noinclude>
+.. raw:: mediawiki
 
-[[Category:File copyright templates]] </noinclude>
+   {{File copyright|CC-BY-4.0}}
+
+`Category:File copyright templates <Category:File_copyright_templates>`__

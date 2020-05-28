@@ -1,14 +1,28 @@
-{{Moduletype=Video filterdescription=Simulates being high}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=psychedelic|type=Video filter|first_version=0.9.0|description=Simulates being high}}
 
-== Examples ==
-   % '''vlc --video-filter "psychedelic" somevideo.avi'''
+Options
+-------
 
-'''Note:''' In versions prior to 0.9.0, this was part of the
-[[Documentation:Modules/distort|distort]] video filter.
+None.
 
-== Source code == \*
-{{VLCSourceFile|modules/video_filter/psychedelic.c}}
+Examples
+--------
 
-{{Documentation footer}}
+``% ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``"psychedelic"``\ ````\ ``somevideo.avi``**
+
+**Note:** In versions prior to 0.9.0, this was part of the `distort <Documentation:Modules/distort>`__ video filter.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/psychedelic.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

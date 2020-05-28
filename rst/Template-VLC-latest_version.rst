@@ -1,3 +1,3 @@
-3.0.10<noinclude>
+3.0.10
 
-[[Category:Templates]] </noinclude>
+`Category:Templates <Category:Templates>`__

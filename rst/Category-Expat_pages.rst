@@ -1,6 +1,3 @@
-For pages released under the
-[https://directory.fsf.org/wiki/License:Expat Expat License], often
-called the ''MIT License'' (though MIT License may refer to any of
-[[wikipedia:MIT License#Variants|several]])
+For pages released under the `Expat License <https://directory.fsf.org/wiki/License:Expat>`__, often called the *MIT License* (though MIT License may refer to any of `several <wikipedia:MIT_License#Variants>`__)
 
-[[Category:Page licenses]]
+`Category:Page licenses <Category:Page_licenses>`__

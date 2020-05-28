@@ -1,3 +1,3 @@
-#REDIRECT [[HTTP]]
+#. REDIRECT `HTTP <HTTP>`__
 
-[[Category:Protocols]] [[Category:Security]]
+`Category:Protocols <Category:Protocols>`__ `Category:Security <Category:Security>`__

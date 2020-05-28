@@ -1,1 +1,1 @@
-#REDIRECT [[M3U]]
+#. REDIRECT `M3U <M3U>`__

@@ -1,18 +1,13 @@
-== Play DVD files (VOB+IFO) from hard drive<br> ==
+Play DVD files (VOB+IFO) from hard drive
+----------------------------------------
 
-Use '''Media -&gt; Open Disc''', and instead of '''DVD drive''', point
-the location to correct folder by using either '''Browse''' button or
-customize field .
+Use **Media -> Open Disc**, and instead of **DVD drive**, point the location to correct folder by using either **Browse** button or customize field .
 
-For example:<br> <pre>''dvd://"c:moviesBLOOD DIAMONDVIDEO_TS"'' </pre>
-<br>
+| For example:
 
-<br>
+::
 
-<br>
+   ''dvd://"c:\movies\BLOOD DIAMOND\VIDEO_TS"''
 
-<br>
-
-<br>
-
-{{VSG}}
+| 
+| 

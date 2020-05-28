@@ -1,1 +1,1 @@
-#REDIRECT [[Flash Video]]
+#. REDIRECT `Flash Video <Flash_Video>`__

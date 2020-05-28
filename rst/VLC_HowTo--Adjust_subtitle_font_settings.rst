@@ -1,30 +1,29 @@
-{{howtonosort=yes}}
+.. raw:: mediawiki
 
-The font settings can be adjusted for plain text [[subtitle]] formats.
-Font settings cannot be changed for rich text (e.g. [[ASS]]) or bitmap
-(e.g. [[DVD subtitles|DVD]]) subtitle formats.
+   {{howto|change font, font size, style or colour|nosort=yes}}
 
-Go to '''Tools → Preferences (set Show Settings to All) and Video →
-Subtitles/OSD → Text renderer''' and adjust anything you want. Font size
-in pixels overrides Relative font size selection.
+The font settings can be adjusted for plain text `subtitle <subtitle>`__ formats. Font settings cannot be changed for rich text (e.g. `ASS <ASS>`__) or bitmap (e.g. `DVD <DVD_subtitles>`__) subtitle formats.
 
-Remember to press '''Save''' to save VLC settings and restart VLC after
-that to make sure changes are enabled.
+Go to **Tools → Preferences (set Show Settings to All) and Video → Subtitles/OSD → Text renderer** and adjust anything you want. Font size in pixels overrides Relative font size selection.
 
-'''For advanced users on <big>Mac OSX</big> only:'''
+Remember to press **Save** to save VLC settings and restart VLC after that to make sure changes are enabled.
 
-You may change the font directly with the [[preferences]] file, located
-at '''/Users/<username>/Library/Preferences/org.videolan.vlc/vlcrc'''
+**For advanced users on Mac OSX only:**
 
-\*Quit VLC.
+You may change the font directly with the `preferences <preferences>`__ file, located at **/Users//Library/Preferences/org.videolan.vlc/vlcrc**
 
-\*Look for property named '''freetype-rel-fontsize''' (usually on line
-1938).
+-  Quit VLC.
 
-'''Remember: smaller value is bigger font.'''
+-  Look for property named **freetype-rel-fontsize** (usually on line 1938).
 
-\*Enter VLC to see changes take effect
+**Remember: smaller value is bigger font.**
 
-{{VSG}}
+-  Enter VLC to see changes take effect
 
-{{DEFAULTSORT:Subtitle}}
+.. raw:: mediawiki
+
+   {{VSG}}
+
+.. raw:: mediawiki
+
+   {{DEFAULTSORT:Subtitle}}

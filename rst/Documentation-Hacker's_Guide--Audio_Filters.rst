@@ -1,1 +1,1 @@
-#REDIRECT [[Hacker Guide/Audio Filters]]
+#. REDIRECT `Hacker Guide/Audio Filters <Hacker_Guide/Audio_Filters>`__

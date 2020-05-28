@@ -1,1 +1,1 @@
-[[Category:Skins]]
+`Category:Skins <Category:Skins>`__

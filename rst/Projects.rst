@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN projects]]
+#. REDIRECT `VideoLAN projects <VideoLAN_projects>`__

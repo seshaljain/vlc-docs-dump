@@ -1,1 +1,1 @@
-#REDIRECT [[QuickTime container]]
+#. REDIRECT `QuickTime container <QuickTime_container>`__

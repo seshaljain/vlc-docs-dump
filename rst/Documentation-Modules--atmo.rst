@@ -1,13 +1,18 @@
-{{Moduletype=Video filterlast_version=2.2.8|description= outputs colour
-data via a serial connection to a Atmolight system}}
+.. raw:: mediawiki
 
-This filter analyzes the running video and outputs color data to drive a
-Atmolight system.
+   {{Module|name=atmo|type=Video filter|first_version=0.9.0|last_version=2.2.8|description= outputs colour data via a serial connection to a Atmolight system}}
 
-== Options ==
+This filter analyzes the running video and outputs color data to drive a Atmolight system.
 
-== Example ==
+Options
+-------
 
-== See also ==
+Example
+-------
 
-{{Documentation footer}}
+See also
+--------
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

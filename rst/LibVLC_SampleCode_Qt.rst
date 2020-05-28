@@ -1,4 +1,14 @@
-{{Lowercase}} {{Example code|for=libVLC}} {{Outdated}}
+.. raw:: mediawiki
+
+   {{Lowercase}}
+
+.. raw:: mediawiki
+
+   {{Example code|for=libVLC}}
+
+.. raw:: mediawiki
+
+   {{Outdated}}
 
 This sample code will render a video into a Qt QWidget.
 
@@ -6,472 +16,605 @@ This was tested with vlc-0.9.9 and Qt 4.5.1 on WinXP and Linux
 
 This was tested with vlc-1.1.9 and Qt 4.7.2 and Ubuntu 11.04
 
-== How to use? ==
+How to use?
+-----------
 
-You need [[LibVLC|''libvlc headers'']] and ''Qt headers''.Take those 3
-files, put them in a folder. Run qmake -project
+You need `libvlc headers <LibVLC>`__ and *Qt headers*.Take those 3 files, put them in a folder. Run
+
+``qmake -project``
 
 Edit the .pro file and add
-   LIBS += -L*path to vlc lib\* #if you are at windows os LIBS += -lvlc
+
+| ``LIBS += -L*path to vlc lib* #if you are at windows os``
+| ``LIBS += -lvlc``
 
 Run
-   qmake
+
+``qmake``
 
 and then
-   make or mingw32-make under a Windows OS
 
-On win os you have to use the zip file. the lib and the header files are
-located in the sdk-folder.
+``make or mingw32-make under a Windows OS``
 
-== Notes ==
+On win os you have to use the zip file. the lib and the header files are located in the sdk-folder.
+
+Notes
+-----
 
 Depending on your distribution and the way you install Qt and Vlc it may be a good idea to reset the vlc's module cache:
-   sudo /usr/lib/vlc/vlc-cache-gen -f /usr/lib/vlc/plugins/
+
+``   sudo /usr/lib/vlc/vlc-cache-gen -f /usr/lib/vlc/plugins/``
 
 or:
-   vlc --reset-plugins-cache
 
-== VLC 1.1.5 and Ubuntu Lucid == [Rafael
-Capucho<rafael.capucho@gmail.com> 20120713] Modified to include properly
-QX11EmbedContainer header that was missing.- tested ok
+``  vlc --reset-plugins-cache``
 
-[Ondrej Spilka 20101201] slightly modified for the modest versions... -
-X11 embed container have to be used, therefore QX11EmbedContainer rather
-than QFrame have to be used.- tested ok
+VLC 1.1.5 and Ubuntu Lucid
+--------------------------
 
-== Files ==
+[Rafael Capucho<rafael.capucho@gmail.com> 20120713] Modified to include properly QX11EmbedContainer header that was missing.- tested ok
 
-main.cpp: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample code
-\* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de> \*/
+[Ondrej Spilka 20101201] slightly modified for the modest versions... - X11 embed container have to be used, therefore QX11EmbedContainer rather than QFrame have to be used.- tested ok
 
-#include "vlc_on_qt.h" #include <QtGui/QApplication>
+Files
+-----
 
-int main(int argc, char \*argv[]) { QApplication a(argc, argv); Player
-p; p.resize(640,480); p.playFile("rtp://@:2626"); // Replace with what
-you want to play p.show(); return a.exec(); } </syntaxhighlight>
+main.cpp:
 
-vlc_on_qt.h: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample
-code \* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
-\*/ #ifndef VLC_ON_QT_H #define VLC_ON_QT_H
+.. code:: cpp-qt
 
-#include <vlc/vlc.h>
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */
 
-#include <QWidget> #include <QX11EmbedContainer>
+   #include "vlc_on_qt.h"
+   #include <QtGui/QApplication>
 
-class QVBoxLayout; class QPushButton; class QTimer; class QFrame; class
-QSlider;
+   int main(int argc, char *argv[])
+   {
+       QApplication a(argc, argv);
+       Player p;
+       p.resize(640,480);
+       p.playFile("rtp://@:2626"); // Replace with what you want to play
+       p.show();
+       return a.exec();
+   }
 
-#define POSITION_RESOLUTION 10000
+vlc_on_qt.h:
 
-class Player : public QWidget { Q_OBJECT QSlider *\_positionSlider;
-QSlider*\ \_volumeSlider; // [20101201 Ondra Spilka] // on Linux/Ubuntu
-Lucid and VLC >= 1.0 (at least 1.1.5 was tested) XWindow handle have to
-be passed // therefore QX11EmbedContainer have to be used instead of
-QFrame #ifdef Q_WS_X11 QX11EmbedContainer *\_videoWidget; #else
-QFrame*\ \_videoWidget; #endif QTimer *poller; bool \_isPlaying;
-libvlc_exception_t \_vlcexcep; libvlc_instance_t*\ \_vlcinstance;
-libvlc_media_player_t *\_mp; libvlc_media_t*\ \_m;
+.. code:: cpp-qt
 
-public:
-   Player(); ~Player(); void raise(libvlc_exception_t \* ex);
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */
+   #ifndef VLC_ON_QT_H
+   #define VLC_ON_QT_H
 
-public slots:
-   void playFile(QString file); void updateInterface(); void
-   changeVolume(int newVolume); void changePosition(int newPosition);
+   #include <vlc/vlc.h>
 
-}; #endif </syntaxhighlight>
+   #include <QWidget>
+   #include <QX11EmbedContainer>
 
-vlc_on_qt.cpp: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample
-code \* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
-\*/ #include "vlc_on_qt.h"
+   class QVBoxLayout;
+   class QPushButton;
+   class QTimer;
+   class QFrame;
+   class QSlider;
 
-#include <QX11EmbedContainer> #include <QVBoxLayout> #include
-<QPushButton> #include <QSlider> #include <QTimer> #include <QFrame>
+   #define POSITION_RESOLUTION 10000
 
-Player::Player() : QWidget() { //preparation of the vlc command const
-char \* const vlc_args[] = { "--verbose=2", //be much more verbose then
-normal for debugging purpose "--plugin-path=C:\vlc-0.9.9-win32\plugins\"
-};
+   class Player : public QWidget
+   {
+       Q_OBJECT
+       QSlider *_positionSlider;
+       QSlider *_volumeSlider;
+       // [20101201 Ondra Spilka] 
+       // on Linux/Ubuntu Lucid and VLC >= 1.0 (at least 1.1.5 was tested) XWindow handle have to be passed
+       // therefore QX11EmbedContainer have to be used instead of QFrame
+   #ifdef Q_WS_X11    
+       QX11EmbedContainer *_videoWidget;
+   #else
+       QFrame *_videoWidget;
+   #endif   
+       QTimer *poller;
+       bool _isPlaying;
+       libvlc_exception_t _vlcexcep;
+       libvlc_instance_t *_vlcinstance;
+       libvlc_media_player_t *_mp;
+       libvlc_media_t *_m;
 
-#ifdef Q_WS_X11
-   \_videoWidget=new QX11EmbedContainer(this);
+   public:
+       Player();
+       ~Player();
+       void raise(libvlc_exception_t * ex);
 
-#else
-   \_videoWidget=new QFrame(this);
+   public slots:
+       void playFile(QString file);
+       void updateInterface();
+       void changeVolume(int newVolume);
+       void changePosition(int newPosition);
 
-#endif
+   };
+   #endif
 
-   \_volumeSlider=new QSlider(Qt::Horizontal,this);
-   \_volumeSlider->setMaximum(100); //the volume is between 0 and 100
-   \_volumeSlider->setToolTip("Audio slider");
+vlc_on_qt.cpp:
 
-   // Note: if you use streaming, there is no ability to use the
-   position slider \_positionSlider=new QSlider(Qt::Horizontal,this);
-   \_positionSlider->setMaximum(POSITION_RESOLUTION);
+.. code:: cpp-qt
 
-   QVBoxLayout \*layout = new QVBoxLayout;
-   layout->addWidget(_videoWidget); layout->addWidget(_positionSlider);
-   layout->addWidget(_volumeSlider); setLayout(layout);
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */
+   #include "vlc_on_qt.h"
 
-   \_isPlaying=false; poller=new QTimer(this);
+   #include <QX11EmbedContainer>
+   #include <QVBoxLayout>
+   #include <QPushButton>
+   #include <QSlider>
+   #include <QTimer>
+   #include <QFrame>
 
-   //Initialize an instance of vlc //a structure for the exception is
-   neede for this initalization libvlc_exception_init(&_vlcexcep);
+   Player::Player()
+   : QWidget()
+   {
+       //preparation of the vlc command
+       const char * const vlc_args[] = {
+                 "--verbose=2", //be much more verbose then normal for debugging purpose
+                 "--plugin-path=C:\\vlc-0.9.9-win32\\plugins\\" };
 
-   //create a new libvlc instance
-   \_vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]),
-   vlc_args,&_vlcexcep); //tricky calculation of the char space used
-   raise (&_vlcexcep);
+   #ifdef Q_WS_X11    
+       _videoWidget=new QX11EmbedContainer(this);
+   #else
+       _videoWidget=new QFrame(this);
+   #endif   
 
-   // Create a media player playing environement \_mp =
-   libvlc_media_player_new (_vlcinstance, &_vlcexcep); raise
-   (&_vlcexcep);
+       _volumeSlider=new QSlider(Qt::Horizontal,this);
+       _volumeSlider->setMaximum(100); //the volume is between 0 and 100
+       _volumeSlider->setToolTip("Audio slider");
 
-   //connect the two sliders to the corresponding slots (uses Qt's
-   signal / slots technology) connect(poller, SIGNAL(timeout()), this,
-   SLOT(updateInterface())); connect(_positionSlider,
-   SIGNAL(sliderMoved(int)), this, SLOT(changePosition(int)));
-   connect(_volumeSlider, SIGNAL(sliderMoved(int)), this,
-   SLOT(changeVolume(int)));
+       // Note: if you use streaming, there is no ability to use the position slider
+       _positionSlider=new QSlider(Qt::Horizontal,this); 
+       _positionSlider->setMaximum(POSITION_RESOLUTION);
 
-   poller->start(100); //start timer to trigger every 100 ms the
-   updateInterface slot
+       QVBoxLayout *layout = new QVBoxLayout;
+       layout->addWidget(_videoWidget);
+       layout->addWidget(_positionSlider);
+       layout->addWidget(_volumeSlider);
+       setLayout(layout);
 
-}
+       _isPlaying=false;
+       poller=new QTimer(this);
 
-//desctructor Player::~Player() { /\* Stop playing \*/
-libvlc_media_player_stop (_mp, &_vlcexcep);
+       //Initialize an instance of vlc
+       //a structure for the exception is neede for this initalization
+       libvlc_exception_init(&_vlcexcep);
 
-   /\* Free the media_player \*/ libvlc_media_player_release (_mp);
+       //create a new libvlc instance
+       _vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]), vlc_args,&_vlcexcep);  //tricky calculation of the char space used
+       raise (&_vlcexcep);
+       
+       // Create a media player playing environement 
+       _mp = libvlc_media_player_new (_vlcinstance, &_vlcexcep);
+       raise (&_vlcexcep);
 
-   libvlc_release (_vlcinstance); raise (&_vlcexcep);
+       //connect the two sliders to the corresponding slots (uses Qt's signal / slots technology)
+       connect(poller, SIGNAL(timeout()), this, SLOT(updateInterface()));
+       connect(_positionSlider, SIGNAL(sliderMoved(int)), this, SLOT(changePosition(int)));
+       connect(_volumeSlider, SIGNAL(sliderMoved(int)), this, SLOT(changeVolume(int)));
 
-}
+       poller->start(100); //start timer to trigger every 100 ms the updateInterface slot
+   }
 
-void Player::playFile(QString file) { //the file has to be in one of the
-following formats /perhaps a little bit outdated) /\*
-[file://%5Dfilename Plain media file
-`http://ip:port/file <http://ip:port/file>`__ HTTP URL
-`ftp://ip:port/file <ftp://ip:port/file>`__ FTP URL
-`mms://ip:port/file <mms://ip:port/file>`__ MMS URL screen:// Screen
-capture [dvd://][device][@raw_device] DVD device [vcd://][device] VCD
-device [cdda://][device] Audio CD device udp:[[<source address>]@[<bind
-address>][:<bind port>]] \*/
+   //desctructor
+   Player::~Player()
+   {
+       /* Stop playing */
+       libvlc_media_player_stop (_mp, &_vlcexcep);
 
-   /\* Create a new LibVLC media descriptor \*/ \_m = libvlc_media_new
-   (_vlcinstance, file.toAscii(), &_vlcexcep); raise(&_vlcexcep);
+       /* Free the media_player */
+       libvlc_media_player_release (_mp);
 
-   libvlc_media_player_set_media (_mp, \_m, &_vlcexcep);
-   raise(&_vlcexcep);
+       libvlc_release (_vlcinstance);
+       raise (&_vlcexcep);
+   }
 
-   // /!Please note /!// // passing the widget to the lib shows vlc at
-   which position it should show up // vlc automatically resizes the
-   video to the ´given size of the widget // and it even resizes it, if
-   the size changes at the playing
+   void Player::playFile(QString file)
+   {
+       //the file has to be in one of the following formats /perhaps a little bit outdated)
+       /*
+       [file://]filename              Plain media file
+       http://ip:port/file            HTTP URL
+       ftp://ip:port/file             FTP URL
+       mms://ip:port/file             MMS URL
+       screen://                      Screen capture
+       [dvd://][device][@raw_device]  DVD device
+       [vcd://][device]               VCD device
+       [cdda://][device]              Audio CD device
+       udp:[[<source address>]@[<bind address>][:<bind port>]]
+       */
 
-   /\* Get our media instance to use our window \*/ #if
-   defined(Q_OS_WIN) libvlc_media_player_set_drawable(_mp,
-   reinterpret_cast<unsigned int>(_videoWidget->winId()), &_vlcexcep );
-   //libvlc_media_player_set_hwnd(_mp, \_videoWidget->winId(),
-   &_vlcexcep ); // for vlc 1.0 #elif defined(Q_OS_MAC)
-   libvlc_media_player_set_drawable(_mp, \_videoWidget->winId(),
-   &_vlcexcep ); //libvlc_media_player_set_agl (_mp,
-   \_videoWidget->winId(), &_vlcexcep); // for vlc 1.0 #else //Linux
-   //[20101201 Ondrej Spilka] obsolete call on libVLC >=1.1.5
-   //libvlc_media_player_set_drawable(_mp, \_videoWidget->winId(),
-   &_vlcexcep ); //libvlc_media_player_set_xwindow(_mp,
-   \_videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
+       /* Create a new LibVLC media descriptor */
+       _m = libvlc_media_new (_vlcinstance, file.toAscii(), &_vlcexcep);
+       raise(&_vlcexcep);
+       
+       libvlc_media_player_set_media (_mp, _m, &_vlcexcep);
+       raise(&_vlcexcep);
 
-      /\* again note X11 handle on Linux is needed
-         winID() returns X11 handle when QX11EmbedContainer us used \*/
+       // /!\ Please note /!\
+       //
+       // passing the widget to the lib shows vlc at which position it should show up
+       // vlc automatically resizes the video to the ´given size of the widget
+       // and it even resizes it, if the size changes at the playing
+       
+       /* Get our media instance to use our window */
+       #if defined(Q_OS_WIN)
+           libvlc_media_player_set_drawable(_mp, reinterpret_cast<unsigned int>(_videoWidget->winId()), &_vlcexcep );
+           //libvlc_media_player_set_hwnd(_mp, _videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
+       #elif defined(Q_OS_MAC)
+           libvlc_media_player_set_drawable(_mp, _videoWidget->winId(), &_vlcexcep );
+           //libvlc_media_player_set_agl (_mp, _videoWidget->winId(), &_vlcexcep); // for vlc 1.0
+       #else //Linux
+           //[20101201 Ondrej Spilka] obsolete call on libVLC >=1.1.5 
+           //libvlc_media_player_set_drawable(_mp, _videoWidget->winId(), &_vlcexcep );
+           //libvlc_media_player_set_xwindow(_mp, _videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
 
-         int windid = \_videoWidget->winId();
-         libvlc_media_player_set_xwindow (mp, windid );
+        /* again note X11 handle on Linux is needed
+           winID() returns X11 handle when QX11EmbedContainer us used */
+        
+           int windid = _videoWidget->winId();
+           libvlc_media_player_set_xwindow (mp, windid );
 
-   #endif raise(&_vlcexcep);
+       #endif
+       raise(&_vlcexcep);
 
-   /\* Play \*/ libvlc_media_player_play (_mp, &_vlcexcep );
-   raise(&_vlcexcep);
+       /* Play */
+       libvlc_media_player_play (_mp, &_vlcexcep );
+       raise(&_vlcexcep);
 
-   \_isPlaying=true;
+       _isPlaying=true;
+   }
 
-}
+   void Player::changeVolume(int newVolume)
+   {
+       libvlc_exception_clear(&_vlcexcep);
+       libvlc_audio_set_volume (_vlcinstance,newVolume , &_vlcexcep);
+       raise(&_vlcexcep);
+   }
 
-void Player::changeVolume(int newVolume) {
-libvlc_exception_clear(&_vlcexcep); libvlc_audio_set_volume
-(_vlcinstance,newVolume , &_vlcexcep); raise(&_vlcexcep); }
+   void Player::changePosition(int newPosition)
+   {
+       libvlc_exception_clear(&_vlcexcep);
+       // It's possible that the vlc doesn't play anything
+       // so check before
+       libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp, &_vlcexcep);
+       libvlc_exception_clear(&_vlcexcep);
+       if (curMedia == NULL)
+           return;
 
-void Player::changePosition(int newPosition) {
-libvlc_exception_clear(&_vlcexcep); // It's possible that the vlc
-doesn't play anything // so check before libvlc_media_t \*curMedia =
-libvlc_media_player_get_media (_mp, &_vlcexcep);
-libvlc_exception_clear(&_vlcexcep); if (curMedia == NULL) return;
+       float pos=(float)(newPosition)/(float)POSITION_RESOLUTION;
+       libvlc_media_player_set_position (_mp, pos, &_vlcexcep);
+       raise(&_vlcexcep);
+   }
 
-   float pos=(float)(newPosition)/(float)POSITION_RESOLUTION;
-   libvlc_media_player_set_position (_mp, pos, &_vlcexcep);
-   raise(&_vlcexcep);
+   void Player::updateInterface()
+   {
+       if(!_isPlaying)
+           return;
 
-}
+       // It's possible that the vlc doesn't play anything
+       // so check before
+       libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp, &_vlcexcep);
+       libvlc_exception_clear(&_vlcexcep);
+       if (curMedia == NULL)
+           return;
 
-void Player::updateInterface() { if(!_isPlaying) return;
+       float pos=libvlc_media_player_get_position (_mp, &_vlcexcep);
+       int siderPos=(int)(pos*(float)(POSITION_RESOLUTION));
+       _positionSlider->setValue(siderPos);
+       int volume=libvlc_audio_get_volume (_vlcinstance,&_vlcexcep);
+       _volumeSlider->setValue(volume);
+   }
+   void Player::raise(libvlc_exception_t * ex)
+   {
+       if (libvlc_exception_raised (ex))
+       {
+            fprintf (stderr, "error: %s\n", libvlc_exception_get_message(ex));
+            exit (-1);
+       }
+   }
 
-   // It's possible that the vlc doesn't play anything // so check
-   before libvlc_media_t \*curMedia = libvlc_media_player_get_media
-   (_mp, &_vlcexcep); libvlc_exception_clear(&_vlcexcep); if (curMedia
-   == NULL) return;
+VLC 1.2 and OpenSuse 11.3
+-------------------------
 
-   float pos=libvlc_media_player_get_position (_mp, &_vlcexcep); int
-   siderPos=(int)(pos*(float)(POSITION_RESOLUTION));
-   \_positionSlider->setValue(siderPos); int
-   volume=libvlc_audio_get_volume (_vlcinstance,&_vlcexcep);
-   \_volumeSlider->setValue(volume);
+[Rafael Capucho<rafael.capucho@gmail.com> 20120713] Modified to include properly QX11EmbedContainer header that was missing.- tested ok
 
-} void Player::raise(libvlc_exception_t \* ex) { if
-(libvlc_exception_raised (ex)) { fprintf (stderr, "error: %sn",
-libvlc_exception_get_message(ex)); exit (-1); } } </syntaxhighlight>
-
-== VLC 1.2 and OpenSuse 11.3 == [Rafael
-Capucho<rafael.capucho@gmail.com> 20120713] Modified to include properly
-QX11EmbedContainer header that was missing.- tested ok
-
-[Jofre Guevara 20101215] Modifications of original template based on new
-VLC version.
+[Jofre Guevara 20101215] Modifications of original template based on new VLC version.
 
 [Ondrej Spilka 20101201] slightly modified for the modest versions...
 
-== Files ==
+.. _files-1:
 
-main.cpp: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample code
-\* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de> \*/�
+Files
+-----
 
-#include "vlc_on_qt.h" #include <QtGui/QApplication>
+main.cpp:
 
-int main(int argc, char \*argv[]) { QApplication a(argc, argv); Player
-p; p.resize(640,480); p.playFile("rtp://@:2626"); // Replace with what
-you want to play p.show(); return a.exec(); } </syntaxhighlight>
+.. code:: cpp-qt
 
-vlc_on_qt.h: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample
-code \* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
-\*/ #ifndef VLC_ON_QT_H #define VLC_ON_QT_H
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */�
 
-#include <vlc/vlc.h>
+   #include "vlc_on_qt.h"
+   #include <QtGui/QApplication>
 
-#include <QX11EmbedContainer> #include <QWidget>
+   int main(int argc, char *argv[])
+   {
+       QApplication a(argc, argv);
+       Player p;
+       p.resize(640,480);
+       p.playFile("rtp://@:2626"); // Replace with what you want to play
+       p.show();
+       return a.exec();
+   }
 
-class QVBoxLayout; class QPushButton; class QTimer; class QFrame; class
-QSlider;
+vlc_on_qt.h:
 
-#define POSITION_RESOLUTION 10000
+.. code:: cpp-qt
 
-class Player : public QWidget { Q_OBJECT QSlider *\_positionSlider;
-QSlider*\ \_volumeSlider; // [20101215 JG] // Tested on Linux OpenSuse
-and VLC 1.2.0. This version of VLC is not completely compatible with
-previous versions of VLC. // [20101201 Ondra Spilka] // on Linux/Ubuntu
-Lucid and VLC >= 1.0 (at least 1.1.5 was tested) XWindow handle have to
-be passed // therefore QX11EmbedContainer have to be used instead of
-QFrame #ifdef Q_WS_X11 QX11EmbedContainer *\_videoWidget; #else
-QFrame*\ \_videoWidget; #endif // [20101215 JG] If KDE is used like
-unique desktop environment, only use QFrame *\_videoWidget;
-QTimer*\ poller; bool \_isPlaying; //libvlc_exception_t \_vlcexcep; //
-[20101215 JG] Used for versions prior to VLC 1.2.0. libvlc_instance_t
-*\_vlcinstance; libvlc_media_player_t*\ \_mp; libvlc_media_t \*_m;
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */
+   #ifndef VLC_ON_QT_H
+   #define VLC_ON_QT_H
 
-public:
-   Player(); ~Player(); //void raise(libvlc_exception_t \* ex); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
+   #include <vlc/vlc.h>
 
-public slots:
-   void playFile(QString file); void updateInterface(); void
-   changeVolume(int newVolume); void changePosition(int newPosition);
+   #include <QX11EmbedContainer>
+   #include <QWidget>
 
-}; #endif </syntaxhighlight>
+   class QVBoxLayout;
+   class QPushButton;
+   class QTimer;
+   class QFrame;
+   class QSlider;
 
-vlc_on_qt.cpp: <syntaxhighlight lang="cpp-qt"> /\* libVLC and Qt sample
-code \* Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
-\*/ #include "vlc_on_qt.h"
+   #define POSITION_RESOLUTION 10000
 
-#include <QX11EmbedContainer> #include <QVBoxLayout> #include
-<QPushButton> #include <QSlider> #include <QTimer> #include <QFrame>
+   class Player : public QWidget
+   {
+       Q_OBJECT
+       QSlider *_positionSlider;
+       QSlider *_volumeSlider;
+       // [20101215 JG]
+       // Tested on Linux OpenSuse and VLC 1.2.0. This version of VLC is not completely compatible with previous versions of VLC.
+       // [20101201 Ondra Spilka]
+       // on Linux/Ubuntu Lucid and VLC >= 1.0 (at least 1.1.5 was tested) XWindow handle have to be passed
+       // therefore QX11EmbedContainer have to be used instead of QFrame
+   #ifdef Q_WS_X11
+       QX11EmbedContainer *_videoWidget;
+   #else
+       QFrame *_videoWidget;
+   #endif
+       // [20101215 JG] If KDE is used like unique desktop environment, only use QFrame *_videoWidget;
+       QTimer *poller;
+       bool _isPlaying;
+       //libvlc_exception_t _vlcexcep; // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       libvlc_instance_t *_vlcinstance;
+       libvlc_media_player_t *_mp;
+       libvlc_media_t *_m;
 
-Player::Player() : QWidget() { //preparation of the vlc command const
-char \* const vlc_args[] = { "--verbose=2", //be much more verbose then
-normal for debugging purpose };
+   public:
+       Player();
+       ~Player();
+       //void raise(libvlc_exception_t * ex); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-#ifdef Q_WS_X11
-   \_videoWidget=new QX11EmbedContainer(this);
+   public slots:
+       void playFile(QString file);
+       void updateInterface();
+       void changeVolume(int newVolume);
+       void changePosition(int newPosition);
 
-#else
-   \_videoWidget=new QFrame(this);
+   };
+   #endif
 
-#endif
-   // [20101215 JG] If KDE is used like unique desktop environment, only
-   use \_videoWidget=new QFrame(this);
+vlc_on_qt.cpp:
 
-   \_volumeSlider=new QSlider(Qt::Horizontal,this);
-   \_volumeSlider->setMaximum(100); //the volume is between 0 and 100
-   \_volumeSlider->setToolTip("Audio slider");
+.. code:: cpp-qt
 
-   // Note: if you use streaming, there is no ability to use the
-   position slider \_positionSlider=new QSlider(Qt::Horizontal,this);
-   \_positionSlider->setMaximum(POSITION_RESOLUTION);
+   /* libVLC and Qt sample code
+    * Copyright © 2009 Alexander Maringer <maringer@maringer-it.de>
+    */
+   #include "vlc_on_qt.h"
 
-   QVBoxLayout \*layout = new QVBoxLayout;
-   layout->addWidget(_videoWidget); layout->addWidget(_positionSlider);
-   layout->addWidget(_volumeSlider); setLayout(layout);
+   #include <QX11EmbedContainer>
+   #include <QVBoxLayout>
+   #include <QPushButton>
+   #include <QSlider>
+   #include <QTimer>
+   #include <QFrame>
 
-   \_isPlaying=false; poller=new QTimer(this);
+   Player::Player()
+   : QWidget()
+   {
+       //preparation of the vlc command
+       const char * const vlc_args[] = {
+                 "--verbose=2", //be much more verbose then normal for debugging purpose
+    };
 
-   //Initialize an instance of vlc //a structure for the exception is
-   neede for this initalization //libvlc_exception_init(&_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
+   #ifdef Q_WS_X11
+       _videoWidget=new QX11EmbedContainer(this);
+   #else
+       _videoWidget=new QFrame(this);
+   #endif
+       // [20101215 JG] If KDE is used like unique desktop environment, only use _videoWidget=new QFrame(this);
 
-   //create a new libvlc instance
-   \_vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]),
-   vlc_args); //tricky calculation of the char space used
-   //_vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]),
-   vlc_args,&_vlcexcep); // [20101215 JG] Used for versions prior to VLC
-   1.2.0. //raise (&_vlcexcep); // [20101215 JG] Used for versions prior
-   to VLC 1.2.0.
+       _volumeSlider=new QSlider(Qt::Horizontal,this);
+       _volumeSlider->setMaximum(100); //the volume is between 0 and 100
+       _volumeSlider->setToolTip("Audio slider");
 
-   // Create a media player playing environement \_mp =
-   libvlc_media_player_new (_vlcinstance); //_mp =
-   libvlc_media_player_new (_vlcinstance, &_vlcexcep); // [20101215 JG]
-   Used for versions prior to VLC 1.2.0. //raise (&_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
+       // Note: if you use streaming, there is no ability to use the position slider
+       _positionSlider=new QSlider(Qt::Horizontal,this);
+       _positionSlider->setMaximum(POSITION_RESOLUTION);
 
-   //connect the two sliders to the corresponding slots (uses Qt's
-   signal / slots technology) connect(poller, SIGNAL(timeout()), this,
-   SLOT(updateInterface())); connect(_positionSlider,
-   SIGNAL(sliderMoved(int)), this, SLOT(changePosition(int)));
-   connect(_volumeSlider, SIGNAL(sliderMoved(int)), this,
-   SLOT(changeVolume(int)));
+       QVBoxLayout *layout = new QVBoxLayout;
+       layout->addWidget(_videoWidget);
+       layout->addWidget(_positionSlider);
+       layout->addWidget(_volumeSlider);
+       setLayout(layout);
 
-   poller->start(100); //start timer to trigger every 100 ms the
-   updateInterface slot
+       _isPlaying=false;
+       poller=new QTimer(this);
 
-}
+       //Initialize an instance of vlc
+       //a structure for the exception is neede for this initalization
+       //libvlc_exception_init(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-//desctructor Player::~Player() { /\* Stop playing \*/
-libvlc_media_player_stop (_mp); //libvlc_media_player_stop (_mp,
-&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //create a new libvlc instance
+       _vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]), vlc_args);  //tricky calculation of the char space used
+       //_vlcinstance=libvlc_new(sizeof(vlc_args) / sizeof(vlc_args[0]), vlc_args,&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise (&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-   /\* Free the media_player \*/ libvlc_media_player_release (_mp);
+       // Create a media player playing environement
+       _mp = libvlc_media_player_new (_vlcinstance);
+       //_mp = libvlc_media_player_new (_vlcinstance, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise (&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-   libvlc_release (_vlcinstance); //raise (&_vlcexcep); // [20101215 JG]
-   Used for versions prior to VLC 1.2.0.
+       //connect the two sliders to the corresponding slots (uses Qt's signal / slots technology)
+       connect(poller, SIGNAL(timeout()), this, SLOT(updateInterface()));
+       connect(_positionSlider, SIGNAL(sliderMoved(int)), this, SLOT(changePosition(int)));
+       connect(_volumeSlider, SIGNAL(sliderMoved(int)), this, SLOT(changeVolume(int)));
 
-}
+       poller->start(100); //start timer to trigger every 100 ms the updateInterface slot
+   }
 
-void Player::playFile(QString file) { //the file has to be in one of the
-following formats /perhaps a little bit outdated) /\*
-[file://%5Dfilename Plain media file
-`http://ip:port/file <http://ip:port/file>`__ HTTP URL
-`ftp://ip:port/file <ftp://ip:port/file>`__ FTP URL
-`mms://ip:port/file <mms://ip:port/file>`__ MMS URL screen:// Screen
-capture [dvd://][device][@raw_device] DVD device [vcd://][device] VCD
-device [cdda://][device] Audio CD device udp:[[<source address>]@[<bind
-address>][:<bind port>]] \*/
+   //desctructor
+   Player::~Player()
+   {
+       /* Stop playing */
+       libvlc_media_player_stop (_mp);
+       //libvlc_media_player_stop (_mp, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-   /\* Create a new LibVLC media descriptor \*/ \_m =
-   libvlc_media_new_path(_vlcinstance, file.toAscii()); //_m =
-   libvlc_media_new (_vlcinstance, file.toAscii(), &_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
-   //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC
-   1.2.0.
+       /* Free the media_player */
+       libvlc_media_player_release (_mp);
 
-   libvlc_media_player_set_media (_mp, \_m);
-   //libvlc_media_player_set_media (_mp, \_m, &_vlcexcep); // [20101215
-   JG] Used for versions prior to VLC 1.2.0. //raise(&_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
+       libvlc_release (_vlcinstance);
+       //raise (&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+   }
 
-   // /!Please note /!// // passing the widget to the lib shows vlc at
-   which position it should show up // vlc automatically resizes the
-   video to the ´given size of the widget // and it even resizes it, if
-   the size changes at the playing
+   void Player::playFile(QString file)
+   {
+       //the file has to be in one of the following formats /perhaps a little bit outdated)
+       /*
+       [file://]filename              Plain media file
+       http://ip:port/file            HTTP URL
+       ftp://ip:port/file             FTP URL
+       mms://ip:port/file             MMS URL
+       screen://                      Screen capture
+       [dvd://][device][@raw_device]  DVD device
+       [vcd://][device]               VCD device
+       [cdda://][device]              Audio CD device
+       udp:[[<source address>]@[<bind address>][:<bind port>]]
+       */
 
-   /\* Get our media instance to use our window \*/ #if
-   defined(Q_OS_WIN) libvlc_media_player_set_drawable(_mp,
-   reinterpret_cast<unsigned int>(_videoWidget->winId()));
-   //libvlc_media_player_set_drawable(_mp, reinterpret_cast<unsigned
-   int>(_videoWidget->winId()), &_vlcexcep ); // [20101215 JG] Used for
-   versions prior to VLC 1.2.0. //libvlc_media_player_set_hwnd(_mp,
-   \_videoWidget->winId(), &_vlcexcep ); // for vlc 1.0 #elif
-   defined(Q_OS_MAC) libvlc_media_player_set_drawable(_mp,
-   \_videoWidget->winId()); //libvlc_media_player_set_drawable(_mp,
-   \_videoWidget->winId(), &_vlcexcep ); // [20101215 JG] Used for
-   versions prior to VLC 1.2.0. //libvlc_media_player_set_agl (_mp,
-   \_videoWidget->winId(), &_vlcexcep); // for vlc 1.0 #else //Linux
-   //[20101201 Ondrej Spilka] obsolete call on libVLC >=1.1.5
-   //libvlc_media_player_set_drawable(_mp, \_videoWidget->winId(),
-   &_vlcexcep ); //libvlc_media_player_set_xwindow(_mp,
-   \_videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
+       /* Create a new LibVLC media descriptor */
+       _m = libvlc_media_new_path(_vlcinstance, file.toAscii());
+       //_m = libvlc_media_new (_vlcinstance, file.toAscii(), &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-      /\* again note X11 handle on Linux is needed
-         winID() returns X11 handle when QX11EmbedContainer us used \*/
+       libvlc_media_player_set_media (_mp, _m);
+       //libvlc_media_player_set_media (_mp, _m, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-         int windid = \_videoWidget->winId();
-         libvlc_media_player_set_xwindow (_mp, windid );
+       // /!\ Please note /!\
+       //
+       // passing the widget to the lib shows vlc at which position it should show up
+       // vlc automatically resizes the video to the ´given size of the widget
+       // and it even resizes it, if the size changes at the playing
 
-   #endif //raise(&_vlcexcep); // [20101215 JG] Used for versions prior
-   to VLC 1.2.0.
+       /* Get our media instance to use our window */
+       #if defined(Q_OS_WIN)
+           libvlc_media_player_set_drawable(_mp, reinterpret_cast<unsigned int>(_videoWidget->winId()));
+           //libvlc_media_player_set_drawable(_mp, reinterpret_cast<unsigned int>(_videoWidget->winId()), &_vlcexcep ); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+           //libvlc_media_player_set_hwnd(_mp, _videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
+       #elif defined(Q_OS_MAC)
+           libvlc_media_player_set_drawable(_mp, _videoWidget->winId());
+           //libvlc_media_player_set_drawable(_mp, _videoWidget->winId(), &_vlcexcep ); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+           //libvlc_media_player_set_agl (_mp, _videoWidget->winId(), &_vlcexcep); // for vlc 1.0
+       #else //Linux
+           //[20101201 Ondrej Spilka] obsolete call on libVLC >=1.1.5
+           //libvlc_media_player_set_drawable(_mp, _videoWidget->winId(), &_vlcexcep );
+           //libvlc_media_player_set_xwindow(_mp, _videoWidget->winId(), &_vlcexcep ); // for vlc 1.0
 
-   /\* Play \*/ libvlc_media_player_play (_mp);
-   //libvlc_media_player_play (_mp, &_vlcexcep ); // [20101215 JG] Used
-   for versions prior to VLC 1.2.0. //raise(&_vlcexcep); // [20101215
-   JG] Used for versions prior to VLC 1.2.0.
+        /* again note X11 handle on Linux is needed
+           winID() returns X11 handle when QX11EmbedContainer us used */
 
-   \_isPlaying=true;
+           int windid = _videoWidget->winId();
+           libvlc_media_player_set_xwindow (_mp, windid );
 
-}
+       #endif
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-void Player::changeVolume(int newVolume) {
-//libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions
-prior to VLC 1.2.0. libvlc_audio_set_volume (_mp,newVolume);
-//libvlc_audio_set_volume (_vlcinstance,newVolume , &_vlcexcep); //
-[20101215 JG] Used for versions prior to VLC 1.2.0. //raise(&_vlcexcep);
-// [20101215 JG] Used for versions prior to VLC 1.2.0. }
+       /* Play */
+       libvlc_media_player_play (_mp);
+       //libvlc_media_player_play (_mp, &_vlcexcep ); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-void Player::changePosition(int newPosition) {
-//libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions
-prior to VLC 1.2.0. // It's possible that the vlc doesn't play anything
-// so check before libvlc_media_t *curMedia =
-libvlc_media_player_get_media (_mp); //libvlc_media_t*\ curMedia =
-libvlc_media_player_get_media (_mp, &_vlcexcep); // [20101215 JG] Used
-for versions prior to VLC 1.2.0. //libvlc_exception_clear(&_vlcexcep);
-// [20101215 JG] Used for versions prior to VLC 1.2.0. if (curMedia ==
-NULL) return;
+       _isPlaying=true;
+   }
 
-   float pos=(float)(newPosition)/(float)POSITION_RESOLUTION;
-   libvlc_media_player_set_position (_mp, pos);
-   //libvlc_media_player_set_position (_mp, pos, &_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
-   //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC
-   1.2.0.
+   void Player::changeVolume(int newVolume)
+   {
+       //libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       libvlc_audio_set_volume (_mp,newVolume);
+       //libvlc_audio_set_volume (_vlcinstance,newVolume , &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+   }
 
-}
+   void Player::changePosition(int newPosition)
+   {
+       //libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       // It's possible that the vlc doesn't play anything
+       // so check before
+       libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp);
+       //libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       if (curMedia == NULL)
+           return;
 
-void Player::updateInterface() { if(!_isPlaying) return;
+       float pos=(float)(newPosition)/(float)POSITION_RESOLUTION;
+       libvlc_media_player_set_position (_mp, pos);
+       //libvlc_media_player_set_position (_mp, pos, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //raise(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+   }
 
-   // It's possible that the vlc doesn't play anything // so check
-   before libvlc_media_t *curMedia = libvlc_media_player_get_media
-   (_mp); //libvlc_media_t*\ curMedia = libvlc_media_player_get_media
-   (_mp, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC
-   1.2.0. //libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used
-   for versions prior to VLC 1.2.0. if (curMedia == NULL) return;
+   void Player::updateInterface()
+   {
+       if(!_isPlaying)
+           return;
 
-   float pos=libvlc_media_player_get_position (_mp); //float
-   pos=libvlc_media_player_get_position (_mp, &_vlcexcep); // [20101215
-   JG] Used for versions prior to VLC 1.2.0. int
-   siderPos=(int)(pos*(float)(POSITION_RESOLUTION));
-   \_positionSlider->setValue(siderPos); int
-   volume=libvlc_audio_get_volume (_mp); //int
-   volume=libvlc_audio_get_volume (_vlcinstance,&_vlcexcep); //
-   [20101215 JG] Used for versions prior to VLC 1.2.0.
-   \_volumeSlider->setValue(volume);
+       // It's possible that the vlc doesn't play anything
+       // so check before
+       libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp);
+       //libvlc_media_t *curMedia = libvlc_media_player_get_media (_mp, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       //libvlc_exception_clear(&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       if (curMedia == NULL)
+           return;
 
-} /*void Player::raise(libvlc_exception_t* ex) { if
-(libvlc_exception_raised (ex)) { fprintf (stderr, "error: %sn",
-libvlc_exception_get_message(ex)); exit (-1); } }*/ // [20101215 JG]
-Used for versions prior to VLC 1.2.0. </syntaxhighlight>
+       float pos=libvlc_media_player_get_position (_mp);
+       //float pos=libvlc_media_player_get_position (_mp, &_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       int siderPos=(int)(pos*(float)(POSITION_RESOLUTION));
+       _positionSlider->setValue(siderPos);
+       int volume=libvlc_audio_get_volume (_mp);
+       //int volume=libvlc_audio_get_volume (_vlcinstance,&_vlcexcep); // [20101215 JG] Used for versions prior to VLC 1.2.0.
+       _volumeSlider->setValue(volume);
+   }
+   /*void Player::raise(libvlc_exception_t * ex)
+   {
+       if (libvlc_exception_raised (ex))
+       {
+            fprintf (stderr, "error: %s\n", libvlc_exception_get_message(ex));
+            exit (-1);
+       }
+   }*/  // [20101215 JG] Used for versions prior to VLC 1.2.0.
 
-[[Category:libVLC]] [[Category:Qt]]
+`Category:libVLC <Category:libVLC>`__ `Category:Qt <Category:Qt>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[HandBrake]]
+#. REDIRECT `HandBrake <HandBrake>`__

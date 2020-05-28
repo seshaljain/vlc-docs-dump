@@ -1,19 +1,22 @@
-{{Protocol|FTP}}
+.. raw:: mediawiki
 
-'''File Transfer Protocol''' or '''FTP''' is used to download or upload
-files.
+   {{Protocol|FTP}}
 
-TLS support (encryption) was added in 2.2.0. Implicit TLS is preferable
-over Explicit TLS.
+**File Transfer Protocol** or **FTP** is used to download or upload files.
+
+TLS support (encryption) was added in 2.2.0. Implicit TLS is preferable over Explicit TLS.
 
 The syntax for Implicit TLS (most secure):
-   <nowiki>ftps://host/file</nowiki>
-   <nowiki>ftps://host:port/file</nowiki>
+
+| ``ftps://host/file``
+| ``ftps://host:port/file``
 
 The syntax for Explicit TLS:
-   <nowiki>ftpes://host/file</nowiki>
-   <nowiki>ftpes://host:port/file</nowiki>
+
+| ``ftpes://host/file``
+| ``ftpes://host:port/file``
 
 Or for no encryption:
-   <nowiki>ftp://host/file\ </nowiki>
-   <nowiki>`ftp://host:port/file <ftp://host:port/file>`__\ </nowiki>
+
+| ``ftp://host/file``
+| ``ftp://host:port/file``

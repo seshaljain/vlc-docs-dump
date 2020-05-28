@@ -1,1 +1,1 @@
-#REDIRECT [[Red Hat]]
+#. REDIRECT `Red Hat <Red_Hat>`__

@@ -1,13 +1,25 @@
-{{Moduletype=Access demuxdescription=[[Real]] plugin}}
+.. raw:: mediawiki
 
-Shortcuts to this module are <code>real</code> and <code>rm</code> (for
-[[RealMedia]]).
+   {{Module|name=real|type=Access demux|first_version=0.7.1|description=[[Real]] plugin}}
 
-The real module is planned to be removed (currently written as
-4.0.0-dev).
+Shortcuts to this module are ``real`` and ``rm`` (for `RealMedia <RealMedia>`__).
 
-== Options == None.
+The real module is planned to be removed (currently written as 4.0.0-dev).
 
-== Source code == \* {{VLCSourceFilemodules/demux/real.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-3.0.git|modules/demux/real.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

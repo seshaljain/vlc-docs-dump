@@ -1,26 +1,26 @@
-{{wikipediaBlu-Ray}} {{mmwikiBlu-ray}}
+.. raw:: mediawiki
 
-== Introduction ==
+   {{wikipedia|HD-DVD|Blu-Ray}}
 
-Third-generation optical discs are meant for distributing
-high-definition video and support greater data storage capacities than
-[[DVD]]s, accomplished with short-wavelength visible-light lasers and
-greater numerical apertures.
+Introduction
+------------
 
-The disc uses blue-violet lasers of greater aperture, for use with discs
-with smaller pits and lands, thereby greater data storage capacity per
-layer. In practice, the effective multimedia presentation capacity is
-improved with enhanced video data compression [[codec]]s such as
-[[H.264]], and VC-1.
+Third-generation optical discs are meant for distributing high-definition video and support greater data storage capacities than `DVDs <DVD>`__, accomplished with short-wavelength visible-light lasers and greater numerical apertures.
+
+The disc uses blue-violet lasers of greater aperture, for use with discs with smaller pits and lands, thereby greater data storage capacity per layer. In practice, the effective multimedia presentation capacity is improved with enhanced video data compression `codecs <codec>`__ such as `H.264 <H.264>`__, and VC-1.
 
 Two major competitive formats were present:
 
-*Blu-Ray discs*\ HD-DVD
+-  Blu-Ray discs
+-  HD-DVD
 
-== Support in VLC ==
-:''[[wikipedia:mw:Help:Magic_words#Transclusion_modifiers|Transcluded]]
-from [[HD-Discs codecs]]'' <!-- Editors: This page includes content from
-HD-Discs codecs. Make edits to this section there. --> {{:HD-Discs
-codecs}}
+Support in VLC
+--------------
 
-[[Category:Physical media]]
+   `Transcluded <wikipedia:mw:Help:Magic_words#Transclusion_modifiers>`__\ *from*\ `HD-Discs codecs <HD-Discs_codecs>`__
+
+.. raw:: mediawiki
+
+   {{:HD-Discs codecs}}
+
+`Category:Physical media <Category:Physical_media>`__

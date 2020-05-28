@@ -1,4 +1,3 @@
-Google Summer of Code (GSoC), Outreachy, and any future developments
-where VideoLAN acts as the mentor.
+Google Summer of Code (GSoC), Outreachy, and any future developments where VideoLAN acts as the mentor.
 
-[[Category:Events]]
+`Category:Events <Category:Events>`__

@@ -1,5 +1,1 @@
-VLC only uses built in codecs (see
-[http://en.wikipedia.org/wiki/VLC_media_player 2]) so it doesn't support
-VfW or DirectShow APIs for codecs. You are free to hack the source and
-use it, though, for example it is possible to make VLC into a directshow
-filter [http://www.sensoray.com/support/videoLan.htm 3].{{VSG}}
+VLC only uses built in codecs (see `2 <http://en.wikipedia.org/wiki/VLC_media_player>`__) so it doesn't support VfW or DirectShow APIs for codecs. You are free to hack the source and use it, though, for example it is possible to make VLC into a directshow filter `3 <http://www.sensoray.com/support/videoLan.htm>`__.

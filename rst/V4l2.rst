@@ -1,1 +1,1 @@
-#REDIRECT [[V4l]]
+#. REDIRECT `V4l <V4l>`__

@@ -1,3 +1,7 @@
-{{Lowercase}} Pages related to [[LibVLC]], the VLC core library.
+.. raw:: mediawiki
 
-[[Category:Libraries]]
+   {{Lowercase}}
+
+Pages related to `LibVLC <LibVLC>`__, the VLC core library.
+
+`Category:Libraries <Category:Libraries>`__

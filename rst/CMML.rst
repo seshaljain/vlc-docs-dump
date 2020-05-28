@@ -1,15 +1,17 @@
-{{xiph|CMML}} {{Historical}}
+.. raw:: mediawiki
 
-'''CMML''' is a way of storing meta information about a file. This
-information can change as the file is played. It is used with [[Ogg]]
-media files.
+   {{xiph|CMML}}
 
-It can be used for [[subtitles]].
+.. raw:: mediawiki
 
-Support for CMML was removed in {{VLC}} 1.1.0 and upwards.
+   {{Historical}}
 
-Xiph wiki warns that CMML is deprecated and recommends [[OggKate]]
-instead (as of [https://wiki.xiph.org/index.php?title=CMML&oldid=12990
-August 2011]).
+**CMML** is a way of storing meta information about a file. This information can change as the file is played. It is used with `Ogg <Ogg>`__ media files.
 
-[[Category:Codecs]] [[Category:Subtitles]]
+It can be used for `subtitles <subtitles>`__.
+
+Support for CMML was removed in 1.1.0 and upwards.
+
+Xiph wiki warns that CMML is deprecated and recommends `OggKate <OggKate>`__ instead (as of `August 2011 <https://wiki.xiph.org/index.php?title=CMML&oldid=12990>`__).
+
+`Category:Codecs <Category:Codecs>`__ `Category:Subtitles <Category:Subtitles>`__

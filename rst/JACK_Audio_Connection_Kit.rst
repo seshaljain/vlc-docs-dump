@@ -1,1 +1,1 @@
-#REDIRECT [[JACK]]
+#. REDIRECT `JACK <JACK>`__

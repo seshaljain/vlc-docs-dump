@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/upnp]]
+#. REDIRECT `Documentation:Modules/upnp <Documentation:Modules/upnp>`__

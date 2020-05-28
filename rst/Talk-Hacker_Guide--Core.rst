@@ -1,7 +1,6 @@
-Based on the VLC media player API Documentation by Christophe Massiot
-and Samuel Hocevar
+Based on the VLC media player API Documentation by Christophe Massiot and Samuel Hocevar
 
-=== Question about liba52 facts === According to
-http://liba52.sourceforge.net/ retrieved November 24, 2014, "July 27,
-2002: a52dec-0.7.4 is released ! With full reentrancy..." Does this
-affect liba52 which is stated '''not''' to have reentrancy on this page?
+Question about liba52 facts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+According to http://liba52.sourceforge.net/ retrieved November 24, 2014, "July 27, 2002: a52dec-0.7.4 is released ! With full reentrancy..." Does this affect liba52 which is stated **not** to have reentrancy on this page?

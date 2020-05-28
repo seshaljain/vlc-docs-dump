@@ -18,11 +18,9 @@ Alexander
 
 Hallo Besucher,
 
-mein Name ist Alex und ich wohne in Deutschland. Ich ich bin 28 Jahre
-alt.
+mein Name ist Alex und ich wohne in Deutschland. Ich ich bin 28 Jahre alt.
 
-Als ich diese Wiki sah, war ich der Meinung, dass ich versuchen könnte,
-einige Seiten ins deutsche zu übersetzen.
+Als ich diese Wiki sah, war ich der Meinung, dass ich versuchen könnte, einige Seiten ins deutsche zu übersetzen.
 
 Ich bin nur ein Hobby-Übersetzer, mehr nicht.
 

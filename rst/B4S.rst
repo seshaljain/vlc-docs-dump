@@ -1,1 +1,1 @@
-#REDIRECT [[Winamp]]
+#. REDIRECT `Winamp <Winamp>`__

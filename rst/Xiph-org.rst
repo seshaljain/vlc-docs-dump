@@ -1,1 +1,1 @@
-#REDIRECT [[Xiph.org Foundation]]
+#. REDIRECT `Xiph.org Foundation <Xiph.org_Foundation>`__

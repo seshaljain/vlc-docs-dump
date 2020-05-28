@@ -1,7 +1,42 @@
-[http://svn.videolan.org/listing.php?repname=\ {{{repo}}}&path={{{name}}}
-{{{name}}}]<noinclude>
+[http://svn.videolan.org/listing.php?repname=\ &path= ]
 
-== See also == \* {{tlCommitdiff}} \* {{tlSVNSourceFile}} \*
-{{tlVLCSourceFolder}}
+See also
+--------
 
-[[Category:Templates]] </noinclude>
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commit}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commitdiff}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|File}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|SVNSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFolder}}
+
+`Category:Templates <Category:Templates>`__

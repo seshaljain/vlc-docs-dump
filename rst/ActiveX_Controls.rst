@@ -1,1 +1,1 @@
-#redirect [[ActiveX]]
+#. redirect `ActiveX <ActiveX>`__

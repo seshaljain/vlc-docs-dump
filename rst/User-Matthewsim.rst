@@ -1,1 +1,1 @@
-[http://www.matthewsim.com/ Matthew Simoneau]
+`Matthew Simoneau <http://www.matthewsim.com/>`__

@@ -1,1 +1,1 @@
-#redirect[[WxWidgets_Interface]]
+#. redirect\ `WxWidgets_Interface <WxWidgets_Interface>`__

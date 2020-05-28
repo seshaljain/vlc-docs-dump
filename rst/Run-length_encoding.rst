@@ -1,1 +1,1 @@
-#REDIRECT [[RLE]]
+#. REDIRECT `RLE <RLE>`__

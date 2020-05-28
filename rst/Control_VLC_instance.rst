@@ -1,21 +1,40 @@
-== Control VLC == This section speaks about controlling programmatically
-a running VLC instance
+Control VLC
+-----------
 
-=== HTTP XML/JSon requests === \* Talk to VLC through
-[[VLC_HTTP_requests|HTTP XML/JSon requests]].
+This section speaks about controlling programmatically a running VLC instance
 
-=== D-Bus === \* Talk to VLC through the [[DBus]] protocol for [[Linux]]
-and BSD.
+HTTP XML/JSon requests
+~~~~~~~~~~~~~~~~~~~~~~
 
-=== Telnet === \* Talk to VLC through the [[Telnet]] protocol.
+-  Talk to VLC through `HTTP XML/JSon requests <VLC_HTTP_requests>`__.
 
-=== Mobile === \* [[Control VLC from an Android Phone]] \* [[Control VLC
-from an iPhone]] \* [[Control VLC from a webOS phone]]
+D-Bus
+~~~~~
 
-== Extend VLC == === Skins ===
+-  Talk to VLC through the `DBus <DBus>`__ protocol for `Linux <Linux>`__ and BSD.
 
-=== Extensions ===
+Telnet
+~~~~~~
 
-=== SD ===
+-  Talk to VLC through the `Telnet <Telnet>`__ protocol.
 
-[[Category:Control VLC|*]]
+Mobile
+~~~~~~
+
+-  `Control VLC from an Android Phone <Control_VLC_from_an_Android_Phone>`__
+-  `Control VLC from an iPhone <Control_VLC_from_an_iPhone>`__
+-  `Control VLC from a webOS phone <Control_VLC_from_a_webOS_phone>`__
+
+Extend VLC
+----------
+
+Skins
+~~~~~
+
+Extensions
+~~~~~~~~~~
+
+SD
+~~
+
+`\* <Category:Control_VLC>`__

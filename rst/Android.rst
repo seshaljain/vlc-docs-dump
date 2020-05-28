@@ -1,1 +1,1 @@
-#REDIRECT [[:Category:Android]]
+#. REDIRECT `:Category:Android <:Category:Android>`__

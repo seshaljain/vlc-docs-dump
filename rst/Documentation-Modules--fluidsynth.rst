@@ -1,1 +1,1 @@
-#redirect [[Midi]]
+#. redirect `Midi <Midi>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Console#rc]]
+#. REDIRECT `Console#rc <Console#rc>`__

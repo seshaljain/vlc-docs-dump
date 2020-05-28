@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN Wiki:List of templates]]
+#. REDIRECT `VideoLAN Wiki:List of templates <VideoLAN_Wiki:List_of_templates>`__

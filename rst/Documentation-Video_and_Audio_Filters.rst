@@ -1,105 +1,114 @@
-{{Outdated}}<!-- We don't use wxWidgets anymore -->
-{{RightMenu|Documentation TOC}} VLC includes a system of ''filters''
-that allow you to modify the audio and video.
+.. raw:: mediawiki
 
-==Deinterlacement and Post Processing==
+   {{Outdated}}
 
-VLC is able to [[deinterlace]] a video stream using different
-deinterlacement methods. Deinterlacement can be enabled in the ''Video''
-menu, ''Deinterlacement'' menu item. The ''Blend'' methods gives the
-best results in most cases. The ''discard'' method is a less resource
-consuming alternative, although its results may be slightly compromised.
+.. raw:: mediawiki
 
-On some particular streams ([[MPEG 4]], [[DivX]], [[Xvid]], [[Sorenson
-Video|Sorenson]], etc.), some additional image filtering can be applied
-to the video before display, improving its quality in some cases. This
-can be enabled by using the ''Post processing'' menu item in ''Video''.
-Different levels of post processing can be chosen here. A higher level
-means more filtering.
+   {{RightMenu|Documentation TOC}}
 
-==Video filters==
+VLC includes a system of *filters* that allow you to modify the audio and video.
 
-=== Summary === VLC features several filters able to change the video
-(distortion, brightness adjustment, motion blurring, etc.).
+Deinterlacement and Post Processing
+-----------------------------------
 
-In Windows and Linux, the user must go to the ''Effects and Filters'' in
-the ''Tools'' menu item. A dialogue box entitled "Adjustments and
-Effects" will appear.
+VLC is able to `deinterlace <deinterlace>`__ a video stream using different deinterlacement methods. Deinterlacement can be enabled in the *Video* menu, *Deinterlacement* menu item. The *Blend* methods gives the best results in most cases. The *discard* method is a less resource consuming alternative, although its results may be slightly compromised.
 
-[[File:Video effects - essential, with image adjust
-selected.pngcenter|alt=Effects and Filters dialogue box as it appears in
-a pre-release version of 2.0.0 on Ubuntu Linux]]
+On some particular streams (`MPEG 4 <MPEG_4>`__, `DivX <DivX>`__, `Xvid <Xvid>`__, `Sorenson <Sorenson_Video>`__, etc.), some additional image filtering can be applied to the video before display, improving its quality in some cases. This can be enabled by using the *Post processing* menu item in *Video*. Different levels of post processing can be chosen here. A higher level means more filtering.
 
-In [[macOS]] you can enable these filters through the ''Extended
-Controls panel''. Click on the triangle next to ''Video filters'' to
-select your filters or expand the ''Adjust Image'' section to change the
-contrast, hue, etc.
+Video filters
+-------------
 
-[[File:intf-osx-vfilters.jpg%7Ccenter%7CFilter dialogue box as it
-appears in macOS interface]]
+Summary
+~~~~~~~
 
-iOS: [[File:VLC for iOS Video Filters.pngFilter dialogue box as it
-appears in iOS devices]]
+VLC features several filters able to change the video (distortion, brightness adjustment, motion blurring, etc.).
+
+In Windows and Linux, the user must go to the *Effects and Filters* in the *Tools* menu item. A dialogue box entitled "Adjustments and Effects" will appear.
+
+.. figure:: Video_effects_-_essential,_with_image_adjust_selected.png
+   :alt: Video_effects_-_essential,_with_image_adjust_selected.png
+   :width: 600px
+
+   Video_effects_-_essential,_with_image_adjust_selected.png
+
+In `macOS <macOS>`__ you can enable these filters through the *Extended Controls panel*. Click on the triangle next to *Video filters* to select your filters or expand the *Adjust Image* section to change the contrast, hue, etc.
+
+.. figure:: intf-osx-vfilters.jpg
+   :alt: Filter dialogue box as it appears in macOS interface
+
+   Filter dialogue box as it appears in macOS interface
+
+iOS: |Filter dialogue box as it appears in iOS devices|
 
 Example of combined effects on a video:
 
-[[File:VLC-combined-effects.png%7Ccenter%7Calt=A striking image of a
-video with many effects]]
+.. figure:: VLC-combined-effects.png
+   :alt: VLC-combined-effects.png
 
-=== Rotate ===
+   VLC-combined-effects.png
 
-You can easily rotate a video. Open the ''Effects and Filters'' dialog,
-in the ''Tools menu''
+Rotate
+~~~~~~
 
-[[File:Bbb_rotate.png%7Ccenter%7Calt=A rotated image of a Big Buck Bunny
-video]]
+You can easily rotate a video. Open the *Effects and Filters* dialog, in the *Tools menu*
 
-Select the ''Video Effects'' tab, then the ''Geometry'' one.
+.. figure:: Bbb_rotate.png
+   :alt: Bbb_rotate.png
 
-Check the ''Transform'' checkbox to use rotation presets (90°, 180°,
-270°) or check the ''Rotate'' checkbox to manually select the angle you
-wish to apply.
+   Bbb_rotate.png
 
-[[File:Video effects - geometry, with rotate selected.pngalt=The rotate
-video dialogue box under the wxWidgets interface]]
+Select the *Video Effects* tab, then the *Geometry* one.
 
-==Audio filters==
+Check the *Transform* checkbox to use rotation presets (90°, 180°, 270°) or check the *Rotate* checkbox to manually select the angle you wish to apply.
 
-===Equalizer=== {{Wikipedia|Equalization (audio)}} VLC features a
-10-band graphical equalizer, a device used to alter the relative
-frequencies of audio (e.g. for a bass boost). You can display it by
-activating the advanced GUI on [[wxWidgets]] or by clicking the
-''Equalizer'' button on the macOS interface. The following image is the
-interface of the audio equalizer in the Windows and GNU/Linux interface.
+.. figure:: Video_effects_-_geometry,_with_rotate_selected.png
+   :alt: Video_effects_-_geometry,_with_rotate_selected.png
 
-[[File:Audio Filters.PNGEqualizer dialogue box as it appears in
-wxWidgets for Windows and Linux]]
+   Video_effects_-_geometry,_with_rotate_selected.png
+
+Audio filters
+-------------
+
+Equalizer
+~~~~~~~~~
+
+.. raw:: mediawiki
+
+   {{Wikipedia|Equalization (audio)}}
+
+VLC features a 10-band graphical equalizer, a device used to alter the relative frequencies of audio (e.g. for a bass boost). You can display it by activating the advanced GUI on `wxWidgets <wxWidgets>`__ or by clicking the *Equalizer* button on the macOS interface. The following image is the interface of the audio equalizer in the Windows and GNU/Linux interface.
+
+.. figure:: Audio_Filters.PNG
+   :alt: Equalizer dialogue box as it appears in wxWidgets for Windows and Linux
+
+   Equalizer dialogue box as it appears in wxWidgets for Windows and Linux
 
 The equalizer in the macOS interface
 
-[[File:Intf-osx-equalizer.jpg%7Ccenter%7Calt=Equalizer dialogue box as
-it appears in macOS]]
+.. figure:: Intf-osx-equalizer.jpg
+   :alt: Intf-osx-equalizer.jpg
 
-[[File:VLC for iOS Equalizer.pngalt=Equalizer dialogue box as it appears
-in iOS devices]]
+   Intf-osx-equalizer.jpg
+
+.. figure:: VLC_for_iOS_Equalizer.png
+   :alt: VLC_for_iOS_Equalizer.png
+
+   VLC_for_iOS_Equalizer.png
 
 Presets are available in all of these dialog boxes.
 
-===Other audio filters===
+Other audio filters
+~~~~~~~~~~~~~~~~~~~
 
-At the moment, VLC features two other audio filters: a volume normalizer
-and a filter providing sound spatialization with a headphone. They can
-be enabled in the ''Effects and Filters'' menu item in the ''Tools'' tab
-of the Windows and GNU/Linux interface and in the Audio section of the
-Extended Controls panel of the macOS interface.
+At the moment, VLC features two other audio filters: a volume normalizer and a filter providing sound spatialization with a headphone. They can be enabled in the *Effects and Filters* menu item in the *Tools* tab of the Windows and GNU/Linux interface and in the Audio section of the Extended Controls panel of the macOS interface.
 
-For better control, you need to go to the preferences. To select the
-filters to be enabled, go to ''Audio'', then to ''Filters''. In the
-"audio filters" box, enter the names of the filters to enable, separated
-by commas. Valid names are "equalizer", "normvol" and "headphone".
+For better control, you need to go to the preferences. To select the filters to be enabled, go to *Audio*, then to *Filters*. In the "audio filters" box, enter the names of the filters to enable, separated by commas. Valid names are "equalizer", "normvol" and "headphone".
 
-If you want to tune the behavior of these filters, go to ''Audio,
-Filters, [your filter]''. The equalizer and headphone filters can be
-tuned.
+If you want to tune the behavior of these filters, go to *Audio, Filters, [your filter]*. The equalizer and headphone filters can be tuned.
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Documentation}}
+
+.. |Filter dialogue box as it appears in iOS devices| image:: VLC_for_iOS_Video_Filters.png
+

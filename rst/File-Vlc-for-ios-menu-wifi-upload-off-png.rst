@@ -1,1 +1,1 @@
-[[Category:iOS images]] [[Category:VLC menus]]
+`Category:iOS images <Category:iOS_images>`__ `Category:VLC menus <Category:VLC_menus>`__

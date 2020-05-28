@@ -1,1 +1,1 @@
-#REDIRECT [[Apple Lossless Audio Coding]]
+#. REDIRECT `Apple Lossless Audio Coding <Apple_Lossless_Audio_Coding>`__

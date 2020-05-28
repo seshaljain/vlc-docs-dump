@@ -1,18 +1,18 @@
 Hardware
 
--  [[VBrick]]
--  [[Kasenna MediaBase]]
--  [[IPV]]
+-  `VBrick <VBrick>`__
+-  `Kasenna MediaBase <Kasenna_MediaBase>`__
+-  `IPV <IPV>`__
 
 Software
 
--  [[VLS]]
--  [[VLC media player]]
--  [[Darwin Streaming Server]]
--  [[QuickTime Streaming Server]]
--  [[Helix Universal Server]]
--  [[Windows Media Services]]
--  [[Microsoft IIS (Internet Information Server)]]
--  [[VLC as a replacement to Windows MediaCenter]]
+-  `VLS <VLS>`__
+-  `VLC media player <VLC_media_player>`__
+-  `Darwin Streaming Server <Darwin_Streaming_Server>`__
+-  `QuickTime Streaming Server <QuickTime_Streaming_Server>`__
+-  `Helix Universal Server <Helix_Universal_Server>`__
+-  `Windows Media Services <Windows_Media_Services>`__
+-  `Microsoft IIS (Internet Information Server) <Microsoft_IIS_(Internet_Information_Server)>`__
+-  `VLC as a replacement to Windows MediaCenter <VLC_as_a_replacement_to_Windows_MediaCenter>`__
 
-[[Category:Third parties]] [[Category:Proposed deletion]]
+`Category:Third parties <Category:Third_parties>`__ `Category:Proposed deletion <Category:Proposed_deletion>`__

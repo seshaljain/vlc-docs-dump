@@ -1,25 +1,15 @@
-I'm looking for information on how to use the vlc Everytime I try to
-download a video or audio from like say for instance 'u'tube, the player
-plays the file but it doesn't get saved to my computer. There usually is
-a file created but it will only have a file size of 400kb and when I
-click on it there is always an error msg that 'vlc can't play the file
-doesn't recognize file' etc...
+I'm looking for information on how to use the vlc Everytime I try to download a video or audio from like say for instance 'u'tube, the player plays the file but it doesn't get saved to my computer. There usually is a file created but it will only have a file size of 400kb and when I click on it there is always an error msg that 'vlc can't play the file doesn't recognize file' etc...
 
-"VLC can't recognize the input's format: The format of
-'file:///C:/Users/Public/Music/John%20Hammond%20Get%20Behind%20The%20Mule.mp4'
-cannot be detected. Have a look at the log for details."
+"VLC can't recognize the input's format: The format of 'file:///C:/Users/Public/Music/John%20Hammond%20Get%20Behind%20The%20Mule.mp4' cannot be detected. Have a look at the log for details."
 
 Then I can't see the 'log'...
 
-The instructions on the help pages are so cryptic and confusing. And
-there is reference to a 'wizard' which I don't find...
+The instructions on the help pages are so cryptic and confusing. And there is reference to a 'wizard' which I don't find...
 
 What is up with all that?
 
 Any help would be appreciated.
 
-By the way, the vlc player works fine for files that are already on my
-computer... And I like it for such! I just wish I could download the
-files so I can learn the songs...
+By the way, the vlc player works fine for files that are already on my computer... And I like it for such! I just wish I could download the files so I can learn the songs...
 
 Thank You KC

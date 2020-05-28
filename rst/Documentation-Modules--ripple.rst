@@ -1,9 +1,16 @@
-{{Moduletype=Video filterdescription=ripple video filter}}
+.. raw:: mediawiki
 
-== Example == '''VLC 0.9.0 and above''': % '''vlc --video-filter ripple
-somevideo.avi'''
+   {{Module|name=ripple|type=Video filter|first_version=0.9.0|description=ripple video filter}}
 
-'''Note:''' In versions prior to 0.9.0, ripple was part of the
-[[Documentation:Modules/distort|distort]] video output filter.
+Example
+-------
 
-{{Documentation footer}}
+**VLC 0.9.0 and above**:
+
+``% ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``ripple``\ ````\ ``somevideo.avi``**
+
+**Note:** In versions prior to 0.9.0, ripple was part of the `distort <Documentation:Modules/distort>`__ video output filter.
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

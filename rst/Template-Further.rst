@@ -1,4 +1,3 @@
-''Further information
-   [[{{{1}}}]]''<noinclude>
+   *Further information:*\ `{{{1}}} <{{{1}}}>`__\ 
 
-[[Category:Templates]] </noinclude>
+`Category:Templates <Category:Templates>`__

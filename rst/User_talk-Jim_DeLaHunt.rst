@@ -1,2 +1,1 @@
-Feel free to create a new section and write me a message. I'll see it
-the next time I log in, though that may not be soon.
+Feel free to create a new section and write me a message. I'll see it the next time I log in, though that may not be soon.

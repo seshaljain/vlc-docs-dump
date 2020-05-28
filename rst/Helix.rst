@@ -1,10 +1,24 @@
-{{websitehttps://player.helixcommunity.org/}} {{open}} The '''Helix
-Player''' is a [[media player]] able to play most [[RealMedia]] files,
-and is also used to create the [[Linux]] versions of [[RealPlayer]]. It
-can be run as a media server.
+.. raw:: mediawiki
 
-== Compatibility == {{compat}}
+   {{website|Helix Player|https://player.helixcommunity.org/}}
 
-== Web Links == \* [https://helixcommunity.org/ Helix Community] \*
-[https://helix-server.helixcommunity.org/ Helix Server]
-[[Category:Player]]
+.. raw:: mediawiki
+
+   {{open}}
+
+The **Helix Player** is a `media player <media_player>`__ able to play most `RealMedia <RealMedia>`__ files, and is also used to create the `Linux <Linux>`__ versions of `RealPlayer <RealPlayer>`__. It can be run as a media server.
+
+Compatibility
+-------------
+
+.. raw:: mediawiki
+
+   {{compat}}
+
+Web Links
+---------
+
+-  `Helix Community <https://helixcommunity.org/>`__
+-  `Helix Server <https://helix-server.helixcommunity.org/>`__
+
+`Category:Player <Category:Player>`__

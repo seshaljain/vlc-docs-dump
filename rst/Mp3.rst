@@ -1,1 +1,1 @@
-#REDIRECT [[MP3]]
+#. REDIRECT `MP3 <MP3>`__

@@ -1,28 +1,16 @@
-== Fix Broken AVI Files<br> ==
+Fix Broken AVI Files
+--------------------
 
-If you try to play a broken AVI files, you will have this dialog : <br>
+| If you try to play a broken AVI files, you will have this dialog :
+| |AVI_BrokenDialog_2.1.png|
 
-<br>
+| 
+| Like it says : you can play as is or temporary repair the file, but you can't fix this problem definitively.
 
-[[File:AVI BrokenDialog 2.1.png]]
+Try `Virtualdub <http://www.virtualdub.org/>`__ if you want to.
 
-<br>
+| If you need any help on using Virtualdub, then you can read `this <http://forum.videolan.org/viewtopic.php?f=14&t=45427&p=143688&hilit=virtualdub#p143688>`__ forum post.
+| 
 
-Like it says : you can play as is or temporary repair the file, but you
-can't fix this problem definitively.
+.. |AVI_BrokenDialog_2.1.png| image:: AVI_BrokenDialog_2.1.png
 
-Try [http://www.virtualdub.org/ Virtualdub] if you want to.
-
-If you need any help on using Virtualdub, then you can read
-[http://forum.videolan.org/viewtopic.php?f=14&t=45427&p=143688&hilit=virtualdub#p143688
-this] forum post.<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-{{VSG}}

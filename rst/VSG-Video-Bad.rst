@@ -1,17 +1,25 @@
-==Poor Quality or Strange Video==
+\__NOTOC_\_
 
-'''What are the problems with the playback?'''
+Poor Quality or Strange Video
+-----------------------------
+
+**What are the problems with the playback?**
 
 Some video formats are incompatible with some versions of VLC.
 
-From here on out, we will assume the file which VLC cannot play back is
-supported by your version of VLC.
+From here on out, we will assume the file which VLC cannot play back is supported by your version of VLC.
 
-{{VSGEntryVSG:Video:VisualErrorsVideo is purple (a.k.a. the Smurf
-effect)Why is my video purple in VLC?}}
-{{VSGEntryVSG:Video:Distorted|The video runs but the picture is
-distorted.}}
+.. raw:: mediawiki
 
-<br>
+   {{VSGEntry|Visual errors|VSG:Video:VisualErrors|Video output is '''black''', '''white''' or '''garbled'''; or you see '''green''', '''blue''', or '''red lines''' on your video.}}
 
-{{VSG}}
+.. raw:: mediawiki
+
+   {{VSGEntry|Video is purple (a.k.a. the Smurf effect)|VSG:Video:Smurf Effect|Why is my video purple in VLC?}}
+
+.. raw:: mediawiki
+
+   {{VSGEntry|Video is distorted|VSG:Video:Distorted|The video runs but the picture is distorted.}}
+
+| 
+| 

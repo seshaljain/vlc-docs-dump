@@ -1,1 +1,1 @@
-#REDIRECT [[CELP]]
+#. REDIRECT `CELP <CELP>`__

@@ -1,5 +1,15 @@
-[https://trac.videolan.org/vlc/ticket/\ {{{1}}}
-{{#if:{{{2{{{2}}}35}}</nowiki></code> {{{{PAGENAME}}3535|World
-domination}}
+[https://trac.videolan.org/vlc/ticket/\  {{#if:\|\|Bug #}}]
 
-[[Category:Templates]] [[Category:Security]] </noinclude>
+--------------
+
+Usage:
+
+-  ``{{``\ \ ``|35}}``
+
+{{\|35}}
+
+-  ``{{``\ \ ``|35|World domination}}``
+
+{{\|35|World domination}}
+
+`Category:Templates <Category:Templates>`__ `Category:Security <Category:Security>`__

@@ -1,12 +1,23 @@
-{{Moduletype=Audio outputfirst_version=2.0.0description=AudioQueue (iOS
-/ Mac OS) audio output}}
+.. raw:: mediawiki
 
-This module was rewritten prior to 2.1.0. It had a single shortcut of
-<code>audioqueue</code>. It was replaced with {{docmod|auhal}}
-(AudioUnit).
+   {{Module|name=audioqueue|type=Audio output|os=macOS|first_version=2.0.0|last_version=2.2.8|description=AudioQueue (iOS / Mac OS) audio output}}
 
-== Options == None.
+This module was rewritten prior to 2.1.0. It had a single shortcut of ``audioqueue``. It was replaced with (AudioUnit).
 
-== Source code == \* {{VLCSourceFilemodules/audio_output/audioqueue.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-2.2.git|modules/audio_output/audioqueue.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

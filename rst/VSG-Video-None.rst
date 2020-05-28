@@ -1,21 +1,11 @@
-== Lack of video<br> ==
+Lack of video
+-------------
 
-If you have no video for some type of files only, then that means you
-have no codecs for this type.
+If you have no video for some type of files only, then that means you have no codecs for this type.
 
-Try [[VSG:Video:HowTo:ModifyVideoOutput|changing video output]] and
-check another file.
+Try `changing video output <VSG:Video:HowTo:ModifyVideoOutput>`__ and check another file.
 
-You can also check against the non-supported [[Codec|codec]].
+You can also check against the non-supported `codec <Codec>`__.
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-{{VSG}}
+| 
+| 

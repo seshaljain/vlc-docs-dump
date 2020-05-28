@@ -1,1 +1,3 @@
-Bindings for VLC [[Category:Coding]]
+Bindings for VLC
+
+`Category:Coding <Category:Coding>`__

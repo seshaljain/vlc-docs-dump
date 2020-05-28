@@ -1,17 +1,15 @@
-{{Wikipedia|RTP Control Protocol}}
+.. raw:: mediawiki
 
-'''RTCP''' or '''RTP control protocol''' is a [[protocol]] that works
-with RTP (Real-time transport protocol).<br /> Whereas [[RTP]] sends
-media (e.g. a video stream) over an Internet connection. RTCP sends
-information about the quality of the stream &ndash; things like dropped
-packets or skipped frames &ndash; to report the status of the connection
-itself (and a few other things). It does not send any media whatsoever.
+   {{Wikipedia|RTP Control Protocol}}
 
-Informally, it's similar to the "Tools" -> "Media Information" ->
-"Statistics" display that the Qt interface of VLC will show about
-playing media.
+| **RTCP** or **RTP control protocol** is a `protocol <protocol>`__ that works with RTP (Real-time transport protocol).
+| Whereas `RTP <RTP>`__ sends media (e.g. a video stream) over an Internet connection. RTCP sends information about the quality of the stream – things like dropped packets or skipped frames – to report the status of the connection itself (and a few other things). It does not send any media whatsoever.
 
-== Links == \* [https://tools.ietf.org/html/rfc3550#section-6 RFC 3550]:
-RTP section 6: RTCP
+Informally, it's similar to the "Tools" -> "Media Information" -> "Statistics" display that the Qt interface of VLC will show about playing media.
 
-[[Category:Protocols]]
+Links
+-----
+
+-  `RFC 3550 <https://tools.ietf.org/html/rfc3550#section-6>`__: RTP section 6: RTCP
+
+`Category:Protocols <Category:Protocols>`__

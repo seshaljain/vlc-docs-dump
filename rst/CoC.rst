@@ -1,1 +1,1 @@
-#redirect[[Code_of_Conduct]]
+#. redirect\ `Code_of_Conduct <Code_of_Conduct>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Advanced Audio Coding]]
+#. REDIRECT `Advanced Audio Coding <Advanced_Audio_Coding>`__

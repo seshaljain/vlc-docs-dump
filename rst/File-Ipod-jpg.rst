@@ -1,1 +1,1 @@
-Just making the [[IPod]] page look nicer.
+Just making the `IPod <IPod>`__ page look nicer.

@@ -1,24 +1,61 @@
-<includeonly><!---->{{#ifeq:{{{diry<!-- -->windows =
-{{#ifeq:{{{qn"%PROGRAMFILES%VideoLANVLC"}}<!-- -->linux = <!-- -->}}<!--
--->windows = "%PROGRAMFILES%VideoLANVLCvlc.exe"<!-- -->linux = vlc<!--
--->}}<!---->}}</includeonly><noinclude>
+{{#ifeq:\|y \|{{#switch: \|windows = {{#ifeq:\|n|%PROGRAMFILES%\VideoLAN\VLC|"%PROGRAMFILES%\VideoLAN\VLC"}} \|mac = /Applications/VLC.app/Contents/MacOS \|linux = }} \|{{#switch: \|windows = "%PROGRAMFILES%\VideoLAN\VLC\vlc.exe" \|mac = /Applications/VLC.app/Contents/MacOS/VLC \|linux = vlc }} }}
 
-== Usage == A template for default {{VLC}} locations on desktop
-computers by [[operating system]].
+Usage
+-----
 
-Parameters: \* (unnamed) required. One of <code>windows</code>,
-<code>mac</code> or <code>linux</code>. No default \*
-<code>'''q='''</code> optional (short for ''quotes''). Only checks for
-value <code>n</code> (''no''). Default enabled Showcase of various
-modes: \*
-<code>{{{{PAGENAME}}windows<nowiki>windows<nowiki>q=n}}</nowiki></code>
-*: <samp>{{{{PAGENAME}}|windows|dir=y|q=n}}</samp>*
-<code>{{{{PAGENAME}}mac<nowiki>linux<nowiki>}}</nowiki></code> *:
-<samp>{{{{PAGENAME}}|linux}}</samp>*
-<code>{{{{PAGENAME}}dir=y}}</nowiki></code> \*:
-<samp>{{{{PAGENAME}}dir=y}}</samp>
+A template for default locations on desktop computers by `operating system <operating_system>`__.
 
-== See also == \* {{tlVLC folder}} - simple wrapper template for
-directory paths only (no quotes)
+Parameters:
 
-[[Category:Templates]] </noinclude>
+-  (unnamed) required. One of ``windows``, ``mac`` or ``linux``. No default
+-  **``|dir=``** optional (short for *directory*). Only checks for value ``y`` (*yes*). Default disabled
+-  **``|q=``** optional (short for *quotes*). Only checks for value ``n`` (*no*). Default enabled
+
+Showcase of various modes:
+
+-  ``{{``\ \ ``|windows}}``
+
+      {{\|windows}}
+
+-  ``{{``\ \ ``|windows|dir=y}}``
+
+      {{\|windows|dir=y}}
+
+-  ``{{``\ \ ``|windows|dir=y|q=n}}``
+
+      {{\|windows|dir=y|q=n}}
+
+-  ``{{``\ \ ``|mac}}``
+
+      {{\|mac}}
+
+-  ``{{``\ \ ``|mac|dir=y}}``
+
+      {{\|mac|dir=y}}
+
+-  ``{{``\ \ ``|linux}}``
+
+      {{\|linux}}
+
+-  ``{{``\ \ ``|linux|dir=y}}``
+
+      {{\|linux|dir=y}}
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Path to VLC}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLC folder}}
+
+   - simple wrapper template for directory paths only (no quotes)
+
+`Category:Templates <Category:Templates>`__

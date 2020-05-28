@@ -1,16 +1,19 @@
-{{Moduletype=Access demuxdescription=[[MOD]] demuxer (libmodplug)}}
+.. raw:: mediawiki
 
-== Options == <onlyinclude>{{Option value=boolean description=Enable
-noise reduction algorithm. }} {{Option value=boolean description=Enable
-reverberation. }} {{Option value=integer min=0 description=Reverberation
-level. }} {{Option value=integer min=0 description=Reverberation delay,
-in [[wiktionary:msname=mod-megabass default=disabled
-name=mod-megabass-level default=0 max=100 name=mod-megabass-range
-default=10 max=100 name=mod-surround default=disabled
-name=mod-surround-level default=0 max=100 name=mod-surround-delay
-default=5 max=1000 ms]]. Usual values are from 5 to 40 ms.
-}}</onlyinclude>
+   {{Module|name=mod|type=Access demux|first_version=0.7.1|description=[[MOD]] demuxer (libmodplug)}}
 
-== Source code == \* {{VLCSourceFile|modules/demux/mod.c}}
+Options
+-------
 
-{{Documentation footer}}
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/mod.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

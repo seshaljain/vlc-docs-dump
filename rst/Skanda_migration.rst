@@ -1,58 +1,91 @@
-{{Historical}}
+.. raw:: mediawiki
 
-= DNS = Réduire les TTL des host (.videolan.org) \* git \* svn \*
-mailman \* mail \* munin \* rsync \* anonsvn \* stats2 \* download3
+   {{Historical}}
 
-= VCS =
+DNS
+===
 
-== Git ==
+Réduire les TTL des host (.videolan.org)
+
+-  git
+-  svn
+-  mailman
+-  mail
+-  munin
+-  rsync
+-  anonsvn
+-  stats2
+-  download3
+
+VCS
+===
+
+Git
+---
 
 Also include gitosis
 
-Do NOT install git-daemon pkg.&nbsp;Copy /etc/init.d/git-daemon and
-/etc/default/git-daemon
+Do NOT install git-daemon pkg. Copy /etc/init.d/git-daemon and /etc/default/git-daemon
 
-'''Done'''
+**Done**
 
-== Svn == '''Done'''
+Svn
+---
 
-= Mail =
+**Done**
 
-== Postfix ==
+Mail
+====
 
-Including amavis Currently configured to relay everything to skanda so
-need to change to a proper MX first
+Postfix
+-------
 
-== Mailman ==
+Including amavis Currently configured to relay everything to skanda so need to change to a proper MX first
 
-== Archives ==
+Mailman
+-------
 
-= Web =
+Archives
+--------
 
-== Gitweb ==
+Web
+===
 
-'''Done'''
+Gitweb
+------
 
-= Other =
+**Done**
 
-== Munin ==
+Other
+=====
 
-Need to change stuff on clientss&nbsp;?
+Munin
+-----
 
-== DNS ==
+Need to change stuff on clientss ?
+
+.. _dns-1:
+
+DNS
+---
 
 Who has the access to the registrar to change the ip of ns0.videolan.org
 
-'''Done.'''
+**Done.**
 
-== RSync ==
+RSync
+-----
 
-'''Done'''
+**Done**
 
-== Patchwork ==
+Patchwork
+---------
 
-Not working =&gt; nothing to do '''Done'''
+Not working => nothing to do **Done**
 
-== IPTables == updated for svn, git, rsync
+IPTables
+--------
 
-[[Category:Roots]] [[Category:Proposed deletion]]
+updated for svn, git, rsync
+
+`Category:Roots <Category:Roots>`__ `Category:Proposed deletion <Category:Proposed_deletion>`__

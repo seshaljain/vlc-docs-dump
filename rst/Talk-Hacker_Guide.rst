@@ -1,3 +1,1 @@
-Please put all the Guide's pages as subpages of Documentation:Hacker's
-Guide. Example: <nowiki>[[Documentation:Hacker's Guide/What is
-this?Dionoea]] 11:01, 5 June 2007 (CEST)
+Please put all the Guide's pages as subpages of Documentation:Hacker's Guide. Example: [[Documentation:Hacker's Guide/What is this?|What is this?]]. Thanks. `Dionoea <User:Dionoea>`__ 11:01, 5 June 2007 (CEST)

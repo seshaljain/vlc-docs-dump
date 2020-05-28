@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Snapshots]]
+#. REDIRECT `Documentation:Snapshots <Documentation:Snapshots>`__

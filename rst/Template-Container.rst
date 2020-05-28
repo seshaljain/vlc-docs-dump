@@ -1,1 +1,1 @@
-#redirect [[template:mux]]
+#. redirect `template:mux <template:mux>`__

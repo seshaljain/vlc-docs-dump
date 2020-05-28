@@ -1,1 +1,1 @@
-#REDIRECT [[IPlayer.cs]]
+#. REDIRECT `IPlayer.cs <IPlayer.cs>`__

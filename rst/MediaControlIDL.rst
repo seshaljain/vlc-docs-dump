@@ -1,172 +1,204 @@
-{{See alsoThe MediaControl IDL API was removed in 2010. Use the modern
-[[Python bindings|LibVLC Python API]] instead.}} :''This page formerly
-contained example code for Python bindings.'' <syntaxhighlight lang="c">
-module VLC {
+.. raw:: mediawiki
 
-   const float VERSION = 1.0;
+   {{See also|MediaControlAPI}}
 
-   enum PositionOrigin {
-      AbsolutePosition, RelativePosition, // Like relative, but wraps at
-      the end of a file for instance: ModuloPosition
+.. raw:: mediawiki
 
-   };
+   {{Historical|The MediaControl IDL API was removed in 2010. Use the modern [[Python bindings|LibVLC Python API]] instead.}}
 
-   enum PositionKey {
-      // For raw access ByteCount, // Frame number SampleCount, // In
-      milliseconds MediaTime
+   *This page formerly contained example code for Python bindings.*
 
-   };
+.. code:: c
 
-   struct Position {
-      PositionOrigin origin; PositionKey key; long long value;
+   module VLC {
 
-   };
+     const float VERSION = 1.0;
 
-   exception PositionKeyNotSupported { string message; }; exception
-   PositionOriginNotSupported { string message; }; exception
-   InvalidPosition { string message; }; exception PlaylistException {
-   string message; }; exception InternalException { string message; };
+     enum PositionOrigin {
+       AbsolutePosition, 
+       RelativePosition, 
+       // Like relative, but wraps at the end of a file for instance:
+       ModuloPosition
+     };
 
-   typedef sequence<string> PlaylistSeq; typedef sequence<octet>
-   ByteSeq;
+     enum PositionKey {
+       // For raw access
+       ByteCount, 
+       // Frame number
+       SampleCount,
+       // In milliseconds
+       MediaTime
+     };
 
-   struct RGBPicture {
-      short width; short height; long type; ByteSeq data; // Timestamp
-      (absolute position in the movie) in ms long long date;
+     struct Position {
+       PositionOrigin origin;
+       PositionKey key;
+       long long value;
+     };
 
-   };
+     exception PositionKeyNotSupported    { string message; };
+     exception PositionOriginNotSupported { string message; };
+     exception InvalidPosition            { string message; };
+     exception PlaylistException          { string message; };
+     exception InternalException          { string message; };
 
-   struct StreamInformation {
-      short width; short height; float aspect_ratio; long bitrate;
-      string codec; string author;
+     typedef sequence<string> PlaylistSeq;
+     typedef sequence<octet> ByteSeq;
 
-   };
+     struct RGBPicture {
+       short width;
+       short height;
+       long type;
+       ByteSeq data;
+       // Timestamp (absolute position in the movie) in ms
+       long long date;
+     };
 
-   typedef sequence<RGBPicture> RGBPictureSeq;
+     struct StreamInformation {
+       short width;
+       short height;
+       float aspect_ratio;
+       long bitrate;
+       string codec;
+       string author;
+     };
 
-   enum PlayerStatus { PlayingStatus, PauseStatus, ForwardStatus,
-   BackwardStatus, InitStatus, EndStatus, UndefinedStatus };
+     typedef sequence<RGBPicture> RGBPictureSeq;
 
-   struct StatusInformation {
-      PlayerStatus streamstatus; string url; /\* The URL of the current
-      media stream */ long long position; /* actual location in the
-      stream (in ms) */ long long length; /* total length of the stream
-      (in ms) \*/
+     enum PlayerStatus { PlayingStatus, PauseStatus, ForwardStatus, BackwardStatus, InitStatus, EndStatus, UndefinedStatus };
 
-   };
+     struct StatusInformation {
+       PlayerStatus streamstatus;
+       string url;             /* The URL of the current media stream   */
+       long long position;     /* actual location in the stream (in ms) */
+       long long length;       /* total length of the stream (in ms)    */
+     };
 
-   interface Playlist { // Return a playlist item id int add(in string
-   a_file) raises (PlaylistException);
-
-      void next(in string a_file)
+     interface Playlist 
+     {
+       // Return a playlist item id
+       int add(in string a_file)
          raises (PlaylistException);
 
-      void prev(in string a_file)
+       void next(in string a_file)
          raises (PlaylistException);
 
-      // Set the new current item void set(int item_id) raises
-      (PlaylistException);
-
-      void remove(int item_id)
+       void prev(in string a_file)
          raises (PlaylistException);
 
-      // Clear the whole playlist void clear () raises
-      (PlaylistException);
+       // Set the new current item
+       void set(int item_id)
+         raises (PlaylistException);
 
-      // Return the list of files in playlist PlaylistSeq get_list ()
-      raises (PlaylistException);
+       void remove(int item_id)
+         raises (PlaylistException);
 
-   }
+       // Clear the whole playlist
+       void clear ()
+         raises (PlaylistException);
 
-   // MediaControl interface is similar to // ControlledStream interface
-   in MSS. // It can be inherited by flow endpoints or // FlowConnection
-   interfaces. interface MediaControl { // \**\* Initialization // Exit
-   the player oneway void exit ();
+       // Return the list of files in playlist
+       PlaylistSeq get_list ()
+         raises (PlaylistException);
+     }
 
-      // Return the IDL API version string get_api_version();
+     // MediaControl interface is similar to
+     // ControlledStream interface in MSS.
+     // It can be inherited by flow endpoints or
+     // FlowConnection interfaces.
+     interface MediaControl
+     {
+       // *** Initialization
+       // Exit the player
+       oneway void exit ();
 
-      // Return the player version (player name version) string
-      get_player_version();
+       // Return the IDL API version
+       string get_api_version();
 
-      // \**\* Playback control // The a_position parameters are
-      facultative. void start(in Position a_position) raises
-      (InternalException, InvalidPosition, PlaylistException);
+       // Return the player version (player name   version)
+       string get_player_version();
 
-      void pause(in Position a_position)
+       // *** Playback control
+       // The a_position parameters are facultative.
+       void start(in Position a_position)
+         raises (InternalException, InvalidPosition, PlaylistException);
+
+       void pause(in Position a_position)
          raises (InternalException, InvalidPosition);
 
-      void resume(in Position a_position)
+       void resume(in Position a_position)
          raises (InternalException, InvalidPosition);
 
-      void stop(in Position a_position)
+       void stop(in Position a_position)
          raises (InternalException, InvalidPosition);
 
-      Position get_media_position(in PositionOrigin an_origin,
-         in PositionKey a_key)
-
-      ..
-
+       Position get_media_position(in PositionOrigin an_origin,
+                   in PositionKey a_key)
          raises (InternalException, PositionKeyNotSupported);
 
-      void set_media_position(in Position a_position)
-         raises (InternalException, PositionKeyNotSupported,
-         InvalidPosition);
+       void set_media_position(in Position a_position)
+         raises (InternalException, PositionKeyNotSupported, InvalidPosition);
 
-      // Rate control. The rate is a signed value, corresponding to //
-      the percentage of the speed ( 100 = normal, -100 = reverse...)
+       // Rate control. The rate is a signed value, corresponding to
+       // the percentage of the speed ( 100 = normal, -100 = reverse...)
 
-      int get_rate()
+       int get_rate()
          raises (InternalException);
 
-      void set_rate(int rate)
+       void set_rate(int rate)
          raises (InternalException);
 
-      // \**\* Media information
+       // *** Media information
 
-      StatusInformation get_status_information ()
+       StatusInformation get_status_information ()
          raises (InternalException);
 
-      // Return information about the current stream StreamInformation
-      get_stream_information () raises (InternalException);
-
-      // \**\* Playlist handling Playlist playlist() raises
-      (InternalException);
-
-      // \**\* Video
-
-      // Return a snapshot of the currently displayed picture RGBPicture
-      snapshot (in Position a_position) raises (InternalException);
-
-      // Return the whole snapshot cache contents RGBPictureSeq
-      all_snapshots () raises (InternalException);
-
-      // Display the message string as caption, // between "begin" and
-      "end" positions void render_text (in string message, in Position
-      begin, in Position end) raises (InternalException);
-
-      // Set the visual ID (XID in X-Window, HWIN on Win32, ??? on MacOS
-      // X) for the player window void set_visual(long xid) raises
-      (InternalException);
-
-      boolean get_fullscreen()
+       // Return information about the current stream
+       StreamInformation get_stream_information ()
          raises (InternalException);
 
-      void set_fullscreen(boolean full)
+       // *** Playlist handling
+       Playlist playlist()
          raises (InternalException);
 
-      // \**\* Audio
+       // *** Video
 
-      // Volume is normalized in [0..100] unsigned short
-      sound_get_volume() raises (InternalException);
-
-      void sound_set_volume(in unsigned short volume)
+       // Return a snapshot of the currently displayed picture
+       RGBPicture snapshot (in Position a_position)
          raises (InternalException);
 
-      void sound_mute()
+       // Return the whole snapshot cache contents
+       RGBPictureSeq all_snapshots ()
          raises (InternalException);
 
+       // Display the message string as caption, 
+       // between "begin" and "end" positions
+       void render_text (in string message, in Position begin, in Position end)
+         raises (InternalException);
+
+       // Set the visual ID (XID in X-Window, HWIN on Win32, ??? on MacOS
+       // X) for the player window
+       void set_visual(long xid)
+         raises (InternalException);
+
+       boolean get_fullscreen()
+         raises (InternalException);
+
+       void set_fullscreen(boolean full)
+         raises (InternalException);
+
+       // *** Audio
+
+       // Volume is normalized in [0..100]
+       unsigned short sound_get_volume()
+         raises (InternalException);
+
+       void sound_set_volume(in unsigned short volume)
+         raises (InternalException);
+
+       void sound_mute()
+         raises (InternalException);
+     };
    };
 
-}; </syntaxhighlight>
-
-[[Category:Bindings]] [[Category:Example code]]
+`Category:Bindings <Category:Bindings>`__ `Category:Example code <Category:Example_code>`__

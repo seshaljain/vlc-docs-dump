@@ -1,1 +1,1 @@
-[[Category:Documentation]]
+`Category:Documentation <Category:Documentation>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[SoC 2016]]
+#. REDIRECT `SoC 2016 <SoC_2016>`__

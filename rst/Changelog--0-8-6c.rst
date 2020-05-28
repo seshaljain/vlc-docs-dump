@@ -1,21 +1,42 @@
-= Changes between 0.8.6b and 0.8.6c =
+Changes between 0.8.6b and 0.8.6c
+=================================
 
-== Various bugfixes == Notably: \* Windows Vista compatibility \*
-[[Documentation:Modules/cropDirect3D]] \* Fullscreen change crash on Mac
-OS X \* [[Documentation:Modules/rss|RSS]] filter string overflow \* Few
-memory leaks \* [[MKV]] demuxer crash (related to seeking)
+Various bugfixes
+----------------
 
-== CDDA / Vorbis / Theora / SAP plugins == \* Security updates
-([http://www.videolan.org/sa0702.html VideoLAN-SA-0702], {{CVE200928}})
+Notably:
 
-== Demuxers == \* Fixed a problem with detecting embedded subtitles
-(GAB2 format) in AVI \* Prevent WAV file integer overflow
-({{CVE2007-3468}})
+-  Windows Vista compatibility
+-  `Cropping <Documentation:Modules/crop>`__ in `Direct3D <Documentation:Modules/direct3d>`__
+-  Fullscreen change crash on Mac OS X
+-  `RSS <Documentation:Modules/rss>`__ filter string overflow
+-  Few memory leaks
+-  `MKV <MKV>`__ demuxer crash (related to seeking)
 
-== Decoders == \* Updated [[FLAC]] API compatibility
+CDDA / Vorbis / Theora / SAP plugins
+------------------------------------
 
-== Input == \* Support for new [[V4l#v4l2|v4l2]] encoder API
+-  Security updates (`VideoLAN-SA-0702 <http://www.videolan.org/sa0702.html>`__, , )
 
-== Localisation == \* New localisation: Arabic, Persian
+Demuxers
+--------
 
-[[Category:Changelog]]
+-  Fixed a problem with detecting embedded subtitles (GAB2 format) in AVI
+-  Prevent WAV file integer overflow ( & )
+
+Decoders
+--------
+
+-  Updated `FLAC <FLAC>`__ API compatibility
+
+Input
+-----
+
+-  Support for new `v4l2 <V4l#v4l2>`__ encoder API
+
+Localisation
+------------
+
+-  New localisation: Arabic, Persian
+
+`Category:Changelog <Category:Changelog>`__

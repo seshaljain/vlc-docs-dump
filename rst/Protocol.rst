@@ -1,1 +1,1 @@
-#REDIRECT[[Protocols]]
+#. REDIRECT\ `Protocols <Protocols>`__

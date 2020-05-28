@@ -1,13 +1,34 @@
-{{See also|Documentation:Modules/dvdnav}}
+.. raw:: mediawiki
 
-{{Moduletype=Access demuxdescription=[[DVD]] without menus}}
+   {{See also|Documentation:Modules/dvdnav}}
 
-Shortcuts to this module include <code>dvdread</code> and
-<code>dvdsimple</code>. This module uses [[libdvdread]]. The option
-<code>dvdread-css-method</code> has been deprecated since 1.1.0.
+.. raw:: mediawiki
 
-== Options == {{Option value=integer description=Default DVD angle }}
+   {{Module|name=dvdread|type=Access demux|first_version=0.8.0|description=[[DVD]] without menus}}
 
-== Source code == \* {{VLCSourceFile|modules/access/dvdread.c}}
+Shortcuts to this module include ``dvdread`` and ``dvdsimple``. This module uses `libdvdread <libdvdread>`__. The option ``dvdread-css-method`` has been deprecated since 1.1.0.
 
-{{Documentation}}
+Options
+-------
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvdread-angle
+   |value=integer
+   |default=1
+   |description=Default DVD angle
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/dvdread.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

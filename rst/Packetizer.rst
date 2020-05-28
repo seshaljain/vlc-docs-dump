@@ -1,8 +1,16 @@
-{{Wiktionary|packetize}}
+.. raw:: mediawiki
 
-A packetizer (or packetiser) is a [[module]] that groups data into
-''packets'' (chunks).
+   {{Wiktionary|packetize}}
 
-== Links == \* {{VLCSourceFolder|modules/packetizer}}
+A packetizer (or packetiser) is a `module <module>`__ that groups data into *packets* (chunks).
 
-[[Category:Glossary]]
+Links
+-----
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFolder|modules/packetizer}}
+
+`Category:Glossary <Category:Glossary>`__

@@ -1,198 +1,172 @@
-This page summarize the current list of ideas for VideoLAN project, for
-[https://developers.google.com/season-of-docs/ Google Season of Docs
-2020].
+This page summarize the current list of ideas for VideoLAN project, for `Google Season of Docs 2020 <https://developers.google.com/season-of-docs/>`__.
 
-The list is not exhaustive, and is not limitative. Feel free to apply
-with '''your own idea!'''
+The list is not exhaustive, and is not limitative. Feel free to apply with **your own idea!**
 
-== Introduction &amp; Information == [[File:Asterix VLC.svgright]]
+Introduction & Information
+--------------------------
 
-This wiki page covers the attempt by the [[VideoLAN]] project to act as
-a mentoring organization for
-[https://developers.google.com/season-of-docs/ Google Season of Docs
-2020] in order to improve the [[VLC]] documentation.
+.. figure:: Asterix_VLC.svg
+   :alt: Asterix_VLC.svg
 
-=== Season of Docs ===
+   Asterix_VLC.svg
 
-[https://developers.google.com/season-of-docs/ Google Season of Docs] is
-a way for '''technical writers''' to have a paid '''stipden''' by
-'''Google''' to work on open source projects and improve their
-documentation.
+This wiki page covers the attempt by the `VideoLAN <VideoLAN>`__ project to act as a mentoring organization for `Google Season of Docs 2020 <https://developers.google.com/season-of-docs/>`__ in order to improve the `VLC <VLC>`__ documentation.
 
-[[VLC]] is in very big need of documentation, both for developers and
-end-users, and we're in the progress of revamping all that.
+Season of Docs
+~~~~~~~~~~~~~~
 
-'''GSoD''' is run by the same people running the ''Google Summer of
-Code'' program.
+`Google Season of Docs <https://developers.google.com/season-of-docs/>`__ is a way for **technical writers** to have a paid **stipden** by **Google** to work on open source projects and improve their documentation.
 
-[[VideoLAN]] was a ''Google Summer of Code'' mentoring organization in
-[[SoC 20072008]], [[SoC 20092010]], [[SoC 20112013]], [[SoC 20162017]],
-[[SoC_20182019]] and [[SoC_2020|2020]]. And GSoD in 2019.
+`VLC <VLC>`__ is in very big need of documentation, both for developers and end-users, and we're in the progress of revamping all that.
 
-This page list some documentation ideas for both VLC and VLC mobile
-ports, developer and user-facing documentations.
+**GSoD** is run by the same people running the *Google Summer of Code* program.
 
-=== VLC ===
+`VideoLAN <VideoLAN>`__ was a *Google Summer of Code* mentoring organization in `2007 <SoC_2007>`__, `2008 <SoC_2008>`__, `2009 <SoC_2009>`__, `2010 <SoC_2010>`__, `2011 <SoC_2011>`__, `2013 <SoC_2013>`__, `2016 <SoC_2016>`__, `2017 <SoC_2017>`__, `2018 <SoC_2018>`__, `2019 <SoC_2019>`__ and `2020 <SoC_2020>`__. And GSoD in 2019.
 
-{{VLC}} is a cross-platform multimedia player, encoder and streamer
-application. It is one of the most successful open-source projects
-without any professional structure underneath.
+This page list some documentation ideas for both VLC and VLC mobile ports, developer and user-facing documentations.
 
-{{VLC}} is downloaded at an approximate monthly rate of 28 millions from
-the main website and that's not including third-party distributions
-(Linux)!
+VLC
+~~~
 
-You can find more information on
-[http://en.wikipedia.org/wiki/VLC_media_player VLC on Wikipedia] or on
-this [[Main Page|wiki]].
+.. raw:: mediawiki
+
+   {{VLC}}
+
+is a cross-platform multimedia player, encoder and streamer application. It is one of the most successful open-source projects without any professional structure underneath.
+
+.. raw:: mediawiki
+
+   {{VLC}}
+
+is downloaded at an approximate monthly rate of 28 millions from the main website and that's not including third-party distributions (Linux)!
+
+You can find more information on `VLC on Wikipedia <http://en.wikipedia.org/wiki/VLC_media_player>`__ or on this `wiki <Main_Page>`__.
 
 The documentation of VLC is mostly for end-users using VLC.
 
-=== libVLC ===
+libVLC
+~~~~~~
 
-The engine of VLC is '''libVLC'''.
+The engine of VLC is **libVLC**.
 
-It can be used to do 3rd party applications, media players, or other
-type of multimedia application.
+It can be used to do 3rd party applications, media players, or other type of multimedia application.
 
-Its API is documented but is far from being simple to understand. It
-should be improved.
+Its API is documented but is far from being simple to understand. It should be improved.
 
-== How to Start == === Find an idea === First, you need to find an idea.
+How to Start
+------------
 
-This current page gives you a list of ideas. Those ideas are '''NOT
-exhaustive''': you can bring your own idea! Some of the best ideas we've
-ever had were '''custom''' ideas!
+Find an idea
+~~~~~~~~~~~~
 
-=== Submit your idea === You need to submit your idea on the ''Google
-Season of Doc'' platform.
+First, you need to find an idea.
 
-You should do so, quite quickly, so that we can give you early feedback
-to improve your submission.
+This current page gives you a list of ideas. Those ideas are **NOT exhaustive**: you can bring your own idea! Some of the best ideas we've ever had were **custom** ideas!
 
-=== Let's get in touch ===
+Submit your idea
+~~~~~~~~~~~~~~~~
 
-If you have a doubt, are not sure about anything or want clarification,
-please get in touch with us.
+You need to submit your idea on the *Google Season of Doc* platform.
 
-We have 3 major communication channels: Our
-[https://mailman.videolan.org/mailman/listinfo mailing-lists] to discuss
-patches and further development related topics. Furthermore, we have our
-[http://forum.videolan.org web forums] for VLC-related end-user support.
-Finally, there is our IRC channel ''#videolan'' (for libVLC) '' on the
-''Freenode'' network. It's open to any kind of discussion. Usage issues,
-questions how to compile VLC, getting to know the fellow developers,
-etc.
+You should do so, quite quickly, so that we can give you early feedback to improve your submission.
 
-All our mentors will be on the IRC channel, which is quite active, so it
-will be easy to find the right person in no time.
+Let's get in touch
+~~~~~~~~~~~~~~~~~~
 
-== Ideas ==
+If you have a doubt, are not sure about anything or want clarification, please get in touch with us.
 
-=== Continue the Modernization of the VLC user documentation ===
+We have 3 major communication channels: Our `mailing-lists <https://mailman.videolan.org/mailman/listinfo>`__ to discuss patches and further development related topics. Furthermore, we have our `web forums <http://forum.videolan.org>`__ for VLC-related end-user support. Finally, there is our IRC channel *#videolan* (for libVLC) '' on the *Freenode* network. It's open to any kind of discussion. Usage issues, questions how to compile VLC, getting to know the fellow developers, etc.
 
-'''Project description''':
+All our mentors will be on the IRC channel, which is quite active, so it will be easy to find the right person in no time.
 
-The new {{VLC}} user [[Documentation:Documentation/|documentation]] was
-done during GSoD_2019. We need to go further.
+Ideas
+-----
 
-'''Tasks to do''':
+Continue the Modernization of the VLC user documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Project description**:
+
+The new user `documentation <Documentation:Documentation/>`__ was done during GSoD_2019. We need to go further.
+
+**Tasks to do**:
 
 -  Finish the remaining parts
 -  Fix the small errors in the documentation
 -  Prepare for 4.0 release
--  Prepare options and module documentation, so that developers can help
-   filling them in
+-  Prepare options and module documentation, so that developers can help filling them in
 -  Prepare for translations
 
-'''Requirements''': Goodwill and love for your users.
+**Requirements**: Goodwill and love for your users.
 
-'''Proposed mentor''': J-b, Simon, Alex
+**Proposed mentor**: J-b, Simon, Alex
 
-=== Create the VLC user documentation for one mobile port (Android or
-iOS) ===
+Create the VLC user documentation for one mobile port (Android or iOS)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-'''Project description''':
+**Project description**:
 
-While the {{VLC}} user [[Documentation:Documentation/|documentation]]
-for desktop is outdated, the mobile versions are almost not documented
-at all.
+While the user `documentation <Documentation:Documentation/>`__ for desktop is outdated, the mobile versions are almost not documented at all.
 
-This requires a complete new project, with screenshots and a new
-architecture for the documentation, either for iOS or Android devices.
+This requires a complete new project, with screenshots and a new architecture for the documentation, either for iOS or Android devices.
 
-All options are open, but it would be nice to fit the desktop
-documentation, and maybe see some convergence.
+All options are open, but it would be nice to fit the desktop documentation, and maybe see some convergence.
 
-This idea is actually 2 ideas, one for '''Android''', one for '''iOS'''.
+This idea is actually 2 ideas, one for **Android**, one for **iOS**.
 
-'''Tasks to do''':
+**Tasks to do**:
 
--  Help us structure the documentation (chapters separation, add things,
-   etc...)
+-  Help us structure the documentation (chapters separation, add things, etc...)
 -  Write the documentation to fit mobile versions of VLC
 -  Screenshot from mobile version
 -  Converge with the desktop documentation, if possible.
 
-'''Requirements''': Goodwill and love for your users. ''also, either an
-iOS or an Android device''
+**Requirements**: Goodwill and love for your users. *also, either an iOS or an Android device*
 
-'''Proposed mentor''': Alex, Geoffrey, J-b (Android), Soomin, Caro,
-Felix (iOS)
+**Proposed mentor**: Alex, Geoffrey, J-b (Android), Soomin, Caro, Felix (iOS)
 
-=== Improve libVLC developer documentation ===
+Improve libVLC developer documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-'''Project description''':
+**Project description**:
 
-[[libVLC]] is the engine of VLC and can be used by 3rd party application
-for documentation. It is the core of our technologies, and is used a
-lot.
+`libVLC <libVLC>`__ is the engine of VLC and can be used by 3rd party application for documentation. It is the core of our technologies, and is used a lot.
 
-Currently the libVLC API is precisely documented, for each API call; but
-it is lacking a higher level document on how to use it, with samples and
-examples, and how to use that for other development languages (C, C++,
-C#, Java, Obj-C, etc..).
+Currently the libVLC API is precisely documented, for each API call; but it is lacking a higher level document on how to use it, with samples and examples, and how to use that for other development languages (C, C++, C#, Java, Obj-C, etc..).
 
 It is also missing some introduction on the capabilities of the engine.
 
-Therefore, libVLC can be hard to use, when you are starting a project,
-and this is quite damaging for the developers using libVLC.
+Therefore, libVLC can be hard to use, when you are starting a project, and this is quite damaging for the developers using libVLC.
 
-'''Tasks to do''':
+**Tasks to do**:
 
--  Understand the usage of libVLC on the different platforms and its
-   capabilities;
+-  Understand the usage of libVLC on the different platforms and its capabilities;
 -  Write high-level documentation of the different libVLC classes;
 -  Write samples that matches those classes;
--  Prepare to get cross-language samples in the documentation, a bit
-   like MSDN;
+-  Prepare to get cross-language samples in the documentation, a bit like MSDN;
 -  Write introductions to libVLC usage.
 
-'''Proposed mentor''': Thomas, J-b, Hugo
+**Proposed mentor**: Thomas, J-b, Hugo
 
-=== Improve VLCKit (libVLC binding for macOS) documentation ===
+Improve VLCKit (libVLC binding for macOS) documentation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-'''Project description''':
+**Project description**:
 
-Currently the [[VLCKit]] code base is documented but some part is now
-outdated and needs to be updated.
+Currently the `VLCKit <VLCKit>`__ code base is documented but some part is now outdated and needs to be updated.
 
-Indeed, it will be beneficial for VLCKit to have and overview of it's
-current documentation and update it if needed.
+Indeed, it will be beneficial for VLCKit to have and overview of it's current documentation and update it if needed.
 
-'''Tasks to do''':
+**Tasks to do**:
 
--  Understand the usage of VLCKit on the different platforms (iOS,
-   macOS)
+-  Understand the usage of VLCKit on the different platforms (iOS, macOS)
 -  Study exposed VLCKit methods
 -  Check current documentation if outdated
 -  Add documentation necessary
--  Update the documentation rendering method(maybe something else than
-   Doxygen?)
+-  Update the documentation rendering method(maybe something else than Doxygen?)
 
-'''Requirements''': This project is easier with '''Objective-C'''
-knowledge.
+**Requirements**: This project is easier with **Objective-C** knowledge.
 
-'''Proposed mentor''': Carola Nitz, Felix Paul Kühne, Soomin Lee
+**Proposed mentor**: Carola Nitz, Felix Paul Kühne, Soomin Lee
 
-[[Category:Mentorings]]
+`Category:Mentorings <Category:Mentorings>`__

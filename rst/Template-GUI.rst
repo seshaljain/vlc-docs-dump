@@ -1,3 +1,3 @@
-<abbr title="Graphical User Interface">GUI</abbr><noinclude>
+GUI
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

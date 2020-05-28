@@ -1,16 +1,28 @@
-{{Moduletype=Access filterdescription=toggle recording incoming data to
-disk}}
+.. raw:: mediawiki
 
-This access filter will enable recording incoming data to disk when the
-user presses the <kbd>r</kbd> key. Note that this is very unlikely to
-work for sources using an encapsulation method other than ts.
+   {{Module|name=record|type=Access filter|first_version=0.8.2|description=toggle recording incoming data to disk}}
 
-== Options == {{Option value=string description=Directory where recorded
-that will be stored. }}
+This access filter will enable recording incoming data to disk when the user presses the r key. Note that this is very unlikely to work for sources using an encapsulation method other than ts.
 
-== Example ==
-   % '''vlc --access-filter record <some udp ts stream>'''
+Options
+-------
 
-: VLC will toggle recording when you press the <kbd>r</kbd> hotkey.
+.. raw:: mediawiki
 
-{{Documentation footer}}
+   {{Option
+   |name=record-path
+   |value=string
+   |default=""
+   |description=Directory where recorded that will be stored.
+   }}
+
+Example
+-------
+
+``% ``\ **``vlc``\ ````\ ``--access-filter``\ ````\ ``record``\ ````\ **
+
+   VLC will toggle recording when you press the r hotkey.
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

@@ -1,1 +1,1 @@
-Just li'l old [http://www.aleph0.com/~chjones me]
+Just li'l old `me <http://www.aleph0.com/~chjones>`__

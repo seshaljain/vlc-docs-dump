@@ -1,1 +1,1 @@
-#REDIRECT [[Libdvbpsi]]
+#. REDIRECT `Libdvbpsi <Libdvbpsi>`__

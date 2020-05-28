@@ -1,7 +1,14 @@
-= Changes between 0.8.6 and 0.8.6a =
+Changes between 0.8.6 and 0.8.6a
+================================
 
-== [[Documentation:Modules/cdda0701}}, {{CVE|2007-0017}})
+`CDDA <Documentation:Modules/cdda>`__ / VCDX plugins
+----------------------------------------------------
 
-== [[Mac OS X]] Interface == \* Fullscreen controller improvements
+-  Security updates (, )
 
-[[Category:Changelog]]
+`Mac OS X <Mac_OS_X>`__ Interface
+---------------------------------
+
+-  Fullscreen controller improvements
+
+`Category:Changelog <Category:Changelog>`__

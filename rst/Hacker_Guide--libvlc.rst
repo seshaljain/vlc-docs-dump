@@ -1,43 +1,32 @@
-{{Back to|Hacker Guide}} ==Libvlc Startup==
+.. raw:: mediawiki
 
-===Introduction=== [[Libvlc]] represents the underlying {{API}} of
-{{VLC}}. VLC itself is just a wrapper around libvlc. By utilizing libvlc
-developers can take advantage of all the complex functionalities of vlc.
-Libvlc is generated as a shared library and can be wrapped up with
-numerous interfaces, including both Python and Java bindings. This
-allows the end user to build applications around the vlc code base and
-take advantage of all the plugins available to vlc instead of writing
-everything from scratch.
+   {{Back to|Hacker Guide}}
 
-This document will explain how to get started using libvlc. It will step
-through the instantiation of a libvlc instance and explain the typical
-startup procedure of libvlc.
+Libvlc Startup
+--------------
 
-===Libvlc Instantiation===
+Introduction
+~~~~~~~~~~~~
 
-Libvlc is a singleton. For each application wrapped around libvlc, only
-one libvlc instance should be running. In order to create an instance of
-libvlc, you must call <code>libvlc_new()</code>. This function
-initializes the thread system and allocates a libvlc instance.
-<code>libvlc_new()</code> resides in
-{{VLCSourceFile|src/config/core.c}}.
+`Libvlc <Libvlc>`__ represents the underlying of . VLC itself is just a wrapper around libvlc. By utilizing libvlc developers can take advantage of all the complex functionalities of vlc. Libvlc is generated as a shared library and can be wrapped up with numerous interfaces, including both Python and Java bindings. This allows the end user to build applications around the vlc code base and take advantage of all the plugins available to vlc instead of writing everything from scratch.
 
-<code>libvlc_new()</code> calls <code>libvlc_InternalInit()</code> which
-handles command line parsing, loads the module bank, and spawns a number
-of threads to handle various vlc subsystems. The threads are spawned
-from inside the function <code>playlist_ThreadCreate()</code>. Below is
-a list of thread start functions that are run for playlist processing.
-The threads corresponding to these functions are spawned in the order
-listed.
+This document will explain how to get started using libvlc. It will step through the instantiation of a libvlc instance and explain the typical startup procedure of libvlc.
 
--  <code>RunPreparse()</code> - Perform initial parsing of the playlist
--  <code>RunFetcher()</code> - load artwork associated with playlist
-   item
--  <code>RunControlThread()</code> - perform playlist scheduling and
-   playing
+Libvlc Instantiation
+~~~~~~~~~~~~~~~~~~~~
 
-See [[{{#rel2abs:../Playlist}}|Playlist]] for more details.
+Libvlc is a singleton. For each application wrapped around libvlc, only one libvlc instance should be running. In order to create an instance of libvlc, you must call ``libvlc_new()``. This function initializes the thread system and allocates a libvlc instance. ``libvlc_new()`` resides in .
 
-{{Hacker_Guide}}
+``libvlc_new()`` calls ``libvlc_InternalInit()`` which handles command line parsing, loads the module bank, and spawns a number of threads to handle various vlc subsystems. The threads are spawned from inside the function ``playlist_ThreadCreate()``. Below is a list of thread start functions that are run for playlist processing. The threads corresponding to these functions are spawned in the order listed.
 
-[[Category:libVLC|*]]
+-  ``RunPreparse()`` - Perform initial parsing of the playlist
+-  ``RunFetcher()`` - load artwork associated with playlist item
+-  ``RunControlThread()`` - perform playlist scheduling and playing
+
+See `Playlist <{{#rel2abs:../Playlist}}>`__ for more details.
+
+.. raw:: mediawiki
+
+   {{Hacker_Guide}}
+
+`\* <Category:libVLC>`__

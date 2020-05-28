@@ -1,10 +1,28 @@
-{{Moduletype=Video filterdescription=VHS movie effect video filter}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=vhs|type=Video filter|first_version=2.2.0|description=VHS movie effect video filter}}
 
-== Examples == Coloured stripes appear on-screen and the video shifts
-position after being paused. {{$}} vlc --video-filter "vhs" video.ogv
+Options
+-------
 
-== Source code == \* {{VLCSourceFile|modules/video_filter/vhs.c}}
+None.
 
-{{Documentation footer}}
+Examples
+--------
+
+Coloured stripes appear on-screen and the video shifts position after being paused.
+
+``{{$}} vlc --video-filter "vhs" video.ogv``
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/vhs.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

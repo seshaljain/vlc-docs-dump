@@ -1,3 +1,3 @@
-#REDIRECT [[Image#PNG]]
+#. REDIRECT `Image#PNG <Image#PNG>`__
 
-[[Category:Glossary]]
+`Category:Glossary <Category:Glossary>`__

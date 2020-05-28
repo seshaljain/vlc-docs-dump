@@ -1,1 +1,1 @@
-#REDIRECT [[Dirac]]
+#. REDIRECT `Dirac <Dirac>`__

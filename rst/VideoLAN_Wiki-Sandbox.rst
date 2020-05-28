@@ -1,3 +1,6 @@
-{{Languages}} {{Sandbox header}}
+\__NOINDEX_\_
 
-== Testing Area == Use it to test the wiki syntax!
+Testing Area
+------------
+
+Use it to test the wiki syntax!

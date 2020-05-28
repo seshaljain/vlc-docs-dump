@@ -1,10 +1,13 @@
-\* '''More information on this is avaliable at WikiMedia Meta:'''
-:'''''[http://meta.wikimedia.org/wiki/Help:Preferences
-meta:Help:Preferences]'''''
+-  **More information on this is avaliable at WikiMedia Meta:**
 
-\* '''More information on this is avaliable at Wikipedia:'''
-:'''''[[wikipedia:Help:Preferences]]'''''
+   `meta:Help:Preferences <http://meta.wikimedia.org/wiki/Help:Preferences>`__
 
-{{stub}}
+-  **More information on this is avaliable at Wikipedia:**
 
-[[Category:VideoLAN Wiki]]
+   `wikipedia:Help:Preferences <wikipedia:Help:Preferences>`__
+
+.. raw:: mediawiki
+
+   {{stub}}
+
+`Category:VideoLAN Wiki <Category:VideoLAN_Wiki>`__

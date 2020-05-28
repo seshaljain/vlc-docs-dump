@@ -1,1 +1,1 @@
-#REDIRECT [[VP6]]
+#. REDIRECT `VP6 <VP6>`__

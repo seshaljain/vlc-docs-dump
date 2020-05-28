@@ -1,6 +1,7 @@
-{{Wikipedia|Run-length encoding}}
+.. raw:: mediawiki
 
-'''RLE''' is an acronym for '''run-length encoding'''. It's a form of
-[[lossless]] [[compression]].
+   {{Wikipedia|Run-length encoding}}
 
-[[Category:Glossary]]
+**RLE** is an acronym for **run-length encoding**. It's a form of `lossless <lossless>`__ `compression <compression>`__.
+
+`Category:Glossary <Category:Glossary>`__

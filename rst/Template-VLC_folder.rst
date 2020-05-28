@@ -1,15 +1,39 @@
-<includeonly><!-- -->{{#switch:{{{1}}}<!-- -->windowsq=n}}<!--
--->macq=n}}<!-- -->windows}} or {{VLC folder|mac}}</nowiki></span>.<!--
--->}}</includeonly><!----><noinclude>
+{{#switch: \|windows = \|mac = \|#default = Please choose an operating system. Change the text {{VLC folder}} to {{VLC folder|windows}} or {{VLC folder|mac}}. }}
 
-== Usage == A template for default {{VLC}} folder locations on desktop
-computers by [[operating system]]. Uses {{tl|Path to VLC}}
+Usage
+-----
 
-Parameters: \* (unnamed) required. One of <code>windows</code> or
-<code>mac</code>. No default, lists choices on error Examples: \*
-<code>{{{{PAGENAME}}<nowiki>mac}}</nowiki></code> \*:
-<samp>{{{{PAGENAME}}|mac}}</samp>
+A template for default folder locations on desktop computers by `operating system <operating_system>`__. Uses
 
-== See also == \* {{tlVLC folder}}
+Parameters:
 
-[[Category:Templates]] </noinclude>
+-  (unnamed) required. One of ``windows`` or ``mac``. No default, lists choices on error
+
+Examples:
+
+-  ``{{``\ \ ``|windows}}``
+
+      {{\|windows}}
+
+-  ``{{``\ \ ``|mac}}``
+
+      {{\|mac}}
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Path to VLC}}
+
+   - more flexible template
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLC folder}}
+
+`Category:Templates <Category:Templates>`__

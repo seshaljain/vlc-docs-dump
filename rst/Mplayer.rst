@@ -1,1 +1,1 @@
-#REDIRECT [[MPlayer]]
+#. REDIRECT `MPlayer <MPlayer>`__

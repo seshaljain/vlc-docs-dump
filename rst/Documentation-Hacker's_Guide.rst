@@ -1,1 +1,1 @@
-#REDIRECT [[Hacker Guide]]
+#. REDIRECT `Hacker Guide <Hacker_Guide>`__

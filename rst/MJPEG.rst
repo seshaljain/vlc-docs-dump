@@ -1,6 +1,19 @@
-{{muxencoder=n}} '''Motion JPEG''' (M-JPEG) is a file containing a
-sequence of unconnected [[JPEG]] files.
+.. raw:: mediawiki
 
-==Module options== {{See|Documentation:Modules/mjpeg}}
+   {{mux|id=mjpeg|encoder=n}}
 
-== Source code == {{fileinput demuxer}}
+**Motion JPEG** (M-JPEG) is a file containing a sequence of unconnected `JPEG <JPEG>`__ files.
+
+Module options
+--------------
+
+.. raw:: mediawiki
+
+   {{See|Documentation:Modules/mjpeg}}
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/mjpeg.c|input demuxer}}

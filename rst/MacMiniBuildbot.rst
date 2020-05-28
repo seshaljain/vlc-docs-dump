@@ -1,19 +1,19 @@
-Two simple steps are needed to access macmini buildbot, which is
-connected to altair via VPN service.
+Two simple steps are needed to access macmini buildbot, which is connected to altair via VPN service.
 
-==SSH access==
+SSH access
+----------
 
-   ssh -N -f -L 10022:10.8.0.10:22 videolan@altair.videolan.org
+``ssh -N -f -L 10022:10.8.0.10:22 videolan@altair.videolan.org ``
 
-   ssh -p 10022 videolan@localhost
+``ssh -p 10022 videolan@localhost``
 
-where 10022 is the local port on your machine, 10.8.0.10 is the IP
-address of macmini, and 22 is the port macmini's sshd listens on.
+where 10022 is the local port on your machine, 10.8.0.10 is the IP address of macmini, and 22 is the port macmini's sshd listens on.
 
-==VNC/RDP access==
+VNC/RDP access
+--------------
 
-   ssh -N -f -L 15900:10.8.0.10:5900 videolan@altair.videolan.org
+``ssh -N -f -L 15900:10.8.0.10:5900 videolan@altair.videolan.org``
 
 Then, in your VNC/RDP client application, open localhost:15900.
 
-[[Category:Roots]]
+`Category:Roots <Category:Roots>`__

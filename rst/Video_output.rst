@@ -1,1 +1,1 @@
-#redirect [[Video Output]]
+#. redirect `Video Output <Video_Output>`__

@@ -1,63 +1,108 @@
-{{Historical}}
+.. raw:: mediawiki
 
-== Skins2 Contest ==
+   {{Historical}}
 
-'''This page covers a [http://www.videolan.org/vlc/skins.php skins2]
-contest for {{VLC}}, during VLC 1.0.0 release cycle.'''
+Skins2 Contest
+--------------
 
-It can leverage the use of the new
-[http://www.videolan.org/vlc/skineditor.html VLC Skin Editor].
+**This page covers a**\ `skins2 <http://www.videolan.org/vlc/skins.php>`__\ **contest for , during VLC 1.0.0 release cycle.**
 
-== Timeline ==
+It can leverage the use of the new `VLC Skin Editor <http://www.videolan.org/vlc/skineditor.html>`__.
 
-=== Working and submission === You can work on your skin and submit it
-until '''''June 11th, 2009 23:59UTC''''', which gives around 3 weeks of
-development.
+Timeline
+--------
 
-Submission must be done in private ''(to avoid cheating between
-contestants)'', by mailing [[User:J-b|jb]].
+Working and submission
+~~~~~~~~~~~~~~~~~~~~~~
 
-=== Vote === A public vote will be held from '''''June 12th, 2009 to
-June 14th, 2009''''' on our main website.
+You can work on your skin and submit it until **June 11th, 2009 23:59UTC**, which gives around 3 weeks of development.
 
-Everyone can vote and the VLC developers will have a right to veto
-(yeah, no Colbert Skin ;) )
+Submission must be done in private *(to avoid cheating between contestants)*, by mailing `jb <User:J-b>`__.
 
-=== Inclusion === This skin will be the default skin for the skins2
-interface for VLC 1.0.0 or any subsequent release 1.0.x, depending on
-when 1.0.0 gets out.
+Vote
+~~~~
 
-== Rules == \* No age limit \* Forbidden to VLC developers \* No
-Operating System required \* Skin should work on VLC 1.0.0-rc1 and be
-conform with the spec \* VLC Skins Editor can be used (advised) \* One
-person can submit up to 2 skins \* One person can submit a skin that was
-posted on videolan website in the last 3 month \* Skins should follow
-the following specifications
+A public vote will be held from **June 12th, 2009 to June 14th, 2009** on our main website.
 
-=== Win === \* Free T-Shirts of VLC x3 \* Name and link on most VLC
-installs \* Fame from our great website
+Everyone can vote and the VLC developers will have a right to veto (yeah, no Colbert Skin ;) )
 
-== Skin specification == \* VLT file should not be more than 400kB
-(400*1024 Bytes) \* VLT should be original, other player look is NOT
-accepted (WMP11-like or iTunes like are NOT OK) '''Examples NOT OK'''
-http://images.videolan.org/vlc/skins2/tm_Win_VLC_11.JPG
-http://images.videolan.org/vlc/skins2/tm_blissta_1.jpg
-http://images.videolan.org/vlc/skins2/tm_itunes.jpg
-http://images.videolan.org/vlc/skins2/tm_winamp5.jpg \* No real need for
-a big "VLC" or "VideoLAN" text/logo
+Inclusion
+~~~~~~~~~
 
-=== Mandatory elements === \* Main window \*\* Play/Pause button (as a
-checkbox) \*\* Stop button \*\* Next button \*\* Previous button \*\*
-Time slider \*\* Volume slider \*\* Track name ($N) display \*\* Time
-($T) & duration ($D) display \*\* DVD buttons (do we want them to be
-shown all the time ? -- of course not) \*\* Playlist button/checkbox (to
-show/hide the playlist) \* Playlist \*\* Playlist (use <Playtree>) \*\*
-Add button \*\* Remove button \* Video window \* Equalizer
+This skin will be the default skin for the skins2 interface for VLC 1.0.0 or any subsequent release 1.0.x, depending on when 1.0.0 gets out.
 
-=== Optional elements === \*\* Random, loop buttons \*\* Or : submenu \*
-Video window \*\* Fullscreen button \* Miniature mode
+Rules
+-----
 
-== Questions == Any questions should be asked on this talk page, on IRC,
-or on the forum.
+-  No age limit
+-  Forbidden to VLC developers
+-  No Operating System required
+-  Skin should work on VLC 1.0.0-rc1 and be conform with the spec
+-  VLC Skins Editor can be used (advised)
+-  One person can submit up to 2 skins
+-  One person can submit a skin that was posted on videolan website in the last 3 month
+-  Skins should follow the following specifications
 
-[[Category:Dev Discussions]] [[Category:Events]]
+Win
+~~~
+
+-  Free T-Shirts of VLC x3
+-  Name and link on most VLC installs
+-  Fame from our great website
+
+Skin specification
+------------------
+
+-  VLT file should not be more than 400kB (400*1024 Bytes)
+-  VLT should be original, other player look is NOT accepted (WMP11-like or iTunes like are NOT OK)
+
+| **``Examples``\ ````\ ``NOT``\ ````\ ``OK``**
+| ```http://images.videolan.org/vlc/skins2/tm_Win_VLC_11.JPG`` <http://images.videolan.org/vlc/skins2/tm_Win_VLC_11.JPG>`__\ `` ``\ ```http://images.videolan.org/vlc/skins2/tm_blissta_1.jpg`` <http://images.videolan.org/vlc/skins2/tm_blissta_1.jpg>`__\ `` ``\ ```http://images.videolan.org/vlc/skins2/tm_itunes.jpg`` <http://images.videolan.org/vlc/skins2/tm_itunes.jpg>`__\ `` ``\ ```http://images.videolan.org/vlc/skins2/tm_winamp5.jpg`` <http://images.videolan.org/vlc/skins2/tm_winamp5.jpg>`__
+
+-  No real need for a big "VLC" or "VideoLAN" text/logo
+
+Mandatory elements
+~~~~~~~~~~~~~~~~~~
+
+-  Main window
+
+   -  Play/Pause button (as a checkbox)
+   -  Stop button
+   -  Next button
+   -  Previous button
+   -  Time slider
+   -  Volume slider
+   -  Track name ($N) display
+   -  Time ($T) & duration ($D) display
+   -  DVD buttons (do we want them to be shown all the time ? -- of course not)
+   -  Playlist button/checkbox (to show/hide the playlist)
+
+-  Playlist
+
+   -  Playlist (use )
+   -  Add button
+   -  Remove button
+
+-  Video window
+-  Equalizer
+
+Optional elements
+~~~~~~~~~~~~~~~~~
+
+-  
+
+   -  Random, loop buttons
+   -  Or : submenu
+
+-  Video window
+
+   -  Fullscreen button
+
+-  Miniature mode
+
+Questions
+---------
+
+Any questions should be asked on this talk page, on IRC, or on the forum.
+
+`Category:Dev Discussions <Category:Dev_Discussions>`__ `Category:Events <Category:Events>`__

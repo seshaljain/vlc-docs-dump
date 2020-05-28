@@ -1,49 +1,86 @@
-VideoLAN comes with a selection of Video Output modules. These can
-display output on almost any computer.
+VideoLAN comes with a selection of Video Output modules. These can display output on almost any computer.
 
-If you don't want any video, you can use the '''--no-video''' option.
+If you don't want any video, you can use the **--no-video** option.
 
-== Output Modules ==
+Output Modules
+--------------
 
-To select one of these modules, use the '''-V''' ('''--vout''') command line option, eg:
-   vlc my.avi -V caca
+To select one of these modules, use the **-V** (**--vout**) command line option, eg:
 
-=== image === Save all the frames of a video as a sequence of images.
-You can select the output format using '''--image-out-format'''
-(currently you can only choose png), and the start of the file name with
-'''--image-out-prefix'''. Finally, to create an image once out of a
-number of frames, give that number to '''--image-out-ratio'''. For
-example, vlc [[v4l]]:// --image-out-prefix=webcam --image-out-ratio=20
-will create a series of images named webcam000001.png webcam000002.png
-webcam000003.png ...
+``vlc my.avi -V caca``
 
-=== aa, caca === ASCII Art modules. '''aa''' displays output in black
-and white, '''[[caca]]''' in colour.
+image
+~~~~~
 
-=== x11 === Use Linux's X11 video output
+Save all the frames of a video as a sequence of images. You can select the output format using **--image-out-format** (currently you can only choose png), and the start of the file name with **--image-out-prefix**. Finally, to create an image once out of a number of frames, give that number to **--image-out-ratio**. For example,
 
-=== xvideo === XVideo extension video output, a more advanced form of
-X11.
+``vlc ``\ ```v4l`` <v4l>`__\ ``:// --image-out-prefix=webcam --image-out-ratio=20``
 
-=== glx, opengl === Use OpenGL video output
+will create a series of images named
 
-=== dummy === Don't show output
+| ``webcam000001.png``
+| ``webcam000002.png``
+| ``webcam000003.png``
+| ``...``
 
-== Cloning ==
+aa, caca
+~~~~~~~~
+
+ASCII Art modules. **aa** displays output in black and white, `caca <caca>`__ in colour.
+
+x11
+~~~
+
+Use Linux's X11 video output
+
+xvideo
+~~~~~~
+
+XVideo extension video output, a more advanced form of X11.
+
+glx, opengl
+~~~~~~~~~~~
+
+Use OpenGL video output
+
+dummy
+~~~~~
+
+Don't show output
+
+Cloning
+-------
 
 To display output in more than one window, video cloning can be used. To use this, specify
-   --vout-filter=clone
 
-on the [[command prompt|command line]]: this tells vlc to use cloning. You also need to tell vlc what output modules you want with, for example,
-   --clone-vout-filter=''caca,glx'' --clone-count=''2''
+``--vout-filter=clone``
 
-== Changing video output == If you wish to change your video output
-module without using the command line, here's how to proceed: === Qt
-Interface === \* Go to tools -> preferences (or press Ctrl+P) \* Select
-the Video tab \* Select another video output module by changing the
-"Output" combo-box \* Stop any playback \* Launch the playback again ===
-Macosx Interface === '''TODO'''
+on the `command line <command_prompt>`__: this tells vlc to use cloning. You also need to tell vlc what output modules you want with, for example,
 
-{{stub}}
+| ``--clone-vout-filter=``\ *``caca,glx``*
+| ``--clone-count=``\ *``2``*
 
-[[Category:Documentation]]
+Changing video output
+---------------------
+
+If you wish to change your video output module without using the command line, here's how to proceed:
+
+Qt Interface
+~~~~~~~~~~~~
+
+-  Go to tools -> preferences (or press Ctrl+P)
+-  Select the Video tab
+-  Select another video output module by changing the "Output" combo-box
+-  Stop any playback
+-  Launch the playback again
+
+Macosx Interface
+~~~~~~~~~~~~~~~~
+
+**TODO**
+
+.. raw:: mediawiki
+
+   {{stub}}
+
+`Category:Documentation <Category:Documentation>`__

@@ -1,14 +1,12 @@
-{{howto|disable the pop up track notification}}
+.. raw:: mediawiki
 
-Go to '''Tools -&gt; Preferences''' (set Show Settings to All) and
-'''Interface -&gt; Main interfaces -&gt; Qt'''
+   {{howto|disable the pop up track notification}}
 
-Choose "Never" in the drop down menu named '''Show notification popup on
-track change'''.
+Go to **Tools -> Preferences** (set Show Settings to All) and **Interface -> Main interfaces -> Qt**
 
-Remember to press '''Save''' to save VLC settings and restart VLC after
-that to make sure changes are enabled.
+Choose "Never" in the drop down menu named **Show notification popup on track change**.
 
-<br>
+Remember to press **Save** to save VLC settings and restart VLC after that to make sure changes are enabled.
 
-{{VSG}}
+| 
+| 

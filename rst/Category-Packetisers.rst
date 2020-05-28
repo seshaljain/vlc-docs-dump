@@ -1,3 +1,3 @@
-For [[packetiser]]s
+For `packetisers <packetiser>`__
 
-[[Category:Modules]]
+`Category:Modules <Category:Modules>`__

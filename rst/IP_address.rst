@@ -1,1 +1,1 @@
-#REDIRECT [[IP]]
+#. REDIRECT `IP <IP>`__

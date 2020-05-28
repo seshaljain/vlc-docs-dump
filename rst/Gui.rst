@@ -1,1 +1,1 @@
-#REDIRECT [[GUI]]
+#. REDIRECT `GUI <GUI>`__

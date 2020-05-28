@@ -1,22 +1,17 @@
-== Audio and Video are out of sync. ==
+Audio and Video are out of sync.
+--------------------------------
 
-<br>If you are transcoding a file, use the audio-sync option.
+| 
+| If you are transcoding a file, use the audio-sync option.
 
-<br>You can manually set the audio offset while playing (so you can put
-the audio back in sync).
+| 
+| You can manually set the audio offset while playing (so you can put the audio back in sync).
 
-The default keys to increase/decrease the offset are '''Ctrl+K''' and
-'''Ctrl+L''' in ''Windows'', and '''f''' and '''g''' in ''Mac'' (adjust
-step is 50ms).
+The default keys to increase/decrease the offset are **Ctrl+K** and **Ctrl+L** in *Windows*, and **f** and **g** in *Mac* (adjust step is 50ms).
 
-<br>''Linux/Unix'': Try using another audio output plugin and, under
-Unix, kill esd or artsd if they are running.
+| 
+| *Linux/Unix*: Try using another audio output plugin and, under Unix, kill esd or artsd if they are running.
 
-<br>
-
-If the problem is due to the input file, try to adjust the track with
-'''Tools &gt; Track Synchronisation'''.<br>
-
-<br> <br> <br> <br> <br>
-
-{{VSG}}
+| 
+| If the problem is due to the input file, try to adjust the track with **Tools > Track Synchronisation**.
+| 

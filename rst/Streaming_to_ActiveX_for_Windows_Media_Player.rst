@@ -1,49 +1,70 @@
-{{Howto|stream to ActiveX for [[Windows Media Player]]}} ==Use case==
+.. raw:: mediawiki
 
-*Stream from a webcam on computer A (running Microsoft Windows)
-to*\ Computer B (running Linux) which broadcasts the stream to
-\*Computer C (running Microsoft Windows) with a web browser and
-[[Windows Media Player]]
+   {{Howto|stream to ActiveX for [[Windows Media Player]]}}
 
-==Procedure==
+Use case
+--------
 
-===Computer A===
+-  Stream from a webcam on computer A (running Microsoft Windows) to
+-  Computer B (running Linux) which broadcasts the stream to
+-  Computer C (running Microsoft Windows) with a web browser and `Windows Media Player <Windows_Media_Player>`__
 
-Configure your capture device as follows: \*Use a codec that [[Windows
-Media Player]] recognizes, such as:
+Procedure
+---------
 
-{\| class="wikitable"
-   ! Type ! Codec
+Computer A
+~~~~~~~~~~
 
-Video codec \| [[DIV3]] or possibly [[WMV]] Audio codec \| [[mp3]]
-Container \| [[ASF]] \|}
+Configure your capture device as follows:
 
-\*Use communication settings that Windows Media Player recognizes, such
-as: {\| class="wikitable" ! Item ! Suggested value Transport \| [[MMSH]]
-Address \| Computer A's IP address, say 10.1.2.3 [[Port]] \| Any value
-over 8000, say 8123 \|}
+-  Use a codec that `Windows Media Player <Windows_Media_Player>`__ recognizes, such as:
 
-===Computer B===
+=========== =========================================
+Type        Codec
+=========== =========================================
+Video codec `DIV3 <DIV3>`__ or possibly `WMV <WMV>`__
+Audio codec `mp3 <mp3>`__
+Container   `ASF <ASF>`__
+=========== =========================================
 
-*Install vlc (e.g., via [[wikipedia:Yellowdog Updater, Modified|yum]])
-or build from source*\ Invoke vlc with the command line options to
-stream to via a port (e.g., 8456) on computer B (with IP address
-10.4.5.6) <PRE> vlc -vvv mmsh://10.1.2.3:8123
---sout='#standard{access=mmsh,mux=asfh,url=10.4.5.6:8456}' </PRE>
-\*Embed the following in a web page (e.g., in
-/home/myaccount/public_html/bcast.htm) to be served from computer B:
+-  Use communication settings that Windows Media Player recognizes, such as:
 
-<PRE> <OBJECT id="Player" width="320" height="240"
-CLASSID="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6"
-type="application/x-oleobject"> <PARAM NAME="URL"
-VALUE="mms://10.4.5.6:8456"> <PARAM NAME="SendPlayStateChangeEvents"
-VALUE="True"> <PARAM NAME="AutoStart" VALUE="True"> <PARAM name="uiMode"
-value="full"> <PARAM name="PlayCount" value="9999"> <PARAM
-NAME="stretchtofit" value="true"> </OBJECT> </PRE>
+=============== =====================================
+Item            Suggested value
+=============== =====================================
+Transport       `MMSH <MMSH>`__
+Address         Computer A's IP address, say 10.1.2.3
+`Port <Port>`__ Any value over 8000, say 8123
+=============== =====================================
 
-===Computer C===
+Computer B
+~~~~~~~~~~
 
-\*Browse the web page from computer B (e.g.,
-<NOWIKI>http://10.4.5.6/~myaccount/bcast.htm\ </NOWIKI>)
+-  Install vlc (e.g., via `yum <wikipedia:Yellowdog_Updater,_Modified>`__) or build from source
+-  Invoke vlc with the command line options to stream to via a port (e.g., 8456) on computer B (with IP address 10.4.5.6)
 
-{{stub}}
+::
+
+   vlc -vvv mmsh://10.1.2.3:8123 --sout='#standard{access=mmsh,mux=asfh,url=10.4.5.6:8456}'
+
+-  Embed the following in a web page (e.g., in /home/myaccount/public_html/bcast.htm) to be served from computer B:
+
+::
+
+   <OBJECT id="Player" width="320" height="240" CLASSID="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject">
+   <PARAM NAME="URL" VALUE="mms://10.4.5.6:8456">
+   <PARAM NAME="SendPlayStateChangeEvents" VALUE="True">
+   <PARAM NAME="AutoStart" VALUE="True">
+   <PARAM name="uiMode" value="full">
+   <PARAM name="PlayCount" value="9999">
+   <PARAM NAME="stretchtofit" value="true">
+   </OBJECT>
+
+Computer C
+~~~~~~~~~~
+
+-  Browse the web page from computer B (e.g., http://10.4.5.6/~myaccount/bcast.htm)
+
+.. raw:: mediawiki
+
+   {{stub}}

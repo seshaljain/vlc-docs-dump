@@ -1,8 +1,22 @@
-{{codec videoid=H263H.263}} {{Wikipedia|H.263}}
+.. raw:: mediawiki
 
-H.263 is a standard for video compression. It is not free and open. It
-was preceded by [[H.262/MPEG-2 Part 2]] and succeeded by [[H.264/MPEG-4
-AVC]].
+   {{codec video|encoder=n|id=H263|mod=avcodec}}
 
-== See also == \* [[H.261]] \* [[H.262/MPEG-2 Part 2]] \* [[H.263]] \*
-[[H.264/MPEG-4 AVC]] \* [[High Efficiency Video Coding|H.265/HEVC]]
+.. raw:: mediawiki
+
+   {{Mmwiki|H.263}}
+
+.. raw:: mediawiki
+
+   {{Wikipedia|H.263}}
+
+H.263 is a standard for video compression. It is not free and open. It was preceded by `H.262/MPEG-2 Part 2 <H.262/MPEG-2_Part_2>`__ and succeeded by `H.264/MPEG-4 AVC <H.264/MPEG-4_AVC>`__.
+
+See also
+--------
+
+-  `H.261 <H.261>`__
+-  `H.262/MPEG-2 Part 2 <H.262/MPEG-2_Part_2>`__
+-  `H.263 <H.263>`__
+-  `H.264/MPEG-4 AVC <H.264/MPEG-4_AVC>`__
+-  `H.265/HEVC <High_Efficiency_Video_Coding>`__

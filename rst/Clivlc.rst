@@ -1,1 +1,1 @@
-#REDIRECT [[macOS#clivlc]]
+#. REDIRECT `macOS#clivlc <macOS#clivlc>`__

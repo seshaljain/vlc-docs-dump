@@ -1,1 +1,1 @@
-#REDIRECT [[SIP]]
+#. REDIRECT `SIP <SIP>`__

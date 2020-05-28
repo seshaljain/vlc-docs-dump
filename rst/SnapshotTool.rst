@@ -1,1 +1,1 @@
-#REDIRECT [[Snapshot Tool]]
+#. REDIRECT `Snapshot Tool <Snapshot_Tool>`__

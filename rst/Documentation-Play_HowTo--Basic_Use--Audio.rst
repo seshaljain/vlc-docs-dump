@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Audio]]
+#. REDIRECT `Documentation:Audio <Documentation:Audio>`__

@@ -1,4 +1,4 @@
 -  kakohari
 -  Hamburg, Germany
 -  interested in video encoding, broadcasting, live-streaming
--  thankful for the ''magic'' of vlc, ffmpeg, x264 :-)
+-  thankful for the *magic* of vlc, ffmpeg, x264 :-)

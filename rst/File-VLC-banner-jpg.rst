@@ -1,1 +1,1 @@
-[[Category:Cones]]
+`Category:Cones <Category:Cones>`__

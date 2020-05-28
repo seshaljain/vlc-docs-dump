@@ -1,1 +1,1 @@
-#redirect [[Vorbis]]
+#. redirect `Vorbis <Vorbis>`__

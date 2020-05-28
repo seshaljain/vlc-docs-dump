@@ -1,4 +1,2 @@
-Hello, it seems you posted the entirety of a logfile dump; you might
-want to ask for help in the [https://forum.videolan.org/ forum] if
-you're experiencing problems you can't resolve.<br /> :~An administrator
-on the wiki
+| Hello, it seems you posted the entirety of a logfile dump; you might want to ask for help in the `forum <https://forum.videolan.org/>`__ if you're experiencing problems you can't resolve.
+| :~An administrator on the wiki

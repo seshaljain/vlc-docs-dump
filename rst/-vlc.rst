@@ -1,3 +1,3 @@
-#REDIRECT [[.VLC]]
+#. REDIRECT `.VLC <.VLC>`__
 
-[[Category:Playlist]]
+`Category:Playlist <Category:Playlist>`__

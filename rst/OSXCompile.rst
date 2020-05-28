@@ -1,1 +1,1 @@
-#REDIRECT [[MacOSCompile]]
+#. REDIRECT `MacOSCompile <MacOSCompile>`__

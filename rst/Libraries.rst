@@ -1,1 +1,1 @@
-#redirect [[library]]
+#. redirect `library <library>`__

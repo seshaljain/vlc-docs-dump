@@ -1,1 +1,1 @@
-#REDIRECT [[NSV]]
+#. REDIRECT `NSV <NSV>`__

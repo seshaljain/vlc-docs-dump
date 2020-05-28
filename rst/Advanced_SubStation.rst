@@ -1,3 +1,3 @@
-#REDIRECT [[SubStation Alpha]]
+#. REDIRECT `SubStation Alpha <SubStation_Alpha>`__
 
-[[Category:Subtitles]]
+`Category:Subtitles <Category:Subtitles>`__

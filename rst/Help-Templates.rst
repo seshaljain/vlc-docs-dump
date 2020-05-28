@@ -1,27 +1,57 @@
-{{wikipedia|Help:Template}} Add templates to a page by typing
-<nowiki>{{templatename}}</nowiki> into a page you're editing.
+.. raw:: mediawiki
 
-== Templates == \* [[VideoLAN Wiki:List of templates]]: incomplete but
-visual guide \* [{{fullurl:Special:Allpages|namespace=10}} List all
-templates]
+   {{wikipedia|Help:Template}}
 
-;<nowiki>{{delete}}</nowiki> \* [[Template:Delete]] Suggest a page for
-deletion
+Add templates to a page by typing {{templatename}} into a page you're editing.
 
-;<nowiki>{{faqlink239006}}</nowiki> \* [[Template:Faqlink]] Used on the
-[[Common Problems]] page to link to the FAQ '''Does not work anymore -
-videolan.org/doc is down'''
+Templates
+---------
 
-;<nowiki>{{forum12394}}</nowiki> \* [[Template:Forum]] Link to the forum
+-  `VideoLAN Wiki:List of templates <VideoLAN_Wiki:List_of_templates>`__: incomplete but visual guide
+-  [ List all templates]
 
-;<nowiki>{{howtoplay a DVD with VideoLAN}}</nowiki> \*
-[[Template:Howto]] At the top of a page, add a box stating this is a how
-to guide.
+{{delete}}
 
-;<nowiki>{{stub}}</nowiki> \* [[Template:Stub]] Insert a box asking for
-contributions, mark page as a stub.
+-  `Template:Delete <Template:Delete>`__
 
-;<nowiki>{{wikipediaVideoLAN}}</nowiki> \* [[Template:Wikipedia]] Add a
-box in the top right corner with a link to wikipedia
+Suggest a page for deletion
 
-[[Category:VideoLAN Wiki]]
+{{faqlink|FAQ number}}
+
+eg: {{faqlink|239006}}
+
+-  `Template:Faqlink <Template:Faqlink>`__
+
+Used on the `Common Problems <Common_Problems>`__ page to link to the FAQ **Does not work anymore - videolan.org/doc is down**
+
+{{forum|forum thread number}}
+
+eg {{forum|12394}}
+
+-  `Template:Forum <Template:Forum>`__
+
+Link to the forum
+
+{{howto|description}}
+
+eg {{howto|play a DVD with VideoLAN}}
+
+-  `Template:Howto <Template:Howto>`__
+
+At the top of a page, add a box stating this is a how to guide.
+
+{{stub}}
+
+-  `Template:Stub <Template:Stub>`__
+
+Insert a box asking for contributions, mark page as a stub.
+
+{{wikipedia|wikipedia page name}}
+
+eg {{wikipedia|VideoLAN}}
+
+-  `Template:Wikipedia <Template:Wikipedia>`__
+
+Add a box in the top right corner with a link to wikipedia
+
+`Category:VideoLAN Wiki <Category:VideoLAN_Wiki>`__

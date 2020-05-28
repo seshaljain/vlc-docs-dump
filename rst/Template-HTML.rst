@@ -1,3 +1,3 @@
-<abbr title="HyperText Markup Language">HTML</abbr><noinclude>
+HTML
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

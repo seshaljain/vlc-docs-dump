@@ -1,4 +1,1 @@
-Go to '''Tools -&gt; Preferences...''' (set Show Settings to All) and
-'''Video''' and untick '''Embedded video''' selection. Remember to press
-'''Save''' to save VLC settings and restart VLC after that to make sure
-changes are enabled.
+Go to **Tools -> Preferences...** (set Show Settings to All) and **Video** and untick **Embedded video** selection. Remember to press **Save** to save VLC settings and restart VLC after that to make sure changes are enabled.

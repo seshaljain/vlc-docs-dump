@@ -1,11 +1,13 @@
-== I want to... ==
+I want to...
+------------
 
-{{VSGEntryVSG:Usage:SomethingElse:eMule|How can I make VLC to preview my
-eMule downloads?}}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:Usage:SomethingElse:StationPresets|Learn how to store
-streaming station presets in VLC.}}
+   {{VSGEntry|Make VLC to preview my eMule downloads|VSG:Usage:SomethingElse:eMule|How can I make VLC to preview my eMule downloads?}}
 
-<br><br><br><br><br>
+.. raw:: mediawiki
 
-{{VSG}}
+   {{VSGEntry|Store streaming station presets|VSG:Usage:SomethingElse:StationPresets|Learn how to store streaming station presets in VLC.}}
+
+| 
+| 

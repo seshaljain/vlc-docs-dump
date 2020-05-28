@@ -1,1 +1,1 @@
-#REDIRECT [[Skins]]
+#. REDIRECT `Skins <Skins>`__

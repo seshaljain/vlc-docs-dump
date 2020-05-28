@@ -1,3 +1,3 @@
-#REDIRECT [[DivX]]
+#. REDIRECT `DivX <DivX>`__
 
-[[Category:Container]]
+`Category:Container <Category:Container>`__

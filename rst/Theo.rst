@@ -1,1 +1,1 @@
-#redirect [[Theora]]
+#. redirect `Theora <Theora>`__

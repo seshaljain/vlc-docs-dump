@@ -1,1 +1,1 @@
-#REDIRECT [[FTP]]
+#. REDIRECT `FTP <FTP>`__

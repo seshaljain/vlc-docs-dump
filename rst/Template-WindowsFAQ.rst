@@ -1,6 +1,8 @@
-{{Navbox list1=[[WindowsFAQ-0.8.x]], [[WindowsFAQ-0.9.x]],
-[[WindowsFAQ-1.0.x]], [[WindowsFAQ-1.1.x]], [[WindowsFAQ-2.0.x]],
-[[WindowsFAQ-2.1.x]], ''WindowsFAQ-2.2.x''
-}}<includeonly>[[Category:FAQ]][[Category:Windows]]</includeonly><noinclude>
+.. raw:: mediawiki
 
-[[Category:Navigation templates]] </noinclude>
+   {{Navbox
+   |title = [[Frequently Asked Questions]] (FAQ) for [[Windows]] users about {{VLC}}
+   |list1=[[WindowsFAQ-0.8.x]], [[WindowsFAQ-0.9.x]], [[WindowsFAQ-1.0.x]], [[WindowsFAQ-1.1.x]], [[WindowsFAQ-2.0.x]], [[WindowsFAQ-2.1.x]], ''WindowsFAQ-2.2.x''
+   }}
+
+`Category:FAQ <Category:FAQ>`__ `Category:Windows <Category:Windows>`__ `Category:Navigation templates <Category:Navigation_templates>`__

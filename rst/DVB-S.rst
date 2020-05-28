@@ -1,1 +1,1 @@
-#REDIRECT [[DVB]]
+#. REDIRECT `DVB <DVB>`__

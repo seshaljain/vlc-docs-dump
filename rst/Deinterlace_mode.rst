@@ -1,1 +1,1 @@
-#REDIRECT [[Deinterlacing#Modes]]
+#. REDIRECT `Deinterlacing#Modes <Deinterlacing#Modes>`__

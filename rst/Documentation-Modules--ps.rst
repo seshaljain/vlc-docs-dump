@@ -1,10 +1,19 @@
-{{Moduletype=Access demux|description=[[MPEG-PS]] demuxer}}
+.. raw:: mediawiki
 
-== Options == <onlyinclude> {{Option value=boolean description=Normally
-we use the [[timestamp]]s of the [[MPEG]] files to calculate position
-and duration. However sometimes this might not be usable. Disable this
-option to calculate from the [[bitrate]] instead }}</onlyinclude>
+   {{Module|name=ps|type=Access demux|description=[[MPEG-PS]] demuxer}}
 
-== Source code == \* {{VLCSourceFile|modules/demux/mpeg/ps.c}}
+Options
+-------
 
-{{Documentation footer}}
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/mpeg/ps.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

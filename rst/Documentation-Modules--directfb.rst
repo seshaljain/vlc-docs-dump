@@ -1,5 +1,15 @@
-{{See alsoname=directfblast_version=2.2.8os=Linux}}
+.. raw:: mediawiki
 
-{{Stub}}
+   {{See also|DirectFB Compile}}
 
-{{Documentation footer}}
+.. raw:: mediawiki
+
+   {{Module|name=directfb|type=Video output|last_version=2.2.8|description=Direct framebuffer video output|os=Linux}}
+
+.. raw:: mediawiki
+
+   {{Stub}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

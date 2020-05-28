@@ -1,11 +1,23 @@
-{{codec videoencoder=yfor=[[WebM]], [[MP4]] and [[Ogg]]}} {{Mmwiki|On2
-VP8}}
+.. raw:: mediawiki
 
-'''VP8''' is a video codec created by [[On2]] and used in [[WebM]]
-files.
+   {{codec video|id=VP80|encoder=y|mod=vpx|for=[[WebM]], [[MP4]] and [[Ogg]]}}
 
-== See also == \* [[VP3]] \* [[VP6]] \* [[VP8]] \* [[VP9]]
+.. raw:: mediawiki
 
-== Links == \* http://camendesign.com/code/video_for_everybody \*
-[https://tools.ietf.org/html/rfc6386 RFC 6386 - VP8 Data Format and
-Decoding Guide]
+   {{Mmwiki|On2 VP8}}
+
+**VP8** is a video codec created by `On2 <On2>`__ and used in `WebM <WebM>`__ files.
+
+See also
+--------
+
+-  `VP3 <VP3>`__
+-  `VP6 <VP6>`__
+-  `VP8 <VP8>`__
+-  `VP9 <VP9>`__
+
+Links
+-----
+
+-  http://camendesign.com/code/video_for_everybody
+-  `RFC 6386 - VP8 Data Format and Decoding Guide <https://tools.ietf.org/html/rfc6386>`__

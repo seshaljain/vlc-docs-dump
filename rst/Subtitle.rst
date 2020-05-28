@@ -1,1 +1,1 @@
-#redirect [[Subtitles]]
+#. redirect `Subtitles <Subtitles>`__

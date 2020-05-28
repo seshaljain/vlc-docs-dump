@@ -1,20 +1,14 @@
-== VLC cannot play some WMV or WMA files.<br> ==
+VLC cannot play some WMV or WMA files.
+--------------------------------------
 
-Starting with VLC media player 0.8.6, the playback of WMV3-encoded
-videos is available on all platforms.
+Starting with VLC media player 0.8.6, the playback of WMV3-encoded videos is available on all platforms.
 
-Please download and install the latest version of VLC Media Player to
-solve playback issues.
+Please download and install the latest version of VLC Media Player to solve playback issues.
 
-<br>
-
-Please note that encrypted / DRM-protected video-clips still cannot be
-played.
+| 
+| Please note that encrypted / DRM-protected video-clips still cannot be played.
 
 That is due to the nature of DRM and is not about to change.
 
-<br>
-
-<br>
-
-{{VSG}}
+| 
+| 

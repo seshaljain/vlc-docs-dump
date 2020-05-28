@@ -1,1 +1,1 @@
-#redirect [[demuxdump]]
+#. redirect `demuxdump <demuxdump>`__

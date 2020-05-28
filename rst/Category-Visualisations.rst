@@ -1,1 +1,1 @@
-[[Category:Modules]]
+`Category:Modules <Category:Modules>`__

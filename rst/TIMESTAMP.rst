@@ -1,1 +1,1 @@
-#REDIRECT [[Timestamp]]
+#. REDIRECT `Timestamp <Timestamp>`__

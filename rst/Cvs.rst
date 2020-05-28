@@ -1,1 +1,1 @@
-#redirect [[Subversion]]
+#. redirect `Subversion <Subversion>`__

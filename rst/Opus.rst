@@ -1,9 +1,30 @@
-{{Codec audioencoder=yOpus-codecOpusFAQ}} {{Wikipedia|Opus (audio
-format)}} {{Open}}
+.. raw:: mediawiki
 
-Opus is a general-purpose high-quality low-latency [[lossy]] audio codec
-created by the [[Xiph.org Foundation]]. The Opus developers claim it
-makes other lossy audio codecs obsolete (including [[Vorbis]] and
-[[MP3]]) and recommend it over [[Speex]] as a speech codec.
+   {{Codec audio|id=opus|encoder=y|for=[[ogg]]}}
 
-== Source code == \* {{VLCSourceFile|modules/codec/opus.c}}
+.. raw:: mediawiki
+
+   {{Website|Opus-codec|https://opus-codec.org/}}
+
+.. raw:: mediawiki
+
+   {{Xiph|OpusFAQ}}
+
+.. raw:: mediawiki
+
+   {{Wikipedia|Opus (audio format)}}
+
+.. raw:: mediawiki
+
+   {{Open}}
+
+Opus is a general-purpose high-quality low-latency `lossy <lossy>`__ audio codec created by the `Xiph.org Foundation <Xiph.org_Foundation>`__. The Opus developers claim it makes other lossy audio codecs obsolete (including `Vorbis <Vorbis>`__ and `MP3 <MP3>`__) and recommend it over `Speex <Speex>`__ as a speech codec.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/codec/opus.c}}

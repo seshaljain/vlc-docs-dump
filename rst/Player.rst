@@ -1,3 +1,3 @@
-#REDIRECT [[Players]]
+#. REDIRECT `Players <Players>`__
 
-[[Category:Player|*]]
+`\* <Category:Player>`__

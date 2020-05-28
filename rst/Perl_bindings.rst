@@ -1,36 +1,48 @@
-'''TODO: this wiki page is work in progress'''
+**TODO: this wiki page is work in progress**
 
-== Installation ==
+Installation
+------------
 
-You need to have [[libvlc]] with headers already installed.
+You need to have `libvlc <libvlc>`__ with headers already installed.
 
 TODO: install from CPAN
 
-== Usage == <syntaxhighlight lang="perl"> #!/usr/bin/env perl
+Usage
+-----
 
-use strict; use warnings; use 5.010;
+.. code:: perl
 
-use VideoLAN::LibVLC;
+   #!/usr/bin/env perl
 
-unless (@ARGV) {
-   die "1 argument needed - path to a file.";
+   use strict;
+   use warnings;
+   use 5.010;
 
-}
+   use VideoLAN::LibVLC;
 
-my $inst = VideoLAN::LibVLC::Instance->new; my $media =
-VideoLAN::LibVLC::Media->new($inst, $ARGV[0], "path"); my $player =
-VideoLAN::LibVLC::MediaPlayer->new($media);
+   unless (@ARGV) {
+       die "1 argument needed - path to a file.";
+   }
 
-$player->play;
+   my $inst = VideoLAN::LibVLC::Instance->new;
+   my $media = VideoLAN::LibVLC::Media->new($inst, $ARGV[0], "path");
+   my $player = VideoLAN::LibVLC::MediaPlayer->new($media);
 
-sleep 5; say $player->fullscreen; $player->fullscreen(1); say
-$player->fullscreen; sleep 5; $player->toggle_fullscreen; say
-$player->fullscreen; sleep 5; </syntaxhighlight>
+   $player->play;
 
-== Known issues ==
+   sleep 5;
+   say $player->fullscreen;
+   $player->fullscreen(1);
+   say $player->fullscreen;
+   sleep 5;
+   $player->toggle_fullscreen;
+   say $player->fullscreen;
+   sleep 5;
+
+Known issues
+------------
 
 -  Libvlc event handling is not supported currently.
--  It's unknown whether it works under windows or not, I never tested it
-   there.
+-  It's unknown whether it works under windows or not, I never tested it there.
 
-[[Category:Bindings]]
+`Category:Bindings <Category:Bindings>`__

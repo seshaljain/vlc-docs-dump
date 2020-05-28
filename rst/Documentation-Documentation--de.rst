@@ -1,51 +1,72 @@
-{{Languages}} \__NOTOC_\_
+.. raw:: mediawiki
 
-<!-- Beginning of the banner section --> {{Banner
-VideoLAN&nbsp;Dokumentation]] links= \* [[VideoLAN]] \* [[VLC Media
-Player]] \* [[Documentation:Documentationlinks2= \*
-[https://www.videolan.org Hauptseite] \* [https://forum.videolan.org
-Forum] \* [http://planet.videolan.org Nachrichten von den Entwicklern]
-\|links3= \* [https://www.videolan.org/developers/ Webseite der
-Entwickler] \* [http://nightlies.videolan.org Aktuelle Builds] \*
-[https://trac.videolan.org Trac, Fehler, SVN und Plan] }} <!-- End of
-the banner section -->
+   {{Languages}}
 
-''Seiten in dieser "Dokumentation" sind ein Teil der "offiziellen" VLC
-Media Player-Dokumentation.''
+\__NOTOC_\_
 
-''Alle Seiten in diesen Namensraum sind lizensiert unter der
-[https://www.gnu.org/copyleft/gpl.html GNU General Public License].''
+.. raw:: mediawiki
 
-'''Hinweis: viele Teile dieser Dokumentation sind nicht mehr aktuell
-bzw. veraltet. Wenn Sie über gute Kenntnisse in einem bestimmten Thema
-haben und das Gefühl haben, dass es besser dokumentiert werden könnte,
-aktualisieren Sie bitte die entsprechenden Wiki-Seite.'''
+   {{Banner
+   |banner title=Willkommen bei der [[Documentation:Documentation|VideoLAN&nbsp;Dokumentation]]
+   |description=Die Referenz-Dokumentation für VideoLAN-Projekte.
+   <div id="articlecount" style="width:100%; font-size:90%;" class="center">Artikel nur unter der [https://www.gnu.org/copyleft/gpl.html GNU General Public Lizenz].</div>
+   |links=
+   * [[VideoLAN]]
+   * [[VLC Media Player]]
+   * [[Documentation:Documentation|Dokumentation]]
+   |links2=
+   * [https://www.videolan.org Hauptseite]
+   * [https://forum.videolan.org Forum]
+   * [http://planet.videolan.org Nachrichten von den Entwicklern]
+   |links3=
+   * [https://www.videolan.org/developers/ Webseite der Entwickler]
+   * [http://nightlies.videolan.org Aktuelle Builds]
+   * [https://trac.videolan.org Trac, Fehler, SVN und Plan]
+   }}
 
-== [[Documentation:VLC for dummies/de\| VLC für Anfänger: eine
-Einführung in VLC]] == Dieses Dokument wird Ihnen eine Einführung in VLC
-von der Version 0.9.0 und höher geben. '''IN BEARBEITUNG'''
+*Seiten in dieser "Dokumentation" sind ein Teil der "offiziellen" VLC Media Player-Dokumentation.*
 
-== [[Documentation:Play HowTo|VLC Play HowTo]] ==
+*Alle Seiten in diesen Namensraum sind lizensiert unter der*\ `GNU General Public License <https://www.gnu.org/copyleft/gpl.html>`__\ *.*
+
+**Hinweis: viele Teile dieser Dokumentation sind nicht mehr aktuell bzw. veraltet. Wenn Sie über gute Kenntnisse in einem bestimmten Thema haben und das Gefühl haben, dass es besser dokumentiert werden könnte, aktualisieren Sie bitte die entsprechenden Wiki-Seite.**
+
+`VLC für Anfänger: eine Einführung in VLC <Documentation:VLC_for_dummies/de>`__
+-------------------------------------------------------------------------------
+
+Dieses Dokument wird Ihnen eine Einführung in VLC von der Version 0.9.0 und höher geben. **IN BEARBEITUNG**
+
+`VLC Play HowTo <Documentation:Play_HowTo>`__
+---------------------------------------------
 
 Benutzer-Dokumentation für alle.
 
-\* [[Documentation:Play_HowTo/Introduction to VLCInstallation]] \*\*
-Installation instructions for a variety of computers. \*
-[[Documentation:Play_HowTo/Basic UseErweiterte Benutzung]] \*\* Advanced
-instruction on streams, filters, plug-ins and more.
+-  `Einführung in VideoLAN und VLC <Documentation:Play_HowTo/Introduction_to_VLC>`__
 
-== [[Documentation:Streaming HowTo|VLC Streaming HowTo]] ==
+   -  Übersicht und Verlauf des VideoLAN-Projects.
 
-This document explains how to stream, transcode and save streams using
-the VideoLAN solution. '''VERALTET'''
+-  `Installation <Documentation:Play_HowTo/Installing_VLC>`__
 
-== [[Hacker Guide|The Hacker's Guide to VLC]] ==
+   -  Installation instructions for a variety of computers.
 
-This document will detail the inner workings of VLC and its source code.
-'''IN BEARBEITUNG'''
+-  `VLC Verwendung <Documentation:Play_HowTo/Basic_Use>`__
 
-== [[Documentation:Modules|Die VLC Modul-Übersicht]] ==
+   -  How to play audio/video materials with the VLC media player. (For versions 0.9 and newer)
 
-This document references most of the VLC modules and their options as
-well as some example uses. '''IN BEARBEITUNG (available content is up to
-date)'''
+-  `Erweiterte Benutzung <Documentation:Play_HowTo/Advanced_Use_of_VLC>`__
+
+   -  Advanced instruction on streams, filters, plug-ins and more.
+
+`VLC Streaming HowTo <Documentation:Streaming_HowTo>`__
+-------------------------------------------------------
+
+This document explains how to stream, transcode and save streams using the VideoLAN solution. **VERALTET**
+
+`The Hacker's Guide to VLC <Hacker_Guide>`__
+--------------------------------------------
+
+This document will detail the inner workings of VLC and its source code. **IN BEARBEITUNG**
+
+`Die VLC Modul-Übersicht <Documentation:Modules>`__
+---------------------------------------------------
+
+This document references most of the VLC modules and their options as well as some example uses. **IN BEARBEITUNG (available content is up to date)**

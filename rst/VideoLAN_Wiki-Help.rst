@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN Wiki:Syntax]]
+#. REDIRECT `VideoLAN Wiki:Syntax <VideoLAN_Wiki:Syntax>`__

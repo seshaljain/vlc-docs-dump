@@ -1,10 +1,11 @@
-{{howto|override speaker setup}}
+.. raw:: mediawiki
 
-You can force speaker setup if you use DirectX audio output from
-'''Tools -> Preferences''' (set Show settings to All) '''Audio -> Output
-modules -> DirectX''' and '''Speaker configuration''' dropdown menu.
+   {{howto|override speaker setup}}
 
-Remember to press '''Save''' to save VLC settings and restart VLC after
-that to make sure changes are enabled.
+You can force speaker setup if you use DirectX audio output from **Tools -> Preferences** (set Show settings to All) **Audio -> Output modules -> DirectX** and **Speaker configuration** dropdown menu.
 
-{{VSG}}
+Remember to press **Save** to save VLC settings and restart VLC after that to make sure changes are enabled.
+
+.. raw:: mediawiki
+
+   {{VSG}}

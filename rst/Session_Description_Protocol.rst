@@ -1,1 +1,1 @@
-#REDIRECT [[SDP]]
+#. REDIRECT `SDP <SDP>`__

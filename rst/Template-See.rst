@@ -1,3 +1,3 @@
-:''See [[{{{1}}}]]''<noinclude>
+   *See*\ `{{{1}}} <{{{1}}}>`__\ 
 
-[[Category:Templates]] </noinclude>
+`Category:Templates <Category:Templates>`__

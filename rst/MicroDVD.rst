@@ -1,18 +1,20 @@
-{{Muxmod=subtitle}} The name comes from the discontinued
-[https://web.archive.org/web/20040605003818/http://www.tiasoft.de/mdvdp/
-MicroDVD Player]. It may have the extension <code>.sub</code> (as does
-[[SubViewer]]).
+.. raw:: mediawiki
 
-== MicroDVD (*.*) format ==
+   {{Mux|id=microdvd|mod=subtitle}}
 
-=== Specification ===
+The name comes from the discontinued `MicroDVD Player <https://web.archive.org/web/20040605003818/http://www.tiasoft.de/mdvdp/>`__. It may have the extension ``.sub`` (as does `SubViewer <SubViewer>`__).
 
-A compact [[subtitles]] textfile with startframes and endframes in curly
-brackets <kbd>{}</kbd> at the start of every line.
+MicroDVD (*.*) format
+---------------------
 
-Linebreaks are marked with <kbd>|</kbd>
+Specification
+~~~~~~~~~~~~~
 
-   {1025}{1110}Oh no! \| The eggs are hatching! {1375}{1460}Wait, never
-   mind.|I was hallucinating...
+A compact `subtitles <subtitles>`__ textfile with startframes and endframes in curly brackets {} at the start of every line.
 
-[[Category:Subtitles]]
+Linebreaks are marked with \|
+
+| ``{1025}{1110}Oh no! | The eggs are hatching!``
+| ``{1375}{1460}Wait, never mind.|I was hallucinating...``
+
+`Category:Subtitles <Category:Subtitles>`__

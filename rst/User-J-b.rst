@@ -1,109 +1,164 @@
-== General presentation ==
+\__NOTOC_\_
 
-'''Hello!'''
+General presentation
+--------------------
 
-My name is '''[http://www.jbkempf.com/ Jean-Baptiste Kempf'''] and my
-nickname is ''jb'' or ''j-b'', in the VideoLAN community.
+**Hello!**
 
-I am one of the main {{VLC}} developer and the president of the VideoLAN
-non-profit organization.
+My name is '''`Jean-Baptiste Kempf''' <http://www.jbkempf.com/>`__ and my nickname is *jb* or *j-b*, in the VideoLAN community.
 
-[http://www.jbkempf.com/ My personal website] explains a bit more who I
-am and what I do.
+I am one of the main developer and the president of the VideoLAN non-profit organization.
 
-=== Education === I graduated in one of the best 'Grandes Ecoles', best
-scientific schools and universities in France: the ''[http://www.ecp.fr
-"Ecole Centrale Paris"]''.
+`My personal website <http://www.jbkempf.com/>`__ explains a bit more who I am and what I do.
 
-My degree ''"Ingénieur de l'école Centrale Paris"'', which is also a
-Master's Degree.
+Education
+~~~~~~~~~
 
-I also earned a ''Master's Degree'' in Computer Science from the
-[http://www.u-psud.fr/ University of Paris].
+I graduated in one of the best 'Grandes Ecoles', best scientific schools and universities in France: the `"Ecole Centrale Paris" <http://www.ecp.fr>`__.
 
-=== VideoLAN === I have been working on the VideoLAN project in many
-aspects since 2006 and I am very involved, doing a large variety of
-things, not only development.
+My degree *"Ingénieur de l'école Centrale Paris"*, which is also a Master's Degree.
 
-As a developer, I mostly program Qt4 interface. I also work a lot on
-contribs and external libraries and [[FourCC]] supports. I have built
-VLC media player on most possible platform (no BeOS, though).
+I also earned a *Master's Degree* in Computer Science from the `University of Paris <http://www.u-psud.fr/>`__.
 
-As a non-developer, I moderate e-mails, worked a lot on this wiki
-(almost rewritten it with [[User:H2g2bob]]), answer forums and mails,
-work on the websites and help on IRC. As you can imagine, I do a lot of
-support.
+VideoLAN
+~~~~~~~~
 
-jb (at) videolan (d0t) org is my mail, related to VideoLAN.
-[http://www.jbkempf.com My Website] (far from being finished) is my
-website.
+I have been working on the VideoLAN project in many aspects since 2006 and I am very involved, doing a large variety of things, not only development.
+
+As a developer, I mostly program Qt4 interface. I also work a lot on contribs and external libraries and `FourCC <FourCC>`__ supports. I have built VLC media player on most possible platform (no BeOS, though).
+
+As a non-developer, I moderate e-mails, worked a lot on this wiki (almost rewritten it with `User:H2g2bob <User:H2g2bob>`__), answer forums and mails, work on the websites and help on IRC. As you can imagine, I do a lot of support.
+
+jb (at) videolan (d0t) org is my mail, related to VideoLAN. `My Website <http://www.jbkempf.com>`__ (far from being finished) is my website.
 
 Use my talk page to talk to me or give me some TODOs.
 
-== Wiki ==
+Wiki
+----
 
-I have rewritten a lot of pages on this wiki, and I have more than 1000
-edits on this wiki.
+I have rewritten a lot of pages on this wiki, and I have more than 1000 edits on this wiki.
 
-=== Names ===
+Names
+~~~~~
 
-I am known under 'j-b', 'jb' on all the [[VideoLAN Sites]].
+I am known under 'j-b', 'jb' on all the `VideoLAN Sites <VideoLAN_Sites>`__.
 
-== My VLC == These are my tips to help you build the best VLC ever. I
-use debian/sid, for many reasons.
+My VLC
+------
 
-=== External libraries === apt-get build-dep vlc libdvdcss2
+These are my tips to help you build the best VLC ever. I use debian/sid, for many reasons.
+
+External libraries
+~~~~~~~~~~~~~~~~~~
+
+apt-get build-dep vlc libdvdcss2
 
 apt-get install nasm yasm libasm-dev
 
-=== Get VLC === <pre> git clone git://git.videolan.org/vlc.git\ </pre>
-<pre> cd vlc; ./bootstrap </pre>
+Get VLC
+~~~~~~~
 
-<pre> cd extras;</pre>
+::
 
-=== x264 (optional) ===
+    git clone git://git.videolan.org/vlc.git
 
-<pre> git clone git://git.videolan.org/x264.git x264-trunk</pre>
+::
 
-<pre> cd x264-trunk; ./configure --prefix=/usr; make</pre>
+    cd vlc; ./bootstrap 
 
-=== live555 (optional) === <pre> wget
-http://www.live555.com/liveMedia/public/live555-latest.tar.gz </pre>
+::
 
-<pre> tar xvzf live555-latest.tar.gz cd live
+    cd extras;
 
-sh genMakefiles linux; make </pre>
+x264 (optional)
+~~~~~~~~~~~~~~~
 
-=== ffmpeg (mandatory) ===
+::
 
-<pre> cd vlc-trunk/extras git clone git://git.videolan.org/ffmpeg.git
-ffmpeg cd ffmpeg </pre>
+    git clone git://git.videolan.org/x264.git x264-trunk
 
-==== ffmpeg configure line ==== <pre> ./configure --prefix=/usr
---enable-gpl --enable-pthreads --enable-libmp3lame --enable-libfaac
---enable-nonfree</pre> <pre> make </pre>
+::
 
-=== VLC configure line === <pre> mkdir build && cd build && ../configure
---prefix=/usr --enable-snapshot --enable-debug --enable-dbus-control
---enable-musicbrainz --enable-shared-libvlc --enable-mozilla
---enable-lirc --enable-live555 --with-live555-tree=../extras/live
---enable-x264 --with-x264-tree=../extras/x264-trunk --enable-shout
---enable-taglib --enable-v4l --enable-cddax --enable-dvb --enable-vcdx
---enable-realrtsp --enable-xvmc --enable-svg --enable-dvdread
---enable-dc1394 --enable-dv --enable-theora --enable-faad
---enable-twolame --enable-real --enable-flac --enable-tremor
---with-ffmpeg-mp3lame --with-ffmpeg-faac --enable-quicktime
---enable-dirac --enable-skins2 --enable-qt4 --enable-ncurses --enable-aa
---enable-caca --enable-esd --enable-portaudio --enable-jack
---enable-xosd --enable-galaktos --enable-goom --enable-ggi
---disable-cddax --disable-vcdx
+    cd x264-trunk; ./configure --prefix=/usr; make
 
-</pre>
+live555 (optional)
+~~~~~~~~~~~~~~~~~~
 
-<pre>make</pre>
+::
 
-<pre>sudo make install</pre>
+   wget http://www.live555.com/liveMedia/public/live555-latest.tar.gz
 
-== Ubuntu == apt-get build-dep vlc
+::
+
+   tar xvzf live555-latest.tar.gz
+   cd live
+
+   sh genMakefiles linux;
+   make
+
+ffmpeg (mandatory)
+~~~~~~~~~~~~~~~~~~
+
+::
+
+   cd vlc-trunk/extras
+   git clone git://git.videolan.org/ffmpeg.git ffmpeg
+   cd ffmpeg
+
+ffmpeg configure line
+^^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   ./configure --prefix=/usr --enable-gpl --enable-pthreads --enable-libmp3lame --enable-libfaac --enable-nonfree
+
+::
+
+    make 
+
+VLC configure line
+~~~~~~~~~~~~~~~~~~
+
+::
+
+   mkdir build && cd build && ../configure --prefix=/usr \
+           --enable-snapshot --enable-debug \
+           --enable-dbus-control --enable-musicbrainz \
+           --enable-shared-libvlc --enable-mozilla \
+           --enable-lirc \
+           --enable-live555 --with-live555-tree=../extras/live \
+           --enable-x264 --with-x264-tree=../extras/x264-trunk \
+           --enable-shout --enable-taglib \
+           --enable-v4l --enable-cddax \
+           --enable-dvb --enable-vcdx \
+           --enable-realrtsp --enable-xvmc \
+           --enable-svg   --enable-dvdread \
+           --enable-dc1394 --enable-dv \
+           --enable-theora --enable-faad \
+           --enable-twolame --enable-real \
+           --enable-flac --enable-tremor \
+           --with-ffmpeg-mp3lame --with-ffmpeg-faac \
+           --enable-quicktime --enable-dirac \
+           --enable-skins2 --enable-qt4 \
+           --enable-ncurses \
+           --enable-aa --enable-caca \
+           --enable-esd --enable-portaudio \
+           --enable-jack --enable-xosd \
+           --enable-galaktos --enable-goom \
+           --enable-ggi \
+           --disable-cddax --disable-vcdx
+
+::
+
+   make
+
+::
+
+   sudo make install
+
+Ubuntu
+------
+
+apt-get build-dep vlc
 
 apt-get install libtool automake autoconf ffmpeg

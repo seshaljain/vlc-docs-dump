@@ -1,1 +1,1 @@
-#REDIRECT [[:Category:SoC]]
+#. REDIRECT `:Category:SoC <:Category:SoC>`__

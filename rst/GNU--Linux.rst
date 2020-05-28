@@ -1,3 +1,3 @@
-#REDIRECT [[Linux]]
+#. REDIRECT `Linux <Linux>`__
 
-[[Category:GNU/Linux|*]]
+`\* <Category:GNU/Linux>`__

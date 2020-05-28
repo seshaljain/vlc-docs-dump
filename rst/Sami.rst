@@ -1,1 +1,1 @@
-#REDIRECT [[SAMI]]
+#. REDIRECT `SAMI <SAMI>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[MicroDVD]]
+#. REDIRECT `MicroDVD <MicroDVD>`__

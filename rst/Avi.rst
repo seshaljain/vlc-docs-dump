@@ -1,1 +1,1 @@
-#redirect [[AVI]]
+#. redirect `AVI <AVI>`__

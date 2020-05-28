@@ -1,1 +1,1 @@
-#REDIRECT [[CVD subtitles]]
+#. REDIRECT `CVD subtitles <CVD_subtitles>`__

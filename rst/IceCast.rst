@@ -1,1 +1,1 @@
-#REDIRECT [[Icecast]]
+#. REDIRECT `Icecast <Icecast>`__

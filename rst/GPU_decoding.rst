@@ -1,1 +1,1 @@
-#REDIRECT [[VLC GPU Decoding]]
+#. REDIRECT `VLC GPU Decoding <VLC_GPU_Decoding>`__

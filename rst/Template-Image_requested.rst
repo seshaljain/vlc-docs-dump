@@ -1,14 +1,15 @@
-{\| class="widebox center noprint" style="padding:0;"
-[[File:Image-request.png%7C36px%7Calt=%7Clink=:Category:Requested
-images]] Help VideoLAN by adding an image to this
-page!{{#if:{{{reason&#32;'''{{ucfirst:{{{reason}}}}}'''}}<br
-/>'''[[Special:CreateAccountupload]]'''. \|}<includeonly>
-[[Category:Requested images]]</includeonly><noinclude>
+============================= =====================================================================================
+.. figure:: Image-request.png | Help VideoLAN by adding an image to this page!{{#if:\| \ ****}}
+   :alt: Image-request.png    | `Create an account <Special:CreateAccount>`__ and then `upload <Special:Upload>`__.
+   :width: 36px              
+                             
+   Image-request.png         
+============================= =====================================================================================
 
-Modelled after the look of {{tl|Stub}}. Adds pages to
-[[:Category:Requested images]].
+Modelled after the look of . Adds pages to `:Category:Requested images <:Category:Requested_images>`__.
 
-Parameters: \* <code><nowiki>|reason=</nowiki></code> free-form reason
-for the image (optional)
+Parameters:
 
-[[Category:Maintenance templates]]</noinclude>
+-  ``|reason=`` free-form reason for the image (optional)
+
+`Category:Requested images <Category:Requested_images>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

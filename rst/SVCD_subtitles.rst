@@ -1,3 +1,3 @@
-#REDIRECT [[OGT]]
+#. REDIRECT `OGT <OGT>`__
 
-[[Category:Subtitles]]
+`Category:Subtitles <Category:Subtitles>`__

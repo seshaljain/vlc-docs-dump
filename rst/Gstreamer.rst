@@ -1,1 +1,1 @@
-#redirect [[GStreamer]]
+#. redirect `GStreamer <GStreamer>`__

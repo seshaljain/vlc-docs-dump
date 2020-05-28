@@ -1,12 +1,17 @@
-[[Image:Slackwarelogo.pngSlackware logo]]
+.. figure:: Slackwarelogo.png
+   :alt: Slackware logo
 
-I am Eric Hameleers, member of the [http://www.slackware.com/ Slackware]
-core development team.
+   Slackware logo
 
-You can find my homepage here: [http://www.slackware.com/~alien/
-http://www.slackware.com/~alien/]
+I am Eric Hameleers, member of the `Slackware <http://www.slackware.com/>`__ core development team.
 
-I also maintain a small Wiki (using DokuWiki software):
-[http://alien.slackbook.org/ http://alien.slackbook.org/]
+You can find my homepage here: http://www.slackware.com/~alien/
 
-----[[Image:Eric_hameleers_64.pngEric's pic]]
+I also maintain a small Wiki (using DokuWiki software): http://alien.slackbook.org/
+
+--------------
+
+.. figure:: Eric_hameleers_64.png
+   :alt: Eric's pic
+
+   Eric's pic

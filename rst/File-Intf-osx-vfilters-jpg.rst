@@ -1,1 +1,1 @@
-[[Category:macOS images]]
+`Category:macOS images <Category:macOS_images>`__

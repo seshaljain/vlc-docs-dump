@@ -1,4 +1,3 @@
-redid it because of all the compression artifacts and because Win 2000
-looks ugly
+redid it because of all the compression artifacts and because Win 2000 looks ugly
 
-[[Category:VLC buttons]]
+`Category:VLC buttons <Category:VLC_buttons>`__

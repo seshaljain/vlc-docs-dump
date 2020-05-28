@@ -1,22 +1,31 @@
-{{wikipedia}}
+.. raw:: mediawiki
 
-An Operating System ("OS") is a software layer on which applications and
-program are executed. It is hardware-dependent and factorizes many
-functionalities to make them simply accessible to programs, such as file
-management. Often, it also offers to have multiple programs executed at
-the same time by slicing their processor access.
+   {{wikipedia}}
 
-As the most known OSes, we can cite: \* [[File:Windows
-logo.pngalt=Microsoft Windows logo]] [[Windows]] 7, Windows 8.1, Windows
-10 &hellip; \* [[File:macOS logo.pngalt=Apple macOS wordmark]] [[macOS]]
-\* [[File:Tux.png%7C40px%7Calt=Tux, the mascot of Linux]]
-[[GNU/Linux]]-based OSes like [[Debian]] or [[Ubuntu]].
+An Operating System ("OS") is a software layer on which applications and program are executed. It is hardware-dependent and factorizes many functionalities to make them simply accessible to programs, such as file management. Often, it also offers to have multiple programs executed at the same time by slicing their processor access.
 
-{{VLC}} can be run on many OSes. [[:Category:Operating_systems|This
-list]] can help you to find which of them are supported.
+As the most known OSes, we can cite:
 
-== External links == \*
-[https://www.howtogeek.com/361572/what-is-an-operating-system/ How-To
-Geek - What is an Operating System?]
+-  |Windows_logo.png| `Windows <Windows>`__ 7, Windows 8.1, Windows 10 …
+-  |macOS_logo.png| `macOS <macOS>`__
+-  |Tux.png| `GNU/Linux <GNU/Linux>`__-based OSes like `Debian <Debian>`__ or `Ubuntu <Ubuntu>`__.
 
-[[Category:Glossary]] [[Category:Operating systems|*]]
+.. raw:: mediawiki
+
+   {{VLC}}
+
+can be run on many OSes. `This list <:Category:Operating_systems>`__ can help you to find which of them are supported.
+
+External links
+--------------
+
+-  `How-To Geek - What is an Operating System? <https://www.howtogeek.com/361572/what-is-an-operating-system/>`__
+
+`Category:Glossary <Category:Glossary>`__ `\* <Category:Operating_systems>`__
+
+.. |Windows_logo.png| image:: Windows_logo.png
+   :width: 40px
+.. |macOS_logo.png| image:: macOS_logo.png
+   :width: 40px
+.. |Tux.png| image:: Tux.png
+   :width: 40px

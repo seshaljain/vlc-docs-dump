@@ -1,1 +1,1 @@
-#redirect [[VLC Source code]]
+#. redirect `VLC Source code <VLC_Source_code>`__

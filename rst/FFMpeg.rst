@@ -1,1 +1,1 @@
-#redirect [[FFmpeg]]
+#. redirect `FFmpeg <FFmpeg>`__

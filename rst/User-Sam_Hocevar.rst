@@ -1,1 +1,1 @@
-Hi! I am a [[VLC]] developer, currently not very active.
+Hi! I am a `VLC <VLC>`__ developer, currently not very active.

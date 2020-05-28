@@ -1,1 +1,1 @@
-#REDIRECT [[Bit rate]]
+#. REDIRECT `Bit rate <Bit_rate>`__

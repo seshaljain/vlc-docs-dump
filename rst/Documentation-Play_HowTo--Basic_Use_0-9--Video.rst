@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Video]]
+#. REDIRECT `Documentation:Video <Documentation:Video>`__

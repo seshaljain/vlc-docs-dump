@@ -1,1 +1,1 @@
-#Redirect [[Real Media Video]]
+#. Redirect `Real Media Video <Real_Media_Video>`__

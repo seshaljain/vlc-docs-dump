@@ -1,10 +1,13 @@
-== DirectShow issues ==
+DirectShow issues
+-----------------
 
-{{VSGEntryVSG:Usage:DirectShow:NoSound|No Sound on DirectShow Capture}}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:Usage:DirectShow:Crash|Your VLC crashes while using
-DirectShow}}
+   {{VSGEntry|DirectShow - NoSound - DirectShow Capture without sound|VSG:Usage:DirectShow:NoSound|No Sound on DirectShow Capture}}
 
-<br><br><br><br><br>
+.. raw:: mediawiki
 
-{{VSG}}
+   {{VSGEntry|DirectShow - VLC crashes while using DirectShow (eg Webcam)|VSG:Usage:DirectShow:Crash|Your VLC crashes while using DirectShow}}
+
+| 
+| 

@@ -1,26 +1,44 @@
-{{#switch:{{{1}}} \| cmd = [[Command-line interface bash =
-[[Command-line interface csh = [[Command-line interface root =
-[[Command-line interface #default = [[Command-line interface|$]]
-}}<noinclude>
+{{#switch: \| cmd = `> <Command-line_interface>`__ \| bash = `$ <Command-line_interface>`__ \| csh = `% <Command-line_interface>`__ \| root = `# <Command-line_interface>`__ \| #default = `$ <Command-line_interface>`__ }}
 
-Links to [[Command-line interface]] like {{tl|%}} but more flexible.
+Links to `Command-line interface <Command-line_interface>`__ like but more flexible.
 
-<code>$</code> and <code>%</code> redirect here but technical
-restrictions forbid page names of <code>&gt;</code> and <code>#</code>.
+``$`` and ``%`` redirect here but technical restrictions forbid page names of ``>`` and ``#``.
 
-Different styles are available: \* <code>cmd</code>: Windows Command
-Prompt called <code>cmd.exe</code> or <code>cmd</code> \*
-<code>bash</code>: Bourne, Bash and Korn. Linux/Unix/macOS use bash as
-their default login shell \* <code>csh</code>: C Shell \*
-<code>root</code>: The root user as shown on a \*nix system
+Different styles are available:
+
+-  ``cmd``: Windows Command Prompt called ``cmd.exe`` or ``cmd``
+-  ``bash``: Bourne, Bash and Korn. Linux/Unix/macOS use bash as their default login shell
+-  ``csh``: C Shell
+-  ``root``: The root user as shown on a \*nix system
 
 Usage:
-   <nowiki>{{ prompt }}</nowiki>
+
+``{{ prompt }}``
 
 Examples:
-   <nowiki>{{ prompt \| cmd }}</nowiki>
 
-{{prompt bash }}</nowiki> {{prompt csh }}</nowiki> {{prompt root
-}}</nowiki> {{prompt|root}}
+``{{ prompt | cmd }}``
 
-[[Category:Templates]] </noinclude>
+.. raw:: mediawiki
+
+   {{prompt|cmd}}
+
+``{{ prompt | bash }}``
+
+.. raw:: mediawiki
+
+   {{prompt|bash}}
+
+``{{ prompt | csh }}``
+
+.. raw:: mediawiki
+
+   {{prompt|csh}}
+
+``{{ prompt | root }}``
+
+.. raw:: mediawiki
+
+   {{prompt|root}}
+
+`Category:Templates <Category:Templates>`__

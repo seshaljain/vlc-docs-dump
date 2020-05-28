@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:Hacker Guide]]
+#. REDIRECT `Talk:Hacker Guide <Talk:Hacker_Guide>`__

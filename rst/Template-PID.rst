@@ -1,3 +1,3 @@
-<abbr title="Process ID">PID</abbr><noinclude>
+PID
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

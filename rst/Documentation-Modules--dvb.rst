@@ -1,21 +1,94 @@
-{{See alsoname=dvbfirst_version=0.6.2description=[[DVB]] input with
-[[v4l2]] support|sc=dvb}}
+.. raw:: mediawiki
 
-Shortcuts: \* <code>dvb</code> (Generic name) \*\* <code>dvb-s</code>,
-<code>qpsk</code>, <code>satellite</code> (Satellite) \*\*
-<code>dvb-c</code>, <code>cable</code> (Cable) \*\* <code>dvb-t</code>,
-<code>terrestrial</code> (Terrestrial)
+   {{See also|Documentation:Modules/dtv}}
 
-== Options == {{Option value=boolean description=Some [[DVB]] cards do
-not like to be probed for their capabilities, you can disable this
-feature if you experience some trouble. }} {{Option value=string
-description=Filename of config file in share/dvb/dvb-s. }} {{Option
-value=string description=Filename containing initial scan tuning data.
-}} {{Option value=boolean description=Use NIT for scanning services }}
+.. raw:: mediawiki
 
-== See also == \* {{docmod|dvbsub}}
+   {{Module|name=dvb|type=Access|first_version=0.6.2|os=Linux|description=[[DVB]] input with [[v4l2]] support|sc=dvb}}
 
-== Source code == \* {{VLCSourceFilemodules/access/dvb}} (folder) \*
-{{VLCSourceFileplaylist}})
+Shortcuts:
 
-{{Documentation}}
+-  ``dvb`` (Generic name)
+
+   -  ``dvb-s``, ``qpsk``, ``satellite`` (Satellite)
+   -  ``dvb-c``, ``cable`` (Cable)
+   -  ``dvb-t``, ``terrestrial`` (Terrestrial)
+
+Options
+-------
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-probe
+   |value=boolean
+   |default=enabled
+   |description=Some [[DVB]] cards do not like to be probed for their capabilities, you can disable this feature if you experience some trouble.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-satellite
+   |value=string
+   |default=NULL
+   |description=Filename of config file in share/dvb/dvb-s.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-scanlist
+   |value=string
+   |default=NULL
+   |description=Filename containing initial scan tuning data.
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=dvb-scan-nit
+   |value=boolean
+   |default=enabled
+   |description=Use NIT for scanning services
+   }}
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{docmod|dvbsub}}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/dvb/access.c}}
+
+   (main file)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFolder|modules/access/dvb}}
+
+   (folder)
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/playlist/dvb.c}}
+
+   (LinuxTV channels list, part of )
+
+.. raw:: mediawiki
+
+   {{Documentation}}

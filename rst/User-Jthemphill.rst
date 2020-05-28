@@ -1,8 +1,5 @@
 Hi!
 
-I'm Jeffrey Hemphill, a student attempting to earn the coveted
-[http://socghop.appspot.com/ Google Code-In] T-Shirt by improving the
-VLC wiki.
+I'm Jeffrey Hemphill, a student attempting to earn the coveted `Google Code-In <http://socghop.appspot.com/>`__ T-Shirt by improving the VLC wiki.
 
-I'm currently designing the [[VSG:Main|VLC Support Guide]], an informal,
-step-by-step guide for VLC troubleshooting.
+I'm currently designing the `VLC Support Guide <VSG:Main>`__, an informal, step-by-step guide for VLC troubleshooting.

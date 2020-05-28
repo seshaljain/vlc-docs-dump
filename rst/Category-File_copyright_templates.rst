@@ -1,1 +1,1 @@
-[[Category:Templates]]
+`Category:Templates <Category:Templates>`__

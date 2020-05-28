@@ -1,1 +1,1 @@
-#REDIRECT [[Hacker Guide/libvlc]]
+#. REDIRECT `Hacker Guide/libvlc <Hacker_Guide/libvlc>`__

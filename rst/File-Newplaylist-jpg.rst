@@ -1,1 +1,1 @@
-[[Category:Playlist]]
+`Category:Playlist <Category:Playlist>`__

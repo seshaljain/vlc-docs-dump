@@ -1,14 +1,17 @@
-<includeonly> {\| class="noprint" style="float: left; background-color:
-white; margin: 2.8em 0 0 3.2em; padding: 1em 1em 1.5em 1em; width: 20%;"
-\| {{ {{#if: {{{1{{{1}}}}</includeonly><noinclude> {{See
-also|Template:RightMenu}}
+=======================
+{{ {{#if: \|\|ns:0}} }}
+=======================
 
-==Usage==
-   <nowiki>{{LeftMenu|Name of Template to include}}</nowiki>
+Usage
+-----
 
-==Example==
-   <nowiki>{{LeftMenu|documentation toc}}</nowiki>
+``{{LeftMenu|Name of Template to include}}``
 
-becomes {{LeftMenu|documentation toc}}
+Example
+-------
 
-[[Category:Templates]] </noinclude>
+``{{LeftMenu|documentation toc}}``
+
+becomes
+
+`Category:Templates <Category:Templates>`__

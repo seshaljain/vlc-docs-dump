@@ -1,17 +1,29 @@
-{{muxencoder=n}} A special codec used mainly for debugging. This saves
-the input as a file (specified by ''demuxdump-file''), without decoding
-it.
+.. raw:: mediawiki
 
-This is a way to "decode" input to VLC. To output data without a
-[[container]], use [[dummy]].
+   {{mux|id=dump|encoder=n}}
 
-For example, saving the raw input of an [[mp3]] [[shoutcast]] stream can be done with:
-   {{%}} vlc <nowiki>http://example.org/shoutcast.mp3\ </nowiki>
-   :demux=dump :demuxdump-file=output.mp3
+A special codec used mainly for debugging. This saves the input as a file (specified by *demuxdump-file*), without decoding it.
 
-== Module options == \* demuxdump-file (file name) *: File to output
-data, default: "stream-demux.dump"* demuxdump-append ([[boolean]]) \*:
-Append data to file. Set as true to append data, or false (default) to
-overwrite the file with the new data.
+This is a way to "decode" input to VLC. To output data without a `container <container>`__, use `dummy <dummy>`__.
 
-== Source code == {{fileinput demuxer}}
+For example, saving the raw input of an `mp3 <mp3>`__ `shoutcast <shoutcast>`__ stream can be done with:
+
+``{{%}} vlc http://example.org/shoutcast.mp3 :demux=dump :demuxdump-file=output.mp3``
+
+Module options
+--------------
+
+-  demuxdump-file (file name)
+
+      File to output data, default: "stream-demux.dump"
+
+-  demuxdump-append (`boolean <boolean>`__)
+
+      Append data to file. Set as true to append data, or false (default) to overwrite the file with the new data.
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/demuxdump.c|input demuxer}}

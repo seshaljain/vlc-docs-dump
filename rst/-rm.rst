@@ -1,1 +1,1 @@
-#redirect [[RealMedia]]
+#. redirect `RealMedia <RealMedia>`__

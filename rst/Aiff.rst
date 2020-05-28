@@ -1,1 +1,1 @@
-#redirect [[AIFF]]
+#. redirect `AIFF <AIFF>`__

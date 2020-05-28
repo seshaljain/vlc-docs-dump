@@ -1,9 +1,16 @@
-==Dialogue or conversation problems while playing 5.1 audio==
+\__NOTOC_\_
 
-Make sure you have select proper speaker setup from Windows audio
-settings or from your sound-card control panel.
+Dialogue or conversation problems while playing 5.1 audio
+---------------------------------------------------------
 
-If you have done so, make sure VLC also has right settings. '''Audio →
-Audio Device''' to select proper speaker settings during playback.
+Make sure you have select proper speaker setup from Windows audio settings or from your sound-card control panel.
 
-{{Anchoring space}} {{VSG}}
+If you have done so, make sure VLC also has right settings. **Audio → Audio Device** to select proper speaker settings during playback.
+
+.. raw:: mediawiki
+
+   {{Anchoring space}}
+
+.. raw:: mediawiki
+
+   {{VSG}}

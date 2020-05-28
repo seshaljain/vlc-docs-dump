@@ -1,3 +1,3 @@
-#REDIRECT [[:Category:GNU/Linux distros]]
+#. REDIRECT `:Category:GNU/Linux distros <:Category:GNU/Linux_distros>`__
 
-[[Category:GNU/Linux distros|*]]
+`\* <Category:GNU/Linux_distros>`__

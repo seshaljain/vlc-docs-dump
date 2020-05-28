@@ -1,1 +1,1 @@
-#REDIRECT [[Open source]]
+#. REDIRECT `Open source <Open_source>`__

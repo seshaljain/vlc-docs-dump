@@ -1,10 +1,11 @@
-{{howto|disable Recent Media of the Qt4 interface}}
+.. raw:: mediawiki
 
-Go to '''Tools → Preferences''' (set Show Settings to All) and then
-'''Interface → Main interfaces → Qt'''. Un-tick '''Save the recently
-played items in the menu'''.
+   {{howto|disable Recent Media of the Qt4 interface}}
 
-Remember to press '''Save''' to save VLC settings and '''restart''' VLC
-after that to ensure changes are enabled.
+Go to **Tools → Preferences** (set Show Settings to All) and then **Interface → Main interfaces → Qt**. Un-tick **Save the recently played items in the menu**.
 
-{{VSG}}
+Remember to press **Save** to save VLC settings and **restart** VLC after that to ensure changes are enabled.
+
+.. raw:: mediawiki
+
+   {{VSG}}

@@ -1,1 +1,1 @@
-#REDIRECT [[WebM]]
+#. REDIRECT `WebM <WebM>`__

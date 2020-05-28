@@ -1,1 +1,1 @@
-#REDIRECT [[AMR]]
+#. REDIRECT `AMR <AMR>`__

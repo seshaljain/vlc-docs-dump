@@ -1,1 +1,1 @@
-#REDIRECT [[VoutRework]]
+#. REDIRECT `VoutRework <VoutRework>`__

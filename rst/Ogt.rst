@@ -1,1 +1,1 @@
-#REDIRECT [[OGT]]
+#. REDIRECT `OGT <OGT>`__

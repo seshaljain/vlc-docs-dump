@@ -1,6 +1,12 @@
-{{see alsoMMS}} MMS is a [[proprietary]] digital media streaming
-protocol developed by Microsoft.
+.. raw:: mediawiki
 
-It is supported in [[Windows Media Player]] and Windows Media Server
-v4.0 or later.<br /> MMSH is MMS over [[HTTP]], MMST is MMS over [[TCP]]
-and MMSU is MMS over [[UDP]].
+   {{see also|Documentation:Modules/mms}}
+
+.. raw:: mediawiki
+
+   {{protocol|MMS}}
+
+MMS is a `proprietary <proprietary>`__ digital media streaming protocol developed by Microsoft.
+
+| It is supported in `Windows Media Player <Windows_Media_Player>`__ and Windows Media Server v4.0 or later.
+| MMSH is MMS over `HTTP <HTTP>`__, MMST is MMS over `TCP <TCP>`__ and MMSU is MMS over `UDP <UDP>`__.

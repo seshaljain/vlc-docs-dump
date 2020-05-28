@@ -1,6 +1,22 @@
-{{muxaltid=subtitleVobSub}} {{Mmwiki|VOBsub}} For reading [[subtitles]]
-in [[VOB]] files.
+.. raw:: mediawiki
 
-==Source code== {{fileinput demuxer}}
+   {{mux|id=vobsub|altid=subtitle|encoder=n}}
 
-[[Category:Subtitles]]
+.. raw:: mediawiki
+
+   {{wikipedia|VobSub}}
+
+.. raw:: mediawiki
+
+   {{Mmwiki|VOBsub}}
+
+For reading `subtitles <subtitles>`__ in `VOB <VOB>`__ files.
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/vobsub.c|input demuxer}}
+
+`Category:Subtitles <Category:Subtitles>`__

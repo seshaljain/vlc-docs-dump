@@ -1,6 +1,5 @@
-<sup>&#x5B;{{{for|Please check
-this}}}&#x5D;</sup><includeonly>[[Category:Pages to
-check]]</includeonly><noinclude>
+:sup:`[]`\ 
 
-Also adds pages to [[:Category:Pages to check]] [[Category:Maintenance
-templates]] </noinclude>
+Also adds pages to `:Category:Pages to check <:Category:Pages_to_check>`__
+
+`Category:Pages to check <Category:Pages_to_check>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

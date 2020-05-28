@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Hotkeys]]
+#. REDIRECT `Documentation:Hotkeys <Documentation:Hotkeys>`__

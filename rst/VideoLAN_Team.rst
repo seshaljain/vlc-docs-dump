@@ -1,41 +1,60 @@
-This page is intended to help you know who's who in the [[VideoLAN]]
-organisation.
+This page is intended to help you know who's who in the `VideoLAN <VideoLAN>`__ organisation.
 
-==VideoLAN Team== '' You can add yourself to the list following
-alphabetical order.''
+VideoLAN Team
+-------------
 
-{\| Real name !! align=left width=100 \| IRC Nick !!align=left
-width=100\| wiki login !!align=left width=200 \| Forum login !!
-Christophe Mutricy \|\| xtophe \|\| [[User:Xtophe\| xtophe Christoph
-Miebach \|\| No_se \|\| [[User:No_se\| no_se David Fuhrmann \|\| d-fu
-\|\| ? \|\| dfuhrmann Denis Charmet \|\| TypX \|\| TypX Edward Wang \|\|
-edwardw \|\| [[User:Edwardw\| edwardw Felix Paul Kühne \|\| feepk \|\|
-[[User:Fkuehne\| Felix Paul Kuehne Francois Cartegnie \|\| InTheWings
-\|\| [[User:Fcartegnie\| ? Frédéric Yhuel \|\| fyhuel \|\| ? \|\| ? Hugo
-Beauzée-Luyssen \|\| chouquette \|\| [[User:Chouquette\| chouquette
-Ilkka Ollakka \|\| ILEoo \|\| ? \|\| ILEoo Jean-Baptiste Kempf \|\| j-b
-\|\| [[User:J-b\| Jean-Baptiste Kempf Jean-Paul Saman \|\| jpsaman \|\|
-[[User:jpsaman\| jpsaman Ludovic Fauvet \|\| etix \|\| [[User:Etix\|
-etix Pavlov Konstantin \|\| thresh \|\| [[User:Thresh\| thresh Pierre
-Ynard \|\| linkfanel \|\| ? \|\| ? Rafaël Carré \|\| funman \|\|
-[[User:Funman\| funman Rémi Denis-Courmont \|\| courmisch \|\|
-[[User:Courmisch\| Rémi Denis-Courmont Sébastien Escudier \|\|
-`Seb <>`__ \|\| [[User:Sebastien\| Sébastien Escudier Real name !!
-align=left width=100 \| IRC Nick !!align=left width=100\| SVN login !!
-align=left width=100 \| wiki login !!align=left width=100 \| Forum login
-!! Sam Hocevar \|\| sam \|\| sam \|\| [[User:Sam Hocevar\| Christophe
-Massiot \|\| Meuuh \|\| meuuh \|\| ? \|\| ? Filippo Carone \|\|
-littlejohn \|\| littlejohn \|\| ? \|\| ? Antoine Cellerier \|\| dionoea
-\|\| dionoea \|\| [[User:Dionoea\| dionoea Jerome Decoodt \|\| DiDjCodt
-\|\| djc \|\| ? \|\| ? Pierre d'Herbemont \|\| pdherbemont \|\|
-pdherbemont \|\| [[User:Pdherbemont\| pdherbemont Damien Fouilleul \|\|
-Quovodis \|\| damienf \|\| [[User: Quovodis\| ? Yoann Peronneau \|\|
-yoannp \|\| yoann \|\| [[User:Yoann\| yoann Bernie Purcel \|\| ? \|\|
-bitmap \|\| ? \|\| ? Clément Stenac \|\| zorglub \|\| zorglub \|\| ?
-\|\| ? Olivier Teulière \|\| ipkiss \|\| ipkiss \|\| [[User:Ipkiss\|
-ipkiss Faustino Osuna \|\| riquedafreak \|\| riquedafreak \|\|
-[[User:Riquedafreak\| riquedafreak \|}
+'' You can add yourself to the list following alphabetical order.''
 
-==See also== \* [[M2X]] - a company founded by Jean-Paul Saman
+.. table:: VideoLAN Team
 
-[[Category:About VideoLAN]]
+   ==================== ========== ================================ ===================
+   Real name            IRC Nick   wiki login                       Forum login        
+   ==================== ========== ================================ ===================
+   Christophe Mutricy   xtophe     `Xtophe <User:Xtophe>`__         xtophe             
+   Christoph Miebach    No_se      `No_se <User:No_se>`__           no_se              
+   David Fuhrmann       d-fu       ?                                dfuhrmann          
+   Denis Charmet        TypX       ?                                TypX               
+   Edward Wang          edwardw    `Edwardw <User:Edwardw>`__       edwardw            
+   Felix Paul Kühne     feepk      `Fkuehne <User:Fkuehne>`__       Felix Paul Kuehne  
+   Francois Cartegnie   InTheWings `Fcartegnie <User:Fcartegnie>`__ ?                  
+   Frédéric Yhuel       fyhuel     ?                                ?                  
+   Hugo Beauzée-Luyssen chouquette `Chouquette <User:Chouquette>`__ chouquette         
+   Ilkka Ollakka        ILEoo      ?                                ILEoo              
+   Jean-Baptiste Kempf  j-b        `J-b <User:J-b>`__               Jean-Baptiste Kempf
+   Jean-Paul Saman      jpsaman    `jpsaman <User:jpsaman>`__       jpsaman            
+   Ludovic Fauvet       etix       `Etix <User:Etix>`__             etix               
+   Pavlov Konstantin    thresh     `Thresh <User:Thresh>`__         thresh             
+   Pierre Ynard         linkfanel  ?                                ?                  
+   Rafaël Carré         funman     `Funman <User:Funman>`__         funman             
+   Rémi Denis-Courmont  courmisch  `Courmisch <User:Courmisch>`__   Rémi Denis-Courmont
+   Sébastien Escudier   Seb\_      `Sebastien <User:Sebastien>`__   Sébastien Escudier 
+   ==================== ========== ================================ ===================
+
+Inactive / Retired
+~~~~~~~~~~~~~~~~~~
+
+.. table:: Inactive / Retired Members of the VideoLAN Team
+
+   ================== ============ ============ ==================================== ============
+   Real name          IRC Nick     SVN login    wiki login                           Forum login 
+   ================== ============ ============ ==================================== ============
+   Sam Hocevar        sam          sam          `Sam Hocevar <User:Sam_Hocevar>`__               
+   Christophe Massiot Meuuh        meuuh        ?                                    ?           
+   Filippo Carone     littlejohn   littlejohn   ?                                    ?           
+   Antoine Cellerier  dionoea      dionoea      `Dionoea <User:Dionoea>`__           dionoea     
+   Jerome Decoodt     DiDjCodt     djc          ?                                    ?           
+   Pierre d'Herbemont pdherbemont  pdherbemont  `Pdherbemont <User:Pdherbemont>`__   pdherbemont 
+   Damien Fouilleul   Quovodis     damienf      `Quovodis <User:_Quovodis>`__        ?           
+   Yoann Peronneau    yoannp       yoann        `Yoann <User:Yoann>`__               yoann       
+   Bernie Purcel      ?            bitmap       ?                                    ?           
+   Clément Stenac     zorglub      zorglub      ?                                    ?           
+   Olivier Teulière   ipkiss       ipkiss       `Ipkiss <User:Ipkiss>`__             ipkiss      
+   Faustino Osuna     riquedafreak riquedafreak `Riquedafreak <User:Riquedafreak>`__ riquedafreak
+   ================== ============ ============ ==================================== ============
+
+See also
+--------
+
+-  `M2X <M2X>`__ - a company founded by Jean-Paul Saman
+
+`Category:About VideoLAN <Category:About_VideoLAN>`__

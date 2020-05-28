@@ -1,9 +1,19 @@
-==Video is good but...==
+\__NOTOC_\_
 
-{{VSGEntryVSG:Video:ChoppyVideo is too darkVideo is appearing too dark
-on VLC.}} {{VSGEntryVSG:Video:Color_washed_out|This is a '''NVIDIA'''
-issue on Windows.}}
+Video is good but...
+--------------------
 
-<br>
+.. raw:: mediawiki
 
-{{VSG}}
+   {{VSGEntry|Video is choppy|VSG:Video:Choppy|VLC can partially play video, but its playback is choppy.}}
+
+.. raw:: mediawiki
+
+   {{VSGEntry|Video is too dark|VSG:Video:Dark|Video is appearing too dark on VLC.}}
+
+.. raw:: mediawiki
+
+   {{VSGEntry|Video colors are washed out|VSG:Video:Color_washed_out|This is a '''NVIDIA''' issue on Windows.}}
+
+| 
+| 

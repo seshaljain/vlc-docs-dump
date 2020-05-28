@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Documentation/de]]
+#. REDIRECT `Documentation:Documentation/de <Documentation:Documentation/de>`__

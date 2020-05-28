@@ -1,18 +1,79 @@
-{{See alsoname=cddafirst_version=&le; 0.8sc=cdda|sc2=cddasimple}}
+.. raw:: mediawiki
 
-The option <code>--cd-audio</code> is new as of
-{{Commitdiff43bb27d91ce344eee93df3c956cd2513e3eecc3c}} (2018).
+   {{See also|CD}}
 
-The options <code>--cdda-track</code> plays a particular track (like
-<code>@track</code> does). <code>--cdda-first-sector</code> and
-<code>cdda-last-sector</code> seem to be hints to VLC to skip
-[[wikipedia:disk sector|disk sector]]s at the beginning or end.
+.. raw:: mediawiki
 
-{{Option value=string name=cdda-track default=0 name=cdda-first-sector
-default=-1 name=cdda-last-sector default=-1 name=cddb-server
-default=freedb.videolan.org name=cddb-port min=1 default=80
-\|description=CDDB Server [[port]] to use }}
+   {{Module|name=cdda|type=Access|first_version=&le; 0.8|description=Read a [[CD]]|sc=cdda|sc2=cddasimple}}
 
-== Source code == \* {{VLCSourceFile|modules/access/cdda.c}}
+The option ``--cd-audio`` is new as of (2016). The option ``--cdda-caching`` (seems) to be deprecated as of (2018).
 
-{{Documentation}}
+The options ``--cdda-track`` plays a particular track (like ``@track`` does). ``--cdda-first-sector`` and ``cdda-last-sector`` seem to be hints to VLC to skip `disk sectors <wikipedia:disk_sector>`__ at the beginning or end.
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cd-audio
+   |value=string
+   |description=Audio CD device
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cdda-track
+   |value=integer
+   |default=0
+   |description=NULL
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cdda-first-sector
+   |value=integer
+   |default=-1
+   |description=NULL
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cdda-last-sector
+   |value=integer
+   |default=-1
+   |description=NULL
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cddb-server
+   |value=string
+   |default=freedb.videolan.org
+   |description=Address of the CDDB server to use
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=cddb-port
+   |value=integer
+   |min=1
+   |max=65535
+   |default=80
+   |description=CDDB Server [[port]] to use
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/cdda.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

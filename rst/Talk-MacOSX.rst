@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:macOS]]
+#. REDIRECT `Talk:macOS <Talk:macOS>`__

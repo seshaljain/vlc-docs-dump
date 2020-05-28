@@ -1,2 +1,1 @@
-[[Category:Diagrams]] [[Category:Preferences images]] [[Category:Qt
-images]] [[Category:VLC 1.2.0-pre images]]
+`Category:Diagrams <Category:Diagrams>`__ `Category:Preferences images <Category:Preferences_images>`__ `Category:Qt images <Category:Qt_images>`__ `Category:VLC 1.2.0-pre images <Category:VLC_1.2.0-pre_images>`__

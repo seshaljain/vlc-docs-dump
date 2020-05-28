@@ -1,2 +1,6 @@
-*Common delete reasons*\ \* Author request \*\* Copyright violation \*\*
-Vandalism \*\* Spam
+-  Common delete reasons
+
+   -  Author request
+   -  Copyright violation
+   -  Vandalism
+   -  Spam

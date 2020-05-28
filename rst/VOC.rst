@@ -1,1 +1,1 @@
-#redirect [[Voc]]
+#. redirect `Voc <Voc>`__

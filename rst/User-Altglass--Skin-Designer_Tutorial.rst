@@ -1,3 +1,1 @@
-This page has moved to
-[http://d-gfx.kognetwork.ch/VLC/skineditor/tutorial.html the Skin
-Editor's homepage]
+This page has moved to `the Skin Editor's homepage <http://d-gfx.kognetwork.ch/VLC/skineditor/tutorial.html>`__

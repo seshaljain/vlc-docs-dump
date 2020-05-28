@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN Wiki:Sandbox]]
+#. REDIRECT `VideoLAN Wiki:Sandbox <VideoLAN_Wiki:Sandbox>`__

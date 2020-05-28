@@ -1,1 +1,1 @@
-#REDIRECT [[ES]]
+#. REDIRECT `ES <ES>`__

@@ -1,3 +1,3 @@
-#REDIRECT [[MPEG-4#Container]]
+#. REDIRECT `MPEG-4#Container <MPEG-4#Container>`__
 
-[[Category:Container]]
+`Category:Container <Category:Container>`__

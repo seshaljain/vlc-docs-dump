@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/podcast]]
+#. REDIRECT `Documentation:Modules/podcast <Documentation:Modules/podcast>`__

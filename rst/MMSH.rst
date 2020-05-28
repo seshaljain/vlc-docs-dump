@@ -1,3 +1,3 @@
-#REDIRECT [[MMS]]
+#. REDIRECT `MMS <MMS>`__
 
-[[Category:Protocols]]
+`Category:Protocols <Category:Protocols>`__

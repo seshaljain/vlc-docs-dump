@@ -1,1 +1,1 @@
-#REDIRECT [[Template:FOSS]]
+#. REDIRECT `Template:FOSS <Template:FOSS>`__

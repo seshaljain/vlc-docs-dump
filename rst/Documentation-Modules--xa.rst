@@ -1,7 +1,21 @@
-{{Moduletype=Access demuxdescription=[[XA]] demuxer}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=xa|type=Access demux|first_version=0.8.2|description=[[XA]] demuxer}}
 
-== Source code == \* {{VLCSourceFile|modules/demux/xa.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/xa.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

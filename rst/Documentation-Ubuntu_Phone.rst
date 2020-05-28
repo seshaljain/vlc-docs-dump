@@ -1,3 +1,5 @@
-{{Stub}}
+.. raw:: mediawiki
 
-[[Category:GNU/Linux]] [[Category:Mobile documentation]]
+   {{Stub}}
+
+`Category:GNU/Linux <Category:GNU/Linux>`__ `Category:Mobile documentation <Category:Mobile_documentation>`__

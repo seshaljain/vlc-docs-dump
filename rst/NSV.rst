@@ -1,7 +1,16 @@
-{{muxencoder=n}}
+.. raw:: mediawiki
 
-'''Nsv''' is the container format for NullSoft Video
+   {{mux|id=nsv|encoder=n}}
 
-== Source code == {{fileinput demuxer}}
+**Nsv** is the container format for NullSoft Video
 
-{{Stub}}
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/nsv.c|input demuxer}}
+
+.. raw:: mediawiki
+
+   {{Stub}}

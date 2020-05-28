@@ -1,11 +1,23 @@
-{{Moduletype=Accessos=macOS|description=AVFoundation video capture
-module}}
+.. raw:: mediawiki
 
-The {{docmod|qtcapture}} module was removed prior to 3.0.0, and users
-were directed to avcapture.
+   {{Module|name=avcapture|type=Access|first_version=2.1.0|os=macOS|description=AVFoundation video capture module}}
 
-== Options == None.
+The module was removed prior to 3.0.0, and users were directed to avcapture.
 
-== Source code == \* {{VLCSourceFile|modules/access/avcapture.m}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/avcapture.m}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

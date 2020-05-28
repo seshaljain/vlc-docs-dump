@@ -1,21 +1,49 @@
-{{Moduletype=Video filterdescription=Turn the picture black and white
-except for some colors}}
+.. raw:: mediawiki
 
-This filters turns most of the picture black and white except for some
-colors. This could be called a "Schindler's List" effect.
+   {{Module|name=colorthres|type=Video filter|first_version=0.9.0|description=Turn the picture black and white except for some colors}}
 
-== Options == {{Option value=integer description=Colors similar to this
-will be kept, others will be grayscaled. }}
+This filters turns most of the picture black and white except for some colors. This could be called a "Schindler's List" effect.
 
-{{Option value=integer description=Saturation threshold }}
+Options
+-------
 
-{{Option value=integer description=Similarity threshold }}
+.. raw:: mediawiki
 
-== Example ==
-   % '''vlc --video-filter colorthres somevideo.avi'''
+   {{Option
+   |name=colorthres-color
+   |value=integer
+   |default=0xFF0000 (red)
+   |description=Colors similar to this will be kept, others will be grayscaled.
+   }}
 
-== See also == \*
-[http://en.wikipedia.org/wiki/Image:Schindlers_list_red_dress.JPG
-Schindler's List, Red dress] on wikipedia
+.. raw:: mediawiki
 
-{{Documentation footer}}
+   {{Option
+   |name=colorthres-saturationthres
+   |value=integer
+   |default=20
+   |description=Saturation threshold
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=colorthres-similaritythres
+   |value=integer
+   |default=15
+   |description=Similarity threshold
+   }}
+
+Example
+-------
+
+``% ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``colorthres``\ ````\ ``somevideo.avi``**
+
+See also
+--------
+
+-  `Schindler's List, Red dress <http://en.wikipedia.org/wiki/Image:Schindlers_list_red_dress.JPG>`__ on wikipedia
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

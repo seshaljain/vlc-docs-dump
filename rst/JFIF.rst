@@ -1,1 +1,1 @@
-#REDIRECT [[JPEG]]
+#. REDIRECT `JPEG <JPEG>`__

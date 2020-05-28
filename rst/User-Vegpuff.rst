@@ -1,1 +1,1 @@
-I'm [http://twitter.com/alagu alagu] on twitter.
+I'm `alagu <http://twitter.com/alagu>`__ on twitter.

@@ -1,16 +1,25 @@
-{{Moduletype=Audio outputEsounD]] audio
-outputfirst_version=0.0.95|last_version=0.9.10}}
+.. raw:: mediawiki
 
-Enlightened Sound Daemon (also known as EsounD and ESD) was one of the
-original audio output modules for Linux included since VLC's infancy.
-{{docmod|arts}} and the esd plugin were removed prior to VLC 1.0.0,
-because both projects were inactive.
+   {{Module|name=esd|type=Audio output|description=[[wikipedia:EsounD|EsounD]] audio output|os=Linux|first_version=0.0.95|last_version=0.9.10}}
 
-Modern Linux users can use the {{docmodjack}} modules instead. There are
-probably others.
+Enlightened Sound Daemon (also known as EsounD and ESD) was one of the original audio output modules for Linux included since VLC's infancy. and the esd plugin were removed prior to VLC 1.0.0, because both projects were inactive.
 
-== Options == None.
+Modern Linux users can use the or modules instead. There are probably others.
 
-== Source code == \* {{VLCSourceFilep=vlc/vlc-0.9.git}}
+Options
+-------
 
-{{Documentation footer}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/audio_output/esd.c|p=vlc/vlc-0.9.git}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

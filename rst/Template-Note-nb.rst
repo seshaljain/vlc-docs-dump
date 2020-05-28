@@ -1,5 +1,30 @@
-{\| class="widebox" style="width: 90%;" [[File:Ambox
-important.pnglink=style="word-break: break-word;"Example text goes
-here}}} Note}} \* {{tlWarning}}
+===============================
+.. figure:: Ambox_important.png
+   :alt: Ambox_important.png   
+   :width: 18px                
+                               
+   Ambox_important.png         
+===============================
 
-[[Category:Templates]] </noinclude>
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Note}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Note-nb}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Warning}}
+
+`Category:Templates <Category:Templates>`__

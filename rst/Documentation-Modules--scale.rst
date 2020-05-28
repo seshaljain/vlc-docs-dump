@@ -1,15 +1,41 @@
-{{Moduletype=Video filterdescription=Video scaling filter|sc=none}}
+.. raw:: mediawiki
 
-This module uses the low quality "nearest neighbour"
-algorithm.<!--Described in source code header--><br />
-[[wikipedia:ARGB91106e6a04862979b498f3cc23d14eb2057fbd5d|l=was
-introduced}} in VLC 3.0.0 (not mentioned in the source code header).
+   {{Module|name=scale|type=Video filter|first_version=0.8.0|description=Video scaling filter|sc=none}}
 
-Supported formats for [[RGBAYUV colour space]]: \* [[I420]] \* [[YV12]]
-\* YUVP \* YUVA {{Clear}}
+| This module uses the low quality "nearest neighbour" algorithm.
+| `ARGB <wikipedia:ARGB>`__ support in VLC 3.0.0 (not mentioned in the source code header).
 
-== Options == None.
+Supported formats for `RGBA colour space <RGBA>`__:
 
-== Source code == \* {{VLCSourceFile|modules/video_filter/scale.c}}
+-  RGBA
+-  RGB32
+-  ARGB
 
-{{Documentation}}
+Supported formats for `YUV colour space <YUV>`__:
+
+-  `I420 <I420>`__
+-  `YV12 <YV12>`__
+-  YUVP
+-  YUVA
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+Options
+-------
+
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/scale.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

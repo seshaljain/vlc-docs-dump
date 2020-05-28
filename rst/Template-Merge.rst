@@ -1,6 +1,9 @@
-{\| class="widebox center noprint" style="padding:0;"
-[[File:Merge-arrows.gif%7C50px]] It has been suggested that this
-{{#if:{{NAMESPACE}}article}} or section be merged with [[{{{1}}}]].
-\|}<includeonly>[[Category:Pages to be merged]]</includeonly><noinclude>
+============================ =======================================================================================================
+.. figure:: Merge-arrows.gif It has been suggested that this {{#if:\|page|article}} or section be merged with `{{{1}}} <{{{1}}}>`__.
+   :alt: Merge-arrows.gif   
+   :width: 50px             
+                            
+   Merge-arrows.gif         
+============================ =======================================================================================================
 
-[[Category:Maintenance templates]] </noinclude>
+`Category:Pages to be merged <Category:Pages_to_be_merged>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

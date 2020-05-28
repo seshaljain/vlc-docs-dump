@@ -1,1 +1,1 @@
-#REDIRECT [[VobSub]]
+#. REDIRECT `VobSub <VobSub>`__

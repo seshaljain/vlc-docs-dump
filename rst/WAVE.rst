@@ -1,32 +1,33 @@
-{{muxencoder=y}}
+.. raw:: mediawiki
 
-'''WAVE''' is a way of storing audio, which is normally
-[[raw|uncompressed]]. It is based on [[RIFF]]. Note that wav isn't a
-streamable audio format, so you can only stream it using [[RTP]] (to
-stream it otherwise, transcode it to something that's streamable).
+   {{mux|id=wav|encoder=y}}
 
-== Accepted audio codecs == \* [[dummy]]: Uncompressed audio of various
-types, based on storing integer values of the amplitude of the sound
-(see [[wikipedia:PCM|PCM]]). \* [[fl32]]: Floating point 32-bit
-uncompressed audio, also based on PCM but allowing the values to be
-stored as floating point data types. This can give better quality audio
-when the sound becomes quiet.
+**WAVE** is a way of storing audio, which is normally `uncompressed <raw>`__. It is based on `RIFF <RIFF>`__. Note that wav isn't a streamable audio format, so you can only stream it using `RTP <RTP>`__ (to stream it otherwise, transcode it to something that's streamable).
 
-== Converting to WAVE ==
+Accepted audio codecs
+---------------------
 
-The command-line for [[convert]]ing any readable input file to a WAVE
-audio file is the following:
+-  `dummy <dummy>`__: Uncompressed audio of various types, based on storing integer values of the amplitude of the sound (see `PCM <wikipedia:PCM>`__).
+-  `fl32 <fl32>`__: Floating point 32-bit uncompressed audio, also based on PCM but allowing the values to be stored as floating point data types. This can give better quality audio when the sound becomes quiet.
 
-   {{%}} {{font colourvlc}} -I dummy -vv {{font colour"input.mp3"}}
-   --sout=#transcode{acodec={{font colours16l}},channels=2,ab={{font
-   colour128}},samplerate=44100}:standard{access=file,mux=wav,dst={{font
-   colour"output.wav"}}} vlc://quit
+Converting to WAVE
+------------------
 
-Where on Windows you need to add installation directory in front of
-{{font colourvlc}} (by default {{font colour{{Path to VLCdir=y}}}}).
+The command-line for `converting <convert>`__ any readable input file to a WAVE audio file is the following:
 
-As {{font colouraudio codec (acodec)}} you can specify one of the above
-mentioned ones. The [[bitrate]] of the output file is specified by the
-{{font colourab}} parameter.
+``{{%}} ``\ \ `` -I dummy -vv ``\ \ `` --sout=#transcode{acodec=``\ \ ``,channels=2,ab=``\ \ ``,samplerate=44100}:standard{access=file,mux=wav,dst=``\ \ ``} vlc://quit``
 
-== Source code == {{fileoutput muxer}} {{fileinput demuxer}}
+Where on Windows you need to add installation directory in front of (by default ).
+
+As you can specify one of the above mentioned ones. The `bitrate <bitrate>`__ of the output file is specified by the parameter.
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/mux/wav.c|output muxer}}
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/wav.c|input demuxer}}

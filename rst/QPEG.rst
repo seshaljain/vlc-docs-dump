@@ -1,6 +1,9 @@
-{{Codec videomod=avcodec}} {{Mmwiki|QPEG}}
+.. raw:: mediawiki
 
-QPEG is a video compression codec created by Q-Team, the name being an
-[[wiktionary:allusion|allusion]] to multimedia codecs ''[[JPEG]]'' and
-''[[MPEG]]''. It compresses with [[RLE]], interframe differencing and
-motion compensation. <!--Dummy edit-->
+   {{Codec video|id=QPEG|mod=avcodec}}
+
+.. raw:: mediawiki
+
+   {{Mmwiki|QPEG}}
+
+QPEG is a video compression codec created by Q-Team, the name being an `allusion <wiktionary:allusion>`__ to multimedia codecs `JPEG <JPEG>`__ and `MPEG <MPEG>`__. It compresses with `RLE <RLE>`__, interframe differencing and motion compensation.

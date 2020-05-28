@@ -1,1 +1,1 @@
-[[Category:Subtitles]]
+`Category:Subtitles <Category:Subtitles>`__

@@ -1,1 +1,1 @@
-#redirect [[PLS]]
+#. redirect `PLS <PLS>`__

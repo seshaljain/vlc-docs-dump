@@ -1,10 +1,12 @@
-{{howtonosort=yes}}
+.. raw:: mediawiki
 
-If your video has multiple subtitle tracks, you can select the one you
-would like to see from '''Video -&gt; Subtitles Track'''.
+   {{howto|select the right subtitle track|nosort=yes}}
 
-<br>
+If your video has multiple subtitle tracks, you can select the one you would like to see from **Video -> Subtitles Track**.
 
-{{VSG}}
+| 
+| 
 
-{{DEFAULTSORT:Subtitle}}
+.. raw:: mediawiki
+
+   {{DEFAULTSORT:Subtitle}}

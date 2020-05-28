@@ -1,1 +1,1 @@
-#REDIRECT [[YUV#4:2:2]]
+#. REDIRECT `YUV#4:2:2 <YUV#4:2:2>`__

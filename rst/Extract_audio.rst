@@ -1,1 +1,1 @@
-#REDIRECT [[VLC HowTo/Extract audio]]
+#. REDIRECT `VLC HowTo/Extract audio <VLC_HowTo/Extract_audio>`__

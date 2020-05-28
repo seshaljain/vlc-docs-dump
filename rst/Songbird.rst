@@ -1,18 +1,24 @@
-{{websitehttp://www.songbirdnest.com}} {{open}} '''Songbird''' is an
-open-source rival to [[iTunes]]. It's available for [[Windows]],
-[[Linux]] and [[macOS]].
+.. raw:: mediawiki
 
-Previous Windows versions of Songbird were built with code from {{VLC}}
-and [https://www.getfirefox.com Firefox].
+   {{website|Songbird|http://www.songbirdnest.com}}
 
-Today (starting from which version?) Songbird uses gstreamer on Windows
-(like on Linux)
+.. raw:: mediawiki
 
-== Compatibility == Songbird was made with code from {{VLC}} (version
-0.8.4a and updates), and today from open-source gstreamer, so should be
-compatible with most or all of [https://www.videolan.org VideoLAN's]
-features.
+   {{open}}
 
-{{compat}}
+**Songbird** is an open-source rival to `iTunes <iTunes>`__. It's available for `Windows <Windows>`__, `Linux <Linux>`__ and `macOS <macOS>`__.
 
-[[Category:Player]]
+Previous Windows versions of Songbird were built with code from and `Firefox <https://www.getfirefox.com>`__.
+
+Today (starting from which version?) Songbird uses gstreamer on Windows (like on Linux)
+
+Compatibility
+-------------
+
+Songbird was made with code from (version 0.8.4a and updates), and today from open-source gstreamer, so should be compatible with most or all of `VideoLAN's <https://www.videolan.org>`__ features.
+
+.. raw:: mediawiki
+
+   {{compat}}
+
+`Category:Player <Category:Player>`__

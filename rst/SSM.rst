@@ -1,1 +1,1 @@
-#REDIRECT [[Multicast]]
+#. REDIRECT `Multicast <Multicast>`__

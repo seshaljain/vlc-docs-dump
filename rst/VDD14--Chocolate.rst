@@ -1,4 +1,4 @@
-← Back to [[{{#rel2abs:..}}]].
+← Back to `{{#rel2abs:..}} <{{#rel2abs:..}}>`__.
 
 Chocolate boxes To be taken
 
@@ -9,8 +9,12 @@ Chocolate boxes To be taken
 -  Tristan 0.5
 -  Geoffroy 0.5
 
-Took \* Katerina 2 \* Andrew 1 \* Diego 2
+Took
+
+-  Katerina 2
+-  Andrew 1
+-  Diego 2
 
 To be paid to Diego Pettenò
 
-[[Category:VDD]]
+`Category:VDD <Category:VDD>`__

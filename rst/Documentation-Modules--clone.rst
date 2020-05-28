@@ -1,17 +1,26 @@
-{{Moduletype=Video output splittersc=clone}}
+.. raw:: mediawiki
 
-You can use this module to play the video in more than one window to
-test different video outputs or display the same video on multiple
-screens on the same computer.
+   {{Module|name=clone|type=Video output splitter|description=Clone the video output window|sc=clone}}
 
-== Options == <onlyinclude>{{Option value=integer description=Number of
-video windows in which to clone the video. }} {{Option value=string
-description=You can use specific video output modules for the clones.
-Use a comma-separated list of modules. }}</onlyinclude>
+You can use this module to play the video in more than one window to test different video outputs or display the same video on multiple screens on the same computer.
 
-== Examples ==
-   {{$}} vlc --video-splitter=clone --clone-count=2 video.ogv
+Options
+-------
 
-== Source code == \* {{VLCSourceFile|modules/video_splitter/clone.c}}
+Examples
+--------
 
-{{Documentation footer}}
+``{{$}} vlc --video-splitter=clone --clone-count=2 video.ogv``
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_splitter/clone.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

@@ -1,1 +1,1 @@
-#redirect[[VSG:Main]]
+#. redirect\ `VSG:Main <VSG:Main>`__

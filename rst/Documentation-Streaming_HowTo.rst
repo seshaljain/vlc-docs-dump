@@ -1,67 +1,73 @@
-{{RightMenu|documentation streaming howto toc}}
+.. raw:: mediawiki
 
-Authors: \* Alexis de Lattre \* Johan Bilien \* Anil Daoud \* Clément
-Stenac \* Antoine Cellerier \* Jean-Paul Saman
+   {{RightMenu|documentation streaming howto toc}}
+
+Authors:
+
+-  Alexis de Lattre
+-  Johan Bilien
+-  Anil Daoud
+-  Clément Stenac
+-  Antoine Cellerier
+-  Jean-Paul Saman
 
 Copyright (c) 2002-2006 the VideoLAN project
 
-''{{GPL notice}}''
+**
 
-'''This document explains how to stream, transcode and save streams
-using the VideoLAN solution'''
+**This document explains how to stream, transcode and save streams using the VideoLAN solution**
 
-'''NOTE: See [[Documentation:Streaming HowTo New|Streaming HowTo New]]
-for more updated information regarding streaming (WIP).'''
+**NOTE: See**\ `Streaming HowTo New <Documentation:Streaming_HowTo_New>`__\ **for more updated information regarding streaming (WIP).**
 
-==Introduction== \*[[Documentation:Streaming HowTo/Streaming, Muxers and
-Codecs|Streaming, Muxers and Codecs]]
+Introduction
+------------
 
-==Main== \*[[Documentation:Streaming HowTo/Easy Streaming|Easy
-Streaming]]
+-  `Streaming, Muxers and Codecs <Documentation:Streaming_HowTo/Streaming,_Muxers_and_Codecs>`__
 
-\*[[Documentation:Streaming HowTo/Easy_Streaming Newer Versions|Easy
-Streaming with Newer Versions of VLC (not completed)]]
+Main
+----
 
-\*[[Documentation:Streaming HowTo/Advanced Streaming Using the Command
-Line|Advanced Streaming Using the Command Line]]
+-  `Easy Streaming <Documentation:Streaming_HowTo/Easy_Streaming>`__
 
-\*[[Documentation:Streaming HowTo/Command Line Examples|Command Line
-Examples]]
+-  `Easy Streaming with Newer Versions of VLC (not completed) <Documentation:Streaming_HowTo/Easy_Streaming_Newer_Versions>`__
 
-==VLM== \*[[Documentation:Streaming HowTo/VLM|VLM - Multiple Streaming
-and Video on Demand]]
+-  `Advanced Streaming Using the Command Line <Documentation:Streaming_HowTo/Advanced_Streaming_Using_the_Command_Line>`__
 
-==Tutorials and examples== \*[[Documentation:Streaming HowTo/Receive and
-Save a Stream|Receive and Save a Stream]]
+-  `Command Line Examples <Documentation:Streaming_HowTo/Command_Line_Examples>`__
 
-\*[[Documentation:Streaming HowTo New|Convert files to other formats]]
+VLM
+---
 
-\*[[Documentation:Streaming HowTo/Stream a File|Stream a File]]
+-  `VLM - Multiple Streaming and Video on Demand <Documentation:Streaming_HowTo/VLM>`__
 
-\*[[Documentation:Streaming HowTo/Stream a DVD|Stream a DVD]]
+Tutorials and examples
+----------------------
 
-\*[[Documentation:Streaming HowTo/Stream a DVB Channel|Stream a DVB
-Channel]]
+-  `Receive and Save a Stream <Documentation:Streaming_HowTo/Receive_and_Save_a_Stream>`__
 
-\*[[Documentation:Streaming HowTo/Stream from Encoding Cards and Other
-Capture Devices|Stream from Encoding Cards and Other Capture Devices]]
+-  `Convert files to other formats <Documentation:Streaming_HowTo_New>`__
 
-\*[[Documentation:Streaming HowTo/Stream from a DV Camcorder|Stream from
-a DV Camcorder]]
+-  `Stream a File <Documentation:Streaming_HowTo/Stream_a_File>`__
 
-\*[[Documentation:Streaming HowTo/Streaming a live video feed to Darwin
-Streaming Server for Mobile Phones|Streaming a live video feed to Darwin
-Streaming Server for Mobile Phones]]
+-  `Stream a DVD <Documentation:Streaming_HowTo/Stream_a_DVD>`__
 
-\*[[Documentation:Streaming_HowTo/Streaming_for_the_iPhone|Streaming for
-the iPhone with live http]]
+-  `Stream a DVB Channel <Documentation:Streaming_HowTo/Stream_a_DVB_Channel>`__
 
-==IPv6== \*[[Documentation:Streaming HowTo/Streaming over IPv6|Streaming
-over IPv6]]
+-  `Stream from Encoding Cards and Other Capture Devices <Documentation:Streaming_HowTo/Stream_from_Encoding_Cards_and_Other_Capture_Devices>`__
 
-\*[[Documentation:Streaming HowTo/Advanced streaming with samples,
-multiple files streaming, using multicast in streaming|Advanced
-streaming with samples, multiple files streaming, using multicast in
-streaming]]
+-  `Stream from a DV Camcorder <Documentation:Streaming_HowTo/Stream_from_a_DV_Camcorder>`__
 
-{{Documentation}}
+-  `Streaming a live video feed to Darwin Streaming Server for Mobile Phones <Documentation:Streaming_HowTo/Streaming_a_live_video_feed_to_Darwin_Streaming_Server_for_Mobile_Phones>`__
+
+-  `Streaming for the iPhone with live http <Documentation:Streaming_HowTo/Streaming_for_the_iPhone>`__
+
+IPv6
+----
+
+-  `Streaming over IPv6 <Documentation:Streaming_HowTo/Streaming_over_IPv6>`__
+
+-  `Advanced streaming with samples, multiple files streaming, using multicast in streaming <Documentation:Streaming_HowTo/Advanced_streaming_with_samples,_multiple_files_streaming,_using_multicast_in_streaming>`__
+
+.. raw:: mediawiki
+
+   {{Documentation}}

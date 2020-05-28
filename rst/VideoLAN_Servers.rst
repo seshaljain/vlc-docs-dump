@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN Sites#Servers]]
+#. REDIRECT `VideoLAN Sites#Servers <VideoLAN_Sites#Servers>`__

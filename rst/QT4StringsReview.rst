@@ -1,1 +1,1 @@
-#REDIRECT [[Qt4StringsReview]]
+#. REDIRECT `Qt4StringsReview <Qt4StringsReview>`__

@@ -1,11 +1,31 @@
-{{Image requested}} {{Moduletype=Video outputdescription=Colored ASCII
-Art video output}}
+.. raw:: mediawiki
 
-Output video with colored text instead of the image. Uses
-[http://libcaca.zoy.org/ libcaca].
+   {{Image requested}}
 
-{{clear}} == Usage == {{%}} '''vlc --vout caca somevideo.avi'''
+.. raw:: mediawiki
 
-== Source code == \* {{VLCSourceFile|modules/video_output/caca.c}}
+   {{Module|name=caca|type=Video output|first_version=0.7.0|description=Colored ASCII Art video output}}
 
-{{Documentation footer}}
+Output video with colored text instead of the image. Uses `libcaca <http://libcaca.zoy.org/>`__.
+
+.. raw:: mediawiki
+
+   {{clear}}
+
+Usage
+-----
+
+``{{%}} ``\ **``vlc``\ ````\ ``--vout``\ ````\ ``caca``\ ````\ ``somevideo.avi``**
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_output/caca.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

@@ -1,1 +1,1 @@
-#redirect[[ Hacker Guide/Core]]
+#. redirect\ `Hacker Guide/Core <Hacker_Guide/Core>`__

@@ -1,1 +1,1 @@
-#redirect [[XA]]
+#. redirect `XA <XA>`__

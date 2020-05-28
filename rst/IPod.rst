@@ -1,1 +1,1 @@
-#REDIRECT [[IPod Video Conversion Guide]]
+#. REDIRECT `IPod Video Conversion Guide <IPod_Video_Conversion_Guide>`__

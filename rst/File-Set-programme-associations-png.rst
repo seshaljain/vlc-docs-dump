@@ -1,1 +1,1 @@
-[[Category:Windows]]
+`Category:Windows <Category:Windows>`__

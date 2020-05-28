@@ -1,1 +1,1 @@
-#redirect[[MPEG]]
+#. redirect\ `MPEG <MPEG>`__

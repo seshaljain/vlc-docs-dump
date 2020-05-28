@@ -1,1 +1,1 @@
-#REDIRECT [[LAN]]
+#. REDIRECT `LAN <LAN>`__

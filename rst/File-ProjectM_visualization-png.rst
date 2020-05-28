@@ -1,3 +1,5 @@
-{{Lowercase}}
+.. raw:: mediawiki
 
-[[Category:Visualisations]]
+   {{Lowercase}}
+
+`Category:Visualisations <Category:Visualisations>`__

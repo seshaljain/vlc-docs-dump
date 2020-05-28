@@ -1,51 +1,67 @@
-Check the {{VLCSourceFile|NEWS}}.
+Check the .
 
-== Sources packages for the Releases ==
+Sources packages for the Releases
+---------------------------------
 
-=== Latest Release source ===
+Latest Release source
+~~~~~~~~~~~~~~~~~~~~~
 
-{{VLC}} Source Code can be downloaded here ({{VLC:latest version}}) :
-'''https://www.videolan.org/vlc/download-sources.html'''
+.. raw:: mediawiki
 
-=== Older Source ===
+   {{VLC}}
 
-You can get all the versions of VLC, using the
-[https://download.videolan.org/pub/vlc/ VLC FTP Archive].
+Source Code can be downloaded here ()
 
-== Development Sources ==
+   https://www.videolan.org/vlc/download-sources.html
 
-=== How to get {{VLC}}'s latest source tree === {{See also|Hacker
-Guide/VLC source tree}}
+Older Source
+~~~~~~~~~~~~
 
-'''This is the recommended way if you are working on {{VLC}}'''
+You can get all the versions of VLC, using the `VLC FTP Archive <https://download.videolan.org/pub/vlc/>`__.
 
-You need to use [[Git]] to download the latest, live snapshot of the
-development tree.
+Development Sources
+-------------------
+
+How to get 's latest source tree
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: mediawiki
+
+   {{See also|Hacker Guide/VLC source tree}}
+
+**This is the recommended way if you are working on **
+
+You need to use `Git <Git>`__ to download the latest, live snapshot of the development tree.
 
 Start by reading the Git page and then use the repository located at:
-   git://git.videolan.org/vlc.git
+
+```git://git.videolan.org/vlc.git`` <git://git.videolan.org/vlc.git>`__
 
 To get the VLC stable branch, you should take it from:
-   git://git.videolan.org/vlc/vlc-3.0.git
 
-Please note that this will download the entire git repository. If you
-are only interested in the latest development build then use the link
-under '''Latest source packages'''.
+```git://git.videolan.org/vlc/vlc-3.0.git`` <git://git.videolan.org/vlc/vlc-3.0.git>`__
 
-=== Latest source packages === If you want to get the latest bleeding
-edge development source package then go to this link:
-http://nightlies.videolan.org/build/source/ and download the first
-listed tar.xz file.
+Please note that this will download the entire git repository. If you are only interested in the latest development build then use the link under **Latest source packages**.
 
-If you want the entire source tree then look under '''How to get VLC
-media player's latest source tree'''.
+Latest source packages
+~~~~~~~~~~~~~~~~~~~~~~
 
-=== Get the nightly snapshots ===
+If you want to get the latest bleeding edge development source package then go to this link:
 
-You can download [[nightly]] source snapshots from the
-[http://nightlies.videolan.org/build/source/?C=M;O=D nightlies website].
+```http://nightlies.videolan.org/build/source/`` <http://nightlies.videolan.org/build/source/>`__
 
-== Compiling VLC == OK! You've got the source. Here's how to [[Compile
-VLC]]
+and download the first listed tar.xz file.
 
-[[Category:Building|*]] [[Category:Coding]]
+If you want the entire source tree then look under **How to get VLC media player's latest source tree**.
+
+Get the nightly snapshots
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can download `nightly <nightly>`__ source snapshots from the `nightlies website <http://nightlies.videolan.org/build/source/?C=M;O=D>`__.
+
+Compiling VLC
+-------------
+
+OK! You've got the source. Here's how to `Compile VLC <Compile_VLC>`__
+
+`\* <Category:Building>`__ `Category:Coding <Category:Coding>`__

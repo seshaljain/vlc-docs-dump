@@ -1,3 +1,3 @@
 This is a category for images of VLC menus
 
-[[Category:VLC images]]
+`Category:VLC images <Category:VLC_images>`__

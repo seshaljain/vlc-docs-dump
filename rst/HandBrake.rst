@@ -1,11 +1,13 @@
-{{Websitehttps://handbrake.fr/}} {{Open}}
+.. raw:: mediawiki
 
-HandBrake is a cross-platform graphical [[transcoding]] tool that
-supports many formats. It is released under GPLv2.
+   {{Website|HandBrake|https://handbrake.fr/}}
 
-It is not a [[VideoLAN project]] but it shares several [[libraries]]
-with {{VLC}}, including [[FFmpeg]], [[x264]] and [[x265]]. It actively
-uses the VideoLAN libraries [[libdvdnav]] and [[libdvdread]], and
-formerly used [[libdvdcss]] to decrypt [[DVD]]s until version 0.9.2.
+.. raw:: mediawiki
 
-[[Category:Third parties]]
+   {{Open}}
+
+HandBrake is a cross-platform graphical `transcoding <transcoding>`__ tool that supports many formats. It is released under GPLv2.
+
+It is not a `VideoLAN project <VideoLAN_project>`__ but it shares several `libraries <libraries>`__ with , including `FFmpeg <FFmpeg>`__, `x264 <x264>`__ and `x265 <x265>`__. It actively uses the VideoLAN libraries `libdvdnav <libdvdnav>`__ and `libdvdread <libdvdread>`__, and formerly used `libdvdcss <libdvdcss>`__ to decrypt `DVDs <DVD>`__ until version 0.9.2.
+
+`Category:Third parties <Category:Third_parties>`__

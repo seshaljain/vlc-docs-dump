@@ -1,1 +1,1 @@
-#redirect [[:Category:Building]]
+#. redirect `:Category:Building <:Category:Building>`__

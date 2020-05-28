@@ -1,12 +1,39 @@
-<!----><div class="widebox center" style="background:#e0e8f8;
-font-size:90%; margin-top:40px; padding:0.5em;"><!-- --><div
-style="margin:auto 0.5em;">{{{text1}}}</div><!-- -->{{#if:{{{text2<div
-style="margin:auto 0.5em;">{{{text2}}}</div>}}<!----></div><noinclude>
-== Usage == Navigational or banner template. Might also be called a
-"bottom box" (like {{tlSide box}}). It is slightly different from
-{{tl|Navbox}}.
+.. raw:: html
 
-Parameters: \* '''<code><nowiki>text1</nowiki></code>''' - required \*
-'''<code><nowiki>text2</nowiki></code>''' - optional
+   <div class="widebox center" style="background:#e0e8f8; font-size:90%; margin-top:40px; padding:0.5em;">
 
-[[Category:Footer templates]] </noinclude>
+.. raw:: html
+
+   <div style="margin:auto 0.5em;">
+
+.. raw:: html
+
+   </div>
+
+{{#if:\|
+
+.. raw:: html
+
+   <div style="margin:auto 0.5em;">
+
+.. raw:: html
+
+   </div>
+
+}}
+
+.. raw:: html
+
+   </div>
+
+Usage
+-----
+
+Navigational or banner template. Might also be called a "bottom box" (like or ). It is slightly different from .
+
+Parameters:
+
+-  **``text1``** - required
+-  **``text2``** - optional
+
+`Category:Footer templates <Category:Footer_templates>`__

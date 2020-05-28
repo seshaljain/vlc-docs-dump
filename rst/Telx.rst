@@ -1,1 +1,1 @@
-#REDIRECT [[Teletext]]
+#. REDIRECT `Teletext <Teletext>`__

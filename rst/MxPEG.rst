@@ -1,42 +1,50 @@
-{{Codec audioid=MXPG}}
+.. raw:: mediawiki
 
-'''MxPEG''' is an audio and video codec developed by Mobotix.
+   {{Codec audio|id=MXPG}}
 
-VLC supports this codec '''since version 2.0.1''' through [[FFmpeg]] on
-Windows, macOS and GNU/Linux.
+.. raw:: mediawiki
 
-While mxg video files are auto-detected, live streams require VLC to be
-run with the option ''ffmpeg-format=mxg'' because FFmpeg does not
-auto-detect the mxg codec in live streams.
+   {{Codec video|id=MXPG}}
 
-== Usage Examples ==
+**MxPEG** is an audio and video codec developed by Mobotix.
 
-=== mxg recordings ===
+VLC supports this codec **since version 2.0.1** through `FFmpeg <FFmpeg>`__ on Windows, macOS and GNU/Linux.
+
+While mxg video files are auto-detected, live streams require VLC to be run with the option *ffmpeg-format=mxg* because FFmpeg does not auto-detect the mxg codec in live streams.
+
+Usage Examples
+--------------
+
+mxg recordings
+~~~~~~~~~~~~~~
 
 Simply open the file with VLC.
 
-=== Live Streams ===
+Live Streams
+~~~~~~~~~~~~
 
-\* '''Windows:'''
-   {{%}} <nowiki>vlc.exe --avformat-format=mxg
-   "http://\ <USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"</nowiki>
+-  **Windows:**
 
-\* '''macOS:'''
-   {{%}} <nowiki>VLC.app/Contents/MacOS/VLC --avformat-format=mxg
-   "http://\ <USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"</nowiki>
+``{{%}} vlc.exe --avformat-format=mxg "http://<USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"``
 
-\* '''Linux:'''
-   {{%}} <nowiki>vlc --avformat-format=mxg
-   "http://\ <USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"</nowiki>
+-  **macOS:**
 
-\* '''GUI:''' :Media → Open Network Stream → Show more options. In
-'''Edit Options''', add "<nowiki>:avformat-format=mxg</nowiki>".
+``{{%}} VLC.app/Contents/MacOS/VLC --avformat-format=mxg "http://<USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"``
+
+-  **Linux:**
+
+``{{%}} vlc --avformat-format=mxg "http://<USER>:<PASSWORD>@<IP>:<PORT>/control/faststream.jpg?stream=MxPEG"``
+
+-  **GUI:**
+
+   Media → Open Network Stream → Show more options. In **Edit Options**, add ":avformat-format=mxg".
 
 For VLC 2.0.x and older, replace avformat-format with ffmpeg-format.
 
-== See also == \* Technical description -
-https://developer.mobotix.com/docs/mxpeg_frame.html \* Feature request
-and discussion in the VideoLAN forums -
-http://forum.videolan.org/viewtopic.php?f=7&t=97738
+See also
+--------
 
-[[Category:Container]]
+-  Technical description - https://developer.mobotix.com/docs/mxpeg_frame.html
+-  Feature request and discussion in the VideoLAN forums - http://forum.videolan.org/viewtopic.php?f=7&t=97738
+
+`Category:Container <Category:Container>`__

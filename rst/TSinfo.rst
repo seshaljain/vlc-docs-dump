@@ -1,1 +1,1 @@
-#REDIRECT [[TS Info]]
+#. REDIRECT `TS Info <TS_Info>`__

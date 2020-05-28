@@ -1,37 +1,93 @@
-{{Muxmod=subtitle}} {{Wikipedia|SubRip}}
+.. raw:: mediawiki
 
-'''SubRip''' is the native subtitle format of the [http://zuggy.wz.cz/
-SubRip program], developed by a friend of the creator of [[SubViewer]].
-It is one of the most used formats for [[subtitles]].
+   {{Mux|id=subrip|mod=subtitle}}
 
-It may have the [[file extension]] <code>.srt</code>. It can be embedded
-in [[Matroska|mkv]] files.
+.. raw:: mediawiki
 
-== Specification == === Format === Each frame of a subtitle is formatted
-as follows: <!--Begin format code--> <var>n</var> h1:m1:s1,d1 -->
-h2:m2:s2,d2 Line 1 Line 2 &hellip;
+   {{Wikipedia|SubRip}}
 
-<!--End format code--> Note the last line is a blank line between
-subtitle frames, and the decimal separator is a comma (per
-French-style).
+**SubRip** is the native subtitle format of the `SubRip program <http://zuggy.wz.cz/>`__, developed by a friend of the creator of `SubViewer <SubViewer>`__. It is one of the most used formats for `subtitles <subtitles>`__.
 
-;<var>n</var> :sequential number. This may also appear on the same line
-as start/stop times ;<nowiki>h1:m1:s1,d1</nowiki> :start time of this
-frame, in hours minutes and seconds to three decimal places
-;<nowiki>h2:m2:s2,d2</nowiki> :stop time
+It may have the `file extension <file_extension>`__ ``.srt``. It can be embedded in `mkv <Matroska>`__ files.
 
-==== Example ==== A 2-frame subtitle: <!--Begin example code--> 1
-00:00:20,000 --> 00:00:24,400 a bla bla ble a bla bla ble a bla bla ble
+Specification
+-------------
 
-   2 00:00:24,600 --> 00:00:27,800 a bla bla ble&hellip;
+Format
+~~~~~~
 
-<!--End example code-->
+Each frame of a subtitle is formatted as follows:
 
-=== Extensions === Some subtitles feature html tags inside the SubRip
-text: \* {{Tag pairs}}: strikethrough \* {{Tag pairi}}: italic \*
-<code><nowiki>&lt;font color=&hellip; face=&hellip;&gt;</nowiki></code>:
-font attributes
+| \ ``n``\ 
+| ``h1:m1:s1,d1 --> h2:m2:s2,d2``
+| ``Line 1``
+| ``Line 2``
+| ``…``
 
-== See also == \* [[SongSubtitles.org]] (now defunct)
+Note the last line is a blank line between subtitle frames, and the decimal separator is a comma (per French-style).
 
-[[Category:Subtitles]]
+n
+   sequential number. This may also appear on the same line as start/stop times
+h1:m1:s1,d1
+   start time of this frame, in hours minutes and seconds to three decimal places
+h2:m2:s2,d2
+   stop time
+
+Example
+^^^^^^^
+
+A 2-frame subtitle:
+
+| ``1``
+| ``00:00:20,000 --> 00:00:24,400``
+| ``a bla bla ble a bla bla ble``
+| ``a bla bla ble``
+| ``2``
+| ``00:00:24,600 --> 00:00:27,800``
+| ``a bla bla ble…``
+
+Extensions
+~~~~~~~~~~
+
+Some subtitles feature html tags inside the SubRip text:
+
+-  
+
+   .. raw:: mediawiki
+
+      {{Tag pair|b}}
+
+   : bold
+
+-  
+
+   .. raw:: mediawiki
+
+      {{Tag pair|s}}
+
+   : strikethrough
+
+-  
+
+   .. raw:: mediawiki
+
+      {{Tag pair|u}}
+
+   : underline
+
+-  
+
+   .. raw:: mediawiki
+
+      {{Tag pair|i}}
+
+   : italic
+
+-  ``<font color=… face=…>``: font attributes
+
+See also
+--------
+
+-  `SongSubtitles.org <SongSubtitles.org>`__ (now defunct)
+
+`Category:Subtitles <Category:Subtitles>`__

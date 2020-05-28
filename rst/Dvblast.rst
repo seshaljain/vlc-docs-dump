@@ -1,1 +1,1 @@
-#REDIRECT [[DVBlast]]
+#. REDIRECT `DVBlast <DVBlast>`__

@@ -1,16 +1,20 @@
-= DVD =
+DVD
+===
 
-== I want to... ==
+I want to...
+------------
 
-{{VSGEntryVSG:Usage:DVD:FromHardDrive|How do I play DVD files (VOB+IFO)
-from hard drive?}}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:Usage:DVD:RegionCode|How do I play a DVD having region
-code other than mine?}}
+   {{VSGEntry|Play DVD files (VOB+IFO) from hard drive|VSG:Usage:DVD:FromHardDrive|How do I play DVD files (VOB+IFO) from hard drive?}}
 
-{{VSGEntryVSG:Usage:DVD:AppleAutoplay|How do I configure Apple's DVD
-Player not to autoplay DVDs?}}
+.. raw:: mediawiki
 
-<br><br><br><br><br>
+   {{VSGEntry|Play a DVD of a different region code.|VSG:Usage:DVD:RegionCode|How do I play a DVD having region code other than mine?}}
 
-{{VSG}}
+.. raw:: mediawiki
+
+   {{VSGEntry|Tell Apple's &$@&$*&! DVD Player not to start automatically when I insert a DVD?|VSG:Usage:DVD:AppleAutoplay|How do I configure Apple's DVD Player not to autoplay DVDs?}}
+
+| 
+| 

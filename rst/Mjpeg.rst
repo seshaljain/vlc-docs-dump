@@ -1,1 +1,1 @@
-#redirect [[MJPEG]]
+#. redirect `MJPEG <MJPEG>`__

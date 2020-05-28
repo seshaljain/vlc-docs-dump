@@ -1,5 +1,18 @@
-<code>&lt;{{{1tag}}}&gt;</code><noinclude>
+``<``\ \ ``>…</``\ \ ``>``\ 
 
-== See also == \* {{tlTag pair}}
+See also
+--------
 
-[[Category:Typing aid templates]] </noinclude>
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Tag}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Tag pair}}
+
+`Category:Typing aid templates <Category:Typing_aid_templates>`__

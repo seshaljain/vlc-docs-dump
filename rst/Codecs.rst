@@ -1,1 +1,1 @@
-#redirect [[codec]]
+#. redirect `codec <codec>`__

@@ -1,19 +1,13 @@
-== DVD Movies lag == One thing that might help is increasing the VLC DVD
-cache.
+DVD Movies lag
+--------------
 
-This can be done from '''Tools -&gt; Preferences''' (set '''Show
-Settings''' to '''All''') and'''Input / Codecs -&gt; Access Modules
--&gt; DVD''' with menus (or DVD without menus if you use '''dvdsimple
-method''' for playback) and increase '''Caching value in MS''' value to
-for example to '''5000''' or to '''20000'''.
+One thing that might help is increasing the VLC DVD cache.
 
-Remember to press '''Save''' to save '''VLC settings''' and restart
-'''VLC''' after that to make sure changes are enabled.
+This can be done from **Tools -> Preferences** (set **Show Settings** to **All**) and\ **Input / Codecs -> Access Modules -> DVD** with menus (or DVD without menus if you use **dvdsimple method** for playback) and increase **Caching value in MS** value to for example to **5000** or to **20000**.
 
-If '''DVD files''' from hard drive work better, then check that your
-'''DVD drive''' has '''DMA enabled''' (if it is a '''IDE/ATAPI DVD
-drive''').
+Remember to press **Save** to save **VLC settings** and restart **VLC** after that to make sure changes are enabled.
 
-<br>
+If **DVD files** from hard drive work better, then check that your **DVD drive** has **DMA enabled** (if it is a **IDE/ATAPI DVD drive**).
 
-{{VSG}}
+| 
+| 

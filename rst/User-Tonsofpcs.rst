@@ -1,2 +1,1 @@
-For more info about me, see my [[wikipedia:user:tonsofpcs|Wikipedia
-UserPage]]
+For more info about me, see my `Wikipedia UserPage <wikipedia:user:tonsofpcs>`__

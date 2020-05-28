@@ -1,1 +1,1 @@
-#REDIRECT [[YUV]]
+#. REDIRECT `YUV <YUV>`__

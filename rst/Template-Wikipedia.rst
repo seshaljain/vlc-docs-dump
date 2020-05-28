@@ -1,14 +1,30 @@
-{{#if:{{{4 {{Side boxWikipedia]] has information on these entries:
-   label1={{{label1{{{1}}}}}}}}} label2={{{label2{{{2}}}}}}}}}
-   label3={{{label3{{{3}}}}}}}}} \|wikilink4=wikipedia:{{{4}}}
+{{#if:
+
+| ``  | ``\ \ ``}}}}``
+| ``       |wikilink2=wikipedia:``\ 
+| ``       |label2=``\ \ ``}}}}}}``
+| ``       |wikilink3=wikipedia:``\ 
+| ``       |label3=``\ \ ``}}}}}}``
+| ``       |wikilink4=wikipedia:``\ 
+| ``    }}``
+| ``  | {{#if:``\ 
+| ``       | ``\ \ ``}}}}``
+| ``            |wikilink2=wikipedia:``\ 
+| ``            |label2=``\ \ ``}}}}}}``
+| ``            |wikilink3=wikipedia:``\ 
+| ``            |label3=``\ \ ``}}}}}}``
+| ``         }}``
+| ``       | {{#if:``\ 
+| ``            | ``\ \ ``}}}}``
+| ``                 |wikilink2=wikipedia:``\ 
+| ``                 |label2=``\ \ ``}}}}}}``
+| ``              }}``
+| ``            | ``\ 
+| ``                 |label1=``\ \ ``}}}}}}}}``
+| ``              }}``
+| ``         }}``
+| ``    }}``
 
 }}
-   | {{#if:{{{3 {{Side boxWikipedia]] has information on these entries:
-     label1={{{label1{{{1}}}}}}}}} label2={{{label2{{{2}}}}}}}}}
-     label3={{{label3{{{3}}}}}}}}} }} \| {{#if:{{{2 {{Side
-     boxWikipedia]] has information on these entries:
-     label1={{{label1{{{1}}}}}}}}} label2={{{label2{{{2}}}}}}}}} }} \|
-     {{Side boxWikipedia]] has information on this entry:
-     {{PAGENAME}}}}} {{{l1{{PAGENAME}}}}}}}}}}} }} }} }}
 
-}}<noinclude> [[Category:Templates]] </noinclude>
+`Category:Templates <Category:Templates>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Win32CompileCygwinNew]]
+#. REDIRECT `Win32CompileCygwinNew <Win32CompileCygwinNew>`__

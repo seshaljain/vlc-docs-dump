@@ -1,1 +1,1 @@
-#REDIRECT [[CMML]]
+#. REDIRECT `CMML <CMML>`__

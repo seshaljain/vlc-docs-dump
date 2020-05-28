@@ -1,9 +1,13 @@
-{{Moduletype=Video outputos=Linux}}
+.. raw:: mediawiki
 
-This shows video through [[wikipedia:X11|X11]]. If you are using the
-[[wxwidgets]] or [[skins2]] interface, the video will be shown inside
-the media player.
+   {{Module|name=x11|type=Video output|description=X11 video output|os=Linux}}
 
-{{Stub}}
+This shows video through `X11 <wikipedia:X11>`__. If you are using the `wxwidgets <wxwidgets>`__ or `skins2 <skins2>`__ interface, the video will be shown inside the media player.
 
-{{Documentation footer}}
+.. raw:: mediawiki
+
+   {{Stub}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

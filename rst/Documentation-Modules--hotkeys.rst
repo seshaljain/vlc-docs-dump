@@ -1,11 +1,23 @@
-{{Moduletype=Control interface|description=[[Hotkeys]] management
-interface}}
+.. raw:: mediawiki
+
+   {{Module|name=Hotkeys|type=Control interface|description=[[Hotkeys]] management interface}}
 
 This module has no shortcuts.
 
-It's easier to set options through the {{GUI}} (see [[Documentation:Hotkeys]]), but this module can be accessed through the core. Look for the <code class="nowrap">Hot keys</code> section after running:
-   {{%}} vlc -p core --advanced --help-verbose
+It's easier to set options through the (see `Documentation:Hotkeys <Documentation:Hotkeys>`__), but this module can be accessed through the core. Look for the ``Hot keys`` section after running:
 
-== Options == None
+``{{%}} vlc -p core --advanced --help-verbose``
 
-== Source code == \* {{VLCSourceFile|modules/control/hotkeys.c}}
+Options
+-------
+
+None
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/control/hotkeys.c}}

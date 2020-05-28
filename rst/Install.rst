@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Installing VLC]]
+#. REDIRECT `Documentation:Installing VLC <Documentation:Installing_VLC>`__

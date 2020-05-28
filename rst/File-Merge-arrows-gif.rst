@@ -1,7 +1,13 @@
-== Summary == Merge arrows from
-[https://commons.wikimedia.org/wiki/File:Merge-arrows.gif this file] on
-Commons. 50x20 GIF.
+Summary
+-------
 
-== Licensing == {{PD}}
+Merge arrows from `this file <https://commons.wikimedia.org/wiki/File:Merge-arrows.gif>`__ on Commons. 50x20 GIF.
 
-[[Category:Stock images]]
+Licensing
+---------
+
+.. raw:: mediawiki
+
+   {{PD}}
+
+`Category:Stock images <Category:Stock_images>`__

@@ -1,3 +1,3 @@
-Modes for [[deinterlacing]]
+Modes for `deinterlacing <deinterlacing>`__
 
-[[Category:Images]]
+`Category:Images <Category:Images>`__

@@ -1,3 +1,1 @@
-The action you have requested is limited to users in {{PLURAL:$2one of
-the groups}}: $1. {{#ifeq:$1Would you like to
-[[Special:CreateAccount{{!}}create an account]]?|}}
+The action you have requested is limited to users in : $1. {{#ifeq:$1\|`{{ns:4}}:{{MediaWiki:Group-autoconfirmed}}{{!}}{{MediaWiki:Group-autoconfirmed}} <{{ns:4}}:{{MediaWiki:Group-autoconfirmed}}{{!}}{{MediaWiki:Group-autoconfirmed}}>`__\ \|Would you like to `Special:CreateAccount{{!}}create an account <Special:CreateAccount{{!}}create_an_account>`__?|}}

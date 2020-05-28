@@ -1,1 +1,1 @@
-#redirect [[TY]]
+#. redirect `TY <TY>`__

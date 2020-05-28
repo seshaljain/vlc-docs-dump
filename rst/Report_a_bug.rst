@@ -1,1 +1,1 @@
-#REDIRECT [[Report bugs]]
+#. REDIRECT `Report bugs <Report_bugs>`__

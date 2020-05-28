@@ -1,7 +1,11 @@
-{\| class="widebox center noprint" style="padding:0;" [[File:Ambox
-improve orange.pngalt=style="padding:0;"Create an account]]''' to start
-editing, and then <span
-class="plainlinks">'''[{{fullurl:{{FULLPAGENAME}}}<includeonly>[[Category:Stubs]]</includeonly><noinclude>
+==================================== ========================================================================================================================
+.. figure:: Ambox_improve_orange.png | Help VideoLAN by adding to this page!
+   :alt: Ambox_improve_orange.png    | `Create an account <Special:CreateAccount>`__ to start editing, and then \ **[ click here]**\  to add to this article.
+   :width: 36px                     
+                                    
+   Ambox_improve_orange.png         
+==================================== ========================================================================================================================
 
-Adds pages to [[:Category:Stubs]] [[Category:Maintenance templates]]
-</noinclude>
+Adds pages to `:Category:Stubs <:Category:Stubs>`__
+
+`Category:Stubs <Category:Stubs>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

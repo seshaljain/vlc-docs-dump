@@ -1,6 +1,7 @@
-{{wikipedia|Broadcasting (networking)}}
+.. raw:: mediawiki
 
-Broadcast sends a message to all possible clients. Other protocols that
-exist are [[anycast]], [[geocast]], [[multicast]], and [[unicast]].
+   {{wikipedia|Broadcasting (networking)}}
 
-[[Category:Routing schemes]]
+Broadcast sends a message to all possible clients. Other protocols that exist are `anycast <anycast>`__, `geocast <geocast>`__, `multicast <multicast>`__, and `unicast <unicast>`__.
+
+`Category:Routing schemes <Category:Routing_schemes>`__

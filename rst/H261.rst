@@ -1,1 +1,1 @@
-#REDIRECT [[H.261]]
+#. REDIRECT `H.261 <H.261>`__

@@ -1,12 +1,23 @@
-{{Moduletype=Access demuxdescription=[[Game_Music_Emu]]|sc=(none)}}
+.. raw:: mediawiki
 
-Game_Music_Emu was supported before the introduction of this module in
-1.1.5, according to
-[https://forum.videolan.org/viewtopic.php?f=2&t=78168 forum thread
-#78168]. The option <code>--enable-gme</code> would enable the module.
+   {{Module|name=gme|type=Access demux|first_version=1.1.5|description=[[Game_Music_Emu]]|sc=(none)}}
 
-== Options == None.
+Game_Music_Emu was supported before the introduction of this module in 1.1.5, according to `forum thread #78168 <https://forum.videolan.org/viewtopic.php?f=2&t=78168>`__. The option ``--enable-gme`` would enable the module.
 
-== Source code == \* {{VLCSourceFile|modules/demux/gme.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/gme.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

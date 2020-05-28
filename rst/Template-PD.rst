@@ -1,3 +1,5 @@
-{{File copyright|PD}}<noinclude>
+.. raw:: mediawiki
 
-[[Category:File copyright templates]] </noinclude>
+   {{File copyright|PD}}
+
+`Category:File copyright templates <Category:File_copyright_templates>`__

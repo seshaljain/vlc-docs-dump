@@ -1,1 +1,1 @@
-#redirect [[FourCC]]
+#. redirect `FourCC <FourCC>`__

@@ -1,6 +1,11 @@
-<includeonly>{{wikipedia{{PAGENAME}}}}}{{{1|{{PAGENAME}}}}}}}}}}
-</includeonly><noinclude> {{User:MichaelBillington/Sandbox}}
+\|label1=}}}}}}}
 
-{{User:MichaelBillington/Sandbox|Foo}}
+.. raw:: mediawiki
 
-{{User:MichaelBillington/SandboxBar}} </noinclude>
+   {{User:MichaelBillington/Sandbox|Foo}}
+
+.. raw:: mediawiki
+
+   {{User:MichaelBillington/Sandbox|Foo|Bar}}
+
+

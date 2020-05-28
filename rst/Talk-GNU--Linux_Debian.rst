@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:Debian]]
+#. REDIRECT `Talk:Debian <Talk:Debian>`__

@@ -1,5 +1,1 @@
-Would the side-by-side output be uncompressed or compressed or
-selectable? I would like an uncompressed to output using the wall filter
-for dual projector 3d. Looking forward to this either way (can always
-use the iZ3D drivers with one of the other output formats)!
---[[User:Sagron|Sagron]] 18:33, 1 June 2011 (UTC)
+Would the side-by-side output be uncompressed or compressed or selectable? I would like an uncompressed to output using the wall filter for dual projector 3d. Looking forward to this either way (can always use the iZ3D drivers with one of the other output formats)! --`Sagron <User:Sagron>`__ 18:33, 1 June 2011 (UTC)

@@ -1,1 +1,4 @@
-#REDIRECT [[File:5.png]]
+#. REDIRECT |5.png|
+
+.. |5.png| image:: 5.png
+

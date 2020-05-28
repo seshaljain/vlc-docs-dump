@@ -1,1 +1,1 @@
-#REDIRECT [[MPEG#Container_formats]]
+#. REDIRECT `MPEG#Container_formats <MPEG#Container_formats>`__

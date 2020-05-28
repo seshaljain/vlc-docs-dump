@@ -1,1 +1,1 @@
-#REDIRECT [[Python bindings]]
+#. REDIRECT `Python bindings <Python_bindings>`__

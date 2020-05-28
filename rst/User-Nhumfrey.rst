@@ -1,3 +1,4 @@
-== Nicholas J Humfrey ==
+Nicholas J Humfrey
+------------------
 
 Homepage: http://www.aelius.com/njh/

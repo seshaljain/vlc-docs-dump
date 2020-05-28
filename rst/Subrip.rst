@@ -1,1 +1,1 @@
-#REDIRECT [[SubRip]]
+#. REDIRECT `SubRip <SubRip>`__

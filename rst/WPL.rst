@@ -1,1 +1,1 @@
-#REDIRECT [[Windows Media]]
+#. REDIRECT `Windows Media <Windows_Media>`__

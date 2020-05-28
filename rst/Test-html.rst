@@ -1,1 +1,1 @@
-#REDIRECT [[.Net Test.html]]
+#. REDIRECT `.Net Test.html <.Net_Test.html>`__

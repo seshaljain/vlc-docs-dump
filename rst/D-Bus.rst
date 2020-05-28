@@ -1,1 +1,1 @@
-#redirect[[DBus]]
+#. redirect\ `DBus <DBus>`__

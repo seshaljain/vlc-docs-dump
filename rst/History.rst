@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN#History]]
+#. REDIRECT `VideoLAN#History <VideoLAN#History>`__

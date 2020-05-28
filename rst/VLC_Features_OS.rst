@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Usage:Version]]
+#. REDIRECT `VSG:Usage:Version <VSG:Usage:Version>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Playlist]]
+#. REDIRECT `Documentation:Playlist <Documentation:Playlist>`__

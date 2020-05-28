@@ -1,1 +1,1 @@
-#REDIRECT [[Speex]]
+#. REDIRECT `Speex <Speex>`__

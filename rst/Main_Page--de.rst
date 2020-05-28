@@ -1,149 +1,139 @@
-{{Languages}} '''UNDER CONTRUCTION - IN BEARBEITUNG'''
+.. raw:: mediawiki
 
-<!-- Beginning of header section --> {style="width:56%;color:#000;"\| {-
-<div class="banner-title">Willkommen bei der
-[[{{FULLPAGENAME}}{{NUMBEROFARTICLES}}]] Artikel.</div>
-style="width:11%;font-size:95%;color:#000;vertical-align:top;"\|
-*[[VideoLAN|VideoLAN]]*\ [[VLC Media Playerclass="plainlinks"
-style="width:18%;font-size:95%;vertical-align:top;" \|
-*[https://videolan.org/developers/ Webseite der
-Entwickler]*\ [http://nightlies.videolan.org Aktuelle Builds]
-\*[\ https://trac.videolan.org Trac, Fehler, SVN und Plan] \|} <!-- end
-of the header section -->
+   {{Languages}}
 
-{\| style="width:35%;" rowspan="2"|<div
-style="color:#000;background-color:#f5fffa;border:1px solid
-#a3bfb1;padding:10px;margin:6px; float: left;"> <h2
-style="margin:0;background:#cef2e0;font-size:120%;font-weight:bold;border:1px
-solid #a3bfb1;text-align:left;color:#000;padding:0.2em 0.4em;"> Was ist
-VideoLAN?</h2>
+**UNDER CONTRUCTION - IN BEARBEITUNG**
 
-'''VideoLAN''' ist eine [[Open source/de|Open Source]] ''Gruppe'' und
-''Gemeinde'' die entwickelt und Video-Projekte unterstützt.
+\__NOTOC_\_ \__NOEDITSECTION_\_
 
-'''VideoLAN''' produziert kostenlose Software unter der
-[https://www.gnu.org/copyleft/gpl.html GNU General Public Lizenz].
+============================================================================== ================================================== =================================================================== =================================================================
+============================================================================== -  `VideoLAN <VideoLAN>`__                         -  `Hauptseite <https://videolan.org>`__                            -  `Webseite der Entwickler <https://videolan.org/developers/>`__
+.. raw:: html                                                                  -  `VLC Media Player <VLC_Media_Player>`__         -  `Forum <https://forum.videolan.org>`__                           -  `Aktuelle Builds <http://nightlies.videolan.org>`__
+                                                                               -  `Dokumentation <Documentation:Documentation>`__ -  `Nachrichten von den Entwicklern <http://planet.videolan.org>`__ -  `Trac, Fehler, SVN und Plan <https://trac.videolan.org>`__
+   <div class="banner-title">                                                                                                                                                                        
+                                                                                                                                                                                                     
+Willkommen bei der `Videolan Wiki <{{FULLPAGENAME}}>`__,                                                                                                                                             
+                                                                                                                                                                                                     
+.. raw:: html                                                                                                                                                                                        
+                                                                                                                                                                                                     
+   </div>                                                                                                                                                                                            
+                                                                                                                                                                                                     
+.. raw:: html                                                                                                                                                                                        
+                                                                                                                                                                                                     
+   <div class="banner-subtitle">                                                                                                                                                                     
+                                                                                                                                                                                                     
+Die Referenz-Dokumentation und Tipps für VideoLAN-Projekte.                                                                                                                                          
+                                                                                                                                                                                                     
+.. raw:: html                                                                                                                                                                                        
+                                                                                                                                                                                                     
+   </div>                                                                                                                                                                                            
+                                                                                                                                                                                                     
+.. raw:: html                                                                                                                                                                                        
+                                                                                                                                                                                                     
+   <div id="articlecount" style="width:100%;text-align:center;font-size:85%;">                                                                                                                       
+                                                                                                                                                                                                     
+Wir haben derzeit ` <Special:Statistics>`__ Artikel.                                                                                                                                                 
+                                                                                                                                                                                                     
+.. raw:: html                                                                                                                                                                                        
+                                                                                                                                                                                                     
+   </div>                                                                                                                                                                                            
+==============================================================================                                                                                                                       
+============================================================================== ================================================== =================================================================== =================================================================
 
-== VideoLAN Informationen == Hier sehen Sie, wie Sie mit dem [[VideoLAN
-Team\| Team]] in [[contact VideoLAN\| Kontakt]] treten können.
+========================================================================================================================================================== ================================================================================================================================================================================ ==========================================================================================================================================================
+.. raw:: html                                                                                                                                              .. raw:: html                                                                                                                                                                    .. raw:: html
+                                                                                                                                                                                                                                                                                                                                           
+   <div style="color:#000;background-color:#f5fffa;border:1px solid #a3bfb1;padding:10px;margin:6px; float: left;">                                           <div style="color:#000;background-color:#f5fffa;border:1px solid #cedff2;padding:10px;margin: 6px;">                                                                             <div style="border: 1px solid #ddcef2; color:#000; background-color:#faf5ff; padding: 10px; margin: 6px;">
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                              .. raw:: html                                                                                                                                                                    .. raw:: html
+                                                                                                                                                                                                                                                                                                                                           
+   <h2 style="margin:0;background:#cef2e0;font-size:120%;font-weight:bold;border:1px solid #a3bfb1;text-align:left;color:#000;padding:0.2em 0.4em;">          <h2 style="margin:0;background:#cedff2;font-size:120%;font-weight:bold;border:1px solid #a3b0bf;text-align:left;color:#000;padding:0.2em 0.4em;">                                <h2 style="margin:0;background:#ddcef2;font-size:120%;font-weight:bold;border:1px solid #afa3bf;text-align:left;color:#000;padding:0.2em 0.4em;">
+                                                                                                                                                                                                                                                                                                                                           
+Was ist VideoLAN?                                                                                                                                          VLC Media Player                                                                                                                                                                 Unterstützung / Hilfe
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                              .. raw:: html                                                                                                                                                                    .. raw:: html
+                                                                                                                                                                                                                                                                                                                                           
+   </h2>                                                                                                                                                      </h2>                                                                                                                                                                            </h2>
+                                                                                                                                                                                                                                                                                                                                           
+**VideoLAN** ist eine `Open Source <Open_source/de>`__ *Gruppe* und *Gemeinde* die entwickelt und Video-Projekte unterstützt.                              `VLC herunterladen! <https://videolan.org/vlc/>`__                                                                                                                               .. rubric:: `Offizielle Dokumentation <Documentation:Documentation/de>`__
+                                                                                                                                                                                                                                                                                                                                               :name: offizielle-dokumentation
+**VideoLAN** produziert kostenlose Software unter der `GNU General Public Lizenz <https://www.gnu.org/copyleft/gpl.html>`__.                               `Was ist VLC? <VLC>`__                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                            .. rubric:: Wissensdatenbank
+.. rubric:: VideoLAN Informationen                                                                                                                         -  Finden Sie alle *Möglichkeiten* heraus `was VLC kann <What_can_vlc_do?>`__                                                                                                       :name: wissensdatenbank
+   :name: videolan-informationen                                                                                                                           -  Möchten Sie wissen `wie man was <how_to>`__ mit VLC machen kann?                                                                                                             
+                                                                                                                                                           -  Holen Sie sich bei `allgemeinen Problemen <Common_Problems>`__ Hilfe                                                                                                          Unsere `Wissensdatenbank <Knowledge_Base>`__ hat Informationen in
+Hier sehen Sie, wie Sie mit dem `Team <VideoLAN_Team>`__ in `Kontakt <contact_VideoLAN>`__ treten können.                                                  -  Sehen Sie einige `Auszeichnungen <Awards>`__ von VLC an                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                            -  `Codecs <Codec>`__
+-  `Geistiges Eigentum, Marken <Intellectual_Property/de>`__                                                                                               .. rubric:: VLC für Ihre Plattform...                                                                                                                                            -  `Dateien <Fileformat>`__
+-  Finden Sie heraus `wer VideoLAN verwendet <We_Use_VideoLAN/de>`__                                                                                          :name: vlc-für-ihre-plattform...                                                                                                                                              -  `Wörterbuch <Dictionary>`__
+-  `VideoLAN in den Nachrichten <VideoLAN_in_the_news/de>`__                                                                                                                                                                                                                                                                                -  `mehr » <Knowledge_Base>`__
+-  `Design und Leckereien <VideoLAN_Design>`__                                                                                                             =========================== ===========================                                                                                                                         
+-  `VideoLAN's Webseite <VideoLAN_Sites>`__                                                                                                                -  `macOS <macOS/de>`__     -  `GNU/Linux <Linux/de>`__                                                                                                                          .. rubric:: `FAQ - Fragen und Antworten <Frequently_Asked_Questions>`__
+                                                                                                                                                           -  `Windows <Windows/de>`__ -  `FreeBSD <FreeBSD/de>`__                                                                                                                             :name: faq---fragen-und-antworten
+.. rubric:: VideoLAN Projekte                                                                                                                              -  `BeOS <BeOS/de>`__       -  `WinCE <WinCE/de>`__                                                                                                                             
+   :name: videolan-projekte                                                                                                                                =========================== ===========================                                                                                                                          `Fehler berichten <Report_Bugs>`__ [englisch]
+                                                                                                                                                                                                                                                                                                                                           
+Hier ist eine kleine Übersicht des Haupt-\ `Projekts <VideoLAN_projects/de>`__ das vom VideoLAN-Projekt gehostet wird:                                     .. rubric:: Tipps und Tricks                                                                                                                                                     .. raw:: html
+                                                                                                                                                              :name: tipps-und-tricks                                                                                                                                                      
+-  `VLC media player <VLC_media_player>`__, the core and main program, is a complete video solution that is a player, a live transcoder and a streamer.                                                                                                                                                                                        </div>
+-  `x264 <x264>`__, ein kostenloser `H264 <H264>`__ / AVC-Enkoder.                                                                                         -  Sie können sich extra `Skins <Skins>`__ für VLC `herunterladen <http://www.videolan.org/vlc/skins.php>`__                                                                    
+                                                                                                                                                           -  Add different `interfaces <Interface>`__ to control VLC in different ways, such as from `mouse gestures <mouse_gestures>`__ or even `through the internet <Web_Interface>`__. .. raw:: html
+.. rubric:: Bibliotheken                                                                                                                                   -  `Verrückte Sachen die Sie mit VLC anstellen können <Uncommon_uses>`__                                                                                                        
+   :name: bibliotheken                                                                                                                                     -  `Hinweis über andere Klienten <Notes_about_other_clients>`__ (Interoperabilität)                                                                                                 <div style="margin:6px;border: 1px solid #FFA8D3;background-color:#FFECF5; color: #000; padding:10px; margin-top:12px">
+                                                                                                                                                                                                                                                                                                                                           
+-  `Libdvdcss <https://de.wikipedia.org/wiki/Libdvdcss>`__ ist eine C-Bibliothek für den Zugriff auf DVDs ohne sich über die Entschlüsselung zu kümmern.   .. raw:: html                                                                                                                                                                    .. raw:: html
+-  `libdca <https://en.wikipedia.org/wiki/Libdca>`__ ist ein DTS Coherent Akustik Dekoder. (englisch)                                                                                                                                                                                                                                      
+-  `libdvbpsi <libdvbpsi>`__ ist eine C-Bibliothek zum dekodieren und generieren von MPEG TS und DVB PSI-Tablen.                                              </div>                                                                                                                                                                           <h2 style="margin:0; background-color:#FFA8D3;font-size:120%;font-weight:bold;border:1px solid #a3bfb1;text-align:left;color:#000;padding:0.2em .4em;">
+                                                                                                                                                                                                                                                                                                                                           
+Entdecken Sie auch `weniger bekannte Projekte <VideoLAN_projects/de>`__.                                                                                                                                                                                                                                                                    Hilfe beim Projekt
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                                                                                                                                                                                                               .. raw:: html
+                                                                                                                                                                                                                                                                                                                                           
+   </div>                                                                                                                                                                                                                                                                                                                                      </h2>
+                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                            In dieser Rubrik finden Sie, wie Sie am VideoLAN-Projekt als Programmierer oder nicht Programmierer helfen und teilnehmen können.
+                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                            -  `VideoLAN helfen <Help_VideoLAN>`__ [englisch]
+                                                                                                                                                                                                                                                                                                                                            -  `Hilfe zum Thema im Forum <http://forum.videolan.org/viewforum.php?f=18>`__ [englisch]
+                                                                                                                                                                                                                                                                                                                                            -  `Qualitätssicherung <Quality>`__ [englisch]
+                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                            .. raw:: html
+                                                                                                                                                                                                                                                                                                                                           
+                                                                                                                                                                                                                                                                                                                                               </div>
+.. raw:: html                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                           
+   <div style="border: 1px solid #f2e0ce; color: #000; background-color: #fffaf5; padding:10px; margin: 6px; margin-top: 0px;">                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                           
+   <h2 style="margin:0; background-color:#f2e0ce;font-size:120%;font-weight:bold;border:1px solid #bfb1a3;text-align:left;color:#000;padding:0.2em .4em;">                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                           
+Entwicklerecke                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                           
+   </h2>                                                                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                                                           
+VideoLAN ist auch eine Entwicklung der Gemeinschaft der Sie beitreten können.                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                           
+You can help VideoLAN by developing, doing artwork, doing translations ...                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                           
+The `Developers Corner <Developers_Corner>`__ contains various information relative to development: Howtos, work in progress, ...                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                                                           
+.. raw:: html                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                           
+   </div>                                                                                                                                                                                                                                                                                                                                  
+========================================================================================================================================================== ================================================================================================================================================================================ ==========================================================================================================================================================
 
--  [[Intellectual Property/de\| Geistiges Eigentum, Marken]]
--  Finden Sie heraus [[We Use VideoLAN/de|wer VideoLAN verwendet]]
--  [[VideoLAN in the news/de|VideoLAN in den Nachrichten]]
--  [[VideoLAN Design\| Design und Leckereien]]
--  [[VideoLAN_Sites\| VideoLAN's Webseite]]
+Wiki bearbeiten!
+----------------
 
-== VideoLAN Projekte == Hier ist eine kleine Übersicht des
-Haupt-[[VideoLAN projects/de|Projekts]] das vom VideoLAN-Projekt
-gehostet wird: \* [[VLC media player]], the core and main program, is a
-complete video solution that is a player, a live transcoder and a
-streamer. \* [[x264]], ein kostenloser [[H264]] / AVC-Enkoder.
+Please note that to modify the content of the Wiki, or to submit articles or FAQ questions, you need to be identified. Please create an account, this is very fast.
 
-=== Bibliotheken === \* [https://de.wikipedia.org/wiki/Libdvdcss
-Libdvdcss] ist eine C-Bibliothek für den Zugriff auf DVDs ohne sich über
-die Entschlüsselung zu kümmern. \* [https://en.wikipedia.org/wiki/Libdca
-libdca] ist ein DTS Coherent Akustik Dekoder. (englisch) \*
-[[libdvbpsi]] ist eine C-Bibliothek zum dekodieren und generieren von
-MPEG TS und DVB PSI-Tablen.
+**Checkout the special**\ `VideoLAN wiki syntax <VideoLAN_Wiki:Syntax>`__\ **for this wiki.**
 
-Entdecken Sie auch [[VideoLAN projects/de|weniger bekannte Projekte]].
-</div><!-- end of left column -->
+Feel free to add to this site, however, keep content appropriate and useful. This is not the place to report bugs or to request help. `See our info on bug reporting <Report_bugs>`__.
 
-<div style="color:#000;background-color:#f5fffa;border:1px solid
-#cedff2;padding:10px;margin: 6px;">
+You can try the wiki syntax in the `Sandbox <Sandbox/de>`__, the test page.
 
-<h2
-style="margin:0;background:#cedff2;font-size:120%;font-weight:bold;border:1px
-solid #a3b0bf;text-align:left;color:#000;padding:0.2em 0.4em;">VLC Media
-Player {{VLC:latest_version}}</h2>
-
-'''[https://videolan.org/vlc/ VLC herunterladen!]'''
-
-[[VLC|Was ist VLC?]]
-
--  Finden Sie alle ''Möglichkeiten'' heraus [[What can vlc do?|was VLC
-   kann]]
--  Möchten Sie wissen [[how to|wie man was]] mit VLC machen kann?
--  Holen Sie sich bei [[Common Problems|allgemeinen Problemen]] Hilfe
--  Sehen Sie einige [[Awards|Auszeichnungen]] von VLC an
-
-== VLC für Ihre Plattform... ==
-{style="width:50%;vertical-align:top;color:#000;"\| \*
-[[macOS/deWindows]] \* [[BeOS/de \* [[Linux/deFreeBSD]] \* [[WinCE/de}
-
-== Tipps und Tricks == \* Sie können sich extra [[Skins]] für VLC
-[http://www.videolan.org/vlc/skins.php herunterladen] \* Add different
-[[Interface \| interfaces]] to control VLC in different ways, such as
-from [[mouse gesturesthrough the internet]]. \* [[Uncommon usesHinweis
-über andere Klienten]] (Interoperabilität) </div><!-- end of center
-column -->
-
-<div style="border: 1px solid #ddcef2; color:#000;
-background-color:#faf5ff; padding: 10px; margin: 6px;">
-
-<h2
-style="margin:0;background:#ddcef2;font-size:120%;font-weight:bold;border:1px
-solid #afa3bf;text-align:left;color:#000;padding:0.2em
-0.4em;">Unterstützung / Hilfe</h2> ===
-[[Documentation:Documentation/de|Offizielle Dokumentation]] ===
-
-=== Wissensdatenbank ===
-
-Unsere [[Knowledge BaseDateien]] \* [[Dictionarymehr &raquo;]]
-
-=== [[Frequently Asked Questions|FAQ - Fragen und Antworten]] ===
-
-[[Report Bugs|Fehler berichten]] [englisch]
-
-</div> <div style="margin:6px;border: 1px solid
-#FFA8D3;background-color:#FFECF5; color: #000; padding:10px;
-margin-top:12px">
-
-<h2 style="margin:0;
-background-color:#FFA8D3;font-size:120%;font-weight:bold;border:1px
-solid #a3bfb1;text-align:left;color:#000;padding:0.2em .4em;"> Hilfe
-beim Projekt</h2> In dieser Rubrik finden Sie, wie Sie am
-VideoLAN-Projekt als Programmierer oder nicht Programmierer helfen und
-teilnehmen können.
-
--  [[Help VideoLAN|VideoLAN helfen]] [englisch]
--  [http://forum.videolan.org/viewforum.php?f=18 Hilfe zum Thema im
-   Forum] [englisch]
--  [[Quality \| Qualitätssicherung]] [englisch]
-
-</div> colspan="2" style="vertical-align:top;"\|
-
-<div style="border: 1px solid #f2e0ce; color: #000; background-color:
-#fffaf5; padding:10px; margin: 6px; margin-top: 0px;">
-
-<h2 style="margin:0;
-background-color:#f2e0ce;font-size:120%;font-weight:bold;border:1px
-solid #bfb1a3;text-align:left;color:#000;padding:0.2em .4em;">
-Entwicklerecke</h2>
-
-VideoLAN ist auch eine Entwicklung der Gemeinschaft der Sie beitreten
-können.
-
-You can help VideoLAN by developing, doing artwork, doing translations
-...
-
-The [[Developers Corner]] contains various information relative to
-development: Howtos, work in progress, ... </div> \|}
-
-== Wiki bearbeiten! ==
-
-Please note that to modify the content of the Wiki, or to submit
-articles or FAQ questions, you need to be identified. Please create an
-account, this is very fast.
-
-'''Checkout the special [[VideoLAN Wiki:Syntax \| VideoLAN wiki syntax]]
-for this wiki.'''
-
-Feel free to add to this site, however, keep content appropriate and
-useful. This is not the place to report bugs or to request help.
-[[Report bugs|See our info on bug reporting]].
-
-You can try the wiki syntax in the [[Sandbox/de|Sandbox]], the test
-page.
-
-[[Category:VideoLAN Wiki]]
+`Category:VideoLAN Wiki <Category:VideoLAN_Wiki>`__

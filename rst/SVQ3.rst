@@ -1,1 +1,1 @@
-#REDIRECT [[Sorenson Video]]
+#. REDIRECT `Sorenson Video <Sorenson_Video>`__

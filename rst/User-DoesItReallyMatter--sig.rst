@@ -1,1 +1,3 @@
-{{User:DoesItReallyMatter/real_sig}}
+.. raw:: mediawiki
+
+   {{User:DoesItReallyMatter/real_sig}}

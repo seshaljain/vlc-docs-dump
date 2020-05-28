@@ -1,3 +1,3 @@
-<abbr title="Elementary Stream">ES</abbr><noinclude>
+ES
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

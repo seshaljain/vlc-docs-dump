@@ -1,3 +1,3 @@
-#REDIRECT [[MJPEG]]
+#. REDIRECT `MJPEG <MJPEG>`__
 
-[[Category:Container]] [[Category:Container Decoder]]
+`Category:Container <Category:Container>`__ `Category:Container Decoder <Category:Container_Decoder>`__

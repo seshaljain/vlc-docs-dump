@@ -1,9 +1,31 @@
-{{checkmarksafesubst:}}}ucfirst:{{{1|Done}}}}}'''<!--template:done--><noinclude>
+.. raw:: mediawiki
 
-Template to expand to the "Done" text to make the wiki more usable.<br
-/> Alternate text (for example, "fixed") can be added using an unnamed
-parameter and the desired text: <nowiki>{{donesome other text}}
+   {{checkmark|18}}
 
-== See also == \* {{tlDone}} \* {{tl|Fixed}}
+**ucfirst:}}**
 
-[[Category:Templates]] </noinclude>
+| Template to expand to the "Done" text to make the wiki more usable.
+| Alternate text (for example, "fixed") can be added using an unnamed parameter and the desired text: {{done|some other text}} gives 
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Checkmark}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Done}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Fixed}}
+
+`Category:Templates <Category:Templates>`__

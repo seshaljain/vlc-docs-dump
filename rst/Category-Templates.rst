@@ -1,6 +1,3 @@
-See also
-   ''[[Help:Templates]], [[List of templates]]'' and
-   ''[{{fullurl:Special:PrefixIndex|prefix=&namespace=10}} Full list of
-   templates]''
+   See also: `Help:Templates <Help:Templates>`__\ *,*\ `List of templates <List_of_templates>`__ and *[ Full list of templates]*
 
-[[Category:Wiki maintenance]]
+`Category:Wiki maintenance <Category:Wiki_maintenance>`__

@@ -1,1 +1,1 @@
-#redirect[[Help VideoLAN]]
+#. redirect\ `Help VideoLAN <Help_VideoLAN>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[WAVE]]
+#. REDIRECT `WAVE <WAVE>`__

@@ -1,11 +1,24 @@
-{{Moduletype=Video output filtersc=transform}}
+.. raw:: mediawiki
 
-== Options == <onlyinclude>{{Option value=string default="90"
-\|description=Transformation type }}</onlyinclude> {{Clear}}
+   {{Module|name=transform|type=Video output filter|description=Rotate or flip the video|sc=transform}}
 
-== Examples ==
-   $ vlc --video-filter='transform{type="vflip"}' somevideo.avi
+Options
+-------
 
-== Source code == \* {{VLCSourceFile|modules/video_filter/transform.c}}
+Examples
+--------
 
-{{Documentation footer}}
+``$ vlc --video-filter='transform{type="vflip"}' somevideo.avi``
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/video_filter/transform.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

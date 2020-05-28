@@ -1,15 +1,19 @@
-{{Moduletype=Video filter|description=motion blur video filter}}
+.. raw:: mediawiki
+
+   {{Module|name=motionblur|type=Video filter|description=motion blur video filter}}
 
 Use this filter to blur motion in a video based on previous frames.
 
-== Options == <onlyinclude>{{Option value=integer min=1 description=The
-bluring factor (1 to 127). Higher values mean more blurring
-}}</onlyinclude>
+Options
+-------
 
-== Examples ==
-   % '''vlc --video-filter "motionblur{factor=60}" somevideo.avi'''
+Examples
+--------
 
-'''Note:''' In versions prior to 0.9.0, motionblur was a video output
-filter.
+``% ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``"motionblur{factor=60}"``\ ````\ ``somevideo.avi``**
 
-{{Documentation footer}}
+**Note:** In versions prior to 0.9.0, motionblur was a video output filter.
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

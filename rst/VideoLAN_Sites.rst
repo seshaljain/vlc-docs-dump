@@ -1,60 +1,111 @@
-= WebSites = == VideoLAN public sites == \* [https://www.videolan.org
-Main Site] \* [https://wiki.videolan.org Wiki] \*
-[https://forum.videolan.org Forum] \* [http://planet.videolan.org
-Developers' News] \* [https://download.videolan.org/pub/videolan/ Main
-FTP]
+WebSites
+========
 
-== Developers == \* [https://nightlies.videolan.org Nightly builds] \*
-[https://jenkins.videolan.org Jenkins for Automatic Builds] \*
-[https://trac.videolan.org Trac, bugs, features, roadmap] \*
-[https://git.videolan.org Gitweb] \* [https://code.videolan.org Gitlab]
-\* [https://downloads.videolan.org/pub/ Download Site] \*
-[https://streams.videolan.org Reference and buggy stream collection]
+VideoLAN public sites
+---------------------
 
-== Update == \* [http://update.videolan.org VLC update site] - Non human
-readable site !
+-  `Main Site <https://www.videolan.org>`__
+-  `Wiki <https://wiki.videolan.org>`__
+-  `Forum <https://forum.videolan.org>`__
+-  `Developers' News <http://planet.videolan.org>`__
+-  `Main FTP <https://download.videolan.org/pub/videolan/>`__
 
-= Servers = == Ganesh == \* ganesh.videolan.org \*
-developers.videolan.org \* download.videolan.org, downloads.videolan.org
-\* ftp.videolan.org \* rsync.videolan.org \* mirrors.videolan.org \*
-planet.videolan.org \* update.videolan.org \* www.videolan.org,
-www1.videolan.org images1.videolan.org
+Developers
+----------
+
+-  `Nightly builds <https://nightlies.videolan.org>`__
+-  `Jenkins for Automatic Builds <https://jenkins.videolan.org>`__
+-  `Trac, bugs, features, roadmap <https://trac.videolan.org>`__
+-  `Gitweb <https://git.videolan.org>`__
+-  `Gitlab <https://code.videolan.org>`__
+-  `Download Site <https://downloads.videolan.org/pub/>`__
+-  `Reference and buggy stream collection <https://streams.videolan.org>`__
+
+Update
+------
+
+-  `VLC update site <http://update.videolan.org>`__ - Non human readable site !
+
+Servers
+=======
+
+Ganesh
+------
+
+-  ganesh.videolan.org
+-  developers.videolan.org
+-  download.videolan.org, downloads.videolan.org
+-  ftp.videolan.org
+-  rsync.videolan.org
+-  mirrors.videolan.org
+-  planet.videolan.org
+-  update.videolan.org
+-  www.videolan.org, www1.videolan.org images1.videolan.org
 
 The primary web and FTP server Hosted in one of FREE S.A.S' datacenter.
 
-== Sirius == \* www2.videolan.org \* images2.videolan.org \*
-trac.videolan.org \* wiki.videolan.org \* forum.videolan.org
+Sirius
+------
 
-== Albiero == \* git.videolan.org \* svn.videolan.org \*
-mailman.videolan.org \* munin.videolan.org \* www3 images3
+-  www2.videolan.org
+-  images2.videolan.org
+-  trac.videolan.org
+-  wiki.videolan.org
+-  forum.videolan.org
 
-== Altair == \* altair.videolan.org \* buildbot.videolan.org \*
-nightlies.videolan.org \* people.videolan.org
+Albiero
+-------
+
+-  git.videolan.org
+-  svn.videolan.org
+-  mailman.videolan.org
+-  munin.videolan.org
+-  www3 images3
+
+Altair
+------
+
+-  altair.videolan.org
+-  buildbot.videolan.org
+-  nightlies.videolan.org
+-  people.videolan.org
 
 It is the dev server, that hosts the automatic builds. Hosted at VIA.
 
-== Epsilon (Shipped back, RIP) == \*epsilon.videolan.org
+Epsilon (Shipped back, RIP)
+---------------------------
 
-Used to be... Mac Intel Developer Preview machine Also a nightly build
-machine for Mac OS X Intel. Hosted at VIA.
+-  epsilon.videolan.org
 
-== Jones == *jones.videolan.org* streams.videolan.org \*
-hudson.videolan.org
+Used to be... Mac Intel Developer Preview machine Also a nightly build machine for Mac OS X Intel. Hosted at VIA.
 
-Mac Pro (Intel) build bot machine for Mac OS X Intel. Hosted at VIA.
-Named after Christmas Jones
+Jones
+-----
 
-== Veda == \*veda.student.utwente.nl PowerMac - 1.8Ghz Dual, 750MB RAM
-Primary Mac OS X PowerPC development machine. Hosts the nightly build
-client for the OSX PowerPC platform. Hosted by TheDJ.
+-  jones.videolan.org
+-  streams.videolan.org
+-  hudson.videolan.org
 
-== Deneb == \*cc1001114-b. ensch1. ov. home .nl Imac 17" - 2Ghz DC, 1GB
-RAM Primary Mac OS X Intel development machine. Hosts the nightly build
-client for the OSX Intel platform. Hosted by TheDJ.
+Mac Pro (Intel) build bot machine for Mac OS X Intel. Hosted at VIA. Named after Christmas Jones
 
-Some server pictures can be found on:
-http://people.videolan.org/~dionoea/servers/
+Veda
+----
 
-{{stub}}
+-  veda.student.utwente.nl
 
-[[Category:About VideoLAN]] [[Category:Roots]]
+PowerMac - 1.8Ghz Dual, 750MB RAM Primary Mac OS X PowerPC development machine. Hosts the nightly build client for the OSX PowerPC platform. Hosted by TheDJ.
+
+Deneb
+-----
+
+-  cc1001114-b. ensch1. ov. home .nl
+
+Imac 17" - 2Ghz DC, 1GB RAM Primary Mac OS X Intel development machine. Hosts the nightly build client for the OSX Intel platform. Hosted by TheDJ.
+
+Some server pictures can be found on: http://people.videolan.org/~dionoea/servers/
+
+.. raw:: mediawiki
+
+   {{stub}}
+
+`Category:About VideoLAN <Category:About_VideoLAN>`__ `Category:Roots <Category:Roots>`__

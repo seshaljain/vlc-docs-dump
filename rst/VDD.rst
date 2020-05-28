@@ -1,1 +1,1 @@
-#REDIRECT [[:Category:VDD]]
+#. REDIRECT `:Category:VDD <:Category:VDD>`__

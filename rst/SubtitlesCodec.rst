@@ -1,1 +1,1 @@
-#REDIRECT [[Subtitles codecs]]
+#. REDIRECT `Subtitles codecs <Subtitles_codecs>`__

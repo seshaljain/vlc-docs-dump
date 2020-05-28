@@ -1,3 +1,3 @@
-<abbr title="Transport Stream">TS</abbr><noinclude>
+TS
 
-[[Category:Abbreviation templates]] </noinclude>
+`Category:Abbreviation templates <Category:Abbreviation_templates>`__

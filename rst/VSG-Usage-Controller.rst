@@ -1,8 +1,13 @@
-== Disable fullscreen controller ==
+Disable fullscreen controller
+-----------------------------
 
-You can use '''Tools -&gt; Preferences -&gt; Interface''' and untick
-'''Show controls in full screen mode''' option.
+You can use **Tools -> Preferences -> Interface** and untick **Show controls in full screen mode** option.
 
-[[Image:VLCShot1.png]]
+.. figure:: VLCShot1.png
+   :alt: VLCShot1.png
 
-{{VSG}}
+   VLCShot1.png
+
+.. raw:: mediawiki
+
+   {{VSG}}

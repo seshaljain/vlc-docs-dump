@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLan VideoConference]]
+#. REDIRECT `VideoLan VideoConference <VideoLan_VideoConference>`__

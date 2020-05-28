@@ -1,4 +1,3 @@
-{{#if:{{{label[//forum.videolan.org/viewtopic.php?t={{{1}}}
-{{{label}}}]<!---->|''This has also been
-[//forum.videolan.org/viewtopic.php?t={{{1}}} discussed in the
-forum]''<!---->}}<noinclude> [[Category:Templates]] </noinclude>
+{{#if: \|[//forum.videolan.org/viewtopic.php?t= ] \|\ *This has also been [//forum.videolan.org/viewtopic.php?t= discussed in the forum]* }}
+
+`Category:Templates <Category:Templates>`__

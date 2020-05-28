@@ -1,3 +1,3 @@
-Images regarding {{VLC}}
+Images regarding
 
-[[Category:Images]]
+`Category:Images <Category:Images>`__

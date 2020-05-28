@@ -1,1 +1,5 @@
-{{prompt|csh}}<noinclude>[[Category:Templates]]</noinclude>
+.. raw:: mediawiki
+
+   {{prompt|csh}}
+
+`Category:Templates <Category:Templates>`__

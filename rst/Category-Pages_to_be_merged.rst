@@ -1,4 +1,4 @@
-Pages in this category are proposed for possible merging.<br />
-{{tl|Merge}} automatically adds pages to this category.
+| Pages in this category are proposed for possible merging.
+| automatically adds pages to this category.
 
-[[Category:Wiki maintenance]]
+`Category:Wiki maintenance <Category:Wiki_maintenance>`__

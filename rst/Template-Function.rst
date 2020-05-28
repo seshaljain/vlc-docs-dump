@@ -1,1 +1,1 @@
-#REDIRECT [[Template:Fn]]
+#. REDIRECT `Template:Fn <Template:Fn>`__

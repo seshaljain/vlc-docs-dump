@@ -1,9 +1,28 @@
-{{Moduletype=Services discoverydescription=Podcasts}}
+.. raw:: mediawiki
 
-== Options == {{Option value=string \|description=Enter the list of
-podcasts to retrieve, separated by '{{!}}' (pipe) }}
+   {{Module|name=podcast|type=Services discovery|first_version=0.8.5|description=Podcasts}}
 
-== Source code == \*
-{{VLCSourceFile|modules/services_discovery/podcast.c}}
+Options
+-------
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=podcast-urls
+   |value=string
+   |description=Enter the list of podcasts to retrieve, separated by '{{!}}
+
+' (pipe) }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/services_discovery/podcast.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

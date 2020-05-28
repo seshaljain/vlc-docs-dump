@@ -1,1 +1,1 @@
-#redirect [[Players]]
+#. redirect `Players <Players>`__

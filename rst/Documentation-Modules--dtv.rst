@@ -1,28 +1,83 @@
-{{See alsoFor ease of navigation options are split into subpages:
-[[{{#rel2abs:/Linux options}}/Windows options]].<br />The dtv module
-uses [[wikipedia:conditional compilation|conditional compilation]] to
-determine which apply; separate modules are not used.}}
+.. raw:: mediawiki
 
-== Linux == {{Moduletype=Accessdescription=Digital Television and
-Radiosc2=tv|sc3=dvb}}
+   {{See also|Documentation:Modules/dvb}}
 
-Other shortcuts include: \* cable: <code>[[DVB-Cdvb-s]]</code>,
-<code>dvb-s2</code>, <code>isdb-s</code> \* terrestrial
-<code>[[DVB-T|dvb-t]]</code>, <code>dvb-t2</code>, <code>isdb-t</code>,
-<code>atsc</code> {{Clear}}
+.. raw:: mediawiki
 
-=== Options === {{See|{{#rel2abs:/Linux options}}}} {{Clear}}
+   {{Note|For ease of navigation options are split into subpages: [[{{#rel2abs:/Linux options}}
 
-== Windows == {{Moduletype=Accessdescription=Digital Television and
-Radiosc2=tv|sc3=dvb}}
+| \|/Linux options]] and `/Windows options <{{#rel2abs:/Windows_options}}>`__.
+| The dtv module uses `conditional compilation <wikipedia:conditional_compilation>`__ to determine which apply; separate modules are not used.}}
 
-Other shortcuts include: \* cable: <code>[[DVB-Cdvb-s]]</code>,
-<code>dvb-s2</code>, <code>isdb-s</code> \* terrestrial
-<code>[[DVB-T|dvb-t]]</code>, <code>dvb-t2</code>, <code>isdb-t</code>,
-<code>atsc</code>, <code>dvbt</code> {{Clear}}
+Linux
+-----
 
-=== Options === {{See|{{#rel2abs:/Windows options}}}} {{Clear}}
+.. raw:: mediawiki
 
-== Source code == \* {{VLCSourceFilemodules/access/dtv}}
+   {{Module|name=dtv|type=Access|os=Linux|description=Digital Television and Radio|sc=dtv|sc2=tv|sc3=dvb}}
 
-{{Documentation}}
+Other shortcuts include:
+
+-  cable: ```dvb-c`` <DVB-C>`__, ``cqam``, ``isdb-c``
+-  satellite ```dvb-s`` <DVB-S>`__, ``dvb-s2``, ``isdb-s``
+-  terrestrial ```dvb-t`` <DVB-T>`__, ``dvb-t2``, ``isdb-t``, ``atsc``
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+Options
+~~~~~~~
+
+.. raw:: mediawiki
+
+   {{See|{{#rel2abs:/Linux options}}
+
+}}
+
+Windows
+-------
+
+.. raw:: mediawiki
+
+   {{Module|name=dtv|type=Access|os=Windows|description=Digital Television and Radio|sc=dtv|sc2=tv|sc3=dvb}}
+
+Other shortcuts include:
+
+-  cable: ```dvb-c`` <DVB-C>`__, ``cqam``, ``isdb-c``
+-  satellite ```dvb-s`` <DVB-S>`__, ``dvb-s2``, ``isdb-s``
+-  terrestrial ```dvb-t`` <DVB-T>`__, ``dvb-t2``, ``isdb-t``, ``atsc``, ``dvbt``
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+.. _options-1:
+
+Options
+~~~~~~~
+
+.. raw:: mediawiki
+
+   {{See|{{#rel2abs:/Windows options}}
+
+}}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/dtv/access.c}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFolder|modules/access/dtv}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

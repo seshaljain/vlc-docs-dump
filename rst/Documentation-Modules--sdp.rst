@@ -1,7 +1,21 @@
-{{Moduletype=Accesssc=sdp}}
+.. raw:: mediawiki
 
-== Options == None.
+   {{Module|name=sdp|type=Access|description=[[Session Description Protocol]]: Fake input for <code>sdp://</code> scheme|sc=sdp}}
 
-== Source code == \* {{VLCSourceFile|modules/access/sdp.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/access/sdp.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

@@ -1,1 +1,1 @@
-#REDIRECT[[Media resource locator]]
+#. REDIRECT\ `Media resource locator <Media_resource_locator>`__

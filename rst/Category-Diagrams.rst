@@ -1,1 +1,1 @@
-[[Category:Images]]
+`Category:Images <Category:Images>`__

@@ -1,37 +1,50 @@
-==List of tasks, I can do== Please, put here some task I can do in order
-to help VLC : \* ...
+List of tasks, I can do
+-----------------------
 
-==List of task, I try to do== \* Reading info on VideoLAN wiki. \*
-Reading [[Mini_Projects]] and
-[http://trac.videolan.org/vlc/query?status=new&status=assigned&status=reopened&difficulty=easy&order=priority\ \`
-easy bugs] \* trying compile vlc on Ubuntu, missing library libgcrypt
-but I have libgcrypt11
+Please, put here some task I can do in order to help VLC :
 
-binnette@NightShade:~/vlc_project/vlc$ ./bootstrap<br/> +
-ACLOCAL_ARGS=-I m4 <br/> + test -d extras/contrib/bin<br/> + uname
--s<br/> + test .Linux = .Darwin<br/> + pkg-config --version<br/> +
-PKGCONFIG=yes<br/> + export AUTOPOINT<br/> + test <br/> +
-AUTOPOINT=autopoint<br/> + autopoint --dry-run --force<br/> +
-AUTOPOINT=true<br/> + echo<br/> + set +x<br/> generating
-modules/**/Makefile.am<br/>
-............................................................................<br/>
-+ echo<br/> + echo<br/> + cp -f INSTALL INSTALL.git<br/> + autoreconf
---install --force --verbose -I m4<br/> autoreconf: Entering directory
-\`.'<br/> autoreconf: running: true --force<br/> autoreconf: running:
-aclocal --force -I m4<br/> configure.ac:5219: warning: macro
-\`AM_PATH_LIBGCRYPT' not found in library<br/> autoreconf: configure.ac:
-tracing<br/> autoreconf: running: libtoolize --copy --force<br/> Putting
-files in AC_CONFIG_AUX_DIR, \`autotools'.<br/> configure.ac:5219:
-warning: macro \`AM_PATH_LIBGCRYPT' not found in library<br/>
-autoreconf: running: /usr/bin/autoconf --include=m4 --force<br/>
-configure.ac:5219: error: possibly undefined macro:
-AM_PATH_LIBGCRYPT<br/> <nowiki> If this token and others are legitimate,
-please use m4_pattern_allow.</nowiki><br/> <nowiki> See the Autoconf
-documentation.</nowiki><br/> autoreconf: /usr/bin/autoconf failed with
-exit status: 1<br/>
+-  ...
 
-Is there somebody, who can help me ? ^^
+List of task, I try to do
+-------------------------
 
-Hello, The wiki is not the place to ask for help. You'd better try on
-the forum or on vlc-devl @ videolan.org or on irc In your case it seems
-you're missing libgcrypt-dev
+-  Reading info on VideoLAN wiki.
+-  Reading `Mini_Projects <Mini_Projects>`__ and [http://trac.videolan.org/vlc/query?status=new&status=assigned&status=reopened&difficulty=easy&order=priority\ \` easy bugs]
+-  trying compile vlc on Ubuntu, missing library libgcrypt but I have libgcrypt11
+
+| binnette@NightShade:~/vlc_project/vlc$ ./bootstrap
+| + ACLOCAL_ARGS=-I m4
+| + test -d extras/contrib/bin
+| + uname -s
+| + test .Linux = .Darwin
+| + pkg-config --version
+| + PKGCONFIG=yes
+| + export AUTOPOINT
+| + test
+| + AUTOPOINT=autopoint
+| + autopoint --dry-run --force
+| + AUTOPOINT=true
+| + echo
+| + set +x
+| generating modules/**/Makefile.am
+| ............................................................................
+| + echo
+| + echo
+| + cp -f INSTALL INSTALL.git
+| + autoreconf --install --force --verbose -I m4
+| autoreconf: Entering directory \`.'
+| autoreconf: running: true --force
+| autoreconf: running: aclocal --force -I m4
+| configure.ac:5219: warning: macro \`AM_PATH_LIBGCRYPT' not found in library
+| autoreconf: configure.ac: tracing
+| autoreconf: running: libtoolize --copy --force
+| Putting files in AC_CONFIG_AUX_DIR, \`autotools'.
+| configure.ac:5219: warning: macro \`AM_PATH_LIBGCRYPT' not found in library
+| autoreconf: running: /usr/bin/autoconf --include=m4 --force
+| configure.ac:5219: error: possibly undefined macro: AM_PATH_LIBGCRYPT
+| If this token and others are legitimate, please use m4_pattern_allow.
+| See the Autoconf documentation.
+| autoreconf: /usr/bin/autoconf failed with exit status: 1
+| Is there somebody, who can help me ? ^^
+
+Hello, The wiki is not the place to ask for help. You'd better try on the forum or on vlc-devl @ videolan.org or on irc In your case it seems you're missing libgcrypt-dev

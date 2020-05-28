@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:WebPlugin]]
+#. REDIRECT `Documentation:WebPlugin <Documentation:WebPlugin>`__

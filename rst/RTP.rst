@@ -1,27 +1,34 @@
-{{ProtocolReal-time Transport ProtocolRTP audio video
-profile|label2=RTP/AVP }} '''RTP''' or '''Real-time Transport
-Protocol''' is a [[protocol]] for streaming media (including [[VoIP]]
-and video teleconferencing) over the Internet. [[RTCP]] is used
-alongside this protocol to give feedback on the quality of the
-connection and [[RTSP]] changes streaming aspects of the connection.<br
-/> For example, RTP might stream a video, RTCP might show dropped
-frames, and RTSP might pause the video playback.<br /> RTP is often
-layered on top of [[UDP]] because UDP is quicker than [[TCP]].
+.. raw:: mediawiki
 
-VLC has built-in support for RTP as a server (streaming output). As a
-client, VLC uses the [[LiveMedia]] library.
+   {{Protocol|RTP}}
 
-== RTP/AVP == <!-- [[AVP]] and [[RTP/AVP]] redirect to this section. -->
-RTP is generic and is extensible through profiles. '''RTP/AVP''' or
-'''RTP Audio Video Profile''' is a ''profile'' for RTP specific for live
-multimedia streams. RTP/AVP requires a specified ''payload format'' to
-establish which [[codec]]s will be used. Each has a dedicated RFC, e.g.
-[https://tools.ietf.org/html/rfc6184 RFC 6184] for [[H.264]] payload
-format.
+.. raw:: mediawiki
 
-== See also == \* [[SRTP]]
+   {{Wikipedia
+   |Real-time Transport Protocol|label1=RTP
+   |RTP audio video profile|label2=RTP/AVP
+   }}
 
-== Links == \* [https://tools.ietf.org/html/rfc3550 RFC 3550]: RTP \*
-[https://tools.ietf.org/html/rfc3551 RFC 3551]: RTP/AVP
+| **RTP** or **Real-time Transport Protocol** is a `protocol <protocol>`__ for streaming media (including `VoIP <VoIP>`__ and video teleconferencing) over the Internet. `RTCP <RTCP>`__ is used alongside this protocol to give feedback on the quality of the connection and `RTSP <RTSP>`__ changes streaming aspects of the connection.
+| For example, RTP might stream a video, RTCP might show dropped frames, and RTSP might pause the video playback.
+| RTP is often layered on top of `UDP <UDP>`__ because UDP is quicker than `TCP <TCP>`__.
 
-[[Category:Protocols]]
+VLC has built-in support for RTP as a server (streaming output). As a client, VLC uses the `LiveMedia <LiveMedia>`__ library.
+
+RTP/AVP
+-------
+
+RTP is generic and is extensible through profiles. **RTP/AVP** or **RTP Audio Video Profile** is a *profile* for RTP specific for live multimedia streams. RTP/AVP requires a specified *payload format* to establish which `codecs <codec>`__ will be used. Each has a dedicated RFC, e.g. `RFC 6184 <https://tools.ietf.org/html/rfc6184>`__ for `H.264 <H.264>`__ payload format.
+
+See also
+--------
+
+-  `SRTP <SRTP>`__
+
+Links
+-----
+
+-  `RFC 3550 <https://tools.ietf.org/html/rfc3550>`__: RTP
+-  `RFC 3551 <https://tools.ietf.org/html/rfc3551>`__: RTP/AVP
+
+`Category:Protocols <Category:Protocols>`__

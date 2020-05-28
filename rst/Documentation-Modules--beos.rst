@@ -1,9 +1,32 @@
-{{Moduletype=Interfacelast_version=1.0.6|description=[[BeOS]] standard
-API}}
+.. raw:: mediawiki
 
-== Options == {{Option value=boolean description=Use [[DVD]] Menus }}
-{{Clear}}
+   {{Module|name=beos|type=Interface|first_version=0.5.0?|last_version=1.0.6|description=[[BeOS]] standard API}}
 
-== Source code == \* {{VLCSourceFilemodules/gui/beos/BeOS.cpp}}
+Options
+-------
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=beos-dvdmenus
+   |value=boolean
+   |default=enabled
+   |description=Use [[DVD]] Menus
+   }}
+
+.. raw:: mediawiki
+
+   {{Clear}}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-1.0.git|modules/gui/beos/BeOS.cpp}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

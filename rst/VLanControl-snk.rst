@@ -1,8 +1,11 @@
-{{example code|for=.Net Interface to VLC}} This is a binary file, so I
-can't post it.
+.. raw:: mediawiki
 
-It needs to be generated with the Microsoft Strong Name tool (sn.exe)
-which comes with the free Windows SDK and perhaps some of the free
-compilers. The command to generate the file is:
+   {{example code|for=.Net Interface to VLC}}
 
-sn -k VLanControl.snk [[Category:Example code]]
+This is a binary file, so I can't post it.
+
+It needs to be generated with the Microsoft Strong Name tool (sn.exe) which comes with the free Windows SDK and perhaps some of the free compilers. The command to generate the file is:
+
+sn -k VLanControl.snk
+
+`Category:Example code <Category:Example_code>`__

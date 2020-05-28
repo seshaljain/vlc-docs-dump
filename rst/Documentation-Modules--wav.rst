@@ -1,12 +1,44 @@
-== Demux == {{Moduletype=Access demuxdescription=[[WAV]]
-demuxer|sc=none}}
+Demux
+-----
 
-=== Options === None. {{Clear}}
+.. raw:: mediawiki
 
-== Mux == {{Moduletype=Muxerdescription=[[WAV]] muxer|sc=wav}}
+   {{Module|name=wav|type=Access demux|first_version=0.5.0|description=[[WAV]] demuxer|sc=none}}
 
-=== Options === None.
+Options
+~~~~~~~
 
-== Source code == \* {{VLCSourceFilemodules/mux/wav.c}}
+None.
 
-{{Documentation}}
+Mux
+---
+
+.. raw:: mediawiki
+
+   {{Module|name=wav|type=Muxer|first_version=0.8.0|description=[[WAV]] muxer|sc=wav}}
+
+.. _options-1:
+
+Options
+~~~~~~~
+
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/wav.c}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/mux/wav.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

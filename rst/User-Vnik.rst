@@ -1,5 +1,4 @@
-Hello, I am Kumar Anik, have loved FOSS for a while, first attempt at
-contribution.
+Hello, I am Kumar Anik, have loved FOSS for a while, first attempt at contribution.
 
 Contact :
 

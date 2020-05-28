@@ -1,13 +1,25 @@
-{{Moduletype=Audio outputlast_version=0.9.10aRts]] audio output}}
+.. raw:: mediawiki
 
-aRts and {{docmod|esd}} were removed prior to 1.0.0, because both
-projects were inactive.
+   {{Module|name=arts|type=Audio output|os=Linux|last_version=0.9.10|description=[[wikipedia:aRts|aRts]] audio output}}
 
-Modern Linux users can use the {{docmodjack}} modules instead. There are
-probably others.
+aRts and were removed prior to 1.0.0, because both projects were inactive.
 
-== Options == None.
+Modern Linux users can use the or modules instead. There are probably others.
 
-== Source code == \* {{VLCSourceFilep=vlc/vlc-0.9.git}}
+Options
+-------
 
-{{Documentation footer}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/audio_output/arts.c|p=vlc/vlc-0.9.git}}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

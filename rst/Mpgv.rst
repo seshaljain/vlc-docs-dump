@@ -1,1 +1,1 @@
-#REDIRECT [[H.262/MPEG-2 Part 2]]
+#. REDIRECT `H.262/MPEG-2 Part 2 <H.262/MPEG-2_Part_2>`__

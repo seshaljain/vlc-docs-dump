@@ -1,1 +1,1 @@
-#REDIRECT [[MPEG-4#Audio]]
+#. REDIRECT `MPEG-4#Audio <MPEG-4#Audio>`__

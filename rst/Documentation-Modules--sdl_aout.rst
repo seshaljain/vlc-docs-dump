@@ -1,10 +1,18 @@
-{{Moduletype=Audio outputdescription=[[wikipedia:Simple DirectMedia
-Layer|Simple DirectMedia Layer]] audio output}}
+.. raw:: mediawiki
 
-{{Historical}}
+   {{Module|name=SDL|type=Audio output|last_version=1.1.13|description=[[wikipedia:Simple DirectMedia Layer|Simple DirectMedia Layer]] audio output}}
 
-This module had a single shortcut: <code>sdl</code>.
+.. raw:: mediawiki
 
-== Options == None
+   {{Historical}}
 
-{{Documentation}}
+This module had a single shortcut: ``sdl``.
+
+Options
+-------
+
+None
+
+.. raw:: mediawiki
+
+   {{Documentation}}

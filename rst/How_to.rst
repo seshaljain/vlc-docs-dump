@@ -1,1 +1,1 @@
-#REDIRECT [[VLC HowTo]]
+#. REDIRECT `VLC HowTo <VLC_HowTo>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Template:Protocol]]
+#. REDIRECT `Template:Protocol <Template:Protocol>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Aspect ratio]]
+#. REDIRECT `Aspect ratio <Aspect_ratio>`__

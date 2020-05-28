@@ -1,1 +1,1 @@
-#redirect [[MPEG#TS]]
+#. redirect `MPEG#TS <MPEG#TS>`__

@@ -1,1 +1,1 @@
-#redirect [[ASF]]
+#. redirect `ASF <ASF>`__

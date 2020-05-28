@@ -1,3 +1,3 @@
-You can output files which use these [[container format]]s using VLC.
+You can output files which use these `container formats <container_format>`__ using VLC.
 
-[[category:container]]
+`category:container <category:container>`__

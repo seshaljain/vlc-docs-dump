@@ -1,1 +1,1 @@
-#REDIRECT [[SubViewer]]
+#. REDIRECT `SubViewer <SubViewer>`__

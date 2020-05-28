@@ -1,42 +1,53 @@
-Buying music online which can play with [[VLC media player]] is tricky.
-Most online stores and record companies use [[DRM]], which disables the
-ability to play files in all [[media player]]s other than a few
-[[proprietary]] players which support the DRM they use.
+Buying music online which can play with `VLC media player <VLC_media_player>`__ is tricky. Most online stores and record companies use `DRM <DRM>`__, which disables the ability to play files in all `media players <media_player>`__ other than a few `proprietary <proprietary>`__ players which support the DRM they use.
 
-However, there are solutions. Defective by Design has
-[https://www.defectivebydesign.org/guide/audio a listing for DRM-free
-music sites]. Others are suggested below:
+However, there are solutions. Defective by Design has `a listing for DRM-free music sites <https://www.defectivebydesign.org/guide/audio>`__. Others are suggested below:
 
-== Buy music from sources that don't use DRM == These stores usually
-encode their music in the VLC-compatible [[MP3]] format \*
-[http://www.emusic.com eMusic] \* [http://www.amiestreet.com Amie
-Street] \* [http://www.fonogenic.com/ Fonogenic] \*
-[http://audiolunchbox.com/ Audio Lunchbox] \* [http://www.amazon.com/
-Amazon]
+Buy music from sources that don't use DRM
+-----------------------------------------
 
-== Buy from Open Record Labels == {{wikipediawikipedia]]): \*
-[http://www.magnatune.com Magnatune] \* [http://calabashmusic.com/
-Calabash Music] \* [http://www.locarecords.com/ Loca Records] \*
-[http://www.lecridelaharpe.com/krayola/ Krayola Records] \*
-[http://www.onclassical.com/ Onclassical] \*
-[http://www.comfortstand.com/ Comfort Stand Recordings]
+These stores usually encode their music in the VLC-compatible `MP3 <MP3>`__ format
 
-== Creative Commons ==
+-  `eMusic <http://www.emusic.com>`__
+-  `Amie Street <http://www.amiestreet.com>`__
+-  `Fonogenic <http://www.fonogenic.com/>`__
+-  `Audio Lunchbox <http://audiolunchbox.com/>`__
+-  `Amazon <http://www.amazon.com/>`__
 
-Some people release media files under [[creative commons]] licenses,
-which are normally free and allow you to copy the files to your friends.
-These files are also DRM-free. Some creative commons sites are listed
-below: \* [http://www.creativecommons.org Creative Commons] \*
-[http://www.ccmixter.org ccMixter] \* [http://www.archive.org Internet
-Archive] \* [http://opsound.org/ Opsound] \* [http://theslip.nin.com/
-Nine Inch Nails: The Slip (under CC)] \* [http://www.bradsucks.net/ Brad
-Sucks, one-man band and all CC releases]
+Buy from Open Record Labels
+---------------------------
 
-== Play from a CD ==
+.. raw:: mediawiki
 
-VLC can play from CDs. To make sure your CD can be played anywhere, make
-sure it carries the [[wikipedia:Image:Cdda.png|CDDA logo]].
+   {{wikipedia|Open source record label}}
 
-{{stub}}
+There are several record companies who do not use `DRM <DRM>`__ on their music. This means that it can be played in any media player, including VLC. Some of these are listed below, (see also `wikipedia <wikipedia:Open_source_record_label>`__):
 
-[[Category:Knowledge Base]]
+-  `Magnatune <http://www.magnatune.com>`__
+-  `Calabash Music <http://calabashmusic.com/>`__
+-  `Loca Records <http://www.locarecords.com/>`__
+-  `Krayola Records <http://www.lecridelaharpe.com/krayola/>`__
+-  `Onclassical <http://www.onclassical.com/>`__
+-  `Comfort Stand Recordings <http://www.comfortstand.com/>`__
+
+Creative Commons
+----------------
+
+Some people release media files under `creative commons <creative_commons>`__ licenses, which are normally free and allow you to copy the files to your friends. These files are also DRM-free. Some creative commons sites are listed below:
+
+-  `Creative Commons <http://www.creativecommons.org>`__
+-  `ccMixter <http://www.ccmixter.org>`__
+-  `Internet Archive <http://www.archive.org>`__
+-  `Opsound <http://opsound.org/>`__
+-  `Nine Inch Nails: The Slip (under CC) <http://theslip.nin.com/>`__
+-  `Brad Sucks, one-man band and all CC releases <http://www.bradsucks.net/>`__
+
+Play from a CD
+--------------
+
+VLC can play from CDs. To make sure your CD can be played anywhere, make sure it carries the `CDDA logo <wikipedia:Image:Cdda.png>`__.
+
+.. raw:: mediawiki
+
+   {{stub}}
+
+`Category:Knowledge Base <Category:Knowledge_Base>`__

@@ -1,9 +1,42 @@
-{{Moduletype=Access demuxdescription=[[Vorbis]] audio decoder}}
+.. raw:: mediawiki
 
-{{Option value=integer max=10 name=sout-vorbis-max-bitrate
-description=Maximum bitrate in kbps. This is useful for streaming
-applications }} {{Option value=integer name=sout-vorbis-cbr
-description=Force a constant bitrate encoding (CBR) \|default=disabled
-}}
+   {{Module|name=vorbis|type=Access demux|first_version=0.5.0|description=[[Vorbis]] audio decoder}}
 
-{{Documentation footer}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=sout-vorbis-quality
+   |value=integer
+   |min=0
+   |max=10 
+   |description=Enforce a quality between 1 (low) and 10 (high), instead of specifying a particular bitrate. This will produce a VBR stream
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=sout-vorbis-max-bitrate
+   |value=integer
+   |description=Maximum bitrate in kbps. This is useful for streaming applications
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=sout-vorbis-min-bitrate
+   |value=integer
+   |description=Minimum bitrate in kbps. This is useful for encoding for a fixed-size channel
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=sout-vorbis-cbr
+   |value=boolean
+   |description=Force a constant bitrate encoding (CBR)
+   |default=disabled
+   }}
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

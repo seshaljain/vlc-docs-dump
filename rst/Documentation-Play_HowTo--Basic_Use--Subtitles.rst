@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Subtitles]]
+#. REDIRECT `Documentation:Subtitles <Documentation:Subtitles>`__

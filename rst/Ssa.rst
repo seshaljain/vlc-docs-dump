@@ -1,1 +1,1 @@
-#REDIRECT [[SubStation Alpha]]
+#. REDIRECT `SubStation Alpha <SubStation_Alpha>`__

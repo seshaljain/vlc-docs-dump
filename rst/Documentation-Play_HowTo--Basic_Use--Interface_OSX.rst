@@ -1,56 +1,73 @@
-{{Stub}} {{Outdated}} '''&nbsp;VLC 1.2 Mac Interface Documentation'''
+.. raw:: mediawiki
 
-Below image shows all the functions of the buttons present in VLC 1.2
-Mac Version
+   {{Stub}}
 
-[[Image:Main.png|602x332px]]
+.. raw:: mediawiki
 
-<br>
+   {{Outdated}}
 
-<br>
+** VLC 1.2 Mac Interface Documentation**
 
-"Fullscreen mode" for Snow Leopard and Leopard is located on the bottom
-of the window.
+Below image shows all the functions of the buttons present in VLC 1.2 Mac Version
 
-[[File:Snow leopardfs.png]]
+.. figure:: Main.png
+   :alt: Main.png
+   :width: 602px
+   :height: 332px
 
-<br>
+   Main.png
 
-Below shows the Fullscreen interface and functions of each button used
-during the Fullscreen mode.
+| 
+| "Fullscreen mode" for Snow Leopard and Leopard is located on the bottom of the window.
 
-[[Image:Fscontroller.png|602x332px]]
+.. figure:: Snow_leopardfs.png
+   :alt: Snow_leopardfs.png
 
-<br>
+   Snow_leopardfs.png
 
-'''&nbsp;Basic Playlist Controls in VLC 1.2 for Mac'''
+| 
+| Below shows the Fullscreen interface and functions of each button used during the Fullscreen mode.
 
-<br>
+.. figure:: Fscontroller.png
+   :alt: Fscontroller.png
+   :width: 602px
+   :height: 332px
 
-This is an image of the first view one will get on opening VLC (the
-submenus to the left, are by-default closed).
+   Fscontroller.png
 
-[[File:Vlc 1.2 first view.png]]
+| 
+| ** Basic Playlist Controls in VLC 1.2 for Mac**
 
-<br>
+| 
+| This is an image of the first view one will get on opening VLC (the submenus to the left, are by-default closed).
 
-Media can be added to the playlist by clicking on the Open media...
-button, and choosing your options appropriately.
+.. figure:: Vlc_1.2_first_view.png
+   :alt: Vlc_1.2_first_view.png
 
-[[File:Vlc 1.2 playlist dailog box.png]]
+   Vlc_1.2_first_view.png
 
-<br>
+| 
+| Media can be added to the playlist by clicking on the Open media... button, and choosing your options appropriately.
 
-Alternately, media can be added by dragging and dropping its icon from
-anywhere into the box.
+.. figure:: Vlc_1.2_playlist_dailog_box.png
+   :alt: Vlc_1.2_playlist_dailog_box.png
 
-[[File:Vlc 1.2 drag and drop files.png]]
+   Vlc_1.2_playlist_dailog_box.png
 
-<br>
+| 
+| Alternately, media can be added by dragging and dropping its icon from anywhere into the box.
 
-Additional media can be added in between the playlist, in any desirable
-order, or into a new playlist, by dragging and dropping further.
+.. figure:: Vlc_1.2_drag_and_drop_files.png
+   :alt: Vlc_1.2_drag_and_drop_files.png
 
-[[File:Vlc 1.2 playlist drag into.png]]
+   Vlc_1.2_drag_and_drop_files.png
 
-[[Category:Interfaces]] [[Category:macOS]]
+| 
+| Additional media can be added in between the playlist, in any desirable order, or into a new playlist, by dragging and dropping further.
+
+.. figure:: Vlc_1.2_playlist_drag_into.png
+   :alt: Vlc_1.2_playlist_drag_into.png
+
+   Vlc_1.2_playlist_drag_into.png
+
+`Category:Interfaces <Category:Interfaces>`__ `Category:macOS <Category:macOS>`__

@@ -1,21 +1,25 @@
-{{See alsoDBus-usage}}
+.. raw:: mediawiki
 
-== TODO for DBus integration ==
+   {{See also|DBus-spec|DBus-usage}}
 
-VLC implements [[DBus-spec]], a desktop-neutral document, that aims to
-be suitable for every Media Players.
+TODO for DBus integration
+-------------------------
 
-=== Decide service behaviour ===
+VLC implements `DBus-spec <DBus-spec>`__, a desktop-neutral document, that aims to be suitable for every Media Players.
+
+Decide service behaviour
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Could vlc be a on-demand startable service, would it be useful ?
 
-We just have to create a
-/usr/share/dbus-1/org.freedesktop.MediaPlayer.service:
+We just have to create a /usr/share/dbus-1/org.freedesktop.MediaPlayer.service:
 
-<syntaxhighlight lang="ini"> [D-BUS Service]
+.. code:: ini
 
-Name=org.freedesktop.MediaPlayer
+   [D-BUS Service]
 
-Exec=/usr/bin/vlc -I dummy --control dbus </syntaxhighlight>
+   Name=org.freedesktop.MediaPlayer
 
-[[Category:Development]]
+   Exec=/usr/bin/vlc -I dummy --control dbus
+
+`Category:Development <Category:Development>`__

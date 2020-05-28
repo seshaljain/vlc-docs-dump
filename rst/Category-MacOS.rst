@@ -1,4 +1,11 @@
-{{Lowercase}} {{See also|Category:macOS images}} Help for [[macOS]]
-systems
+.. raw:: mediawiki
 
-[[Category:Operating systems]]
+   {{Lowercase}}
+
+.. raw:: mediawiki
+
+   {{See also|Category:macOS images}}
+
+Help for `macOS <macOS>`__ systems
+
+`Category:Operating systems <Category:Operating_systems>`__

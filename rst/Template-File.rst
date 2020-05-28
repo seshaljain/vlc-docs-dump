@@ -1,14 +1,61 @@
-<includeonly>\* {{VLCSourceFile}}}}}}}}</includeonly> <noinclude> For
-linking to source code file. Links to https://git.videolan.org.
+\* For linking to source code file. Links to https://git.videolan.org.
 
-== Usage ==
-   <nowiki>{{fileinfo}}</nowiki>
+Usage
+-----
 
-For example {{fileDummy muxer}} <nowiki>{{fileDummy muxer}}</nowiki>
-{{filemodules/mux/avi.c}}</nowiki>
+``{{file|name|info}}``
 
-== See also == \* {{tlCommitdiff}} \* {{tlSVNSourceFile}} - for linking
-to a file on SVN. Mostly obsolete due to the [[Git]] transition \*
-{{tlVLCSourceFolder}}
+For example
 
-[[Category:Templates]] </noinclude>
+``{{file|modules/mux/dummy.c|Dummy muxer}}``
+
+.. raw:: mediawiki
+
+   {{file|modules/mux/avi.c}}
+
+``{{file|modules/mux/avi.c}}``
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commit}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commitdiff}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|File}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|SVNSourceFile}}
+
+   - for linking to a file on SVN. Mostly obsolete due to the `Git <Git>`__ transition
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFile}}
+
+   - same except that it does not add the bulleted list
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFolder}}
+
+`Category:Templates <Category:Templates>`__

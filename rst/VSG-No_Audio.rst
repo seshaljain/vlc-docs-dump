@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Audio:None]]
+#. REDIRECT `VSG:Audio:None <VSG:Audio:None>`__

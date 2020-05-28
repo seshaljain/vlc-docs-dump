@@ -1,1 +1,1 @@
-#REDIRECT [[:Category:Video filters]]
+#. REDIRECT `:Category:Video filters <:Category:Video_filters>`__

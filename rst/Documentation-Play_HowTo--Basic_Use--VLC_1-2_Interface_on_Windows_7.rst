@@ -2,37 +2,57 @@ VLC 1.2 Windows 7 Interface Documentation
 
 All buttons functions in VLC 1.2 Windows 7 version
 
-[[Image:Vlc pics 1.png|740x480px]]
+.. figure:: Vlc_pics_1.png
+   :alt: Vlc_pics_1.png
+   :width: 740px
+   :height: 480px
 
-<br>
+   Vlc_pics_1.png
 
-All buttons functions in fullscreen
+| 
+| All buttons functions in fullscreen
 
-<br>
+| 
 
-:[[Image:Vlc pics 2.png|740x480px]]
+   |Vlc_pics_2.png|
 
 Opening VLC for the first time
 
-[[Image:Vlc pics 3.png|740x480px]]
+.. figure:: Vlc_pics_3.png
+   :alt: Vlc_pics_3.png
+   :width: 740px
+   :height: 480px
 
-<br>
+   Vlc_pics_3.png
 
-How to open a file(click Open, select a file and open it by double
-clicking on the file or click once on it and press open)
+| 
+| How to open a file(click Open, select a file and open it by double clicking on the file or click once on it and press open)
 
-<br>
+| 
 
-:[[Image:Vlc pics 4.png|740x480px]]
+   |Vlc_pics_4.png|
 
 Another way of doing it
 
-[[Image:Vlc pics 5.png|740x480px]]
+.. figure:: Vlc_pics_5.png
+   :alt: Vlc_pics_5.png
+   :width: 740px
+   :height: 480px
 
-<br>
+   Vlc_pics_5.png
 
-or
+| 
+| or
 
-<br>
+| 
+| |Vlc_pics_6.png|
 
-[[Image:Vlc pics 6.png|740x480px]]<br>
+.. |Vlc_pics_2.png| image:: Vlc_pics_2.png
+   :width: 740px
+   :height: 480px
+.. |Vlc_pics_4.png| image:: Vlc_pics_4.png
+   :width: 740px
+   :height: 480px
+.. |Vlc_pics_6.png| image:: Vlc_pics_6.png
+   :width: 740px
+   :height: 480px

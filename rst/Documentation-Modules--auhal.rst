@@ -1,11 +1,50 @@
-{{Moduletype=Audio outputdescription=HAL AudioUnit output}}
+.. raw:: mediawiki
 
-The option <code>macosx-audio-device</code> is obsolete since VLC 2.2.0
+   {{Module|name=auhal|type=Audio output|os=macOS|description=HAL AudioUnit output}}
 
-== Options == {{Option value=integer max=512 description=Audio volume }}
-{{Option value=string description=Last audio device }} {{Option
-value=string description=NULL }}
+The option ``macosx-audio-device`` is obsolete since VLC 2.2.0
 
-== Source code == \* {{VLCSourceFile|modules/audio_output/auhal.c}}
+Options
+-------
 
-{{Documentation}}
+.. raw:: mediawiki
+
+   {{Option
+   |name=auhal-volume
+   |value=integer
+   |min=0
+   |max=512
+   |default=256
+   |description=Audio volume
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=auhal-audio-device
+   |value=string
+   |default=""
+   |description=Last audio device
+   }}
+
+.. raw:: mediawiki
+
+   {{Option
+   |name=auhal-warned-devices
+   |value=string
+   |default=""
+   |description=NULL
+   }}
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/audio_output/auhal.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

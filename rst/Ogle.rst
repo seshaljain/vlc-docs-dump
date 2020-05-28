@@ -1,22 +1,26 @@
-{{Wikipedia|Ogle DVD Player}}
+.. raw:: mediawiki
 
-Ogle is an inactive DVD [[media player]] for [[GNU/Linux]] and
-[[macOS]]<span
-id="note1_backlink"></span><sup><small>[[#note1|&#x5B;note
-1&#x5D;]]</small></sup> released under the GPL. The libraries
-[[libdvdnav and libdvdread]] are based upon Ogle.
+   {{Wikipedia|Ogle DVD Player}}
 
-== Notes == <div class="plainlist"> \* <span
-id="note1"></span><sup>[[#note1_backlink|^&nbsp;note 1]]</sup> macOS (as
-Mac OS X Version 10.5 Leopard) was
-[https://www.opengroup.org/openbrand/register/brand3555.htm certified
-POSIX] after the project page was written </div>
+Ogle is an inactive DVD `media player <media_player>`__ for `GNU/Linux <GNU/Linux>`__ and `macOS <macOS>`__\ \ :sup:`\ `\ `[note 1] <#note1>`__\ :sup:`\ ` released under the GPL. The libraries `libdvdnav and libdvdread <libdvdnav_and_libdvdread>`__ are based upon Ogle.
 
-== Links == <!--Both links are from
-https://web.archive.org/web/20030222045443/http://ogle.berlios.de/--> \*
-[https://web.archive.org/web/20050207044022/http://developer.berlios.de/projects/ogle/
-Project page at developer.berlios.de] (archive) \*
-[https://web.archive.org/web/20050206092316/http://www.dtek.chalmers.se/groups/dvd/
-Home page at dtek.chalmers.se] (archive)
+Notes
+-----
 
-[[Category:Player]]
+.. raw:: html
+
+   <div class="plainlist">
+
+-  \ `^ note 1 <#note1_backlink>`__ macOS (as Mac OS X Version 10.5 Leopard) was `certified POSIX <https://www.opengroup.org/openbrand/register/brand3555.htm>`__ after the project page was written
+
+.. raw:: html
+
+   </div>
+
+Links
+-----
+
+-  `Project page at developer.berlios.de <https://web.archive.org/web/20050207044022/http://developer.berlios.de/projects/ogle/>`__ (archive)
+-  `Home page at dtek.chalmers.se <https://web.archive.org/web/20050206092316/http://www.dtek.chalmers.se/groups/dvd/>`__ (archive)
+
+`Category:Player <Category:Player>`__

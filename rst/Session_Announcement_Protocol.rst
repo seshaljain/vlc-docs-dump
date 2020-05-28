@@ -1,1 +1,1 @@
-#REDIRECT [[SAP]]
+#. REDIRECT `SAP <SAP>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Interface]]
+#. REDIRECT `Documentation:Interface <Documentation:Interface>`__

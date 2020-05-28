@@ -1,3 +1,3 @@
-Drawing from [[User:Fcartegnie]]
+Drawing from `User:Fcartegnie <User:Fcartegnie>`__
 
-[[Category:Cones]]
+`Category:Cones <Category:Cones>`__

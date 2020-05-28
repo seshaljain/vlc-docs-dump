@@ -1,1 +1,1 @@
-#redirect [[HTTP]]
+#. redirect `HTTP <HTTP>`__

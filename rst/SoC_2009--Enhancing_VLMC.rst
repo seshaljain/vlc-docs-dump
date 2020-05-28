@@ -1,88 +1,87 @@
-{{SoCProjectstudent=[[User:chouquettementor=[[User:etix|Ludovic
-Fauvet]]}}
+.. raw:: mediawiki
 
-=Enhancing VLMC=
+   {{SoCProject|year=2009|student=[[User:chouquette|Hugo Beauzee-Luyssen]]|mentor=[[User:etix|Ludovic Fauvet]]}}
 
-==Abstract==
+Enhancing VLMC
+==============
 
-The aim of this project is to provide a functionnal workflow for the
-VLMC project, including the transition and effects API, in order to
-allow external developpers to create new effects. At the moment, VLMC
-isn't abble to generate a video output. After this summer, it
-(hopefully) will :)
+Abstract
+--------
 
-The workflow consists of 5 differents workflows : \* The main workflow
-\* The clip workflow \* The track workflow \* The effects workflow \*
-The transition workflow
+The aim of this project is to provide a functionnal workflow for the VLMC project, including the transition and effects API, in order to allow external developpers to create new effects. At the moment, VLMC isn't abble to generate a video output. After this summer, it (hopefully) will :)
 
-Basically, the main workflow will query the track workflow, which will
-query the clip workflow for each clip contained in the so called track.
-Transitions and effect workflow will query transition and effects
-modules at different points, from the precedently described workflows.
+The workflow consists of 5 differents workflows :
 
-== Tasks ==
+-  The main workflow
+-  The clip workflow
+-  The track workflow
+-  The effects workflow
+-  The transition workflow
 
-{\| class="wikitable" border="1" ! Task name !! End date !! Dependencies
-!! Status Clip workflow \|\| 06-06-09 \|\| Requires a functional preview
-widget, and a basic timeline \|\| Completed Tracks workflow \|\|
-13-06-09 \|\| Requires a functionnal Clip workflow \|\| Completed
-(Without track editing capabilities) Main workflow \|\| 04-07-09 \|\|
-Requires a functionnal Track workflow \|\| Completed Effect and
-Transition API \|\| 25-07-09 \|\| Requires lots of conception :p \|\|
-Not started yet Effect workflow \|\| 01-08-09 \|\| Requires all the
-basic workflow to be functionnal, and an effect API to query modules
-\|\| Not started yet Transition workflow \|\| 09-09-09 \|\| Requires all
-the basic workflow to be functionnal, and the transition API \|\| Not
-started yet }
+Basically, the main workflow will query the track workflow, which will query the clip workflow for each clip contained in the so called track. Transitions and effect workflow will query transition and effects modules at different points, from the precedently described workflows.
 
-==Timeline==
+Tasks
+-----
 
-'''May 26''' Here we go !
+========================= ======== ===================================================================================== ==============================================
+Task name                 End date Dependencies                                                                          Status
+========================= ======== ===================================================================================== ==============================================
+Clip workflow             06-06-09 Requires a functional preview widget, and a basic timeline                            Completed
+Tracks workflow           13-06-09 Requires a functionnal Clip workflow                                                  Completed (Without track editing capabilities)
+Main workflow             04-07-09 Requires a functionnal Track workflow                                                 Completed
+Effect and Transition API 25-07-09 Requires lots of conception :p                                                        Not started yet
+Effect workflow           01-08-09 Requires all the basic workflow to be functionnal, and an effect API to query modules Not started yet
+Transition workflow       09-09-09 Requires all the basic workflow to be functionnal, and the transition API             Not started yet
+\                                                                                                                       
+========================= ======== ===================================================================================== ==============================================
 
-'''June 06''' Functionnal clip workflow
+Timeline
+--------
 
-'''June 13''' Functionnal track workflow
+**May 26** Here we go !
 
-'''June 19''' Some small vacation
+**June 06** Functionnal clip workflow
 
-'''July 01''' Let's get back coding !
+**June 13** Functionnal track workflow
 
-'''July 04''' Main workflow
+**June 19** Some small vacation
 
-Having a look at the code efficiency would be good. At this point, real
-time is almost mandatory.
+**July 01** Let's get back coding !
 
-'''July 07''' Mid term evaluation
+**July 04** Main workflow
 
-'''July 25''' Effect and transition API
+Having a look at the code efficiency would be good. At this point, real time is almost mandatory.
 
-'''August 01''' Functionnal effect workflow
+**July 07** Mid term evaluation
 
-'''August 08''' Functionnal transition workflow
+**July 25** Effect and transition API
 
-'''August 11''' Check code, write doc, beeing nervous if work isn't
-done.
+**August 01** Functionnal effect workflow
 
-'''August 18''' Keyboard pencil down :(
+**August 08** Functionnal transition workflow
 
-'''August 18/19''' Let's party o//
+**August 11** Check code, write doc, beeing nervous if work isn't done.
 
-== Contact ==
+**August 18** Keyboard pencil down :(
 
-I blog [http://www.mustelVLMC websitidae.fr here] and you can contact me
-at beauze.h@gmail.com :)
+**August 18/19** Let's party o//
 
-== Repository ==
+Contact
+-------
 
-You can find the VLMC Git repository
-[http://github.com/VLMC/vlmc/tree/master here]
+I blog `websitidae.fr here <http://www.mustelVLMC>`__ and you can contact me at beauze.h@gmail.com :)
 
-== Website ==
+Repository
+----------
 
-For more informations, please visit the official [http://vlmc.org VLMC
-website].
+You can find the VLMC Git repository `here <http://github.com/VLMC/vlmc/tree/master>`__
 
-== Resources: Building VLMC ==
+Website
+-------
 
-For information on building VLMC from source visit:
-[http://wiki.videolan.org/Building_VLMC Building VLMC from Source]
+For more informations, please visit the official `VLMC website <http://vlmc.org>`__.
+
+Resources: Building VLMC
+------------------------
+
+For information on building VLMC from source visit: `Building VLMC from Source <http://wiki.videolan.org/Building_VLMC>`__

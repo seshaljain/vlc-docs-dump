@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:MacOSCompile]]
+#. REDIRECT `Talk:MacOSCompile <Talk:MacOSCompile>`__

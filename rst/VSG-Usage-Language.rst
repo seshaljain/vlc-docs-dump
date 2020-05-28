@@ -1,11 +1,3 @@
-You can use '''Tools -&gt; Preferences...''' (set Show Settings to All)
-and '''Interface''' and select correct language from '''Language''' drop
-down list. Remember to press '''Save''' to save VLC settings and restart
-VLC after that to make sure changes are enabled.
+You can use **Tools -> Preferences...** (set Show Settings to All) and **Interface** and select correct language from **Language** drop down list. Remember to press **Save** to save VLC settings and restart VLC after that to make sure changes are enabled.
 
-Also you can use'''--language=''' from command line if you can't
-navigate with current language or you want to use batch files/scripts.
-for example: '''vlc --language=en''' to get English. Other options are
-auto, en, ar, pt_BR, en_GB, ca, zh_TW, cs, da, nl, fi, fr, gl, ka, de,
-he, hu, it, ja, ko, ms, oc, fa, pl, pt_PT, ro, ru, zh_CN, sr, sk, sl,
-es, sv, tr
+Also you can use\ **--language=** from command line if you can't navigate with current language or you want to use batch files/scripts. for example: **vlc --language=en** to get English. Other options are auto, en, ar, pt_BR, en_GB, ca, zh_TW, cs, da, nl, fi, fr, gl, ka, de, he, hu, it, ja, ko, ms, oc, fa, pl, pt_PT, ro, ru, zh_CN, sr, sk, sl, es, sv, tr

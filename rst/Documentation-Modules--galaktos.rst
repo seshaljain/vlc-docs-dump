@@ -1,8 +1,11 @@
-{{Moduletype=Visualizationfirst_version=0.8.0description=Galaktos
-visualization plugin (MilkDrop compatible)}} {{Historical}}
+.. raw:: mediawiki
 
-Between VLC version 1.0.6 and 1.1.0 support for this module was dropped
-and users were directed to [[Documentation:Modules/projectm|projectm]]
-instead.
+   {{Module|name=galaktos|type=Visualization|os=Linux|first_version=0.8.0|last_version=1.0.6|description=Galaktos visualization plugin (MilkDrop compatible)}}
 
-[[Category:Stubs]]
+.. raw:: mediawiki
+
+   {{Historical}}
+
+Between VLC version 1.0.6 and 1.1.0 support for this module was dropped and users were directed to `projectm <Documentation:Modules/projectm>`__ instead.
+
+`Category:Stubs <Category:Stubs>`__

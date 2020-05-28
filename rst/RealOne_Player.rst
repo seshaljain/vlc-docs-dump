@@ -1,1 +1,1 @@
-#redirect [[RealPlayer]]
+#. redirect `RealPlayer <RealPlayer>`__

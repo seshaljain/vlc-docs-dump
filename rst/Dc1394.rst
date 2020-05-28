@@ -1,1 +1,1 @@
-#REDIRECT [[Documentation:Modules/dc1394]]
+#. REDIRECT `Documentation:Modules/dc1394 <Documentation:Modules/dc1394>`__

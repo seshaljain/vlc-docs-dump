@@ -1,1 +1,1 @@
-#redirect[[Documentation:Documentation]]
+#. redirect\ `Documentation:Documentation <Documentation:Documentation>`__

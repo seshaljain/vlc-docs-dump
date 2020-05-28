@@ -1,7 +1,8 @@
-{{howto|disable privacy network policies}}
+.. raw:: mediawiki
 
-Launch VLC with&nbsp;'''--no-qt-privacy-ask&nbsp;'''command-line option.
+   {{howto|disable privacy network policies}}
 
-<br>
+Launch VLC with \ **--no-qt-privacy-ask **\ command-line option.
 
-{{VSG}}
+| 
+| 

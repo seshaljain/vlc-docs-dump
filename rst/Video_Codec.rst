@@ -1,1 +1,1 @@
-#REDIRECT [[Codec#Video]]
+#. REDIRECT `Codec#Video <Codec#Video>`__

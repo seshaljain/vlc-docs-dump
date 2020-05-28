@@ -1,1 +1,4 @@
-#REDIRECT [[File:Internet Explorer.png]]
+#. REDIRECT |Internet_Explorer.png|
+
+.. |Internet_Explorer.png| image:: Internet_Explorer.png
+

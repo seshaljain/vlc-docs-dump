@@ -1,23 +1,23 @@
-= VLMa documentation =
+VLMa documentation
+==================
 
-== Developer documentation ==
+Developer documentation
+-----------------------
 
--  [[VLMa/Documentation:Build \| Build HOWTO]]
--  [[VLMa/Documentation:Architecture \| VLMa architecture]]
--  [[VLMa/Documentation:Exclipse integration \| Using Eclipse to develop
-   VLMa]]
--  [[VLMa/Documentation:Assignment_algorithm \| Algorithm used for the
-   assignment of orders]]
+-  `Build HOWTO <VLMa/Documentation:Build>`__
+-  `VLMa architecture <VLMa/Documentation:Architecture>`__
+-  `Using Eclipse to develop VLMa <VLMa/Documentation:Exclipse_integration>`__
+-  `Algorithm used for the assignment of orders <VLMa/Documentation:Assignment_algorithm>`__
 
-== User documentation ==
+User documentation
+------------------
 
--  [[VLMa/Documentation:Installation \| Installing VLMa on your own
-   computer]]
--  [[VLMa/Documentation:Configuration_reference \| VLMa configuration
-   variables]]
+-  `Installing VLMa on your own computer <VLMa/Documentation:Installation>`__
+-  `VLMa configuration variables <VLMa/Documentation:Configuration_reference>`__
 
-==See also==
+See also
+--------
 
--  [[VLMa \| VLMa overview]]
+-  `VLMa overview <VLMa>`__
 
-[[Category:VLMa]]
+`Category:VLMa <Category:VLMa>`__

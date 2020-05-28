@@ -1,7 +1,7 @@
-'''Name :''' Geoffroy Couprie
+**Name :** Geoffroy Couprie
 
-'''Country :''' France
+**Country :** France
 
-'''University :''' Ecole Centrale de Lille
+**University :** Ecole Centrale de Lille
 
-'''Website :''' [http://eleves.ec-lille.fr/~couprieg My blog]
+**Website :** `My blog <http://eleves.ec-lille.fr/~couprieg>`__

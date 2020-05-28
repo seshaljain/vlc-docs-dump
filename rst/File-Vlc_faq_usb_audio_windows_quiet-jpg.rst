@@ -1,3 +1,3 @@
 Sound section under Windows control panel that shows Communications tab
 
-[[Category:Windows]]
+`Category:Windows <Category:Windows>`__

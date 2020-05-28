@@ -1,24 +1,40 @@
-{{muxencoder=n}}
-{{Websiteon=Bitbucket\|https://bitbucket.org/mpyne/game-music-emu/wiki/Home}}
-{{Open}}
+.. raw:: mediawiki
 
-'''Game Music Emu''' (GME) format is used to emulate the audio output of
-various video game consoles popular in the 1980s and 1990s. It gives a
-"retro" feel to the sound. ''Game Music Emu'' is a contraction of ''Game
-Music Emulator''.
+   {{mux|id=gme|encoder=n}}
 
-The .??z formats are just [[compress]]ed with inflate.
+.. raw:: mediawiki
 
-{-\| .nsf \|\| NSF \|\| Nes .nsfe \|\| NSF \|\| Nes .gbs \|\| GBS \|\|
-Gameboy .vgm \|\| VGM \|\| Master System, Game Gear, Genesis .vgz \|\|
-VGM \|\| Master System, Game Gear, Genesis .spc \|\| SPC \|\| Super Nes
-(SNES) .gym \|\| GYM \|\| Genesis" \|}
+   {{Website|Game Music Emu|on=Bitbucket|https://bitbucket.org/mpyne/game-music-emu/wiki/Home}}
 
-== Links == \*
-[http://blargg.8bitalley.com/libs/audio.html#Game_Music_Emu Blargg's
-Audio Libraries - Game_Music_Emu]: Original developer's page (old) \*
-[https://bitbucket.org/mpyne/game-music-emu/wiki/Home Bitbucket -
-game-music-emu] <small>([https://bitbucket.org/mpyne/game-music-emu/src
-repo link])</small>: Official fork used by VLC (current)
+.. raw:: mediawiki
 
-== Source code == {{fileinput demuxer}}
+   {{Open}}
+
+**Game Music Emu** (GME) format is used to emulate the audio output of various video game consoles popular in the 1980s and 1990s. It gives a "retro" feel to the sound. *Game Music Emu* is a contraction of *Game Music Emulator*.
+
+The .??z formats are just `compressed <compress>`__ with inflate.
+
+========= ====== =================================
+extension format platform
+========= ====== =================================
+.nsf      NSF    Nes
+.nsfe     NSF    Nes
+.gbs      GBS    Gameboy
+.vgm      VGM    Master System, Game Gear, Genesis
+.vgz      VGM    Master System, Game Gear, Genesis
+.spc      SPC    Super Nes (SNES)
+.gym      GYM    Genesis"
+========= ====== =================================
+
+Links
+-----
+
+-  `Blargg's Audio Libraries - Game_Music_Emu <http://blargg.8bitalley.com/libs/audio.html#Game_Music_Emu>`__: Original developer's page (old)
+-  `Bitbucket - game-music-emu <https://bitbucket.org/mpyne/game-music-emu/wiki/Home>`__ (`repo link <https://bitbucket.org/mpyne/game-music-emu/src>`__): Official fork used by VLC (current)
+
+Source code
+-----------
+
+.. raw:: mediawiki
+
+   {{file|modules/demux/gme.c|input demuxer}}

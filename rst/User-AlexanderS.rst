@@ -1,8 +1,13 @@
-= General Information = \* Alexander Sulfrian (02.02.1987) \* living in
-Berlin/Germany \* studding computer science at [http://www.fu-berlin.de
-Freie Universität Berlin] (8th term)
+General Information
+===================
 
-= Contact = \* '''E-Mail:'''
-[`mailto:alexander@sulfrian.net <mailto:alexander@sulfrian.net>`__
-alexander@sulfrian.net] \* '''Jabber:''' alexanders@animux.de \* '''IRC
-Nick:''' AlexanderS
+-  Alexander Sulfrian (02.02.1987)
+-  living in Berlin/Germany
+-  studding computer science at `Freie Universität Berlin <http://www.fu-berlin.de>`__ (8th term)
+
+Contact
+=======
+
+-  **E-Mail:** alexander@sulfrian.net
+-  **Jabber:** alexanders@animux.de
+-  **IRC Nick:** AlexanderS

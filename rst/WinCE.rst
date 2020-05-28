@@ -1,1 +1,1 @@
-#REDIRECT [[Windows CE]]
+#. REDIRECT `Windows CE <Windows_CE>`__

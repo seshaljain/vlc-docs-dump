@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Format:MKV]]
+#. REDIRECT `VSG:Format:MKV <VSG:Format:MKV>`__

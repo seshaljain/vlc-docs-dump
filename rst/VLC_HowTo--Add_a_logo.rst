@@ -1,67 +1,62 @@
-{{howto|add a logo on your video using the logo filter}}
+.. raw:: mediawiki
 
-== Idea == This How To just explains how to use the logo filter in order
-to add a logo on your videos, like a TV.
+   {{howto|add a logo on your video using the logo filter}}
 
-=== Local ===
-   {{%}} vlc --sub-source logo --logo-file ''logo.png'' ''video.avi''
+Idea
+----
 
-=== Stream ===
-   {{%}} vlc --logo-file ''logo.png'' ''video.avi'' --sout
-   "#transcode{vcodec=...,vb=...,sfilter=logo}:std{...}"
+This How To just explains how to use the logo filter in order to add a logo on your videos, like a TV.
 
-Make sure you do not specify --sub-source logo, and that you specify a
-vcodec= value in the [[transcode]] part.
+Local
+~~~~~
 
-=== Save the new video locally ===
-   {{%}} vlc --logo-file ''logo.png'' ''video.avi'' --sout
-   "#transcode{vcodec=...,vb=...,sfilter=logo}:std{access=file,dst=''new_video.avi''
-   }
+``{{%}} vlc --sub-source logo --logo-file ``\ *``logo.png``*\ `` ``\ *``video.avi``*
 
-=== Dynamically change logo using [[RC]], then send output to stream and
-local debugging display ===
+Stream
+~~~~~~
 
-   {{%}} vlc -I rc --logo-file nonexistent_dummy.png --sout
-   "#transcode{vcodec=...,vb=...,sfilter=logo}:duplicate{dst=display,dst=std{...}}"
+``{{%}} vlc --logo-file ``\ *``logo.png``*\ `` ``\ *``video.avi``*\ `` --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:std{...}"``
 
-   # Once the program has started add ''video.avi'' # If using VLC 0.8.6
-   or older: logo-file ''logo.png'' # If using VLC 0.9.0 or newer (see
-   NEWS for details about the new syntax): @logo logo-file ''logo.png''
+Make sure you do not specify --sub-source logo, and that you specify a vcodec= value in the `transcode <transcode>`__ part.
 
-This requires a <code>--logo-file</code>, but for some reason it won't
-work if you specify "<code>--sub-source logo</code>". Nor does it
-apparently work if the <code>transcode</code> doesn't specify
-<code>[[Codec#Video \| vcodec=]]</code>.
+Save the new video locally
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A non-existent logo-file currently removes any logos from the video, and
-does not result in an error. Since you must specify one on the
-command-line, "<code>nonexistent_dummy.png</code>" was used.
+``{{%}} vlc --logo-file ``\ *``logo.png``*\ `` ``\ *``video.avi``*\ `` --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:std{access=file,dst=``\ *``new_video.avi``*\ `` }``
 
-== Troubleshooting ==
+Dynamically change logo using `RC <RC>`__, then send output to stream and local debugging display
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-=== My text doesn't look right! It's sort of pixellated or has
-artifacts. ===
+| ``{{%}} vlc -I rc --logo-file nonexistent_dummy.png --sout "#transcode{vcodec=...,vb=...,sfilter=logo}:duplicate{dst=display,dst=std{...}}"``
+| ``# Once the program has started``
+| ``add ``\ *``video.avi``*
+| ``# If using VLC 0.8.6 or older:``
+| ``logo-file ``\ *``logo.png``*
+| ``# If using VLC 0.9.0 or newer (see NEWS for details about the new syntax):``
+| ``@logo logo-file ``\ *``logo.png``*
 
-Sounds like a stretching or [[deinterlacing]] problem. One possible
-solution is to set your "<code>--aspect-ratio</code>" to the right
-setting. For instance, I got this when I ran VLC with
-"<code>-vvv</code>" (for verbose verbose verbose output&mdash;''note:
-only verbose verbose exists anymore''):
+This requires a ``--logo-file``, but for some reason it won't work if you specify "``--sub-source logo``". Nor does it apparently work if the ``transcode`` doesn't specify `````\ ``vcodec=`` <Codec#Video>`__.
 
-   [00000372] main video output debug: picture in 704x576 (0,0,704x576),
-   chroma I420, ar 4:3, sar 12:11 [00000372] main video output debug:
-   picture user 704x576 (0,0,704x576), chroma I420, ar 4:3, sar 12:11
-   [00000372] main video output debug: picture out 768x576
-   (0,0,768x576), chroma RV32, ar 4:3, sar 1:1
+A non-existent logo-file currently removes any logos from the video, and does not result in an error. Since you must specify one on the command-line, "``nonexistent_dummy.png``" was used.
 
-Here, the input was 704x576 resolution and VLC outputted it to 768x576.
-My text was added before this stretching occurred, and so the text
-looked awful. Forcing it back to the normal resolution using
-"<code>--aspect-ratio 11:9</code>" worked. (Because 704/576 = 11:9.)
+Troubleshooting
+---------------
 
-See also [[Documentation:Modules/logo]].
+My text doesn't look right! It's sort of pixellated or has artifacts.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Note also that setting the logo on the command line appears to be a
-"global" option and not available as stream specific.
+Sounds like a stretching or `deinterlacing <deinterlacing>`__ problem. One possible solution is to set your "``--aspect-ratio``" to the right setting. For instance, I got this when I ran VLC with "``-vvv``" (for verbose verbose verbose output—\ *note: only verbose verbose exists anymore*):
 
-{{DEFAULTSORT:Logo|noerror}}
+| ``[00000372] main video output debug: picture in 704x576 (0,0,704x576), chroma I420, ar 4:3, sar 12:11``
+| ``[00000372] main video output debug: picture user 704x576 (0,0,704x576), chroma I420, ar 4:3, sar 12:11``
+| ``[00000372] main video output debug: picture out 768x576 (0,0,768x576), chroma RV32, ar 4:3, sar 1:1``
+
+Here, the input was 704x576 resolution and VLC outputted it to 768x576. My text was added before this stretching occurred, and so the text looked awful. Forcing it back to the normal resolution using "``--aspect-ratio 11:9``" worked. (Because 704/576 = 11:9.)
+
+See also `Documentation:Modules/logo <Documentation:Modules/logo>`__.
+
+Note also that setting the logo on the command line appears to be a "global" option and not available as stream specific.
+
+.. raw:: mediawiki
+
+   {{DEFAULTSORT:Logo|noerror}}

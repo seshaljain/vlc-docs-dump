@@ -1,1 +1,1 @@
-#REDIRECT [[VPlayer]]
+#. REDIRECT `VPlayer <VPlayer>`__

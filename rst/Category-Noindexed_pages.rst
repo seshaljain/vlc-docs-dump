@@ -1,1 +1,3 @@
-[[Category:Contents]]
+\__HIDDENCAT_\_
+
+`Category:Contents <Category:Contents>`__

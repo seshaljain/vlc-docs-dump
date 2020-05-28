@@ -1,4 +1,8 @@
-<includeonly><!---->{{#ifexist:{{#titleparts:{{FULLPAGENAME}}&nbsp;&bull;&#32;<span
-lang="{{{1}}}">[[{{#titleparts:{{FULLPAGENAME}}Languages}}.
+{{#ifexist:{{#titleparts:\|1}}/ \| • \ `1}}/{{!}}{{#language:}} <{{#titleparts:{{FULLPAGENAME}}>`__\  }}
 
-[[Category:Templates]] </noinclude>
+Usage
+-----
+
+Do not use. Special helper template of .
+
+`Category:Templates <Category:Templates>`__

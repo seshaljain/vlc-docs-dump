@@ -1,13 +1,31 @@
-{{Moduletype=Video filterdescription=gaussian blur video filter}}
+.. raw:: mediawiki
+
+   {{Module|name=gaussianblur|type=Video filter|first_version=0.9.0|description=gaussian blur video filter}}
 
 Use this filter to blur the whole video.
 
-== Options == {{Option value=float description=The gaussian's standard
-deviation. }}
+Options
+-------
 
-== Example ==
-   % '''vlc --video-filter "gaussianblur{sigma=3.45}" somevideo.avi'''
+.. raw:: mediawiki
 
-== See also == \* [[Documentation:Modules/sharpen]]
+   {{Option
+   |name=gaussianblur-sigma
+   |value=float
+   |default=2.
+   |description=The gaussian's standard deviation.
+   }}
 
-{{Documentation footer}}
+Example
+-------
+
+``% ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``"gaussianblur{sigma=3.45}"``\ ````\ ``somevideo.avi``**
+
+See also
+--------
+
+-  `Documentation:Modules/sharpen <Documentation:Modules/sharpen>`__
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

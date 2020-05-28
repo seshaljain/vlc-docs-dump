@@ -1,9 +1,44 @@
-<includeonly>{{#if:{{{l{{Git linkvlc.git}}}h={{{1l={{{l}}}}}<!--
--->p={{{pa=commitdiff}}}}}<!-- -->}}</includeonly><noinclude>
+{{#if: \| \| }}
 
-Usage:
-<code>{{{{PAGENAME}}<nowiki>72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}</nowiki></code>
-for {{{{PAGENAME}}Commit}} \* {{tlFile}} \* {{tlVLCSourceFile}} \*
-{{tl|VLCSourceFolder}}
+Usage: ``{{``\ \ ``|SHA1 string}}`` e.g. ``{{``\ \ ``|72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}`` for {{\|72f3067a6fddcd30e0ee33928a0ec6622ed2e74b}}
 
-[[Category:Templates]] </noinclude>
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commit}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commitdiff}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|File}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|SVNSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFolder}}
+
+`Category:Templates <Category:Templates>`__

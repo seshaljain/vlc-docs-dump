@@ -1,1 +1,1 @@
-#redirect [[Set Top Boxes]]
+#. redirect `Set Top Boxes <Set_Top_Boxes>`__

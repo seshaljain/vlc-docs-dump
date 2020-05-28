@@ -1,1 +1,1 @@
-#REDIRECT [[Nightly Build]]
+#. REDIRECT `Nightly Build <Nightly_Build>`__

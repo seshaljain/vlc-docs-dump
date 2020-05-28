@@ -1,1 +1,3 @@
-#REDIRECT [[Category:SoC|*]]
+#. REDIRECT
+
+`\* <Category:SoC>`__

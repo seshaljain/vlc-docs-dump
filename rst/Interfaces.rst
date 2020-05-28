@@ -1,63 +1,74 @@
-{{See alsoCategory:Control VLC}}
+.. raw:: mediawiki
 
-Interfaces are the way you interact with {{VLC}}. Like anything else in
-VLC, they are modules, which allows for their interchangeability
-([[#Using|see below]]).
+   {{See also|Category:Interfaces|Category:Control VLC}}
 
-== Main interfaces == VLC has four main graphical interfaces: \* The
-[[Qt Interface]] (qt) is the default interface on [[Linux]] and
-[[Windows]] starting with version 0.9.0. : Used to be [[wxWidgets
-Interface]] (wx) before. \* The [[Skins|skins2 Interface]] is an
-interface where you can customize VLC's look (works on Linux and
-Windows). \* The [[macOS Interface]] is the default (and only) graphical
-interface on [[macOS]]. \* The [[BeOS Interface]] is the default (and
-only) graphical interface on [[BeOS]].
+Interfaces are the way you interact with . Like anything else in VLC, they are modules, which allows for their interchangeability (`see below <#Using>`__).
 
-== Full list == Besides the above main interfaces, VLC contains many
-more: {\| Current (>=0.9.0) default [https://www.qt.io/ Qt4] interface
-on [[Linux]] and [[Windows]]. '''wx''' \| Previous (<0.9.0) default
-[http://www.wxwidgets.org/ wxWidgets] interface on [[Linux]] and
-[[Windows]]. '''skins2''' \| Load VLC with a [[skin]]. (Linux and
-Windows only) '''macosx''' \| Default [[Mac OS X]] interface.
-'''minimal_macosx''' \| Minimal [[Mac OS X]] interface. '''beos''' \|
-Default [[BeOS]] interface. '''http''' \| [[Web Interface]], used for
-controlling VLC from over a network. '''gestures''' \| [[Mouse
-Gestures]], where you can control VLC by moving the mouse '''rc''',
-'''ncurses''', '''telnet''' \| [[Console-\| '''showintf''' \| Show
-interfaces module. '''hotkeys''' and '''joystick''' \| Control VLC with
-the keyboard/joystick (see [[HotKeys]]). '''dummy''' \| Don't use an
-interface ([[HotKeys]] still available). \|}
+Main interfaces
+---------------
 
-== Listing the available interfaces ==
+VLC has four main graphical interfaces:
 
-To get a list of available interfaces, running VLC with the <code>-l</code> option:
-   {{%}} vlc -l
+-  The `Qt Interface <Qt_Interface>`__ (qt) is the default interface on `Linux <Linux>`__ and `Windows <Windows>`__ starting with version 0.9.0.
 
-This also displays the [[muxers]] and [[encoders]]/[[decoders]] and puts it in a file called <code>vlc-help.txt</code>. On Linux, run
-   {{%}} vlc -l \| grep -iF interface
+   Used to be `wxWidgets Interface <wxWidgets_Interface>`__ (wx) before.
+
+-  The `skins2 Interface <Skins>`__ is an interface where you can customize VLC's look (works on Linux and Windows).
+-  The `macOS Interface <macOS_Interface>`__ is the default (and only) graphical interface on `macOS <macOS>`__.
+-  The `BeOS Interface <BeOS_Interface>`__ is the default (and only) graphical interface on `BeOS <BeOS>`__.
+
+Full list
+---------
+
+Besides the above main interfaces, VLC contains many more:
+
+=============================== =============================================================================================================================
+**qt**                          Current (>=0.9.0) default `Qt4 <https://www.qt.io/>`__ interface on `Linux <Linux>`__ and `Windows <Windows>`__.
+**wx**                          Previous (<0.9.0) default `wxWidgets <http://www.wxwidgets.org/>`__ interface on `Linux <Linux>`__ and `Windows <Windows>`__.
+**skins2**                      Load VLC with a `skin <skin>`__. (Linux and Windows only)
+**macosx**                      Default `Mac OS X <Mac_OS_X>`__ interface.
+**minimal_macosx**              Minimal `Mac OS X <Mac_OS_X>`__ interface.
+**beos**                        Default `BeOS <BeOS>`__ interface.
+**http**                        `Web Interface <Web_Interface>`__, used for controlling VLC from over a network.
+**gestures**                    `Mouse Gestures <Mouse_Gestures>`__, where you can control VLC by moving the mouse
+**rc**, **ncurses**, **telnet** `Console Interfaces <Console>`__, non-graphical interfaces.
+**showintf**                    Show interfaces module.
+**hotkeys** and **joystick**    Control VLC with the keyboard/joystick (see `HotKeys <HotKeys>`__).
+**dummy**                       Don't use an interface (`HotKeys <HotKeys>`__ still available).
+=============================== =============================================================================================================================
+
+Listing the available interfaces
+--------------------------------
+
+To get a list of available interfaces, running VLC with the ``-l`` option:
+
+``{{%}} vlc -l``
+
+This also displays the `muxers <muxers>`__ and `encoders <encoders>`__/`decoders <decoders>`__ and puts it in a file called ``vlc-help.txt``. On Linux, run
+
+``{{%}} vlc -l | grep -iF interface``
 
 to display the interfaces.
 
-== <span id="Using"></span> Using an interface ==
+ Using an interface
+------------------
 
 To run VLC with a different primary interface, use the following command:
-   {{%}} vlc --intf ''name''
+
+``{{%}} vlc --intf ``\ *``name``*
 
 You can also use
-   {{%}} vlc -I ''name''
 
-You can also change the default in the [[Preferences]].
+``{{%}} vlc -I ``\ *``name``*
+
+You can also change the default in the `Preferences <Preferences>`__.
 
 However, you can also launch more than one interface:
-   {{%}} vlc --intf qt --extraintf sap,telnet,http
 
-This will launch VLC with the default Qt interface, but will also launch
-the [[SAP]], [[telnet]] and [[web interface]] in addition to the Qt one.
-The default for this can also be changed in the preferences.
+``{{%}} vlc --intf qt --extraintf sap,telnet,http``
 
-Note that if you only use the [[dummy]] interface, you won't be able to
-tell vlc to quit (except watching a video). You may have to break it
-manually with <kbd>Ctrl+C</kbd>; or use <code>vlc://quit</code> as the
-last item on the playlist.
+This will launch VLC with the default Qt interface, but will also launch the `SAP <SAP>`__, `telnet <telnet>`__ and `web interface <web_interface>`__ in addition to the Qt one. The default for this can also be changed in the preferences.
 
-[[Category:Control VLC\|\ *]] [[Category:Interfaces\|*]]
+Note that if you only use the `dummy <dummy>`__ interface, you won't be able to tell vlc to quit (except watching a video). You may have to break it manually with Ctrl+C; or use ``vlc://quit`` as the last item on the playlist.
+
+`\* <Category:Control_VLC>`__ `\* <Category:Interfaces>`__

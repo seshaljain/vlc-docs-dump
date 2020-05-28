@@ -1,1 +1,1 @@
-#REDIRECT [[Mpjpeg]]
+#. REDIRECT `Mpjpeg <Mpjpeg>`__

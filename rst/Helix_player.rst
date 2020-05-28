@@ -1,1 +1,1 @@
-#redirect [[Helix]]
+#. redirect `Helix <Helix>`__

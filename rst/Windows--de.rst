@@ -1,268 +1,306 @@
-{{Languages|Windows}} '''UNDER CONSTRUCTION - IN BEARBEITUNG'''
+.. raw:: mediawiki
 
-Der '''Windows-Port''' von VLC startet gewöhnlich mit der
-[[WxWindows]]-Schnittstelle welche in [[Linux]] benutzt wird. Der
-Benutzer
+   {{Languages|Windows}}
 
-The user can decide to use the [[Skins]] interface instead to be able to
-modify the interface according to his or her mood.
+**UNDER CONSTRUCTION - IN BEARBEITUNG**
 
-==Keyboard shortcuts in the Windows (directx) video output==
+Der **Windows-Port** von VLC startet gewöhnlich mit der `WxWindows <WxWindows>`__-Schnittstelle welche in `Linux <Linux>`__ benutzt wird. Der Benutzer
 
-Note: these shortcuts are only default settings and can be customized
-(along with many others). To tweak hotkeys settings, go to
-Settings->Preferences->Interface->Hotkeys&nbsp;settings
+The user can decide to use the `Skins <Skins>`__ interface instead to be able to modify the interface according to his or her mood.
 
-{\| class="wikitable" \| F \| Vollbild Leerzeichen \| Abspielen/Pause T
-\| Zeigt die Position an (Zeit) S \| Stopp (hält das Medium an) Strg+Q
-\| Beenden (beendet VLC) +/-\| Schneller/Langsamer N/P \| Weiter/Zurück
-Umschalttaste+Links/Umschalttaste+Rechts \| Sehr kurzer Sprung
-Alt+Links/Alt+Rechts \| kurzer Sprung Strg+Links/Strg+Rechts \|
-Mittelmäßiger Sprung Strg+Alt+Links/Strg+Alt+Rechts \| Langer Sprung
-Strg+Hoch/Strg+Runter \| Lautstärke hoch/runter M \| Stummschaltung
-(setzt die Lautstärke vorübergehend auf 0%) Strg+M \| Zeigt das DVD-Menü
-an Links/Rechts<br/>Hoch/Runter<br/>Eingabetaste [Enter] \| DVD-Menü
-Navigationschlüssel \|}
+Keyboard shortcuts in the Windows (directx) video output
+--------------------------------------------------------
 
-==Anleitung: Dateitypen mit VLC verknüpfen==
+Note: these shortcuts are only default settings and can be customized (along with many others). To tweak hotkeys settings, go to Settings->Preferences->Interface->Hotkeys settings
 
-VLC hasn't got a module to associate files so that if you click on a
-file VLC automatically opens. The developers are working on this, and
-one should be available in the next full release. But you can do it
-yourself by choosing one of these three options:
+======================================== ==========================================================
+F                                        Vollbild
+Leerzeichen                              Abspielen/Pause
+T                                        Zeigt die Position an (Zeit)
+S                                        Stopp (hält das Medium an)
+Strg+Q                                   Beenden (beendet VLC)
++/-                                      Schneller/Langsamer
+N/P                                      Weiter/Zurück
+Umschalttaste+Links/Umschalttaste+Rechts Sehr kurzer Sprung
+Alt+Links/Alt+Rechts                     kurzer Sprung
+Strg+Links/Strg+Rechts                   Mittelmäßiger Sprung
+Strg+Alt+Links/Strg+Alt+Rechts           Langer Sprung
+Strg+Hoch/Strg+Runter                    Lautstärke hoch/runter
+M                                        Stummschaltung (setzt die Lautstärke vorübergehend auf 0%)
+Strg+M                                   Zeigt das DVD-Menü an
+| Links/Rechts                           DVD-Menü Navigationschlüssel
+| Hoch/Runter                           
+| Eingabetaste [Enter]                  
+======================================== ==========================================================
 
-===Kontenxtmenü von Windows Explorer benutzen===
+Anleitung: Dateitypen mit VLC verknüpfen
+----------------------------------------
 
-#In Windows Explorer, ''right''-click a file you wish to open. #Clicking
-Open With from the context menu that pops up. #Clicking the VLC's
-program name. #*If VLC is not displayed, click Browse to locate it on
-your hard drive.
+VLC hasn't got a module to associate files so that if you click on a file VLC automatically opens. The developers are working on this, and one should be available in the next full release. But you can do it yourself by choosing one of these three options:
+
+Kontenxtmenü von Windows Explorer benutzen
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. In Windows Explorer, *right*-click a file you wish to open.
+#. Clicking Open With from the context menu that pops up.
+#. Clicking the VLC's program name.
+
+   -  If VLC is not displayed, click Browse to locate it on your hard drive.
 
 Alternativ können Sie auch:
 
-#In Windows Explorer, ''right''-click the file you want to open with
-VLC. #Click Properties in the context menu that pops up. #On the General
-tab, click Change. #Click the name of the program (VLC) which you want
-to be used to open the file.
+#. In Windows Explorer, *right*-click the file you want to open with VLC.
+#. Click Properties in the context menu that pops up.
+#. On the General tab, click Change.
+#. Click the name of the program (VLC) which you want to be used to open the file.
 
-Either of these options affects all files that have the same filename
-extension (the letters after the filename's period) as the file you
-selected. For example, if you change the program that opens
-''goober.avi'', then all ''.avi'' files will be opened with VLC.
+Either of these options affects all files that have the same filename extension (the letters after the filename's period) as the file you selected. For example, if you change the program that opens *goober.avi*, then all *.avi* files will be opened with VLC.
 
-===Wiederholung der Installation=== #Reinstall VLC and choose the
-"associate files" option when it comes up.
+Wiederholung der Installation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-===Registrierung bearbeiten=== '''Warnung''': use this technique only if
-you really know what you are doing! And be sure to back-up your registry
-first.
+#. Reinstall VLC and choose the "associate files" option when it comes up.
 
-#Öffnen Sie einen Text-Editor, z.B. Notepad aber kein WordPad. #Kopieren
-den untenstehenden Text #Inlallations-Pfad für VLC anpassen
-''C:\Programme\VideoLAN\VLC\vlc.exe'' muss zur VLC installation passen.
-#Speichern unter ''vlc.reg''. #''vlc.reg'' ausführen (fügt der
-Registrierung diese Daten hinzu). #VLC genießen :)
+Registrierung bearbeiten
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Text zum kopieren: <pre> Windows Registry Editor Version 5.00
+**Warnung**: use this technique only if you really know what you are doing! And be sure to back-up your registry first.
 
-[HKEY_CLASSES_ROOT.ASF] @="VlcFile"
+#. Öffnen Sie einen Text-Editor, z.B. Notepad aber kein WordPad.
+#. Kopieren den untenstehenden Text
+#. Inlallations-Pfad für VLC anpassen *C:\\Programme\\VideoLAN\\VLC\\vlc.exe* muss zur VLC installation passen.
+#. Speichern unter *vlc.reg*.
+#. *vlc.reg* ausführen (fügt der Registrierung diese Daten hinzu).
+#. VLC genießen :)
 
-[HKEY_CLASSES_ROOT.ASX] @="VlcFile"
+Text zum kopieren:
 
-[HKEY_CLASSES_ROOT.AVI] @="VlcFile"
+::
 
-[HKEY_CLASSES_ROOT.DIVX] @="VlcFile"
+   Windows Registry Editor Version 5.00
 
-[HKEY_CLASSES_ROOT.MPEG] @="VlcFile"
+   [HKEY_CLASSES_ROOT\.ASF]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOT.MPG] @="VlcFile"
+   [HKEY_CLASSES_ROOT\.ASX]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOT.VOB] @="VlcFile"
+   [HKEY_CLASSES_ROOT\.AVI]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOT.WMV] @="VlcFile"
+   [HKEY_CLASSES_ROOT\.DIVX]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOTVlcFile] @="VLC File"
+   [HKEY_CLASSES_ROOT\.MPEG]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOTVlcFileDefaultIcon]
-@="C:\Programme\VideoLAN\VLC\vlc.exe,0"
+   [HKEY_CLASSES_ROOT\.MPG]
+   @="VlcFile"
 
-[HKEY_CLASSES_ROOTVlcFileshellOpen]
-[HKEY_CLASSES_ROOTVlcFileshellOpencommand]
-@="C:\Programme\VideoLAN\VLC\vlc.exe "%L"" </pre>
+   [HKEY_CLASSES_ROOT\.VOB]
+   @="VlcFile"
 
-'''Hinweis''': This associates ''asf'', ''asx'', ''avi'', ''divx'',
-''mpeg'', ''mpg'', ''vob'' and ''wmv'' files. If you get the idea, you
-can associate any file you want.
+   [HKEY_CLASSES_ROOT\.WMV]
+   @="VlcFile"
 
-==How To Start VLC Server with http Interface== VLC ships with a little
-HTTP server integrated. It is used both to stream using HTTP, and for
-the HTTP remote control interface.
+   [HKEY_CLASSES_ROOT\VlcFile]
+   @="VLC File"
 
-===VLC Server Preferences Settings=== 1. Set up the http interface
-details in the VLC server application. Open VLC then select Settings >
-Preferences. Click on the Advanced Settings button in the lower right
-hand corner of the dialog box to see all the options that are available.
+   [HKEY_CLASSES_ROOT\VlcFile\DefaultIcon]
+   @="C:\\Programme\\VideoLAN\\VLC\\vlc.exe,0"
 
-2. In the left hand window click on the + button next to Interface. This
-   will display three choices. Control interfaces, Hotkeys settings, and
-   Main Interfaces. Click on the plus button next to Main interfaces.
-   This will display four settings HTTP, RC, Skins, wxWidgets. Click on
-   HTTP to dispaly the "HTTP remote control interface settings".
-3. Host address: Enter the port number that you want to use. Default is
-   8080.
-4. Source directory: c:Program FilesVideoLanVLChttpor enter the path
-   where you have elected to install the application.
+   [HKEY_CLASSES_ROOT\VlcFile\shell\Open]
+   [HKEY_CLASSES_ROOT\VlcFile\shell\Open\command]
+   @="C:\\Programme\\VideoLAN\\VLC\\vlc.exe \"%L\""
+
+**Hinweis**: This associates *asf*, *asx*, *avi*, *divx*, *mpeg*, *mpg*, *vob* and *wmv* files. If you get the idea, you can associate any file you want.
+
+How To Start VLC Server with http Interface
+-------------------------------------------
+
+VLC ships with a little HTTP server integrated. It is used both to stream using HTTP, and for the HTTP remote control interface.
+
+VLC Server Preferences Settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Set up the http interface details in the VLC server application. Open VLC then select Settings > Preferences. Click on the Advanced Settings button in the lower right hand corner of the dialog box to see all the options that are available.
+
+2. In the left hand window click on the + button next to Interface. This will display three choices. Control interfaces, Hotkeys settings, and Main Interfaces. Click on the plus button next to Main interfaces. This will display four settings HTTP, RC, Skins, wxWidgets. Click on HTTP to dispaly the "HTTP remote control interface settings".
+
+3. Host address: Enter the port number that you want to use. Default is 8080.
+
+4. Source directory: c:\Program Files\VideoLan\VLC\http\\ or enter the path where you have elected to install the application.
+
 5. Character set: UTF-8 default
-6. If you are NOT using handlers or SSL certificates the setup is
-   complete.
+
+6. If you are NOT using handlers or SSL certificates the setup is complete.
+
 7. Click on the Save button in the lower left hand corner.
 
-===Command Line Startup===
+Command Line Startup
+~~~~~~~~~~~~~~~~~~~~
 
-The VLC appplication can be run in a server or client environment. For
-complicated video and audio streaming on a LAN, one should consider
-dedicating a machine to act as the VLC server.
+The VLC appplication can be run in a server or client environment. For complicated video and audio streaming on a LAN, one should consider dedicating a machine to act as the VLC server.
 
-To start the VLC application in a server mode with the http interface
-automatically set, use the following command line in your desktop
-shortcut. This assumes the default location for installation was
-selected.
+To start the VLC application in a server mode with the http interface automatically set, use the following command line in your desktop shortcut. This assumes the default location for installation was selected.
 
-<nowiki>"C:Program FilesVideoLANVLCvlc.exe" --extraintf http --intf
-wx</nowiki>
+"C:\Program Files\VideoLAN\VLC\vlc.exe" --extraintf http --intf wx
 
-===Testen der Schnittstelle===
+Testen der Schnittstelle
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-From another computer, connect to the VLC server computer using your
-browser to the URL
+From another computer, connect to the VLC server computer using your browser to the URL
 
-<nowiki>http://server_ip_address:8080, such as
-http://192.168.0.186:8080\ </nowiki>
+http://server_ip_address:8080, such as http://192.168.0.186:8080
 
 The Main VLC Interface page will be displayed,
 
-See [[Web_Interface]] for additional information
+See `Web_Interface <Web_Interface>`__ for additional information
 
-==VLC Plugin für Internet Explorer==
+VLC Plugin für Internet Explorer
+--------------------------------
 
-This section will provide guidelines to incorporate the VLC ActiveX
-plugin to be used to view streaming audio and video from a VLC server.
+This section will provide guidelines to incorporate the VLC ActiveX plugin to be used to view streaming audio and video from a VLC server.
 
-How to embed the ActiveX Plugin in a Web Page: [[ActiveX/HTML]]
+How to embed the ActiveX Plugin in a Web Page: `ActiveX/HTML <ActiveX/HTML>`__
 
-Supported ActiveX Function Calls: [[ActiveX]]
+Supported ActiveX Function Calls: `ActiveX <ActiveX>`__
 
-==VLC Plugin für Firefox (Mozilla)== The Mozilla plugin (Excerpted from
-the
-[[Documentation:Play_HowTo/Advanced_Use_of_VLC#The_Mozilla_plugin|VLC
-User Guide]])
+VLC Plugin für Firefox (Mozilla)
+--------------------------------
 
-'''Install'''
+The Mozilla plugin (Excerpted from the `VLC User Guide <Documentation:Play_HowTo/Advanced_Use_of_VLC#The_Mozilla_plugin>`__)
 
-There are at least two ways to install the VLC Mozilla Plugin. One way
-is to to check the "Install Firefox Plugin" when you install VLC.
+**Install**
 
-If the standard exe installation does not install the mozilla plugin
-directory then download zip version which includes the required data and
-continue with the next installation (2nd way of installing of the
-plugin)
+There are at least two ways to install the VLC Mozilla Plugin. One way is to to check the "Install Firefox Plugin" when you install VLC.
+
+If the standard exe installation does not install the mozilla plugin directory then download zip version which includes the required data and continue with the next installation (2nd way of installing of the plugin)
 
 The second way involves several steps:
 
 1. Firefox oder Mozilla beenden
-2. Copy the two files in VLC_Installation_foldermozilla (usually
-   C:Program FilesVideoLANVLCmozilla) to your mozilla plugins directory
-   (Usually C:Program FilesMozillaplugins or C:Program FilesMozilla
-   Firefoxplugins).
+
+2. Copy the two files in VLC_Installation_folder\mozilla (usually C:\Program Files\VideoLAN\VLC\mozilla) to your mozilla plugins directory (Usually C:\Program Files\Mozilla\plugins or C:\Program Files\Mozilla Firefox\plugins).
+
 3. Firefox oder Mozilla neustarten
 
-'''Plugin benutzen'''
+**Plugin benutzen**
 
-If you open a link to a video file handled by the VLC plugin (To get the
-list of handled types, browse to about:plugins) or a page with an
-embedded video, the plugin should open and read the video.
+If you open a link to a video file handled by the VLC plugin (To get the list of handled types, browse to about:plugins) or a page with an embedded video, the plugin should open and read the video.
 
-'''Build HTML pages that use the plugin'''
+**Build HTML pages that use the plugin**
 
-Additionally to viewing video on all pages, you can build custom pages
-that will use the advanced features of the plugin, using Javascript
-functions to control playback or extract information from the plugin.
+Additionally to viewing video on all pages, you can build custom pages that will use the advanced features of the plugin, using Javascript functions to control playback or extract information from the plugin.
 
-The vlc plugin for Firefox/Mozilla supports the following function
-calls:
+The vlc plugin for Firefox/Mozilla supports the following function calls:
 
-   play() : Start playing media in the plugin. pause() : Pause playback.
-   stop() : Stop media playback. fullscreen() : Switch the video to full
-   screen. set_volume(vol) : Set the volume. vol has to be an int in the
-   0-200 range. get_volume() : Get the current volume setting. mute() :
-   Toggle volume muting. set_int_variable(var_name, value) :
-   set_bool_variable(var_name, value) : set_str_variable(var_name,
-   value) : get_int_variable(var_name) : get_bool_variable(var_name) :
-   get_str_variable(var_name) : clear_playlist() : Clear the playlist.
-   add_item(mrl>) : Append an item whose location is given by the Media
-   Resource Locator to the playlist. next() previous() isplaying() :
-   return true if the plugin is playing something. get_length() : Get
-   the media's length in seconds. get_position() : Get the current
-   position in the media in percent. get_time() : Get the current
-   position in the media in seconds. seek(seconds,is_relative) : If
-   is_relative is true, seek relatively to current time, else seek from
-   beginning of the stream. Seek time is specified in seconds.
+| ``     play() : Start playing media in the plugin.``
+| ``     pause() : Pause playback.``
+| ``     stop() : Stop media playback.``
+| ``     fullscreen() : Switch the video to full screen.``
+| ``     set_volume(vol) : Set the volume. vol has to be an int in the 0-200 range.``
+| ``     get_volume() : Get the current volume setting.``
+| ``     mute() : Toggle volume muting.``
+| ``     set_int_variable(var_name, value) :``
+| ``     set_bool_variable(var_name, value) :``
+| ``     set_str_variable(var_name, value) :``
+| ``     get_int_variable(var_name) :``
+| ``     get_bool_variable(var_name) :``
+| ``     get_str_variable(var_name) :``
+| ``     clear_playlist() : Clear the playlist.``
+| ``     add_item(mrl>) : Append an item whose location is given by the Media Resource Locator to the playlist.``
+| ``     next()``
+| ``     previous()``
+| ``     isplaying() : return true if the plugin is playing something.``
+| ``     get_length() : Get the media's length in seconds.``
+| ``     get_position() : Get the current position in the media in percent.``
+| ``     get_time() : Get the current position in the media in seconds.``
+| ``     seek(seconds,is_relative) : If is_relative is true, seek relatively to current time, else seek from beginning of the stream. Seek time is specified in seconds.``
 
-Here are a few examples of HTML pages that use the Mozilla plugin.
-Example 1
+Here are a few examples of HTML pages that use the Mozilla plugin. Example 1
 
-In this example, the plugin will read an HTTP stream inside the web
-page. If the user goes fullscreen, he will have to press f to go back in
-normal view.
+In this example, the plugin will read an HTTP stream inside the web page. If the user goes fullscreen, he will have to press f to go back in normal view.
 
-<pre> <html> <head><title>Demo of VLC mozilla plugin</title></head>
+::
 
-<body>
+   <html>
+   <head><title>Demo of VLC mozilla plugin</title></head>
 
-== Verwandte Artikel == \* [[Common ProblemsVLC-Kommando Online-Hilfe]]
-\* [[VLCSout]] - Konvertierung zwischen den Formaten
+   <body>
 
-[[Category:Operating systems]]
+   == Verwandte Artikel ==
+   * [[Common Problems|Häufige Probleme]]
+   * [[VLC command-line help|VLC-Kommando Online-Hilfe]]
+   * [[VLCSout]] - Konvertierung zwischen den Formaten
 
-<h1>Demo of VLC mozilla plugin - Example 2</h1>
+   [[Category:Operating systems]]
 
-<embed type="application/x-vlc-plugin"
-   name="video2" autoplay="no" loop="no" hidden="yes"
-   target="udp:@239.255.12.42" />
+   <h1>Demo of VLC mozilla plugin - Example 2</h1>
 
-<br />
-   <a href="javascript:;" onclick='document.video2.play()'>Play
-   video2</a> <a href="javascript:;"
-   onclick='document.video2.stop()'>Stop video2</a> <a
-   href="javascript:;"
-   onclick='document.video2.fullscreen()'>Fullscreen</a>
+   <embed type="application/x-vlc-plugin"
+            name="video2"
+            autoplay="no" loop="no" hidden="yes"
+            target="udp:@239.255.12.42" />
+   <br />
+     <a href="javascript:;" onclick='document.video2.play()'>Play video2</a>
+     <a href="javascript:;" onclick='document.video2.stop()'>Stop video2</a>
+     <a href="javascript:;" onclick='document.video2.fullscreen()'>Fullscreen</a>
 
-</body> </html> </pre>
+   </body>
+   </html>
 
-More example code, as well as a working implementation using Javascript,
-XHTML, and PHP that auto-detects browsers (the code is good, but the
-stream doesn't work) can be found at
-http://altair.videolan.org/~dionoea/vlc-plugin-demo/
+More example code, as well as a working implementation using Javascript, XHTML, and PHP that auto-detects browsers (the code is good, but the stream doesn't work) can be found at http://altair.videolan.org/~dionoea/vlc-plugin-demo/
 
-== Verwandte Artikel == \* [[Common Problems]] \* [[VLC command-line
-help]] \* [[Transcode]] - converting between formats
+Verwandte Artikel
+-----------------
 
-<h1>Demo of VLC mozilla plugin - Example 2</h1>
+-  `Common Problems <Common_Problems>`__
+-  `VLC command-line help <VLC_command-line_help>`__
+-  `Transcode <Transcode>`__ - converting between formats
 
-<embed type="application/x-vlc-plugin"
-   name="video2" autoplay="no" loop="no" hidden="yes"
-   target="udp:@239.255.12.42" />
+.. raw:: html
 
-<br />
-   <a href="javascript:;" onclick='document.video2.play()'>Play
-   video2</a> <a href="javascript:;"
-   onclick='document.video2.stop()'>Stop video2</a> <a
-   href="javascript:;"
-   onclick='document.video2.fullscreen()'>Fullscreen</a>
+   <h1>
 
-</body> </html> </pre>
+Demo of VLC mozilla plugin - Example 2
 
-== Verwandte Artikel == \* [[Common Problems]] \* [[VLC command-line
-help]] \* [[VLC HowTo/Create a DVD]]
+.. raw:: html
 
-[[Category:Windows|*]]
+   </h1>
+
+.. raw:: html
+
+   <embed type="application/x-vlc-plugin"
+            name="video2"
+            autoplay="no" loop="no" hidden="yes"
+            target="udp:@239.255.12.42" />
+
+| 
+| Play video2
+
+| `` ``\ \ ``Stop video2``\ 
+| `` ``\ \ ``Fullscreen``\ 
+
+.. raw:: html
+
+   </body>
+
+.. raw:: html
+
+   </html>
+
+.. raw:: html
+
+   </pre>
+
+.. _verwandte-artikel-1:
+
+Verwandte Artikel
+-----------------
+
+-  `Common Problems <Common_Problems>`__
+-  `VLC command-line help <VLC_command-line_help>`__
+-  `VLC HowTo/Create a DVD <VLC_HowTo/Create_a_DVD>`__
+
+`\* <Category:Windows>`__

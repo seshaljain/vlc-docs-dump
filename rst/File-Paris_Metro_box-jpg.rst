@@ -1,1 +1,1 @@
-[[Category:VDD]]
+`Category:VDD <Category:VDD>`__

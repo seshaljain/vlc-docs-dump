@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:Format]]
+#. REDIRECT `VSG:Format <VSG:Format>`__

@@ -1,1 +1,1 @@
-#redirect [[CD]]
+#. redirect `CD <CD>`__

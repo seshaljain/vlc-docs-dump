@@ -1,1 +1,1 @@
-#redirect[[Uncommon uses]]
+#. redirect\ `Uncommon uses <Uncommon_uses>`__

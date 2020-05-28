@@ -1,1 +1,1 @@
-#REDIRECT[[Documentation:Unicode]]
+#. REDIRECT\ `Documentation:Unicode <Documentation:Unicode>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[FreeBSD]]
+#. REDIRECT `FreeBSD <FreeBSD>`__

@@ -1,1 +1,1 @@
-See my [[wikipedia:en:user:Kenyon|wikipedia user page]]
+See my `wikipedia user page <wikipedia:en:user:Kenyon>`__

@@ -1,2 +1,1 @@
-[[Category:Diagrams]] [[Category:Playlist]] [[Category:VLC 1.2.0-pre
-images]]
+`Category:Diagrams <Category:Diagrams>`__ `Category:Playlist <Category:Playlist>`__ `Category:VLC 1.2.0-pre images <Category:VLC_1.2.0-pre_images>`__

@@ -1,7 +1,5 @@
 Hi, I'm Daniel Dreibrodt aka altglass.
 
-I'm author of some skins for VLC and atm also lead (and only) programmer
-in the development of the [http://www.videolan.org/vlc/skineditor.php
-Skin Editor].
+I'm author of some skins for VLC and atm also lead (and only) programmer in the development of the `Skin Editor <http://www.videolan.org/vlc/skineditor.php>`__.
 
-[http://www.d-gfx.net.tc http://d-gfx.kognetwork.ch/banner.png]
+http://d-gfx.kognetwork.ch/banner.png

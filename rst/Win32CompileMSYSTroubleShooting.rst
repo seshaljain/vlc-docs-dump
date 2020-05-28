@@ -1,166 +1,161 @@
-=== General === This is a list of various errors that have occurred
-"over the years" during [[Win32CompileMSYSNew|building VLC with
-windows]], with their resolutions. Of course, if it's not here, google
-is your friend.
+General
+~~~~~~~
 
-\*"unix2dos" command not found: this meant "you forgot to install
-mingw-utils"
+This is a list of various errors that have occurred "over the years" during `building VLC with windows <Win32CompileMSYSNew>`__, with their resolutions. Of course, if it's not here, google is your friend.
 
-\*Dialog complain about '''intl.dll''' missing when '''pkg-config''' is
-used: copy https://svn.modevia.com/inkscape/devlibs/bin/intl.dll to
-C:msys1.0binand try again.
+-  "unix2dos" command not found: this meant "you forgot to install mingw-utils"
 
-\*It doesn't link, and complains about missing gcc symbols: You missed
-this line in the instructions:
+-  Dialog complain about **intl.dll** missing when **pkg-config** is used: copy https://svn.modevia.com/inkscape/devlibs/bin/intl.dll to C:\msys\1.0\bin\\ and try again.
 
-Use text editor to change MinGWlibgccmingw324.4.0libstdc++.la file (line
-should be library_names='') due to bug in latest MinGW.''
+-  It doesn't link, and complains about missing gcc symbols: You missed this line in the instructions:
 
-Originally, there was apparently a bug with 4.4.0 GCC (not 4.4.1), fixed
-thus (except that in reality, you must use TDM, not vanilla GCC, because
-you need sljl exception handling):
+Use text editor to change MinGW\lib\gcc\mingw32\4.4.0\libstdc++.la file (line should be library_names=\ *) due to bug in latest MinGW.*
 
-''Then, update Mingw GCC to 4.4.0 by downloading
-http://sourceforge.net/projects/mingw/files/GCC%20Version%204/gcc-full-4.4.0-mingw32-bin-2.tar.lzma/download
-and extracting it to C:Mingw (replacing files when asked). Finally,
-you'll gave to fix the file C:MinGWlibgccmingw324.4.0libstdc++.la by
-opening it and changing the line defining library_names so that it reads
-<code><nowiki>library_names=''</nowiki></code>''
+Originally, there was apparently a bug with 4.4.0 GCC (not 4.4.1), fixed thus (except that in reality, you must use TDM, not vanilla GCC, because you need sljl exception handling):
 
-\*Compilation stops early, after configure was complaining about
-mismatched quotes:
+*Then, update Mingw GCC to 4.4.0 by downloading*\ http://sourceforge.net/projects/mingw/files/GCC%20Version%204/gcc-full-4.4.0-mingw32-bin-2.tar.lzma/download\ *and extracting it to C:\Mingw (replacing files when asked). Finally, you'll gave to fix the file C:\MinGW\lib\gcc\mingw32\4.4.0\libstdc++.la by opening it and changing the line defining library_names so that it reads ``library_names=''``*
 
-Check the VLC_COMPILE_HOST variable in your config.h - if it's ''Option
-f is not valid'' then ''hostname -f'' fails (on Windows, there is no
-such option as -f). In configure.ac change
-<pre>AC_DEFINE_UNQUOTED(VLC_COMPILE_HOST, "hostname -f 2&gt; /dev/null
-\|\| hostname", [host which ran configure])</pre> to
-<pre>AC_DEFINE_UNQUOTED(VLC_COMPILE_HOST, "hostname", [host which ran
-configure])</pre> *If compile complains about a config.h and pthread.h
-not found problem, just delete config.h*\ If building self-contained
-packages fails with ''make: zip: Command not found'' then download the
-following file and extract it to C:Msys1.0 :
+-  Compilation stops early, after configure was complaining about mismatched quotes:
+
+Check the VLC_COMPILE_HOST variable in your config.h - if it's *Option f is not valid* then *hostname -f* fails (on Windows, there is no such option as -f). In configure.ac change
+
+::
+
+   AC_DEFINE_UNQUOTED(VLC_COMPILE_HOST, "`hostname -f 2&gt; /dev/null || hostname`", [host which ran configure])
+
+to
+
+::
+
+   AC_DEFINE_UNQUOTED(VLC_COMPILE_HOST, "`hostname`", [host which ran configure])
+
+-  If compile complains about a config.h and pthread.h not found problem, just delete config.h
+-  If building self-contained packages fails with *make: zip: Command not found* then download the following file and extract it to C:\Msys\1.0 :
+
 http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/m/project/mi/mingw/MSYS/zip/zip-3.0-1/zip-3.0-1-msys-1.0.14-bin.tar.lzma
-*If building self-contained packages fails with ''make: 7z: Command not
-found'' then copy 7z.exe from C:Program Files7-Zip in to
-C:Msys1.0bin*\ If building self-contained packages fails with ''Error:
-cannot locate makensis tool'' then use:
-<pre>PATH=/c/ProgramFiles/NSIS/:$PATH make package-win32</pre>
 
-\*"/bin/m4: cannot remove temporary directory /tmp/..." during
-bootstrap. Disable any real-time scanning programs you have enabled
-(your anti-virus, Windows Defender) and convert configure.ac to Unix new
-lines.
+-  If building self-contained packages fails with *make: 7z: Command not found* then copy 7z.exe from C:\Program Files\7-Zip in to C:\Msys\1.0\bin
+-  If building self-contained packages fails with *Error: cannot locate makensis tool* then use:
 
-=== contribs make prebuilt fails with tar errors === You may get several
-tar errors before the "make prebuilt" fails with an error like this:
+::
 
-   tar: i586-mingw32msvc/lib/libdts.a: Cannot create symlink to
-   \`/home/jb/vlc-2.0/contrib/i586-mingw32msvc/lib/libdca.a': No such
-   file or directory tar: Error exit delayed from previous errors make:
-   \**\* [prebuilt] Error 2
+   PATH=/c/Program\ Files/NSIS/:$PATH make package-win32
+
+-  "/bin/m4: cannot remove temporary directory /tmp/..." during bootstrap. Disable any real-time scanning programs you have enabled (your anti-virus, Windows Defender) and convert configure.ac to Unix new lines.
+
+contribs make prebuilt fails with tar errors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You may get several tar errors before the "make prebuilt" fails with an error like this:
+
+| :literal:`tar: i586-mingw32msvc/lib/libdts.a: Cannot create symlink to `/home/jb/vlc-2.0/contrib/i586-mingw32msvc/lib/libdca.a': No such file or directory`
+| ``tar: Error exit delayed from previous errors``
+| ``make: *** [prebuilt] Error 2``
 
 Ignore it and run the rest of the prebuilt target as the wiki details:
 
-   mv i586-mingw32msvc .. cd ../i586-mingw32msvc change_prefix.sh
+| ``mv i586-mingw32msvc ..``
+| ``cd ../i586-mingw32msvc``
+| ``change_prefix.sh``
 
-=== change_prefix.sh fails === You may see an error like this
+change_prefix.sh fails
+~~~~~~~~~~~~~~~~~~~~~~
 
-   mv: cannot move ./change_prefix.sh.tmp' to./change_prefix.sh':
-   Permission denied
+You may see an error like this
 
-This appears to be harmless. The script continues to execute afterwards.
-Note that there will be no status updates for a few minutes, so it may
-appear frozen. Don't Ctrl-C or cancel the process.
+:literal:`   mv: cannot move `./change_prefix.sh.tmp' to `./change_prefix.sh': Permission denied`
 
-=== configure fails b/c of unreferenced contribs === On some setups,
-configure may fail with the following error: configure: error: Could not
-find lua. Lua is needed for some interfaces (rc, telnet, http) as well
-as many other custom scripts. Use --disable-lua to ignore this error.
+This appears to be harmless. The script continues to execute afterwards. Note that there will be no status updates for a few minutes, so it may appear frozen. Don't Ctrl-C or cancel the process.
 
-If you try --disable-lua, and you may still run into errors with
-live555, mad and eventually libfaad.
+configure fails b/c of unreferenced contribs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The issue can be resolved by explicitly referencing your contrbs. Note
-that your contribs will be in this folder
-C:msys1.0home<username>vlccontribi586-mingw32msvc. In order for
-configure to pick up the location, add a
---with-contrib=contrib/i586-mingw32msvc
+On some setups, configure may fail with the following error:
 
-   sh extras/package/win32/configure.sh --host=i586-pc-mingw32msvc
-   --with-contrib=contrib/i586-mingw32msvc --disable-nls
+``configure: error: Could not find lua. Lua is needed for some interfaces (rc, telnet, http) as well as many other custom scripts. Use --disable-lua to ignore this error.``
 
-=== make fails b/c of libpng === make may fail because of missing libpng
-files
+If you try --disable-lua, and you may still run into errors with live555, mad and eventually libfaad.
 
-   /bin/sed: can't read
-   /home/<username>/vlc/contrib/i586-mingw32msvc/lib/libpng.la: No such
-   file or directory libtool: link:
-   \`/home/<username>/vlc/contrib/i586-mingw32msvc/lib/libpng.la' is not
-   a valid libtool archive
+The issue can be resolved by explicitly referencing your contrbs. Note that your contribs will be in this folder C:\msys\1.0\home\\\\vlc\contrib\i586-mingw32msvc. In order for configure to pick up the location, add a --with-contrib=contrib/i586-mingw32msvc
 
-If so, find the libpng15.la and libpng15.a files in that directory and
-copy them to libpng.la and libpng.a. (You should end up with the same
-path referenced in the above error)
+``sh extras/package/win32/configure.sh --host=i586-pc-mingw32msvc --with-contrib=contrib/i586-mingw32msvc --disable-nls``
 
-=== make fails b/c of missing moc, rcc, uic === make may also fail
-because of missing commands for moc, rcc, uic:
+make fails b/c of libpng
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-   /bin/sh: moc: command not found make[5]: \**\*
-   [main_interface.moc.cpp] Error 127
+make may fail because of missing libpng files
 
-   /bin/sh: rcc: command not found make[5]: \**\* [resources.cpp] Error
-   127
+| ``/bin/sed: can't read /home/``\ \ ``/vlc/contrib/i586-mingw32msvc/lib/libpng.la: No such file or directory``
+| :literal:`libtool: link: `/home/`\ \ ``/vlc/contrib/i586-mingw32msvc/lib/libpng.la' is not a valid libtool archive``
 
-   /bin/sh: uic: command not found make[5]: \**\* [ui/equalizer.h] Error
-   127
+If so, find the libpng15.la and libpng15.a files in that directory and copy them to libpng.la and libpng.a. (You should end up with the same path referenced in the above error)
 
-You can workaround this by by copying the corresponding command.exe from
-the contrib directory to my bin directory
+make fails b/c of missing moc, rcc, uic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   source: C:msys1.0home<username>vlccontribi586-mingw32msvcmoc.exe
-   target: C:msys1.0binmoc.exe
+make may also fail because of missing commands for moc, rcc, uic:
 
-=== make fails b/c of compile error 'expected unqualified-id' === make
-may also fail with a compile error in gui/qt with "expected
-unqualified-id before 'char'"
+| ``/bin/sh: moc: command not found``
+| ``make[5]: *** [main_interface.moc.cpp] Error 127``
 
-   In file included from dialogs_provider.cpp:42:0:
-   dialogs/preferences.hpp: At global scope:
-   dialogs/preferences.hpp:72:19: error: expected unqualified-id before
-   'char' dialogs/preferences.hpp:72:18: error: expected ';' at end of
-   member declaration dialogs/preferences.hpp:72:24: error: expected
-   unqualified-id before ',' token
+| ``/bin/sh: rcc: command not found``
+| ``make[5]: *** [resources.cpp] Error 127``
 
-If so, do the following \* open up
-C:msys1.0home<username>vlcincludevlc_windows_interfaces.h \* add "#undef
-small" on a new line directly underneath "#include <objbase.h>" See this
-[http://forum.videolan.org/viewtopic.php?f=14&t=102257 forum thread] for
-more info
+| ``/bin/sh: uic: command not found``
+| ``make[5]: *** [ui/equalizer.h] Error 127``
 
-=== make fails b/c of unknown rule === make package-win32-base may fail
-with the following:
+You can workaround this by by copying the corresponding command.exe from the contrib directory to my bin directory
 
-   make: \**\* No rule to make target \`package-win32-base'. Stop.
+| ``source: C:\msys\1.0\home\``\ \ ``\vlc\contrib\i586-mingw32msvc\moc.exe``
+| ``target: C:\msys\1.0\bin\moc.exe``
+
+make fails b/c of compile error 'expected unqualified-id'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+make may also fail with a compile error in gui/qt with "expected unqualified-id before 'char'"
+
+| ``In file included from dialogs_provider.cpp:42:0:``
+| ``dialogs/preferences.hpp: At global scope:``
+| ``dialogs/preferences.hpp:72:19: error: expected unqualified-id before 'char'``
+| ``dialogs/preferences.hpp:72:18: error: expected ';' at end of member declaration``
+| ``dialogs/preferences.hpp:72:24: error: expected unqualified-id before ',' token``
+
+If so, do the following
+
+-  open up C:\msys\1.0\home\\\\vlc\include\vlc_windows_interfaces.h
+-  add "#undef small" on a new line directly underneath "#include <objbase.h>"
+
+See this `forum thread <http://forum.videolan.org/viewtopic.php?f=14&t=102257>`__ for more info
+
+make fails b/c of unknown rule
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+make package-win32-base may fail with the following:
+
+:literal:`make: *** No rule to make target `package-win32-base'.  Stop.`
 
 If so, use package-win32-exe, package-win-base or common
 
-=== make fails b/c of missing git, svn, makensis === \* For git, copy
-the git.exe from your Git installation to C:msys1.0bin. \* For svn, you
-can get the entire bin folder from
-[http://svn.collab.net/repos/svn/branches/1.7.x/CHANGES collab.net]. \*
-For makensis you can comment out the lines in Makefile
+make fails b/c of missing git, svn, makensis
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   # Create package # if makensis -VERSION >/dev/null 2>&1; then #
-   MAKENSIS="makensis"; # elif [ -x "/cygdrive/c/Program
-   Files/NSIS/makensis" ]; then #
-   MAKENSIS="/cygdrive/c/ProgramFiles/NSIS/makensis"; # elif [ -x
-   "$(PROGRAMFILES)/NSIS/makensis" ]; then #
-   MAKENSIS="$(PROGRAMFILES)/NSIS/makensis"; # elif wine --version
-   >/dev/null 2>&1; then # MAKENSIS="wine
-   C:/ProgramFiles/NSIS/makensis.exe"; # else # echo 'Error: cannot
-   locate makensis tool'; exit 1; # fi; # eval "$$MAKENSIS
-   $(win32_destdir)/spad.nsi"; # eval "$$MAKENSIS
-   $(win32_destdir)/vlc.win32.nsi"
+-  For git, copy the git.exe from your Git installation to C:\msys\1.0\bin\.
+-  For svn, you can get the entire bin folder from `collab.net <http://svn.collab.net/repos/svn/branches/1.7.x/CHANGES>`__.
+-  For makensis you can comment out the lines in Makefile
 
-[[Category:Building]] [[Category:Windows]]
+| ``# Create package``
+| ``#   if makensis -VERSION >/dev/null 2>&1; then \``
+| ``#       MAKENSIS="makensis"; \``
+| ``#   elif [ -x "/cygdrive/c/Program Files/NSIS/makensis" ]; then \``
+| ``#       MAKENSIS="/cygdrive/c/Program\ Files/NSIS/makensis"; \``
+| ``#   elif [ -x "$(PROGRAMFILES)/NSIS/makensis" ]; then \``
+| ``#       MAKENSIS="$(PROGRAMFILES)/NSIS/makensis"; \``
+| ``#   elif wine --version >/dev/null 2>&1; then \``
+| ``#       MAKENSIS="wine C:/Program\ Files/NSIS/makensis.exe"; \``
+| ``#   else \``
+| ``#       echo 'Error: cannot locate makensis tool'; exit 1; \``
+| ``#   fi; \``
+| ``#   eval "$$MAKENSIS $(win32_destdir)/spad.nsi"; \``
+| ``#   eval "$$MAKENSIS $(win32_destdir)/vlc.win32.nsi"``
+
+`Category:Building <Category:Building>`__ `Category:Windows <Category:Windows>`__

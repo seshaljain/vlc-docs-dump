@@ -1,1 +1,1 @@
-#redirect [[Digital Restrictions Management]]
+#. redirect `Digital Restrictions Management <Digital_Restrictions_Management>`__

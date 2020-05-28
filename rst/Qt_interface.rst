@@ -1,1 +1,1 @@
-#redirect[[Qt Interface]]
+#. redirect\ `Qt Interface <Qt_Interface>`__

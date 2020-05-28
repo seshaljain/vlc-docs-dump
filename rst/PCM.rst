@@ -1,1 +1,1 @@
-#redirect [[raw]]
+#. redirect `raw <raw>`__

@@ -1,3 +1,3 @@
-style="background: #dfd;" \| Up-to-date<noinclude>
+style="background: #dfd;" \| Up-to-date
 
-[[Category:Table cell templates]] </noinclude>
+`Category:Table cell templates <Category:Table_cell_templates>`__

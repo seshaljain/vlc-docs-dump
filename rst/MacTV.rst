@@ -1,10 +1,14 @@
-{{websitehttp://www.iwitnesstv.com/}}
+.. raw:: mediawiki
 
-MacTV is a program for [[macOS]] computers that is based on
-[[QuickTime]] software. It provides support for more features like Cisco
-IP/TV, [[MBONE]] and [[SAP]]. Like QuickTime, it supports [[MPEG]],
-[[H.261]] and [[QuickTime Video]]
+   {{website|MacTV|http://www.iwitnesstv.com/}}
 
-==Compatibility== {{compat}}
+MacTV is a program for `macOS <macOS>`__ computers that is based on `QuickTime <QuickTime>`__ software. It provides support for more features like Cisco IP/TV, `MBONE <MBONE>`__ and `SAP <SAP>`__. Like QuickTime, it supports `MPEG <MPEG>`__, `H.261 <H.261>`__ and `QuickTime Video <QuickTime_Video>`__
 
-[[Category:Player]] [[Category:macOS]]
+Compatibility
+-------------
+
+.. raw:: mediawiki
+
+   {{compat}}
+
+`Category:Player <Category:Player>`__ `Category:macOS <Category:macOS>`__

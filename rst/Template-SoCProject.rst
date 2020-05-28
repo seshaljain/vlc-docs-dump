@@ -1,21 +1,28 @@
-{\| class="widebox" style="margin:0.5em auto; padding:3px;" }}} projects
-style="padding:3px;" {{{student}}} '''Mentor''': } {{ #ifeq: {{{year}}}
-\| {{CURRENTYEAR}} \| ''Work in progress'' }} }}} Project \| -1
-}}]]</includeonly><noinclude>
+==================================================================================
+**This project is part of** `}}} projects|Google Summer of Code  <SoC_{{{year>`__.
 
-==Usage==
-   <nowiki>{{SoCProjectstudent= \|mentor= }}</nowiki>
+============
+**Student**:
+**Mentor**: 
+============
 
-It will add it to <code>Category:SoC <year> Project</code>
+{{ #ifeq: \| \| *Work in progress* }}
+==================================================================================
 
-==Example==
-   <nowiki>{{SoCProjectstudent=[[User:Pdherbemontmentor=[[User:Fkuehne|Felix
-   Paul Kühne]]}}</nowiki>
+Usage
+-----
+
+``{{SoCProject|year= |student= |mentor= }}``
+
+It will add it to ``Category:SoC``\ \ ``Project``
+
+Example
+-------
+
+``{{SoCProject|year=2007|student=[[User:Pdherbemont|Pierre d'Herbemont]]|mentor=[[User:Fkuehne|Felix Paul Kühne]]}}``
 
 becomes
-{{SoCProjectstudent=[[User:Pdherbemontmentor=[[User:Fkuehne|Felix Paul
-Kühne]]}}
 
-And the page is added to [[:Category:SoC_2007_Project]].
+And the page is added to `:Category:SoC_2007_Project <:Category:SoC_2007_Project>`__.
 
-[[Category:SoC|*]] [[Category:Templates]] </noinclude>
+`}}} Project|{{#titleparts: \| \| -1 }} <Category:SoC_{{{year>`__ `\* <Category:SoC>`__ `Category:Templates <Category:Templates>`__

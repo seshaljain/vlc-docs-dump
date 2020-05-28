@@ -1,27 +1,7 @@
-Hey, my name is Firas Assad and I'm really interested in being part of
-VLC development. I'm a senior computer science graduate student at
-[http://www.gust.edu.kw Gulf University of Science and Technology] in
-Kuwait, and my interests include novel writing, movies and filmmaking,
-travel, punk rock and monkeys. Oh, and programming... of course! I'm
-competent in C/C++ and Ruby (haven't had the chance to get into Rails
-though). I also know some Java, C#, Lua, Visual Basic, and Python but I
-didn't spend much time doing actual coding in any of them (aside from
-VB, but everyone hates VB so..).
+Hey, my name is Firas Assad and I'm really interested in being part of VLC development. I'm a senior computer science graduate student at `Gulf University of Science and Technology <http://www.gust.edu.kw>`__ in Kuwait, and my interests include novel writing, movies and filmmaking, travel, punk rock and monkeys. Oh, and programming... of course! I'm competent in C/C++ and Ruby (haven't had the chance to get into Rails though). I also know some Java, C#, Lua, Visual Basic, and Python but I didn't spend much time doing actual coding in any of them (aside from VB, but everyone hates VB so..).
 
-I'm also here for [[SoC_2008 \| Google Summer of Code 2008]], but I hope
-I can still contribute regardless of getting accepted or not. I just
-need some stuff to put on my CV! Oh, and I'd like to learn more, I've
-never worked on a real large-scale collaborative project before. For
-GSOC, I'm interested in applying the QuickTimeVR project, but I'm really
-open to any project that is interesting and not too complex (the point
-is finishing the project after all~)
+I'm also here for `Google Summer of Code 2008 <SoC_2008>`__, but I hope I can still contribute regardless of getting accepted or not. I just need some stuff to put on my CV! Oh, and I'd like to learn more, I've never worked on a real large-scale collaborative project before. For GSOC, I'm interested in applying the QuickTimeVR project, but I'm really open to any project that is interesting and not too complex (the point is finishing the project after all~)
 
-I'll add more information later. Unfortunately I've been pretty busy
-with school lately (during the GSOC application period), I'm talking a
-lot of courses and some of them are advanced. That shouldn't be a
-problem in summer though, I could work on any project full time. I still
-need to work on my patch...
+I'll add more information later. Unfortunately I've been pretty busy with school lately (during the GSOC application period), I'm talking a lot of courses and some of them are advanced. That shouldn't be a problem in summer though, I could work on any project full time. I still need to work on my patch...
 
-You can contact me on: IRC: I'm otarid on #videolan, I try to be on when
-I can Email: hayolie-at-gmail.com AIM: ArePeeGee Wiki: The [[User
-talk:Otarid&action=edit \| Talk Page here?]]
+You can contact me on: IRC: I'm otarid on #videolan, I try to be on when I can Email: hayolie-at-gmail.com AIM: ArePeeGee Wiki: The `Talk Page here? <User_talk:Otarid&action=edit>`__

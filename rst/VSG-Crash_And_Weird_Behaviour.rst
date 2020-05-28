@@ -1,15 +1,23 @@
-== Crash or strange behaviour ==
+\__NOTOC_\_
 
-{{VSGEntryVSG:Crash:Computer|VLC crashes my computer when used.}}
+Crash or strange behaviour
+--------------------------
 
-{{VSGEntryVSG:Crash:Startup|VLC crashes on startup.}}
+.. raw:: mediawiki
 
-{{VSGEntryVSG:Behaviour:TimeSlider|Why doesn't the time slider show
-up?}}
+   {{VSGEntry|Computer Crash|VSG:Crash:Computer|VLC crashes my computer when used.}}
 
-{{VSGEntryVSG:Behaviour:Bounce In The Docks|VLC shows erratic behavior
-by bouncing in the Dock of Mac OS.}}
+.. raw:: mediawiki
 
-<br>
+   {{VSGEntry|VLC crashes on startup|VSG:Crash:Startup|VLC crashes on startup.}}
 
-{{VSG}}
+.. raw:: mediawiki
+
+   {{VSGEntry|Time slider doesn't show up|VSG:Behaviour:TimeSlider|Why doesn't the time slider show up?}}
+
+.. raw:: mediawiki
+
+   {{VSGEntry|VLC just bounces in the Dock and quits or just shows a "VLC" menu and nothing else.|VSG:Behaviour:Bounce In The Docks|VLC shows erratic behavior by bouncing in the Dock of Mac OS.}}
+
+| 
+| 

@@ -1,2 +1,1 @@
-Let's not revert the original author's changes :)
-[[User:Dionoea|Dionoea]]
+Let's not revert the original author's changes :) `Dionoea <User:Dionoea>`__

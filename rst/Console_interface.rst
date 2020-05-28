@@ -1,1 +1,1 @@
-#redirect [[console]]
+#. redirect `console <console>`__

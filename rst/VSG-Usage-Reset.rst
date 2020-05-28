@@ -1,1 +1,1 @@
-#REDIRECT [[VSG:ResetPrefs]]
+#. REDIRECT `VSG:ResetPrefs <VSG:ResetPrefs>`__

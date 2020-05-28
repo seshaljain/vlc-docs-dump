@@ -1,1 +1,1 @@
-#redirect[[skins]]
+#. redirect\ `skins <skins>`__

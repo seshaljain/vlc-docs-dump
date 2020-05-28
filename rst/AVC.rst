@@ -1,1 +1,1 @@
-#redirect [[H.264/MPEG-4 AVC]]
+#. redirect `H.264/MPEG-4 AVC <H.264/MPEG-4_AVC>`__

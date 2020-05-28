@@ -1,1 +1,1 @@
-#REDIRECT [[MOD]]
+#. REDIRECT `MOD <MOD>`__

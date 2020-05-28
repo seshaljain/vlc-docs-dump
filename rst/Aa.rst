@@ -1,1 +1,1 @@
-#redirect [[Documentation:Modules/aa]]
+#. redirect `Documentation:Modules/aa <Documentation:Modules/aa>`__

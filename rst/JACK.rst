@@ -1,15 +1,19 @@
-{{WikipediaJACK\|http://jackaudio.org/}}
+.. raw:: mediawiki
 
-'''JACK''' is a recursive acronym for '''JACK Audio Connection Kit'''
-(its logo is a headphone jack).
+   {{Wikipedia|JACK Audio Connection Kit}}
 
-It is a sound daemon for GNU/Linux, macOS and
-[http://jackaudio.org/faq/jack_on_windows.html 32-bit Windows] that aims
-to manage audio in a fast and efficient way, providing an {{API}} for
-programmers to use. [http://jackaudio.org/faq/netjack.html Network
-capabilities] are possible but require matching client setups (netJACK1,
-netJACK2, jack.trip or zita-j2n for both clients).
+.. raw:: mediawiki
 
-{{VLC}} supports JACK audio input since 0.9.0.
+   {{Website|JACK|http://jackaudio.org/}}
 
-[[Category:Knowledge Base]]
+**JACK** is a recursive acronym for **JACK Audio Connection Kit** (its logo is a headphone jack).
+
+It is a sound daemon for GNU/Linux, macOS and `32-bit Windows <http://jackaudio.org/faq/jack_on_windows.html>`__ that aims to manage audio in a fast and efficient way, providing an for programmers to use. `Network capabilities <http://jackaudio.org/faq/netjack.html>`__ are possible but require matching client setups (netJACK1, netJACK2, jack.trip or zita-j2n for both clients).
+
+.. raw:: mediawiki
+
+   {{VLC}}
+
+supports JACK audio input since 0.9.0.
+
+`Category:Knowledge Base <Category:Knowledge_Base>`__

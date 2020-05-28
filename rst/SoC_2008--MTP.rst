@@ -1,83 +1,101 @@
-{{SoCProjectstudent=[[User:Sephiroth87mentor=[[User:Dionoea|Antoine
-Cellerier]]}}
+.. raw:: mediawiki
 
-==Project Abstract== As MTP (Media Transfer Protocol) devices become
-more and more popular, and the protocol itself is about to become a
-standard, using them is still a problem for some people, since they
-cannot be mounted or opened as disks, but can be natively used only on
-Vista and Windows XP with WMP10, or using other programs.
+   {{SoCProject|year=2008|student=[[User:Sephiroth87|Fabio Ritrovato]]|mentor=[[User:Dionoea|Antoine Cellerier]]}}
 
-Adding the MTP support to VLC would not only give the opportunity to use
-these device on almost every platform, but also allow to have a free,
-open source and largely diffuse program to manage them.
+Project Abstract
+----------------
 
-My work on the MTP support will enable VLC not only to play music from
-the device, but also to add new music, manage the content of the device,
-edit tags, playlists and anything else that would be needed by an Mp3
-player user.
+As MTP (Media Transfer Protocol) devices become more and more popular, and the protocol itself is about to become a standard, using them is still a problem for some people, since they cannot be mounted or opened as disks, but can be natively used only on Vista and Windows XP with WMP10, or using other programs.
 
-The coding would be done in C, mainly as a service discovery for
-VLC,with an access module to enable the reproduction of files;
-everything will be done using libmtp (POSIX compliant, so it should work
-nice on almost every system) as a base, and probably HAL to allow the
-program to detect the devices as soon as they plugged into the pc.
+Adding the MTP support to VLC would not only give the opportunity to use these device on almost every platform, but also allow to have a free, open source and largely diffuse program to manage them.
 
-==Schedule== *Linux/POSIX version :*\ Service Discovery: recognize
-device connections, create a playlist :*Access Module: play files from
-the device :*\ Playlist Management: view/edit tags, transfer files
-from/to device :*Other: try to manage more than one device at time (not
-sure about this)*\ Windows version :*Try to port the POSIX one using
-libmtp (it should work without need to change the code, maybe just some
-fixes) :*\ Rewrite all using some other API (if the above doesn't work)
-*Make sure everything is well integrated in the UI*\ Ipods (if there's
-time and it's not too difficult)
+My work on the MTP support will enable VLC not only to play music from the device, but also to add new music, manage the content of the device, edit tags, playlists and anything else that would be needed by an Mp3 player user.
 
-==Timeline== {\| class="wikitable" '''Coding begins''' Examination
-period, will work with no problem '''Mid-term evaluation''' On
-holiday... '''"Pencil down"''' '''Final evaluation''' '''Submitting
-required code samples to Google''' \|} The planning is still a little
-vague, i still don't know examination dates, so it's just a guess, but i
-don't think to have big problems on working during that period (probably
-just a break the day of the exam or the day before...)
+The coding would be done in C, mainly as a service discovery for VLC,with an access module to enable the reproduction of files; everything will be done using libmtp (POSIX compliant, so it should work nice on almost every system) as a base, and probably HAL to allow the program to detect the devices as soon as they plugged into the pc.
 
-==Current Status==
+Schedule
+--------
 
-===Git===
+-  Linux/POSIX version
+
+:*Service Discovery: recognize device connections, create a playlist
+
+:*Access Module: play files from the device
+
+:*Playlist Management: view/edit tags, transfer files from/to device
+
+:*Other: try to manage more than one device at time (not sure about this)
+
+-  Windows version
+
+:*Try to port the POSIX one using libmtp (it should work without need to change the code, maybe just some fixes)
+
+:*Rewrite all using some other API (if the above doesn't work)
+
+-  Make sure everything is well integrated in the UI
+-  Ipods (if there's time and it's not too difficult)
+
+Timeline
+--------
+
+================================================================================================ ==============================================
+`May 26 <http://code.google.com/opensource/gsoc/2008/faqs.html#0.1_timeline>`__                  **Coding begins**
+================================================================================================ ==============================================
+June 15 (?) - July 15 (?)                                                                        Examination period, will work with no problem
+`July 7-14 <http://code.google.com/opensource/gsoc/2008/faqs.html#0.1_timeline>`__               **Mid-term evaluation**
+July 28 - August 4                                                                               On holiday...
+`August 11-18 <http://code.google.com/opensource/gsoc/2008/faqs.html#0.1_timeline>`__            **"Pencil down"**
+`August 18 - September 1 <http://code.google.com/opensource/gsoc/2008/faqs.html#0.1_timeline>`__ **Final evaluation**
+`September 3 <http://code.google.com/opensource/gsoc/2008/faqs.html#0.1_timeline>`__             **Submitting required code samples to Google**
+================================================================================================ ==============================================
+
+The planning is still a little vague, i still don't know examination dates, so it's just a guess, but i don't think to have big problems on working during that period (probably just a break the day of the exam or the day before...)
+
+Current Status
+--------------
+
+Git
+~~~
 
 You can checkout to my repository by:
-   $ git clone git://git.videolan.org/vlc-sephiroth87.git
+
+`` $ git clone ``\ ```git://git.videolan.org/vlc-sephiroth87.git`` <git://git.videolan.org/vlc-sephiroth87.git>`__
 
 Remember to switch to branch "work".
 
-===Progress===
+Progress
+~~~~~~~~
 
-{\| class="wikitable" ! What !! When !! Status Study libmtp, services
-discovery and playlist API, VLC internals \|\| May \|\|
-style="background: #ddffdd"-\| June \|\| style="background: #ddffdd"-\|
-June \|\| style="background: #ddffdd"-\| June \|\| style="background:
-#ddffdd"-\| June \|\| style="background: #ddffdd"-\| June \|\|
-style="background: #ddffdd"-\| June \|\| style="background: #ddffdd"-\|
-June \|\| Not started MTP Service Discovery: detect device (real-time),
-playlist creation (Win) \|\| July \|\| style="background: #ffffdd"-\|
-July \|\| Not started MTP management: Modify services discovery API and
-interface to add tracks to a device (Win) \|\| July \|\| Not started MTP
-management: Delete tracks in the device (Win) \|\| July \|\| Not started
-MTP management: Save tracks from the device (Win) \|\| July \|\| Not
-started MTP management: Tags (?) (Win) \|\| July \|\| Not started
-Multi-MTP: Detect more than one device (still not sure about this) (Win)
-\|\| July \|\| Not started Be late: Finish what needs to (I know I won't
-manage to stick to the schedule) \|\| August \|\| Not started Polish:
-Fix bugs, do performance testing and stuff like that \|\| August \|\|
-Not started Bonus: iPods... If there's time and it's not too
-different... \|\| August \|\| not started }
+============================================================================================= ====== =================================
+What                                                                                          When   Status
+============================================================================================= ====== =================================
+Study libmtp, services discovery and playlist API, VLC internals                              May    Done (for now)
+MTP Service Discovery: detect device (real-time), playlist creation (POSIX)                   June   Done
+MTP Access Module: play files from the device (POSIX)                                         June   Done? (if no better way is found)
+MTP management: Modify services discovery API and interface to add tracks to a device (POSIX) June   Done
+MTP management: Delete tracks in the device (POSIX)                                           June   Done
+MTP management: Save tracks from the device (POSIX)                                           June   Done
+MTP management: Tags (POSIX)                                                                  June   Mostly done
+Multi-MTP: Detect more than one device (still not sure about this) (POSIX)                    June   Not started
+MTP Service Discovery: detect device (real-time), playlist creation (Win)                     July   In progress
+MTP Access Module: play files from the device (Win)                                           July   Not started
+MTP management: Modify services discovery API and interface to add tracks to a device (Win)   July   Not started
+MTP management: Delete tracks in the device (Win)                                             July   Not started
+MTP management: Save tracks from the device (Win)                                             July   Not started
+MTP management: Tags (?) (Win)                                                                July   Not started
+Multi-MTP: Detect more than one device (still not sure about this) (Win)                      July   Not started
+Be late: Finish what needs to (I know I won't manage to stick to the schedule)                August Not started
+Polish: Fix bugs, do performance testing and stuff like that                                  August Not started
+Bonus: iPods... If there's time and it's not too different...                                 August not started
+\                                                                                                   
+============================================================================================= ====== =================================
 
-===Right now?===
+Right now?
+~~~~~~~~~~
 
-Fixing things around... Finishing something... Setting up a
-cross-compiling environment...
+Fixing things around... Finishing something... Setting up a cross-compiling environment...
 
-==Sample Version==
-[http://mailman.videolan.org/pipermail/vlc-devel/2008-March/041288.html]
-Here's the first version of my work, the one i submitted to get started
-with SoC. It's a basic support, can read one device at time, and you can
-play files on it, nothing more, just a proof of concept...
+Sample Version
+--------------
+
+`1 <http://mailman.videolan.org/pipermail/vlc-devel/2008-March/041288.html>`__ Here's the first version of my work, the one i submitted to get started with SoC. It's a basic support, can read one device at time, and you can play files on it, nothing more, just a proof of concept...

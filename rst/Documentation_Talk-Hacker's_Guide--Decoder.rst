@@ -1,1 +1,1 @@
-#REDIRECT [[Talk:Hacker Guide/Decoder]]
+#. REDIRECT `Talk:Hacker Guide/Decoder <Talk:Hacker_Guide/Decoder>`__

@@ -1,59 +1,141 @@
-Prior to VLC 2.0.0 the [[wikipedia:UPnPCyberLink]]) and upnp_intel (for
-[[wikipedia:Intel
-Corporation63751e5aef7dc2ef5098df0df8bdca07849d8fd515e31aa8a7a30df086bb31422b750dcbd632dfae|l=renamed}}
-to upnp.
+| Prior to VLC 2.0.0 the `UPnP <wikipedia:UPnP>`__ module had 2 files: upnp_cc (for `CyberLink <wikipedia:CyberLink>`__) and upnp_intel (for `Intel <wikipedia:Intel_Corporation>`__).
+| The upnp_cc file was and the upnp_intel file was to upnp.
 
-== <span id="upnp_intel"></span> upnp.cpp == {{Moduletype=Services
-discoverydescription=[[wikipedia:Universal Plug'n'Playsc=none}} When VLC
-is compiled with UPNP support, you will still need{{Check|for=May no
-longer be necessary?}} to enable UPNP service discovery: \* either on
-command line via $ vlc --services-discovery upnp_intel \* or in the
-playlist menu: File/Service discovery/UPNP
+ upnp.cpp
+--------
+
+.. raw:: mediawiki
+
+   {{Module|name=upnp|type=Services discovery|first_version=0.8.4|description=[[wikipedia:Universal Plug'n'Play|Universal Plug'n'Play]]|sc=none}}
+
+When VLC is compiled with UPNP support, you will still need to enable UPNP service discovery:
+
+-  either on command line via $ vlc --services-discovery upnp_intel
+-  or in the playlist menu: File/Service discovery/UPNP
 
 Then discovered UPNP servers will be listed on the playlist.
 
-=== Options === Note the spelling difference: it is option
-satip-channe'''l'''ist and satip-channe'''ll'''ist-url. {{Option
-value=string { "Auto", "ASTRA_19_2E", "ASTRA_28_2E", "ASTRA_23_5E",
-"MasterList", "ServerList", "CustomList" }]] description=Custom
-SAT&gt;IP channel list URL }} {{Option value=string description=Custom
-SAT&gt;IP channel list URL }} {{Clear}}
+Options
+~~~~~~~
 
-=== upnp === ==== Options ==== None. {{Clear}}
+Note the spelling difference: it is option satip-channe\ **l**\ ist and satip-channe\ **ll**\ ist-url.
 
-=== upnp_renderer === {{Moduletype=Renderer discoverysc=upnp_renderer}}
+upnp
+~~~~
 
-==== Options ==== None. {{Clear}}
+.. _options-1:
 
-<!-- Scheduled for 4.0.0-dev: === dlna === {{Moduletype=Stream output]]
-stream output|sc=dlna}}
+Options
+^^^^^^^
 
-Note that <code>--sout-dlna-base_url</code> uses an underscore
-<code>'''_'''</code> rather than a hyphen.
+None.
 
-==== Options ==== {{Option value=string description=[[IP
-addressname=sout-dlna-port default=NULL name=sout-dlna-http-port
-default=7070 name=sout-dlna-video default=enabled
-name=sout-dlna-base_url default=NULL name=sout-dlna-url default=NULL
-\|description=The Url used to get the xml descriptor of the UPnP
-Renderer }} {{Clear}}-->
+upnp_renderer
+~~~~~~~~~~~~~
 
-== <span id="upnp_cc"></span> upnp_cc.cpp == {{Moduletype=Services
-discoverydescription=Universal Plug'n'Play|sc=none}}
+.. raw:: mediawiki
 
-=== Options === None. {{Clear}}
+   {{Module|name=upnp_renderer|type=Renderer discovery|description=UPnP Renderer Discovery|sc=upnp_renderer}}
 
-== Source code == Current: \*
-{{VLCSourceFilep=vlc/vlc-0.8.gitp=vlc/vlc-0.9.gitp=vlc/vlc-1.0.gitp=vlc/vlc-1.1.gitp=vlc/vlc-0.8.gitp=vlc/vlc-0.9.gitp=vlc/vlc-1.0.gitp=vlc/vlc-1.1.git|modules/services_discovery/upnp_intel.cpp}}
+.. _options-2:
 
-== Appendix == <span id="appendix_satip-channelist"></span> '''For the
-option <code>[[#satip-channelist class="mw-datatable sortable" !
-scope="row" \| Option name \| Auto \|\| ASTRA_19_2E \|\| ASTRA_28_2E
-\|\| ASTRA_23_5E \|\| MasterList \|\| ServerList \|\| CustomList Meaning
-\| Auto \|\| Astra 19.2°E \|\| Astra 28.2°E \|\| Astra 23.5°E \|\|
-SAT&gt;IP Main List \|\| Device List \|\| Custom List \|}
+Options
+^^^^^^^
 
-{{Documentation}}
+None.
 
-{{DEFAULTSORT:{{#titleparts:{{PAGENAME}}2}}|noerror}}<!-- Override
-sortkey -->
+ upnp_cc.cpp
+-----------
+
+.. raw:: mediawiki
+
+   {{Module|name=UPnP|type=Services discovery|last_version=1.1.?|description=Universal Plug'n'Play|sc=none}}
+
+.. _options-3:
+
+Options
+~~~~~~~
+
+None.
+
+Source code
+-----------
+
+Current:
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/services_discovery/upnp.cpp}}
+
+Former:
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-0.8.git|modules/services_discovery/upnp_cc.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/services_discovery/upnp_cc.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-1.0.git|modules/services_discovery/upnp_cc.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-1.1.git|modules/services_discovery/upnp_cc.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-0.8.git|modules/services_discovery/upnp_intel.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-0.9.git|modules/services_discovery/upnp_intel.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-1.0.git|modules/services_discovery/upnp_intel.cpp}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|p=vlc/vlc-1.1.git|modules/services_discovery/upnp_intel.cpp}}
+
+Appendix
+--------
+
+**For the option**\ ```--satip-channelist`` <#satip-channelist>`__\ **:**
+
+=========== ==== ============ ============ ============ ================ =========== ===========
+Option name Auto ASTRA_19_2E  ASTRA_28_2E  ASTRA_23_5E  MasterList       ServerList  CustomList
+=========== ==== ============ ============ ============ ================ =========== ===========
+Meaning     Auto Astra 19.2°E Astra 28.2°E Astra 23.5°E SAT>IP Main List Device List Custom List
+=========== ==== ============ ============ ============ ================ =========== ===========
+
+.. raw:: mediawiki
+
+   {{Documentation}}
+
+.. raw:: mediawiki
+
+   {{DEFAULTSORT:{{#titleparts:{{PAGENAME}}|0|2}}
+
+\|noerror}}

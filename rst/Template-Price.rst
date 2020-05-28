@@ -1,9 +1,15 @@
-<span style="float: right; color: #8F0066; font-size: large;">{{{1}}}
-{{{2|€}}}</span><noinclude> ==Usage== Put a price on something!
+Usage
+-----
 
-<code><nowiki>{{pricecurrency (optional)}}</nowiki></code>
+Put a price on something!
 
-==Examples== <nowiki>{{price₹}}</nowiki> {{price₹}} <br /><br />
-<nowiki>{{price$}}</nowiki> {{price$}} <br /><br /> <nowiki>{{price6}}
+``{{price|amount of money|currency (optional)}}``
 
-[[Category:Templates]] </noinclude>
+Examples
+--------
+
+| {{price|500|₹}} 
+| {{price|8.50|$}} 
+| {{price|6}} 
+
+`Category:Templates <Category:Templates>`__

@@ -1,3 +1,3 @@
-#REDIRECT [[FTP]]
+#. REDIRECT `FTP <FTP>`__
 
-[[Category:Protocols]]
+`Category:Protocols <Category:Protocols>`__

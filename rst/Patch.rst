@@ -1,1 +1,1 @@
-#REDIRECT [[Patches]]
+#. REDIRECT `Patches <Patches>`__

@@ -1,1 +1,1 @@
-#redirect[[GSoD_2019]]
+#. redirect\ `GSoD_2019 <GSoD_2019>`__

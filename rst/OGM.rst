@@ -1,1 +1,1 @@
-#redirect[[ogg]]
+#. redirect\ `ogg <ogg>`__

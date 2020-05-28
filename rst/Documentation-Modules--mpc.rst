@@ -1,10 +1,23 @@
-{{Moduletype=Access demuxdescription=[[MusePack]] demuxer|sc=mpc}}
+.. raw:: mediawiki
 
-The option <code>--mpc-replaygain-type</code> was removed entirely in
-{{Commitdiff|7e29d932257d0bf6dca42ffecf9b0dce523ca92e}} (0.8.6).
+   {{Module|name=mpc|type=Access demux|first_version=0.8.4|description=[[MusePack]] demuxer|sc=mpc}}
 
-== Options == None.
+The option ``--mpc-replaygain-type`` was removed entirely in (0.8.6).
 
-== Source code == \* {{VLCSourceFile|modules/demux/mpc.c}}
+Options
+-------
 
-{{Documentation}}
+None.
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/demux/mpc.c}}
+
+.. raw:: mediawiki
+
+   {{Documentation}}

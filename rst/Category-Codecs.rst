@@ -1,5 +1,5 @@
-This lists all the '''[[Codec]]s'''.
+This lists all the `Codecs <Codec>`__.
 
-To add a codec, use '''{{tlCodec video}}'''
+To add a codec, use **** or ****
 
-[[Category:Knowledge Base]]
+`Category:Knowledge Base <Category:Knowledge_Base>`__

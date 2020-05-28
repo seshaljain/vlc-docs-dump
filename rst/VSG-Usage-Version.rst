@@ -1,90 +1,167 @@
-This page is about the different {{VLC}} versions.
+This page is about the different versions.
 
-= Windows = == Version compatibility summary ==
+Windows
+=======
 
-{\| width="800" cellspacing="0" cellpadding="3" border="1" VLC version !
-scope="col" \| 0.8.6 ! scope="col" \| 0.9.x/1.0.x ! scope="col" \| 1.1.x
-<br> ! scope="col" \| 2.0.x/2.1.x/2.2.x ! scope="col" \| 3.0.x !
-scope="col" \| Remarks Windows 95/98/ME \| {{Yes}} \| {{No}} \| {{No}}
-\| {{No}} \| {{No}} \| Use KernelEx to use latest versions. Windows NT
-4.0 \| {{Yes}} \| {{Yes}} \| {{No}} \| {{No}} \| {{No}} \| Windows 2000
-\| {{Yes}} \| {{Yes}} \| {{Yes}} \| {{No}} \| {{No}} \| Installation of
-SP4 is '''mandatory''' Windows XP \| {{Yes}} \| {{Yes}} \| {{Yes}} \|
-{{Yes}}, SP2 or newer \| {{middle}}, update your windows \| Installation
-of SP3 is recommended Windows 2003 R2 \| {{No}} \| {{Yes}} \| {{Yes}} \|
-{{Yes}}, SP1 or newer \| {{middle}}, update your windows \| Installation
-of SP3 is recommended Windows Vista \| {{No}} \| {{Yes}} \| {{Yes}} \|
-{{Yes}} \| {{Yes}} \| It is '''highly recommended''' to install the
-Platform Update 1 Windows 2008 / 2008R2 \| {{No}} \| {{No}} \| {{Yes}}
-\| {{Yes}} \| {{Yes}} \| Windows 7 \| {{No}} \| {{No}} \| {{Yes}} \|
-{{Yes}} \| {{Yes}} \| Installation of SP1 is recommended, for safety
-Windows 8/8.1 \| {{No}} \| {{No}} \| {{No}} \| {{Yes}}, since 2.0.4 \|
-{{Yes}} \| Windows 10 \| {{No}} \| {{No}} \| {{No}} \| {{Yes}}, since
-2.2.1 \| {{Yes}} \| \|}
+Version compatibility summary
+-----------------------------
 
-== VLC 1.0.0 does not work on Vista or 7 ==
+===================== ================== ================== ================== ================== ===================== =============================================================
+VLC version           0.8.6              0.9.x/1.0.x        | 1.1.x            2.0.x/2.1.x/2.2.x  3.0.x                 Remarks
+===================== ================== ================== ================== ================== ===================== =============================================================
+Windows 95/98/ME      .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    Use KernelEx to use latest versions.
+                                                                                                                       
+                         {{Yes}}            {{No}}             {{No}}             {{No}}             {{No}}            
+Windows NT 4.0        .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki   
+                                                                                                                       
+                         {{Yes}}            {{Yes}}            {{No}}             {{No}}             {{No}}            
+Windows 2000          .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    Installation of SP4 is **mandatory**
+                                                                                                                       
+                         {{Yes}}            {{Yes}}            {{Yes}}            {{No}}             {{No}}            
+Windows XP            .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    Installation of SP3 is recommended
+                                                                                                                       
+                         {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}            {{middle}}        
+                                                                                                                       
+                                                                               , SP2 or newer     , update your windows
+Windows 2003 R2       .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    Installation of SP3 is recommended
+                                                                                                                       
+                         {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{middle}}        
+                                                                                                                       
+                                                                               , SP1 or newer     , update your windows
+Windows Vista         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    It is **highly recommended** to install the Platform Update 1
+                                                                                                                       
+                         {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}           
+Windows 2008 / 2008R2 .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki   
+                                                                                                                       
+                         {{No}}             {{No}}             {{Yes}}            {{Yes}}            {{Yes}}           
+Windows 7             .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki    Installation of SP1 is recommended, for safety
+                                                                                                                       
+                         {{No}}             {{No}}             {{Yes}}            {{Yes}}            {{Yes}}           
+Windows 8/8.1         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki   
+                                                                                                                       
+                         {{No}}             {{No}}             {{No}}             {{Yes}}            {{Yes}}           
+                                                                                                                       
+                                                                               , since 2.0.4                           
+Windows 10            .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki   
+                                                                                                                       
+                         {{No}}             {{No}}             {{No}}             {{Yes}}            {{Yes}}           
+                                                                                                                       
+                                                                               , since 2.2.1                           
+===================== ================== ================== ================== ================== ===================== =============================================================
+
+VLC 1.0.0 does not work on Vista or 7
+-------------------------------------
 
 This is a know limitation. Please use VLC 1.1.11 or more recent
 
-== VLC 0.9.0/1.0.0/1.1.0 doesn't work on Win9x ==
+VLC 0.9.0/1.0.0/1.1.0 doesn't work on Win9x
+-------------------------------------------
 
-This is by design. You need at least Windows 2000 to run latest VLC
-1.1.x.
+This is by design. You need at least Windows 2000 to run latest VLC 1.1.x.
 
-For earlier Windows release, use VLC 0.8.6i or check out
-[http://forum.videolan.org/viewtopic.php?f=14&t=64425 this forum post]
-for tips running latest VLC under Windows 98 or Windows Me.
+For earlier Windows release, use VLC 0.8.6i or check out `this forum post <http://forum.videolan.org/viewtopic.php?f=14&t=64425>`__ for tips running latest VLC under Windows 98 or Windows Me.
 
-== VLC 2.0.0 doesn't work on Windows 2000 or Windows XP SP1 ==
+VLC 2.0.0 doesn't work on Windows 2000 or Windows XP SP1
+--------------------------------------------------------
 
-This is by design. You need at least Windows XP SP2 to run latest VLC
-2.0.x.
+This is by design. You need at least Windows XP SP2 to run latest VLC 2.0.x.
 
 Please upgrade your Windows or use VLC 1.1.11.
 
-= Mac OS X =
+Mac OS X
+========
 
-== Version compatibility summary ==
+.. _version-compatibility-summary-1:
 
-{\| width="800" cellspacing="0" cellpadding="3" border="1" VLC version !
-scope="col" \| 0.8.6 ! scope="col" \| 0.9.x ! scope="col" \| 1.0.x/1.1.x
-! scope="col" \| 2.0.x ! scope="col" \| 2.1.x/2.2.x ! scope="col" \| 3.x
-! scope="col" \| Remarks 10.3 Panther \| {{Yes}} \| {{No}} \| {{No}} \|
-{{No}} \| {{No}} \| {{No}} \| Use 0.8.6i on Mac OS X 10.3.9 with
-QuickTime 7 10.4 Tiger \| {{Yes}} \| {{Yes}} \| {{No}} \| {{No}} \|
-{{No}} \| {{No}} \| Use 0.9.10 on Mac OS X 10.4.11 with QuickTime 7 10.5
-Leopard \| {{Yes}} \| {{Yes}} \| {{Yes}} \| {{Yes}} \| {{No}} \| {{No}}
-\| It works both for PPC and Intel 10.6 Snow Leopard \| {{No}} \|
-{{Yes}} \| {{Yes}} \| {{Yes}} \| {{Yes}}, 64bit only \| {{No}} \| 10.6.3
-or later strongly recommended 10.7 Lion \| {{No}} \| {{No}} \| {{Yes}}
-\| {{Yes}} \| {{Yes}} \| {{Yes}} \| 10.7.2 or later strongly recommended
-10.8 Mountain Lion \| {{No}} \| {{No}} \| {{No}} \| {{Yes}} \| {{Yes}}
-\| {{Yes}} \| 10.8.2 or later strongly recommended 10.9 (Mavericks) and
-later \| {{No}} \| {{No}} \| {{No}} \| {{No}} \| {{Yes}} \| {{Yes}} \|
-\|}
+Version compatibility summary
+-----------------------------
+
+========================== ================== ================== ================== ================== ================== ================== ===============================================
+VLC version                0.8.6              0.9.x              1.0.x/1.1.x        2.0.x              2.1.x/2.2.x        3.x                Remarks
+========================== ================== ================== ================== ================== ================== ================== ===============================================
+10.3 Panther               .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki Use 0.8.6i on Mac OS X 10.3.9 with QuickTime 7
+                                                                                                                                            
+                              {{Yes}}            {{No}}             {{No}}             {{No}}             {{No}}             {{No}}         
+10.4 Tiger                 .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki Use 0.9.10 on Mac OS X 10.4.11 with QuickTime 7
+                                                                                                                                            
+                              {{Yes}}            {{Yes}}            {{No}}             {{No}}             {{No}}             {{No}}         
+10.5 Leopard               .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki It works both for PPC and Intel
+                                                                                                                                            
+                              {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}            {{No}}             {{No}}         
+10.6 Snow Leopard          .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki 10.6.3 or later strongly recommended
+                                                                                                                                            
+                              {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}            {{No}}         
+                                                                                                                                            
+                                                                                                       , 64bit only                         
+10.7 Lion                  .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki 10.7.2 or later strongly recommended
+                                                                                                                                            
+                              {{No}}             {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}        
+10.8 Mountain Lion         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki 10.8.2 or later strongly recommended
+                                                                                                                                            
+                              {{No}}             {{No}}             {{No}}             {{Yes}}            {{Yes}}            {{Yes}}        
+10.9 (Mavericks) and later .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki
+                                                                                                                                            
+                              {{No}}             {{No}}             {{No}}             {{No}}             {{Yes}}            {{Yes}}        
+========================== ================== ================== ================== ================== ================== ================== ===============================================
 
 Mac OS X 10.1 can run up to VLC 0.7.0.
 
 Mac OS X 10.2 can run up to VLC 0.8.4a, with QuickTime 6.5.2.
 
-= \*nix =
+\*nix
+=====
 
-{\| class="wikitable" style="font-size: small; text-align: center;
-width: 100%; margin: 1em auto 1em auto; border : 2px" {{yes}} \|\| VLC
-should work without any problem. Solaris / OpenSolaris]] \| {{middle}}
-\|\| VLC is buildable under Solaris after some adaptations. Reports have
-said that those were doable. {{middle}} \|\| Same as Solaris {{yes}}
-\|\| Only old versions. }
+.. table:: **\*nix**
 
-= iOS =
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `Linux <Linux>`__                   | width="12%"        | | VLC works perfectly under linux. The team supports the `Debian <Debian>`__ version. However `Ubuntu <Ubuntu>`__, `Gentoo <Gentoo>`__, `OpenSuse <SuSE>`__, |
+   |                                     |                    | | `Mandriva <Mandriva>`__, `Fedora Core <RedHat>`__ are often tested by the team,                                                                            |
+   |                                     |                    | | but the packages are not made by the VideoLAN team.                                                                                                        |
+   +=====================================+====================+==============================================================================================================================================================+
+   | `\*BSD <FreeBSD>`__                 | .. raw:: mediawiki | VLC should work without any problem.                                                                                                                         |
+   |                                     |                    |                                                                                                                                                              |
+   |                                     |    {{yes}}         |                                                                                                                                                              |
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `Solaris / OpenSolaris <Solaris>`__ | .. raw:: mediawiki | VLC is buildable under Solaris after some adaptations. Reports have said that those were doable.                                                             |
+   |                                     |                    |                                                                                                                                                              |
+   |                                     |    {{middle}}      |                                                                                                                                                              |
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Other Unixes                        | .. raw:: mediawiki | Same as Solaris                                                                                                                                              |
+   |                                     |                    |                                                                                                                                                              |
+   |                                     |    {{middle}}      |                                                                                                                                                              |
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | `BeOS <BeOS>`__                     | .. raw:: mediawiki | Only old versions.                                                                                                                                           |
+   |                                     |                    |                                                                                                                                                              |
+   |                                     |    {{yes}}         |                                                                                                                                                              |
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   |                                     |                    |                                                                                                                                                              |
+   +-------------------------------------+--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-== Version compatibility summary ==
+iOS
+===
 
-{\| width="800" cellspacing="0" cellpadding="3" border="1" VLC version !
-scope="col" \| 1.x ! scope="col" \| 2.0 ! scope="col" \| 2.1 !
-scope="col" \| 2.2 ! scope="col" \| 2.3 5.1 \| {{Yes}} \| {{Yes}} \|
-{{Yes}} \| {{No}} \| {{No}} 6.0 \| {{No}} \| {{Yes}} \| {{Yes}} \|
-{{No}} \| {{No}} 6.1 \| {{No}} \| {{Yes}} \| {{Yes}} \| {{Yes}} \|
-{{Yes}} 7.0 \| {{No}} \| {{Yes}} \| {{Yes}} \| {{Yes}} \| {{Yes}} \|}
+.. _version-compatibility-summary-2:
 
-{{VSG}}
+Version compatibility summary
+-----------------------------
+
+=========== ================== ================== ================== ================== ==================
+VLC version 1.x                2.0                2.1                2.2                2.3
+=========== ================== ================== ================== ================== ==================
+5.1         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki
+                                                                                       
+               {{Yes}}            {{Yes}}            {{Yes}}            {{No}}             {{No}}
+6.0         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki
+                                                                                       
+               {{No}}             {{Yes}}            {{Yes}}            {{No}}             {{No}}
+6.1         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki
+                                                                                       
+               {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}
+7.0         .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki .. raw:: mediawiki
+                                                                                       
+               {{No}}             {{Yes}}            {{Yes}}            {{Yes}}            {{Yes}}
+=========== ================== ================== ================== ================== ==================
+
+.. raw:: mediawiki
+
+   {{VSG}}

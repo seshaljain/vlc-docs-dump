@@ -1,3 +1,3 @@
 CDs, DVDs, etc.
 
-[[Category:Hardware]] [[Category:Knowledge Base]]
+`Category:Hardware <Category:Hardware>`__ `Category:Knowledge Base <Category:Knowledge_Base>`__

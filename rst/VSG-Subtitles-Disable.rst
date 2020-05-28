@@ -1,10 +1,14 @@
-Go to Tools → Preferences... (set 'Show settings' to All) → Input/Codecs
-and set the '''Subtitle Track ID''' to 0.
+Go to Tools → Preferences... (set 'Show settings' to All) → Input/Codecs and set the **Subtitle Track ID** to 0.
 
-Close and restart {{VLC}}.
+Close and restart .
 
-[[File:VLC_disable_subtitles.png%7Ccenter]]
+.. figure:: VLC_disable_subtitles.png
+   :alt: VLC_disable_subtitles.png
 
-{{VSG}}
+   VLC_disable_subtitles.png
 
-[[Category:Subtitles]]
+.. raw:: mediawiki
+
+   {{VSG}}
+
+`Category:Subtitles <Category:Subtitles>`__

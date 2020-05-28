@@ -1,5 +1,11 @@
-/\* <pre> \*/
+/\*
 
-/\* Moved to [[MediaWiki:Common.css]] \*/
+::
 
-/\* </pre> \*/
+   */
+
+   /* Moved to [[MediaWiki:Common.css]] */
+
+   /*
+
+-  /

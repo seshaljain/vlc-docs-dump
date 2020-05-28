@@ -1,1 +1,1 @@
-#redirect [[Creative Commons]]
+#. redirect `Creative Commons <Creative_Commons>`__

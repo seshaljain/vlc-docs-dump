@@ -1,1 +1,1 @@
-#redirect [[Main Page]]
+#. redirect `Main Page <Main_Page>`__

@@ -1,1 +1,3 @@
-The new 'flippy' Slackware logo [[Category:Logos]]
+The new 'flippy' Slackware logo
+
+`Category:Logos <Category:Logos>`__

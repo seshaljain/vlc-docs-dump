@@ -1,1 +1,1 @@
-#REDIRECT [[C Types]]
+#. REDIRECT `C Types <C_Types>`__

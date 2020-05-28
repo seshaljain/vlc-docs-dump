@@ -1,6 +1,5 @@
-<sup>[[wikipedia:Link rot|[dead
-link]]]</sup><includeonly>[[Category:Pages with broken
-links]]</includeonly><noinclude>
+`[dead link <wikipedia:Link_rot>`__\ :sup:`]`\ 
 
-Also adds pages to [[:Category:Pages with broken links]]
-[[Category:Maintenance templates]]</noinclude>
+Also adds pages to `:Category:Pages with broken links <:Category:Pages_with_broken_links>`__
+
+`Category:Pages with broken links <Category:Pages_with_broken_links>`__ `Category:Maintenance templates <Category:Maintenance_templates>`__

@@ -1,11 +1,56 @@
-{{Git
-linkvlc.git}}}f={{{name}}}}}}{{{name}}}}}}}}}}}{{#if:{{{2&#32;({{{2}}})vlc.git}}}
-file}} except that this template does not add the bulleted list.
+.. raw:: mediawiki
 
-Parameters: \* '''<code><nowiki>p=</nowiki></code>''' links to other
-branches, defaults to <samp>vlc.git</samp> (optional)
+   {{Git link|p={{{p|vlc.git}}}|a=blob|f={{{name|{{{1|}}}}}
 
-== See also == \* {{tlCommitdiff}} \* {{tlSVNSourceFile}} \*
-{{tlVLCSourceFolder}}
+}|l=}}}}}}}}{{#if:\| ()|}}{{#ifeq:\|vlc.git\| \| ()}}
 
-[[Category:Templates]] </noinclude>
+Usage
+-----
+
+Same as except that this template does not add the bulleted list.
+
+Parameters:
+
+-  **``|l=``** custom label (optional)
+-  **``|p=``** links to other branches, defaults to vlc.git (optional)
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commit}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commitdiff}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|File}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|SVNSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFolder}}
+
+`Category:Templates <Category:Templates>`__

@@ -1,1 +1,1 @@
-#REDIRECT [[Players]]
+#. REDIRECT `Players <Players>`__

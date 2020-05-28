@@ -1,3 +1,3 @@
-2.1.13<noinclude>
+2.1.13
 
-[[Category:Android|*]] </noinclude>
+`\* <Category:Android>`__

@@ -1,1 +1,1 @@
-#redirect[[YUV#NV12]]
+#. redirect\ `YUV#NV12 <YUV#NV12>`__

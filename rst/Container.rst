@@ -1,1 +1,3 @@
-#REDIRECT [[:Category:container]] [[Category:Container|↳]]
+#. REDIRECT `:Category:container <:Category:container>`__
+
+`↳ <Category:Container>`__

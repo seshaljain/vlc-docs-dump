@@ -1,4 +1,3 @@
-This category holds all security-related tasks, concerns, or related
-material
+This category holds all security-related tasks, concerns, or related material
 
-[[Category:Contents]]
+`Category:Contents <Category:Contents>`__

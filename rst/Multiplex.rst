@@ -1,1 +1,1 @@
-#REDIRECT [[Muxing]]
+#. REDIRECT `Muxing <Muxing>`__

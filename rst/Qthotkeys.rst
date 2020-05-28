@@ -1,1 +1,1 @@
-#REDIRECT [[QtHotkeys]]
+#. REDIRECT `QtHotkeys <QtHotkeys>`__

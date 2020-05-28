@@ -1,1 +1,1 @@
-#Redirect [[VLC media player]]
+#. Redirect `VLC media player <VLC_media_player>`__

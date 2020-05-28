@@ -1,1 +1,1 @@
-#REDIRECT [[XSPF]]
+#. REDIRECT `XSPF <XSPF>`__

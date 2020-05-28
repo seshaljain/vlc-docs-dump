@@ -1,1 +1,1 @@
-#redirect [[MPEG#PS]]
+#. redirect `MPEG#PS <MPEG#PS>`__

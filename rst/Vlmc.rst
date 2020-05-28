@@ -1,1 +1,1 @@
-#REDIRECT [[VideoLAN Movie Creator]]
+#. REDIRECT `VideoLAN Movie Creator <VideoLAN_Movie_Creator>`__

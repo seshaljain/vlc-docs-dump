@@ -1,4 +1,1 @@
-It appears to me, and if anybody else can verify this, it would be good,
-but in WMP 11 on vista, it appears that in order to see the video
-stream, you need to be watching in fullscreen mode
-[[User:Fbarton|Fbarton]] 20:42, 4 June 2008 (CEST)
+It appears to me, and if anybody else can verify this, it would be good, but in WMP 11 on vista, it appears that in order to see the video stream, you need to be watching in fullscreen mode `Fbarton <User:Fbarton>`__ 20:42, 4 June 2008 (CEST)

@@ -1,12 +1,27 @@
-{{Muxmod=subtitle}} The SAMI (*.smi) [[subtitle]] format is a '''rare'''
-{{HTML}}-format with startframes given for each subtitle.
+.. raw:: mediawiki
 
-Example: <pre> <TITLE>Title of film <STYLE TYPE="text/css"> <blank line>
-<BODY> <blank line> <SYNC Start=30886> Oh no! The eggs are hatching!
-<blank line> <SYNC Start=34037> Wait, never mind. I was hallucinating.
-</pre>
+   {{Mux|id=sami|mod=subtitle}}
 
-==References== [http://divxstation.com/article.asp?aId=27 Divxstation]
-article by Stachken
+The SAMI (*.smi) `subtitle <subtitle>`__ format is a **rare** -format with startframes given for each subtitle.
 
-[[Category:Subtitles]]
+Example:
+
+::
+
+   <TITLE>Title of film
+   <STYLE TYPE="text/css">
+                             <blank line>
+   <BODY>
+                             <blank line>
+   <SYNC Start=30886>
+   Oh no!  The eggs are hatching!
+                             <blank line>
+   <SYNC Start=34037>
+   Wait, never mind.  I was hallucinating.
+
+References
+----------
+
+`Divxstation <http://divxstation.com/article.asp?aId=27>`__ article by Stachken
+
+`Category:Subtitles <Category:Subtitles>`__

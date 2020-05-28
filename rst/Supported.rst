@@ -1,1 +1,1 @@
-#REDIRECT [[VLC Features Formats]]
+#. REDIRECT `VLC Features Formats <VLC_Features_Formats>`__

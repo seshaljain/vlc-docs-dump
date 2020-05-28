@@ -1,18 +1,56 @@
-<includeonly><span class="plainlinks folder-icon">{{Git
-linkvlc.git}}}f={{{1hb=HEAD{{{1vlc.git}}}
-\|&#32;({{{p}}})}}</span></includeonly><noinclude>
+}}}{{#ifeq:\|vlc.git\| \| ()}}
 
-== Usage ==
-   <code>{{{{PAGENAME}}|<nowiki>folder}}</nowiki></code>
+Usage
+-----
 
-Parameters: \* '''<code><nowiki>|p=</nowiki></code>''' links to other
-branches, defaults to <samp>vlc.git</samp> (optional)
+``{{``\ \ ``|folder}}``
 
-Examples: \* <code>{{{{PAGENAME}}doc}} \*
-<code>{{{{PAGENAME}}p=vlc/vlc-2.0.git}}</nowiki></code> gives
-{{{{PAGENAME}}p=vlc/vlc-2.0.git}}
+Parameters:
 
-== See also == \* {{tlCommitdiff}} \* {{tlSVNSourceFile}} \*
-{{tlVLCSourceFolder}}
+-  **``|p=``** links to other branches, defaults to vlc.git (optional)
 
-[[Category:Templates]] </noinclude>
+Examples:
+
+-  ``{{``\ \ ``|doc}}`` gives {{\|doc}}
+-  ``{{``\ \ ``|doc|p=vlc/vlc-2.0.git}}`` gives {{\|doc|p=vlc/vlc-2.0.git}}
+
+See also
+--------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commit}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|Commitdiff}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|File}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|SVNSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFile}}
+
+-  
+
+   .. raw:: mediawiki
+
+      {{tl|VLCSourceFolder}}
+
+`Category:Templates <Category:Templates>`__

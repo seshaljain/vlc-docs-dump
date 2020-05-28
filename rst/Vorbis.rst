@@ -1,12 +1,39 @@
-{{codec audiomod=vorbisfor=[[ogg]] and [[matroska]]}}
+.. raw:: mediawiki
 
-{{websitehttp://vorbis.com/}} {{open}} {{xiph|Vorbis}}
+   {{codec audio|id=vorb|mod=vorbis|encoder=y|for=[[ogg]] and [[matroska]]}}
 
-Vorbis is the audio codec that usually resides inside the [[Ogg]]
-[[container]]. It is similar or better quality to [[MP3]] or [[WMA]].
+.. raw:: mediawiki
 
-{{clear}} == See also == \* http://www.xiph.org/vorbis/doc/
+   {{website|Vorbis|http://vorbis.com/}}
 
-== Source code == \* {{VLCSourceFile|modules/codec/vorbis.c}}
+.. raw:: mediawiki
 
-{{stub}}
+   {{open}}
+
+.. raw:: mediawiki
+
+   {{xiph|Vorbis}}
+
+Vorbis is the audio codec that usually resides inside the `Ogg <Ogg>`__ `container <container>`__. It is similar or better quality to `MP3 <MP3>`__ or `WMA <WMA>`__.
+
+.. raw:: mediawiki
+
+   {{clear}}
+
+See also
+--------
+
+-  http://www.xiph.org/vorbis/doc/
+
+Source code
+-----------
+
+-  
+
+   .. raw:: mediawiki
+
+      {{VLCSourceFile|modules/codec/vorbis.c}}
+
+.. raw:: mediawiki
+
+   {{stub}}

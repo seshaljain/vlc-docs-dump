@@ -1,1 +1,1 @@
-#REDIRECT [[Preferences]]
+#. REDIRECT `Preferences <Preferences>`__

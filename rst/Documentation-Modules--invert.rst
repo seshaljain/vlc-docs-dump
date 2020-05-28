@@ -1,11 +1,18 @@
-{{Moduletype=Video filter|description=color inversion}}
+.. raw:: mediawiki
+
+   {{Module|name=invert|type=Video filter|description=color inversion}}
 
 The invert filter inverts colors in an image.
 
-== Example == '''VLC 0.9.0 and above''': {{$}} '''vlc --video-filter
-invert somevideo.avi'''
+Example
+-------
 
-'''Note:''' In versions prior to 0.9.0, invert was a video output
-filter.
+**VLC 0.9.0 and above**:
 
-{{Documentation footer}}
+``{{$}} ``\ **``vlc``\ ````\ ``--video-filter``\ ````\ ``invert``\ ````\ ``somevideo.avi``**
+
+**Note:** In versions prior to 0.9.0, invert was a video output filter.
+
+.. raw:: mediawiki
+
+   {{Documentation footer}}

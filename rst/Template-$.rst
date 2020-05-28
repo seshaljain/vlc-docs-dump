@@ -1,3 +1,5 @@
-{{prompt|bash}}<noinclude>
+.. raw:: mediawiki
 
-[[Category:Templates]] </noinclude>
+   {{prompt|bash}}
+
+`Category:Templates <Category:Templates>`__

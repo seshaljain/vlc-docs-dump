@@ -1,1 +1,1 @@
-#REDIRECT [[Windows_service]]
+#. REDIRECT `Windows_service <Windows_service>`__

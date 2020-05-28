@@ -1,1 +1,1 @@
-#REDIRECT [[Template:Documentation footer]]
+#. REDIRECT `Template:Documentation footer <Template:Documentation_footer>`__

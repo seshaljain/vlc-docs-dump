@@ -1,110 +1,139 @@
-[[File:VLMC icon.pngthumb|right]] == Building VLMC from source ==
+.. figure:: VLMC_icon.png
+   :alt: VLMC_icon.png
 
-This wiki page has information on building [[VideoLAN Movie Creator]]
-(VLMC) from source.
+   VLMC_icon.png
 
-VLMC is a free video editing software, offering features to realize
-semi-professional quality movies, but with the aim to stay simple and
-user-friendly.
+Building VLMC from source
+-------------------------
 
-=== Resources ===
+This wiki page has information on building `VideoLAN Movie Creator <VideoLAN_Movie_Creator>`__ (VLMC) from source.
 
-VLMC requires a c++ compiler (g++), cmake, Qt(4.6+), libVLC and frei0r
-plugins.
+VLMC is a free video editing software, offering features to realize semi-professional quality movies, but with the aim to stay simple and user-friendly.
 
--  To install [[Qt]], refer to: https://www.qt.io
--  To install [[libVLC]], you are required to [[compile VLC]]
--  To get the current source of {{VLC}}, refer to: [[GetTheSource]]
--  For information on using Git, refer to: [[Git]]
+Resources
+~~~~~~~~~
 
-\* If you are interested in mailing lists, go to
-https://mailman.videolan.org/listinfo/. We have two VLMC mailing lists:
-\*\* [https://mailman.videolan.org/pipermail/vlmc-announce/
-vlmc-announce]: Official announcements (release, events, ...) \*\*
-[https://mailman.videolan.org/pipermail/vlmc-devel/ vlmc-devel]:
-Developers discussions
+VLMC requires a c++ compiler (g++), cmake, Qt(4.6+), libVLC and frei0r plugins.
 
-=== Getting the code ===
+-  To install `Qt <Qt>`__, refer to: https://www.qt.io
+-  To install `libVLC <libVLC>`__, you are required to `compile VLC <compile_VLC>`__
+-  To get the current source of , refer to: `GetTheSource <GetTheSource>`__
+-  For information on using Git, refer to: `Git <Git>`__
+-  If you are interested in mailing lists, go to https://mailman.videolan.org/listinfo/. We have two VLMC mailing lists:
+
+   -  `vlmc-announce <https://mailman.videolan.org/pipermail/vlmc-announce/>`__: Official announcements (release, events, ...)
+   -  `vlmc-devel <https://mailman.videolan.org/pipermail/vlmc-devel/>`__: Developers discussions
+
+Getting the code
+~~~~~~~~~~~~~~~~
 
 You can fetch the current VLMC working tree using Git:
-   {{$}} git clone https://code.videolan.org/videolan/vlmc.git
 
-Do the same for VLC (as described in [[GetTheSource]]):
-   {{$}} git clone git://git.videolan.org/vlc.git
+``{{$}} git clone ``\ ```https://code.videolan.org/videolan/vlmc.git`` <https://code.videolan.org/videolan/vlmc.git>`__
 
-=== Building VLMC on Linux ===
+Do the same for VLC (as described in `GetTheSource <GetTheSource>`__):
+
+``{{$}} git clone ``\ ```git://git.videolan.org/vlc.git`` <git://git.videolan.org/vlc.git>`__
+
+Building VLMC on Linux
+~~~~~~~~~~~~~~~~~~~~~~
 
 Following is the cleanest way of compiling VLMC (commands for \*nix OS)
 
-1. Compile and install [[libVLC]], libVLC is required by VLMC (you can also install VLC using your Linux distribution), for example:
-   {{$}} cd path_to_vlc_src {{$}} ./bootstrap {{$}} ./configure
-   ''--your-options-here (see --help)'' {{$}} make {{prompt|root}} make
-   install
+1. Compile and install `libVLC <libVLC>`__, libVLC is required by VLMC (you can also install VLC using your Linux distribution), for example:
+
+| ``{{$}} cd path_to_vlc_src``
+| ``{{$}} ./bootstrap``
+| ``{{$}} ./configure ``\ *``--your-options-here``\ ````\ ``(see``\ ````\ ``--help)``*
+| ``{{$}} make``
+| \ `` make install``
 
 2. For Compiling VLMC:
-   {{$}} cd path_to_vlmc_src {{$}} mkdir build && cd build {{$}} cmake
-   .. {{$}} make
+
+| ``{{$}} cd path_to_vlmc_src``
+| ``{{$}} mkdir build && cd build``
+| ``{{$}} cmake ..``
+| ``{{$}} make``
 
 3. Run VLMC:
-   {{$}} ./vlmc
 
-==== Building VLMC in developer mode ====
+``{{$}} ./vlmc``
 
-By default, VLMC enables a crash handler, which is responsible for
-saving a backup of the project in the event of a crash.
+Building VLMC in developer mode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-While this might be handy for the users, it makes life harder on
-developers, since a debugger would attach to the daemon process instead
-of VLMC.
+By default, VLMC enables a crash handler, which is responsible for saving a backup of the project in the event of a crash.
 
-In order to disable this, you'll need a tool such as ccmake, or
-cmake-gui, to disable the <code>WITH_CRASHHANDLER</code> option.
+While this might be handy for the users, it makes life harder on developers, since a debugger would attach to the daemon process instead of VLMC.
 
-Alternatively, you can invoke cmake with
-<code>-DWITH_CRASHHANDLER=OFF</code> flag
+In order to disable this, you'll need a tool such as ccmake, or cmake-gui, to disable the ``WITH_CRASHHANDLER`` option.
 
-=== Cross Compiling VLMC for Windows on Linux ===
+Alternatively, you can invoke cmake with ``-DWITH_CRASHHANDLER=OFF`` flag
+
+Cross Compiling VLMC for Windows on Linux
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 VLMC can be cross-compiled for Windows, on Linux using mingw:
-   {{$}} cd contribs {{$}} sh contribs.sh {{$}} cd .. {{$}} mkdir win32
-   && cd win32 {{$}} cmake
-   -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchain-win32.cmake .. {{$}} make
 
-=== Compiling on Mac OS ===
+| ``{{$}} cd contribs``
+| ``{{$}} sh contribs.sh``
+| ``{{$}} cd ..``
+| ``{{$}} mkdir win32 && cd win32``
+| ``{{$}} cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchain-win32.cmake ..``
+| ``{{$}} make``
 
-==== Dependencies ==== \* Build tools: Xcode command-line tools \*
-homebrew
+Compiling on Mac OS
+~~~~~~~~~~~~~~~~~~~
 
-==== Get the sources: ====
-   {{$}} git clone https://code.videolan.org/videolan/vlmc.git
+Dependencies
+^^^^^^^^^^^^
 
-==== Get the actual dependencies: ====
-   {{$}} brew tap tomahawk-player/tomahawkqt5 {{$}} brew install make
-   {{$}} brew install vlc {{$}} brew install qt5 {{$}} brew install
-   frei0r
+-  Build tools: Xcode command-line tools
+-  homebrew
 
-==== Compile vlmc: ==== Now cd to root source directory and build: {{$}}
-mkdir build && cd build {{$}} cmake .. {{$}} make
+Get the sources:
+^^^^^^^^^^^^^^^^
 
-This will by default create a Mac Bundle, <code>vlmc.app</code> in
-<code>/build/bin</code>
+``{{$}} git clone ``\ ```https://code.videolan.org/videolan/vlmc.git`` <https://code.videolan.org/videolan/vlmc.git>`__
 
-==== To create a dmg image: ====
+Get the actual dependencies:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To create a dmg image, uncomment <code>#dmg</code> in
-<code>/src/CMakeLists.txt</code>, at the end of the file.
+| ``{{$}} brew tap tomahawk-player/tomahawkqt5``
+| ``{{$}} brew install make``
+| ``{{$}} brew install vlc``
+| ``{{$}} brew install qt5``
+| ``{{$}} brew install frei0r``
 
-This creates the <code>app/dmg</code> in
-<code>&lt;build-directory&gt;/bin</code>
+Compile vlmc:
+^^^^^^^^^^^^^
 
-=== Packaging VLMC ===
+Now cd to root source directory and build:
 
-\* On Linux, you can create deb/rpm package by using:
-   {{$}} make package
+| ``{{$}} mkdir build && cd build``
+| ``{{$}} cmake ..``
+| ``{{$}} make``
 
-\* You can create NSIS installer for Windows using cross-compiling on Linux:
-   {{$}} make installer
+This will by default create a Mac Bundle, ``vlmc.app`` in ``/build/bin``
 
-Start hacking <span title="Wink">;-)</span>
+To create a dmg image:
+^^^^^^^^^^^^^^^^^^^^^^
 
-[[Category:Building]] [[Category:VideoLAN projects]]
+To create a dmg image, uncomment ``#dmg`` in ``/src/CMakeLists.txt``, at the end of the file.
+
+This creates the ``app/dmg`` in ``<build-directory>/bin``
+
+Packaging VLMC
+~~~~~~~~~~~~~~
+
+-  On Linux, you can create deb/rpm package by using:
+
+``{{$}} make package``
+
+-  You can create NSIS installer for Windows using cross-compiling on Linux:
+
+``{{$}} make installer``
+
+Start hacking ;-)
+
+`Category:Building <Category:Building>`__ `Category:VideoLAN projects <Category:VideoLAN_projects>`__

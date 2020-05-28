@@ -1,1 +1,1 @@
-#REDIRECT [[Interfaces]]
+#. REDIRECT `Interfaces <Interfaces>`__

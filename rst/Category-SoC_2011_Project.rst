@@ -1,3 +1,3 @@
-This lists all the projects of [[SoC 2011|Google Summer of Code 2011]].
+This lists all the projects of `Google Summer of Code 2011 <SoC_2011>`__.
 
-[[Category:SoC]]
+`Category:SoC <Category:SoC>`__

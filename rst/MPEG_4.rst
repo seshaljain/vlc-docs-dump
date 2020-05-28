@@ -1,1 +1,1 @@
-#REDIRECT [[MPEG-4]]
+#. REDIRECT `MPEG-4 <MPEG-4>`__

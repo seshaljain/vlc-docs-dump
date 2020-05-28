@@ -1,13 +1,14 @@
-{{Wikipedia|Port (computer networking)}}
+.. raw:: mediawiki
 
-A port is a number used to identify incoming and outgoing computer
-traffic. Programs may look to communicate over a particular port, e.g.
-for streaming or network shares.
+   {{Wikipedia|Port (computer networking)}}
 
-Ports rarely need to be specified unless asked for on the
-[[command-line]] or you are connecting over a network share.
+A port is a number used to identify incoming and outgoing computer traffic. Programs may look to communicate over a particular port, e.g. for streaming or network shares.
 
-Lists of common ports: \* [[Wikipedia:List of TCP and UDP port
-numbersInternet Assigned Numbers Authority]])
+Ports rarely need to be specified unless asked for on the `command-line <command-line>`__ or you are connecting over a network share.
 
-[[Category:Glossary]]
+Lists of common ports:
+
+-  `List of TCP and UDP port numbers <Wikipedia:List_of_TCP_and_UDP_port_numbers>`__ (at Wikipedia)
+-  `Service Names for Port Numbers <https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt>`__ (from `Internet Assigned Numbers Authority <Wikipedia:Internet_Assigned_Numbers_Authority>`__)
+
+`Category:Glossary <Category:Glossary>`__

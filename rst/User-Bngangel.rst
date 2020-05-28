@@ -1,1 +1,1 @@
-''Italic text''Miss Angel
+*Italic text*\ Miss Angel
